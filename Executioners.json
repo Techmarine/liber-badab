@@ -50,18 +50,6 @@
         "name": "High Chaplain Thulsa Kane",
         "hidden": false,
         "id": "1038-28d3-f1e2-e80b",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "86e0-0321-b257-11f2",
-            "includeChildSelections": true,
-            "includeChildForces": true
-          }
-        ],
         "infoLinks": [
           {
             "name": "Master of the Company",
@@ -155,42 +143,6 @@
             "id": "d4a5-63ed-f7fc-6a29",
             "targetId": "08f5-cc3b-5be1-92cb",
             "primary": false
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "86e0-0321-b257-11f2",
-            "comment": "Exclude self from decrement",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "1038-28d3-f1e2-e80b",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "86e0-0321-b257-11f2",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "08f5-cc3b-5be1-92cb",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
           }
         ],
         "selectionEntries": [

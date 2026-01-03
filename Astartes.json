@@ -2462,16 +2462,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "7a78-d83a-250f-9386-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "7ae9-dea4-3f45-dd8f",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
             ],
             "profiles": [
@@ -2632,42 +2622,6 @@
                 "name": "Points",
                 "typeId": "54b5-0978-c8a4-5b5a",
                 "value": 130
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "increment",
-                "value": 1,
-                "field": "7ae9-dea4-3f45-dd8f",
-                "comment": "Exclude self from decrement",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "07ed-310d-ca03-db38",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              },
-              {
-                "type": "decrement",
-                "value": 1,
-                "field": "7ae9-dea4-3f45-dd8f",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "08f5-cc3b-5be1-92cb",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  }
-                ]
               }
             ],
             "sortIndex": 1
@@ -2892,7 +2846,8 @@
                 "hidden": false,
                 "id": "9b98-ee6e-ff8a-c04d",
                 "type": "selectionEntryGroup",
-                "targetId": "1be6-e5a1-360c-75db"
+                "targetId": "1be6-e5a1-360c-75db",
+                "sortIndex": 9
               },
               {
                 "import": true,
@@ -2979,6 +2934,79 @@
                 "id": "fbb9-f91c-fc5c-c3b6",
                 "type": "selectionEntry",
                 "targetId": "5566-b61d-2f7d-b217",
+                "sortIndex": 8
+              },
+              {
+                "import": true,
+                "name": "Combat Shield",
+                "hidden": false,
+                "id": "f1e7-d3a3-63b5-c88d",
+                "type": "selectionEntry",
+                "targetId": "1c97-80ae-70cd-c700",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1bc9-d5d1-5b8a-b567"
+                  }
+                ],
+                "sortIndex": 6
+              },
+              {
+                "import": true,
+                "name": "Melta Bombs",
+                "hidden": false,
+                "id": "f9bc-1143-7328-facc",
+                "type": "selectionEntry",
+                "targetId": "edbe-fcf8-664e-f90f",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2b83-f2d4-69c2-62e0"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 10
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "model",
+                        "childId": "b5cc-2852-871d-3ea8",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": true,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "2b83-f2d4-69c2-62e0"
+                      }
+                    ]
+                  }
+                ],
                 "sortIndex": 7
               }
             ],
@@ -4484,85 +4512,6 @@
                 "sortIndex": 3
               },
               {
-                "name": "May take any of the following",
-                "id": "6142-58b7-f8ee-8da1",
-                "hidden": false,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Combat Shield",
-                    "hidden": false,
-                    "id": "f1e7-d3a3-63b5-c88d",
-                    "type": "selectionEntry",
-                    "targetId": "1c97-80ae-70cd-c700",
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "1bc9-d5d1-5b8a-b567"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Melta Bombs",
-                    "hidden": false,
-                    "id": "f9bc-1143-7328-facc",
-                    "type": "selectionEntry",
-                    "targetId": "edbe-fcf8-664e-f90f",
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "2b83-f2d4-69c2-62e0"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ],
-                    "modifierGroups": [
-                      {
-                        "type": "and",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "b5cc-2852-871d-3ea8",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": true,
-                            "field": "hidden"
-                          },
-                          {
-                            "type": "set",
-                            "value": 0,
-                            "field": "2b83-f2d4-69c2-62e0"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "sortIndex": 4
-              },
-              {
                 "name": "May take one of the following",
                 "id": "6923-1a0e-b2d8-56fd",
                 "hidden": false,
@@ -4668,7 +4617,7 @@
                     ]
                   }
                 ],
-                "sortIndex": 5
+                "sortIndex": 4
               },
               {
                 "name": "Armour",
@@ -4837,7 +4786,7 @@
                     "id": "131c-b474-8637-229e-max"
                   }
                 ],
-                "sortIndex": 6
+                "sortIndex": 5
               }
             ],
             "profiles": [
@@ -6844,88 +6793,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "681c-695c-731f-b780"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "aa48-f6ad-905e-0925",
-            "comment": "Exclude self from decrement",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "0d53-97ee-08b5-589e",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "aa48-f6ad-905e-0925",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "2a53-ee7f-63e2-d63f",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "aa48-f6ad-905e-0925",
-            "repeats": [
-              {
-                "value": 1000,
-                "repeats": 1,
-                "field": "54b5-0978-c8a4-5b5a",
-                "scope": "roster",
-                "childId": "any",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": false,
-                "includeChildForces": false,
-                "percentValue": false
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "aa48-f6ad-905e-0925",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "b04f-6c8c-d63a-db03",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "aa48-f6ad-905e-0925",
-            "includeChildSelections": true
           }
         ],
         "sortIndex": 12,
@@ -13317,16 +13184,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "30a8-d745-f424-c2cb-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "b20c-28b8-59d3-eb7e",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
             ],
             "entryLinks": [
@@ -13538,42 +13395,6 @@
                     "name": "Sv",
                     "typeId": "dc1c-e152-7a5e-2c32",
                     "$text": "2+"
-                  }
-                ]
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "decrement",
-                "value": 1,
-                "field": "b20c-28b8-59d3-eb7e",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "08f5-cc3b-5be1-92cb",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  }
-                ]
-              },
-              {
-                "type": "increment",
-                "value": 1,
-                "field": "b20c-28b8-59d3-eb7e",
-                "comment": "Exclude self from decrement",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "e779-59c8-0cd9-d169",
-                    "shared": true,
-                    "includeChildSelections": true
                   }
                 ]
               }
@@ -20199,6 +20020,111 @@
                   }
                 ],
                 "defaultAmount": ""
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Cataphractii",
+                "hidden": false,
+                "id": "be69-4d1d-bd6a-daeb",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ec32-d8cb-e85e-4b85"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 0
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "increment",
+                    "value": 5,
+                    "field": "54b5-0978-c8a4-5b5a",
+                    "repeats": [
+                      {
+                        "value": 1,
+                        "repeats": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "model",
+                        "shared": true,
+                        "roundUp": false
+                      }
+                    ]
+                  },
+                  {
+                    "type": "add",
+                    "value": "b04f-6c8c-d63a-db03",
+                    "field": "category",
+                    "scope": "parent"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Relic of the Chapter",
+                    "id": "e67a-9c37-1ac9-77c6",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "681c-695c-731f-b780"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Tartaros",
+                "hidden": false,
+                "id": "9b82-33c4-1596-5bc9",
+                "modifiers": [
+                  {
+                    "type": "remove",
+                    "value": "33d0-319a-741e-573f",
+                    "field": "category",
+                    "scope": "parent",
+                    "affects": "self.entries"
+                  },
+                  {
+                    "type": "increment",
+                    "value": 1,
+                    "field": "69ed-cbc7-3fbc-7ba5",
+                    "affects": "self.entries.profiles.Unit",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "add",
+                    "value": "b04f-6c8c-d63a-db03",
+                    "field": "category",
+                    "scope": "parent"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a6dc-bca3-560d-c6d7"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Relic of the Chapter",
+                    "id": "0d65-9bf8-3762-15c9",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "681c-695c-731f-b780"
+                  }
+                ]
               }
             ],
             "constraints": [
@@ -44234,7 +44160,7 @@
                     "value": 20
                   }
                 ],
-                "sortIndex": 2
+                "sortIndex": 4
               },
               {
                 "import": true,
@@ -44409,6 +44335,59 @@
                     ]
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Hunter-killer Missile",
+                "hidden": true,
+                "id": "b9b1-b189-466d-1cbe",
+                "type": "selectionEntry",
+                "targetId": "d4fb-b433-66c7-290c",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4548-32a3-c126-ef25"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 2,
+                        "field": "4548-32a3-c126-ef25"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "19da-5911-82d7-6ddf",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "sortIndex": 5
               }
             ],
             "modifierGroups": [
@@ -44459,6 +44438,95 @@
                     "field": "selections",
                     "scope": "parent",
                     "childId": "26b6-b265-fc55-0f84",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "append",
+                    "value": "Proteus",
+                    "field": "name",
+                    "join": " "
+                  },
+                  {
+                    "type": "append",
+                    "value": "Proteus",
+                    "field": "name",
+                    "affects": "profiles.Model",
+                    "join": " "
+                  },
+                  {
+                    "type": "set",
+                    "value": "16",
+                    "field": "69ed-cbc7-3fbc-7ba5",
+                    "affects": "profiles.Model"
+                  },
+                  {
+                    "type": "set",
+                    "value": "5",
+                    "field": "08d3-1319-227b-1d5c",
+                    "affects": "profiles.Model"
+                  },
+                  {
+                    "type": "increment",
+                    "value": 10,
+                    "field": "54b5-0978-c8a4-5b5a"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "19da-5911-82d7-6ddf",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "append",
+                    "value": "Javelin",
+                    "field": "name",
+                    "join": " "
+                  },
+                  {
+                    "type": "append",
+                    "value": "Javelin",
+                    "field": "name",
+                    "affects": "profiles.Model",
+                    "join": " "
+                  },
+                  {
+                    "type": "set",
+                    "value": "6",
+                    "field": "08d3-1319-227b-1d5c",
+                    "affects": "profiles.Model"
+                  },
+                  {
+                    "type": "increment",
+                    "value": 20,
+                    "field": "54b5-0978-c8a4-5b5a"
+                  },
+                  {
+                    "type": "add",
+                    "value": "33d0-319a-741e-573f",
+                    "field": "category"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "f7e0-caa9-ebb0-4680",
                     "shared": true
                   }
                 ]
@@ -44556,7 +44624,371 @@
                   }
                 ],
                 "sortIndex": 1,
-                "defaultSelectionEntryId": "c209-78e3-8aab-4b6a"
+                "defaultSelectionEntryId": "c209-78e3-8aab-4b6a",
+                "selectionEntryGroups": [
+                  {
+                    "name": "Proteus Weapons",
+                    "id": "21e2-3158-a596-260a",
+                    "hidden": true,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Havoc Launcher",
+                        "hidden": false,
+                        "id": "1cc0-fb36-0d94-d7f0",
+                        "type": "selectionEntry",
+                        "targetId": "e582-7ecb-6a99-4d4b",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Multi-melta",
+                        "hidden": false,
+                        "id": "e9a1-a8be-397b-54e0",
+                        "type": "selectionEntry",
+                        "targetId": "25a2-0542-18d3-de18",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 15
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Plasma Cannon",
+                        "hidden": false,
+                        "id": "d14d-9de6-b03b-18fb",
+                        "type": "selectionEntry",
+                        "targetId": "9e6a-4ab3-72e7-95cb",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 15
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Graviton Gun",
+                        "hidden": false,
+                        "id": "2bb3-45b1-980e-559c",
+                        "type": "selectionEntry",
+                        "targetId": "8062-caf5-9cee-5699",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      }
+                    ],
+                    "flatten": true,
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "64ab-43fa-0c24-bc8c"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "64ab-43fa-0c24-bc8c"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "19da-5911-82d7-6ddf",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "May take one of the following",
+                "id": "be59-b2ea-e4cb-a4a2",
+                "hidden": true,
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "1fb9-a48b-df97-26b8"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "19da-5911-82d7-6ddf",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1fb9-a48b-df97-26b8"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "c961-38d8-05bf-c539"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Heavy Bolter",
+                    "hidden": false,
+                    "id": "1426-a361-ac5d-4f1f",
+                    "type": "selectionEntry",
+                    "targetId": "6ee1-c83b-803f-eedd",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Heavy Flamer",
+                    "hidden": false,
+                    "id": "4bca-3b39-0e35-bfaa",
+                    "type": "selectionEntry",
+                    "targetId": "c553-098b-dbb7-e3a9",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Havoc Launcher",
+                    "hidden": false,
+                    "id": "112c-6b2f-6ef9-27dd",
+                    "type": "selectionEntry",
+                    "targetId": "e582-7ecb-6a99-4d4b",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Multi-melta",
+                    "hidden": false,
+                    "id": "1f27-4bcf-ca01-b200",
+                    "type": "selectionEntry",
+                    "targetId": "25a2-0542-18d3-de18",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 20
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Plasma Cannon",
+                    "hidden": false,
+                    "id": "c914-c0a3-7d80-90f9",
+                    "type": "selectionEntry",
+                    "targetId": "9e6a-4ab3-72e7-95cb",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 20
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Graviton Gun",
+                    "hidden": false,
+                    "id": "8470-3460-50d1-bb39",
+                    "type": "selectionEntry",
+                    "targetId": "8062-caf5-9cee-5699",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 15
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 2
+              },
+              {
+                "name": "Must take one of the following",
+                "id": "2381-24eb-e70f-5d11",
+                "hidden": true,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "31b6-8396-a2d1-a8dd"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "5618-aefd-e687-0950"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4fa9-f1e9-9e8d-9afa"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "4fa9-f1e9-9e8d-9afa"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "f7e0-caa9-ebb0-4680",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Cyclone Missile Launcher (with Frag and Krak Missiles)",
+                    "hidden": false,
+                    "id": "9808-9ea0-72a4-d2a1",
+                    "type": "selectionEntry",
+                    "targetId": "3fed-2a00-a354-cd7a"
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Two Lascannons",
+                    "hidden": false,
+                    "id": "83df-7f95-364c-baa9",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Lascannon",
+                        "hidden": false,
+                        "id": "303f-63bd-22d3-fcdb",
+                        "type": "selectionEntry",
+                        "targetId": "efda-205b-9de9-28c8",
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "40b4-3aaa-0293-fbcc"
+                          },
+                          {
+                            "type": "max",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "49bf-08b1-d48e-cfcf"
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 35
+                      }
+                    ]
+                  }
+                ],
+                "defaultSelectionEntryId": "9808-9ea0-72a4-d2a1",
+                "sortIndex": 3
               }
             ],
             "sortIndex": 2
@@ -44639,6 +45071,54 @@
                 "name": "Tempest",
                 "hidden": false,
                 "id": "26b6-b265-fc55-0f84"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Javelin",
+                "hidden": false,
+                "id": "f7e0-caa9-ebb0-4680",
+                "infoLinks": [
+                  {
+                    "name": "Relic of the Chapter",
+                    "id": "ff5f-6de2-d776-cc7d",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "681c-695c-731f-b780"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "b04f-6c8c-d63a-db03",
+                    "field": "category",
+                    "scope": "parent"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Proteus",
+                "hidden": false,
+                "id": "19da-5911-82d7-6ddf",
+                "infoLinks": [
+                  {
+                    "name": "Relic of the Chapter",
+                    "id": "f0db-08de-612c-1092",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "681c-695c-731f-b780"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "b04f-6c8c-d63a-db03",
+                    "field": "category",
+                    "scope": "parent"
+                  }
+                ]
               }
             ],
             "constraints": [
@@ -44651,7 +45131,8 @@
                 "id": "73da-290b-6963-f9f7"
               }
             ],
-            "sortIndex": 1
+            "sortIndex": 1,
+            "defaultSelectionEntryId": "none"
           }
         ],
         "entryLinks": [
@@ -44948,1057 +45429,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4cc0-966b-ab26-0aa7"
-          }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
-        "name": "Relic Land Speeder Squadron",
-        "hidden": false,
-        "id": "b8dd-7aed-6ba9-f521",
-        "categoryLinks": [
-          {
-            "name": "Fast Attack",
-            "hidden": false,
-            "id": "5bb2-4626-dd47-b3cf",
-            "targetId": "2e5a-9101-3872-faad",
-            "primary": true
-          },
-          {
-            "name": "Relic of the Chapter",
-            "hidden": false,
-            "id": "6f63-7af6-1335-07ab",
-            "targetId": "b04f-6c8c-d63a-db03",
-            "primary": false
-          }
-        ],
-        "selectionEntries": [
-          {
-            "type": "model",
-            "import": true,
-            "name": "Land Speeder",
-            "hidden": false,
-            "id": "31f9-e93c-d36c-1704",
-            "profiles": [
-              {
-                "name": "Land Speeder",
-                "typeId": "dd4a-7345-17fe-9c76",
-                "typeName": "Model",
-                "hidden": false,
-                "id": "3bd7-4a73-a489-dbfe",
-                "characteristics": [
-                  {
-                    "name": "M",
-                    "typeId": "69ed-cbc7-3fbc-7ba5",
-                    "$text": "14"
-                  },
-                  {
-                    "name": "WS",
-                    "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "S",
-                    "typeId": "99ae-5644-9155-ae6e",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "T",
-                    "typeId": "08d3-1319-227b-1d5c",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "W",
-                    "typeId": "cdc0-9287-7039-4792",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "I",
-                    "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "A",
-                    "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Ld",
-                    "typeId": "d29a-9b6f-13a6-b7a8",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "Sv",
-                    "typeId": "dc1c-e152-7a5e-2c32",
-                    "$text": "3+"
-                  }
-                ]
-              }
-            ],
-            "categoryLinks": [
-              {
-                "name": "Cavalry",
-                "hidden": false,
-                "id": "dc2a-aef1-a0bd-2ec0",
-                "targetId": "8cce-2496-3746-4f06",
-                "primary": false
-              },
-              {
-                "name": "Antigrav",
-                "hidden": false,
-                "id": "001d-f51b-bc78-6171",
-                "targetId": "84f9-5c1d-9030-0686",
-                "primary": false
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "3ea1-fbe4-5481-0140"
-              },
-              {
-                "type": "max",
-                "value": 3,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "b44e-61d6-fe96-2c10"
-              }
-            ],
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "54b5-0978-c8a4-5b5a",
-                "value": 70
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Bolt Pistol",
-                "hidden": false,
-                "id": "3c12-6875-c347-23e8",
-                "type": "selectionEntry",
-                "targetId": "95f0-f427-49c0-c7e6",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "4dc9-69ba-8990-ba3d-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "4dc9-69ba-8990-ba3d-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Chainsword",
-                "hidden": false,
-                "id": "2562-9141-ff3e-407d",
-                "type": "selectionEntry",
-                "targetId": "e241-43f4-e619-113b",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e9c1-1489-920a-0c0a-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e9c1-1489-920a-0c0a-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Nuncio-vox",
-                "hidden": false,
-                "id": "f84f-1a5e-af88-050a",
-                "type": "selectionEntry",
-                "targetId": "f007-799e-11a5-c25b",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "1bd1-e1c3-b678-e479-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "1bd1-e1c3-b678-e479-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Power Armour",
-                "hidden": false,
-                "id": "9d1a-fb01-bd42-4e79",
-                "type": "selectionEntry",
-                "targetId": "c994-b8b2-8ccf-8a8c",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "73b6-ac45-00f6-5cfc-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "73b6-ac45-00f6-5cfc-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Typhoon Missile Launcher",
-                "hidden": false,
-                "id": "6ad1-5b9e-d2df-76ff",
-                "type": "selectionEntry",
-                "targetId": "43bd-d432-d27e-6cab",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "b317-1221-4d10-5e9e"
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 20
-                  }
-                ],
-                "sortIndex": 4
-              },
-              {
-                "import": true,
-                "name": "Hunter-killer Missile",
-                "hidden": true,
-                "id": "d3d5-852a-c223-c7c7",
-                "type": "selectionEntry",
-                "targetId": "d4fb-b433-66c7-290c",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "b91a-4323-afbc-e68e"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 2,
-                        "field": "b91a-4323-afbc-e68e"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "unit",
-                        "childId": "19da-5911-82d7-6ddf",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
-                "sortIndex": 5
-              }
-            ],
-            "modifierGroups": [
-              {
-                "type": "and",
-                "modifiers": [
-                  {
-                    "type": "append",
-                    "value": "Proteus",
-                    "field": "name",
-                    "join": " "
-                  },
-                  {
-                    "type": "append",
-                    "value": "Proteus",
-                    "field": "name",
-                    "affects": "profiles.Model",
-                    "join": " "
-                  },
-                  {
-                    "type": "set",
-                    "value": "16",
-                    "field": "69ed-cbc7-3fbc-7ba5",
-                    "affects": "profiles.Model"
-                  },
-                  {
-                    "type": "set",
-                    "value": "5",
-                    "field": "08d3-1319-227b-1d5c",
-                    "affects": "profiles.Model"
-                  },
-                  {
-                    "type": "increment",
-                    "value": 10,
-                    "field": "54b5-0978-c8a4-5b5a"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "19da-5911-82d7-6ddf",
-                    "shared": true
-                  }
-                ]
-              },
-              {
-                "type": "and",
-                "modifiers": [
-                  {
-                    "type": "append",
-                    "value": "Javelin",
-                    "field": "name",
-                    "join": " "
-                  },
-                  {
-                    "type": "append",
-                    "value": "Javelin",
-                    "field": "name",
-                    "affects": "profiles.Model",
-                    "join": " "
-                  },
-                  {
-                    "type": "set",
-                    "value": "6",
-                    "field": "08d3-1319-227b-1d5c",
-                    "affects": "profiles.Model"
-                  },
-                  {
-                    "type": "increment",
-                    "value": 20,
-                    "field": "54b5-0978-c8a4-5b5a"
-                  },
-                  {
-                    "type": "add",
-                    "value": "33d0-319a-741e-573f",
-                    "field": "category"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "f7e0-caa9-ebb0-4680",
-                    "shared": true
-                  }
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Must take one of the following",
-                "id": "a0ba-5645-9f94-e559",
-                "hidden": false,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Heavy Bolter",
-                    "hidden": false,
-                    "id": "90ff-5bdd-462c-8547",
-                    "type": "selectionEntry",
-                    "targetId": "6ee1-c83b-803f-eedd"
-                  },
-                  {
-                    "import": true,
-                    "name": "Heavy Flamer",
-                    "hidden": false,
-                    "id": "7239-fa63-a298-167e",
-                    "type": "selectionEntry",
-                    "targetId": "c553-098b-dbb7-e3a9"
-                  },
-                  {
-                    "import": true,
-                    "name": "Multi-melta",
-                    "hidden": false,
-                    "id": "fa39-5815-1904-f689",
-                    "type": "selectionEntry",
-                    "targetId": "25a2-0542-18d3-de18",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 15
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "9a0a-cdc0-a84e-85a0"
-                  },
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "e74e-1580-a6bb-cd30-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "e74e-1580-a6bb-cd30-max"
-                  }
-                ],
-                "sortIndex": 1,
-                "selectionEntryGroups": [
-                  {
-                    "name": "Proteus Weapons",
-                    "id": "21e2-3158-a596-260a",
-                    "hidden": true,
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Havoc Launcher",
-                        "hidden": false,
-                        "id": "1cc0-fb36-0d94-d7f0",
-                        "type": "selectionEntry",
-                        "targetId": "e582-7ecb-6a99-4d4b",
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 2
-                          }
-                        ]
-                      },
-                      {
-                        "import": true,
-                        "name": "Multi-melta",
-                        "hidden": false,
-                        "id": "e9a1-a8be-397b-54e0",
-                        "type": "selectionEntry",
-                        "targetId": "25a2-0542-18d3-de18",
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 15
-                          }
-                        ]
-                      },
-                      {
-                        "import": true,
-                        "name": "Plasma Cannon",
-                        "hidden": false,
-                        "id": "d14d-9de6-b03b-18fb",
-                        "type": "selectionEntry",
-                        "targetId": "9e6a-4ab3-72e7-95cb",
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 15
-                          }
-                        ]
-                      },
-                      {
-                        "import": true,
-                        "name": "Graviton Gun",
-                        "hidden": false,
-                        "id": "2bb3-45b1-980e-559c",
-                        "type": "selectionEntry",
-                        "targetId": "8062-caf5-9cee-5699",
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 10
-                          }
-                        ]
-                      }
-                    ],
-                    "flatten": true,
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 0,
-                        "field": "selections",
-                        "scope": "self",
-                        "shared": true,
-                        "id": "64ab-43fa-0c24-bc8c"
-                      }
-                    ],
-                    "modifierGroups": [
-                      {
-                        "type": "and",
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": false,
-                            "field": "hidden"
-                          },
-                          {
-                            "type": "set",
-                            "value": 1,
-                            "field": "64ab-43fa-0c24-bc8c"
-                          }
-                        ],
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "unit",
-                            "childId": "19da-5911-82d7-6ddf",
-                            "shared": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "defaultSelectionEntryId": "c209-78e3-8aab-4b6a"
-              },
-              {
-                "name": "May take one of the following",
-                "id": "62be-15bf-1fe1-f012",
-                "hidden": true,
-                "sortIndex": 2,
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "f0ce-836a-6f41-5993"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "unit",
-                        "childId": "19da-5911-82d7-6ddf",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f0ce-836a-6f41-5993"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "9003-c00e-8278-ef5a"
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Heavy Bolter",
-                    "hidden": false,
-                    "id": "9d1f-f1c9-69a0-7088",
-                    "type": "selectionEntry",
-                    "targetId": "6ee1-c83b-803f-eedd",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 5
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Heavy Flamer",
-                    "hidden": false,
-                    "id": "e48f-c99c-5e7d-4341",
-                    "type": "selectionEntry",
-                    "targetId": "c553-098b-dbb7-e3a9",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 5
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Havoc Launcher",
-                    "hidden": false,
-                    "id": "52b9-544e-336e-925b",
-                    "type": "selectionEntry",
-                    "targetId": "e582-7ecb-6a99-4d4b",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Multi-melta",
-                    "hidden": false,
-                    "id": "382f-a58e-ab33-ff54",
-                    "type": "selectionEntry",
-                    "targetId": "25a2-0542-18d3-de18",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 20
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Plasma Cannon",
-                    "hidden": false,
-                    "id": "f5f6-f129-0af9-7b80",
-                    "type": "selectionEntry",
-                    "targetId": "9e6a-4ab3-72e7-95cb",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 20
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Graviton Gun",
-                    "hidden": false,
-                    "id": "9ab8-d62f-829c-31a1",
-                    "type": "selectionEntry",
-                    "targetId": "8062-caf5-9cee-5699",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 15
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Must take one of the following",
-                "id": "45ad-e8e7-8cd8-4dee",
-                "hidden": true,
-                "sortIndex": 3,
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "6051-b2de-d4e6-77d2-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "6051-b2de-d4e6-77d2-max"
-                  },
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "27e3-d9d9-a219-ef63"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "27e3-d9d9-a219-ef63"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "unit",
-                        "childId": "f7e0-caa9-ebb0-4680",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Cyclone Missile Launcher (with Frag and Krak Missiles)",
-                    "hidden": false,
-                    "id": "9f54-2e53-019e-52dc",
-                    "type": "selectionEntry",
-                    "targetId": "3fed-2a00-a354-cd7a"
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Lascannons",
-                    "hidden": false,
-                    "id": "097e-1575-8982-f0ca",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Lascannon",
-                        "hidden": false,
-                        "id": "cc7d-1328-751f-7b86",
-                        "type": "selectionEntry",
-                        "targetId": "efda-205b-9de9-28c8",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "9ff2-134e-1011-330b-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "9ff2-134e-1011-330b-max"
-                          }
-                        ]
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 35
-                      }
-                    ]
-                  }
-                ],
-                "defaultSelectionEntryId": "4c73-6de8-d77d-e25b"
-              }
-            ],
-            "sortIndex": 2
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Outflank",
-            "id": "817f-86aa-af6a-5ee7",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9a5c-4c5f-9a8b-014d"
-          },
-          {
-            "name": "Hit & Run",
-            "id": "ae2f-5c7c-cd18-2306",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "8343-bec1-04b5-a8d4"
-          },
-          {
-            "name": "And They Shall Know No Fear",
-            "id": "d15c-9b05-83cc-b022",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Deep Strike",
-            "id": "f62f-c396-a5d8-fb53",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4aab-8d13-caf2-091d"
-          },
-          {
-            "name": "Firing Protocols",
-            "id": "c9d3-21a8-4270-e586",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2bf1-82e6-0cdd-3a40",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "4",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Harbingers of the Chapter",
-            "id": "f613-02e3-a774-5dcd",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2c3c-9121-d005-8454"
-          },
-          {
-            "name": "Relentless",
-            "id": "b853-2b76-be63-1603",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "919d-8ad9-f565-2b64"
-          },
-          {
-            "name": "Scout",
-            "id": "e417-d021-013f-0f77",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e18c-d4da-eb9b-919b"
-          },
-          {
-            "name": "Relic of the Chapter",
-            "id": "ced6-bb8a-872a-24bb",
-            "hidden": true,
-            "type": "rule",
-            "targetId": "681c-695c-731f-b780"
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Land Speeder Variant",
-            "id": "191f-df9a-7a22-ae55",
-            "hidden": false,
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Proteus",
-                "hidden": false,
-                "id": "19da-5911-82d7-6ddf"
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Javelin",
-                "hidden": false,
-                "id": "f7e0-caa9-ebb0-4680"
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "e9b1-20a5-15ef-3b7e-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "e9b1-20a5-15ef-3b7e-max"
-              }
-            ],
-            "sortIndex": 1,
-            "defaultSelectionEntryId": "19da-5911-82d7-6ddf"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "ca4a-2296-9de4-ad15",
-            "comment": "Exclude self from decrement",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "b8dd-7aed-6ba9-f521",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "ca4a-2296-9de4-ad15",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "2a53-ee7f-63e2-d63f",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "ca4a-2296-9de4-ad15",
-            "repeats": [
-              {
-                "value": 1000,
-                "repeats": 1,
-                "field": "54b5-0978-c8a4-5b5a",
-                "scope": "roster",
-                "childId": "any",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": false,
-                "includeChildForces": false,
-                "percentValue": false
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "ca4a-2296-9de4-ad15",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "b04f-6c8c-d63a-db03",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "ca4a-2296-9de4-ad15",
-            "includeChildSelections": true
-          }
-        ],
-        "sortIndex": 27,
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Chapter Tactics",
-            "hidden": false,
-            "id": "4fcf-672c-64d8-8e3d",
-            "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
           }
         ]
       },
@@ -50646,88 +50076,6 @@
             "targetId": "681c-695c-731f-b780"
           }
         ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "cd8b-8594-1bbc-6a4e",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "cd8b-8594-1bbc-6a4e",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "2a53-ee7f-63e2-d63f",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "cd8b-8594-1bbc-6a4e",
-            "repeats": [
-              {
-                "value": 1000,
-                "repeats": 1,
-                "field": "54b5-0978-c8a4-5b5a",
-                "scope": "roster",
-                "childId": "any",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": false,
-                "includeChildForces": false,
-                "percentValue": false
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "cd8b-8594-1bbc-6a4e",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "b04f-6c8c-d63a-db03",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "cd8b-8594-1bbc-6a4e",
-            "comment": "Exclude self from decrement",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "156b-7b47-55c5-ce92",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
         "entryLinks": [
           {
             "import": true,
@@ -51484,88 +50832,6 @@
             "sortIndex": 1
           }
         ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "bc36-a928-1383-0eaf",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "bc36-a928-1383-0eaf",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "2a53-ee7f-63e2-d63f",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "bc36-a928-1383-0eaf",
-            "repeats": [
-              {
-                "value": 1000,
-                "repeats": 1,
-                "field": "54b5-0978-c8a4-5b5a",
-                "scope": "roster",
-                "childId": "any",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": false,
-                "includeChildForces": false,
-                "percentValue": false
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "bc36-a928-1383-0eaf",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "b04f-6c8c-d63a-db03",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "bc36-a928-1383-0eaf",
-            "comment": "Exclude self from decrement",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "cdfb-ca49-e0bb-9215",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {
             "name": "Relic of the Chapter",
@@ -52149,6 +51415,36 @@
                         "name": "Points",
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 15
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Executioner Plasma Destroyer",
+                    "hidden": false,
+                    "id": "a5ea-537f-62b0-11fa",
+                    "type": "selectionEntry",
+                    "targetId": "7189-01ae-e282-a234",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Heavy Conversion Beam Cannon",
+                    "hidden": false,
+                    "id": "171b-4e26-728b-6f12",
+                    "type": "selectionEntry",
+                    "targetId": "4f88-7195-d317-8037",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
                       }
                     ]
                   }
@@ -52740,6 +52036,76 @@
                   }
                 ]
               }
+            ],
+            "infoLinks": [
+              {
+                "name": "Relic of the Chapter",
+                "id": "5971-d75f-bdde-006a",
+                "hidden": true,
+                "type": "rule",
+                "targetId": "681c-695c-731f-b780",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "self",
+                            "childId": "7189-01ae-e282-a234",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "self",
+                            "childId": "4f88-7195-d317-8037",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "b04f-6c8c-d63a-db03",
+                "field": "category",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "7189-01ae-e282-a234",
+                        "shared": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "4f88-7195-d317-8037",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "scope": "parent"
+              }
             ]
           }
         ],
@@ -53039,678 +52405,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "7566-b279-0ebd-607a"
-          }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
-        "name": "Relic Predator Main Battle Tank Squadron",
-        "hidden": false,
-        "id": "e801-d896-0250-1c98",
-        "categoryLinks": [
-          {
-            "name": "Heavy Support",
-            "hidden": false,
-            "id": "67b1-b278-e0de-7bf0",
-            "targetId": "1dff-e2a4-5442-6863",
-            "primary": true
-          },
-          {
-            "name": "Relic of the Chapter",
-            "hidden": false,
-            "id": "a7f0-36f7-644f-203a",
-            "targetId": "b04f-6c8c-d63a-db03",
-            "primary": false
-          }
-        ],
-        "selectionEntries": [
-          {
-            "type": "model",
-            "import": true,
-            "name": "Predator Main Battle Tank",
-            "hidden": false,
-            "id": "72cb-3308-6fca-a995",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "54b5-0978-c8a4-5b5a",
-                "value": 85
-              }
-            ],
-            "categoryLinks": [
-              {
-                "name": "Vehicle",
-                "hidden": false,
-                "id": "ed79-7c5b-0b42-f6bc",
-                "targetId": "188c-5472-9e2c-377c",
-                "primary": false
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "94ba-bf78-fa2b-e04b"
-              },
-              {
-                "type": "max",
-                "value": 3,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "69d0-31bf-0ede-1982"
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Predator Main Battle Tank",
-                "typeId": "554a-e6c5-2c57-a72e",
-                "typeName": "Vehicle",
-                "hidden": false,
-                "id": "a73e-4174-f6d7-de73",
-                "characteristics": [
-                  {
-                    "name": "M",
-                    "typeId": "d395-76ee-f82b-8906",
-                    "$text": "14"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "7249-616a-aae9-a930",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "Front",
-                    "typeId": "e5fc-83a0-3f81-7e69",
-                    "$text": "13"
-                  },
-                  {
-                    "name": "Side",
-                    "typeId": "77d5-df8c-7931-3f05",
-                    "$text": "12"
-                  },
-                  {
-                    "name": "Rear",
-                    "typeId": "ff76-e0b6-7d3a-bd72",
-                    "$text": "10"
-                  },
-                  {
-                    "name": "HP",
-                    "typeId": "a8d5-54a4-d247-236f",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Transport Capacity",
-                    "typeId": "c01c-1a8f-7f1d-1cb6",
-                    "$text": "-"
-                  }
-                ]
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Turret Mounted Weapon",
-                "id": "76b1-332e-815b-9d75",
-                "hidden": false,
-                "sortIndex": 1,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Predator Cannon",
-                    "hidden": false,
-                    "id": "8ccc-39db-99d5-e8f1",
-                    "type": "selectionEntry",
-                    "targetId": "8f52-934b-3c75-7269"
-                  },
-                  {
-                    "import": true,
-                    "name": "Executioner Plasma Destroyer",
-                    "hidden": false,
-                    "id": "75e9-f699-86ac-a00d",
-                    "type": "selectionEntry",
-                    "targetId": "7189-01ae-e282-a234",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 25
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Heavy Conversion Beam Cannon",
-                    "hidden": false,
-                    "id": "0fda-bef9-ceac-50ea",
-                    "type": "selectionEntry",
-                    "targetId": "4f88-7195-d317-8037",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 25
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Flamestorm Cannon",
-                    "hidden": false,
-                    "id": "ce49-e1c2-06e0-70c9",
-                    "type": "selectionEntry",
-                    "targetId": "af4b-38d1-1c35-cd05",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 15
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Gravis Lascannon",
-                    "hidden": false,
-                    "id": "e9f2-889c-bd5f-a5e5",
-                    "type": "selectionEntry",
-                    "targetId": "6396-0471-7214-a97e",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 30
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "6b3c-afcc-2d68-44aa-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "6b3c-afcc-2d68-44aa-max"
-                  }
-                ],
-                "defaultSelectionEntryId": "8ccc-39db-99d5-e8f1"
-              },
-              {
-                "name": "Sponson Mounted Weapons",
-                "id": "2987-aaf6-adeb-127a",
-                "hidden": false,
-                "sortIndex": 2,
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Heavy Bolters",
-                    "hidden": false,
-                    "id": "157a-6f2f-c32f-a6b5",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Heavy Bolter",
-                        "hidden": false,
-                        "id": "4124-b03c-c5d0-a71f",
-                        "type": "selectionEntry",
-                        "targetId": "6ee1-c83b-803f-eedd",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "3941-f63a-7e04-f4c3-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "3941-f63a-7e04-f4c3-max"
-                          }
-                        ]
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 20
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Heavy Flamers",
-                    "hidden": false,
-                    "id": "9e70-947f-da82-00a6",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Heavy Flamer",
-                        "hidden": false,
-                        "id": "f229-e567-2121-1e98",
-                        "type": "selectionEntry",
-                        "targetId": "c553-098b-dbb7-e3a9",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "ba56-44cf-d5ec-2f34-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "ba56-44cf-d5ec-2f34-max"
-                          }
-                        ]
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 20
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Lascannons",
-                    "hidden": false,
-                    "id": "48b4-dfe7-d070-e827",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Lascannon",
-                        "hidden": false,
-                        "id": "1e79-28c8-19b6-285c",
-                        "type": "selectionEntry",
-                        "targetId": "efda-205b-9de9-28c8",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "9ec2-b0c0-2d08-450b-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "9ec2-b0c0-2d08-450b-max"
-                          }
-                        ]
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 35
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "fb96-0550-2713-590e"
-                  }
-                ]
-              },
-              {
-                "name": "Pintle Mounted Weapon",
-                "id": "6f5d-6929-9118-fd90",
-                "hidden": false,
-                "sortIndex": 3,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Storm Bolter",
-                    "hidden": false,
-                    "id": "cbe0-24b9-e94d-ced6",
-                    "type": "selectionEntry",
-                    "targetId": "b584-e06b-ebeb-4d04",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 5
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-flamer",
-                    "hidden": false,
-                    "id": "d010-04af-a2d9-5223",
-                    "type": "selectionEntry",
-                    "targetId": "0a91-723e-9342-a64b",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-grenade launcher",
-                    "hidden": false,
-                    "id": "7520-520b-d2ca-d8a0",
-                    "type": "selectionEntry",
-                    "targetId": "b373-4fd7-8f20-a4d8",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-melta",
-                    "hidden": false,
-                    "id": "3ccd-4cee-3d36-bc0f",
-                    "type": "selectionEntry",
-                    "targetId": "ab66-c50b-b845-20da",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-plasma",
-                    "hidden": false,
-                    "id": "d2b0-f550-ebe3-bfcf",
-                    "type": "selectionEntry",
-                    "targetId": "5237-5fab-96cd-13a9",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "1601-91ca-a6a2-ddf2"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Hunter-killer Missile",
-                "hidden": false,
-                "id": "785a-f1a1-b9a2-05d5",
-                "type": "selectionEntry",
-                "targetId": "d4fb-b433-66c7-290c",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "4906-29bf-81ab-7c2f"
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Hull (Front) Mounted",
-                    "field": "name",
-                    "join": " "
-                  }
-                ],
-                "sortIndex": 4,
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Searchlight",
-                "hidden": false,
-                "id": "d047-f493-e4c7-e4dd",
-                "type": "selectionEntry",
-                "targetId": "3fea-c3e0-03e1-e444",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "33b4-0978-0acf-89e9"
-                  }
-                ],
-                "sortIndex": 5,
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Dozer Blade",
-                "hidden": false,
-                "id": "0628-4ee9-2e1c-1459",
-                "type": "selectionEntry",
-                "targetId": "159d-670b-9d89-232f",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "475a-e973-fdb5-9871"
-                  }
-                ],
-                "sortIndex": 6,
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Smoke Launchers",
-                "hidden": false,
-                "id": "ed37-e7ac-80ff-d98b",
-                "type": "selectionEntry",
-                "targetId": "22fa-9cf0-d02c-edea",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "bde1-6fed-e2f5-e1d0-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "bde1-6fed-e2f5-e1d0-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Overcharged Engines",
-                "hidden": false,
-                "id": "cdfb-dcae-c25c-c1dd",
-                "type": "selectionEntry",
-                "targetId": "377d-da89-6aa5-54eb",
-                "sortIndex": 7
-              }
-            ],
-            "sortIndex": 1
-          }
-        ],
-        "sortIndex": 35,
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "5c6e-a3e5-3fc0-0718",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "2a53-ee7f-63e2-d63f",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "5c6e-a3e5-3fc0-0718",
-            "repeats": [
-              {
-                "value": 1000,
-                "repeats": 1,
-                "field": "54b5-0978-c8a4-5b5a",
-                "scope": "roster",
-                "childId": "any",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": false,
-                "includeChildForces": false,
-                "percentValue": false
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "5c6e-a3e5-3fc0-0718",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "b04f-6c8c-d63a-db03",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "5c6e-a3e5-3fc0-0718",
-            "comment": "Exclude self from decrement",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "e801-d896-0250-1c98",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Relic of the Chapter",
-            "id": "cb98-2348-094f-6470",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "681c-695c-731f-b780"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "5c6e-a3e5-3fc0-0718",
-            "includeChildSelections": true
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Chapter Tactics",
-            "hidden": false,
-            "id": "1143-0554-a526-7aa9",
-            "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
           }
         ]
       },
@@ -58647,88 +57341,6 @@
             "type": "rule",
             "targetId": "681c-695c-731f-b780"
           }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "e01a-6244-3e74-8ea3",
-            "comment": "Exclude self from decrement",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "5e9c-81b8-cd07-604c",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "e01a-6244-3e74-8ea3",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "2a53-ee7f-63e2-d63f",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "e01a-6244-3e74-8ea3",
-            "repeats": [
-              {
-                "value": 1000,
-                "repeats": 1,
-                "field": "54b5-0978-c8a4-5b5a",
-                "scope": "roster",
-                "childId": "any",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": false,
-                "includeChildForces": false,
-                "percentValue": false
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "e01a-6244-3e74-8ea3",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "b04f-6c8c-d63a-db03",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "e01a-6244-3e74-8ea3",
-            "includeChildSelections": true
-          }
         ]
       },
       {
@@ -59909,88 +58521,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "681c-695c-731f-b780"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "bbcf-cfcb-37e0-5af1",
-            "comment": "Exclude self from decrement",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "8d2c-a2f9-9308-6032",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "bbcf-cfcb-37e0-5af1",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "2a53-ee7f-63e2-d63f",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "bbcf-cfcb-37e0-5af1",
-            "repeats": [
-              {
-                "value": 1000,
-                "repeats": 1,
-                "field": "54b5-0978-c8a4-5b5a",
-                "scope": "roster",
-                "childId": "any",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": false,
-                "includeChildForces": false,
-                "percentValue": false
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "bbcf-cfcb-37e0-5af1",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "b04f-6c8c-d63a-db03",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "bbcf-cfcb-37e0-5af1",
-            "includeChildSelections": true
           }
         ],
         "entryLinks": [
@@ -63054,1740 +61584,6 @@
         ]
       },
       {
-        "type": "unit",
-        "import": true,
-        "name": "Relic Terminator Squad",
-        "hidden": false,
-        "id": "840d-afc9-2af9-9958",
-        "categoryLinks": [
-          {
-            "name": "Elites",
-            "hidden": false,
-            "id": "5c18-1df5-53a0-056b",
-            "targetId": "a300-5393-99ea-9657",
-            "primary": true
-          },
-          {
-            "name": "Relic of the Chapter",
-            "hidden": false,
-            "id": "19b6-75c5-b4d9-c48e",
-            "targetId": "b04f-6c8c-d63a-db03",
-            "primary": false
-          }
-        ],
-        "selectionEntries": [
-          {
-            "type": "model",
-            "import": true,
-            "name": "Terminator Sergeant",
-            "hidden": false,
-            "id": "9d29-6f40-fe2d-3a95",
-            "sortIndex": 1,
-            "profiles": [
-              {
-                "name": "Terminator Sergeant",
-                "typeId": "dd4a-7345-17fe-9c76",
-                "typeName": "Model",
-                "hidden": false,
-                "id": "c4c5-11d6-1064-f083",
-                "characteristics": [
-                  {
-                    "name": "M",
-                    "typeId": "69ed-cbc7-3fbc-7ba5",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "WS",
-                    "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "S",
-                    "typeId": "99ae-5644-9155-ae6e",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "T",
-                    "typeId": "08d3-1319-227b-1d5c",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "W",
-                    "typeId": "cdc0-9287-7039-4792",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "I",
-                    "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "A",
-                    "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Ld",
-                    "typeId": "d29a-9b6f-13a6-b7a8",
-                    "$text": "8"
-                  },
-                  {
-                    "name": "Sv",
-                    "typeId": "dc1c-e152-7a5e-2c32",
-                    "$text": "2+"
-                  }
-                ]
-              }
-            ],
-            "categoryLinks": [
-              {
-                "name": "Infantry",
-                "hidden": false,
-                "id": "2e06-f154-2d30-078e",
-                "targetId": "c447-1b05-5ba8-846a",
-                "primary": false
-              },
-              {
-                "name": "Character",
-                "hidden": false,
-                "id": "3edb-1dba-26c7-9fc7",
-                "targetId": "c0e6-28aa-5286-2fa2",
-                "primary": false
-              },
-              {
-                "name": "Heavy",
-                "hidden": false,
-                "id": "b78e-ed4c-db2e-a3c1",
-                "targetId": "33d0-319a-741e-573f",
-                "primary": false
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "dc24-227f-5935-8670"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "265c-c9db-1758-d10e"
-              }
-            ],
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "54b5-0978-c8a4-5b5a",
-                "value": 63
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Squad Banner",
-                "hidden": false,
-                "id": "931e-0d8d-602b-59c0",
-                "type": "selectionEntry",
-                "targetId": "b5de-e033-69dd-0a1f",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "unit",
-                    "shared": true,
-                    "id": "f5ae-879d-4164-3e51",
-                    "includeChildSelections": true
-                  }
-                ],
-                "sortIndex": 4,
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 10
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Auspex",
-                "hidden": false,
-                "id": "506d-851b-a838-a6a1",
-                "type": "selectionEntry",
-                "targetId": "70f2-7e7e-fb7a-1eae",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "unit",
-                    "shared": true,
-                    "id": "31a6-c702-8ad2-264c",
-                    "includeChildSelections": true
-                  }
-                ],
-                "sortIndex": 5,
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 10
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Nuncio-vox",
-                "hidden": false,
-                "id": "806d-daa4-1668-99ac",
-                "type": "selectionEntry",
-                "targetId": "f007-799e-11a5-c25b",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "unit",
-                    "shared": true,
-                    "id": "ffba-2037-7eaa-3d5f",
-                    "includeChildSelections": true
-                  }
-                ],
-                "sortIndex": 6,
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 10
-                  }
-                ]
-              }
-            ],
-            "collapsible": true,
-            "selectionEntryGroups": [
-              {
-                "name": "Melee Weapon",
-                "id": "1910-72bc-5e8d-ab1f",
-                "hidden": false,
-                "sortIndex": 2,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Power Sword",
-                    "hidden": false,
-                    "id": "2a2c-8f86-1e33-0a5b",
-                    "type": "selectionEntry",
-                    "targetId": "96af-5a12-180a-5e1a",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Master-crafted",
-                        "hidden": false,
-                        "id": "8992-61a4-4ee0-4914",
-                        "type": "selectionEntryGroup",
-                        "targetId": "c044-d3ec-ebc4-d882"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Master-crafted",
-                        "id": "fdf8-e0d1-78ba-0c65",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "0371-1ea2-8615-e03a"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Master-crafted",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Axe",
-                    "hidden": false,
-                    "id": "33a8-c0d1-a3ec-839e",
-                    "type": "selectionEntry",
-                    "targetId": "bf27-0933-e41a-a152",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Master-crafted",
-                        "hidden": false,
-                        "id": "d351-3641-3b7a-fae3",
-                        "type": "selectionEntryGroup",
-                        "targetId": "c044-d3ec-ebc4-d882"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Master-crafted",
-                        "id": "9c8b-9749-4d37-4d51",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "0371-1ea2-8615-e03a"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Master-crafted",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Lance",
-                    "hidden": false,
-                    "id": "f921-8591-4454-d32e",
-                    "type": "selectionEntry",
-                    "targetId": "0782-556c-5445-66ad",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Master-crafted",
-                        "hidden": false,
-                        "id": "7430-9802-a1a5-4afa",
-                        "type": "selectionEntryGroup",
-                        "targetId": "c044-d3ec-ebc4-d882"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Master-crafted",
-                        "id": "5233-51ce-cafd-2484",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "0371-1ea2-8615-e03a"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Master-crafted",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Maul",
-                    "hidden": false,
-                    "id": "81bf-7136-5bce-bde2",
-                    "type": "selectionEntry",
-                    "targetId": "ad60-6ada-12a7-f47c",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Master-crafted",
-                        "hidden": false,
-                        "id": "6dca-e233-4256-56f4",
-                        "type": "selectionEntryGroup",
-                        "targetId": "c044-d3ec-ebc4-d882"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Master-crafted",
-                        "id": "4577-b44c-d667-2c71",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "0371-1ea2-8615-e03a"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Master-crafted",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Fist",
-                    "hidden": false,
-                    "id": "8d9c-0f53-d1a9-a6be",
-                    "type": "selectionEntry",
-                    "targetId": "4794-290c-551d-1aa9",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Master-crafted",
-                        "hidden": false,
-                        "id": "b767-a75a-54d8-7e12",
-                        "type": "selectionEntryGroup",
-                        "targetId": "c044-d3ec-ebc4-d882"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Master-crafted",
-                        "id": "115b-0973-6c65-ab55",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "0371-1ea2-8615-e03a"
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Axe",
-                    "hidden": false,
-                    "id": "2d49-ca99-0c9c-3cb3",
-                    "type": "selectionEntry",
-                    "targetId": "bf27-0933-e41a-a152"
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Lance",
-                    "hidden": false,
-                    "id": "2f1e-d464-bff5-d0f8",
-                    "type": "selectionEntry",
-                    "targetId": "0782-556c-5445-66ad"
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Maul",
-                    "hidden": false,
-                    "id": "f4fa-251d-354b-14e5",
-                    "type": "selectionEntry",
-                    "targetId": "ad60-6ada-12a7-f47c"
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Sword",
-                    "hidden": false,
-                    "id": "f869-b992-633e-103b",
-                    "type": "selectionEntry",
-                    "targetId": "96af-5a12-180a-5e1a"
-                  },
-                  {
-                    "import": true,
-                    "name": "Chainfist",
-                    "hidden": false,
-                    "id": "6132-9647-5a11-e4b6",
-                    "type": "selectionEntry",
-                    "targetId": "5cb9-e679-9081-314a",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 5
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Encarmine Axe",
-                    "hidden": false,
-                    "id": "e651-ab61-6c46-df66",
-                    "type": "selectionEntry",
-                    "targetId": "f0d3-3459-fbf1-8af4"
-                  },
-                  {
-                    "import": true,
-                    "name": "Encarmine Sword",
-                    "hidden": false,
-                    "id": "b12f-24ec-5d6a-81d7",
-                    "type": "selectionEntry",
-                    "targetId": "219f-5562-6eaf-590c"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "89a1-c844-2fac-27c6"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "33b2-8a5f-690f-f626"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e07d-a347-9267-40c6"
-                  }
-                ],
-                "defaultSelectionEntryId": "24e9-3be0-3ee1-7f78",
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": 0,
-                        "field": "e07d-a347-9267-40c6"
-                      },
-                      {
-                        "type": "set",
-                        "value": true,
-                        "field": "hidden"
-                      }
-                    ],
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "85b5-8851-257b-af9a",
-                            "shared": true
-                          },
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "b29a-6ed6-65fd-d656",
-                            "shared": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Paired Weapons",
-                "id": "34fe-bf1c-dd93-1629",
-                "hidden": false,
-                "flatten": true,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Two Lightning Claws",
-                    "hidden": false,
-                    "id": "55f5-e8ac-01d8-261e",
-                    "type": "selectionEntry",
-                    "targetId": "85b5-8851-257b-af9a"
-                  },
-                  {
-                    "import": true,
-                    "name": "Thunder Hammer and Storm Shield",
-                    "hidden": false,
-                    "id": "4109-2fea-a203-dd71",
-                    "type": "selectionEntry",
-                    "targetId": "b29a-6ed6-65fd-d656",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 20
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5f0f-37ee-a851-cd5f"
-                  }
-                ],
-                "sortIndex": 3
-              },
-              {
-                "name": "Ranged Weapon",
-                "id": "fdca-d4c7-9ae8-5546",
-                "hidden": false,
-                "sortIndex": 1,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Storm Bolter",
-                    "hidden": false,
-                    "id": "ae4f-0775-3d36-4e49",
-                    "type": "selectionEntry",
-                    "targetId": "b584-e06b-ebeb-4d04"
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-flamer",
-                    "hidden": false,
-                    "id": "3e08-1aca-bf51-9d70",
-                    "type": "selectionEntry",
-                    "targetId": "0a91-723e-9342-a64b",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 5
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-grenade launcher",
-                    "hidden": false,
-                    "id": "93ac-9fbc-01c2-0816",
-                    "type": "selectionEntry",
-                    "targetId": "b373-4fd7-8f20-a4d8",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 5
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-melta",
-                    "hidden": false,
-                    "id": "3426-6b92-7714-e7ed",
-                    "type": "selectionEntry",
-                    "targetId": "ab66-c50b-b845-20da",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-plasma",
-                    "hidden": false,
-                    "id": "63d0-eb0b-b236-c74f",
-                    "type": "selectionEntry",
-                    "targetId": "5237-5fab-96cd-13a9",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "b9f0-50c6-4a95-2d70"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "b015-ed73-0084-c392"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "8d50-3bb3-6642-927d"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": 0,
-                        "field": "8d50-3bb3-6642-927d"
-                      },
-                      {
-                        "type": "set",
-                        "value": true,
-                        "field": "hidden"
-                      }
-                    ],
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "85b5-8851-257b-af9a",
-                            "shared": true
-                          },
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "b29a-6ed6-65fd-d656",
-                            "shared": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "defaultSelectionEntryId": "5a5c-6c90-aa15-d2ab"
-              }
-            ]
-          },
-          {
-            "type": "model",
-            "import": true,
-            "name": "Terminator",
-            "hidden": false,
-            "id": "a965-b968-ed35-a67a",
-            "profiles": [
-              {
-                "name": "Terminator",
-                "typeId": "dd4a-7345-17fe-9c76",
-                "typeName": "Model",
-                "hidden": false,
-                "id": "cacf-0ee1-2ca2-d72b",
-                "characteristics": [
-                  {
-                    "name": "M",
-                    "typeId": "69ed-cbc7-3fbc-7ba5",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "WS",
-                    "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "S",
-                    "typeId": "99ae-5644-9155-ae6e",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "T",
-                    "typeId": "08d3-1319-227b-1d5c",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "W",
-                    "typeId": "cdc0-9287-7039-4792",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "I",
-                    "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "A",
-                    "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Ld",
-                    "typeId": "d29a-9b6f-13a6-b7a8",
-                    "$text": "8"
-                  },
-                  {
-                    "name": "Sv",
-                    "typeId": "dc1c-e152-7a5e-2c32",
-                    "$text": "2+"
-                  }
-                ]
-              }
-            ],
-            "sortIndex": 2,
-            "categoryLinks": [
-              {
-                "name": "Infantry",
-                "hidden": false,
-                "id": "9d5f-868a-9486-8b44",
-                "targetId": "c447-1b05-5ba8-846a",
-                "primary": false
-              },
-              {
-                "name": "Heavy",
-                "hidden": false,
-                "id": "935b-07ac-1920-9e51",
-                "targetId": "33d0-319a-741e-573f",
-                "primary": false
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 4,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "49b8-0c43-8c1c-5290"
-              },
-              {
-                "type": "max",
-                "value": 9,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "0e47-e245-2b32-20a4"
-              }
-            ],
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "54b5-0978-c8a4-5b5a",
-                "value": 28
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Squad Banner",
-                "hidden": false,
-                "id": "7eb3-be57-a192-8de6",
-                "type": "selectionEntry",
-                "targetId": "b5de-e033-69dd-0a1f",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "unit",
-                    "shared": true,
-                    "id": "36b5-fa7e-bc62-bb8c",
-                    "includeChildSelections": true
-                  }
-                ],
-                "sortIndex": 4
-              },
-              {
-                "import": true,
-                "name": "Auspex",
-                "hidden": false,
-                "id": "8ac5-d416-9013-75d3",
-                "type": "selectionEntry",
-                "targetId": "70f2-7e7e-fb7a-1eae",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "unit",
-                    "shared": true,
-                    "id": "23fa-75b7-cfee-de98",
-                    "includeChildSelections": true
-                  }
-                ],
-                "sortIndex": 5
-              },
-              {
-                "import": true,
-                "name": "Nuncio-vox",
-                "hidden": false,
-                "id": "d842-edf2-6f6a-fb57",
-                "type": "selectionEntry",
-                "targetId": "f007-799e-11a5-c25b",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "unit",
-                    "shared": true,
-                    "id": "8f5e-7060-3451-a678",
-                    "includeChildSelections": true
-                  }
-                ],
-                "sortIndex": 6
-              }
-            ],
-            "collapsible": true,
-            "selectionEntryGroups": [
-              {
-                "name": "Ranged Weapon",
-                "id": "2edc-8700-5007-3609",
-                "hidden": false,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Storm Bolter",
-                    "hidden": false,
-                    "id": "7c7f-b90c-ed26-cae4",
-                    "type": "selectionEntry",
-                    "targetId": "b584-e06b-ebeb-4d04"
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-flamer",
-                    "hidden": false,
-                    "id": "75ce-4c5f-4988-6b5a",
-                    "type": "selectionEntry",
-                    "targetId": "0a91-723e-9342-a64b",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 5
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-grenade launcher",
-                    "hidden": false,
-                    "id": "1b4e-8599-8182-3b3e",
-                    "type": "selectionEntry",
-                    "targetId": "b373-4fd7-8f20-a4d8",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 5
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-melta",
-                    "hidden": false,
-                    "id": "a669-b0f2-03b1-98c1",
-                    "type": "selectionEntry",
-                    "targetId": "ab66-c50b-b845-20da",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Combi-plasma",
-                    "hidden": false,
-                    "id": "e4d1-1085-6f0c-37f6",
-                    "type": "selectionEntry",
-                    "targetId": "5237-5fab-96cd-13a9",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 10
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "c6e2-b40c-f480-e9ef"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "19ec-b677-ae94-d27c"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "6b0e-7718-d5ec-b486"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": 0,
-                        "field": "6b0e-7718-d5ec-b486"
-                      },
-                      {
-                        "type": "set",
-                        "value": true,
-                        "field": "hidden"
-                      }
-                    ],
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "85b5-8851-257b-af9a",
-                            "shared": true
-                          },
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "b29a-6ed6-65fd-d656",
-                            "shared": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "sortIndex": 1,
-                "defaultSelectionEntryId": "a0b2-368d-7781-4424",
-                "selectionEntryGroups": [
-                  {
-                    "name": "For every 5 models",
-                    "id": "6371-653a-4f5a-d440",
-                    "hidden": false,
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Assault Cannon",
-                        "hidden": false,
-                        "id": "86a1-d71c-886b-4e8d",
-                        "type": "selectionEntry",
-                        "targetId": "7f93-a2d4-3040-fc41",
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 15
-                          }
-                        ]
-                      },
-                      {
-                        "import": true,
-                        "name": "Heavy Flamer",
-                        "hidden": false,
-                        "id": "4392-b2e3-084e-1700",
-                        "type": "selectionEntry",
-                        "targetId": "c553-098b-dbb7-e3a9",
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 5
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 0,
-                        "field": "selections",
-                        "scope": "self",
-                        "shared": true,
-                        "id": "030e-ad62-a5f4-0fae"
-                      },
-                      {
-                        "type": "max",
-                        "value": 0,
-                        "field": "selections",
-                        "scope": "unit",
-                        "shared": true,
-                        "id": "de50-6719-14b2-30f3",
-                        "includeChildSelections": true
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "increment",
-                        "value": 1,
-                        "field": "030e-ad62-a5f4-0fae",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 5,
-                            "field": "selections",
-                            "scope": "unit",
-                            "childId": "model",
-                            "shared": true
-                          }
-                        ]
-                      },
-                      {
-                        "type": "increment",
-                        "value": 1,
-                        "field": "de50-6719-14b2-30f3",
-                        "repeats": [
-                          {
-                            "value": 5,
-                            "repeats": 1,
-                            "field": "selections",
-                            "scope": "unit",
-                            "childId": "model",
-                            "shared": true,
-                            "roundUp": false
-                          }
-                        ]
-                      }
-                    ],
-                    "selectionEntries": [
-                      {
-                        "type": "upgrade",
-                        "import": true,
-                        "name": "Cyclone Missile Launcher and Storm Bolter",
-                        "hidden": false,
-                        "id": "20b0-3057-6510-ee83",
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 25
-                          }
-                        ],
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Cyclone Missile Launcher",
-                            "hidden": false,
-                            "id": "6ec3-1a37-dde7-3e6d",
-                            "type": "selectionEntry",
-                            "targetId": "d584-b499-8cf8-e1b6",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "dbfa-95f6-2cd1-168e"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "9c00-a10a-efe0-cfcc"
-                              }
-                            ]
-                          },
-                          {
-                            "import": true,
-                            "name": "Storm Bolter",
-                            "hidden": false,
-                            "id": "e08a-da68-404f-cd4c",
-                            "type": "selectionEntry",
-                            "targetId": "b584-e06b-ebeb-4d04",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "fb33-8667-2b7a-f8bc"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "a29c-e508-68ab-b18c"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Melee Weapon",
-                "id": "d1c9-6815-1c4e-bffb",
-                "hidden": false,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Power Fist",
-                    "hidden": false,
-                    "id": "55ba-718b-471e-4546",
-                    "type": "selectionEntry",
-                    "targetId": "4794-290c-551d-1aa9"
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Axe",
-                    "hidden": false,
-                    "id": "183d-0080-1d5a-5946",
-                    "type": "selectionEntry",
-                    "targetId": "bf27-0933-e41a-a152"
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Lance",
-                    "hidden": false,
-                    "id": "a446-7ef0-94c2-b73d",
-                    "type": "selectionEntry",
-                    "targetId": "0782-556c-5445-66ad"
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Maul",
-                    "hidden": false,
-                    "id": "3065-f25d-28d4-f9d2",
-                    "type": "selectionEntry",
-                    "targetId": "ad60-6ada-12a7-f47c"
-                  },
-                  {
-                    "import": true,
-                    "name": "Power Sword",
-                    "hidden": false,
-                    "id": "3198-8f46-d27f-d892",
-                    "type": "selectionEntry",
-                    "targetId": "96af-5a12-180a-5e1a"
-                  },
-                  {
-                    "import": true,
-                    "name": "Chainfist",
-                    "hidden": false,
-                    "id": "1067-86ff-b43f-201c",
-                    "type": "selectionEntry",
-                    "targetId": "5cb9-e679-9081-314a",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 5
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "0641-361b-bb55-6db1"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "7999-13ca-7618-62e5"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7124-0423-33c4-a7a4"
-                  }
-                ],
-                "defaultSelectionEntryId": "4bcc-a1de-9ff9-c91b",
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": 0,
-                        "field": "7124-0423-33c4-a7a4"
-                      },
-                      {
-                        "type": "set",
-                        "value": true,
-                        "field": "hidden"
-                      }
-                    ],
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "85b5-8851-257b-af9a",
-                            "shared": true
-                          },
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "b29a-6ed6-65fd-d656",
-                            "shared": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "sortIndex": 2
-              },
-              {
-                "name": "Paired Weapons",
-                "id": "a985-00a9-8a1f-c223",
-                "hidden": false,
-                "flatten": true,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Two Lightning Claws",
-                    "hidden": false,
-                    "id": "c721-75af-6fa5-80bb",
-                    "type": "selectionEntry",
-                    "targetId": "85b5-8851-257b-af9a"
-                  },
-                  {
-                    "import": true,
-                    "name": "Thunder Hammer and Storm Shield",
-                    "hidden": false,
-                    "id": "24a3-e563-af55-10cf",
-                    "type": "selectionEntry",
-                    "targetId": "b29a-6ed6-65fd-d656",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 20
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7783-ef54-0fea-b931"
-                  }
-                ],
-                "sortIndex": 3
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Relentless",
-            "id": "34c2-b543-4c40-c654",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "919d-8ad9-f565-2b64"
-          },
-          {
-            "name": "Inexorable",
-            "id": "2506-d999-9452-39e7",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1f1d-9364-4027-26a4"
-          },
-          {
-            "name": "Bulky",
-            "id": "ea6d-5998-d455-f503",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "8317-bc69-b786-390d",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "2",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "And They Shall Know No Fear",
-            "id": "0f41-698f-d72b-ca64",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Combat Squads",
-            "id": "01de-b26d-0c8d-6b78",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cdc3-799d-c3cd-995d"
-          },
-          {
-            "name": "Deep Strike",
-            "id": "758b-920b-0795-84a7",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4aab-8d13-caf2-091d",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "977d-cbec-5d1a-64cb",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Relic of the Chapter",
-            "id": "19f7-0763-9dee-8111",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "681c-695c-731f-b780"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "45a2-96c3-8c31-fd28",
-            "includeChildSelections": true
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Terminator Armour",
-            "id": "8234-3100-8a20-2dd3",
-            "hidden": false,
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Cataphractii",
-                "hidden": false,
-                "id": "93fb-93d1-004d-3877",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "963f-a73d-cbd9-d8d1"
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 0
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "increment",
-                    "value": 5,
-                    "field": "54b5-0978-c8a4-5b5a",
-                    "repeats": [
-                      {
-                        "value": 1,
-                        "repeats": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "model",
-                        "shared": true,
-                        "roundUp": false
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Tartaros",
-                "hidden": false,
-                "id": "8c65-dbb4-e200-3e0d",
-                "modifiers": [
-                  {
-                    "type": "remove",
-                    "value": "33d0-319a-741e-573f",
-                    "field": "category",
-                    "scope": "parent",
-                    "affects": "self.entries"
-                  },
-                  {
-                    "type": "increment",
-                    "value": 1,
-                    "field": "69ed-cbc7-3fbc-7ba5",
-                    "affects": "self.entries.profiles.Unit",
-                    "scope": "parent"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "930f-0d64-9422-42ff"
-                  }
-                ]
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "4c5c-2e89-6e9e-2caf"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "f121-da31-62d0-1074"
-              }
-            ],
-            "defaultSelectionEntryId": "0af4-4a0a-e745-e694",
-            "sortIndex": 3
-          },
-          {
-            "name": "Dedicated Transport",
-            "id": "5872-feae-0539-48c1",
-            "hidden": false,
-            "sortIndex": 4,
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Land Raider Phobos",
-                "hidden": false,
-                "id": "9af3-a333-7493-2489",
-                "type": "selectionEntry",
-                "targetId": "1273-19ee-ea45-4ae7"
-              },
-              {
-                "import": true,
-                "name": "Land Raider Redeemer",
-                "hidden": false,
-                "id": "84a1-0db4-5eaa-93a1",
-                "type": "selectionEntry",
-                "targetId": "4f50-45c0-3152-1aba"
-              },
-              {
-                "import": true,
-                "name": "Land Raider Crusader",
-                "hidden": false,
-                "id": "6076-e247-e24e-d8d1",
-                "type": "selectionEntry",
-                "targetId": "34f0-522d-95a2-09ec"
-              },
-              {
-                "import": true,
-                "name": "Void Assault Dedicated Transport",
-                "hidden": false,
-                "id": "6227-f314-3d2c-c9da",
-                "type": "selectionEntryGroup",
-                "targetId": "0576-9c6e-e708-87df",
-                "flatten": true
-              }
-            ],
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "3ec4-b286-2952-286c"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "f9be-2a56-c427-ca51"
-              }
-            ],
-            "modifierGroups": [
-              {
-                "type": "and",
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": true,
-                    "field": "hidden"
-                  },
-                  {
-                    "type": "set",
-                    "value": 0,
-                    "field": "f9be-2a56-c427-ca51"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "greaterThan",
-                    "value": 4,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "a965-b968-ed35-a67a",
-                    "shared": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "sortIndex": 8,
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Chapter Tactics",
-            "hidden": false,
-            "id": "29ca-93de-d28d-85cf",
-            "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "45a2-96c3-8c31-fd28",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "2a53-ee7f-63e2-d63f",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "45a2-96c3-8c31-fd28",
-            "repeats": [
-              {
-                "value": 1000,
-                "repeats": 1,
-                "field": "54b5-0978-c8a4-5b5a",
-                "scope": "roster",
-                "childId": "any",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": false,
-                "includeChildForces": false,
-                "percentValue": false
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "45a2-96c3-8c31-fd28",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "b04f-6c8c-d63a-db03",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "45a2-96c3-8c31-fd28",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "840d-afc9-2af9-9958",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
         "type": "upgrade",
         "import": true,
         "name": "Company Level Deployment",
@@ -64906,6 +61702,44 @@
                     "field": "category",
                     "scope": "root-entry"
                   }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bab2-3b74-2eb0-b631"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": true,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "bab2-3b74-2eb0-b631"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "a1d4-6103-ac0c-f0fc",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -64977,37 +61811,6 @@
                 "scope": "self",
                 "shared": true,
                 "id": "b80b-7b78-c342-6763"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "add",
-                "value": "requires one Master of the Company selection",
-                "field": "error",
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "self",
-                        "childId": "any",
-                        "shared": true
-                      },
-                      {
-                        "type": "lessThan",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "08f5-cc3b-5be1-92cb",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ]
-                  }
-                ]
               }
             ]
           }
@@ -65257,14 +62060,6 @@
       },
       {
         "import": true,
-        "name": "Relic Land Speeder Squadron",
-        "hidden": false,
-        "id": "548e-cecc-1c16-22bf",
-        "type": "selectionEntry",
-        "targetId": "b8dd-7aed-6ba9-f521"
-      },
-      {
-        "import": true,
         "name": "Stormtalon Gunship",
         "hidden": false,
         "id": "4143-1f4c-1bc2-1490",
@@ -65326,14 +62121,6 @@
         "id": "ff9e-9b88-c5fa-7df5",
         "type": "selectionEntry",
         "targetId": "7dbf-2ee9-8266-0617"
-      },
-      {
-        "import": true,
-        "name": "Relic Predator Main Battle Tank Squadron",
-        "hidden": false,
-        "id": "3aae-acb9-8d5f-0dbc",
-        "type": "selectionEntry",
-        "targetId": "e801-d896-0250-1c98"
       },
       {
         "import": true,
@@ -65915,14 +62702,6 @@
           }
         ],
         "comment": "No constraint version"
-      },
-      {
-        "import": true,
-        "name": "Relic Terminator Squad",
-        "hidden": false,
-        "id": "6c4e-d207-52f9-bb22",
-        "type": "selectionEntry",
-        "targetId": "840d-afc9-2af9-9958"
       },
       {
         "import": true,
@@ -67227,40 +64006,6 @@
             ],
             "modifiers": [
               {
-                "type": "increment",
-                "value": 2,
-                "field": "8cf9-949a-d6cd-4150",
-                "comment": "Exclude self from decrement",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "3b25-03df-ea05-6f34",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              },
-              {
-                "type": "decrement",
-                "value": 1,
-                "field": "8cf9-949a-d6cd-4150",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "08f5-cc3b-5be1-92cb",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  }
-                ]
-              },
-              {
                 "type": "add",
                 "value": "08f5-cc3b-5be1-92cb",
                 "field": "category",
@@ -67271,23 +64016,6 @@
                 "value": "2ca5-c322-c8f3-5ebc",
                 "field": "category",
                 "scope": "parent"
-              },
-              {
-                "type": "decrement",
-                "value": 1,
-                "field": "8cf9-949a-d6cd-4150",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "2ca5-c322-c8f3-5ebc",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  }
-                ]
               }
             ],
             "rules": [
@@ -67965,6 +64693,14 @@
                 "shared": true,
                 "id": "302b-4ff2-61a9-0ea3",
                 "includeChildSelections": true
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "5a98-10a7-8364-240c",
+                "field": "category",
+                "scope": "parent"
               }
             ]
           },

@@ -123,7 +123,56 @@
       {
         "name": "Relic of the Chapter",
         "id": "b04f-6c8c-d63a-db03",
-        "hidden": false
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "fb1d-7f99-87bc-c983",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "fb1d-7f99-87bc-c983",
+            "repeats": [
+              {
+                "value": 1000,
+                "repeats": 1,
+                "field": "54b5-0978-c8a4-5b5a",
+                "scope": "roster",
+                "childId": "any",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "fb1d-7f99-87bc-c983",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "5a98-10a7-8364-240c",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Bombard",
@@ -143,7 +192,45 @@
       {
         "name": "Master of the Company",
         "id": "08f5-cc3b-5be1-92cb",
-        "hidden": false
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "7066-526d-9f2e-6a50",
+            "includeChildSelections": true
+          },
+          {
+            "type": "min",
+            "value": 0,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "3eff-f9b0-aefd-fc17",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 1,
+            "field": "3eff-f9b0-aefd-fc17",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "674e-c4cc-665e-8886",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Chapter Master",
@@ -204,6 +291,11 @@
         "name": "Company Level Deployment",
         "id": "674e-c4cc-665e-8886",
         "hidden": false
+      },
+      {
+        "name": "Master of the Relics",
+        "id": "5a98-10a7-8364-240c",
+        "hidden": false
       }
     ],
     "forceEntries": [
@@ -250,24 +342,6 @@
                 "shared": true,
                 "id": "7f34-c1a7-e1bd-e94b"
               }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 0,
-                "field": "7f34-c1a7-e1bd-e94b",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "08f5-cc3b-5be1-92cb",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
             ]
           },
           {
@@ -291,6 +365,30 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "629e-8668-ab8f-4aa7"
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "4a46-6c50-874a-575e",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b303-a031-244b-1273"
+              },
+              {
+                "type": "max",
+                "value": 6,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "18ea-080c-aeac-65cd"
               }
             ]
           },
@@ -489,30 +587,6 @@
                 ]
               }
             ]
-          },
-          {
-            "name": "Troops",
-            "hidden": false,
-            "id": "4a46-6c50-874a-575e",
-            "targetId": "1685-8865-a2b2-5fb9",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "b303-a031-244b-1273"
-              },
-              {
-                "type": "max",
-                "value": 6,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "18ea-080c-aeac-65cd"
-              }
-            ]
           }
         ],
         "constraints": [
@@ -619,6 +693,22 @@
         "id": "a1d4-6103-ac0c-f0fc",
         "hidden": false,
         "categoryLinks": [
+          {
+            "name": "Company Level Deployment",
+            "hidden": false,
+            "id": "0561-6880-e509-df11",
+            "targetId": "674e-c4cc-665e-8886",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "daed-f445-48b1-09ba"
+              }
+            ]
+          },
           {
             "name": "HQ",
             "hidden": false,
@@ -752,6 +842,84 @@
                     "childId": "93d6-6be2-a921-9578",
                     "shared": true,
                     "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "{this} requires at least 1 selection of Compulsory Choice in HQ",
+            "field": "error",
+            "localConditionGroups": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "scope": "force",
+                "field": "selections",
+                "includeChildSelections": false,
+                "includeChildForces": true,
+                "repeats": 1,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "736c-458e-6f4c-887e",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "be4d-83ab-c864-a7c6",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "{this} requires at least 1 selections of Compulsory Choice in Troops",
+            "field": "error",
+            "localConditionGroups": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "scope": "force",
+                "field": "selections",
+                "includeChildSelections": false,
+                "includeChildForces": true,
+                "repeats": 1,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "1685-8865-a2b2-5fb9",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "be4d-83ab-c864-a7c6",
+                        "shared": true
+                      }
+                    ]
                   }
                 ]
               }

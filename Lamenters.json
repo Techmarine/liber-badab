@@ -589,54 +589,6 @@
             "hidden": false,
             "description": "For every wound Malakim Phoros loses, increase his Strength and Attacks by +1 (Eg if he is down to 2 wounds, he is Strength 6 with 6 Attacks base). In addition to this, he and any unit he joins gains the Rage (1) Special rule."
           }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "0614-11be-6d6f-d78f",
-            "includeChildSelections": true,
-            "includeChildForces": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "0614-11be-6d6f-d78f",
-            "comment": "Exclude self from decrement",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "7e06-e948-7abb-cede",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "0614-11be-6d6f-d78f",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "08f5-cc3b-5be1-92cb",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          }
         ]
       },
       {
