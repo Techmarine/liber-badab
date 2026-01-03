@@ -1,0 +1,591 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "e0e3-9dad-3a25-5076",
+    "name": "Executioners",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Astartes",
+        "id": "9ede-7ddd-e95e-ed6f",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Executioners",
+        "hidden": false,
+        "id": "85d2-8324-f467-ce8e",
+        "type": "selectionEntry",
+        "targetId": "9372-9faa-67e3-c89d",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "ddbc-bbe2-09c2-a64e",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "High Chaplain Thulsa Kane",
+        "hidden": false,
+        "id": "30fe-bf59-cc9b-bf2c",
+        "type": "selectionEntry",
+        "targetId": "1038-28d3-f1e2-e80b"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "High Chaplain Thulsa Kane",
+        "hidden": false,
+        "id": "1038-28d3-f1e2-e80b",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "86e0-0321-b257-11f2",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Master of the Company",
+            "id": "d1d9-f349-46c1-0769",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9782-8c2a-c5f0-319d"
+          },
+          {
+            "name": "Chapter Tactics (Executioners)",
+            "id": "e4c0-abff-5953-0214",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3510-53ab-ef35-a6a7"
+          },
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "6f2f-85a4-ac27-4950",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Eternal Warrior",
+            "id": "de5b-a55a-dd4e-7fff",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d9b7-d83e-51e0-bcfc"
+          },
+          {
+            "name": "Rage",
+            "id": "c666-7469-cdbd-4433",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6845-bbcf-b09b-06bc",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Independent Character",
+            "id": "13ee-93bf-1ec9-0f0f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Fearless",
+            "id": "d67b-9297-27b2-69d3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6973-2ab3-7e6b-e323"
+          },
+          {
+            "name": "Hatred",
+            "id": "d1be-6583-8ac8-e39a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bacb-64aa-bb42-4c9d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Everything",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Headhunters",
+            "id": "931b-7460-5305-08d7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "87ba-b1f5-fcc2-5a74"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "22bc-e082-e311-0316",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "d4a5-63ed-f7fc-6a29",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "86e0-0321-b257-11f2",
+            "comment": "Exclude self from decrement",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "1038-28d3-f1e2-e80b",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "decrement",
+            "value": 1,
+            "field": "86e0-0321-b257-11f2",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "08f5-cc3b-5be1-92cb",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "High Chaplain Thulsa Kane",
+            "hidden": false,
+            "id": "f62b-da72-88d4-a3c0",
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "212d-567e-c0d5-8a60",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "9219-d839-60f9-e01a",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique",
+                "hidden": false,
+                "id": "882d-da5b-e29e-2c0d",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 190
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "21d2-e2f7-630f-047d",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Company Level Deployment",
+                "hidden": false,
+                "id": "531f-3656-7c84-0c05",
+                "type": "selectionEntryGroup",
+                "targetId": "b9e7-9419-7f5e-ea7d",
+                "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "4ff4-7ca6-d02d-99e5",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8c67-3dba-2d5e-6910"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "facf-5a17-52ca-4c2c"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "b35a-c7db-91c6-ffd3",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4a79-e547-defe-4c38"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7a82-ca61-b18f-2847"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "883a-e584-0c4c-8789",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e816-1162-0073-56cd"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8ed1-6e58-c7d2-df20"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Plasma Pistol",
+                "hidden": false,
+                "id": "9ea3-df48-f06b-151c",
+                "type": "selectionEntry",
+                "targetId": "3f09-f9ad-2440-d174",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f62e-82be-5b70-dd09"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0d22-7266-2018-35b4"
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Retinue",
+                "id": "3b62-1816-718f-b92d",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "c4da-22e9-05bd-a5c2"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Terminator Command Squad",
+                    "hidden": false,
+                    "id": "1d79-72ed-2f8c-f071",
+                    "type": "selectionEntry",
+                    "targetId": "412c-1e95-b2bb-6384"
+                  },
+                  {
+                    "import": true,
+                    "name": "Command Squad",
+                    "hidden": false,
+                    "id": "6628-0fbb-3341-9fbf",
+                    "type": "selectionEntry",
+                    "targetId": "af8c-8112-b1e1-367d"
+                  }
+                ],
+                "sortIndex": 3
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Grendalin's Bones",
+                "hidden": false,
+                "id": "01ea-b010-f043-17e8",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "38ae-bc01-61fc-3492"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3d0f-37e9-d45a-a7f1"
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Grendalin's Bones",
+                    "id": "b90a-9caa-b1a4-ba16",
+                    "hidden": false,
+                    "description": "Grehdalin’s Bones counts as Artificer armour and conveys the Eternal Warrior* Special Rule.\n\n\n*Already Added to Special Rules"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Lifetaker",
+                "hidden": false,
+                "id": "9ef0-ea60-2d3c-8cb3",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8e9c-40f7-35ea-631a"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5d15-9add-7864-2e60"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "The Lifetaker",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "2f1c-2e81-41de-ef54",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "+1"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Murderous Strike (5+), Master-Crafed, Reaping Blow (2)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Murderous Strike",
+                    "id": "de24-825d-960a-5a46",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5e54-e48c-3700-6d3e",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "5+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Master-crafted",
+                    "id": "5b09-b524-bd52-e39c",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  },
+                  {
+                    "name": "Reaping Blow",
+                    "id": "4918-a3ae-38a0-8940",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "2cc2-c220-7f11-b44b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Aenigmata Ferrum",
+                "hidden": false,
+                "id": "ca01-dba0-b115-f217",
+                "rules": [
+                  {
+                    "name": "The Aenigmata Ferrum",
+                    "id": "9181-2454-f2bf-7ebd",
+                    "hidden": false,
+                    "description": "Any friendly Space Marines model with the Chapter Tactics (Executioners) within 12\" of Thulsa Kane can re-roll 1s when rolling to wound on the turn in which they charge into an assault."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "624e-744f-c9e3-daa5"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fce5-e6f3-b462-4a42"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "712f-ba72-f17b-1f4f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "712f-ba72-f17b-1f4f-max"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Honour the Chapter",
+            "id": "e7c2-18b9-e4a6-4a83",
+            "hidden": false,
+            "description": "Both Thulsa Kane and any unit with the Chapter Tactics (Executioners) special rule that he joins gain the Fearless rule as well as Hatred (Everything!).In addition to this, any unit with Chapter Tactics (Executioners) within 6\" of Thulsa Kane gain the Stubborn special rule."
+          }
+        ]
+      }
+    ],
+    "type": "catalogue"
+  }
+}

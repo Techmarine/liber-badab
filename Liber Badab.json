@@ -1,0 +1,2263 @@
+{
+  "gameSystem": {
+    "id": "sys-7d1d-5f99-723a-24c5",
+    "name": "Liber Badab",
+    "battleScribeVersion": "2.03",
+    "revision": 1,
+    "categoryEntries": [
+      {
+        "name": "HQ",
+        "id": "736c-458e-6f4c-887e",
+        "hidden": false
+      },
+      {
+        "name": "Troops",
+        "id": "1685-8865-a2b2-5fb9",
+        "hidden": false
+      },
+      {
+        "name": "Elites",
+        "id": "a300-5393-99ea-9657",
+        "hidden": false
+      },
+      {
+        "name": "Fast Attack",
+        "id": "2e5a-9101-3872-faad",
+        "hidden": false
+      },
+      {
+        "name": "Heavy Support",
+        "id": "1dff-e2a4-5442-6863",
+        "hidden": false
+      },
+      {
+        "name": "Fortification",
+        "id": "238d-2edf-cc1c-58e6",
+        "hidden": false
+      },
+      {
+        "name": "Lords of War",
+        "id": "6499-290b-b038-5509",
+        "hidden": false
+      },
+      {
+        "name": "Heavy",
+        "id": "33d0-319a-741e-573f",
+        "hidden": false
+      },
+      {
+        "name": "Character",
+        "id": "c0e6-28aa-5286-2fa2",
+        "hidden": false
+      },
+      {
+        "name": "Infantry",
+        "id": "c447-1b05-5ba8-846a",
+        "hidden": false
+      },
+      {
+        "name": "Cavalry",
+        "id": "8cce-2496-3746-4f06",
+        "hidden": false
+      },
+      {
+        "name": "Skirmish",
+        "id": "e349-c42f-3c5d-1e72",
+        "hidden": false
+      },
+      {
+        "name": "Psyker",
+        "id": "0e69-ba6c-2394-5c44",
+        "hidden": false
+      },
+      {
+        "name": "Light",
+        "id": "fcca-7b6b-7920-a6f5",
+        "hidden": false
+      },
+      {
+        "name": "Vehicle",
+        "id": "188c-5472-9e2c-377c",
+        "hidden": false
+      },
+      {
+        "name": "Dreadnought",
+        "id": "eb17-a98e-537b-5de6",
+        "hidden": false
+      },
+      {
+        "name": "Line",
+        "id": "efc6-682f-b0cb-cfa2",
+        "hidden": false
+      },
+      {
+        "name": "Transport",
+        "id": "b966-b1a2-7578-dc41",
+        "hidden": false
+      },
+      {
+        "name": "Dedicated Transport",
+        "id": "b906-cdc5-0d3b-5270",
+        "hidden": false
+      },
+      {
+        "name": "Antigrav",
+        "id": "84f9-5c1d-9030-0686",
+        "hidden": false
+      },
+      {
+        "name": "Flyer",
+        "id": "63ab-f4ab-6759-c123",
+        "hidden": false
+      },
+      {
+        "name": "Hover",
+        "id": "8224-00e8-42e4-3074",
+        "hidden": false
+      },
+      {
+        "name": "Artillery",
+        "id": "1e5c-9a6e-6e77-4453",
+        "hidden": false
+      },
+      {
+        "name": "Relic of the Chapter",
+        "id": "b04f-6c8c-d63a-db03",
+        "hidden": false
+      },
+      {
+        "name": "Bombard",
+        "id": "7d4a-3281-a77d-8962",
+        "hidden": false
+      },
+      {
+        "name": "Reinforced",
+        "id": "bf01-5931-039f-752f",
+        "hidden": false
+      },
+      {
+        "name": "Lumbering",
+        "id": "dbbf-4090-a327-a20d",
+        "hidden": false
+      },
+      {
+        "name": "Master of the Company",
+        "id": "08f5-cc3b-5be1-92cb",
+        "hidden": false
+      },
+      {
+        "name": "Chapter Master",
+        "id": "2ca5-c322-c8f3-5ebc",
+        "hidden": false
+      },
+      {
+        "name": "Compulsory Choice",
+        "id": "be4d-83ab-c864-a7c6",
+        "hidden": false
+      },
+      {
+        "name": "Chapter",
+        "id": "7c29-8e11-7fae-9549",
+        "hidden": false
+      },
+      {
+        "name": "Void Assault",
+        "id": "6b6a-5722-04ab-ff69",
+        "hidden": false
+      },
+      {
+        "name": "1st Company",
+        "id": "e861-088d-eec2-9ffa",
+        "hidden": false
+      },
+      {
+        "name": "8th Company",
+        "id": "e15e-cb8a-0715-ceb2",
+        "hidden": false
+      },
+      {
+        "name": "9th Company",
+        "id": "93d6-6be2-a921-9578",
+        "hidden": false
+      },
+      {
+        "name": "10th Company",
+        "id": "101e-01b9-b003-61dd",
+        "hidden": false
+      },
+      {
+        "name": "Siege Assault Vanguard Force",
+        "id": "4cb3-ddb4-3cf6-1837",
+        "hidden": false
+      },
+      {
+        "name": "Fast",
+        "id": "633a-22e8-c34d-c49d",
+        "hidden": false
+      },
+      {
+        "name": "Unique",
+        "id": "75a3-46b2-47de-9789",
+        "hidden": false
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "Primary Detachment",
+        "id": "468e-3bb6-0edf-1597",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "049b-6295-84d3-7b7f",
+            "targetId": "7c29-8e11-7fae-9549",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8ffb-2ad3-4b6f-920d-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8ffb-2ad3-4b6f-920d-max"
+              }
+            ]
+          },
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "0f88-31d0-c658-098e",
+            "targetId": "736c-458e-6f4c-887e",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cf66-ed07-e7cb-8389"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "629e-8668-ab8f-4aa7"
+              }
+            ]
+          },
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "a6c3-8558-fd99-290f",
+            "targetId": "a300-5393-99ea-9657",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3252-ab54-2fdd-13b7"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "3252-ab54-2fdd-13b7",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "2ca5-c322-c8f3-5ebc",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fast Attack",
+            "hidden": false,
+            "id": "53a9-1374-f24e-80bd",
+            "targetId": "2e5a-9101-3872-faad",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 3,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bd50-d2b4-7e64-3107"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "bd50-d2b4-7e64-3107",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "e861-088d-eec2-9ffa",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "93d6-6be2-a921-9578",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fortification",
+            "hidden": false,
+            "id": "4b9d-3592-d130-64d3",
+            "targetId": "238d-2edf-cc1c-58e6",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3c9d-e93f-f026-aba3"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "3c9d-e93f-f026-aba3",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "e861-088d-eec2-9ffa",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "e15e-cb8a-0715-ceb2",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "101e-01b9-b003-61dd",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "6b6a-5722-04ab-ff69",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavy Support",
+            "hidden": false,
+            "id": "0df7-6c0c-726e-ada3",
+            "targetId": "1dff-e2a4-5442-6863",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 3,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0181-b1ab-8cfd-6339"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "0181-b1ab-8cfd-6339",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "e861-088d-eec2-9ffa",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "e15e-cb8a-0715-ceb2",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "4a46-6c50-874a-575e",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b303-a031-244b-1273"
+              },
+              {
+                "type": "max",
+                "value": 6,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "18ea-080c-aeac-65cd"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "forces",
+            "scope": "parent",
+            "shared": true,
+            "id": "5b0d-e4a2-72d6-61cb"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "forces",
+            "scope": "parent",
+            "shared": true,
+            "id": "96b9-be6d-8c3d-e8f4"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "{this} requires at least 1 selection of Compulsory Choice in HQ",
+            "field": "error",
+            "localConditionGroups": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "scope": "force",
+                "field": "selections",
+                "includeChildSelections": false,
+                "includeChildForces": true,
+                "repeats": 1,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "736c-458e-6f4c-887e",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "be4d-83ab-c864-a7c6",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "{this} requires at least 2 selections of Compulsory Choice in Troops",
+            "field": "error",
+            "localConditionGroups": [
+              {
+                "type": "lessThan",
+                "value": 2,
+                "scope": "force",
+                "field": "selections",
+                "includeChildSelections": false,
+                "includeChildForces": true,
+                "repeats": 1,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "1685-8865-a2b2-5fb9",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "be4d-83ab-c864-a7c6",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Allied Detachment",
+        "id": "a1d4-6103-ac0c-f0fc",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "7246-eb04-d1d2-f2fe",
+            "targetId": "736c-458e-6f4c-887e",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7f12-996f-11ea-2576"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "14ec-e414-35f4-6c62"
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "ba58-50d2-13f4-7df6",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "416e-6db7-8468-af48"
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8bb7-9f13-0f48-ffe5"
+              }
+            ]
+          },
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "bcc1-2c0c-409d-8af8",
+            "targetId": "a300-5393-99ea-9657",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bc98-9608-a939-49da"
+              }
+            ]
+          },
+          {
+            "name": "Fast Attack",
+            "hidden": false,
+            "id": "4c2b-f958-3a6d-57d4",
+            "targetId": "2e5a-9101-3872-faad",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9dc7-a602-9e17-d886"
+              }
+            ]
+          },
+          {
+            "name": "Heavy Support",
+            "hidden": false,
+            "id": "d296-92f2-f5ec-0433",
+            "targetId": "1dff-e2a4-5442-6863",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5046-0513-c6e4-d206"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "forces",
+            "scope": "parent",
+            "shared": true,
+            "id": "2ee8-f7ca-31e0-fd7e"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "2ee8-f7ca-31e0-fd7e",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "e861-088d-eec2-9ffa",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "93d6-6be2-a921-9578",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lords of War",
+        "id": "ecf6-ec2d-f7dc-b11d",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "90a2-4a36-333a-8ec8",
+            "targetId": "7c29-8e11-7fae-9549",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "897f-2f55-c1c2-52aa"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cac9-f282-ea9c-177e"
+              }
+            ]
+          },
+          {
+            "name": "Lords of War",
+            "hidden": false,
+            "id": "c762-7904-e51c-d859",
+            "targetId": "6499-290b-b038-5509",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9821-28e4-aed3-80ba-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9821-28e4-aed3-80ba-max"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "forces",
+            "scope": "parent",
+            "shared": true,
+            "id": "f7d0-1135-273b-973d"
+          }
+        ]
+      }
+    ],
+    "type": "gameSystem",
+    "profileTypes": [
+      {
+        "name": "Model",
+        "id": "dd4a-7345-17fe-9c76",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "M",
+            "id": "69ed-cbc7-3fbc-7ba5"
+          },
+          {
+            "name": "WS",
+            "id": "6ed0-3b6d-b7d7-894c"
+          },
+          {
+            "name": "BS",
+            "id": "163f-6fcf-6b77-1766"
+          },
+          {
+            "name": "S",
+            "id": "99ae-5644-9155-ae6e"
+          },
+          {
+            "name": "T",
+            "id": "08d3-1319-227b-1d5c"
+          },
+          {
+            "name": "W",
+            "id": "cdc0-9287-7039-4792"
+          },
+          {
+            "name": "I",
+            "id": "03f0-9c72-1dc2-55cd"
+          },
+          {
+            "name": "A",
+            "id": "edda-ee37-03b4-f91f"
+          },
+          {
+            "name": "Ld",
+            "id": "d29a-9b6f-13a6-b7a8"
+          },
+          {
+            "name": "Sv",
+            "id": "dc1c-e152-7a5e-2c32"
+          }
+        ]
+      },
+      {
+        "name": "Ranged Weapon",
+        "id": "5e31-3867-7c3d-fcb9",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "Range",
+            "id": "7b0f-9c2a-0ecb-f3a3"
+          },
+          {
+            "name": "S",
+            "id": "2ecc-1ccc-736f-9d3d"
+          },
+          {
+            "name": "AP",
+            "id": "cbb5-5f04-f87f-a810"
+          },
+          {
+            "name": "Type",
+            "id": "2c90-16ca-a927-898d"
+          },
+          {
+            "name": "Special Rules",
+            "id": "d2a2-1139-48cb-4472"
+          }
+        ]
+      },
+      {
+        "name": "Melee Weapon",
+        "id": "ecd5-ca1d-0842-34a4",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "Range",
+            "id": "ec4a-5686-1553-4654"
+          },
+          {
+            "name": "S",
+            "id": "b9e5-2eb3-f79d-e995"
+          },
+          {
+            "name": "AP",
+            "id": "0332-8de1-48c6-c94d"
+          },
+          {
+            "name": "Type",
+            "id": "6c0f-3258-2a17-5cc9"
+          },
+          {
+            "name": "Special Rules",
+            "id": "a603-af69-c30b-94ed"
+          }
+        ]
+      },
+      {
+        "name": "Vehicle",
+        "id": "554a-e6c5-2c57-a72e",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "M",
+            "id": "d395-76ee-f82b-8906"
+          },
+          {
+            "name": "BS",
+            "id": "7249-616a-aae9-a930"
+          },
+          {
+            "name": "Front",
+            "id": "e5fc-83a0-3f81-7e69"
+          },
+          {
+            "name": "Side",
+            "id": "77d5-df8c-7931-3f05"
+          },
+          {
+            "name": "Rear",
+            "id": "ff76-e0b6-7d3a-bd72"
+          },
+          {
+            "name": "HP",
+            "id": "a8d5-54a4-d247-236f"
+          },
+          {
+            "name": "Transport Capacity",
+            "id": "c01c-1a8f-7f1d-1cb6"
+          }
+        ]
+      }
+    ],
+    "costTypes": [
+      {
+        "name": "Points",
+        "id": "54b5-0978-c8a4-5b5a",
+        "defaultCostLimit": -1
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Relentless",
+        "id": "919d-8ad9-f565-2b64",
+        "hidden": false,
+        "description": "Relentless models can shoot with Heavy or Ordnance weapons, counting as Stationary, even if they moved in the previous Movement phase. They are also allowed to Charge in the same turn they fire Heavy, Ordnance, or Rapid Fire weapons."
+      },
+      {
+        "name": "Independent Character",
+        "id": "e453-db5d-2916-abcb",
+        "hidden": false,
+        "description": "Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multi-character unit."
+      },
+      {
+        "name": "Rending",
+        "id": "2508-8e95-11c7-6bd6",
+        "hidden": false,
+        "description": "If a model has the Rending special rule, or is attacking with a Melee weapon that has the Rending special rule, there is a chance that their close combat attacks will strike a critical blow. For each To Wound roll equal to or higher than the value listed, the target automatically suffers a Wound, regardless of its Toughness. The controlling player may choose to resolve these Wounds at AP 2 instead of the weapon’s normal AP value.\n\nSimilarly, if a model makes a Shooting Attack with a weapon that has the Rending special rule, a To Wound roll of equal to or greater than the listed value wounds automatically, regardless of Toughness, and is resolved at AP 2.\n\nIn either case, against Vehicles each Armour Penetration roll of equal to or greater than the listed value allows a further D3 to be rolled, with the result added to the total Strength of the attack. These Hits are not resolved at AP 2, but are instead resolved using the weapon’s AP value.\n\nFor example, a model with the Rending (5+) special rule that rolls To Wound against a non-Vehicle model will wound automatically on the roll of a 5+, and the attacking player has the choice of using an AP value of 2 instead of the AP value of their weapon"
+      },
+      {
+        "name": "Psychic Focus",
+        "id": "5424-a823-35b0-e83f",
+        "hidden": false,
+        "description": "Before making any To Hit rolls with this weapon, the Psyker must make a Psychic check. If the Check is passed, then the Psyker may attack as normal using the profile shown for this weapon. If the Check is failed, then the Psyker suffers Perils of the Warp, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon."
+      },
+      {
+        "name": "Sniper",
+        "id": "e4db-0b99-ef96-7a32",
+        "hidden": false,
+        "description": "If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, all Wounds inflicted by its attacks are ‘Precision Shots’. Wounds from Precision Shots are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as it is in range and line of sight of the firer, rather than following the normal rules for Wound allocation. Note that Snap Shots can never be Precision Shots and attacks with the Blast or Template rules may never benefit from the effects of the Sniper special rule."
+      },
+      {
+        "name": "Guided Fire",
+        "id": "615d-ba71-0c3b-d9bc",
+        "hidden": false,
+        "description": "Any attacks made using a weapon with this special rule do not require line of sight, but must still be within range."
+      },
+      {
+        "name": "Concussive",
+        "id": "173b-6e52-4626-a146",
+        "hidden": false,
+        "description": "A unit that suffers one or more Wounds, regardless of whether those Wounds are Saved or otherwise discounted, from a weapon with this special rule must take a Leadership test at the end of the Shooting phase (if the attacks were inflicted as part of a Shooting Attack), or the current combat (if the attacks were inflicted as part of a Melee attack). If the test is failed then that unit’s WS is reduced by the value in brackets listed as part of the special rule until the end of the following Assault phase (if no value is listed then reduce the target unit’s WS by -1).\n\nNo matter how many times a unit has taken saved or unsaved Wounds from an attack with the Concussive special rule, it may only be forced to take one Leadership test because of it. If a single unit has been the target of several Concussive attacks with different values and fails the Leadership test, then it suffers the effects of the highest single modifier among those attacks – the effects do not stack or otherwise become cumulative."
+      },
+      {
+        "name": "Shred",
+        "id": "a666-0970-28e2-7c48",
+        "hidden": false,
+        "description": "If a model has the Shred special rule, or is attacking with a Melee weapon that has the Shred rule, it re-rolls failed To Wound rolls in close combat.\n\nSimilarly, if a model makes a Shooting Attack with a weapon that has the Shred rule, it re-rolls its failed To Wound rolls."
+      },
+      {
+        "name": "Armourbane",
+        "id": "a1f5-fb7a-bbf0-a720",
+        "hidden": false,
+        "description": "If a model or weapon has this special rule, it rolls an additional D6 for armour penetration when targeting a Vehicle model, or, when targeting a model with the Automata or Dreadnought Unit Type, re-rolls all failed rolls To Wound instead. These effects apply to both Shooting Attacks and close combat attacks.\n\nSome instances of the Armourbane special rule may include a qualifier after the rule in brackets, for example Armourbane (Melta) or Armourbane (Melee). These variant rules are described below:\n\nArmourbane (Melta): A model or weapon with this Armourbane special rule only gains the benefits of the Armourbane special rule when at half range or less. If the attack is more than half its Maximum Range away, it gains no benefit from the Armourbane special rule. If a weapon with this version of Armourbane also has the Blast special rule, measure the distance to the centre of the Blast marker after it has scattered. If this is half the weapon’s range or less, then all Hits are counted as having the Armourbane special rule, otherwise the Hits are resolved as if they did not have the Armourbane special rule.\n\nArmourbane (Melee): A weapon or model with this version of the Armourbane special rule only gains the benefits of the Armourbane special rule when attacking in close combat.\n\nArmourbane (Ranged): A weapon or model with this version of the Armourbane special rule only gains the benefits of the Armourbane special rule when making Shooting Attacks."
+      },
+      {
+        "name": "Unwieldy",
+        "id": "cfea-a7be-fbea-da53",
+        "hidden": false,
+        "description": "A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type."
+      },
+      {
+        "name": "Breaching",
+        "id": "ee66-f70b-aa5c-b2bf",
+        "hidden": false,
+        "description": "When rolling To Wound for a model that has the Breaching (X) special rule, or is attacking with a weapon that has the Breaching (X) special rule, for each To Wound roll equal to or higher than the value listed in brackets, the controlling player must resolve these wounds at AP 2 instead of the weapon’s normal AP value. This rule has no effect on models that do not have Wounds, such as models with the Vehicle Unit Type."
+      },
+      {
+        "name": "Duellist’s Edge",
+        "id": "da29-5ae7-e8e9-a008",
+        "hidden": false,
+        "description": "When fighting in a Challenge, the user of this weapon gains a bonus to their Initiative value equal to the value in brackets after the rule when making attacks with this weapon. If there is no value in brackets after a given instance of this special rule, then assume the value is 1 (thus adding +1 Initiative to that model)."
+      },
+      {
+        "name": "Two-handed",
+        "id": "9c96-f071-03a6-7593",
+        "hidden": false,
+        "description": "A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons."
+      },
+      {
+        "name": "Blast",
+        "id": "dd6e-d5d4-9bb3-d2e4",
+        "hidden": false,
+        "description": "When firing a Blast weapon, models do not roll To Hit. Instead, pick one enemy model visible to the firer and place the Blast (3\") marker with its hole entirely over the base of the target model, or its hull if the target is a Vehicle. The hole at the centre of the marker must be within the weapon’s Maximum Range. You cannot place the Blast marker so that the base or hull of any friendly model is even partially under it.\n\nThe large area affected by the blast means it is going to be very hard to miss completely. Nonetheless, the shot might not land exactly where intended. Roll for the Blast marker to scatter and subtract the firer’s Ballistic Skill from the distance (if any) that it scatters, to a minimum of 0\". Note that it is possible, and absolutely fine, for a shot to scatter beyond the weapon’s Maximum or Minimum Range and line of sight. This represents the chance of ricochets, the missile blasting through cover and other random events. In these cases, Hits are worked out as normal and can hit and Wound units out of range and line of sight (or even your own units, or models locked in combat). If the shot scatters so that the hole in the centre of the marker is beyond the battlefield’s edge, the shot is a complete miss and is discarded.\n\nOnce the final position of the Blast marker has been determined, take a good look at it from above – each unit suffers one Hit for each of the models included in that unit that is fully or partially beneath the Blast marker, even if those models are not within the firer’s line of sight.\n\nOnce the number of Hits inflicted on the unit has been worked out, roll To Wound and Save as normal. Note that, unlike other attacks, Wounds inflicted by an attack with the Blast special rule can be allocated to any models in the target unit, even if they are out of sight of any models from the attacking unit."
+      },
+      {
+        "name": "Pinning",
+        "id": "4cc0-966b-ab26-0aa7",
+        "hidden": false,
+        "description": "If a non-Vehicle unit suffers one or more unsaved Wounds from a weapon with the Pinning special rule, it must take a Leadership test once the firing unit has finished its Shooting Attacks for that Phase. This is called a Pinning test. If the unit fails the Test, it is Pinned. As long as the Test is passed, a unit can be called upon to take multiple Pinning tests in a single turn, but only once for each unit shooting at them.\n\nA unit that is affected by any of the following conditions does not take Pinning tests, and if called upon to do so is considered to automatically pass them:\n\n- The unit is locked in combat.\n- The unit is already Pinned (the unit remains Pinned, but takes no further Tests).\n- The unit is composed entirely of Vehicle models.\n- The unit is Embarked on a Transport Vehicle.\n- The target unit is affected by the Fearless special rule.\n\nA unit that has become Pinned cannot Move, Run or Charge. It can only fire Snap Shots if it attacks during the Shooting phase and cannot make Reactions in any Phase. At the end of its following turn, the unit returns to normal and the unit is free to act as normal from then on. Whilst it is Pinned, a unit is affected normally by enemy actions (for example, it takes Morale checks as normal). If the unit is forced to move, for example if it has to Fall Back, it returns to normal immediately. If assaulted, the unit will fight as usual, but because they are not set to receive the Charge, enemy units do not receive the Initiative penalty for assaulting a unit in Difficult Terrain, even if the unit is in Difficult Terrain. If a unit becomes Pinned during a Charge, then that Charge automatically fails. Units that are locked in combat cannot be Pinned and do not take Pinning tests."
+      },
+      {
+        "name": "Gets Hot",
+        "id": "c7e6-c0f3-d0e4-4238",
+        "hidden": false,
+        "description": "When firing a weapon that Gets Hot, roll To Hit as normal. For each unmodified To Hit roll of 1, the firing model immediately suffers a single Wound with an AP value equal to that of the weapon that was used to attack (Armour Saves, Invulnerable Saves and Feel No Pain rolls can be taken, but not Cover Saves or Shrouded rolls) – this Wound cannot be allocated to any other model in the unit. A Vehicle instead rolls a D6 for each roll of a 1 To Hit. If this roll results in a 1 or 2, the Vehicle suffers a Glancing Hit."
+      },
+      {
+        "name": "One Shot",
+        "id": "ee53-4831-a3cf-1cdb",
+        "hidden": false,
+        "description": "A weapon or ability with this special rule can only be used once during the course of a battle. Once a weapon with the One Use or One Shot special rule has been used to attack, it is no longer counted as a weapon and may not be destroyed (for example, by rolls on the Vehicle Damage table) or repaired by any other rule or effect."
+      },
+      {
+        "name": "Specialist Weapon",
+        "id": "8bee-1459-6f2d-6ab6",
+        "hidden": false,
+        "description": "A model fighting with this weapon does not receive +1 Attack for fighting with two weapons unless it is armed with two or more Melee weapons with the Specialist Weapon rule. The additional weapon does not have to be the same weapon as the one used to attack, but it must have the Specialist Weapon rule in order to grant an additional Attack for fighting with two weapons."
+      },
+      {
+        "name": "Detonation",
+        "id": "26f7-bec6-599d-285f",
+        "hidden": false,
+        "description": "A weapon with this special rule may only be used to attack models of the Vehicle, Dreadnought or Automata Unit Types, any model with a Movement Characteristic of 0 or ‘-’, or Buildings or Fortifications. Furthermore, a model that is chosen to attack with a weapon with this special rule during the Assault phase may only make a single attack in the Fight sub-phase, regardless of its Attacks Characteristic and any bonus attacks from Charging or other special rules."
+      },
+      {
+        "name": "Instant Death",
+        "id": "0561-70c5-a18f-6672",
+        "hidden": false,
+        "description": "If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.\n"
+      },
+      {
+        "name": "Reach",
+        "id": "3be4-de2e-abce-247a",
+        "hidden": false,
+        "description": "A model making attacks as part of an Assault using a weapon with this special rule, adds the value of (X) that is included as part of this special rule to its Initiative Characteristic. If a model has more than one weapon with this special rule then that model only increases the value of its Initiative by the value of the special rule on the weapon whose profile is used by that model to attack during the Fight sub-phase. A weapon that is not used to attack does not modify the model’s Initiative Characteristic – models that may attack with more than one weapon, or models claiming the bonus for having a second weapon, may only add the value of the highest variant of this special rule and do not add the values together."
+      },
+      {
+        "name": "Brutal",
+        "id": "fc68-9ea6-18e4-d94b",
+        "hidden": false,
+        "description": "When a model is allocated a Wound inflicted by a weapon with this special rule, it does not suffer only one Wound but instead suffers a number of Wounds equal to the number in brackets associated with the specific variant of this special rule, with all of the Wounds inflicted using the same AP and special rules as that of the initial Wound. Roll to save against each Wound inflicted separately, but note that Wounds caused in excess of a given model’s remaining Wounds do not spill over to other models and are lost. This special rule has no effect on models that do not have a Toughness value."
+      },
+      {
+        "name": "Pyromantic Combustion",
+        "id": "1b42-01a2-b2ca-9d4e",
+        "hidden": false,
+        "description": "Instead of making a Shooting Attack, a Psyker with this Psychic Power can place a Large Blast (5\") marker anywhere on the battlefield that is entirely within 18\" and within line of sight of the Psyker. Once placed, scatter the marker D6\" to determine its final position and then leave it in place until the beginning of the controlling player’s next Shooting phase. The area under the marker counts as Difficult Terrain and any model, friendly or enemy, under the marker’s final position, or that moves onto or through the marker, suffers a Strength 6, AP 4 Hit. When using this Psychic Power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the Psyker’s controlling player may place and scatter up to three Large Blast (5\") markers instead of just one. Any model under more than one Blast marker placed using this Psychic Power suffers 1 Hit for each Blast marker it is under. If the Check is failed then the power fails completely, no markers are placed and the Psyker suffers Perils of the Warp."
+      },
+      {
+        "name": "Sunder",
+        "id": "1692-e368-b877-e324",
+        "hidden": false,
+        "description": "Attacks with this special rule may re-roll failed Armour Penetration rolls against Vehicles and Buildings (both with Shooting Attacks and in close combat) and re-roll Glancing Hits, in an attempt to instead get a Penetrating Hit, but the second result must be kept."
+      },
+      {
+        "name": "Force",
+        "id": "e7ad-a93b-a64d-bb10",
+        "hidden": false,
+        "description": "Any Psyker with a weapon or ability with this special rule may choose to make a Psychic check before making any attacks with that weapon or resolving the ability. If the Check is successful then the Strength value of any attacks made is doubled. If the Check is failed then Perils of the Warp is resolved targeting the unit containing the model that failed its Check. If the Psyker survives Perils of the Warp then it may attack as normal."
+      },
+      {
+        "name": "Murderous Strike",
+        "id": "5e54-e48c-3700-6d3e",
+        "hidden": false,
+        "description": "Attacks with this special rule cause Instant Death on a To Wound roll equal to or greater than the number listed in brackets associated with the specific rule. Roll any viable Saves against this Instant Death-causing Wound separately and before any other Wounds the attack inflicts."
+      },
+      {
+        "name": "Battlesmith",
+        "id": "131d-5e79-6950-6437",
+        "hidden": false,
+        "description": "If a model with the Battlesmith (X) special rule is in base contact with, or Embarked upon, one or more damaged Vehicles, Dreadnoughts or Automata during the Shooting phase, they can attempt to repair one of them. If they do so, the model that attempted the repair cannot shoot any weapons or use any other abilities that would be used instead of making a Shooting Attack. Roll a D6. If the result is equal to or more than the value listed in brackets as part of this rule then one of the following options may be applied to any one Vehicle, Dreadnought or Automata the model is in base contact with or Embarked upon:\n\n\n- Restore a lost Hull Point.\n- Restore a lost Wound.\n- Repair a Weapon Destroyed result.\n- Repair an Immobilised result.\n\n\nIf a Weapon Destroyed result is repaired, that weapon may not be used to attack in the same phase as it is repaired, but may be used to attack as normal in any phase after that. The Battlesmith cannot use this ability if they are Pinned or Falling Back."
+      },
+      {
+        "name": "Poisoned",
+        "id": "92ab-d224-1de1-8685",
+        "hidden": false,
+        "description": "If a model has the Poisoned special rule, or is attacking with a Melee weapon that has the Poisoned special rule, it always Wounds on a fixed number (generally shown in brackets), unless a lower result would be required, when attacking in close combat. In addition, if the Strength of the wielder (or the Poisoned weapon) is higher than the Toughness of the victim, the wielder must re-roll failed rolls To Wound in close combat.\n\n\nSimilarly, if a model makes a Shooting Attack with a weapon that has the Poisoned special rule, it always Wounds on a fixed number (generally shown in brackets), unless a lower result would be required. If no number is shown in brackets, the rule is Poisoned (4+).\n\n\nUnless otherwise stated, Poisoned weapons are treated as having a Strength of 1. The Poisoned special rule has no effect against Vehicles."
+      },
+      {
+        "name": "Stubborn",
+        "id": "fdf1-31bc-4796-fb3d",
+        "hidden": false,
+        "description": "When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, the unit ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, the unit uses the rules for Fearless instead."
+      },
+      {
+        "name": "Hatred",
+        "id": "bacb-64aa-bb42-4c9d",
+        "hidden": false,
+        "description": "This rule is presented as Hatred (X) where X identifies a specific type of foe. If the special rule does not specify a type of foe, then the unit has Hatred against everyone. This can refer to a Faction or a specific unit.\n\n\nFor example, Hatred (Mechanicum) means any model of the Mechanicum Faction, whilst Hatred (Thallax) means only Thallax. A model striking a Hated foe in close combat re-rolls all failed To Hit rolls during the first round of each close combat.\n\n\nThe effects of this special rule only apply when a unit that has it begins an Assault phase not locked in combat and then either Charges or is Charged by an enemy unit. If an enemy unit Charges this unit when it is already locked in combat then that does count as a new ‘first’ turn of combat for the effects of Hatred."
+      },
+      {
+        "name": "Bulky",
+        "id": "8317-bc69-b786-390d",
+        "hidden": false,
+        "description": "Bulky models count as a number of models equal to the value X in brackets after the rule’s name for the purposes of Transport Capacity and whether a given unit outnumbers another in combat.\n\nFor example, a unit comprised of five models all of which have the Bulky (3) special rule, would count as 15 models when attempting to Embark on a Transport Vehicle or when deciding if they outnumber an enemy unit (see, for example, Rampage (X))."
+      },
+      {
+        "name": "Firing Protocols",
+        "id": "2bf1-82e6-0cdd-3a40",
+        "hidden": false,
+        "description": "When making a Shooting Attack, a model with this special rule may attack with a number of different weapons equal to the value of this special rule. This rule does not allow a single weapon to be attacked with more than once, and only applies if the model is equipped with more than one weapon. For example, as part of a single Shooting Attack, a model with the Firing Protocols (2) special rule may attack with up to two different weapons."
+      },
+      {
+        "name": "Hammer of Wrath",
+        "id": "f7ff-d5d7-7787-efda",
+        "hidden": false,
+        "description": "If a model with this special rule ends its Charge Move in base contact with an enemy model, it makes a number of additional attacks equal to the value in brackets listed as part of this special rule. These attacks hit automatically and are resolved at the model’s unmodified Strength with AP-. These attacks do not benefit from any of the model’s special rules (such as Furious Charge, Rending, etc.). These attacks are resolved during the Fight sub-phase at Initiative step 10, but do not grant the model an additional Pile-in Move.\n\nIf a model with this special rule Charges a Vehicle of any kind or a Building, the hits are resolved against the Armour Value of the Facing the charging model is touching. If the model is in contact with two or more Facings, the player controlling the target model chooses a Facing upon which the attacks are resolved. If a model with this special rule Charges a Building or Vehicle that is a Transport, the hits are resolved against the Building or Vehicle, not the unit Embarked within the Building or Vehicle."
+      },
+      {
+        "name": "Infiltrate",
+        "id": "a11e-3993-c8ce-9072",
+        "hidden": false,
+        "description": "You may choose to deploy units that contain at least one model with this special rule last, after all other units (friend and foe) have been deployed. If both players have such units and choose to do so, the players roll off and the winner decides who goes first,then alternate deploying these units.\n\n\nUnits that Infiltrate in this way can be set up anywhere on the battlefield that is more than 9\" from any enemy unit, as long as no deployed enemy unit can draw line of sight to them. This includes in a Building, as long as the Building is more than 9\" from any enemy unit. Alternatively, they can be set up anywhere on the battlefield more than 12\" from any enemy unit, even in plain sight.\n\n\nIf a unit with Infiltrate deploys inside a Dedicated Transport, the same rules apply when deploying their Transport.\n\n\nA unit that deploys using these rules cannot Charge in their first turn."
+      },
+      {
+        "name": "Marked for Death",
+        "id": "8f56-6ba6-fe2c-30c7",
+        "hidden": false,
+        "description": "At the start of the battle, once both armies have set up all their models, including any units with the Infiltrator special rule, a single enemy unit may be chosen by a player that controls any models with this special rule – this unit is considered ‘marked for death’. When any models with this special rule controlled by that player are used to make an attack of any kind against the enemy unit their controlling player has ‘marked for death’, all failed To Wound rolls of ‘1’ may be re-rolled."
+      },
+      {
+        "name": "Move Through Cover",
+        "id": "295d-36fe-4db3-a19f",
+        "hidden": false,
+        "description": "A unit that contains only models with this special rule suffers no penalty for moving or charging through Difficult Terrain."
+      },
+      {
+        "name": "Pathfinder",
+        "id": "dc2f-f1d1-f91e-ec8b",
+        "hidden": false,
+        "description": "A unit with at least one model with this special rule automatically passes Dangerous Terrain tests."
+      },
+      {
+        "name": "Scout",
+        "id": "e18c-d4da-eb9b-919b",
+        "hidden": false,
+        "description": "After both sides have deployed (including Infiltrators), but before the first player begins their first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, Dreadnought or Automata, each model can redeploy anywhere entirely within 6\" of its current position. If it is any other Unit Type, each model can instead redeploy anywhere entirely within 12\" of its current position. During this redeployment, Scouts can move outside the owning player’s Deployment Zone, but must remain more than 9\" away from any enemy unit. A unit that makes a Scout redeployment cannot Charge in the first Game Turn. A unit cannot Embark or Disembark as part of a Scout redeployment.\n\nIf both sides have Scouts, roll off; the winner decides who redeploys first. Then alternate redeploying Scout units one at a time. If a unit with this special rule is deployed inside a Dedicated Transport, it confers the Scout special rule to the Transport (though a Disembarkation cannot be performed as part of the redeployment). Note that a Transport with this special rule does not lose it if a unit without this special rule is Embarked upon it. Having Scout also confers the Outflank special rule to units of Scouts that are kept as Reserves."
+      },
+      {
+        "name": "Twin-linked",
+        "id": "23d2-bdd7-3df1-be63",
+        "hidden": false,
+        "description": "When attacking with a weapon that has this special rule, the controlling player may re-roll all failed To Hit rolls.\n\nTwin-linked Blast Weapons:\nIf the Scatter dice does not roll a Hit, you can choose to re-roll the dice when making a Shooting Attack with a Twin-linked Blast weapon. If you choose to do so, you must re-roll both the 2D6 and the Scatter dice.\n\nTwin-linked Template Weapons:\nTwin-linked Template weapons are fired just like a single weapon, but must re-roll failed To Wound rolls and Armour Penetration rolls."
+      },
+      {
+        "name": "Fear",
+        "id": "b19f-31c5-018a-932e",
+        "hidden": false,
+        "description": "All enemy models within 12\" of a model with this special rule must reduce their Leadership by the value in brackets after the special rule when taking any Morale checks, Regroup or Pinning tests. For example, a unit with the special rule Fear (2) would reduce the Leadership of all enemy models within 12\" by 2.\n\nEnemy units that are locked in combat are only affected by this modifier if they are locked in combat with the unit that causes Fear. This modifier is not cumulative, and any given unit can only be affected by a single instance of the Fear special rule at a time. This will always be the highest single modifier among those applicable.\n\nA model that causes Fear is not itself immune to Fear, and will still suffer a penalty to its Leadership if within range of an enemy unit that has the Fear special rule."
+      },
+      {
+        "name": "Fearless",
+        "id": "6973-2ab3-7e6b-e323",
+        "hidden": false,
+        "description": "Units with one or more models with the Fearless special rule automatically pass Pinning tests, Regroup tests and Morale checks. In addition, models with the Fearless special rule ignore the effects of the Fear special rule.\n\n\nHowever, units containing one or more models with the Fearless special rule cannot use any Reactions that grant a Cover Save, Armour Save or Invulnerable Save, and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. If a unit has become Pinned and then gains the Fearless special rule, all the effects of being Pinned are immediately cancelled."
+      },
+      {
+        "name": "Haywire",
+        "id": "6330-8635-5d8f-c1d6",
+        "hidden": false,
+        "description": "For each Hit inflicted on a unit that contains at least one model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:\n\n\n1 - No Effect.\n2-5 - A model with the Vehicle Unit Type that is part of the target unit suffers 1 Glancing Hit. Any other model suffers 1 Wound. Only Invulnerable Saves or Damage Mitigation rolls may be taken against Glancing Hits or Wounds inflicted by this result.\n6 - A model with the Vehicle Unit Type that is part of the target unit suffers 1 Penetrating Hit. Any other model suffers 1 Wound. No Saves or Damage Mitigation rolls may be taken against Penetrating Hits or Wounds inflicted by this result."
+      },
+      {
+        "name": "Skyfire",
+        "id": "621c-c0ab-b8d5-916a",
+        "hidden": false,
+        "description": "A model which has this special rule, or that is firing a weapon with this special rule, fires using its normal Ballistic Skill when shooting at Flyers and Skimmers, but it can only fire Snap Shots against other targets."
+      },
+      {
+        "name": "Inexorable",
+        "id": "1f1d-9364-4027-26a4",
+        "hidden": false,
+        "description": "A unit that contains only models with this special rule ignores modifiers to Leadership when making a Morale check or Pinning test – except those caused by the Fear (X) special rule or the Corrupted and Anathema Sub-types. If a unit has both the Fearless and Inexorable special rules, it uses the rules for Fearless instead of Inexorable."
+      },
+      {
+        "name": "Chosen Warriors",
+        "id": "2d8a-fe4e-0823-4918",
+        "hidden": false,
+        "description": "A model with this special rule may issue and accept Challenges as if it had the Character type. Note that this does not allow a model with this special rule to use any other special rules associated with the Character type."
+      },
+      {
+        "name": "Retinue",
+        "id": "2a91-35fc-a75c-b171",
+        "hidden": false,
+        "description": "A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may only be selected as part of a Detachment that includes at least one model with the Master of the Company special rule. A unit selected in this manner is considered a ‘Retinue Squad’ and the model with the Master of the Company special rule is referred to as the Retinue Squad’s Leader for the purposes of this special rule (if the Detachment includes more than one model with the Master of the Company  special rule then the controlling player selects one as the unit’s Leader). The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. The Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may not be selected as part of an army without a Leader."
+      },
+      {
+        "name": "Support Squad",
+        "id": "650d-03c6-7f4b-c601",
+        "hidden": false,
+        "description": "A unit with this special rule may not be chosen as a compulsory choice for the army as part of the Force Organisation chart."
+      },
+      {
+        "name": "Grav-ripple",
+        "id": "93ec-123c-b844-7ace",
+        "hidden": false,
+        "description": "A weapon with the Grav-Ripple effect rolls to hit as normal. To wound it needs whatever the targets Armour save is (Eg if hitting a Space Marine with an armour save of 3+, you would require a 3+ to wound the Marine). Models wounded by a weapon with the Grav-Ripple trait do not make a normal saving through, but instead make save based on their Toughness. EG if a Guardsmen, at Toughness 3 is wounded by a Grav-Ripple Weapon, they will save the wound on a 3+.\n(Let us know how this plays in your games, Wanted something not as busted as Grav in 6th/7th but not as useless as Graviton in HH 2.0, feedback is always wanted and encouraged!)"
+      },
+      {
+        "name": "Precision Shots",
+        "id": "7c10-c2c4-a901-0907",
+        "hidden": false,
+        "description": "If a model with this special rule, or attacking with a weapon with this special rule, rolls equal to or higher than the value in brackets when making a To Hit roll as part of a Shooting Attack, that shot is a ‘Precision Shot’. For example, if a model with the Precision Shots (4+) special rule rolls a 4 or higher when making a To Hit roll, then that attack is a Precision Shot.\n\nWounds from Precision Shots are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as the target model is in range and line of sight of the attacking model, rather than following the normal rules for Wound allocation.\n\nNote that Snap Shots and shots from weapons that scatter, or do not roll To Hit, can never be Precision Shots."
+      },
+      {
+        "name": "Dreadnought Talon",
+        "id": "a9c0-2029-d470-db34",
+        "hidden": false,
+        "description": "When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this special rule in a unit must be placed within unit coherency, but afterwards operate independently and are not treated as a unit."
+      },
+      {
+        "name": "It Will not Die",
+        "id": "cc45-e856-80f1-af2f",
+        "hidden": false,
+        "description": "At the end of each of your turns, roll a D6 for each of your models with this special rule that has less than its starting number of Wounds or Hull Points, but that has not been removed as a casualty or destroyed. On a roll equal to or greater than the number in brackets associated with the special rule, that model regains a Wound, or Hull Point, lost earlier in the game. For example, a model with It Will Not Die (5+) would regain a lost Wound on the roll of a 5 or more."
+      },
+      {
+        "name": "Torrent",
+        "id": "b030-883b-ebeb-21f1",
+        "hidden": false,
+        "description": "A weapon with this special rule is treated like any other Template weapon, but when firing it in the Shooting phase, place the template so that the narrow end is placed within a number of inches equal to the value in brackets listed as part of this special rule. The wide end must then be aligned so that it is no closer to the firing model than the narrow end.\n\n\nFor example, a weapon with the Torrent (18) special rule must place the narrow end of the template at a point within 18\" and the wide end no closer to the firing model than the narrow end."
+      },
+      {
+        "name": "Blind",
+        "id": "7566-b279-0ebd-607a",
+        "hidden": false,
+        "description": "Any unit hit by one or more models or weapons with this special rule must take an Initiative test at the end of the current Phase. If the Test is passed, there is no further effect. If the Initiative test is failed, all models in the unit are reduced to Weapon Skill 1 and Ballistic Skill 1 until the end of their next turn. Should the attacking unit hit themselves, they automatically pass the Test. Any model that does not have an Initiative Characteristic (for example, Vehicles, Buildings, etc) is unaffected by this special rule."
+      },
+      {
+        "name": "Split Fire",
+        "id": "d0a8-20f5-0ce8-70cf",
+        "hidden": false,
+        "description": "When a unit that contains at least one model with this special rule makes a Shooting Attack, one model in the unit can shoot at a different target to the rest of their unit. Once this Shooting Attack has been resolved, resolve the Shooting Attacks made by the rest of the unit. These must be at a different target, which cannot be a unit forced to Disembark as a result of the Split Firing unit’s initial Shooting Attack."
+      },
+      {
+        "name": "Night Vision",
+        "id": "8ab4-4caa-d70c-dbf1",
+        "hidden": false,
+        "description": "A unit that contains at least one model with this special rule ignores the effects of Night Fighting and no model may make Shrouded rolls to negate Wounds inflicted by their attacks."
+      },
+      {
+        "name": "Limited Ammunition",
+        "id": "3b71-0e6c-f19b-559f",
+        "hidden": false,
+        "description": "After all Shooting Attacks for a weapon with this special rule have been fully resolved, roll a D6, adding +1 if the weapon has fired before in the same battle. If the total of this roll is 6 or more then the weapon may no longer be used to make Shooting Attacks in this battle. If this weapon is unable to make further Shooting Attacks then it may not be targeted by a Weapon Destroyed result on the Vehicle Damage table, and for the purposes of such a result is treated as though it had already been destroyed."
+      },
+      {
+        "name": "Inertial Guidance System",
+        "id": "7483-8487-895a-840a",
+        "hidden": false,
+        "description": "When deployed as the first model placed during a Deep Strike Assault, or other deployment that requires a model with this special rule to scatter, the distance the model scatters is reduced by half and if it scatters into Impassable Terrain or off of the battlefield then it is moved the minimum distance required to avoid such obstacles. In addition, if all units included in a Deep Strike Assault have the Inertial Guidance System special rule or are models Embarked on a model with that special rule then any rolls made to determine if the Deep Strike Assault is Disordered may be re-rolled."
+      },
+      {
+        "name": "Impact-reactive Doors",
+        "id": "d637-8ab0-7db7-2764",
+        "hidden": false,
+        "description": "When a model with this special rule is deployed, any doors on the model must be opened to their full extent. All models Embarked within a model with this special rule must then Disembark immediately and no models can thereafter Embark within that model for the remainder of the battle. Any model that has Disembarked from a model with this special rule may not have a Charge declared for it in the same turn. The physical doors attached to a model with this special rule are not treated as part of the model once opened and cannot be targeted by Shooting Attacks and do not impede Movement in any way."
+      },
+      {
+        "name": "Orbital Assault Vehicle",
+        "id": "33e2-0e44-6580-1efb",
+        "hidden": false,
+        "description": "A model with this special rule must be deployed onto the battlefield as part of a Deep Strike Assault, or other deployment that requires the Deep Strike special rule. It may never be deployed as normal, regardless of any other rule or mission, and if forced to do so it is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation). Furthermore, a model with this special rule may never move – and if forced to do so is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation)."
+      },
+      {
+        "name": "Assault Vehicle",
+        "id": "52d4-8107-08f3-455e",
+        "hidden": false,
+        "description": "Passengers Disembarking from Access Points on a Vehicle with this special rule can Charge on the turn they do so (including when forced to make an Emergency Disembarkation) unless the Vehicle arrived from Reserves that turn."
+      },
+      {
+        "name": "Hit & Run",
+        "id": "8343-bec1-04b5-a8d4",
+        "hidden": false,
+        "description": "A unit that contains at least one model with this special rule that is locked in combat can choose to leave close combat at the end of any Assault phase. If the unit wishes to do so, it must take an Initiative test.\n\nIf the Test is failed, nothing happens and the models remain locked in the fight.\n\nIf the Test is passed, choose a direction – then roll 2D6 and add the unit’s Movement Characteristic to the result. As long as the distance rolled, in inches, is sufficient to allow the entire unit to move over 1\" away from all of the enemy units they are locked in combat with, the unit breaks away from combat and must immediately move a number of inches in the chosen direction equal to the 2D6 + Movement result, ignoring the models they were locked in combat with. No Sweeping Advance rolls are made. Enemy units that are no longer locked in combat immediately Consolidate a number of inches equal to their Initiative.\n\nA Hit & Run Move is not slowed by Difficult Terrain, but does trigger Dangerous Terrain tests as normal. It may not be used to move into base contact with enemy units, and models instead stop 1\" away. If there are units with this rule on both sides who wish to disengage, roll off to determine who goes first and then alternate disengaging them. If the last of these ends up no longer in combat, it Consolidates instead."
+      },
+      {
+        "name": "Outflank",
+        "id": "9a5c-4c5f-9a8b-014d",
+        "hidden": false,
+        "description": "A unit made up entirely of models with this special rule may perform a Flanking Assault. Certain Faction or unit special rules may present other options for the deployment of units with the Outflank special rule."
+      },
+      {
+        "name": "Strafing Run",
+        "id": "e0a7-5b4b-a94b-4d7e",
+        "hidden": false,
+        "description": "When making a Shooting Attack at any unit without the Flyer sub-type, this Vehicle increases its Ballistic Skill by the value indicated as part of the special rule. For example, a Vehicle with the Strafing Run (2) special rule would increase the model’s Ballistic Skill by +2 when making Shooting Attacks targeting any unit without the Flyer sub-type."
+      },
+      {
+        "name": "Power of the Machine Spirit",
+        "id": "c671-7954-0eb5-f57a",
+        "hidden": false,
+        "description": "A Vehicle with this special rule may attack different targets with each Ranged weapon it is permitted to fire during any Shooting Attack."
+      },
+      {
+        "name": "Ignores Cover",
+        "id": "6917-7b87-ca40-5914",
+        "hidden": false,
+        "description": "Cover Saves and Damage Mitigation rolls granted by the Shrouded special rule cannot be taken against Wounds or Hull Point damage caused by weapons with the Ignores Cover special rule. This includes Cover Saves granted by Reactions and other special rules as well as Cover Saves conferred by terrain."
+      },
+      {
+        "name": "Exoshock",
+        "id": "cdfb-dd74-48fd-104c",
+        "hidden": false,
+        "description": "If this weapon successfully scores a Penetrating Hit on a target, roll a D6. If the result of that roll is equal to or higher than the value in brackets after the rule, a second automatic Penetrating Hit is inflicted on the same target against which Cover Saves may not be taken. For example, a weapon with the Exoshock (4+) special rule would inflict a second Penetrating Hit on the score of a 4+. This second Penetrating Hit does not gain the effects of any other special rules, and cannot trigger additional Hits.\n\n\nIf, for any reason, a given instance of this rule does not have a value in brackets after the special rule, assume the value is 6+."
+      },
+      {
+        "name": "Barrage",
+        "id": "9687-76a5-98c6-200d",
+        "hidden": false,
+        "description": "All Barrage weapons use Blast markers and consequently use the rules for Blast weapons, as indicated by their profile, with the following exceptions:\n\nBarrage weapons can fire indirectly. This means they can fire at a target that they do not have line of sight to, as long as the target is beyond their Minimum Range (if applicable). When firing indirectly, the Ballistic Skill of the firer is not subtracted from the scatter distance; unless a Hit is rolled on the Scatter dice, the Blast marker always scatters a full 2D6\". If a Barrage weapon has line of sight to its target it can fire directly, even if the target is within its Minimum Range.\n\nNote that any Hits inflicted upon Vehicles by an Attack using the Barrage special rule are always resolved against the Vehicle’s Side Armour Value.\n\n\nMultiple Barrages\n\nIf a unit fires more than one shot with the Barrage special rule, they fire together, as follows:\n\nThe Barrage weapon closest to the target unit fires first. Place the Blast marker over the target, then roll for scatter as described earlier. Once the first marker is placed, roll a Scatter dice for each other Barrage weapon shot fired by the unit. If an arrow is rolled, place the marker in the direction indicated so that it is next to and touching the edge of the first marker placed (see diagram below). If a Hit is rolled, the firing player places the marker so that it touches any part of any marker in the group that has already been placed. Note that it is perfectly fine if some markers are placed overlapping one another (including being directly over the top of a previous marker).\n\n\nApocalyptic Barrage\n\n\nAn Apocalyptic Barrage follows all of the rules for a Barrage weapon, but uses the clover-shaped Apocalyptic Barrage marker. Before the marker is placed, the attacker is allowed to rotate the marker about its centre to maximise the number of models that could potentially be hit. Place the marker and roll for scatter in the same way you would for a Barrage. If the marker scatters, be careful to maintain the same orientation as you move it.\n\n\nOnce the final position of the marker has been determined, roll a number of dice equal to the number of attacks on the weapon’s profile. So, for example, with a weapon with the type ‘Heavy 4, Apocalyptic Barrage’, you would roll four dice. Each dice roll corresponds to a ‘strike’ on one of the circles on the Apocalyptic Barrage marker. For example, each roll of a 2 indicates a strike on circle number 2. Resolve the strikes as for a Multiple Barrage, as if each were a Barrage attack that had landed on that circle and hit all the models underneath it. To determine Cover Saves, always assume the shot is coming from the centre of the entire Apocalyptic Barrage marker."
+      },
+      {
+        "name": "Interceptor",
+        "id": "6c99-006a-25b5-a77f",
+        "hidden": false
+      },
+      {
+        "name": "Shell Shock",
+        "id": "8175-2eb5-17e1-07b4",
+        "hidden": false,
+        "description": "Pinning tests taken due to an attack or weapon with this special rule are made with a penalty to Leadership Characteristic equal to the value listed as part of the special rule.\n\n\nFor example, a unit that is forced to take a Pinning test by an attack made using a weapon with the Shell Shock (2) special rule, suffers a penalty of -2 to their Leadership Characteristic when resolving that Test."
+      },
+      {
+        "name": "Transport Bay",
+        "id": "861c-2149-4067-1efc",
+        "hidden": false,
+        "description": "A model with this special rule may carry models of the Dreadnought and Automata Unit Types, as well as models with the Cavalry Unit Type but not the Antigrav Sub-type. Each Dreadnought model uses 10 points of Transport Capacity, while each Automata and Cavalry model uses up a number of Transport Capacity points equal to twice its starting Wounds Characteristic."
+      },
+      {
+        "name": "Furious Charge",
+        "id": "7281-8b61-791e-c0f1",
+        "hidden": false,
+        "description": "In a turn in which a model with this special rule Charges into combat, it adds a bonus to its Strength Characteristic until the end of the Assault phase. The bonus added to the model’s Strength is equal to the value in brackets after the special rule, for example a model with Furious Charge (2) adds a bonus of +2 to its Strength.\n\nA model that has made a Disordered Charge that turn receives no benefit from Furious Charge."
+      },
+      {
+        "name": "Rage",
+        "id": "6845-bbcf-b09b-06bc",
+        "hidden": false,
+        "description": "In a turn in which a model with this special rule Charges into combat, it gains a number of Attacks equal to the value of X for Charging, rather than +1. A model that has made a Disordered Charge that turn receives no benefit from Rage."
+      },
+      {
+        "name": "Feel No Pain",
+        "id": "a80b-2291-817a-5f27",
+        "hidden": false,
+        "description": "When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being Wounded (this is a special Saving Throw which is made after unsaved Wounds are suffered).\n\n\nFeel No Pain rolls may not be taken against unsaved Wounds that have the Instant Death special rule.\n\n\nRoll a D6 each time an unsaved Wound is suffered. On a result that is equal to or greater than the value in brackets, the unsaved Wound is discounted – treat it as having been saved. On any other result the Wound is taken as normal.\n\n\nFor example, a unit with the special rule Feel No Pain (5+) would need to score a 5 or 6 in order to discount a Wound inflicted upon it.\n\n\nThis is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound."
+      },
+      {
+        "name": "Counter-attack",
+        "id": "d079-5609-e2c3-e95e",
+        "hidden": false,
+        "description": "If a unit contains at least one model with this special rule, and that unit is Charged, every model with the Counter-attack special rule gains a number of additional Attacks equal to the value in brackets listed as part of this special rule. If no value is listed then the unit gains +1 Attack.\n\n\nIf, when Charged, the unit was already locked in combat or has made the Hold the Line Reaction, the Counter-attack special rule has no effect."
+      },
+      {
+        "name": "Eternal Warrior",
+        "id": "d9b7-d83e-51e0-bcfc",
+        "hidden": false,
+        "description": "If a model with this special rule suffers an unsaved Wound from an attack that inflicts Instant Death, it only reduces its Wounds by 1, instead of automatically reducing its Wounds to 0."
+      },
+      {
+        "name": "Reaping Blow",
+        "id": "2cc2-c220-7f11-b44b",
+        "hidden": false,
+        "description": "If a model is in base contact with more than one enemy model in the Initiative step in which they fight, they gain a number of Attacks equal to the value of X as noted in the variant of the special rule (if no value of X is included then count the value of X as 1)."
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Biomancy",
+        "hidden": false,
+        "id": "84d4-417d-b332-b7f8",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Biomantic Augmentation",
+            "hidden": false,
+            "id": "056d-8d8a-4d1c-b179",
+            "rules": [
+              {
+                "name": "Biomantic Augmentation",
+                "id": "78a2-b0b7-99e2-3bc6",
+                "hidden": false,
+                "description": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 6\", that unit increases its Strength by +1 for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then both Strength and Toughness are increased by +1 for the duration of the current player turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bd0b-e8a7-accc-5c3a-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bd0b-e8a7-accc-5c3a-max"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Biomancer’s Rage",
+            "hidden": false,
+            "id": "db2e-ed24-a789-b86a",
+            "infoLinks": [
+              {
+                "name": "Psychic Focus",
+                "id": "93b4-72d8-5d5a-a28c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5424-a823-35b0-e83f"
+              },
+              {
+                "name": "Rending",
+                "id": "4e92-95aa-1d65-c35b",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2508-8e95-11c7-6bd6",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "4+",
+                    "field": "annotation"
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Biomancer’s Rage",
+                "typeId": "ecd5-ca1d-0842-34a4",
+                "typeName": "Melee Weapon",
+                "hidden": false,
+                "id": "5b98-0bf2-d0c1-ada8",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "ec4a-5686-1553-4654",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "b9e5-2eb3-f79d-e995",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "0332-8de1-48c6-c94d",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "6c0f-3258-2a17-5cc9",
+                    "$text": "Melee"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "a603-af69-c30b-94ed",
+                    "$text": "Rending (4+), Psychic Focus"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d0f1-48be-1eb7-20d0-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d0f1-48be-1eb7-20d0-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Divination",
+        "hidden": false,
+        "id": "67e8-287e-4259-4379",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Divinatory Aegis",
+            "hidden": false,
+            "id": "d436-2f13-5227-e3fd",
+            "rules": [
+              {
+                "name": "Divinatory Aegis",
+                "id": "f2bf-0e31-fb50-43f2",
+                "hidden": false,
+                "description": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 12\". The target unit gains the Precision Strikes (6+) and Precision Shots (6+) special rules for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the target unit instead gains the Precision Strikes (5+) and Precision Shots (5+) special rules for the duration of the current player turn. If the Check is failed then no additional benefit is gained and the Psyker suffers Perils of the Warp."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ff5d-a08e-f716-532c-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ff5d-a08e-f716-532c-max"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Diviner’s Dart",
+            "hidden": false,
+            "id": "e26d-deb8-b33e-decd",
+            "profiles": [
+              {
+                "name": "Diviner’s Dart",
+                "typeId": "5e31-3867-7c3d-fcb9",
+                "typeName": "Ranged Weapon",
+                "hidden": false,
+                "id": "d8a6-f797-30d2-49df",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "7b0f-9c2a-0ecb-f3a3",
+                    "$text": "18\""
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "2ecc-1ccc-736f-9d3d",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "cbb5-5f04-f87f-a810",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "2c90-16ca-a927-898d",
+                    "$text": "Assault 1"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "d2a2-1139-48cb-4472",
+                    "$text": "Sniper, Guided Fire, Psychic Focus"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Sniper",
+                "id": "af6d-2ad0-f15c-71f5",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e4db-0b99-ef96-7a32"
+              },
+              {
+                "name": "Guided Fire",
+                "id": "9efd-6fd3-1da2-4a92",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "615d-ba71-0c3b-d9bc"
+              },
+              {
+                "name": "Psychic Focus",
+                "id": "865a-26ca-1f70-7d7e",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5424-a823-35b0-e83f"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f5ea-b808-453d-a749-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f5ea-b808-453d-a749-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Pyromancy",
+        "hidden": false,
+        "id": "bff3-be94-f034-ee18",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Pyromantic Combustion",
+            "hidden": false,
+            "id": "c5b9-5892-26bc-4244",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f0e6-38ed-1c81-df50-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f0e6-38ed-1c81-df50-max"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Pyromantic Combustion",
+                "id": "d1f2-02cd-099d-b248",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1b42-01a2-b2ca-9d4e"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Pyromantic Desolation",
+            "hidden": false,
+            "id": "89fe-8bef-2544-2837",
+            "profiles": [
+              {
+                "name": "Pyromantic Desolation",
+                "typeId": "ecd5-ca1d-0842-34a4",
+                "typeName": "Melee Weapon",
+                "hidden": false,
+                "id": "d902-fc73-02d4-caca",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "ec4a-5686-1553-4654",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "b9e5-2eb3-f79d-e995",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "0332-8de1-48c6-c94d",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "6c0f-3258-2a17-5cc9",
+                    "$text": "Melee"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "a603-af69-c30b-94ed",
+                    "$text": "Unwieldy, Pyromantic Desolation, Psychic Focus"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Pyromantic Desolation",
+                "id": "17e2-8537-d420-15c8",
+                "hidden": false,
+                "description": "In addition to attacking normally in the Assault Phase, at the beginning of the Initiative Step at which the model using this Psychic Weapon would normally attack, but before any Pile-in moves or attacks are made, place a Blast (3\") marker centred on the attacking model. All other models wholly or partially under the marker, friendly or enemy, suffer an automatic Hit with the profile shown. These Hits are resolved immediately and do not count for the purpose of resolving the winner of an assault. Once they are resolved, the attacking model may Pile-in and make any other attacks as normal.\n"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Unwieldy",
+                "id": "81b6-6958-6fea-4ba6",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "cfea-a7be-fbea-da53"
+              },
+              {
+                "name": "Psychic Focus",
+                "id": "7618-e263-b027-30e5",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5424-a823-35b0-e83f"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "12d7-6227-c984-ef6a-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "12d7-6227-c984-ef6a-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Telekinesis",
+        "hidden": false,
+        "id": "27bd-a90f-a44d-f46b",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Telekine Dome",
+            "hidden": false,
+            "id": "b4d9-af3f-d421-cbb7",
+            "rules": [
+              {
+                "name": "Telekine Dome",
+                "id": "2dda-0c67-f70b-b57b",
+                "hidden": false,
+                "description": "Instead of moving during the Movement phase, a Psyker with this Psychic Power may instead activate this Psychic Power. All models, friendly and enemy, that are within 8\" of the Psyker gain a 6+ Invulnerable Save when targeted by any model that is not also within 8\" of the Psyker. If the Psyker moves, makes a Shooting Attack, Charges or is successfully Charged by an enemy unit, then the Psychic Power ends, otherwise it remains in effect indefinitely. When initially using the Psychic Power, or at the start of any of the controlling player’s subsequent Movement phase while it is in effect, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then models affected by this Psychic Power gain a 4+ Invulnerable Save instead of a 6+ Invulnerable Save. If the Check is failed then the Psyker suffers Perils of the Warp and the Psychic Power immediately ends."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1816-4bc5-18a1-5e4e-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1816-4bc5-18a1-5e4e-max"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Telekine’s Focus",
+            "hidden": false,
+            "id": "2927-f106-52c5-979a",
+            "profiles": [
+              {
+                "name": "Telekine’s Focus",
+                "typeId": "5e31-3867-7c3d-fcb9",
+                "typeName": "Ranged Weapon",
+                "hidden": false,
+                "id": "c061-237c-fa65-9433",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "7b0f-9c2a-0ecb-f3a3",
+                    "$text": "24\""
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "2ecc-1ccc-736f-9d3d",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "cbb5-5f04-f87f-a810",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "2c90-16ca-a927-898d",
+                    "$text": "Heavy 1"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "d2a2-1139-48cb-4472",
+                    "$text": "Sunder, Blast (3\"), Psychic Focus"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Sunder",
+                "id": "fbf3-bbaa-574a-4b54",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1692-e368-b877-e324"
+              },
+              {
+                "name": "Blast",
+                "id": "cf3e-9f61-f66d-6115",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "dd6e-d5d4-9bb3-d2e4",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "3\"",
+                    "field": "annotation"
+                  }
+                ]
+              },
+              {
+                "name": "Psychic Focus",
+                "id": "cdda-6518-9afa-2dde",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5424-a823-35b0-e83f"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3ec1-b371-995e-8540-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3ec1-b371-995e-8540-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Telepathy",
+        "hidden": false,
+        "id": "0f5d-6a84-3744-f037",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Telepathic Fugue",
+            "hidden": false,
+            "id": "ce7a-ad09-2277-f4e0",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "53b7-4470-64d8-498c-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "53b7-4470-64d8-498c-max"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Telepathic Fugue",
+                "id": "ec95-a4f9-a4d5-a219",
+                "hidden": false,
+                "description": "Once per turn, at the start of any Phase, the Psyker with this Psychic Power’s controlling player may select a single enemy unit within 24\" and line of sight of the Psyker and take a Psychic check. If that Check is passed then the target unit may not make any Reactions for the duration of that Phase. If the Check is failed then the Psyker suffers Perils of the Warp."
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Telepathic Hallucinations",
+            "hidden": false,
+            "id": "d60e-edcf-90d6-c8c3",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d387-7554-5c1c-ebe7-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d387-7554-5c1c-ebe7-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Telepathic Hallucinations",
+                "typeId": "5e31-3867-7c3d-fcb9",
+                "typeName": "Ranged Weapon",
+                "hidden": false,
+                "id": "f506-642a-3db7-79d9",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "7b0f-9c2a-0ecb-f3a3",
+                    "$text": "36\""
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "2ecc-1ccc-736f-9d3d",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "cbb5-5f04-f87f-a810",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "2c90-16ca-a927-898d",
+                    "$text": "Assault 6"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "d2a2-1139-48cb-4472",
+                    "$text": "Hallucinations, Psychic Focus"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Psychic Focus",
+                "id": "fd0b-3331-bf60-c890",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5424-a823-35b0-e83f"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Hallucinations",
+                "id": "b194-2a7c-c9ac-b62d",
+                "hidden": false,
+                "description": "Weapon with this special rule must make an immediate Pinning test, adding one to the result of the roll for each Hit scored by this attack before the result is decided. For example, if a Psyker attacks an enemy unit that has a Leadership of 8, scoring 3 Hits with Telepathic Hallucinations, then that unit must make an immediate Pinning test and add 3 to the result rolled before determining the result."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Thaumaturgy",
+        "hidden": false,
+        "id": "d781-b222-3c54-dab2",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Thaumaturgic Succour ",
+            "hidden": false,
+            "id": "7b21-4ea8-5296-4562",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ea61-a78d-aa0c-3bc8-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ea61-a78d-aa0c-3bc8-max"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Thaumaturgic Succour",
+                "id": "b4db-40f8-ff39-91c5",
+                "hidden": false,
+                "description": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit with at least one model within 12\" and make a Psychic check. If the Psychic check is passed then all non-Vehicle models in the target unit may roll a D6. On a roll of a 5+, that model regains a single lost Wound. This ability cannot be used to increase a model’s Wounds beyond its starting Wounds Characteristic."
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Thaumaturge’s Cleansing",
+            "hidden": false,
+            "id": "2b94-e833-0170-32c3",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "eed4-1406-9d5e-087a-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "eed4-1406-9d5e-087a-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Thaumaturge’s Cleansing",
+                "typeId": "5e31-3867-7c3d-fcb9",
+                "typeName": "Ranged Weapon",
+                "hidden": false,
+                "id": "cece-a2d9-e8cf-8577",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "7b0f-9c2a-0ecb-f3a3",
+                    "$text": "T"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "2ecc-1ccc-736f-9d3d",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "cbb5-5f04-f87f-a810",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "2c90-16ca-a927-898d",
+                    "$text": "Assault 1"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "d2a2-1139-48cb-4472",
+                    "$text": "Sanctic, Psychic Focus"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Psychic Focus",
+                "id": "908c-565e-3c26-8e1c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5424-a823-35b0-e83f"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Sanctic",
+                "id": "746c-5d28-f9c2-dff6",
+                "hidden": false,
+                "description": "A weapon with this special rule always Wounds Daemons on a 2+ and any successful Invulnerable Saves made by Daemon models against any Wounds it inflicts must be re-rolled."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Chapter",
+        "id": "0d21-2a2d-aab6-7ff6",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Lamenters",
+            "hidden": false,
+            "id": "1f40-fe51-5c23-c07e"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Executioners",
+            "hidden": false,
+            "id": "9372-9faa-67e3-c89d"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "9b3e-2206-3f6b-c5c8-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "9b3e-2206-3f6b-c5c8-max"
+          }
+        ]
+      },
+      {
+        "name": "Core Psychic Discipline",
+        "id": "a909-2c2a-9dba-237c",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "c8a4-891b-275e-3057"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "6f61-4185-7a33-4a1a"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Biomancy",
+            "hidden": false,
+            "id": "beec-d087-ad59-c94d",
+            "type": "selectionEntry",
+            "targetId": "84d4-417d-b332-b7f8",
+            "defaultAmount": "1"
+          },
+          {
+            "import": true,
+            "name": "Divination",
+            "hidden": false,
+            "id": "ab9b-3cbc-2829-f788",
+            "type": "selectionEntry",
+            "targetId": "67e8-287e-4259-4379"
+          },
+          {
+            "import": true,
+            "name": "Telepathy",
+            "hidden": false,
+            "id": "a626-22f8-1307-cbbc",
+            "type": "selectionEntry",
+            "targetId": "0f5d-6a84-3744-f037"
+          },
+          {
+            "import": true,
+            "name": "Telekinesis",
+            "hidden": false,
+            "id": "c8db-6868-0ddc-68c0",
+            "type": "selectionEntry",
+            "targetId": "27bd-a90f-a44d-f46b"
+          },
+          {
+            "import": true,
+            "name": "Thaumaturgy",
+            "hidden": false,
+            "id": "38e1-2371-552f-90dd",
+            "type": "selectionEntry",
+            "targetId": "d781-b222-3c54-dab2"
+          },
+          {
+            "import": true,
+            "name": "Pyromancy",
+            "hidden": false,
+            "id": "b340-dc51-204a-e0d1",
+            "type": "selectionEntry",
+            "targetId": "bff3-be94-f034-ee18"
+          }
+        ]
+      }
+    ]
+  }
+}

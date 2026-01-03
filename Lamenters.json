@@ -1,0 +1,2060 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "d1c7-01d0-7db8-bc81",
+    "name": "Lamenters",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "type": "catalogue",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Astartes",
+        "id": "6dd7-07e4-7216-c33c",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Lamenters",
+        "hidden": false,
+        "id": "c8ab-4ede-6d0a-056d",
+        "type": "selectionEntry",
+        "targetId": "1f40-fe51-5c23-c07e",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "6bbc-3d8f-337b-4a1d",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Malakim Phoros",
+        "hidden": false,
+        "id": "5742-67ef-7ebe-40cf",
+        "type": "selectionEntry",
+        "targetId": "7e06-e948-7abb-cede"
+      },
+      {
+        "import": true,
+        "name": "Lamenter Variant Dreadnought",
+        "hidden": false,
+        "id": "c2cb-08e8-f2ab-f2e0",
+        "type": "selectionEntry",
+        "targetId": "59fe-4a5e-acb2-a7ce"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Malakim Phoros",
+        "hidden": false,
+        "id": "7e06-e948-7abb-cede",
+        "sortIndex": 1,
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Malakim Phoros",
+            "hidden": false,
+            "id": "3677-0288-b215-1fe2",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 195
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "d179-674c-898d-2c58",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "3503-35fb-afea-828d",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique",
+                "hidden": false,
+                "id": "62f6-77ac-d075-fc20",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Artificer Armour",
+                "hidden": false,
+                "id": "9c9c-cf1e-80da-d49f",
+                "type": "selectionEntry",
+                "targetId": "2004-7466-45c8-bca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fd40-5fec-91b8-395c-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fd40-5fec-91b8-395c-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "ebfb-9f75-bfd9-0c00",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5418-7ce3-e61c-3d12-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5418-7ce3-e61c-3d12-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "2820-732a-b498-04a8",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "df68-a344-89d6-0f2d-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "df68-a344-89d6-0f2d-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "65db-550b-722f-74e1",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bee7-6119-dff6-ab24-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bee7-6119-dff6-ab24-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "795c-11a7-4896-2aa3",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "315c-f6cc-52a8-d8d7"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Company Level Deployment",
+                "hidden": false,
+                "id": "bebf-d5aa-1822-5f40",
+                "type": "selectionEntryGroup",
+                "targetId": "b9e7-9419-7f5e-ea7d",
+                "sortIndex": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Glaive Encarmine",
+                "hidden": false,
+                "id": "c8a4-c1de-296c-db2c",
+                "profiles": [
+                  {
+                    "name": "Glaive Encarmine",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "c93d-a970-6e76-3716",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "+1"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Murderous Strike (4+)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Murderous Strike",
+                    "id": "890a-a4df-048b-fd8c",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5e54-e48c-3700-6d3e",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "4+",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d868-3aae-4aa0-2bc8-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d868-3aae-4aa0-2bc8-max"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Catechist",
+                "hidden": false,
+                "id": "0b0b-45a8-836c-10b6",
+                "profiles": [
+                  {
+                    "name": "Catechist",
+                    "typeId": "5e31-3867-7c3d-fcb9",
+                    "typeName": "Ranged Weapon",
+                    "hidden": false,
+                    "id": "fe63-c993-50c4-9f02",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "7b0f-9c2a-0ecb-f3a3",
+                        "$text": "12\""
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "2ecc-1ccc-736f-9d3d",
+                        "$text": "9"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "cbb5-5f04-f87f-a810",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "2c90-16ca-a927-898d",
+                        "$text": "Pistol 2"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "d2a2-1139-48cb-4472",
+                        "$text": "Armourbane (Melta), Master-Craed"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Armourbane",
+                    "id": "2434-49f2-0c10-f801",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a1f5-fb7a-bbf0-a720",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Melta",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Master-crafted",
+                    "id": "ea74-a6de-0912-26b8",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f5a3-6639-4c11-7ab1-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f5a3-6639-4c11-7ab1-max"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "82c5-9e07-66ad-9735-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "82c5-9e07-66ad-9735-max"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Retinue",
+                "id": "48f0-b51c-b8c8-8284",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "8cfb-45a8-5ea5-05e4"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Terminator Command Squad",
+                    "hidden": false,
+                    "id": "04e5-c2d1-4025-b443",
+                    "type": "selectionEntry",
+                    "targetId": "412c-1e95-b2bb-6384"
+                  },
+                  {
+                    "import": true,
+                    "name": "Command Squad",
+                    "hidden": false,
+                    "id": "1ddb-f5f9-96d5-6de1",
+                    "type": "selectionEntry",
+                    "targetId": "af8c-8112-b1e1-367d"
+                  }
+                ],
+                "sortIndex": 3
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "4447-b5bd-2081-84cd",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Chapter Master",
+            "hidden": false,
+            "id": "54ca-1dbf-39c7-c4c0",
+            "targetId": "2ca5-c322-c8f3-5ebc",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "8e31-74d5-a565-c50a",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Malakim Phoros",
+            "typeId": "dd4a-7345-17fe-9c76",
+            "typeName": "Model",
+            "hidden": false,
+            "id": "ca97-d0d7-fd06-2ccd",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "69ed-cbc7-3fbc-7ba5",
+                "$text": "7"
+              },
+              {
+                "name": "WS",
+                "typeId": "6ed0-3b6d-b7d7-894c",
+                "$text": "7"
+              },
+              {
+                "name": "BS",
+                "typeId": "163f-6fcf-6b77-1766",
+                "$text": "5"
+              },
+              {
+                "name": "S",
+                "typeId": "99ae-5644-9155-ae6e",
+                "$text": "4"
+              },
+              {
+                "name": "T",
+                "typeId": "08d3-1319-227b-1d5c",
+                "$text": "4"
+              },
+              {
+                "name": "W",
+                "typeId": "cdc0-9287-7039-4792",
+                "$text": "4"
+              },
+              {
+                "name": "I",
+                "typeId": "03f0-9c72-1dc2-55cd",
+                "$text": "6"
+              },
+              {
+                "name": "A",
+                "typeId": "edda-ee37-03b4-f91f",
+                "$text": "4"
+              },
+              {
+                "name": "Ld",
+                "typeId": "d29a-9b6f-13a6-b7a8",
+                "$text": "10"
+              },
+              {
+                "name": "Sv",
+                "typeId": "dc1c-e152-7a5e-2c32",
+                "$text": "2+"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Chapter Tactics (Lamenters)",
+            "id": "d063-11d9-a49c-425d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "915e-e711-3c08-efd4"
+          },
+          {
+            "name": "Maelstrom Warder",
+            "id": "4629-0ae6-5b58-88dc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e6b7-85ca-54e6-15b9"
+          },
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "d3ea-b659-6481-c253",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Independent Character",
+            "id": "0198-9ac6-5b55-1b13",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Stubborn",
+            "id": "c86c-bd29-b00b-dd09",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fdf1-31bc-4796-fb3d"
+          },
+          {
+            "name": "Chapter Master",
+            "id": "856f-9ec9-208e-11f2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2979-eeea-165c-9ac1"
+          },
+          {
+            "name": "Master of the Company",
+            "id": "0588-7049-90a5-414d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9782-8c2a-c5f0-319d"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Lord of Ruin",
+            "id": "e326-5c46-d552-ce8b",
+            "hidden": false,
+            "description": "Any Infantry unit with the Chapter Tactics (Lamenters) That Malakim Phoros joins adds +1 to Combat Resolution when determining victory. His Unit may also re-roll any failed morale checks."
+          },
+          {
+            "name": "Rage unto Death",
+            "id": "a24e-948f-31e5-bf53",
+            "hidden": false,
+            "description": "For every wound Malakim Phoros loses, increase his Strength and Attacks by +1 (Eg if he is down to 2 wounds, he is Strength 6 with 6 Attacks base). In addition to this, he and any unit he joins gains the Rage (1) Special rule."
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "0614-11be-6d6f-d78f",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "0614-11be-6d6f-d78f",
+            "comment": "Exclude self from decrement",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "7e06-e948-7abb-cede",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "decrement",
+            "value": 1,
+            "field": "0614-11be-6d6f-d78f",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "08f5-cc3b-5be1-92cb",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Lamenter Variant Dreadnought",
+        "hidden": false,
+        "id": "59fe-4a5e-acb2-a7ce",
+        "sortIndex": 2,
+        "categoryLinks": [
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "b88a-9eab-f670-16da",
+            "targetId": "a300-5393-99ea-9657",
+            "primary": true
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Variant",
+            "id": "adf6-4e48-3565-2a31",
+            "hidden": false,
+            "sortIndex": 1,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "shared": true,
+                "id": "b4b3-e66b-1fa4-4ca8-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "shared": true,
+                "id": "b4b3-e66b-1fa4-4ca8-max"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "model",
+                "import": true,
+                "name": "Librarian Dreadnought",
+                "hidden": false,
+                "id": "974b-fd0b-8151-e15f",
+                "categoryLinks": [
+                  {
+                    "name": "Dreadnought",
+                    "hidden": false,
+                    "id": "663e-226c-2d06-f251",
+                    "targetId": "eb17-a98e-537b-5de6",
+                    "primary": false
+                  },
+                  {
+                    "name": "Heavy",
+                    "hidden": false,
+                    "id": "a6e3-7a38-b679-6ba7",
+                    "targetId": "33d0-319a-741e-573f",
+                    "primary": false
+                  },
+                  {
+                    "name": "Character",
+                    "hidden": false,
+                    "id": "5f96-88eb-a5fd-199b",
+                    "targetId": "c0e6-28aa-5286-2fa2",
+                    "primary": false
+                  },
+                  {
+                    "name": "Psyker",
+                    "hidden": false,
+                    "id": "b57d-f1c5-2ca8-8b91",
+                    "targetId": "0e69-ba6c-2394-5c44",
+                    "primary": false
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 175
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Librarian Dreadnought",
+                    "typeId": "dd4a-7345-17fe-9c76",
+                    "typeName": "Model",
+                    "hidden": false,
+                    "id": "74f8-cf2d-3ebf-a192",
+                    "characteristics": [
+                      {
+                        "name": "M",
+                        "typeId": "69ed-cbc7-3fbc-7ba5",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "WS",
+                        "typeId": "6ed0-3b6d-b7d7-894c",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "BS",
+                        "typeId": "163f-6fcf-6b77-1766",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "99ae-5644-9155-ae6e",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "T",
+                        "typeId": "08d3-1319-227b-1d5c",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "W",
+                        "typeId": "cdc0-9287-7039-4792",
+                        "$text": "7"
+                      },
+                      {
+                        "name": "I",
+                        "typeId": "03f0-9c72-1dc2-55cd",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "A",
+                        "typeId": "edda-ee37-03b4-f91f",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Ld",
+                        "typeId": "d29a-9b6f-13a6-b7a8",
+                        "$text": "10"
+                      },
+                      {
+                        "name": "Sv",
+                        "typeId": "dc1c-e152-7a5e-2c32",
+                        "$text": "2+"
+                      }
+                    ]
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Gravis Power Fist",
+                    "hidden": false,
+                    "id": "06c2-ef27-ac3d-902b",
+                    "type": "selectionEntry",
+                    "targetId": "3382-0547-3f12-7171",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "3c4e-c3fb-2896-3b07-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "3c4e-c3fb-2896-3b07-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Psychic Hood",
+                    "hidden": false,
+                    "id": "2a07-0c72-6ed7-fef2",
+                    "type": "selectionEntry",
+                    "targetId": "6e2c-170d-034f-f682",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "f943-7930-2e21-3a81-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "f943-7930-2e21-3a81-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Ferromantic Deflector",
+                    "hidden": false,
+                    "id": "2ae4-5ab0-a9c1-2cce",
+                    "type": "selectionEntry",
+                    "targetId": "36f9-e639-a641-cad6",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "ab63-fa42-860e-54a4-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "ab63-fa42-860e-54a4-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Smoke Launchers",
+                    "hidden": false,
+                    "id": "185e-d371-4eac-f8a2",
+                    "type": "selectionEntry",
+                    "targetId": "22fa-9cf0-d02c-edea",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c48d-d694-3664-bce5-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "c48d-d694-3664-bce5-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Searchlight",
+                    "hidden": false,
+                    "id": "63c1-d037-a954-b7cd",
+                    "type": "selectionEntry",
+                    "targetId": "3fea-c3e0-03e1-e444",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7a94-e8bc-f942-a02f-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7a94-e8bc-f942-a02f-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Warlord",
+                    "hidden": false,
+                    "id": "48ba-4abc-ef13-6e52",
+                    "type": "selectionEntry",
+                    "targetId": "dafc-695e-c908-6848",
+                    "sortIndex": 1
+                  },
+                  {
+                    "import": true,
+                    "name": "Core Psychic Discipline",
+                    "hidden": false,
+                    "id": "8ae0-238d-8a20-e6df",
+                    "type": "selectionEntryGroup",
+                    "targetId": "a909-2c2a-9dba-237c",
+                    "sortIndex": 2
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Furioso Force Halberd",
+                    "hidden": false,
+                    "id": "90d9-6e23-d122-27da",
+                    "profiles": [
+                      {
+                        "name": "Furioso Force Halberd",
+                        "typeId": "ecd5-ca1d-0842-34a4",
+                        "typeName": "Melee Weapon",
+                        "hidden": false,
+                        "id": "3dcb-e166-eec0-95e0",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "ec4a-5686-1553-4654",
+                            "$text": "-"
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "b9e5-2eb3-f79d-e995",
+                            "$text": "8"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "0332-8de1-48c6-c94d",
+                            "$text": "2"
+                          },
+                          {
+                            "name": "Type",
+                            "typeId": "6c0f-3258-2a17-5cc9",
+                            "$text": "Melee"
+                          },
+                          {
+                            "name": "Special Rules",
+                            "typeId": "a603-af69-c30b-94ed",
+                            "$text": "Force"
+                          }
+                        ]
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Force",
+                        "id": "a8d6-399d-3dde-f1e0",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "e7ad-a93b-a64d-bb10"
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d782-9894-84f3-7ee2-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d782-9894-84f3-7ee2-max"
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "remove",
+                    "value": "a300-5393-99ea-9657",
+                    "field": "category",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "add",
+                    "value": "736c-458e-6f4c-887e",
+                    "field": "category",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set-primary",
+                    "value": "736c-458e-6f4c-887e",
+                    "field": "category",
+                    "scope": "parent"
+                  }
+                ]
+              },
+              {
+                "type": "model",
+                "import": true,
+                "name": "Furioso Dreadnought",
+                "hidden": false,
+                "id": "b226-ef55-64ec-dae7",
+                "categoryLinks": [
+                  {
+                    "name": "Dreadnought",
+                    "hidden": false,
+                    "id": "9f57-6bf0-11b5-78bc",
+                    "targetId": "eb17-a98e-537b-5de6",
+                    "primary": false
+                  },
+                  {
+                    "name": "Heavy",
+                    "hidden": false,
+                    "id": "e7d4-6249-eeca-709e",
+                    "targetId": "33d0-319a-741e-573f",
+                    "primary": false
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 160
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Must take one of the following",
+                    "id": "bd58-3bf6-f523-2fac",
+                    "hidden": false,
+                    "sortIndex": 1,
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "c327-004b-d570-a7df-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "c327-004b-d570-a7df-max"
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Two Blood Talons",
+                        "hidden": false,
+                        "id": "2e6a-6283-2356-fd28",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Blood Talon",
+                            "hidden": false,
+                            "id": "6495-57ed-992a-73ca",
+                            "type": "selectionEntry",
+                            "targetId": "fe29-0260-8632-8f1c",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "eaf6-0d2e-f9ec-a3f1-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "eaf6-0d2e-f9ec-a3f1-max"
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Two Gravis Powerfists",
+                        "hidden": false,
+                        "id": "15b7-3729-1a4f-a88f",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Gravis Power Fist",
+                            "hidden": false,
+                            "id": "d9b3-65d4-f6b6-4cbd",
+                            "type": "selectionEntry",
+                            "targetId": "3382-0547-3f12-7171",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "2c37-f0a9-acb1-d7c5-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "2c37-f0a9-acb1-d7c5-max"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Gravis Powerfist with Frag Cannon",
+                        "hidden": false,
+                        "id": "bec5-95e4-3384-7565",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Gravis Power Fist",
+                            "hidden": false,
+                            "id": "1d43-cea4-5acf-b515",
+                            "type": "selectionEntry",
+                            "targetId": "3382-0547-3f12-7171",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "9e60-0ae5-6de6-b974-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "9e60-0ae5-6de6-b974-max"
+                              }
+                            ]
+                          },
+                          {
+                            "import": true,
+                            "name": "Frag Cannon",
+                            "hidden": false,
+                            "id": "ed65-8b0b-8549-e7e2",
+                            "type": "selectionEntry",
+                            "targetId": "8bc8-31dc-2dd4-3e7c",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "cfa4-a94b-6135-1a6d-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "cfa4-a94b-6135-1a6d-max"
+                              }
+                            ]
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "edda-ee37-03b4-f91f",
+                            "affects": "profiles.Model",
+                            "scope": "parent"
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      }
+                    ],
+                    "defaultSelectionEntryId": "15b7-3729-1a4f-a88f"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Smoke Launchers",
+                    "hidden": false,
+                    "id": "1292-9fb8-09ce-ec4e",
+                    "type": "selectionEntry",
+                    "targetId": "22fa-9cf0-d02c-edea",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "ce47-63c3-b9b3-6ec7-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "ce47-63c3-b9b3-6ec7-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Searchlight",
+                    "hidden": false,
+                    "id": "4267-9320-9e26-c05f",
+                    "type": "selectionEntry",
+                    "targetId": "3fea-c3e0-03e1-e444",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7df1-4cf0-b365-944c-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7df1-4cf0-b365-944c-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Ferromantic Deflector",
+                    "hidden": false,
+                    "id": "e019-4f45-c0b3-b490",
+                    "type": "selectionEntry",
+                    "targetId": "36f9-e639-a641-cad6",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "22ab-c928-b088-2cf5-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "22ab-c928-b088-2cf5-max"
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Furioso Dreadnought",
+                    "typeId": "dd4a-7345-17fe-9c76",
+                    "typeName": "Model",
+                    "hidden": false,
+                    "id": "9e7d-0285-f0ac-7777",
+                    "characteristics": [
+                      {
+                        "name": "M",
+                        "typeId": "69ed-cbc7-3fbc-7ba5",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "WS",
+                        "typeId": "6ed0-3b6d-b7d7-894c",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "BS",
+                        "typeId": "163f-6fcf-6b77-1766",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "99ae-5644-9155-ae6e",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "T",
+                        "typeId": "08d3-1319-227b-1d5c",
+                        "$text": "7"
+                      },
+                      {
+                        "name": "W",
+                        "typeId": "cdc0-9287-7039-4792",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "I",
+                        "typeId": "03f0-9c72-1dc2-55cd",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "A",
+                        "typeId": "edda-ee37-03b4-f91f",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Ld",
+                        "typeId": "d29a-9b6f-13a6-b7a8",
+                        "$text": "10"
+                      },
+                      {
+                        "name": "Sv",
+                        "typeId": "dc1c-e152-7a5e-2c32",
+                        "$text": "2+"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Furious Charge",
+                    "id": "c3d9-de20-1ad7-aab1",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "7281-8b61-791e-c0f1",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "1",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "model",
+                "import": true,
+                "name": "Death Company Dreadnought",
+                "hidden": false,
+                "id": "7a43-0be2-4a8e-eefc",
+                "categoryLinks": [
+                  {
+                    "name": "Dreadnought",
+                    "hidden": false,
+                    "id": "a779-974d-6a1d-3f5f",
+                    "targetId": "eb17-a98e-537b-5de6",
+                    "primary": false
+                  },
+                  {
+                    "name": "Heavy",
+                    "hidden": false,
+                    "id": "0a2e-a358-fb53-87a1",
+                    "targetId": "33d0-319a-741e-573f",
+                    "primary": false
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 165
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Must take one of the following",
+                    "id": "9571-1372-b4e1-cca3",
+                    "hidden": false,
+                    "sortIndex": 1,
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "aa1d-25aa-1844-97c4-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "aa1d-25aa-1844-97c4-max"
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Two Blood Talons",
+                        "hidden": false,
+                        "id": "dad2-c6cd-8ce8-a2a4",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Blood Talon",
+                            "hidden": false,
+                            "id": "009f-dc55-fc88-3782",
+                            "type": "selectionEntry",
+                            "targetId": "fe29-0260-8632-8f1c",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "727a-a409-2610-a433-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "727a-a409-2610-a433-max"
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Two Gravis Powerfists",
+                        "hidden": false,
+                        "id": "ad91-8248-d211-f52d",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Gravis Power Fist",
+                            "hidden": false,
+                            "id": "7f6c-ce86-451e-278f",
+                            "type": "selectionEntry",
+                            "targetId": "3382-0547-3f12-7171",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "dc0a-5243-2238-d302-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "dc0a-5243-2238-d302-max"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Gravis Powerfist with Frag Cannon",
+                        "hidden": false,
+                        "id": "5d00-d251-ed61-7e70",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Gravis Power Fist",
+                            "hidden": false,
+                            "id": "9f15-90cb-6547-ec4b",
+                            "type": "selectionEntry",
+                            "targetId": "3382-0547-3f12-7171",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "9b10-175e-11e5-89ad-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "9b10-175e-11e5-89ad-max"
+                              }
+                            ]
+                          },
+                          {
+                            "import": true,
+                            "name": "Frag Cannon",
+                            "hidden": false,
+                            "id": "b4e2-5ebd-0235-c3a0",
+                            "type": "selectionEntry",
+                            "targetId": "8bc8-31dc-2dd4-3e7c",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "106a-2a28-3542-6e1d-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "106a-2a28-3542-6e1d-max"
+                              }
+                            ]
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "decrement",
+                            "value": 1,
+                            "field": "edda-ee37-03b4-f91f",
+                            "affects": "profiles.Model",
+                            "scope": "parent"
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      }
+                    ],
+                    "defaultSelectionEntryId": "15b7-3729-1a4f-a88f"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Smoke Launchers",
+                    "hidden": false,
+                    "id": "0062-2879-97a4-67bd",
+                    "type": "selectionEntry",
+                    "targetId": "22fa-9cf0-d02c-edea",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "357e-b0c0-7bd9-5504-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "357e-b0c0-7bd9-5504-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Searchlight",
+                    "hidden": false,
+                    "id": "1d62-c7c9-3b59-1bb9",
+                    "type": "selectionEntry",
+                    "targetId": "3fea-c3e0-03e1-e444",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "3092-c6ce-14ca-c726-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "3092-c6ce-14ca-c726-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Ferromantic Deflector",
+                    "hidden": false,
+                    "id": "d0e4-5aa9-0bbd-f7e6",
+                    "type": "selectionEntry",
+                    "targetId": "36f9-e639-a641-cad6",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "4b5b-12fe-4534-5083-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "4b5b-12fe-4534-5083-max"
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Death Company Dreadnought",
+                    "typeId": "dd4a-7345-17fe-9c76",
+                    "typeName": "Model",
+                    "hidden": false,
+                    "id": "132b-4ae5-24cd-e577",
+                    "characteristics": [
+                      {
+                        "name": "M",
+                        "typeId": "69ed-cbc7-3fbc-7ba5",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "WS",
+                        "typeId": "6ed0-3b6d-b7d7-894c",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "BS",
+                        "typeId": "163f-6fcf-6b77-1766",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "99ae-5644-9155-ae6e",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "T",
+                        "typeId": "08d3-1319-227b-1d5c",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "W",
+                        "typeId": "cdc0-9287-7039-4792",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "I",
+                        "typeId": "03f0-9c72-1dc2-55cd",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "A",
+                        "typeId": "edda-ee37-03b4-f91f",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Ld",
+                        "typeId": "d29a-9b6f-13a6-b7a8",
+                        "$text": "10"
+                      },
+                      {
+                        "name": "Sv",
+                        "typeId": "dc1c-e152-7a5e-2c32",
+                        "$text": "2+"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Rage",
+                    "id": "414b-6bd8-5edb-b601",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "6845-bbcf-b09b-06bc",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "1",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pathfinder",
+                    "id": "67d9-4732-1c5b-8264",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "dc2f-f1d1-f91e-ec8b"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dedicated Transport",
+            "id": "3383-973d-c503-ce66",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "shared": true,
+                "id": "82e3-dd2e-146d-ddaa"
+              }
+            ],
+            "sortIndex": 2,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Astartes Drop Pod",
+                "hidden": false,
+                "id": "b85b-5097-8a08-7abe",
+                "type": "selectionEntry",
+                "targetId": "1fa0-c0b0-25b7-8453",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3180-aa31-8300-3d46"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Dreadnought Drop Pod",
+                "hidden": false,
+                "id": "f2fa-857a-736c-4563",
+                "type": "selectionEntry",
+                "targetId": "c121-094e-c2e5-eb40",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3798-2a59-8024-0de8"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Chapter Tactics (Lamenters)",
+            "id": "6acd-51c6-90eb-86b8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "915e-e711-3c08-efd4"
+          },
+          {
+            "name": "Maelstrom Warder",
+            "id": "6f25-ab78-b1a7-9c97",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e6b7-85ca-54e6-15b9"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Blood Talon",
+        "hidden": false,
+        "id": "fe29-0260-8632-8f1c",
+        "profiles": [
+          {
+            "name": "Blood Talon",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "2538-b89e-3de7-a10f",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Shred, Rending (4+)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Shred",
+            "id": "8a14-d387-a802-953c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          },
+          {
+            "name": "Rending",
+            "id": "4fc1-4e32-e49a-a2ad",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "In-built Weapon",
+            "id": "3399-c7c1-1bcb-fc33",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Storm Bolter",
+                "hidden": false,
+                "id": "f40f-4a5c-919d-14fc",
+                "type": "selectionEntry",
+                "targetId": "b584-e06b-ebeb-4d04"
+              },
+              {
+                "import": true,
+                "name": "Heavy Flamer",
+                "hidden": false,
+                "id": "0bb1-2477-4cb6-0f53",
+                "type": "selectionEntry",
+                "targetId": "c553-098b-dbb7-e3a9",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Meltagun",
+                "hidden": false,
+                "id": "2b89-eadd-ccfa-32e5",
+                "type": "selectionEntry",
+                "targetId": "5fc6-b052-616c-bfa7",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c5bd-86f1-2676-096d"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6bef-28bb-c516-8a6e"
+              }
+            ],
+            "defaultSelectionEntryId": "1153-2efa-1088-047e"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Frag Cannon",
+        "hidden": false,
+        "id": "8bc8-31dc-2dd4-3e7c",
+        "profiles": [
+          {
+            "name": "Frag Cannon",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "06fd-5b1c-9957-49b4",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "T"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 2"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Breaching (5+), Pinning"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "d23b-36d7-f301-11ae",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Pinning",
+            "id": "3ebd-981f-5e63-1321",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          }
+        ]
+      }
+    ]
+  }
+}
