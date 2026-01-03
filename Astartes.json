@@ -1678,6 +1678,18 @@
                 "shared": true
               }
             ]
+          },
+          {
+            "type": "add",
+            "value": "c96a-d708-82e0-fb89",
+            "field": "category",
+            "scope": "parent"
+          },
+          {
+            "type": "remove",
+            "value": "4554-5526-60c7-9793",
+            "field": "category",
+            "scope": "parent"
           }
         ],
         "infoLinks": [
@@ -1745,6 +1757,13 @@
             "hidden": false,
             "id": "a15f-4f6e-076d-c4a0",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "be82-e8f3-3cdc-610a",
+            "targetId": "4554-5526-60c7-9793",
             "primary": false
           }
         ],
@@ -2792,6 +2811,13 @@
             "hidden": false,
             "id": "02e1-2d6e-74ef-d108",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "462b-bcfc-3a20-048e",
+            "targetId": "4554-5526-60c7-9793",
             "primary": false
           }
         ],
@@ -6140,6 +6166,13 @@
             "id": "8e1b-75bc-bf66-5247",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "a022-0d51-48ff-08bc",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "infoLinks": [
@@ -6279,6 +6312,13 @@
             "hidden": false,
             "id": "b8a6-33a1-05df-419e",
             "targetId": "b04f-6c8c-d63a-db03",
+            "primary": false
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "ce82-807a-a6d2-f7cf",
+            "targetId": "c96a-d708-82e0-fb89",
             "primary": false
           }
         ],
@@ -10468,6 +10508,13 @@
             "id": "0c88-6593-3cf2-ea83",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "1666-5496-afc2-5758",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntryGroups": [
@@ -11616,6 +11663,13 @@
             "id": "6f4d-c4f4-2745-b957",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "33ae-f0fb-cbe1-1196",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "infoLinks": [
@@ -13423,6 +13477,13 @@
             "id": "1d71-6bee-4999-01fe",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "e66a-a165-d3ca-1cc9",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "sortIndex": 1,
@@ -13456,6 +13517,13 @@
             "hidden": false,
             "id": "b14d-dcf8-423a-2f61",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "7c4f-e905-8939-f17e",
+            "targetId": "4554-5526-60c7-9793",
             "primary": false
           }
         ],
@@ -15815,6 +15883,29 @@
             "type": "rule",
             "targetId": "c671-7954-0eb5-f57a"
           }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Vehicle",
+            "hidden": false,
+            "id": "bde7-c891-26a8-c136",
+            "targetId": "188c-5472-9e2c-377c",
+            "primary": false
+          },
+          {
+            "name": "Transport",
+            "hidden": false,
+            "id": "0bf1-1d54-f184-3739",
+            "targetId": "b966-b1a2-7578-dc41",
+            "primary": false
+          },
+          {
+            "name": "Reinforced",
+            "hidden": false,
+            "id": "c8f6-deb7-8c25-6b04",
+            "targetId": "bf01-5931-039f-752f",
+            "primary": false
+          }
         ]
       },
       {
@@ -16266,6 +16357,13 @@
             "id": "feb8-2a61-8e4f-0a24",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "01d0-b873-ae07-7b36",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -17273,6 +17371,22 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "4a91-8e02-0d85-c9e3",
+            "targetId": "b906-cdc5-0d3b-5270",
+            "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "542a-0a67-3046-1a25",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
+          }
         ]
       },
       {
@@ -17672,6 +17786,13 @@
             "id": "a980-5ca3-d512-c314",
             "targetId": "b906-cdc5-0d3b-5270",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "57a8-811c-6967-b417",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "sortIndex": 19,
@@ -18573,6 +18694,13 @@
             "id": "018c-485b-580f-89ab",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "ea5c-8c3b-a57a-f5a0",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -20275,6 +20403,13 @@
             "id": "3286-8687-7145-c66b",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "5032-549c-9caa-3219",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -22299,6 +22434,13 @@
             "id": "346a-8c19-f554-c2a7",
             "targetId": "b906-cdc5-0d3b-5270",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "3466-9f26-200f-1bfc",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -22518,6 +22660,13 @@
             "id": "22e6-644d-0d5f-2c22",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "2807-dbd1-59fd-896a",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -26197,6 +26346,13 @@
             "id": "9302-7b31-5149-9046",
             "targetId": "b906-cdc5-0d3b-5270",
             "primary": false
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "8b98-3a91-6f92-53e1",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -26430,6 +26586,13 @@
             "id": "c1af-e8e9-642b-3fd5",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "a538-a642-3584-f754",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -27540,6 +27703,13 @@
             "id": "1641-f430-fba3-4ef4",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "97e1-e045-15a2-9aa1",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntryGroups": [
@@ -29023,6 +29193,13 @@
             "hidden": false,
             "id": "0303-997c-6c95-e028",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "b9c2-7d23-043e-aaf0",
+            "targetId": "4554-5526-60c7-9793",
             "primary": false
           }
         ],
@@ -31486,6 +31663,13 @@
             "id": "c46f-ef0a-c33a-8c18",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "8b8d-c004-70e9-0389",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "sortIndex": 16,
@@ -33348,6 +33532,13 @@
             "id": "e9b5-ff08-bab3-6bf4",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "d07e-5a16-8341-3ea4",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -33797,6 +33988,13 @@
             "id": "d7e3-0887-91da-0895",
             "targetId": "1685-8865-a2b2-5fb9",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "f6c6-2247-a4ff-3010",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -35385,6 +35583,13 @@
             "id": "2124-a38f-09b9-d43c",
             "targetId": "1685-8865-a2b2-5fb9",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "f25a-86c8-9618-88b2",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -38129,6 +38334,13 @@
             "id": "cd31-ad41-a6d2-f623",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "be7f-1e13-476d-059a",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -40733,6 +40945,13 @@
             "id": "2041-78b8-f104-fc2c",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "bc6c-bf53-5624-f5f8",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -42262,6 +42481,13 @@
             "id": "d379-c5c9-f302-f432",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "c3fc-7201-b104-ea77",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "sortIndex": 25,
@@ -43920,6 +44146,13 @@
             "id": "1d0a-e25e-45c3-a811",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "3253-ed6b-e5da-0228",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -45445,6 +45678,13 @@
             "id": "3a21-474e-9265-92a5",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "6b26-f05d-e0df-dfea",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "sortIndex": 28,
@@ -45853,6 +46093,13 @@
             "id": "c435-1663-2dcd-5581",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "3dc9-dfad-1883-1a2b",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -46449,6 +46696,13 @@
             "id": "afb1-ef9f-ab20-3208",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "33e8-d4b2-eaa2-5f72",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -47926,6 +48180,13 @@
             "id": "1ec6-e63d-8cac-cf97",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "0868-7dc9-aca6-a565",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -48864,6 +49125,13 @@
             "id": "c2c6-d79d-c731-2817",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "8a07-c9dd-8ca1-dc09",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -50016,6 +50284,13 @@
             "id": "5b75-f3d5-66a7-3f45",
             "targetId": "b04f-6c8c-d63a-db03",
             "primary": false
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "e90b-8f2a-3297-efe1",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntryGroups": [
@@ -50422,6 +50697,13 @@
             "hidden": false,
             "id": "7436-d4f2-1373-bb3f",
             "targetId": "b04f-6c8c-d63a-db03",
+            "primary": false
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "f1c1-5737-d391-d0b5",
+            "targetId": "c96a-d708-82e0-fb89",
             "primary": false
           }
         ],
@@ -51284,6 +51566,13 @@
             "id": "4f3f-7734-ac25-1368",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "f55a-88a9-4006-29d9",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -52792,6 +53081,13 @@
             "id": "17f9-d909-bd1f-5133",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "884a-169e-095d-b85b",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "entryLinks": [
@@ -53006,6 +53302,13 @@
             "id": "2fdb-12ab-d825-9a84",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "0b42-c1c4-1979-cdcc",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -54035,6 +54338,13 @@
             "id": "e3b2-48a5-ea9c-cdfe",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "3a46-53a2-69b1-a362",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -55779,6 +56089,13 @@
             "id": "c505-b22f-bf67-1341",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "5cdb-776e-a9a5-30ec",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "costs": [
@@ -55813,6 +56130,13 @@
             "id": "173d-fa1c-31e9-0a76",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "5f42-77d5-231d-2239",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "costs": [
@@ -55907,6 +56231,13 @@
             "id": "4e37-347b-6237-e772",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "c80a-f11c-ff32-43cb",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntryGroups": [
@@ -56778,6 +57109,13 @@
             "id": "769d-b0da-816e-b42d",
             "targetId": "b04f-6c8c-d63a-db03",
             "primary": false
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "e228-efdd-d7ee-aed6",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -57490,6 +57828,13 @@
             "id": "ff79-c069-d090-b6e1",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "e953-105a-17f3-171c",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -58115,6 +58460,13 @@
             "id": "25ac-0cba-e0ed-ea7e",
             "targetId": "b04f-6c8c-d63a-db03",
             "primary": false
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "b050-ebb9-7dbf-64dc",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -58657,6 +59009,13 @@
             "id": "7830-2c04-945b-8636",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "443b-c61a-f018-e8b8",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "infoLinks": [
@@ -58941,6 +59300,13 @@
             "id": "093f-8465-c038-453e",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "d252-108d-9a8b-5956",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -59600,6 +59966,13 @@
             "id": "a92a-ca58-25ce-4b85",
             "targetId": "6499-290b-b038-5509",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "78ac-8e50-a231-55c6",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "infoLinks": [
@@ -60261,6 +60634,13 @@
             "id": "0877-7bdd-be64-0a9c",
             "targetId": "6499-290b-b038-5509",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "a4c8-07ba-3420-0f95",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "infoLinks": [

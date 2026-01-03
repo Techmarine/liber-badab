@@ -296,6 +296,91 @@
         "name": "Master of the Relics",
         "id": "5a98-10a7-8364-240c",
         "hidden": false
+      },
+      {
+        "name": "1st Company Infantry",
+        "id": "4554-5526-60c7-9793",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "min",
+            "value": 0,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "1e9f-74cc-6de8-e0cf",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "e861-088d-eec2-9ffa",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "1e9f-74cc-6de8-e0cf",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "c96a-d708-82e0-fb89",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "e861-088d-eec2-9ffa",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "1st Company Non-infantry",
+        "id": "c96a-d708-82e0-fb89",
+        "hidden": false,
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "e861-088d-eec2-9ffa",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "forceEntries": [
@@ -369,30 +454,6 @@
             ]
           },
           {
-            "name": "Troops",
-            "hidden": false,
-            "id": "4a46-6c50-874a-575e",
-            "targetId": "1685-8865-a2b2-5fb9",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "b303-a031-244b-1273"
-              },
-              {
-                "type": "max",
-                "value": 6,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "18ea-080c-aeac-65cd"
-              }
-            ]
-          },
-          {
             "name": "Elites",
             "hidden": false,
             "id": "a6c3-8558-fd99-290f",
@@ -423,6 +484,30 @@
                     "includeChildSelections": true
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "4a46-6c50-874a-575e",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b303-a031-244b-1273"
+              },
+              {
+                "type": "max",
+                "value": 6,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "18ea-080c-aeac-65cd"
               }
             ]
           },
@@ -734,6 +819,22 @@
             ]
           },
           {
+            "name": "Elites",
+            "hidden": false,
+            "id": "bcc1-2c0c-409d-8af8",
+            "targetId": "a300-5393-99ea-9657",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bc98-9608-a939-49da"
+              }
+            ]
+          },
+          {
             "name": "Troops",
             "hidden": false,
             "id": "ba58-50d2-13f4-7df6",
@@ -754,22 +855,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "8bb7-9f13-0f48-ffe5"
-              }
-            ]
-          },
-          {
-            "name": "Elites",
-            "hidden": false,
-            "id": "bcc1-2c0c-409d-8af8",
-            "targetId": "a300-5393-99ea-9657",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "bc98-9608-a939-49da"
               }
             ]
           },

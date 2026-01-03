@@ -462,6 +462,20 @@
             "id": "8e31-74d5-a565-c50a",
             "targetId": "08f5-cc3b-5be1-92cb",
             "primary": false
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "d7f4-3db2-6cdf-5b33",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "7678-6ba6-9001-bf4b",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
           }
         ],
         "profiles": [
@@ -605,6 +619,13 @@
             "id": "b88a-9eab-f670-16da",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "1st Company Non-infantry",
+            "hidden": false,
+            "id": "f12d-1492-7bf1-61ec",
+            "targetId": "c96a-d708-82e0-fb89",
+            "primary": false
           }
         ],
         "selectionEntryGroups": [

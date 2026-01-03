@@ -143,6 +143,20 @@
             "id": "d4a5-63ed-f7fc-6a29",
             "targetId": "08f5-cc3b-5be1-92cb",
             "primary": false
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "df87-0492-2705-6787",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "4b76-35df-920d-a802",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
           }
         ],
         "selectionEntries": [
