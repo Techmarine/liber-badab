@@ -220,15 +220,6 @@
                     "id": "315c-f6cc-52a8-d8d7"
                   }
                 ]
-              },
-              {
-                "import": true,
-                "name": "Company Level Deployment",
-                "hidden": false,
-                "id": "bebf-d5aa-1822-5f40",
-                "type": "selectionEntryGroup",
-                "targetId": "b9e7-9419-7f5e-ea7d",
-                "sortIndex": 2
               }
             ],
             "selectionEntries": [
@@ -445,7 +436,7 @@
                     "targetId": "af8c-8112-b1e1-367d"
                   }
                 ],
-                "sortIndex": 3
+                "sortIndex": 2
               }
             ]
           }

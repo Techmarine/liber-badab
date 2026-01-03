@@ -1837,15 +1837,6 @@
               },
               {
                 "import": true,
-                "name": "Company Level Deployment",
-                "hidden": false,
-                "id": "5c18-a529-709c-3fc1",
-                "type": "selectionEntryGroup",
-                "targetId": "b9e7-9419-7f5e-ea7d",
-                "sortIndex": 9
-              },
-              {
-                "import": true,
                 "name": "Death Mask",
                 "hidden": false,
                 "id": "0ba7-1b42-9cb5-3cb4",
@@ -1896,7 +1887,7 @@
                     "id": "721c-3a60-2e77-d29d"
                   }
                 ],
-                "sortIndex": 10
+                "sortIndex": 9
               },
               {
                 "name": "Terminator Armour",
@@ -13155,7 +13146,7 @@
                 "name": "Retinue",
                 "id": "25d8-078f-f24e-efe2",
                 "hidden": false,
-                "sortIndex": 12,
+                "sortIndex": 11,
                 "entryLinks": [
                   {
                     "import": true,
@@ -13399,15 +13390,6 @@
                 "type": "selectionEntry",
                 "targetId": "dafc-695e-c908-6848",
                 "sortIndex": 1
-              },
-              {
-                "import": true,
-                "name": "Company Level Deployment",
-                "hidden": false,
-                "id": "b822-9599-a59c-bebe",
-                "type": "selectionEntryGroup",
-                "targetId": "b9e7-9419-7f5e-ea7d",
-                "sortIndex": 11
               },
               {
                 "import": true,
@@ -64804,6 +64786,232 @@
             ]
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Company Level Deployment",
+        "hidden": false,
+        "id": "f007-872b-9b97-8f9f",
+        "categoryLinks": [
+          {
+            "name": "Company Level Deployment",
+            "hidden": false,
+            "id": "97b1-4949-6357-de42",
+            "targetId": "674e-c4cc-665e-8886",
+            "primary": true
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Company Level Deploymeny",
+            "id": "0981-6043-3664-a929",
+            "hidden": false,
+            "flatten": true,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Void Assault",
+                "hidden": false,
+                "id": "9907-09ee-3bb1-5cc4",
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "6b6a-5722-04ab-ff69",
+                    "field": "category",
+                    "scope": "root-entry"
+                  },
+                  {
+                    "type": "add",
+                    "value": "{this} does not allow to take non-Flyer Vehicles or Cavalry",
+                    "field": "error",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "localConditionGroups": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "scope": "force",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "repeats": 1,
+                            "conditionGroups": [
+                              {
+                                "type": "or",
+                                "conditionGroups": [
+                                  {
+                                    "type": "and",
+                                    "conditions": [
+                                      {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "188c-5472-9e2c-377c",
+                                        "shared": true
+                                      },
+                                      {
+                                        "type": "notInstanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "63ab-f4ab-6759-c123",
+                                        "shared": true
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "ancestor",
+                                    "childId": "8cce-2496-3746-4f06",
+                                    "shared": true
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "6b6a-5722-04ab-ff69",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "1st Company",
+                "hidden": false,
+                "id": "e21b-2efb-67ed-253c",
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "e861-088d-eec2-9ffa",
+                    "field": "category",
+                    "scope": "root-entry"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "8th Company",
+                "hidden": false,
+                "id": "0518-a7e6-8ea3-cbb9",
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "e15e-cb8a-0715-ceb2",
+                    "field": "category",
+                    "scope": "root-entry"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "9th Company",
+                "hidden": false,
+                "id": "ac2a-4243-390f-3cd0",
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "93d6-6be2-a921-9578",
+                    "field": "category",
+                    "scope": "root-entry"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "10th Company",
+                "hidden": false,
+                "id": "3aa2-0a37-8cc8-de52",
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "101e-01b9-b003-61dd",
+                    "field": "category",
+                    "scope": "root-entry"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Siege Assault Vanguard Force",
+                "hidden": false,
+                "id": "b145-24ef-b41c-497a",
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "4cb3-ddb4-3cf6-1837",
+                    "field": "category",
+                    "scope": "root-entry"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "shared": true,
+                "id": "b80b-7b78-c342-6763"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "requires one Master of the Company selection",
+                "field": "error",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "any",
+                        "shared": true
+                      },
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "08f5-cc3b-5be1-92cb",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -65715,6 +65923,14 @@
         "id": "6c4e-d207-52f9-bb22",
         "type": "selectionEntry",
         "targetId": "840d-afc9-2af9-9958"
+      },
+      {
+        "import": true,
+        "name": "Company Level Deployment",
+        "hidden": false,
+        "id": "59ab-3588-4aa8-283a",
+        "type": "selectionEntry",
+        "targetId": "f007-872b-9b97-8f9f"
       }
     ],
     "sharedProfiles": [
@@ -67132,16 +67348,6 @@
                   }
                 ]
               }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Company Level Deployment",
-                "hidden": false,
-                "id": "4e41-0e05-d8ec-b37d",
-                "type": "selectionEntryGroup",
-                "targetId": "b9e7-9419-7f5e-ea7d"
-              }
             ]
           },
           {
@@ -67924,183 +68130,6 @@
           }
         ],
         "flatten": true
-      },
-      {
-        "name": "Company Level Deployment",
-        "id": "b9e7-9419-7f5e-ea7d",
-        "hidden": false,
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "9a04-3071-279f-0a06",
-            "includeChildSelections": true
-          }
-        ],
-        "selectionEntries": [
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "1st Company",
-            "hidden": false,
-            "id": "e21b-2efb-67ed-253c",
-            "modifiers": [
-              {
-                "type": "add",
-                "value": "e861-088d-eec2-9ffa",
-                "field": "category",
-                "scope": "root-entry"
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "8th Company",
-            "hidden": false,
-            "id": "0518-a7e6-8ea3-cbb9",
-            "modifiers": [
-              {
-                "type": "add",
-                "value": "e15e-cb8a-0715-ceb2",
-                "field": "category",
-                "scope": "root-entry"
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "9th Company",
-            "hidden": false,
-            "id": "ac2a-4243-390f-3cd0",
-            "modifiers": [
-              {
-                "type": "add",
-                "value": "93d6-6be2-a921-9578",
-                "field": "category",
-                "scope": "root-entry"
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "10th Company",
-            "hidden": false,
-            "id": "3aa2-0a37-8cc8-de52",
-            "modifiers": [
-              {
-                "type": "add",
-                "value": "101e-01b9-b003-61dd",
-                "field": "category",
-                "scope": "root-entry"
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Siege Assault Vanguard Force",
-            "hidden": false,
-            "id": "b145-24ef-b41c-497a",
-            "modifiers": [
-              {
-                "type": "add",
-                "value": "4cb3-ddb4-3cf6-1837",
-                "field": "category",
-                "scope": "root-entry"
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Void Assault",
-            "hidden": false,
-            "id": "9907-09ee-3bb1-5cc4",
-            "modifiers": [
-              {
-                "type": "add",
-                "value": "6b6a-5722-04ab-ff69",
-                "field": "category",
-                "scope": "root-entry"
-              },
-              {
-                "type": "add",
-                "value": "{this} does not allow to take non-Flyer Vehicles or Cavalry",
-                "field": "error",
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "localConditionGroups": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "scope": "force",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "includeChildForces": true,
-                        "repeats": 1,
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditionGroups": [
-                              {
-                                "type": "and",
-                                "conditions": [
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "ancestor",
-                                    "childId": "188c-5472-9e2c-377c",
-                                    "shared": true
-                                  },
-                                  {
-                                    "type": "notInstanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "ancestor",
-                                    "childId": "63ab-f4ab-6759-c123",
-                                    "shared": true
-                                  }
-                                ]
-                              }
-                            ],
-                            "conditions": [
-                              {
-                                "type": "instanceOf",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "ancestor",
-                                "childId": "8cce-2496-3746-4f06",
-                                "shared": true
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "9907-09ee-3bb1-5cc4",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
       },
       {
         "name": "Void Assault Dedicated Transport",

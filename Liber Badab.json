@@ -199,6 +199,11 @@
         "name": "Unique",
         "id": "75a3-46b2-47de-9789",
         "hidden": false
+      },
+      {
+        "name": "Company Level Deployment",
+        "id": "674e-c4cc-665e-8886",
+        "hidden": false
       }
     ],
     "forceEntries": [
@@ -228,6 +233,40 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "8ffb-2ad3-4b6f-920d-max"
+              }
+            ]
+          },
+          {
+            "name": "Company Level Deployment",
+            "hidden": false,
+            "id": "ae0c-a625-f071-dc3c",
+            "targetId": "674e-c4cc-665e-8886",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7f34-c1a7-e1bd-e94b"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "7f34-c1a7-e1bd-e94b",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "08f5-cc3b-5be1-92cb",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ]
           },

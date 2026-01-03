@@ -242,15 +242,6 @@
               },
               {
                 "import": true,
-                "name": "Company Level Deployment",
-                "hidden": false,
-                "id": "531f-3656-7c84-0c05",
-                "type": "selectionEntryGroup",
-                "targetId": "b9e7-9419-7f5e-ea7d",
-                "sortIndex": 2
-              },
-              {
-                "import": true,
                 "name": "Krak Grenades",
                 "hidden": false,
                 "id": "4ff4-7ca6-d02d-99e5",
@@ -387,7 +378,7 @@
                     "targetId": "af8c-8112-b1e1-367d"
                   }
                 ],
-                "sortIndex": 3
+                "sortIndex": 2
               }
             ],
             "selectionEntries": [
