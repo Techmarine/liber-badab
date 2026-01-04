@@ -1679,6 +1679,12 @@
         "id": "2cc2-c220-7f11-b44b",
         "hidden": false,
         "description": "If a model is in base contact with more than one enemy model in the Initiative step in which they fight, they gain a number of Attacks equal to the value of X as noted in the variant of the special rule (if no value of X is included then count the value of X as 1)."
+      },
+      {
+        "name": "Lance",
+        "id": "ed29-032f-7042-1cf3",
+        "hidden": false,
+        "description": "Weapons with the Lance special rule count Vehicle Armour Values that are higher than 12 as 12."
       }
     ],
     "sharedSelectionEntries": [
@@ -2455,6 +2461,13 @@
             "name": "Executioners",
             "hidden": false,
             "id": "9372-9faa-67e3-c89d"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Marines Errant",
+            "hidden": false,
+            "id": "ed74-ecf1-d0a6-0124"
           }
         ],
         "constraints": [

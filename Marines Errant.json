@@ -1,0 +1,588 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "348d-a498-1408-c784",
+    "name": "Marines Errant",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Astartes",
+        "id": "0963-9203-10b6-d307",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Marines Errant",
+        "hidden": false,
+        "id": "420e-8110-c8cf-2034",
+        "type": "selectionEntry",
+        "targetId": "ed74-ecf1-d0a6-0124",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "bd15-13c0-6911-a69b",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Lieutenant Commander Anton Naravaez",
+        "hidden": false,
+        "id": "ac17-d0ba-0a2b-1b58",
+        "type": "selectionEntry",
+        "targetId": "7cfa-2429-c739-0674"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Lieutenant Commander Anton Naravaez",
+        "hidden": false,
+        "id": "7cfa-2429-c739-0674",
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "bb82-c067-71dc-7e83",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "5cea-b261-9725-8450",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "766a-3cee-3e92-7cb7",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Lieutenant Commander Anton Naravaez",
+            "hidden": false,
+            "id": "bef1-a801-5a76-4408",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2211-6173-85a2-b39e-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2211-6173-85a2-b39e-max"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Artificer Armour",
+                "hidden": false,
+                "id": "7bea-df21-3cb7-d3e0",
+                "type": "selectionEntry",
+                "targetId": "2004-7466-45c8-bca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "10e2-7be6-2663-89c2-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "10e2-7be6-2663-89c2-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Bolt Pistol",
+                "hidden": false,
+                "id": "6370-10ab-640e-b820",
+                "type": "selectionEntry",
+                "targetId": "95f0-f427-49c0-c7e6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "edbe-0977-793a-ef08-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "edbe-0977-793a-ef08-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "7411-dd88-4592-913a",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "92d7-fcb8-1f13-d254-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "92d7-fcb8-1f13-d254-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "0d26-fd1d-2984-1af7",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6ff9-191f-18f1-868d-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6ff9-191f-18f1-868d-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "faa5-1776-5a27-4959",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Legatine Axe",
+                "hidden": false,
+                "id": "06b4-7acd-0492-403a",
+                "type": "selectionEntry",
+                "targetId": "5347-5a81-eb84-f97d",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Master-crafted",
+                    "hidden": false,
+                    "id": "7f83-3750-6589-388d",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c044-d3ec-ebc4-d882"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Master-crafted",
+                    "id": "aa7f-1885-0db7-e247",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Master-crafted",
+                    "field": "name",
+                    "join": " "
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dc5c-873a-8642-506e-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dc5c-873a-8642-506e-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "2082-54e6-2efb-78bb",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Actinic Halo",
+                "hidden": false,
+                "id": "6ccd-7b46-9a66-84aa",
+                "rules": [
+                  {
+                    "name": "Actinic Halo",
+                    "id": "a2a2-5d9c-5a28-8946",
+                    "hidden": false,
+                    "description": "The Actinic Halo provides a 3+ Invulnerable Save. If however if a 1 or 2 is rolled for one of these saves, roll a further dice. On a 4+ the Actinic Halo continues to work as usual, on a 1, 2 or 3 it stops working for the rest of the battle."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1844-5692-11fa-a157-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1844-5692-11fa-a157-max"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Thundershock",
+                "hidden": false,
+                "id": "5a84-a849-a652-110c",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ab80-6071-4f14-98f5-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ab80-6071-4f14-98f5-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Thundershock",
+                    "typeId": "5e31-3867-7c3d-fcb9",
+                    "typeName": "Ranged Weapon",
+                    "hidden": false,
+                    "id": "3c3b-2d6b-df57-5252",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "7b0f-9c2a-0ecb-f3a3",
+                        "$text": "24\""
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "2ecc-1ccc-736f-9d3d",
+                        "$text": "7"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "cbb5-5f04-f87f-a810",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "2c90-16ca-a927-898d",
+                        "$text": "Rapid Fire"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "d2a2-1139-48cb-4472",
+                        "$text": "Breaching (3+), Brutal (2), Gets Hot"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Breaching",
+                    "id": "ee18-5825-c841-73b5",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ee66-f70b-aa5c-b2bf",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "3+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Brutal",
+                    "id": "9d5d-6114-066c-ced0",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fc68-9ea6-18e4-d94b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gets Hot",
+                    "id": "0199-fed3-8106-b8df",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "c7e6-c0f3-d0e4-4238"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 175
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "4db5-a3b0-c6ae-d3a1",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "1bc9-09b4-c3fc-05fb",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Heavy",
+                "hidden": false,
+                "id": "7a23-8bbf-e627-7cf5",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              },
+              {
+                "name": "Unique",
+                "hidden": false,
+                "id": "8b57-1a71-af4c-c8b4",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Lieutenant Commander Anton Naravaez",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "a690-3fc4-1894-e51d",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Chapter Tactics (Marines Errant)",
+            "id": "33ac-0ba7-62b4-a57f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "37f9-06c5-a0a3-d649"
+          },
+          {
+            "name": "Fervent Fighters",
+            "id": "7731-d97b-860e-08d2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "14f7-7713-1f31-0d46"
+          },
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "9f6a-6f25-ba60-4a1f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Independent Character",
+            "id": "8425-cdea-a5ab-291b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Master of the Company",
+            "id": "26b5-f58b-c1b1-a7c8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9782-8c2a-c5f0-319d"
+          },
+          {
+            "name": "Scout",
+            "id": "adff-be9b-a1d4-e497",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e18c-d4da-eb9b-919b"
+          },
+          {
+            "name": "Move Through Cover",
+            "id": "87cb-4bc3-aafb-50e7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "295d-36fe-4db3-a19f"
+          },
+          {
+            "name": "Precision Shots",
+            "id": "fe65-cf5a-e36e-ea37",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7c10-c2c4-a901-0907",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "House Ecale Secondment",
+            "id": "8942-f323-6650-da14",
+            "hidden": false,
+            "description": "Anton Naravaez and any unit he joins gains the Scout, Move Through Cover and Precision Shots (6+) Special Rules"
+          }
+        ]
+      }
+    ],
+    "type": "catalogue"
+  }
+}

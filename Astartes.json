@@ -1871,43 +1871,18 @@
                 "type": "selectionEntry",
                 "targetId": "d710-1076-f0f6-4431",
                 "sortIndex": 8
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "fd2c-78ed-86e8-ce68",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 9
               }
             ],
             "selectionEntryGroups": [
-              {
-                "name": "Retinue",
-                "id": "3491-50d7-3d87-2871",
-                "hidden": false,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Command Squad",
-                    "hidden": false,
-                    "id": "30aa-a690-f9f2-d576",
-                    "type": "selectionEntry",
-                    "targetId": "af8c-8112-b1e1-367d"
-                  },
-                  {
-                    "import": true,
-                    "name": "Terminator Command Squad",
-                    "hidden": false,
-                    "id": "8b5a-9435-e31d-a220",
-                    "type": "selectionEntry",
-                    "targetId": "412c-1e95-b2bb-6384"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "721c-3a60-2e77-d29d"
-                  }
-                ],
-                "sortIndex": 9
-              },
               {
                 "name": "Terminator Armour",
                 "id": "7007-d7f2-511f-9ba5",
@@ -2406,6 +2381,31 @@
                     "id": "be49-9acc-dc5a-cfff",
                     "type": "selectionEntry",
                     "targetId": "219f-5562-6eaf-590c"
+                  },
+                  {
+                    "import": true,
+                    "name": "Legatine Axe",
+                    "hidden": true,
+                    "id": "a5bf-25ed-c1a7-a12a",
+                    "type": "selectionEntry",
+                    "targetId": "5347-5a81-eb84-f97d",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Master-crafted",
+                        "hidden": false,
+                        "id": "d90f-fa5d-a431-ae70",
+                        "type": "selectionEntry",
+                        "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -2655,6 +2655,15 @@
             "id": "a27a-830c-d991-6f78",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Dark Void Elite",
+            "hidden": false,
+            "id": "f266-07d8-bf34-a52d",
+            "type": "selectionEntry",
+            "targetId": "b3f3-4f17-6be2-4082",
+            "sortIndex": 2
           }
         ]
       },
@@ -4520,6 +4529,31 @@
                         "id": "a9b8-d258-8231-b0b7",
                         "type": "selectionEntry",
                         "targetId": "219f-5562-6eaf-590c"
+                      },
+                      {
+                        "import": true,
+                        "name": "Legatine Axe",
+                        "hidden": true,
+                        "id": "0238-4bf0-45ea-838a",
+                        "type": "selectionEntry",
+                        "targetId": "5347-5a81-eb84-f97d",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 20
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "823c-1015-f23c-8b28",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -5028,6 +5062,15 @@
             "id": "fbfe-8980-35c9-ba78",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Dark Void Elite",
+            "hidden": false,
+            "id": "ccab-3da9-ec9b-efea",
+            "type": "selectionEntry",
+            "targetId": "b3f3-4f17-6be2-4082",
+            "sortIndex": 2
           }
         ]
       },
@@ -5906,12 +5949,12 @@
               {
                 "type": "upgrade",
                 "import": true,
-                "name": "Marauging Belligerent",
-                "hidden": false,
+                "name": "Marauding Belligerent",
+                "hidden": true,
                 "id": "af01-c4fc-6931-b560",
                 "rules": [
                   {
-                    "name": "Marauging Belligerent",
+                    "name": "Marauding Belligerent",
                     "id": "0bae-1f2e-d6ca-bc6c",
                     "hidden": false,
                     "description": "The warlord and up to 3 units may be given the Outflank special rule. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
@@ -6019,6 +6062,243 @@
                     "id": "ed82-f041-b306-6f65",
                     "hidden": false,
                     "description": "During any Assault phase in which Thulsa Kane is fighting a challenge, all friendly units with Chapter Tactics (Executioners) gain a +1 bonus to their score for working out the victor in an assault and +1 to any Sweeping Advance Rolls. While Thulsa Kane is alive, the army may make an additional reaction in the movement phase."
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Coordinated Assault",
+                "hidden": true,
+                "id": "984b-af30-c17c-acf5",
+                "rules": [
+                  {
+                    "name": "Coordinated Assault",
+                    "id": "d3d4-6665-dc10-cbc6",
+                    "hidden": false,
+                    "description": "The warlord and all friendly units within 6\", add +1 to their results when rolling for charge distance. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a72c-7d78-8795-937f"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "a72c-7d78-8795-937f"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "ed74-ecf1-d0a6-0124",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Star Jackal",
+                "hidden": true,
+                "id": "598a-7467-891c-8644",
+                "rules": [
+                  {
+                    "name": "The Star Jackal",
+                    "id": "6ee0-4d0f-f39d-e79e",
+                    "hidden": false,
+                    "description": "Before a battle Naravaez’ s controlling player may elect to use one of the following 3 options for the coming battle. This must be declared after table sides have been picked, but before any units are deployed.\n\n\nDirect Fire Support\nIn lieu of firing a weapon, Naravaez may call down an Orbital Bombardment once per game. This may be fired even if he moved and may be fired at a different unit than what his unit has shot at and will not stop his unit from charging in the following Assault Phase. It may not be fired as part of a Reaction. In addition the controlling player may make an additional Reaction in the Shooting Phase.\n\n\nHeavy Drop-craft\nIf chosen the Controlling Player may elect to give up to 3 Vehicles with 4 hull points or less the Deep Strike Special rule. In addition, the Controlling player may make an additional Reaction in the Movement Phase.\n\n\nPinpoint Augur Sweeps\nIf chosen the controlling player may elect to give up to 3 units, the Night Vision and Scout Special rules. In addition, the controlling player may make an additional reaction in the Assault Phase."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a19f-65bc-2440-70ab"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "a19f-65bc-2440-70ab"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "7cfa-2429-c739-0674",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "ed74-ecf1-d0a6-0124",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Orbital Bombardment",
+                    "hidden": false,
+                    "id": "bc68-ebec-fbc6-c0fb",
+                    "profiles": [
+                      {
+                        "name": "Orbital Bombardment",
+                        "typeId": "5e31-3867-7c3d-fcb9",
+                        "typeName": "Ranged Weapon",
+                        "hidden": false,
+                        "id": "4347-6018-206f-e5aa",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "7b0f-9c2a-0ecb-f3a3",
+                            "$text": "80\""
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "2ecc-1ccc-736f-9d3d",
+                            "$text": "10"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "cbb5-5f04-f87f-a810",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Type",
+                            "typeId": "2c90-16ca-a927-898d",
+                            "$text": "Ordnance 1"
+                          },
+                          {
+                            "name": "Special Rules",
+                            "typeId": "d2a2-1139-48cb-4472",
+                            "$text": "Barrage, Large Blast (5”), Lance, One Shot, Orbital Strike"
+                          }
+                        ]
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Barrage",
+                        "id": "9052-66aa-b347-7290",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "9687-76a5-98c6-200d"
+                      },
+                      {
+                        "name": "Blast",
+                        "id": "cdaa-d086-ff11-d930",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "dd6e-d5d4-9bb3-d2e4",
+                        "modifierGroups": [
+                          {
+                            "type": "and",
+                            "modifiers": [
+                              {
+                                "type": "prepend",
+                                "value": "Large",
+                                "field": "name",
+                                "join": " "
+                              },
+                              {
+                                "type": "set",
+                                "value": "5\"",
+                                "field": "annotation"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Lance",
+                        "id": "dd06-baf9-6f99-7447",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ed29-032f-7042-1cf3"
+                      },
+                      {
+                        "name": "One Shot",
+                        "id": "f81f-bbf8-1aa4-f0fe",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "ee53-4831-a3cf-1cdb"
+                      },
+                      {
+                        "name": "Orbital Strike",
+                        "id": "ea62-7f56-d600-f055",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "609a-3502-efae-d675"
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "4bce-9fe1-ead6-484a-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "4bce-9fe1-ead6-484a-max"
+                      }
+                    ]
                   }
                 ]
               }
@@ -8582,6 +8862,18 @@
                         "shared": true
                       }
                     ]
+                  },
+                  {
+                    "type": "remove",
+                    "value": "4554-5526-60c7-9793",
+                    "field": "category",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "add",
+                    "value": "c96a-d708-82e0-fb89",
+                    "field": "category",
+                    "scope": "parent"
                   }
                 ],
                 "constraints": [
@@ -10172,6 +10464,18 @@
                         "shared": true
                       }
                     ]
+                  },
+                  {
+                    "type": "remove",
+                    "value": "4554-5526-60c7-9793",
+                    "field": "category",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "add",
+                    "value": "c96a-d708-82e0-fb89",
+                    "field": "category",
+                    "scope": "parent"
                   }
                 ],
                 "constraints": [
@@ -10709,6 +11013,15 @@
             "id": "8a7a-4400-dff7-f835",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Dark Void Elite",
+            "hidden": false,
+            "id": "a193-fe81-29bd-06e4",
+            "type": "selectionEntry",
+            "targetId": "b3f3-4f17-6be2-4082",
+            "sortIndex": 6
           }
         ]
       },
@@ -11918,7 +12231,7 @@
                 "id": "d1b8-255b-da10-50a8"
               }
             ],
-            "sortIndex": 4
+            "sortIndex": 5
           }
         ],
         "sortIndex": 6,
@@ -11930,6 +12243,15 @@
             "id": "9371-c21a-9d67-d9f3",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Dark Void Elite",
+            "hidden": false,
+            "id": "890b-847e-8d29-11b0",
+            "type": "selectionEntry",
+            "targetId": "b3f3-4f17-6be2-4082",
+            "sortIndex": 4
           }
         ]
       },
@@ -12999,6 +13321,31 @@
                         "id": "4a40-fa4d-f7d4-32b1",
                         "type": "selectionEntry",
                         "targetId": "219f-5562-6eaf-590c"
+                      },
+                      {
+                        "import": true,
+                        "name": "Legatine Axe",
+                        "hidden": true,
+                        "id": "d0b5-3307-85c8-b573",
+                        "type": "selectionEntry",
+                        "targetId": "5347-5a81-eb84-f97d",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 20
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "52f9-7393-1e00-9558",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -13060,40 +13407,6 @@
                     "scope": "self",
                     "shared": true,
                     "id": "bfae-70a6-4410-c6cf"
-                  }
-                ]
-              },
-              {
-                "name": "Retinue",
-                "id": "25d8-078f-f24e-efe2",
-                "hidden": false,
-                "sortIndex": 11,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Command Squad",
-                    "hidden": false,
-                    "id": "043d-b0c3-1c13-657a",
-                    "type": "selectionEntry",
-                    "targetId": "af8c-8112-b1e1-367d"
-                  },
-                  {
-                    "import": true,
-                    "name": "Terminator Command Squad",
-                    "hidden": false,
-                    "id": "1909-7a76-9931-f620",
-                    "type": "selectionEntry",
-                    "targetId": "412c-1e95-b2bb-6384"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "563c-4625-6b4e-edf1"
                   }
                 ]
               },
@@ -13390,6 +13703,15 @@
                 "type": "selectionEntry",
                 "targetId": "d710-1076-f0f6-4431",
                 "sortIndex": 10
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "c0af-44a8-f58c-11db",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 11
               }
             ],
             "profiles": [
@@ -13495,6 +13817,15 @@
             "id": "967c-0cbf-224a-d41b",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Dark Void Elite",
+            "hidden": false,
+            "id": "6b76-8f55-8c7b-58fe",
+            "type": "selectionEntry",
+            "targetId": "b3f3-4f17-6be2-4082",
+            "sortIndex": 2
           }
         ]
       },
@@ -14570,6 +14901,31 @@
                     "id": "cc01-c329-528d-5bfb",
                     "type": "selectionEntry",
                     "targetId": "219f-5562-6eaf-590c"
+                  },
+                  {
+                    "import": true,
+                    "name": "Legatine Axe",
+                    "hidden": true,
+                    "id": "6dc1-ae42-d581-bb45",
+                    "type": "selectionEntry",
+                    "targetId": "5347-5a81-eb84-f97d",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Master-crafted",
+                        "hidden": false,
+                        "id": "9bf2-4020-fbc3-18e1",
+                        "type": "selectionEntry",
+                        "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -14965,6 +15321,15 @@
             "id": "dccf-69b3-a05d-ceb4",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Dark Void Elite",
+            "hidden": false,
+            "id": "bb7d-bee6-f6fe-10b1",
+            "type": "selectionEntry",
+            "targetId": "b3f3-4f17-6be2-4082",
+            "sortIndex": 2
           }
         ]
       },
@@ -25051,7 +25416,7 @@
                 "flatten": true
               }
             ],
-            "sortIndex": 5
+            "sortIndex": 6
           }
         ],
         "sortIndex": 10,
@@ -25063,6 +25428,15 @@
             "id": "4f7c-e19d-99db-bc26",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Dark Void Elite",
+            "hidden": false,
+            "id": "b5c9-c02a-a31c-d25d",
+            "type": "selectionEntry",
+            "targetId": "b3f3-4f17-6be2-4082",
+            "sortIndex": 5
           }
         ]
       },
@@ -31581,6 +31955,15 @@
             "type": "selectionEntry",
             "targetId": "6f12-8a28-e079-531d",
             "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Dark Void Elite",
+            "hidden": false,
+            "id": "c7f7-d9cc-2225-156c",
+            "type": "selectionEntry",
+            "targetId": "b3f3-4f17-6be2-4082",
+            "sortIndex": 6
           }
         ]
       },
@@ -48011,7 +48394,7 @@
             "name": "Dedicated Transport",
             "id": "cb44-dbf4-ab1a-dac6",
             "hidden": false,
-            "sortIndex": 4,
+            "sortIndex": 5,
             "entryLinks": [
               {
                 "import": true,
@@ -48163,6 +48546,15 @@
             "id": "f9ed-a530-a719-5376",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Dark Void Elite",
+            "hidden": false,
+            "id": "221f-571a-3362-55f2",
+            "type": "selectionEntry",
+            "targetId": "b3f3-4f17-6be2-4082",
+            "sortIndex": 4
           }
         ]
       },
@@ -60920,6 +61312,15 @@
                         "childId": "9372-9faa-67e3-c89d",
                         "shared": true,
                         "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "ed74-ecf1-d0a6-0124",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -60951,7 +61352,7 @@
           {
             "name": "Chapter Tactics (Lamenters)",
             "id": "2388-6536-0900-86ab",
-            "hidden": false,
+            "hidden": true,
             "type": "rule",
             "targetId": "915e-e711-3c08-efd4",
             "modifiers": [
@@ -61041,6 +61442,56 @@
                     "field": "selections",
                     "scope": "force",
                     "childId": "9372-9faa-67e3-c89d",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Marines Errant)",
+            "id": "3db7-4e4d-ec7f-f2ea",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "37f9-06c5-a0a3-d649",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "ed74-ecf1-d0a6-0124",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fervent Fighters",
+            "id": "1f2d-9fbd-305f-d230",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "14f7-7713-1f31-0d46",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "ed74-ecf1-d0a6-0124",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -62191,6 +62642,165 @@
                 "scope": "self",
                 "shared": true,
                 "id": "b80b-7b78-c342-6763"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Dark Void Elite",
+        "hidden": false,
+        "id": "b3f3-4f17-6be2-4082",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "269d-b29e-ccc1-8ed0"
+          },
+          {
+            "type": "max",
+            "value": 3,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "946d-f490-84f2-2d37",
+            "includeChildSelections": true
+          }
+        ],
+        "comment": "Autohides",
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "33d0-319a-741e-573f",
+            "field": "category",
+            "scope": "parent",
+            "affects": "self.entries.model"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 0,
+                "field": "269d-b29e-ccc1-8ed0"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "ed74-ecf1-d0a6-0124",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 20
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Deep Strike",
+            "id": "b73e-d1a4-afd8-d2dc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Legatine Axe",
+        "hidden": true,
+        "id": "5347-5a81-eb84-f97d",
+        "profiles": [
+          {
+            "name": "Legatine Axe",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "2e13-afb3-751b-58cb",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Specialist Weapon, Cutting Strike"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Specialist Weapon",
+            "id": "5a66-60cd-12c6-2129",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8bee-1459-6f2d-6ab6"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Cutting Strike",
+            "id": "f12d-6684-868d-c2d0",
+            "hidden": false,
+            "description": "Any to Hit Roll of a 6 with this weapon automatically wounds."
+          }
+        ],
+        "comment": "Autohides",
+        "modifiers": [
+          {
+            "type": "set",
+            "value": false,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "ed74-ecf1-d0a6-0124",
+                "shared": true,
+                "includeChildSelections": true
               }
             ]
           }
@@ -63401,7 +64011,7 @@
       {
         "name": "Chapter Tactics (Lamenters)",
         "id": "915e-e711-3c08-efd4",
-        "hidden": true,
+        "hidden": false,
         "description": "All models with The Lamenters chapter tactic require one lower result to wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful charge against an enemy unit even if that Charge is counted as Disordered.\n"
       },
       {
@@ -63421,6 +64031,23 @@
         "id": "87ba-b1f5-fcc2-5a74",
         "hidden": false,
         "description": "All character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge – roll saves against these attacks separately.\n\nThe character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible."
+      },
+      {
+        "name": "Chapter Tactics (Marines Errant)",
+        "id": "37f9-06c5-a0a3-d649",
+        "hidden": false
+      },
+      {
+        "name": "Fervent Fighters",
+        "id": "14f7-7713-1f31-0d46",
+        "hidden": false,
+        "description": "During a turn in which a unit made up entirely of models with the Marines Errant special rule successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1."
+      },
+      {
+        "name": "Orbital Strike",
+        "id": "609a-3502-efae-d675",
+        "hidden": false,
+        "description": "This Attacker always scatters even if a hit is rolled, use the small arrow on the Hit! Dice to determine direction of scatter."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -64422,39 +65049,14 @@
                 "targetId": "2979-eeea-165c-9ac1"
               }
             ],
-            "selectionEntryGroups": [
+            "entryLinks": [
               {
+                "import": true,
                 "name": "Retinue",
-                "id": "de27-a1b2-3463-81be",
                 "hidden": false,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Command Squad",
-                    "hidden": false,
-                    "id": "261a-9808-2d95-df22",
-                    "type": "selectionEntry",
-                    "targetId": "af8c-8112-b1e1-367d"
-                  },
-                  {
-                    "import": true,
-                    "name": "Terminator Command Squad",
-                    "hidden": false,
-                    "id": "f41c-d6d4-0420-d055",
-                    "type": "selectionEntry",
-                    "targetId": "412c-1e95-b2bb-6384"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "16d8-4b12-9018-4eda"
-                  }
-                ]
+                "id": "58d1-a436-d28e-18e4",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4"
               }
             ]
           },
@@ -65416,6 +66018,39 @@
                 "includeChildSelections": true
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Retinue",
+        "id": "e290-7819-af75-85c4",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "6e71-6021-f74c-9bb8"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Terminator Command Squad",
+            "hidden": false,
+            "id": "2253-f8bb-065f-13e2",
+            "type": "selectionEntry",
+            "targetId": "412c-1e95-b2bb-6384"
+          },
+          {
+            "import": true,
+            "name": "Command Squad",
+            "hidden": false,
+            "id": "c7b1-ea88-c71b-7737",
+            "type": "selectionEntry",
+            "targetId": "af8c-8112-b1e1-367d"
           }
         ]
       }

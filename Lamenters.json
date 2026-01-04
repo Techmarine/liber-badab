@@ -220,6 +220,15 @@
                     "id": "315c-f6cc-52a8-d8d7"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "1d56-7dcd-3656-8474",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
               }
             ],
             "selectionEntries": [
@@ -401,42 +410,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "82c5-9e07-66ad-9735-max"
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Retinue",
-                "id": "48f0-b51c-b8c8-8284",
-                "hidden": false,
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "8cfb-45a8-5ea5-05e4"
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Terminator Command Squad",
-                    "hidden": false,
-                    "id": "04e5-c2d1-4025-b443",
-                    "type": "selectionEntry",
-                    "targetId": "412c-1e95-b2bb-6384"
-                  },
-                  {
-                    "import": true,
-                    "name": "Command Squad",
-                    "hidden": false,
-                    "id": "1ddb-f5f9-96d5-6de1",
-                    "type": "selectionEntry",
-                    "targetId": "af8c-8112-b1e1-367d"
-                  }
-                ],
-                "sortIndex": 2
               }
             ]
           }
