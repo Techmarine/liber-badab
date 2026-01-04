@@ -32,7 +32,8 @@
             "targetId": "7c29-8e11-7fae-9549",
             "primary": true
           }
-        ]
+        ],
+        "defaultAmount": "1"
       },
       {
         "import": true,
@@ -96,6 +97,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "2211-6173-85a2-b39e-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "be08-b6c1-50a8-e6ab",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "entryLinks": [
@@ -515,13 +526,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "37f9-06c5-a0a3-d649"
-          },
-          {
-            "name": "Fervent Fighters",
-            "id": "7731-d97b-860e-08d2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "14f7-7713-1f31-0d46"
           },
           {
             "name": "And They Shall Know No Fear",

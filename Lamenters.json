@@ -33,7 +33,8 @@
             "targetId": "7c29-8e11-7fae-9549",
             "primary": true
           }
-        ]
+        ],
+        "defaultAmount": "1"
       },
       {
         "import": true,
@@ -410,6 +411,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "82c5-9e07-66ad-9735-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "9ce9-f380-ef69-3e1c",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ]
           }
@@ -519,13 +530,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "915e-e711-3c08-efd4"
-          },
-          {
-            "name": "Maelstrom Warder",
-            "id": "4629-0ae6-5b58-88dc",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e6b7-85ca-54e6-15b9"
           },
           {
             "name": "And They Shall Know No Fear",
@@ -1784,13 +1788,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "915e-e711-3c08-efd4"
-          },
-          {
-            "name": "Maelstrom Warder",
-            "id": "6f25-ab78-b1a7-9c97",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e6b7-85ca-54e6-15b9"
           }
         ]
       },

@@ -49,6 +49,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "3d8f-7be0-fd11-80d5",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -91,6 +101,16 @@
                 "$text": ""
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "3e42-7487-2c0a-1dec",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -143,6 +163,16 @@
                 "$text": ""
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "4686-7d94-a2db-4f84",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -210,6 +240,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "f2e3-7aa8-4706-4bbc",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -252,6 +292,16 @@
                 "$text": ""
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "b99e-5249-932c-e122",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -304,6 +354,16 @@
                 "$text": "Shred"
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "abe6-d91a-8be8-8b58",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -384,6 +444,16 @@
                 "$text": "Breaching (4+), Gets Hot, One Shot"
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "7f43-ca4d-ba5f-296f",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -491,6 +561,16 @@
                 "$text": ""
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "efa9-862a-5363-5dc5",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -625,6 +705,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "d12e-60c0-204e-bbd7",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -690,6 +780,16 @@
                 "$text": "Breaching (4+), Gets Hot"
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "625a-8f46-3c4e-042a",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -852,6 +952,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "4999-4a84-b43e-ed2d",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -925,6 +1035,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "fc3e-3620-e65c-1c1e",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -997,6 +1117,16 @@
                 "$text": "Breaching (6+), Duellist’s Edge (1)"
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "e7d1-92cd-ab1e-580d",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -1078,6 +1208,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "9f4d-d6e5-1587-d2fc",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -1137,6 +1277,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "43e0-2f1a-b236-c42a",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -1189,6 +1339,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "958a-3b2e-6fef-7039",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -1231,6 +1391,16 @@
                 "$text": ""
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "7994-3056-9fde-14ce",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -1291,6 +1461,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "3bdb-c8a8-c4ec-65ca",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -1349,6 +1529,16 @@
                 "$text": "Unwieldy, Specialist Weapon"
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "f3eb-f6d7-090a-0291",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -1459,6 +1649,16 @@
                 "$text": "Unwieldy, Brutal (2), Specialist Weapon"
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "b701-ec36-e3b1-c47d",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -2111,6 +2311,15 @@
                 "id": "fd2c-78ed-86e8-ce68",
                 "type": "selectionEntryGroup",
                 "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 10
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "b553-13a0-ace8-cc1b",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
                 "sortIndex": 9
               }
             ],
@@ -3024,6 +3233,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "cd06-15b7-da2d-35d9",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -3114,7 +3333,7 @@
                 "id": "9b98-ee6e-ff8a-c04d",
                 "type": "selectionEntryGroup",
                 "targetId": "1be6-e5a1-360c-75db",
-                "sortIndex": 9
+                "sortIndex": 10
               },
               {
                 "import": true,
@@ -3275,6 +3494,15 @@
                   }
                 ],
                 "sortIndex": 7
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "603d-bca9-06b2-fae1",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 9
               }
             ],
             "selectionEntryGroups": [
@@ -4786,6 +5014,24 @@
                             "targetId": "1a20-b33a-305e-b4ad"
                           }
                         ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Chainaxe",
+                        "hidden": false,
+                        "id": "88cf-2f9f-7e13-c6bb",
+                        "type": "selectionEntry",
+                        "targetId": "2732-ddfd-f72e-3cf9",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "0556-6a35-90b5-7eb1",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -5363,6 +5609,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "079d-99e0-7529-b1a4",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -5753,6 +6009,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "fd6a-7df3-d87c-6980",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -5834,6 +6100,16 @@
             "hidden": false,
             "description": "All models with the Infantry or Cavalry Unit Types in a unit that includes at least one model with a narthecium gain the Feel No Pain (5+) special rule. Units that include more than one narthecium do not stack the Feel No Pain (X) special rule and gain no additional benefit. Models with the Artillery Sub-type are not affected by this special rule and do not gain the Feel No Pain (X) special rule."
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "4fd1-9272-7a9a-d317",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -5899,6 +6175,16 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4cc0-966b-ab26-0aa7"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "5273-f3ef-5ea2-3ce0",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -6002,6 +6288,16 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4cc0-966b-ab26-0aa7"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "86e0-bf3f-8c2a-865d",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -6533,6 +6829,131 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Promethean Grit",
+                "hidden": true,
+                "id": "d1a6-d53b-fa4a-3652",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c72d-1444-e910-c8b9"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "c72d-1444-e910-c8b9"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1c46-7a96-775f-8572",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Promethean Grit",
+                    "id": "de23-ea51-6556-3beb",
+                    "hidden": false,
+                    "description": "The Warlord and his unit may Run and still make Snap Shots with any Melta, Plasma or Flame Weaponry they carry (Template Weapons go to D3 hits if in range). While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Chapters Legacy",
+                "hidden": true,
+                "id": "5d84-9eb8-9330-36c3",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "63f8-c2b9-5033-2308"
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "The Chapters Legacy",
+                    "id": "95f3-e72f-f0f3-b0e7",
+                    "hidden": false,
+                    "description": "If Master Harath Shen is your armies warlord then he and any unit he joins gets the Here and No Further! Special Rule."
+                  },
+                  {
+                    "name": "Here and No Further!",
+                    "id": "452a-4244-0523-5143",
+                    "hidden": false,
+                    "description": "The moment that the controlling player receives a victory point due to the Sacred Trust special rule, both Harath Shen and his unit gain the Fearless and Counter Attack (2) Special Rules, In addition they also gain the Line unit subtype. In addition, while Harath Shen is alive, the controlling player may make an additional reaction in the Assault Phase."
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "63f8-c2b9-5033-2308"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "ea2b-70f5-fcb3-1275",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1c46-7a96-775f-8572",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "defaultSelectionEntryId": "2dda-e1f2-6bd3-daca"
@@ -6604,6 +7025,16 @@
             "type": "rule",
             "targetId": "cfea-a7be-fbea-da53"
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "47e2-3476-4509-47bd",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -6662,6 +7093,16 @@
             "hidden": false,
             "type": "rule",
             "targetId": "6330-8635-5d8f-c1d6"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "4213-d544-f0d9-fe3b",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -7523,6 +7964,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "f46c-bd52-37e8-4c5d",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -7581,6 +8032,16 @@
             "hidden": false,
             "type": "rule",
             "targetId": "23d2-bdd7-3df1-be63"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "002c-1566-e4db-ebe4",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -7831,6 +8292,16 @@
             "hidden": false,
             "type": "rule",
             "targetId": "621c-c0ab-b8d5-916a"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "386c-1701-005c-b966",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -8904,6 +9375,14 @@
                         "value": 5
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Chainaxe",
+                    "hidden": false,
+                    "id": "f5cc-0c9f-9e46-0c7e",
+                    "type": "selectionEntry",
+                    "targetId": "2732-ddfd-f72e-3cf9"
                   }
                 ],
                 "sortIndex": 3,
@@ -10239,6 +10718,14 @@
                         "value": 5
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Chainaxe",
+                    "hidden": false,
+                    "id": "14d7-43aa-bdc7-e1d8",
+                    "type": "selectionEntry",
+                    "targetId": "2732-ddfd-f72e-3cf9"
                   }
                 ],
                 "modifierGroups": [
@@ -12048,6 +12535,16 @@
             "type": "rule",
             "targetId": "9c96-f071-03a6-7593"
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "122f-055b-d8be-b48f",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -12106,6 +12603,16 @@
             "hidden": false,
             "type": "rule",
             "targetId": "a666-0970-28e2-7c48"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "a189-7b66-3bf2-9ca7",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -13074,6 +13581,24 @@
                             "targetId": "1a20-b33a-305e-b4ad"
                           }
                         ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Chainaxe",
+                        "hidden": false,
+                        "id": "2772-4b97-8059-5493",
+                        "type": "selectionEntry",
+                        "targetId": "2732-ddfd-f72e-3cf9",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "fa3e-7cd1-d4a2-6ca4",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -13439,6 +13964,15 @@
                 "id": "c0af-44a8-f58c-11db",
                 "type": "selectionEntryGroup",
                 "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 12
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "a6c3-6439-775a-48ed",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
                 "sortIndex": 11
               }
             ],
@@ -13656,6 +14190,15 @@
                 "type": "selectionEntry",
                 "targetId": "5566-b61d-2f7d-b217",
                 "sortIndex": 7
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "eefb-5e9b-3802-1231",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 8
               }
             ],
             "selectionEntryGroups": [
@@ -18358,6 +18901,16 @@
             "type": "profile",
             "targetId": "2615-31a6-099a-906d"
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "fcef-66b0-9c0b-cd9a",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -18431,6 +18984,16 @@
             "id": "999b-c8f6-9b27-4fb8",
             "hidden": false,
             "description": "A model with a storm shield gains a 3+ Invulnerable Save, Invulnerable Saves granted by a storm shield do not stack with other Invulnerable Saves, and cannot be modified by any other special rule. If a model has another Invulnerable Save then the controlling player must choose one to use. A model with a storm shield may never gain an additional Attack for being armed with two close combat weapons or make attacks using a weapon with the Twohanded special rule."
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "e59e-d4ae-e73a-75b4",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -18994,6 +19557,15 @@
                     "value": 10
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "e75f-c6ce-ebc7-7844",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 7
               }
             ],
             "collapsible": true,
@@ -20989,26 +21561,8 @@
                         "id": "47b6-5aaa-3cc0-f934"
                       }
                     ],
-                    "defaultAmount": "1"
-                  },
-                  {
-                    "import": true,
-                    "name": "Chainsword",
-                    "hidden": false,
-                    "id": "fae1-1f77-5f1f-9392",
-                    "type": "selectionEntry",
-                    "targetId": "e241-43f4-e619-113b",
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "4ed7-cfd2-0990-de9c"
-                      }
-                    ],
-                    "defaultAmount": "1"
+                    "defaultAmount": "1",
+                    "sortIndex": 1
                   },
                   {
                     "import": true,
@@ -21279,7 +21833,55 @@
                     "id": "bf32-1076-ab0c-6874-max"
                   }
                 ],
-                "sortIndex": 1
+                "sortIndex": 1,
+                "selectionEntryGroups": [
+                  {
+                    "name": "Chainsword",
+                    "id": "cacf-9686-973e-50e4",
+                    "hidden": false,
+                    "sortIndex": 2,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Chainaxe",
+                        "hidden": false,
+                        "id": "8f25-8838-9cf1-6f63",
+                        "type": "selectionEntry",
+                        "targetId": "2732-ddfd-f72e-3cf9"
+                      },
+                      {
+                        "import": true,
+                        "name": "Chainsword",
+                        "hidden": false,
+                        "id": "fae1-1f77-5f1f-9392",
+                        "type": "selectionEntry",
+                        "targetId": "e241-43f4-e619-113b",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "4ed7-cfd2-0990-de9c"
+                          }
+                        ],
+                        "defaultAmount": "1"
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "4ab0-55f8-f340-2f61"
+                      }
+                    ],
+                    "flatten": true
+                  }
+                ]
               }
             ]
           },
@@ -21722,6 +22324,15 @@
                     ]
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "e0e0-6051-71e3-5f2e",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 6
               }
             ],
             "selectionEntryGroups": [
@@ -22098,6 +22709,14 @@
                           }
                         ],
                         "defaultAmount": "1"
+                      },
+                      {
+                        "import": true,
+                        "name": "Chainaxe",
+                        "hidden": false,
+                        "id": "c528-94a1-9d1e-f541",
+                        "type": "selectionEntry",
+                        "targetId": "2732-ddfd-f72e-3cf9"
                       }
                     ]
                   }
@@ -24140,6 +24759,15 @@
                     ]
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "0db0-77c3-c09e-4447",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 8
               }
             ],
             "selectionEntryGroups": [
@@ -24261,6 +24889,14 @@
                     "id": "a3dd-9fbe-7c1b-1cd9",
                     "type": "selectionEntry",
                     "targetId": "219f-5562-6eaf-590c"
+                  },
+                  {
+                    "import": true,
+                    "name": "Chainaxe",
+                    "hidden": false,
+                    "id": "8a9b-55be-4f83-260c",
+                    "type": "selectionEntry",
+                    "targetId": "2732-ddfd-f72e-3cf9"
                   }
                 ],
                 "defaultSelectionEntryId": "2a67-8fd6-9213-ef72",
@@ -25283,6 +25919,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "ef39-b31f-548d-481f",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -25348,6 +25994,16 @@
             "hidden": false,
             "type": "rule",
             "targetId": "c7e6-c0f3-d0e4-4238"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "aea2-4e7b-78c3-87b0",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -25510,6 +26166,43 @@
                     "typeId": "54b5-0978-c8a4-5b5a",
                     "value": 5
                   }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3776-53c0-7a44-576a"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": true,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "3776-53c0-7a44-576a"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "model",
+                        "childId": "75a3-46b2-47de-9789",
+                        "shared": true
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -25524,6 +26217,51 @@
                     "name": "Points",
                     "typeId": "54b5-0978-c8a4-5b5a",
                     "value": 15
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1731-5ae0-c6ba-6f58"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8fd3-5844-2bbd-60a5"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": true,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "8fd3-5844-2bbd-60a5"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "model",
+                        "childId": "75a3-46b2-47de-9789",
+                        "shared": true
+                      }
+                    ]
                   }
                 ]
               }
@@ -26885,6 +27623,15 @@
                   }
                 ],
                 "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "b8f2-67d0-b499-c01b",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 5
               }
             ],
             "selectionEntryGroups": [
@@ -27758,6 +28505,16 @@
             "hidden": false,
             "type": "rule",
             "targetId": "cfea-a7be-fbea-da53"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "e459-0101-2322-bee6",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -28636,6 +29393,15 @@
                         "id": "d10e-e049-ff0c-c762-max"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Mantle of the Elder Drake",
+                    "hidden": false,
+                    "id": "9b2a-7c88-1eaf-c424",
+                    "type": "selectionEntry",
+                    "targetId": "b2ba-78dc-1e8e-3a6a",
+                    "sortIndex": 6
                   }
                 ],
                 "infoLinks": [
@@ -28927,6 +29693,14 @@
                         "id": "bbc1-28c9-7bf5-364d",
                         "type": "selectionEntry",
                         "targetId": "219f-5562-6eaf-590c"
+                      },
+                      {
+                        "import": true,
+                        "name": "Chainaxe",
+                        "hidden": false,
+                        "id": "bff8-bc75-0196-1f66",
+                        "type": "selectionEntry",
+                        "targetId": "2732-ddfd-f72e-3cf9"
                       }
                     ],
                     "constraints": [
@@ -29238,6 +30012,15 @@
                     "type": "selectionEntry",
                     "targetId": "df0f-6fb0-693e-d1df",
                     "sortIndex": 6
+                  },
+                  {
+                    "import": true,
+                    "name": "Mantle of the Elder Drake",
+                    "hidden": false,
+                    "id": "a3a9-d12d-b551-7118",
+                    "type": "selectionEntry",
+                    "targetId": "b2ba-78dc-1e8e-3a6a",
+                    "sortIndex": 7
                   }
                 ],
                 "collapsible": true
@@ -29326,6 +30109,13 @@
                 "hidden": false,
                 "id": "2c0e-2efe-e07c-7c0e",
                 "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Line",
+                "hidden": false,
+                "id": "55b3-5ace-396c-ecfd",
+                "targetId": "efc6-682f-b0cb-cfa2",
                 "primary": false
               }
             ],
@@ -29654,6 +30444,15 @@
                     ]
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "cdc7-2c25-9b2f-d6e6",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 10
               }
             ],
             "selectionEntryGroups": [
@@ -30073,6 +30872,14 @@
                         "id": "5c3d-f094-feac-0153",
                         "type": "selectionEntry",
                         "targetId": "219f-5562-6eaf-590c"
+                      },
+                      {
+                        "import": true,
+                        "name": "Chainaxe",
+                        "hidden": false,
+                        "id": "2b22-ecc8-b9a0-bce4",
+                        "type": "selectionEntry",
+                        "targetId": "2732-ddfd-f72e-3cf9"
                       }
                     ],
                     "flatten": true,
@@ -30275,6 +31082,13 @@
                 "hidden": false,
                 "id": "e019-92f3-8652-abe4",
                 "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Line",
+                "hidden": false,
+                "id": "ae19-aad8-55d1-55c7",
+                "targetId": "efc6-682f-b0cb-cfa2",
                 "primary": false
               }
             ],
@@ -31131,7 +31945,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "defaultSelectionEntryId": "b109-e9e9-77f6-2679"
               },
               {
                 "name": "Must take up to two of the following",
@@ -32520,6 +33335,15 @@
                     ]
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "2692-1969-459e-6775",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 8
               }
             ],
             "collapsible": true,
@@ -33598,6 +34422,16 @@
             "type": "rule",
             "targetId": "4cc0-966b-ab26-0aa7"
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "df61-30e5-5023-1cd9",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -33876,32 +34710,6 @@
               },
               {
                 "import": true,
-                "name": "Chainsword",
-                "hidden": false,
-                "id": "a792-1553-d713-89eb",
-                "type": "selectionEntry",
-                "targetId": "e241-43f4-e619-113b",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "06c7-8f6d-d673-9e3b-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "06c7-8f6d-d673-9e3b-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
                 "name": "Nuncio-vox",
                 "hidden": false,
                 "id": "17f5-ac4b-059b-21d8",
@@ -34068,6 +34876,85 @@
                     "id": "b33e-7da3-f7ec-74d1-max"
                   }
                 ]
+              },
+              {
+                "name": "Chainsword",
+                "id": "a0f6-6c00-1620-f9de",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Chainaxe",
+                    "hidden": false,
+                    "id": "0808-f7ab-d7d0-ed9b",
+                    "type": "selectionEntry",
+                    "targetId": "2732-ddfd-f72e-3cf9"
+                  },
+                  {
+                    "import": true,
+                    "name": "Chainsword",
+                    "hidden": false,
+                    "id": "74b2-3bbc-4e00-3cba",
+                    "type": "selectionEntry",
+                    "targetId": "e241-43f4-e619-113b",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d479-2ab6-d406-0770"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "222a-3548-c9b4-f98a"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "d479-2ab6-d406-0770",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "flatten": true,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d42c-6123-4930-88c3-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d42c-6123-4930-88c3-max"
+                  }
+                ],
+                "sortIndex": 2
               }
             ],
             "sortIndex": 1
@@ -34251,7 +35138,7 @@
                     "targetId": "7fd9-bd72-8e7e-e9c6"
                   }
                 ],
-                "defaultSelectionEntryId": "8f24-8a96-3bf3-8016",
+                "defaultSelectionEntryId": "e870-bcb4-7e37-7909",
                 "sortIndex": 1,
                 "selectionEntryGroups": [
                   {
@@ -34944,6 +35831,15 @@
                     ]
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "419a-d9f3-3d48-88ab",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 9
               }
             ],
             "selectionEntries": [
@@ -36427,7 +37323,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "defaultSelectionEntryId": "dbb5-effb-fbed-74be"
               },
               {
                 "name": "Must take one of the following",
@@ -36666,6 +37563,14 @@
                       }
                     ],
                     "defaultAmount": "1"
+                  },
+                  {
+                    "import": true,
+                    "name": "Chainaxe",
+                    "hidden": false,
+                    "id": "dcc2-f1b6-356d-3fa7",
+                    "type": "selectionEntry",
+                    "targetId": "2732-ddfd-f72e-3cf9"
                   }
                 ],
                 "constraints": [
@@ -36708,7 +37613,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "defaultSelectionEntryId": "9c5a-e457-537e-4469"
               },
               {
                 "name": "Must take up to two of the following",
@@ -37531,6 +38437,15 @@
                     "id": "f048-81a1-1ef7-d517-max"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "a8f9-a6cd-6f25-f0a3",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 9
               }
             ],
             "selectionEntries": [
@@ -38030,6 +38945,14 @@
                         "id": "f879-1a65-5772-8e83",
                         "type": "selectionEntry",
                         "targetId": "219f-5562-6eaf-590c"
+                      },
+                      {
+                        "import": true,
+                        "name": "Chainaxe",
+                        "hidden": false,
+                        "id": "d117-f89b-57a1-cb66",
+                        "type": "selectionEntry",
+                        "targetId": "2732-ddfd-f72e-3cf9"
                       }
                     ],
                     "flatten": true,
@@ -39199,7 +40122,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "defaultSelectionEntryId": "b5a9-4229-1a7c-4bc3"
               },
               {
                 "name": "Must take one of the following",
@@ -39513,6 +40437,14 @@
                       }
                     ],
                     "defaultAmount": "1"
+                  },
+                  {
+                    "import": true,
+                    "name": "Chainaxe",
+                    "hidden": false,
+                    "id": "2074-2731-b24e-c55e",
+                    "type": "selectionEntry",
+                    "targetId": "2732-ddfd-f72e-3cf9"
                   }
                 ],
                 "constraints": [
@@ -39555,7 +40487,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "defaultSelectionEntryId": "cccc-1971-e88b-e2ef"
               },
               {
                 "name": "Must take up to two of the following",
@@ -40158,6 +41091,15 @@
                     "id": "1332-d214-e79a-3145-max"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "4352-0962-26b2-8844",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 8
               }
             ],
             "profiles": [
@@ -40627,6 +41569,14 @@
                         "id": "7ff5-0db3-94bf-ba5e",
                         "type": "selectionEntry",
                         "targetId": "219f-5562-6eaf-590c"
+                      },
+                      {
+                        "import": true,
+                        "name": "Chainaxe",
+                        "hidden": false,
+                        "id": "ee52-62c6-72bf-0dcc",
+                        "type": "selectionEntry",
+                        "targetId": "2732-ddfd-f72e-3cf9"
                       }
                     ],
                     "flatten": true,
@@ -41391,6 +42341,85 @@
                   }
                 ],
                 "sortIndex": 1
+              },
+              {
+                "name": "Chainsword",
+                "id": "56ca-6ae9-c7bd-eb2b",
+                "hidden": false,
+                "sortIndex": 3,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Chainaxe",
+                    "hidden": false,
+                    "id": "fefb-6ea0-1957-ada0",
+                    "type": "selectionEntry",
+                    "targetId": "2732-ddfd-f72e-3cf9"
+                  },
+                  {
+                    "import": true,
+                    "name": "Chainsword",
+                    "hidden": false,
+                    "id": "1dfe-f3ac-ebd3-3768",
+                    "type": "selectionEntry",
+                    "targetId": "e241-43f4-e619-113b",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "eeed-d5ca-e776-e5f2-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "eeed-d5ca-e776-e5f2-max"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "eeed-d5ca-e776-e5f2-min",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "flatten": true,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d450-886c-34c0-8bec-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d450-886c-34c0-8bec-max"
+                  }
+                ]
               }
             ],
             "entryLinks": [
@@ -41482,32 +42511,6 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "0bc6-7021-b3c4-c7b4-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Chainsword",
-                "hidden": false,
-                "id": "1dfe-f3ac-ebd3-3768",
-                "type": "selectionEntry",
-                "targetId": "e241-43f4-e619-113b",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "eeed-d5ca-e776-e5f2-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "eeed-d5ca-e776-e5f2-max"
                   }
                 ]
               },
@@ -41893,6 +42896,15 @@
                     "id": "098d-a026-0fcf-d050"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "94b7-62cc-2fbd-f905",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 5
               }
             ],
             "modifiers": [
@@ -42202,6 +43214,14 @@
                         "id": "b38f-4eaa-7d3c-fb6d",
                         "type": "selectionEntry",
                         "targetId": "219f-5562-6eaf-590c"
+                      },
+                      {
+                        "import": true,
+                        "name": "Chainaxe",
+                        "hidden": false,
+                        "id": "c752-1c68-e80e-7094",
+                        "type": "selectionEntry",
+                        "targetId": "2732-ddfd-f72e-3cf9"
                       }
                     ],
                     "flatten": true,
@@ -42855,6 +43875,15 @@
                     "id": "9ebe-ebac-23cd-52bf"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "7120-5d91-c782-4e6e",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 7
               }
             ],
             "selectionEntryGroups": [
@@ -43968,32 +44997,6 @@
               },
               {
                 "import": true,
-                "name": "Chainsword",
-                "hidden": false,
-                "id": "9123-fc93-7eb4-2621",
-                "type": "selectionEntry",
-                "targetId": "e241-43f4-e619-113b",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "6dd8-1418-8677-3d74-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "6dd8-1418-8677-3d74-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
                 "name": "Nuncio-vox",
                 "hidden": false,
                 "id": "0bd5-3dfe-5a0f-ac79",
@@ -44897,6 +45900,84 @@
                 ],
                 "defaultSelectionEntryId": "9808-9ea0-72a4-d2a1",
                 "sortIndex": 3
+              },
+              {
+                "name": "Chainsword",
+                "id": "e7f1-4bd5-36f3-b220",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Chainaxe",
+                    "hidden": false,
+                    "id": "63d0-de64-c40b-bc7e",
+                    "type": "selectionEntry",
+                    "targetId": "2732-ddfd-f72e-3cf9"
+                  },
+                  {
+                    "import": true,
+                    "name": "Chainsword",
+                    "hidden": false,
+                    "id": "8984-b2f7-4bd3-688a",
+                    "type": "selectionEntry",
+                    "targetId": "e241-43f4-e619-113b",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7b14-150c-0a34-5200"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "b1b4-3bf4-e0ff-7516"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "7b14-150c-0a34-5200",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "flatten": true,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "47d1-ac37-9a4b-0951-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "47d1-ac37-9a4b-0951-max"
+                  }
+                ]
               }
             ],
             "sortIndex": 2
@@ -46296,6 +47377,16 @@
             "type": "rule",
             "targetId": "1692-e368-b877-e324"
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "9480-4cae-7f92-7028",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
         ]
       },
       {
@@ -47155,6 +48246,15 @@
                     "id": "7ac0-08b6-756d-1e00"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "817a-fbf6-7707-23a4",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 8
               }
             ],
             "collapsible": true
@@ -47663,6 +48763,93 @@
               }
             ],
             "sortIndex": 3
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sons of Pyroclasts",
+            "hidden": false,
+            "id": "bdaf-ecd7-a6d2-4759",
+            "sortIndex": 5,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 10,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "cdc0-9287-7039-4792",
+                "affects": "model.profiles.Model",
+                "scope": "parent"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "It Will not Die",
+                "id": "42aa-fc4a-2bc7-f103",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "cc45-e856-80f1-af2f",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "5+",
+                    "field": "annotation"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "720d-2e56-a819-aeaa"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "720d-2e56-a819-aeaa"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "1c46-7a96-775f-8572",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -47686,7 +48873,7 @@
             "name": "Dedicated Transport",
             "id": "cb44-dbf4-ab1a-dac6",
             "hidden": false,
-            "sortIndex": 5,
+            "sortIndex": 6,
             "entryLinks": [
               {
                 "import": true,
@@ -48599,6 +49786,15 @@
                     "id": "398d-681e-78bd-3d9a-max"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Mantle of the Elder Drake",
+                "hidden": false,
+                "id": "7185-3ddf-6dfa-c1c1",
+                "type": "selectionEntry",
+                "targetId": "b2ba-78dc-1e8e-3a6a",
+                "sortIndex": 4
               }
             ]
           }
@@ -49305,6 +50501,15 @@
                         "id": "8177-1077-7b8b-83e6-max"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Mantle of the Elder Drake",
+                    "hidden": false,
+                    "id": "c156-c99d-7db0-a37d",
+                    "type": "selectionEntry",
+                    "targetId": "b2ba-78dc-1e8e-3a6a",
+                    "sortIndex": 3
                   }
                 ],
                 "profiles": [
@@ -60613,6 +61818,15 @@
                         "childId": "ed74-ecf1-d0a6-0124",
                         "shared": true,
                         "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1c46-7a96-775f-8572",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -60667,61 +61881,11 @@
             ]
           },
           {
-            "name": "Maelstrom Warder",
-            "id": "e31b-19a5-c4d0-0dea",
-            "hidden": true,
-            "type": "rule",
-            "targetId": "e6b7-85ca-54e6-15b9",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "1f40-fe51-5c23-c07e",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "name": "Chapter Tactics (Executioners)",
             "id": "647c-b672-35de-dc6e",
             "hidden": true,
             "type": "rule",
             "targetId": "3510-53ab-ef35-a6a7",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "9372-9faa-67e3-c89d",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Headhunters",
-            "id": "0471-78c9-bc3e-33f3",
-            "hidden": true,
-            "type": "rule",
-            "targetId": "87ba-b1f5-fcc2-5a74",
             "modifiers": [
               {
                 "type": "set",
@@ -60767,11 +61931,11 @@
             ]
           },
           {
-            "name": "Fervent Fighters",
-            "id": "1f2d-9fbd-305f-d230",
+            "name": "Chapter Tactics (Salamanders)",
+            "id": "d8e3-a2eb-d09d-5a5c",
             "hidden": true,
             "type": "rule",
-            "targetId": "14f7-7713-1f31-0d46",
+            "targetId": "1288-fea0-dcf4-a742",
             "modifiers": [
               {
                 "type": "set",
@@ -60783,7 +61947,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "ed74-ecf1-d0a6-0124",
+                    "childId": "1c46-7a96-775f-8572",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -62097,6 +63261,244 @@
             ]
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Master-crafted (Master Artisan)",
+        "hidden": false,
+        "id": "e336-78d8-10c4-868f",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 10
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3b81-b072-0017-f853"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 0,
+                "field": "3b81-b072-0017-f853"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "1a20-b33a-305e-b4ad",
+                    "shared": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "c044-d3ec-ebc4-d882",
+                    "shared": true
+                  },
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "1c46-7a96-775f-8572",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c0e6-28aa-5286-2fa2",
+                    "shared": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "75a3-46b2-47de-9789",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mantle of the Elder Drake",
+        "hidden": false,
+        "id": "b2ba-78dc-1e8e-3a6a",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 25
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "7df8-a442-1596-b491"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "1c07-9d71-fe43-c6b3",
+            "includeChildSelections": true
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 0,
+                "field": "7df8-a442-1596-b491"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "1c46-7a96-775f-8572",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Eternal Warrior",
+            "id": "f16e-5ecb-b8a9-6b25",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d9b7-d83e-51e0-bcfc"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Mantle of the Elder Drake",
+            "id": "8131-557b-c77f-6562",
+            "hidden": false,
+            "description": "If the bearer is wounded by a weapon with the Brutal (X) rule, subtract 1 from the Brutal (X) rule to a minimum of 1."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Chainaxe",
+        "hidden": false,
+        "id": "2732-ddfd-f72e-3cf9",
+        "infoLinks": [
+          {
+            "name": "Shred",
+            "id": "eb1e-c34a-7226-c046",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Chainaxe",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "61e6-9efc-8512-3bd8",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Shred"
+              }
+            ]
+          }
+        ],
+        "comment": "Executioners",
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9372-9faa-67e3-c89d",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -63304,42 +64706,31 @@
         "name": "Chapter Tactics (Lamenters)",
         "id": "915e-e711-3c08-efd4",
         "hidden": false,
-        "description": "All models with The Lamenters chapter tactic require one lower result to wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful charge against an enemy unit even if that Charge is counted as Disordered.\n"
-      },
-      {
-        "name": "Maelstrom Warder",
-        "id": "e6b7-85ca-54e6-15b9",
-        "hidden": false,
-        "description": "Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone."
+        "description": "Encarmine Fury:\n\nAll models with The Lamenters chapter tactic require one lower result to wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful charge against an enemy unit even if that Charge is counted as Disordered.\n\nMaelstrom Warder:\n\nAny model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone.\n"
       },
       {
         "name": "Chapter Tactics (Executioners)",
         "id": "3510-53ab-ef35-a6a7",
         "hidden": false,
-        "description": "All models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc.\n\n\n(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).\n-Badab Enthusiast)"
-      },
-      {
-        "name": "Headhunters",
-        "id": "87ba-b1f5-fcc2-5a74",
-        "hidden": false,
-        "description": "All character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge – roll saves against these attacks separately.\n\nThe character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible."
+        "description": "Bitter Mettle:\n\nAll models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc.\n\n(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).\n-Badab Enthusiast)\n\n\nHeadhunters:\n\nAll character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge – roll saves against these attacks separately.\n\nThe character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible."
       },
       {
         "name": "Chapter Tactics (Marines Errant)",
         "id": "37f9-06c5-a0a3-d649",
-        "hidden": false
-      },
-      {
-        "name": "Fervent Fighters",
-        "id": "14f7-7713-1f31-0d46",
         "hidden": false,
-        "description": "During a turn in which a unit made up entirely of models with the Marines Errant special rule successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1."
+        "description": "Fervent Fighters:\n\nDuring a turn in which a unit made up entirely of models with the Marines Errant special rule successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1."
       },
       {
         "name": "Orbital Strike",
         "id": "609a-3502-efae-d675",
         "hidden": false,
         "description": "This Attacker always scatters even if a hit is rolled, use the small arrow on the Hit! Dice to determine direction of scatter."
+      },
+      {
+        "name": "Chapter Tactics (Salamanders)",
+        "id": "1288-fea0-dcf4-a742",
+        "hidden": false,
+        "description": "Blood of Fire:\n\nWhen rolling to wound against a model with this special rule for any attack inflicted by a flame, melta, or plasma weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the strength of the weapon, only the roll to wound). In addition, all models that have more than one wound or Hull point gain the It Will Not Die (6+) special rule.\n\nMaster Artisan:\n\nAny model with the Chapter Tactics (Salamanders) and the Character unit subtype may upgrade their weapon to have the Master-Crafted special rule for +10 points.\n\nFirst Founding Chapter:\n\nA Salamanders Detachment may include up to 2 additional Relics of the Chapter on top of what is usually allowed by points limits or any other special rules."
       }
     ],
     "sharedSelectionEntryGroups": [

@@ -32,7 +32,8 @@
             "targetId": "7c29-8e11-7fae-9549",
             "primary": true
           }
-        ]
+        ],
+        "defaultAmount": "1"
       },
       {
         "import": true,
@@ -120,13 +121,6 @@
                 "field": "annotation"
               }
             ]
-          },
-          {
-            "name": "Headhunters",
-            "id": "931b-7460-5305-08d7",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "87ba-b1f5-fcc2-5a74"
           }
         ],
         "categoryLinks": [
@@ -502,6 +496,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "712f-ba72-f17b-1f4f-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "2066-b68f-9d59-81f6",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ]
           }

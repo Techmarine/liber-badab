@@ -171,6 +171,22 @@
                 "includeChildForces": true
               }
             ]
+          },
+          {
+            "type": "increment",
+            "value": 2,
+            "field": "fb1d-7f99-87bc-c983",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "1c46-7a96-775f-8572",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -1685,6 +1701,12 @@
         "id": "ed29-032f-7042-1cf3",
         "hidden": false,
         "description": "Weapons with the Lance special rule count Vehicle Armour Values that are higher than 12 as 12."
+      },
+      {
+        "name": "Deflagrate",
+        "id": "ca6b-5030-24a4-aabe",
+        "hidden": false,
+        "description": "After normal attacks by this weapon have been resolved, count the number of unsaved Wounds caused on the target unit. Immediately resolve a number of additional automatic Hits on the same unit using the weapon’s profile equal to the number of unsaved Wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional Hits to take effect. These additional Hits do not themselves inflict more Hits and do not benefit from any other special rules possessed by the attacking model, such as Preferred Enemy (X) or Precision Strikes (X)."
       }
     ],
     "sharedSelectionEntries": [
@@ -2468,6 +2490,13 @@
             "name": "Marines Errant",
             "hidden": false,
             "id": "ed74-ecf1-d0a6-0124"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Salamanders",
+            "hidden": false,
+            "id": "1c46-7a96-775f-8572"
           }
         ],
         "constraints": [
