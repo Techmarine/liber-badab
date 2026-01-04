@@ -1633,7 +1633,150 @@
             "hidden": false,
             "id": "781c-3a08-f724-ee6e",
             "type": "selectionEntry",
-            "targetId": "c966-d0bd-9850-74c9"
+            "targetId": "c966-d0bd-9850-74c9",
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "bed6-739a-08ab-7fa6"
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "localConditionGroups": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "scope": "root-entry",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "repeats": 1,
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "e349-c42f-3c5d-1e72",
+                            "shared": true
+                          },
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "12a7-f83c-886b-8e94",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "model",
+                        "childId": "12a7-f83c-886b-8e94",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "bed6-739a-08ab-7fa6"
+                  },
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "c97c-9cf8-36a5-4cb5"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden"
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "localConditionGroups": [
+                          {
+                            "type": "lessThan",
+                            "value": 1,
+                            "scope": "root-entry",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "repeats": 1,
+                            "conditions": [
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "e349-c42f-3c5d-1e72",
+                                "shared": true
+                              },
+                              {
+                                "type": "notInstanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "12a7-f83c-886b-8e94",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "12a7-f83c-886b-8e94",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "root-entry",
+                        "childId": "3cbd-567a-a47e-3e8f",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "root-entry",
+                        "childId": "af52-c5a3-9b02-93eb",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -1654,14 +1797,14 @@
             "value": "14",
             "field": "69ed-cbc7-3fbc-7ba5",
             "scope": "parent",
-            "affects": "profiles.Unit"
+            "affects": "profiles.Model"
           },
           {
             "type": "set",
             "value": "5",
             "field": "08d3-1319-227b-1d5c",
             "scope": "parent",
-            "affects": "profiles.Unit"
+            "affects": "profiles.Model"
           },
           {
             "type": "add",
@@ -1673,9 +1816,10 @@
                 "type": "atLeast",
                 "value": 1,
                 "field": "selections",
-                "scope": "parent",
+                "scope": "self",
                 "childId": "781c-3a08-f724-ee6e",
-                "shared": true
+                "shared": true,
+                "includeChildSelections": false
               }
             ]
           },
@@ -1683,13 +1827,42 @@
             "type": "add",
             "value": "c96a-d708-82e0-fb89",
             "field": "category",
-            "scope": "parent"
+            "scope": "unit"
           },
           {
             "type": "remove",
             "value": "4554-5526-60c7-9793",
             "field": "category",
-            "scope": "parent"
+            "scope": "unit"
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "field": "05d3-dd48-6364-4803",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "5a40-a28f-cf2d-6ee5",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "12a7-f83c-886b-8e94",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -1728,6 +1901,65 @@
             "id": "65ba-31e7-431f-1e6b",
             "hidden": false,
             "description": "An Astartes combat bike has one twin-linked bolter. In addition, a model with a Astartes combat bike that chooses to Run gains the Shrouded (X+) special rule until the start of the controlling player's next turn. A model with the Infantry Unit Type tha selects an Astartes combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. ln addition the model must change its Movement Characteristic to 14, Toughness 5 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules."
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "05d3-dd48-6364-4803"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "4852-f367-49de-2135"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 0,
+                "field": "05d3-dd48-6364-4803"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "5a40-a28f-cf2d-6ee5",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "12a7-f83c-886b-8e94",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -8129,6 +8361,22 @@
                     ]
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Astartes Combat Bike",
+                "hidden": false,
+                "id": "491d-fa68-4248-a39d",
+                "type": "selectionEntry",
+                "targetId": "5a40-a28f-cf2d-6ee5",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 10
+                  }
+                ],
+                "sortIndex": 6
               }
             ],
             "categoryLinks": [
@@ -8137,6 +8385,13 @@
                 "hidden": false,
                 "id": "1afb-72bd-8f0b-cf96",
                 "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Retinue",
+                "hidden": false,
+                "id": "6958-d126-5e51-ce4b",
+                "targetId": "12a7-f83c-886b-8e94",
                 "primary": false
               }
             ],
@@ -8444,7 +8699,7 @@
                             "value": 1,
                             "field": "selections",
                             "scope": "model",
-                            "childId": "e2e9-0bdc-2a82-6955",
+                            "childId": "5a40-a28f-cf2d-6ee5",
                             "shared": true
                           }
                         ]
@@ -8773,281 +9028,6 @@
                   }
                 ],
                 "sortIndex": 1
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Astartes Combat Bike",
-                "hidden": true,
-                "id": "e2e9-0bdc-2a82-6955",
-                "rules": [
-                  {
-                    "name": "Astartes Combat Bike",
-                    "id": "8c28-aa90-475a-3161",
-                    "hidden": false,
-                    "description": "An Astartes combat bike has one twin-linked bolter. In addition, a model with a Astartes combat bike that chooses to Run gains the Shrouded (X+) special rule until the start of the controlling player's next turn. A model with the Infantry Unit Type tha selects an Astartes combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. ln addition the model must change its Movement Characteristic to 14, Toughness 5 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules."
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Firing Protocols",
-                    "id": "3803-5b7f-8d4a-c100",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2bf1-82e6-0cdd-3a40",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "2",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Hammer of Wrath",
-                    "id": "7cab-0ea0-076e-794d",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "f7ff-d5d7-7787-efda",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "1",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "remove",
-                    "value": "c447-1b05-5ba8-846a",
-                    "field": "category",
-                    "scope": "parent"
-                  },
-                  {
-                    "type": "add",
-                    "value": "8cce-2496-3746-4f06",
-                    "field": "category",
-                    "scope": "parent"
-                  },
-                  {
-                    "type": "set",
-                    "value": "14",
-                    "field": "69ed-cbc7-3fbc-7ba5",
-                    "scope": "parent",
-                    "affects": "profiles.Unit"
-                  },
-                  {
-                    "type": "set",
-                    "value": "5",
-                    "field": "08d3-1319-227b-1d5c",
-                    "scope": "parent",
-                    "affects": "profiles.Unit"
-                  },
-                  {
-                    "type": "add",
-                    "value": "e349-c42f-3c5d-1e72",
-                    "field": "category",
-                    "scope": "parent",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "self",
-                        "childId": "19c2-d072-4019-cda9",
-                        "shared": true
-                      }
-                    ]
-                  },
-                  {
-                    "type": "remove",
-                    "value": "4554-5526-60c7-9793",
-                    "field": "category",
-                    "scope": "parent"
-                  },
-                  {
-                    "type": "add",
-                    "value": "c96a-d708-82e0-fb89",
-                    "field": "category",
-                    "scope": "parent"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "07f7-0993-6e7c-aab1"
-                  },
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "ce88-1bd5-1189-8192"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "07f7-0993-6e7c-aab1"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "ce88-1bd5-1189-8192"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "8355-1391-facf-db55",
-                        "childId": "5a40-a28f-cf2d-6ee5",
-                        "shared": true,
-                        "includeChildSelections": false
-                      }
-                    ]
-                  }
-                ],
-                "comment": "Retinue",
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Bolter",
-                    "hidden": false,
-                    "id": "638a-f1fc-4ce6-050c",
-                    "type": "selectionEntry",
-                    "targetId": "7fd9-bd72-8e7e-e9c6",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "b0bc-a572-fc47-5116",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "29b4-57b1-8691-40c5"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "591d-3a4b-5cd5-f0bc"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "cdcc-ceb8-8753-e92e",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Skirmish Sub-type",
-                    "hidden": true,
-                    "id": "19c2-d072-4019-cda9",
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "da44-0b42-4116-04e7",
-                        "includeChildSelections": false
-                      },
-                      {
-                        "type": "min",
-                        "value": 0,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "38d1-cfc2-29e9-9b4e"
-                      }
-                    ],
-                    "modifierGroups": [
-                      {
-                        "type": "and",
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": 1,
-                            "field": "38d1-cfc2-29e9-9b4e"
-                          },
-                          {
-                            "type": "set",
-                            "value": false,
-                            "field": "hidden"
-                          }
-                        ],
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "8355-1391-facf-db55",
-                            "childId": "c966-d0bd-9850-74c9",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 10
-                  }
-                ],
-                "collapsible": true,
-                "sortIndex": 6
               }
             ],
             "collapsible": true,
@@ -9528,6 +9508,66 @@
               },
               {
                 "import": true,
+                "name": "Angelus Boltgun",
+                "hidden": true,
+                "id": "9b4d-c4bd-6e8b-6499",
+                "type": "selectionEntry",
+                "targetId": "7ef3-6c9b-2b53-81ac",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3f59-2586-1b59-5781-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3f59-2586-1b59-5781-max"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "3f59-2586-1b59-5781-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "3f59-2586-1b59-5781-max"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "f31a-4ca2-830d-5a7c",
+                        "shared": true,
+                        "includeChildSelections": false,
+                        "includeChildForces": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "import": true,
                 "name": "Death Mask",
                 "hidden": true,
                 "id": "8ccf-24f6-78cd-9239",
@@ -9588,63 +9628,19 @@
               },
               {
                 "import": true,
-                "name": "Angelus Boltgun",
-                "hidden": true,
-                "id": "9b4d-c4bd-6e8b-6499",
+                "name": "Astartes Combat Bike",
+                "hidden": false,
+                "id": "59d9-65c6-87be-ca1c",
                 "type": "selectionEntry",
-                "targetId": "7ef3-6c9b-2b53-81ac",
-                "constraints": [
+                "targetId": "5a40-a28f-cf2d-6ee5",
+                "costs": [
                   {
-                    "type": "min",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3f59-2586-1b59-5781-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3f59-2586-1b59-5781-max"
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 10
                   }
                 ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "3f59-2586-1b59-5781-min"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "3f59-2586-1b59-5781-max"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "unit",
-                        "childId": "f31a-4ca2-830d-5a7c",
-                        "shared": true,
-                        "includeChildSelections": false,
-                        "includeChildForces": false
-                      }
-                    ]
-                  }
-                ]
+                "sortIndex": 6
               }
             ],
             "profiles": [
@@ -10038,7 +10034,7 @@
                             "value": 1,
                             "field": "selections",
                             "scope": "model",
-                            "childId": "b367-6a36-db0b-cba0",
+                            "childId": "5a40-a28f-cf2d-6ee5",
                             "shared": true
                           }
                         ]
@@ -10375,281 +10371,13 @@
                 "id": "b83d-c407-847a-6f70",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
-              }
-            ],
-            "selectionEntries": [
+              },
               {
-                "type": "upgrade",
-                "import": true,
-                "name": "Astartes Combat Bike",
-                "hidden": true,
-                "id": "b367-6a36-db0b-cba0",
-                "rules": [
-                  {
-                    "name": "Astartes Combat Bike",
-                    "id": "3ccb-e9b0-b235-32a0",
-                    "hidden": false,
-                    "description": "An Astartes combat bike has one twin-linked bolter. In addition, a model with a Astartes combat bike that chooses to Run gains the Shrouded (X+) special rule until the start of the controlling player's next turn. A model with the Infantry Unit Type tha selects an Astartes combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. ln addition the model must change its Movement Characteristic to 14, Toughness 5 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules."
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Firing Protocols",
-                    "id": "3ccd-066b-6c8b-0c4c",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2bf1-82e6-0cdd-3a40",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "2",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Hammer of Wrath",
-                    "id": "7e58-3387-d71e-f0dc",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "f7ff-d5d7-7787-efda",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "1",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "remove",
-                    "value": "c447-1b05-5ba8-846a",
-                    "field": "category",
-                    "scope": "parent"
-                  },
-                  {
-                    "type": "add",
-                    "value": "8cce-2496-3746-4f06",
-                    "field": "category",
-                    "scope": "parent"
-                  },
-                  {
-                    "type": "set",
-                    "value": "14",
-                    "field": "69ed-cbc7-3fbc-7ba5",
-                    "scope": "parent",
-                    "affects": "profiles.Unit"
-                  },
-                  {
-                    "type": "set",
-                    "value": "5",
-                    "field": "08d3-1319-227b-1d5c",
-                    "scope": "parent",
-                    "affects": "profiles.Unit"
-                  },
-                  {
-                    "type": "add",
-                    "value": "e349-c42f-3c5d-1e72",
-                    "field": "category",
-                    "scope": "parent",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "self",
-                        "childId": "b578-8783-6f10-7a45",
-                        "shared": true
-                      }
-                    ]
-                  },
-                  {
-                    "type": "remove",
-                    "value": "4554-5526-60c7-9793",
-                    "field": "category",
-                    "scope": "parent"
-                  },
-                  {
-                    "type": "add",
-                    "value": "c96a-d708-82e0-fb89",
-                    "field": "category",
-                    "scope": "parent"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "752d-aad3-ac9b-1a36"
-                  },
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f9b7-c7a7-1a9c-577f"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "752d-aad3-ac9b-1a36"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "f9b7-c7a7-1a9c-577f"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "8355-1391-facf-db55",
-                        "childId": "5a40-a28f-cf2d-6ee5",
-                        "shared": true,
-                        "includeChildSelections": false
-                      }
-                    ]
-                  }
-                ],
-                "comment": "Retinue",
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Bolter",
-                    "hidden": false,
-                    "id": "93c6-f437-63c1-d586",
-                    "type": "selectionEntry",
-                    "targetId": "7fd9-bd72-8e7e-e9c6",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "46db-171f-7433-96b7",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "5f82-8fc8-ef9a-5547"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "377b-5cb2-c189-9b6a"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "3282-a103-6efc-9e33",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Skirmish Sub-type",
-                    "hidden": true,
-                    "id": "b578-8783-6f10-7a45",
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "7930-c24d-a6fd-1761",
-                        "includeChildSelections": false
-                      },
-                      {
-                        "type": "min",
-                        "value": 0,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "1974-d0f9-980e-c489"
-                      }
-                    ],
-                    "modifierGroups": [
-                      {
-                        "type": "and",
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": 1,
-                            "field": "1974-d0f9-980e-c489"
-                          },
-                          {
-                            "type": "set",
-                            "value": false,
-                            "field": "hidden"
-                          }
-                        ],
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "8355-1391-facf-db55",
-                            "childId": "c966-d0bd-9850-74c9",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 10
-                  }
-                ],
-                "collapsible": true,
-                "sortIndex": 6
+                "name": "Retinue",
+                "hidden": false,
+                "id": "644e-c135-7e54-d556",
+                "targetId": "12a7-f83c-886b-8e94",
+                "primary": false
               }
             ],
             "collapsible": true,
@@ -41834,6 +41562,32 @@
                     "id": "7770-d723-82bd-f103-max"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Astartes Combat Bike",
+                "hidden": false,
+                "id": "2d25-80c4-d2ae-ddba",
+                "type": "selectionEntry",
+                "targetId": "5a40-a28f-cf2d-6ee5",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1d6d-c51d-3c6f-cbab"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9f2d-f415-01d1-f889"
+                  }
+                ]
               }
             ],
             "modifiers": [
@@ -41849,126 +41603,6 @@
                     "scope": "parent",
                     "childId": "7c5c-1623-21e0-63a9",
                     "shared": true
-                  }
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Astartes Combat Bike",
-                "hidden": false,
-                "id": "091b-fbdc-70a7-1587",
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Bolter",
-                    "hidden": false,
-                    "id": "bc7f-d4ba-ad7f-b22f",
-                    "type": "selectionEntry",
-                    "targetId": "7fd9-bd72-8e7e-e9c6",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "b22d-390e-9775-c076",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "4542-c868-b885-bc34"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "28ce-2d81-896b-0d5b"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "18e4-11f8-b8b2-59a9",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Astartes Combat Bike",
-                    "id": "3592-b301-ae85-f56b",
-                    "hidden": false,
-                    "description": "An Astartes combat bike has one twin-linked bolter. In addition, a model with a Astartes combat bike that chooses to Run gains the Shrouded (X+) special rule until the start of the controlling player's next turn. A model with the Infantry Unit Type tha selects an Astartes combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. ln addition the model must change its Movement Characteristic to 14, Toughness 5 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules."
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Firing Protocols",
-                    "id": "46e8-726e-8f39-27df",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2bf1-82e6-0cdd-3a40",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "2",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Hammer of Wrath",
-                    "id": "6d3e-2428-434d-4c96",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "f7ff-d5d7-7787-efda",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "1",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7b34-8ced-c524-cb0c-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7b34-8ced-c524-cb0c-max"
                   }
                 ]
               }
@@ -42114,124 +41748,6 @@
                   }
                 ],
                 "sortIndex": 2
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Astartes Combat Bike",
-                "hidden": false,
-                "id": "8a3f-ca48-2761-ea37",
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Bolter",
-                    "hidden": false,
-                    "id": "fc6e-4983-9a70-97d6",
-                    "type": "selectionEntry",
-                    "targetId": "7fd9-bd72-8e7e-e9c6",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "67f5-97ea-bb30-76bb",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "09e6-aba1-f8d0-2a22"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "309c-33db-e726-47d8"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "344e-a1d2-37c2-9329",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Astartes Combat Bike",
-                    "id": "0cb0-a115-6154-364a",
-                    "hidden": false,
-                    "description": "An Astartes combat bike has one twin-linked bolter. In addition, a model with a Astartes combat bike that chooses to Run gains the Shrouded (X+) special rule until the start of the controlling player's next turn. A model with the Infantry Unit Type tha selects an Astartes combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. ln addition the model must change its Movement Characteristic to 14, Toughness 5 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules."
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Firing Protocols",
-                    "id": "0bfd-7c79-bfde-6160",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2bf1-82e6-0cdd-3a40",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "2",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Hammer of Wrath",
-                    "id": "ada0-7dcb-ada3-cbf8",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "f7ff-d5d7-7787-efda",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "1",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e1d2-1124-744e-3d5a-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e1d2-1124-744e-3d5a-max"
-                  }
-                ]
               }
             ],
             "entryLinks": [
@@ -42349,6 +41865,32 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "b100-09dd-ff8d-df8e-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Astartes Combat Bike",
+                "hidden": false,
+                "id": "7b0a-1e47-037c-c026",
+                "type": "selectionEntry",
+                "targetId": "5a40-a28f-cf2d-6ee5",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5442-ff6b-f436-c36e"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "098d-a026-0fcf-d050"
                   }
                 ]
               }
@@ -43002,124 +42544,6 @@
               {
                 "type": "upgrade",
                 "import": true,
-                "name": "Astartes Combat Bike",
-                "hidden": false,
-                "id": "3c4f-bbd5-5765-fde7",
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Bolter",
-                    "hidden": false,
-                    "id": "0c30-c9d9-d1b9-170c",
-                    "type": "selectionEntry",
-                    "targetId": "7fd9-bd72-8e7e-e9c6",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "ade0-27ec-7062-7b8d",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "34ea-4e8f-5b6b-1d98"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "6dbf-6e25-868f-12dc"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "74f6-4ef5-9694-a025",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Astartes Combat Bike",
-                    "id": "a7b3-4fd3-0d03-7392",
-                    "hidden": false,
-                    "description": "An Astartes combat bike has one twin-linked bolter. In addition, a model with a Astartes combat bike that chooses to Run gains the Shrouded (X+) special rule until the start of the controlling player's next turn. A model with the Infantry Unit Type tha selects an Astartes combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. ln addition the model must change its Movement Characteristic to 14, Toughness 5 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules."
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Firing Protocols",
-                    "id": "d182-601c-6270-1cf4",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2bf1-82e6-0cdd-3a40",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "2",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Hammer of Wrath",
-                    "id": "4ef7-1c07-0a43-ff7b",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "f7ff-d5d7-7787-efda",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "1",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "70fd-b3de-8c90-6c70-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "70fd-b3de-8c90-6c70-max"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
                 "name": "Veteran",
                 "hidden": false,
                 "id": "a452-47e6-1451-5def",
@@ -43403,6 +42827,32 @@
                         "shared": true
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Astartes Combat Bike",
+                "hidden": false,
+                "id": "b91e-2d13-e945-a560",
+                "type": "selectionEntry",
+                "targetId": "5a40-a28f-cf2d-6ee5",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "37aa-6d5e-30c5-2f63"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9ebe-ebac-23cd-52bf"
                   }
                 ]
               }
@@ -43788,190 +43238,6 @@
                 "id": "a68f-0147-887a-31de"
               }
             ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Astartes Combat Bike",
-                "hidden": false,
-                "id": "bd05-7e76-c718-ec51",
-                "rules": [
-                  {
-                    "name": "Astartes Combat Bike",
-                    "id": "5154-cc1b-0fd7-13fd",
-                    "hidden": false,
-                    "description": "An Astartes combat bike has one twin-linked bolter. In addition, a model with a Astartes combat bike that chooses to Run gains the Shrouded (X+) special rule until the start of the controlling player's next turn. A model with the Infantry Unit Type tha selects an Astartes combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. ln addition the model must change its Movement Characteristic to 14, Toughness 5 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules."
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Firing Protocols",
-                    "id": "f606-35c3-f608-9170",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2bf1-82e6-0cdd-3a40",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "2",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Hammer of Wrath",
-                    "id": "6ea3-849d-8aa6-1da1",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "f7ff-d5d7-7787-efda",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "1",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f3a9-66af-f62b-ab73-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f3a9-66af-f62b-ab73-max"
-                  }
-                ],
-                "selectionEntryGroups": [
-                  {
-                    "name": "Must take one of the following",
-                    "id": "3ea2-0a72-eb1c-6e74",
-                    "hidden": false,
-                    "sortIndex": 1,
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Bolter",
-                        "hidden": false,
-                        "id": "9f08-0225-b62a-4b6b",
-                        "type": "selectionEntry",
-                        "targetId": "7fd9-bd72-8e7e-e9c6",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Twin-linked",
-                            "hidden": false,
-                            "id": "a109-f04d-9a23-98a0",
-                            "type": "selectionEntryGroup",
-                            "targetId": "b19d-86be-3758-3e72"
-                          }
-                        ],
-                        "infoLinks": [
-                          {
-                            "name": "Twin-linked",
-                            "id": "ca55-96bf-b4df-eaf5",
-                            "hidden": false,
-                            "type": "rule",
-                            "targetId": "23d2-bdd7-3df1-be63"
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "prepend",
-                            "value": "Twin-linked",
-                            "field": "name",
-                            "join": " "
-                          }
-                        ]
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "dd56-852a-4718-a98d-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "dd56-852a-4718-a98d-max"
-                      }
-                    ],
-                    "selectionEntryGroups": [
-                      {
-                        "name": "For every three models",
-                        "id": "fb7d-cbd4-5868-540b",
-                        "hidden": false,
-                        "modifiers": [
-                          {
-                            "type": "increment",
-                            "value": 1,
-                            "field": "48e5-e291-ff33-564a",
-                            "repeats": [
-                              {
-                                "value": 3,
-                                "repeats": 1,
-                                "field": "selections",
-                                "scope": "unit",
-                                "childId": "model",
-                                "shared": true,
-                                "roundUp": false,
-                                "includeChildSelections": false
-                              }
-                            ]
-                          }
-                        ],
-                        "constraints": [
-                          {
-                            "type": "max",
-                            "value": 0,
-                            "field": "selections",
-                            "scope": "unit",
-                            "shared": true,
-                            "id": "48e5-e291-ff33-564a",
-                            "includeChildSelections": true
-                          }
-                        ],
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Grenade Launcher",
-                            "hidden": false,
-                            "id": "2cf4-f3bb-ba9e-fd01",
-                            "type": "selectionEntry",
-                            "targetId": "dc54-9bf5-c361-d68c",
-                            "costs": [
-                              {
-                                "name": "Points",
-                                "typeId": "54b5-0978-c8a4-5b5a",
-                                "value": 5
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "defaultSelectionEntryId": "9f08-0225-b62a-4b6b"
-                  }
-                ],
-                "sortIndex": 2
-              }
-            ],
             "entryLinks": [
               {
                 "import": true,
@@ -44168,6 +43434,32 @@
                         "shared": true
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Astartes Combat Bike",
+                "hidden": false,
+                "id": "bf29-c2ab-316a-92e6",
+                "type": "selectionEntry",
+                "targetId": "5a40-a28f-cf2d-6ee5",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "df80-b3b2-aff0-165a"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "49f2-7f53-a817-808d"
                   }
                 ]
               }
@@ -66053,6 +65345,13 @@
             "targetId": "af8c-8112-b1e1-367d"
           }
         ]
+      }
+    ],
+    "categoryEntries": [
+      {
+        "name": "Retinue",
+        "id": "12a7-f83c-886b-8e94",
+        "hidden": false
       }
     ]
   }
