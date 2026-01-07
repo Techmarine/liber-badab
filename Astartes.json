@@ -9632,6 +9632,13 @@
                         "shared": true,
                         "id": "c2d6-3ee4-93e7-f012"
                       }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
                     ]
                   },
                   {
@@ -10923,6 +10930,13 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "178c-9e02-5a54-3f26"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
                       }
                     ]
                   },
@@ -24631,7 +24645,7 @@
                 "sortIndex": 1
               },
               {
-                "name": "May take one of the following",
+                "name": "May take one of the following (up to two in unit)",
                 "id": "f9c6-0b9a-dcd5-87e9",
                 "hidden": false,
                 "sortIndex": 3,
@@ -24642,7 +24656,14 @@
                     "hidden": false,
                     "id": "e8e1-36b0-8138-29b9",
                     "type": "selectionEntry",
-                    "targetId": "048d-b99f-4f93-2329"
+                    "targetId": "048d-b99f-4f93-2329",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -24650,7 +24671,14 @@
                     "hidden": false,
                     "id": "4d80-02f7-1707-3829",
                     "type": "selectionEntry",
-                    "targetId": "5fc6-b052-616c-bfa7"
+                    "targetId": "5fc6-b052-616c-bfa7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 15
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -24658,7 +24686,14 @@
                     "hidden": false,
                     "id": "832f-fbac-bc0c-6369",
                     "type": "selectionEntry",
-                    "targetId": "10f7-b5ba-5906-a238"
+                    "targetId": "10f7-b5ba-5906-a238",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -24666,7 +24701,14 @@
                     "hidden": false,
                     "id": "e0c3-8e69-7297-c6b2",
                     "type": "selectionEntry",
-                    "targetId": "8062-caf5-9cee-5699"
+                    "targetId": "8062-caf5-9cee-5699",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 15
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -24674,7 +24716,14 @@
                     "hidden": false,
                     "id": "a7df-72ee-27de-fa76",
                     "type": "selectionEntry",
-                    "targetId": "c553-098b-dbb7-e3a9"
+                    "targetId": "c553-098b-dbb7-e3a9",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -24682,7 +24731,14 @@
                     "hidden": false,
                     "id": "72bd-f572-6b11-ecb3",
                     "type": "selectionEntry",
-                    "targetId": "6ee1-c83b-803f-eedd"
+                    "targetId": "6ee1-c83b-803f-eedd",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 15
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -24690,7 +24746,14 @@
                     "hidden": false,
                     "id": "ceb8-0bb2-4101-621a",
                     "type": "selectionEntry",
-                    "targetId": "2b2a-9da7-b1b1-a9f7"
+                    "targetId": "2b2a-9da7-b1b1-a9f7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 15
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -24701,6 +24764,15 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "b87d-8a7d-e26c-4a76"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "unit",
+                    "shared": true,
+                    "id": "bb86-e4b4-791e-4cc3",
+                    "includeChildSelections": true
                   }
                 ]
               }
@@ -64433,6 +64505,11 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "remove",
+            "value": "a300-5393-99ea-9657",
+            "field": "category"
           }
         ],
         "entryLinks": [
@@ -64478,6 +64555,11 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "remove",
+            "value": "a300-5393-99ea-9657",
+            "field": "category"
           }
         ],
         "entryLinks": [
@@ -64523,6 +64605,11 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "remove",
+            "value": "a300-5393-99ea-9657",
+            "field": "category"
           }
         ],
         "entryLinks": [
@@ -64568,6 +64655,11 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "remove",
+            "value": "a300-5393-99ea-9657",
+            "field": "category"
           }
         ],
         "entryLinks": [
@@ -64613,6 +64705,11 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "remove",
+            "value": "2e5a-9101-3872-faad",
+            "field": "category"
           }
         ],
         "entryLinks": [
@@ -64658,6 +64755,11 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "remove",
+            "value": "2e5a-9101-3872-faad",
+            "field": "category"
           }
         ],
         "entryLinks": [
@@ -64713,6 +64815,11 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "remove",
+            "value": "1dff-e2a4-5442-6863",
+            "field": "category"
           }
         ]
       },
@@ -64758,6 +64865,11 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "remove",
+            "value": "1dff-e2a4-5442-6863",
+            "field": "category"
           }
         ]
       },
@@ -64793,6 +64905,11 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "remove",
+            "value": "2e5a-9101-3872-faad",
+            "field": "category"
           }
         ]
       },
