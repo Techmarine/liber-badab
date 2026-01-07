@@ -1765,6 +1765,146 @@
             "hidden": false,
             "description": "At the start of the controlling player’s Movement phase, or when deployed as part of a Deep Strike Assault, a model with a Legion Warhawk jump pack may set its Move Characteristic to a value of 12 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ the jump pack). This allows a model with a Warhawk jump pack to move up to 12\", regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, all models with a Warhawk jump pack that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their Movement in Dangerous Terrain. A model with an activated Legion Warhawk jump pack treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its Movement at least 1\" away from any model from another unit.\n\nA model with a Legion Warhawk jump pack may still Run if it would normally be able to Run (this does not allow units that include any models with the Heavy Sub-type to Run). When making a Run move for a model with an activated Legion Warhawk jump pack, add the Initiative Characteristic of that model to 12 to determine how far it may move – the model ignores terrain and models from other units while making a Run move with a Legion Warhawk jump pack as previously noted, but may not make Shooting Attacks or declare a Charge in the same turn in which it has Run as per the normal rules for Running.\n\nAny model with a Legion Warhawk jump pack also gains the Bulky (2), Hammer of Wrath (1) and Deep Strike special rules – if it already has the Bulky (2) special rule, it gains the Bulky (3) special rule instead.\n\nDuring a Reaction made in any Phase, a player may not choose to activate a model’s Legion Warhawk jump pack to gain any bonus to its Movement Characteristic. Any models with a Legion Warhawk jump pack deployed as part of a Deep Strike Assault are considered to have activated their jump packs in the turn that they enter play."
           }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 0,
+                "field": "c22a-236a-0435-855a"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "12a7-f83c-886b-8e94",
+                    "shared": true
+                  }
+                ],
+                "localConditionGroups": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "scope": "root-entry",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "includeChildForces": true,
+                    "repeats": 1,
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "12a7-f83c-886b-8e94",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "954a-f392-16da-5caa",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "bb7b-aef1-f8a9-71eb"
+          },
+          {
+            "type": "min",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c22a-236a-0435-855a"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 1,
+            "field": "c22a-236a-0435-855a",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "localConditionGroups": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "scope": "root-entry",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "includeChildForces": true,
+                    "repeats": 1,
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "12a7-f83c-886b-8e94",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "954a-f392-16da-5caa",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "12a7-f83c-886b-8e94",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2042,16 +2182,41 @@
             "conditionGroups": [
               {
                 "type": "and",
-                "conditions": [
+                "localConditionGroups": [
                   {
                     "type": "atLeast",
                     "value": 1,
-                    "field": "selections",
                     "scope": "root-entry",
-                    "childId": "5a40-a28f-cf2d-6ee5",
-                    "shared": true,
-                    "includeChildSelections": true
-                  },
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "includeChildForces": true,
+                    "repeats": 1,
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "12a7-f83c-886b-8e94",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "5a40-a28f-cf2d-6ee5",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "conditions": [
                   {
                     "type": "instanceOf",
                     "value": 1,
@@ -2141,21 +2306,46 @@
                 "type": "and",
                 "conditions": [
                   {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "root-entry",
-                    "childId": "5a40-a28f-cf2d-6ee5",
-                    "shared": true,
-                    "includeChildSelections": true
-                  },
-                  {
                     "type": "instanceOf",
                     "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "childId": "12a7-f83c-886b-8e94",
                     "shared": true
+                  }
+                ],
+                "localConditionGroups": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "scope": "root-entry",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "includeChildForces": true,
+                    "repeats": 1,
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "12a7-f83c-886b-8e94",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "5a40-a28f-cf2d-6ee5",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -2985,75 +3175,6 @@
                 ]
               }
             ],
-            "infoLinks": [
-              {
-                "name": "And They Shall Know No Fear",
-                "id": "2fb9-5151-857d-3773",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "b780-4ce8-8482-c432"
-              },
-              {
-                "name": "Bulky",
-                "id": "b511-4c52-46be-9501",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "8317-bc69-b786-390d",
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": "2",
-                    "field": "annotation"
-                  }
-                ]
-              },
-              {
-                "name": "Deep Strike",
-                "id": "1892-bd65-44da-1cd0",
-                "hidden": true,
-                "type": "rule",
-                "targetId": "4aab-8d13-caf2-091d",
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": false,
-                    "field": "hidden",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "0920-88cf-e140-a0d3",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Independent Character",
-                "id": "1289-5913-8a51-8be4",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "e453-db5d-2916-abcb"
-              },
-              {
-                "name": "Master of the Company",
-                "id": "a601-ed28-e099-f252",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "9782-8c2a-c5f0-319d"
-              },
-              {
-                "name": "Relentless",
-                "id": "9593-a25e-986c-63ff",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "919d-8ad9-f565-2b64"
-              }
-            ],
             "categoryLinks": [
               {
                 "name": "Character",
@@ -3105,6 +3226,75 @@
             "type": "selectionEntry",
             "targetId": "b3f3-4f17-6be2-4082",
             "sortIndex": 2
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "2fb9-5151-857d-3773",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Bulky",
+            "id": "b511-4c52-46be-9501",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8317-bc69-b786-390d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Deep Strike",
+            "id": "1892-bd65-44da-1cd0",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "0920-88cf-e140-a0d3",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Independent Character",
+            "id": "1289-5913-8a51-8be4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Master of the Company",
+            "id": "a601-ed28-e099-f252",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9782-8c2a-c5f0-319d"
+          },
+          {
+            "name": "Relentless",
+            "id": "9593-a25e-986c-63ff",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "919d-8ad9-f565-2b64"
           }
         ]
       },
@@ -5091,9 +5281,9 @@
                     "import": true,
                     "name": "Warhawk Jump Pack",
                     "hidden": false,
-                    "id": "3917-7505-dcfe-e93e",
+                    "id": "fa42-6591-6ca5-cb14",
                     "type": "selectionEntry",
-                    "targetId": "80f3-c1b7-3ce8-ab96",
+                    "targetId": "954a-f392-16da-5caa",
                     "costs": [
                       {
                         "name": "Points",
@@ -5388,36 +5578,6 @@
                 ]
               }
             ],
-            "infoLinks": [
-              {
-                "name": "And They Shall Know No Fear",
-                "id": "fd68-4e34-2ef6-1d07",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "b780-4ce8-8482-c432"
-              },
-              {
-                "name": "Chapter Specialist",
-                "id": "398a-a2b1-25df-d7a5",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "2b63-2384-7b15-bc8f"
-              },
-              {
-                "name": "Independent Character",
-                "id": "f85c-3b15-f235-5a1a",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "e453-db5d-2916-abcb"
-              },
-              {
-                "name": "Relentless",
-                "id": "2cfa-faac-411e-b55b",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "919d-8ad9-f565-2b64"
-              }
-            ],
             "constraints": [
               {
                 "type": "min",
@@ -5549,6 +5709,43 @@
             "type": "selectionEntry",
             "targetId": "b3f3-4f17-6be2-4082",
             "sortIndex": 2
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "fd68-4e34-2ef6-1d07",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Chapter Specialist",
+            "id": "398a-a2b1-25df-d7a5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2b63-2384-7b15-bc8f"
+          },
+          {
+            "name": "Independent Character",
+            "id": "f85c-3b15-f235-5a1a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Relentless",
+            "id": "2cfa-faac-411e-b55b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "919d-8ad9-f565-2b64"
+          },
+          {
+            "name": "Scout",
+            "id": "cf84-6cbe-17ac-703c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ]
       },
@@ -6424,15 +6621,15 @@
               {
                 "type": "upgrade",
                 "import": true,
-                "name": "Forlorn Charge",
+                "name": "Stalk Unseen",
                 "hidden": true,
                 "id": "36a7-4fce-3a87-d930",
                 "rules": [
                   {
-                    "name": "Forlorn Charge",
+                    "name": "Stalk Unseen",
                     "id": "e98c-75a7-5acb-1362",
                     "hidden": false,
-                    "description": "The warlord and any unit he joins automatically passes Pinning tests. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
+                    "description": "The Warlord and any unit he joins gains the Shrouded (6+) Special Rule, this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
                   }
                 ],
                 "constraints": [
@@ -6466,9 +6663,25 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "1f40-fe51-5c23-c07e",
+                        "childId": "7246-3389-7f60-2b4e",
                         "shared": true,
                         "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Shrouded",
+                    "id": "0e7b-0dfd-2186-1934",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "9bcf-fed5-69a8-cc8d",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "6+",
+                        "field": "annotation"
                       }
                     ]
                   }
@@ -6541,6 +6754,14 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "68a4-31cf-3cd5-8309"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "491f-4fbf-b3d0-6e36"
                   }
                 ],
                 "modifierGroups": [
@@ -6556,6 +6777,11 @@
                         "type": "set",
                         "value": 1,
                         "field": "68a4-31cf-3cd5-8309"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "491f-4fbf-b3d0-6e36"
                       }
                     ],
                     "conditionGroups": [
@@ -6668,6 +6894,14 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "a19f-65bc-2440-70ab"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a3cb-a3e2-2ff4-0aad"
                   }
                 ],
                 "modifierGroups": [
@@ -6683,6 +6917,11 @@
                         "type": "set",
                         "value": 1,
                         "field": "a19f-65bc-2440-70ab"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "a3cb-a3e2-2ff4-0aad"
                       }
                     ],
                     "conditionGroups": [
@@ -6816,7 +7055,7 @@
                         "field": "selections",
                         "scope": "parent",
                         "shared": true,
-                        "id": "4bce-9fe1-ead6-484a-min"
+                        "id": "eb83-f15f-1d72-0c72-min"
                       },
                       {
                         "type": "max",
@@ -6824,7 +7063,7 @@
                         "field": "selections",
                         "scope": "parent",
                         "shared": true,
-                        "id": "4bce-9fe1-ead6-484a-max"
+                        "id": "eb83-f15f-1d72-0c72-max"
                       }
                     ]
                   }
@@ -6897,6 +7136,14 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "63f8-c2b9-5033-2308"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "945e-5d2d-9e47-77e6"
                   }
                 ],
                 "rules": [
@@ -6926,6 +7173,11 @@
                         "type": "set",
                         "value": 1,
                         "field": "63f8-c2b9-5033-2308"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "945e-5d2d-9e47-77e6"
                       }
                     ],
                     "conditionGroups": [
@@ -6952,6 +7204,138 @@
                         ]
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Forlorn Charge",
+                "hidden": true,
+                "id": "87c4-a568-577b-5815",
+                "rules": [
+                  {
+                    "name": "Forlorn Charge",
+                    "id": "6d65-3229-fb40-1abe",
+                    "hidden": false,
+                    "description": "The warlord and any unit he joins automatically passes Pinning tests. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "edd4-f517-ba1c-460c"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "edd4-f517-ba1c-460c"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1f40-fe51-5c23-c07e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Stealth Tactics",
+                "hidden": true,
+                "id": "0f91-7cf2-d7b5-ce4a",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "2a8f-6e0f-4701-4993"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "a605-b738-8d2e-9ea7"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "7246-3389-7f60-2b4e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "46ed-4db5-6aec-996c",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2a8f-6e0f-4701-4993"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a605-b738-8d2e-9ea7"
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Stealth Tactics",
+                    "id": "2754-0d9a-ee02-c952",
+                    "hidden": false,
+                    "description": "If Lias Issodon is your army’s warlord, you may select up to 3 units with the Infantry or Cavalry Unit type and the Chapter Tactics (Raptors) Special rule to gain the Infiltrate Special Rule as well as the Skirmish sub-Type. In addition to this, while Lias Issodon is alive, the controlling player may make an additional reaction in the Shooting phase."
                   }
                 ]
               }
@@ -8428,7 +8812,7 @@
               {
                 "import": true,
                 "name": "Warhawk Jump Pack",
-                "hidden": true,
+                "hidden": false,
                 "id": "a2c8-b276-1f94-4974",
                 "type": "selectionEntry",
                 "targetId": "954a-f392-16da-5caa",
@@ -8437,57 +8821,6 @@
                     "name": "Points",
                     "typeId": "54b5-0978-c8a4-5b5a",
                     "value": 10
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "1536-2c39-a171-fd6d"
-                  },
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "36f0-7141-17ff-e1b8"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "1536-2c39-a171-fd6d"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "36f0-7141-17ff-e1b8"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "root-entry",
-                        "childId": "80f3-c1b7-3ce8-ab96",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ]
                   }
                 ],
                 "sortIndex": 7
@@ -9700,7 +10033,7 @@
               {
                 "import": true,
                 "name": "Warhawk Jump Pack",
-                "hidden": true,
+                "hidden": false,
                 "id": "75f7-92a7-06f9-dc3c",
                 "type": "selectionEntry",
                 "targetId": "954a-f392-16da-5caa",
@@ -9709,57 +10042,6 @@
                     "name": "Points",
                     "typeId": "54b5-0978-c8a4-5b5a",
                     "value": 10
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "8af6-f3a6-cdbf-4093"
-                  },
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "9810-1752-9d46-6edf"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "8af6-f3a6-cdbf-4093"
-                      },
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "9810-1752-9d46-6edf"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "root-entry",
-                        "childId": "80f3-c1b7-3ce8-ab96",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ]
                   }
                 ],
                 "sortIndex": 7
@@ -11018,6 +11300,13 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Scout",
+            "id": "33cb-8f24-e316-64dc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ],
         "categoryLinks": [
@@ -11237,6 +11526,23 @@
             "type": "selectionEntry",
             "targetId": "b3f3-4f17-6be2-4082",
             "sortIndex": 6
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "e349-c42f-3c5d-1e72",
+            "field": "category",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "root-entry",
+                "childId": "46ed-4db5-6aec-996c",
+                "shared": true
+              }
+            ]
           }
         ]
       },
@@ -12645,36 +12951,6 @@
                 "primary": false
               }
             ],
-            "infoLinks": [
-              {
-                "name": "And They Shall Know No Fear",
-                "id": "22e7-c898-102c-4883",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "b780-4ce8-8482-c432"
-              },
-              {
-                "name": "Master of the Company",
-                "id": "8db2-d865-b4d3-a586",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "9782-8c2a-c5f0-319d"
-              },
-              {
-                "name": "Relentless",
-                "id": "9a24-5247-05f3-b267",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "919d-8ad9-f565-2b64"
-              },
-              {
-                "name": "Independent Character",
-                "id": "bc74-d01c-fd09-7e85",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "e453-db5d-2916-abcb"
-              }
-            ],
             "selectionEntryGroups": [
               {
                 "name": "May take one of the following",
@@ -13640,9 +13916,9 @@
                     "import": true,
                     "name": "Warhawk Jump Pack",
                     "hidden": false,
-                    "id": "377e-96a3-0600-58b7",
+                    "id": "ae19-cf85-cee2-90d0",
                     "type": "selectionEntry",
-                    "targetId": "80f3-c1b7-3ce8-ab96",
+                    "targetId": "954a-f392-16da-5caa",
                     "costs": [
                       {
                         "name": "Points",
@@ -14088,6 +14364,43 @@
             "type": "selectionEntry",
             "targetId": "b3f3-4f17-6be2-4082",
             "sortIndex": 2
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "22e7-c898-102c-4883",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Independent Character",
+            "id": "bc74-d01c-fd09-7e85",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Master of the Company",
+            "id": "8db2-d865-b4d3-a586",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9782-8c2a-c5f0-319d"
+          },
+          {
+            "name": "Relentless",
+            "id": "9a24-5247-05f3-b267",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "919d-8ad9-f565-2b64"
+          },
+          {
+            "name": "Scout",
+            "id": "b025-2d22-3e4f-f98d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ]
       },
@@ -22867,6 +23180,13 @@
             "hidden": false,
             "type": "rule",
             "targetId": "2d8a-fe4e-0823-4918"
+          },
+          {
+            "name": "Scout",
+            "id": "d903-603b-d3c0-9916",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ],
         "selectionEntryGroups": [
@@ -25632,6 +25952,13 @@
                 "field": "annotation"
               }
             ]
+          },
+          {
+            "name": "Scout",
+            "id": "5b15-b998-4b81-d836",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ],
         "selectionEntryGroups": [
@@ -32230,6 +32557,115 @@
               }
             ],
             "sortIndex": 3
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Reconnaissance Squad",
+            "hidden": false,
+            "id": "4fdc-506b-acbb-11d1",
+            "sortIndex": 7,
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "34fa-3bf7-4255-e1b5"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "34fa-3bf7-4255-e1b5"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7246-3389-7f60-2b4e",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 6,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Outflank",
+                "id": "64aa-5f51-8b0e-22d4",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "9a5c-4c5f-9a8b-014d"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Shroud Bombs",
+                "hidden": false,
+                "id": "4482-70b9-b801-6623",
+                "type": "selectionEntry",
+                "targetId": "69ce-b469-1743-3655",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "11de-469e-247c-190d-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "11de-469e-247c-190d-max"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Fatal Strike",
+                "id": "5ed2-b25e-29a2-054c",
+                "hidden": false,
+                "description": "Once per game, a Raptor Reconnaissance Squad may execute a fatal strike attack against a chosen target. The Reconnaissance Squad’s controlling player declares the Fatal strike at the start of one of the squad’s Shooting phases. For the duration of that phase, the squad’s shooting attacks have both the Twin-linked and Rending (6+) special rules, in addition to any other effects their weapons might have. In the case of weapons already with the Rending (X) Special rule, increase it by 1,eg during the Fatal Strike a weapon with Rending (6+) would go to Rending (5+) for the duration of the attack."
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -32278,6 +32714,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Scout",
+            "id": "0cdd-65c6-628f-937d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ],
         "sortIndex": 15,
@@ -36479,6 +36922,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Scout",
+            "id": "4201-eace-97a0-7274",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ],
         "modifiers": [
@@ -41734,6 +42184,13 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Scout",
+            "id": "077c-615d-6f5f-be25",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ],
         "selectionEntryGroups": [
@@ -48866,6 +49323,13 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Scout",
+            "id": "d1ee-89da-9dc8-5949",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ],
         "selectionEntryGroups": [
@@ -50738,6 +51202,13 @@
             "hidden": false,
             "type": "rule",
             "targetId": "6bf5-20cb-5367-8968"
+          },
+          {
+            "name": "Scout",
+            "id": "72e5-ca3f-7ca8-fdd0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff01-32c4-e72a-2131"
           }
         ],
         "selectionEntryGroups": [
@@ -61688,59 +62159,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Warhawk Jump Pack",
-        "hidden": false,
-        "id": "80f3-c1b7-3ce8-ab96",
-        "infoLinks": [
-          {
-            "name": "Hammer of Wrath",
-            "id": "3d56-d35e-0e4c-6f0a",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "f7ff-d5d7-7787-efda",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Bulky",
-            "id": "f452-1f0f-8952-b397",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "8317-bc69-b786-390d",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "2",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Deep Strike",
-            "id": "1da8-8704-1f68-981c",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4aab-8d13-caf2-091d"
-          }
-        ],
-        "rules": [
-          {
-            "name": "Warhawk Jump Pack",
-            "id": "df40-d0c9-a68c-e470",
-            "hidden": false,
-            "description": "At the start of the controlling player’s Movement phase, or when deployed as part of a Deep Strike Assault, a model with a Legion Warhawk jump pack may set its Move Characteristic to a value of 12 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ the jump pack). This allows a model with a Warhawk jump pack to move up to 12\", regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, all models with a Warhawk jump pack that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their Movement in Dangerous Terrain. A model with an activated Legion Warhawk jump pack treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its Movement at least 1\" away from any model from another unit.\n\nA model with a Legion Warhawk jump pack may still Run if it would normally be able to Run (this does not allow units that include any models with the Heavy Sub-type to Run). When making a Run move for a model with an activated Legion Warhawk jump pack, add the Initiative Characteristic of that model to 12 to determine how far it may move – the model ignores terrain and models from other units while making a Run move with a Legion Warhawk jump pack as previously noted, but may not make Shooting Attacks or declare a Charge in the same turn in which it has Run as per the normal rules for Running.\n\nAny model with a Legion Warhawk jump pack also gains the Bulky (2), Hammer of Wrath (1) and Deep Strike special rules – if it already has the Bulky (2) special rule, it gains the Bulky (3) special rule instead.\n\nDuring a Reaction made in any Phase, a player may not choose to activate a model’s Legion Warhawk jump pack to gain any bonus to its Movement Characteristic. Any models with a Legion Warhawk jump pack deployed as part of a Deep Strike Assault are considered to have activated their jump packs in the turn that they enter play."
-          }
-        ],
-        "comment": "Retine leader only"
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Scout Armour",
         "hidden": false,
         "id": "b85f-71e1-450c-5ba0",
@@ -61825,6 +62243,15 @@
                         "field": "selections",
                         "scope": "force",
                         "childId": "1c46-7a96-775f-8572",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "7246-3389-7f60-2b4e",
                         "shared": true,
                         "includeChildSelections": true
                       }
@@ -61948,6 +62375,31 @@
                     "field": "selections",
                     "scope": "force",
                     "childId": "1c46-7a96-775f-8572",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Raptors)",
+            "id": "5ef4-c000-ad72-2235",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "c501-9c26-ab65-c6b2",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7246-3389-7f60-2b4e",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -64731,6 +65183,60 @@
         "id": "1288-fea0-dcf4-a742",
         "hidden": false,
         "description": "Blood of Fire:\n\nWhen rolling to wound against a model with this special rule for any attack inflicted by a flame, melta, or plasma weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the strength of the weapon, only the roll to wound). In addition, all models that have more than one wound or Hull point gain the It Will Not Die (6+) special rule.\n\nMaster Artisan:\n\nAny model with the Chapter Tactics (Salamanders) and the Character unit subtype may upgrade their weapon to have the Master-Crafted special rule for +10 points.\n\nFirst Founding Chapter:\n\nA Salamanders Detachment may include up to 2 additional Relics of the Chapter on top of what is usually allowed by points limits or any other special rules."
+      },
+      {
+        "name": "Scout",
+        "id": "ff01-32c4-e72a-2131",
+        "hidden": false,
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7246-3389-7f60-2b4e",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "childId": "954a-f392-16da-5caa",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "childId": "5a40-a28f-cf2d-6ee5",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "comment": "Raptors",
+        "description": "After both sides have deployed (including Infiltrators), but before the first player begins their first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, Dreadnought or Automata, each model can redeploy anywhere entirely within 6\" of its current position. If it is any other Unit Type, each model can instead redeploy anywhere entirely within 12\" of its current position. During this redeployment, Scouts can move outside the owning player’s Deployment Zone, but must remain more than 9\" away from any enemy unit. A unit that makes a Scout redeployment cannot Charge in the first Game Turn. A unit cannot Embark or Disembark as part of a Scout redeployment.\n\nIf both sides have Scouts, roll off; the winner decides who redeploys first. Then alternate redeploying Scout units one at a time. If a unit with this special rule is deployed inside a Dedicated Transport, it confers the Scout special rule to the Transport (though a Disembarkation cannot be performed as part of the redeployment). Note that a Transport with this special rule does not lose it if a unit without this special rule is Embarked upon it. Having Scout also confers the Outflank special rule to units of Scouts that are kept as Reserves."
+      },
+      {
+        "name": "Chapter Tactics (Raptors)",
+        "id": "c501-9c26-ab65-c6b2",
+        "hidden": false,
+        "description": "Strike from the Shadows:\n\n\nModels in this detachment have the Scout special rule. In addition, on the first game turn, models in the detachment have the Shrouded (6+) this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc.\n\n\nNote that units which contain models with any variant of the Bulky (x) special rule do not benefit from either rule.\n\n\nLegendary Marksmen:\n\n\nAny unit with this special rule that does not move in the Movement phase of their turn or is not pinned, may choose to gain the Rending (6+) special rule when firing in the Shooting phase of that turn with boltguns, combi-weapons fired as boltguns or bolt pistols. When using this rule, such weapons are counted as being Heavy 1 instead of their usual type for that attack."
       }
     ],
     "sharedSelectionEntryGroups": [

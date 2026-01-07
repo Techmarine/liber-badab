@@ -1,0 +1,753 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "6535-ae03-a557-bf06",
+    "name": "Raptors",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Astartes",
+        "id": "88be-734f-63d8-5da0",
+        "importRootEntries": true,
+        "targetId": "0c55-5a03-a16a-69cd"
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Raptors",
+        "hidden": false,
+        "id": "7150-b9d9-7868-608a",
+        "type": "selectionEntry",
+        "targetId": "7246-3389-7f60-2b4e",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "28ac-2e65-2635-9eec",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1"
+      },
+      {
+        "import": true,
+        "name": "Chapter Master Lias Issodon",
+        "hidden": false,
+        "id": "56c6-61d9-bfcb-02ad",
+        "type": "selectionEntry",
+        "targetId": "46ed-4db5-6aec-996c"
+      }
+    ],
+    "type": "catalogue",
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Chapter Master Lias Issodon",
+        "hidden": false,
+        "id": "46ed-4db5-6aec-996c",
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "0707-393c-d996-2ac5",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "e9ce-950d-68ce-a9ea",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
+          },
+          {
+            "name": "Chapter Master",
+            "hidden": false,
+            "id": "e665-e2fe-a2f2-f74f",
+            "targetId": "2ca5-c322-c8f3-5ebc",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "49ab-cbe2-60c4-2e86",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Chapter Master Lias Issodon",
+            "hidden": false,
+            "id": "b0e5-6986-81f0-a2d1",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 185
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "225b-e2a0-2cea-7da8",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "04f3-f94c-b97a-b5fe",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Skirmish",
+                "hidden": false,
+                "id": "073d-f300-44ba-b9c3",
+                "targetId": "e349-c42f-3c5d-1e72",
+                "primary": false
+              },
+              {
+                "name": "Unique",
+                "hidden": false,
+                "id": "b456-e155-d6ae-261e",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f7a5-a867-b78e-116c-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f7a5-a867-b78e-116c-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "b5be-8767-a509-5f22",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Artificer Armour",
+                "hidden": false,
+                "id": "f63e-b5ab-16c0-7d8f",
+                "type": "selectionEntry",
+                "targetId": "2004-7466-45c8-bca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c986-61e6-2c77-3edb-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c986-61e6-2c77-3edb-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "a8a0-b2ed-c5b1-4469",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2537-5225-dff9-409e-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2537-5225-dff9-409e-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Bolt Pistol",
+                "hidden": false,
+                "id": "5f77-e4f1-99e1-2f89",
+                "type": "selectionEntry",
+                "targetId": "95f0-f427-49c0-c7e6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3b86-7c76-3680-da8a-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3b86-7c76-3680-da8a-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "7d67-39f9-2c9b-4d1a",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "28a7-fb7a-b51e-a420-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "28a7-fb7a-b51e-a420-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "e0e0-a19c-3adb-debd",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "62b8-2992-f9ad-f011-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "62b8-2992-f9ad-f011-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Shroud Bombs",
+                "hidden": false,
+                "id": "16bf-3389-091b-283d",
+                "type": "selectionEntry",
+                "targetId": "69ce-b469-1743-3655",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "df49-9586-add4-4ef4-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "df49-9586-add4-4ef4-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "3715-38c8-bb3b-fe2d",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3503-424c-a170-4e55"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "bfc3-2486-3bba-9cdd",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Malice",
+                "hidden": false,
+                "id": "19c1-7693-e576-7bfc",
+                "profiles": [
+                  {
+                    "name": "Malice - Augur Rounds",
+                    "typeId": "5e31-3867-7c3d-fcb9",
+                    "typeName": "Ranged Weapon",
+                    "hidden": false,
+                    "id": "147f-41bb-2ee3-6019",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "7b0f-9c2a-0ecb-f3a3",
+                        "$text": "72\""
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "2ecc-1ccc-736f-9d3d",
+                        "$text": "7"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "cbb5-5f04-f87f-a810",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "2c90-16ca-a927-898d",
+                        "$text": "Heavy 1"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "d2a2-1139-48cb-4472",
+                        "$text": "Armourbane (Ranged), Rending (4+)"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Malice - Execution Rounds",
+                    "typeId": "5e31-3867-7c3d-fcb9",
+                    "typeName": "Ranged Weapon",
+                    "hidden": false,
+                    "id": "f23b-c921-f969-6793",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "7b0f-9c2a-0ecb-f3a3",
+                        "$text": "72\""
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "2ecc-1ccc-736f-9d3d",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "cbb5-5f04-f87f-a810",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "2c90-16ca-a927-898d",
+                        "$text": "Heavy 2"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "d2a2-1139-48cb-4472",
+                        "$text": "Shell Shock (2), Pinning, Rending (3+)"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Malice - Airburst Rounds",
+                    "typeId": "5e31-3867-7c3d-fcb9",
+                    "typeName": "Ranged Weapon",
+                    "hidden": false,
+                    "id": "2f6f-56b5-7935-0952",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "7b0f-9c2a-0ecb-f3a3",
+                        "$text": "48\""
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "2ecc-1ccc-736f-9d3d",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "cbb5-5f04-f87f-a810",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "2c90-16ca-a927-898d",
+                        "$text": "Heavy 4"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "d2a2-1139-48cb-4472",
+                        "$text": "Breaching (4+), Ignores Cover"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Malice - Standard Rounds",
+                    "typeId": "5e31-3867-7c3d-fcb9",
+                    "typeName": "Ranged Weapon",
+                    "hidden": false,
+                    "id": "a2c9-9935-5dba-8c98",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "7b0f-9c2a-0ecb-f3a3",
+                        "$text": "30\""
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "2ecc-1ccc-736f-9d3d",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "cbb5-5f04-f87f-a810",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "2c90-16ca-a927-898d",
+                        "$text": "Assault 4"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "d2a2-1139-48cb-4472",
+                        "$text": "Breaching (6+)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Armourbane",
+                    "id": "11e8-b807-94df-593c",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a1f5-fb7a-bbf0-a720",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Ranged",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Rending",
+                    "id": "ecf0-56ff-7cbc-1662",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "2508-8e95-11c7-6bd6",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "4+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Shell Shock",
+                    "id": "6d9b-a45c-4aa0-dedd",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "8175-2eb5-17e1-07b4",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pinning",
+                    "id": "196d-71dc-80dd-f45a",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4cc0-966b-ab26-0aa7"
+                  },
+                  {
+                    "name": "Rending",
+                    "id": "fdec-4c22-272a-bf30",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "2508-8e95-11c7-6bd6",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "3+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Breaching",
+                    "id": "a1af-20c9-b95a-ffc4",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ee66-f70b-aa5c-b2bf",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "4+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Breaching",
+                    "id": "464a-7569-ef1c-8adf",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ee66-f70b-aa5c-b2bf",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "6+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ignores Cover",
+                    "id": "031c-eafc-8c8d-53ce",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "6917-7b87-ca40-5914"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "db43-152e-b48e-eafc-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "db43-152e-b48e-eafc-max"
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Chapter Master Lias Issodon",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "477d-3d5b-e6d6-8d5d",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Chapter Tactics (Raptors)",
+            "id": "ccbf-34c0-bc16-ecb6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c501-9c26-ab65-c6b2"
+          },
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "759f-033b-e8cc-47e4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Independent Character",
+            "id": "1f18-ffb0-71bd-ba78",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Chapter Master",
+            "id": "1d83-af30-5686-80e2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2979-eeea-165c-9ac1"
+          },
+          {
+            "name": "Master of the Company",
+            "id": "8c18-a752-d62b-7df1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9782-8c2a-c5f0-319d"
+          },
+          {
+            "name": "Scout",
+            "id": "35f5-ae1c-f884-5737",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e18c-d4da-eb9b-919b"
+          },
+          {
+            "name": "Infiltrate",
+            "id": "7a82-c66e-ca99-39c2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a11e-3993-c8ce-9072"
+          },
+          {
+            "name": "Precision Shots",
+            "id": "0771-b677-1497-058b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7c10-c2c4-a901-0907",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Cunning Strategist",
+            "id": "ea0e-c41c-45d4-6ef3",
+            "hidden": false,
+            "description": "Enemy Reserve rolls suffer a -1 penalty while Lias Issodon is present in the army."
+          },
+          {
+            "name": "Infiltrate, Isolate and Destroy",
+            "id": "1883-d52a-2b75-48c1",
+            "hidden": false,
+            "description": "If Lias Issodon begins the game in reserve, when he enters play the controlling player may select an enemy unit, non-flyer vehicle, or fortification that is on the battlefield.\n\n\nThe unit suffers either D6 Str 6 AP 2 hits if it has a Toughness value, or a single automatic penetrating hit at AP 1. Cover or Shrouded saves may not be taken against this attack."
+          }
+        ]
+      }
+    ]
+  }
+}

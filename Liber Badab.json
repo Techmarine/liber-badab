@@ -1707,6 +1707,12 @@
         "id": "ca6b-5030-24a4-aabe",
         "hidden": false,
         "description": "After normal attacks by this weapon have been resolved, count the number of unsaved Wounds caused on the target unit. Immediately resolve a number of additional automatic Hits on the same unit using the weapon’s profile equal to the number of unsaved Wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional Hits to take effect. These additional Hits do not themselves inflict more Hits and do not benefit from any other special rules possessed by the attacking model, such as Preferred Enemy (X) or Precision Strikes (X)."
+      },
+      {
+        "name": "Shrouded",
+        "id": "9bcf-fed5-69a8-cc8d",
+        "hidden": false,
+        "description": "When a model with this special rule suffers an unsaved Wound, Glancing Hit or Penetrating Hit, it can make a special Shrouded roll to ignore it (this is not a Saving Throw and so can be used against attacks that state that ‘no Saves of any kind are allowed’). Shrouded rolls may not be taken against Melee Attacks, against attacks with the Ignores Cover special rule or for models (excluding models with the Primarch Unit Type) with the Fearless special rule.\n\nRoll a D6 each time an unsaved Wound, Glancing Hit or Penetrating Hit is suffered by a model with this special rule. On a result that is equal to or greater than the value in brackets, that unsaved Wound, Glancing Hit or Penetrating Hit is ignored. On any other result, the Wound, Glancing Hit or Penetrating Hit is applied as normal. For example, a unit with the special rule Shrouded (6+) would need to score a 6 in order to ignore a Wound, Glancing Hit or Penetrating Hit inflicted upon it.\n\nIf on any unit this rule is presented simply as Shrouded, without a value in brackets, then count it as Shrouded (6+).\n\nThis is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound, Glancing Hit or Penetrating Hit."
       }
     ],
     "sharedSelectionEntries": [
@@ -2497,6 +2503,13 @@
             "name": "Salamanders",
             "hidden": false,
             "id": "1c46-7a96-775f-8572"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Raptors",
+            "hidden": false,
+            "id": "7246-3389-7f60-2b4e"
           }
         ],
         "constraints": [
