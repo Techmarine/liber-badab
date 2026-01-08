@@ -7338,6 +7338,226 @@
                     "description": "If Lias Issodon is your army’s warlord, you may select up to 3 units with the Infantry or Cavalry Unit type and the Chapter Tactics (Raptors) Special rule to gain the Infiltrate Special Rule as well as the Skirmish sub-Type. In addition to this, while Lias Issodon is alive, the controlling player may make an additional reaction in the Shooting phase."
                   }
                 ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Shock and Awe",
+                "hidden": true,
+                "id": "b594-8475-aa4d-bc88",
+                "rules": [
+                  {
+                    "name": "Shock and Awe",
+                    "id": "ab88-4191-3058-137a",
+                    "hidden": false,
+                    "description": "The Warlord and any unit he joins gain the Deep Strike Special rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9c16-92e7-3488-dcb3"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "9c16-92e7-3488-dcb3"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "ac2b-b7c8-7313-ae91",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Deep Strike",
+                    "id": "047b-8d8b-0291-8017",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4aab-8d13-caf2-091d"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sanctioned Fratricide",
+                "hidden": true,
+                "id": "f93c-fa7c-b868-62be",
+                "rules": [
+                  {
+                    "name": "Sanctioned Fratricide",
+                    "id": "ee6a-4b77-dfb0-a5c2",
+                    "hidden": false,
+                    "description": "If Asterion Moloc is your Warlord, then all models with the Chapter Tactics (Minotaurs) gain Preferred Enemy (Space Marines). If they already have that special rule, the also gain the Hatred (Space Marines) rule as well. A Primary Detachment that includes Asterion Moloc treats all allied forces as Desperate Allies. In addition to the above rules, while Asterion Moloc is alive the controlling player may make an additional reaction in the Movement Phase."
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "ac2b-b7c8-7313-ae91",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "f075-1490-c16f-7d97",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "8d4a-3c09-43e0-8dd6"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "f2fe-b8e5-5a24-57e9"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8d4a-3c09-43e0-8dd6"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f2fe-b8e5-5a24-57e9"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Intimidating Presence",
+                "hidden": true,
+                "id": "af26-a5b0-8560-e19c",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "24c4-24dc-da0f-d924"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "97ea-74a4-09af-bbca"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "24c4-24dc-da0f-d924"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "97ea-74a4-09af-bbca"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "ac2b-b7c8-7313-ae91",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "6a88-3dc3-014a-6432",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Intimidating Presence",
+                    "id": "09ac-08e0-717e-9050",
+                    "hidden": false,
+                    "description": "If Enkomi is the army’s Warlord, then all enemy units within 12\" of Enkomi must use the squads lowest leadership instead of its highest for any Morale or Pinning Leadership Tests.\n\nIn addition to this, while Enkomi is alive, the controlling player may make an additional Reaction in the Assault Phase."
+                  }
+                ]
               }
             ],
             "defaultSelectionEntryId": "2dda-e1f2-6bd3-daca"
@@ -7788,6 +8008,22 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "4ba6-21f2-9279-f43c-max",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "ac2b-b7c8-7313-ae91",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ],
             "entryLinks": [
@@ -8170,6 +8406,31 @@
             "hidden": false,
             "type": "rule",
             "targetId": "681c-695c-731f-b780"
+          },
+          {
+            "name": "Dreadnought Talon",
+            "id": "e2b5-084d-e5c5-8945",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a9c0-2029-d470-db34",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "ac2b-b7c8-7313-ae91",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "sortIndex": 12,
@@ -8181,6 +8442,25 @@
             "id": "18ee-ed7f-50bd-57aa",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "append",
+            "value": "Talon",
+            "field": "name",
+            "join": " ",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "ac2b-b7c8-7313-ae91",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -16030,6 +16310,13 @@
             "id": "d71c-63a5-9808-2feb",
             "targetId": "bf01-5931-039f-752f",
             "primary": false
+          },
+          {
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "a175-adec-2e4c-4d65",
+            "targetId": "b906-cdc5-0d3b-5270",
+            "primary": false
           }
         ],
         "infoLinks": [
@@ -16868,6 +17155,13 @@
             "id": "c8f6-deb7-8c25-6b04",
             "targetId": "bf01-5931-039f-752f",
             "primary": false
+          },
+          {
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "a1c3-1e96-d4ea-899d",
+            "targetId": "b906-cdc5-0d3b-5270",
+            "primary": false
           }
         ]
       },
@@ -16944,6 +17238,13 @@
             "hidden": false,
             "id": "8fea-215a-635a-7426",
             "targetId": "bf01-5931-039f-752f",
+            "primary": false
+          },
+          {
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "ad34-2ca4-d470-788d",
+            "targetId": "b906-cdc5-0d3b-5270",
             "primary": false
           }
         ],
@@ -18378,6 +18679,13 @@
             "hidden": false,
             "id": "da39-c4a4-5566-5c20",
             "targetId": "bf01-5931-039f-752f",
+            "primary": false
+          },
+          {
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "43ef-e33d-c5f0-cd17",
+            "targetId": "b906-cdc5-0d3b-5270",
             "primary": false
           }
         ],
@@ -21046,6 +21354,118 @@
                 "sortIndex": 3
               }
             ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sacred Band",
+            "hidden": false,
+            "id": "da5a-5f5a-0817-d74e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "ac2b-b7c8-7313-ae91",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": "1",
+                "field": "6ed0-3b6d-b7d7-894c",
+                "affects": "model.profiles.Model"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "277f-9eac-ccab-31c5",
+                "includeChildSelections": true
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 10
+              }
+            ],
+            "sortIndex": 4,
+            "infoLinks": [
+              {
+                "name": "Hatred",
+                "id": "8527-9d43-6110-62bb",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "bacb-64aa-bb42-4c9d",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Space Marines",
+                    "field": "annotation"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "f93c-fa7c-b868-62be",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Preferred Enemy",
+                "id": "3133-87b3-1e9b-7635",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "bb1e-f9f5-2a51-c8c0",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Space Marines",
+                    "field": "annotation"
+                  },
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "f93c-fa7c-b868-62be",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -21272,7 +21692,7 @@
             "name": "Dedicated Transport",
             "id": "4ec9-9633-d4cb-e7c1",
             "hidden": false,
-            "sortIndex": 4,
+            "sortIndex": 5,
             "entryLinks": [
               {
                 "import": true,
@@ -57499,6 +57919,13 @@
                     "id": "6ec2-ea46-ca85-c8b1",
                     "includeChildSelections": true
                   }
+                ],
+                "modifiers": [
+                  {
+                    "type": "remove",
+                    "value": "b906-cdc5-0d3b-5270",
+                    "field": "category"
+                  }
                 ]
               },
               {
@@ -57508,7 +57935,14 @@
                 "id": "21c7-a097-a3cc-0c96",
                 "type": "selectionEntry",
                 "targetId": "1273-19ee-ea45-4ae7",
-                "defaultAmount": "1"
+                "defaultAmount": "1",
+                "modifiers": [
+                  {
+                    "type": "remove",
+                    "value": "b906-cdc5-0d3b-5270",
+                    "field": "category"
+                  }
+                ]
               }
             ],
             "sortIndex": 1
@@ -57591,7 +58025,14 @@
                 "id": "abfe-24d4-e0c6-1d0e",
                 "type": "selectionEntry",
                 "targetId": "34f0-522d-95a2-09ec",
-                "defaultAmount": "1"
+                "defaultAmount": "1",
+                "modifiers": [
+                  {
+                    "type": "remove",
+                    "value": "b906-cdc5-0d3b-5270",
+                    "field": "category"
+                  }
+                ]
               },
               {
                 "import": true,
@@ -57599,7 +58040,14 @@
                 "hidden": false,
                 "id": "88e9-085a-3c44-923d",
                 "type": "selectionEntry",
-                "targetId": "4f50-45c0-3152-1aba"
+                "targetId": "4f50-45c0-3152-1aba",
+                "modifiers": [
+                  {
+                    "type": "remove",
+                    "value": "b906-cdc5-0d3b-5270",
+                    "field": "category"
+                  }
+                ]
               }
             ],
             "constraints": [
@@ -62326,6 +62774,15 @@
                         "childId": "7246-3389-7f60-2b4e",
                         "shared": true,
                         "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "ac2b-b7c8-7313-ae91",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -62474,6 +62931,143 @@
                     "childId": "7246-3389-7f60-2b4e",
                     "shared": true,
                     "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Minotaurs)",
+            "id": "b40f-5f8d-f23c-7a77",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "4cf4-a1b8-3605-1b55",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "ac2b-b7c8-7313-ae91",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Crusader",
+            "id": "bf11-87ed-319b-cdaa",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d372-1b73-b5c5-5dff",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "ac2b-b7c8-7313-ae91",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "localConditionGroups": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "scope": "parent",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "includeChildForces": true,
+                        "repeats": 1,
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "188c-5472-9e2c-377c",
+                            "shared": true
+                          },
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "b906-cdc5-0d3b-5270",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Preferred Enemy",
+            "id": "a3da-db78-4eac-fcd9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bb1e-f9f5-2a51-c8c0",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Space Marines",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "ac2b-b7c8-7313-ae91",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "da5a-5f5a-0817-d74e",
+                        "shared": true
+                      },
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "f93c-fa7c-b868-62be",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      }
+                    ]
                   }
                 ]
               }
@@ -65281,7 +65875,7 @@
         "name": "Chapter Tactics (Executioners)",
         "id": "3510-53ab-ef35-a6a7",
         "hidden": false,
-        "description": "Bitter Mettle:\n\nAll models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc.\n\n(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).\n-Badab Enthusiast)\n\n\nHeadhunters:\n\nAll character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge – roll saves against these attacks separately.\n\nThe character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible."
+        "description": "Bitter Mettle:\n\nAll models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc.\n\n(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).\n-Badab Enthusiast)\n\nHeadhunters:\n\nAll character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge – roll saves against these attacks separately.\n\nThe character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible."
       },
       {
         "name": "Chapter Tactics (Marines Errant)",
@@ -65353,7 +65947,13 @@
         "name": "Chapter Tactics (Raptors)",
         "id": "c501-9c26-ab65-c6b2",
         "hidden": false,
-        "description": "Strike from the Shadows:\n\n\nModels in this detachment have the Scout special rule. In addition, on the first game turn, models in the detachment have the Shrouded (6+) this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc.\n\n\nNote that units which contain models with any variant of the Bulky (x) special rule do not benefit from either rule.\n\n\nLegendary Marksmen:\n\n\nAny unit with this special rule that does not move in the Movement phase of their turn or is not pinned, may choose to gain the Rending (6+) special rule when firing in the Shooting phase of that turn with boltguns, combi-weapons fired as boltguns or bolt pistols. When using this rule, such weapons are counted as being Heavy 1 instead of their usual type for that attack."
+        "description": "Strike from the Shadows:\n\nModels in this detachment have the Scout special rule. In addition, on the first game turn, models in the detachment have the Shrouded (6+) this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc.\n\nNote that units which contain models with any variant of the Bulky (x) special rule do not benefit from either rule.\n\nLegendary Marksmen:\n\nAny unit with this special rule that does not move in the Movement phase of their turn or is not pinned, may choose to gain the Rending (6+) special rule when firing in the Shooting phase of that turn with boltguns, combi-weapons fired as boltguns or bolt pistols. When using this rule, such weapons are counted as being Heavy 1 instead of their usual type for that attack."
+      },
+      {
+        "name": "Chapter Tactics (Minotaurs)",
+        "id": "4cf4-a1b8-3605-1b55",
+        "hidden": false,
+        "description": "Unrelenting Assault:\n\nModels with Chapter Tactics (Minotaurs) do not take Morale checks due to casualties in any shooting phase and may re-roll failed Pinning Checks. They may never make use of the Withdraw Reaction.\n\nTrample and Crush:\n\nModels with Chapter Tactics (Minotaurs) gain the Crusader special rule. In addition, they add +1 to any roll to determine charge distances while in an enemy deployment zone.\n\nVaults of Terra:\n\nA Minotaurs Detachment may include an additional Relic of the Chapter, in addition to usual limits or any other special rules."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -67366,6 +67966,38 @@
         "name": "Retinue",
         "id": "12a7-f83c-886b-8e94",
         "hidden": false
+      }
+    ],
+    "infoLinks": [
+      {
+        "name": "Preferred Enemy",
+        "id": "dbdd-bd4f-3e93-2149",
+        "hidden": false,
+        "type": "rule",
+        "targetId": "bb1e-f9f5-2a51-c8c0",
+        "modifiers": [
+          {
+            "type": "set",
+            "value": "Space Marines",
+            "field": "annotation"
+          },
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "ac2b-b7c8-7313-ae91",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ]
   }

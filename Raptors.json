@@ -80,6 +80,13 @@
             "id": "49ab-cbe2-60c4-2e86",
             "targetId": "08f5-cc3b-5be1-92cb",
             "primary": false
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "47a4-b5cf-7bdc-e274",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
           }
         ],
         "selectionEntries": [

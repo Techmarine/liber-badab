@@ -187,6 +187,22 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "fb1d-7f99-87bc-c983",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "ac2b-b7c8-7313-ae91",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -1713,6 +1729,18 @@
         "id": "9bcf-fed5-69a8-cc8d",
         "hidden": false,
         "description": "When a model with this special rule suffers an unsaved Wound, Glancing Hit or Penetrating Hit, it can make a special Shrouded roll to ignore it (this is not a Saving Throw and so can be used against attacks that state that ‘no Saves of any kind are allowed’). Shrouded rolls may not be taken against Melee Attacks, against attacks with the Ignores Cover special rule or for models (excluding models with the Primarch Unit Type) with the Fearless special rule.\n\nRoll a D6 each time an unsaved Wound, Glancing Hit or Penetrating Hit is suffered by a model with this special rule. On a result that is equal to or greater than the value in brackets, that unsaved Wound, Glancing Hit or Penetrating Hit is ignored. On any other result, the Wound, Glancing Hit or Penetrating Hit is applied as normal. For example, a unit with the special rule Shrouded (6+) would need to score a 6 in order to ignore a Wound, Glancing Hit or Penetrating Hit inflicted upon it.\n\nIf on any unit this rule is presented simply as Shrouded, without a value in brackets, then count it as Shrouded (6+).\n\nThis is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound, Glancing Hit or Penetrating Hit."
+      },
+      {
+        "name": "Crusader",
+        "id": "d372-1b73-b5c5-5dff",
+        "hidden": false,
+        "description": "A unit that contains at least one model with this special rule rolls an extra dice when making Sweeping Advances and discards the lowest scoring dice before determining the result."
+      },
+      {
+        "name": "Preferred Enemy",
+        "id": "bb1e-f9f5-2a51-c8c0",
+        "hidden": false,
+        "description": "This rule is presented as Preferred Enemy (X) where X identifies a specific type of foe. If the special rule does not specify a type of foe, then everyone is a Preferred Enemy of the unit. A unit that contains at least one model with this special rule re-rolls failed To Hit and To Wound rolls of 1 if attacking its Preferred Enemy. This applies both to Shooting Attacks and close combat attacks.\n\nIf a model with this rule makes an attack against a mixed unit which has one or more models to which their Preferred Enemy rule pertains, but is not entirely composed of such models, it may still benefit from the effects of Preferred Enemy for all attacks made against that unit. For example, a model with Preferred Enemy (Independent Characters) may re-roll failed To Hit and To Wound rolls of 1 against all of the models in a unit which has been joined by an Independent Character."
       }
     ],
     "sharedSelectionEntries": [
@@ -2510,6 +2538,13 @@
             "name": "Raptors",
             "hidden": false,
             "id": "7246-3389-7f60-2b4e"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Minotaurs",
+            "hidden": false,
+            "id": "ac2b-b7c8-7313-ae91"
           }
         ],
         "constraints": [

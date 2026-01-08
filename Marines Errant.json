@@ -72,6 +72,13 @@
             "id": "766a-3cee-3e92-7cb7",
             "targetId": "4554-5526-60c7-9793",
             "primary": false
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "b1bb-a4ed-d139-ed28",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
           }
         ],
         "selectionEntries": [

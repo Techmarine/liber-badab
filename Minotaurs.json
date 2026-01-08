@@ -1,0 +1,1199 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "5d09-481e-11a0-043a",
+    "name": "Minotaurs",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Astartes",
+        "id": "6403-1fae-696b-fdd7",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Minotaurs",
+        "hidden": false,
+        "id": "98cf-4301-cb98-1b95",
+        "type": "selectionEntry",
+        "targetId": "ac2b-b7c8-7313-ae91",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "33eb-023f-7b6a-7449",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1"
+      },
+      {
+        "import": true,
+        "name": "Lord Asterion Moloc",
+        "hidden": false,
+        "id": "a6e8-2486-71f6-d138",
+        "type": "selectionEntry",
+        "targetId": "f075-1490-c16f-7d97"
+      },
+      {
+        "import": true,
+        "name": "Chaplain Ivanus Enkomi",
+        "hidden": false,
+        "id": "2965-8829-9ccb-2587",
+        "type": "selectionEntry",
+        "targetId": "6a88-3dc3-014a-6432"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Lord Asterion Moloc",
+        "hidden": false,
+        "id": "f075-1490-c16f-7d97",
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "f7f8-9f32-a717-f502",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "5c0c-3795-5381-8ac0",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
+          },
+          {
+            "name": "Chapter Master",
+            "hidden": false,
+            "id": "a671-a33f-6a8d-1d88",
+            "targetId": "2ca5-c322-c8f3-5ebc",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "3c97-d2c2-3b43-bf3c",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "4b44-c04c-beca-c3f9",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Lord Asterion Moloc",
+            "hidden": false,
+            "id": "e79e-4dc8-2a75-17e7",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dcd3-864f-7b27-2578-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dcd3-864f-7b27-2578-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "1663-20cd-995e-7dac",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 235
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "b3e1-8d4f-b6df-f192",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "e793-b8b9-3971-8a3f",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique",
+                "hidden": false,
+                "id": "37ee-46b2-a801-d3b0",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Lord Asterion Moloc",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "b005-dd9d-c5cc-6eac",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Tartaros Terminator Armour",
+                "hidden": false,
+                "id": "d5dd-2914-2c40-9d47",
+                "rules": [
+                  {
+                    "name": "Relic Tartaros Terminator Armour",
+                    "id": "9c81-384f-344d-07c0",
+                    "hidden": false,
+                    "description": "A model with the Relic Tartaros Terminator Armour gains a 2+ Save and 5+ Invulnerable Save."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "062d-1a80-9bd0-3c22-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "062d-1a80-9bd0-3c22-max"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Black Spear",
+                "hidden": false,
+                "id": "24a8-1a92-f39c-8cd6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "677b-9c2f-15d7-fa6c-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "677b-9c2f-15d7-fa6c-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "The Black Spear - Melee",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "b64f-53b7-08b9-7786",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "+2"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Brutal (2), Murderous Strike (6+)"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "The Black Spear - Ranged",
+                    "typeId": "5e31-3867-7c3d-fcb9",
+                    "typeName": "Ranged Weapon",
+                    "hidden": false,
+                    "id": "0c2f-35d5-dd42-6627",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "7b0f-9c2a-0ecb-f3a3",
+                        "$text": "12\""
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "2ecc-1ccc-736f-9d3d",
+                        "$text": "9"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "cbb5-5f04-f87f-a810",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "2c90-16ca-a927-898d",
+                        "$text": "Assault 1"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "d2a2-1139-48cb-4472",
+                        "$text": "One Shot, Brutal (2), Instant Death, Exo-shock (5+)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Brutal",
+                    "id": "e006-e8a0-5c96-9b7d",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fc68-9ea6-18e4-d94b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Murderous Strike",
+                    "id": "8f63-2383-a8d5-16a2",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5e54-e48c-3700-6d3e",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "6+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "One Shot",
+                    "id": "6aa7-49b5-5ac8-9b43",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ee53-4831-a3cf-1cdb"
+                  },
+                  {
+                    "name": "Instant Death",
+                    "id": "7bbe-f28b-f954-3db3",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0561-70c5-a18f-6672"
+                  },
+                  {
+                    "name": "Exoshock",
+                    "id": "7cd0-44a4-66f7-65c4",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "cdfb-dd74-48fd-104c",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "5+",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Storm Shield",
+                "hidden": false,
+                "id": "0eb4-48bb-f528-bf06",
+                "type": "selectionEntry",
+                "targetId": "9469-ad6d-9622-4108",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "743f-4425-6253-93f5-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "743f-4425-6253-93f5-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "c742-973d-0ddf-05c1",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3bb0-3a90-d826-4035"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "8d5d-d64e-7a20-00c0",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Master of the Company",
+            "id": "1e4a-c1d8-d1cb-e21e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9782-8c2a-c5f0-319d"
+          },
+          {
+            "name": "Chapter Master",
+            "id": "4b11-f2b9-b97d-47ad",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2979-eeea-165c-9ac1"
+          },
+          {
+            "name": "Independent Character",
+            "id": "e7e5-ea10-a959-da11",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "2bee-7926-7212-f4c4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Eternal Warrior",
+            "id": "84bf-5613-c8d7-788f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d9b7-d83e-51e0-bcfc"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "1132-3df1-fcee-8928",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          },
+          {
+            "name": "Chapter Tactics (Minotaurs)",
+            "id": "30f6-ecd3-dbbd-8409",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cf4-a1b8-3605-1b55"
+          },
+          {
+            "name": "Stubborn",
+            "id": "d49f-3686-2b66-30f6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fdf1-31bc-4796-fb3d"
+          },
+          {
+            "name": "Preferred Enemy",
+            "id": "9244-1a7f-dbcd-13bd",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bb1e-f9f5-2a51-c8c0",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Space Marines",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Legendary Fighter",
+            "id": "a0f4-3a01-c73f-c8a2",
+            "hidden": false,
+            "description": "Asterion Moloc’s Controlling player must always issue challenges, but gains +1 VP for every model with the Character sub-type that Asterion Moloc kills in a challenge."
+          },
+          {
+            "name": "Dark Fury",
+            "id": "82b0-c907-e668-b809",
+            "hidden": false,
+            "description": "Asterion Moloc and any unit he coins gain the Stubborn Special rule. In addition the entire unit counts as being equipped with Frag Grenades."
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Chaplain Ivanus Enkomi",
+        "hidden": false,
+        "id": "6a88-3dc3-014a-6432",
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "e460-1051-ae19-2062",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "1st Company Infantry",
+            "hidden": false,
+            "id": "1b5a-39bb-c9b3-20ed",
+            "targetId": "4554-5526-60c7-9793",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "8d7b-7fca-8287-0878",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "aa93-3bb4-6ef0-b05b",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Chaplain Ivanus Enkomi",
+            "hidden": false,
+            "id": "58ea-afcd-6841-3234",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 165
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "bd0f-3a12-7eb4-aa19",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "00fe-4039-5009-5223",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique",
+                "hidden": false,
+                "id": "85e8-bac1-2487-cbd3",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7393-c142-4154-197d-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7393-c142-4154-197d-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "43aa-61e2-8b4c-6275",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Chaplain Ivanus Enkomi",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "6552-fb63-5d0f-146d",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Artificer Armour",
+                "hidden": false,
+                "id": "b9b0-247b-ba13-f764",
+                "type": "selectionEntry",
+                "targetId": "2004-7466-45c8-bca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ecba-64f0-0b95-fb24-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ecba-64f0-0b95-fb24-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "7375-aa27-0164-7011",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6103-13e7-a448-a5d8-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6103-13e7-a448-a5d8-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "8625-8d84-3b1c-cd90",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4a08-0f29-bb94-3222-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4a08-0f29-bb94-3222-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Power Fist",
+                "hidden": false,
+                "id": "882d-963c-8afa-ff29",
+                "type": "selectionEntry",
+                "targetId": "4794-290c-551d-1aa9",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f667-fa0a-9f56-2aa5-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f667-fa0a-9f56-2aa5-max"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Master-crafted",
+                    "hidden": false,
+                    "id": "d1be-4123-5596-edcf",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c044-d3ec-ebc4-d882"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Master-crafted",
+                    "id": "00d1-84ed-09b6-846d",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Master-crafted",
+                    "field": "name",
+                    "join": " "
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "54c8-5f89-4847-1363",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "2d1c-d490-76d9-571b",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Relic Rosarius",
+                "hidden": false,
+                "id": "18d6-ad54-0bbe-0a32",
+                "rules": [
+                  {
+                    "name": "Relic Rosarius",
+                    "id": "e264-4f11-c39b-29fd",
+                    "hidden": false,
+                    "description": "The Relic Rosarius confers a 4+ Invulnerable Save"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d659-3151-bb70-4c3f-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d659-3151-bb70-4c3f-max"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Crozius Arcanum with in-built Auxiliary Grenade Launcher",
+                "hidden": false,
+                "id": "5f44-5161-4a51-66a2",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ca80-e909-b93f-4ef6-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ca80-e909-b93f-4ef6-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Crozius Arcanum",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "71b7-a96c-9020-db6d",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "+2"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Concussive (1), Master-Crafted, Specialist Weapon"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Grenade Launcher - Frag",
+                    "typeId": "5e31-3867-7c3d-fcb9",
+                    "typeName": "Ranged Weapon",
+                    "hidden": false,
+                    "id": "2ef2-3c95-d8c4-52c5",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "7b0f-9c2a-0ecb-f3a3",
+                        "$text": "24\""
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "2ecc-1ccc-736f-9d3d",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "cbb5-5f04-f87f-a810",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "2c90-16ca-a927-898d",
+                        "$text": "Assault 1"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "d2a2-1139-48cb-4472",
+                        "$text": "Blast (3”), Pinning"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Grenade Launcher - Krak",
+                    "typeId": "5e31-3867-7c3d-fcb9",
+                    "typeName": "Ranged Weapon",
+                    "hidden": false,
+                    "id": "cf47-1850-3c6d-c59a",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "7b0f-9c2a-0ecb-f3a3",
+                        "$text": "24\""
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "2ecc-1ccc-736f-9d3d",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "cbb5-5f04-f87f-a810",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "2c90-16ca-a927-898d",
+                        "$text": "Assault 1"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "d2a2-1139-48cb-4472",
+                        "$text": "Breaching (5+)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Concussive",
+                    "id": "21a5-f1b0-e9fe-ac79",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "173b-6e52-4626-a146",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "1",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Master-crafted",
+                    "id": "1d37-30f2-d3c2-4eea",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  },
+                  {
+                    "name": "Blast",
+                    "id": "7b23-65a9-dbff-0c38",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "dd6e-d5d4-9bb3-d2e4",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "3\"",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pinning",
+                    "id": "7e21-8bbc-168b-c671",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4cc0-966b-ab26-0aa7"
+                  },
+                  {
+                    "name": "Breaching",
+                    "id": "baad-f4fa-6ea9-2f70",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ee66-f70b-aa5c-b2bf",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "5+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Specialist Weapon",
+                    "id": "f29e-f0b4-5938-ef4b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "8bee-1459-6f2d-6ab6"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Chapter Tactics (Minotaurs)",
+            "id": "fb60-9a02-431b-aac6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cf4-a1b8-3605-1b55"
+          },
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "be0d-c01f-135a-f4ef",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Independent Character",
+            "id": "6f9a-30a4-2278-134a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Preferred Enemy",
+            "id": "b34d-2c65-ec4b-f759",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bb1e-f9f5-2a51-c8c0",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Space Marines",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "f93c-fa7c-b868-62be",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Master of the Company",
+            "id": "bb69-623e-2ccf-a4f8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9782-8c2a-c5f0-319d"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bane of Hatred",
+            "id": "b639-75db-1519-eb6c",
+            "hidden": false,
+            "description": "Ivanus Enkomi and any unit he joins gain the Rage (1), Fearless and Hatred (Everything!) Special rules while Enkomi is part of the unit."
+          },
+          {
+            "name": "High Reclusiarch",
+            "id": "d20b-284e-d020-99e3",
+            "hidden": false,
+            "description": "Enkomi counts as having the Master of the Company Special rule. You may ignore the ‘Few and the Proud’ part of this rule if Asterion Moloc is also part of the army."
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "remove",
+            "value": "08f5-cc3b-5be1-92cb",
+            "field": "category",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "f075-1490-c16f-7d97",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "type": "catalogue"
+  }
+}
