@@ -4563,6 +4563,25 @@
                 "typeId": "a603-af69-c30b-94ed",
                 "$text": "Reach (1), Force"
               }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -4587,6 +4606,36 @@
             "hidden": false,
             "type": "rule",
             "targetId": "e7ad-a93b-a64d-bb10"
+          },
+          {
+            "name": "Brutal",
+            "id": "e9af-c59d-0eb9-af74",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ab6b-cbef-cace-68c2",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -9828,6 +9877,450 @@
             ]
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Weirdboy",
+        "hidden": false,
+        "id": "2ed8-429d-d904-6c3c",
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "c7d4-8ce7-b8a9-79d4",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          }
+        ],
+        "sortIndex": 5,
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Weirdboy",
+            "hidden": false,
+            "id": "b906-aabd-d066-7ac3",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5098-1877-c366-7bcd-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5098-1877-c366-7bcd-max"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 45
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Weirdboy",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "37a0-ec3b-cade-4613",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "6+"
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Weirdboy Staff",
+                "hidden": false,
+                "id": "a1ad-fa63-6435-f84d",
+                "type": "selectionEntry",
+                "targetId": "8e15-6b04-45db-ff17",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5364-ffa0-80c5-3c3c-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5364-ffa0-80c5-3c3c-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Lucky Tattoos",
+                "hidden": false,
+                "id": "98fa-d9da-f715-8677",
+                "type": "selectionEntry",
+                "targetId": "e283-72e1-4bd4-5c3d",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5fca-e506-fd93-ad80-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5fca-e506-fd93-ad80-max"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "1ed2-f502-472b-6894",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "b95d-b3e0-79f8-6dc9",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Light",
+                "hidden": false,
+                "id": "845d-ba96-a531-7c02",
+                "targetId": "fcca-7b6b-7920-a6f5",
+                "primary": false
+              },
+              {
+                "name": "Psyker",
+                "hidden": false,
+                "id": "e7c3-4889-24a6-ce49",
+                "targetId": "0e69-ba6c-2394-5c44",
+                "primary": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Psychic Discipline: Power of the Waaagh!",
+                "hidden": false,
+                "id": "a0d3-b2f9-602f-2ed1",
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Warpath",
+                    "hidden": false,
+                    "id": "7c33-8dd8-cb02-b023",
+                    "rules": [
+                      {
+                        "name": "Warpath",
+                        "id": "756b-249e-945f-d1c6",
+                        "hidden": false,
+                        "description": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may activate this Psychic Power. The Psyker and any model in a unit he has joined that has the ‘Ere We Go special rule increases their Attacks by +1 for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then both Weapon Skill and Attacks are increased by +1 for the duration of the current player turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp."
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6556-cd6d-734c-49ce-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6556-cd6d-734c-49ce-max"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "'Eadbanger",
+                    "hidden": false,
+                    "id": "5314-30c9-82ea-1157",
+                    "profiles": [
+                      {
+                        "name": "'Eadbanger",
+                        "typeId": "5e31-3867-7c3d-fcb9",
+                        "typeName": "Ranged Weapon",
+                        "hidden": false,
+                        "id": "2095-c4a2-f8a9-dd56",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "7b0f-9c2a-0ecb-f3a3",
+                            "$text": "24\""
+                          },
+                          {
+                            "name": "S",
+                            "typeId": "2ecc-1ccc-736f-9d3d",
+                            "$text": "+"
+                          },
+                          {
+                            "name": "AP",
+                            "typeId": "cbb5-5f04-f87f-a810",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "Type",
+                            "typeId": "2c90-16ca-a927-898d",
+                            "$text": "Assault 1"
+                          },
+                          {
+                            "name": "Special Rules",
+                            "typeId": "d2a2-1139-48cb-4472",
+                            "$text": "Blind, Frazzle, Pinning, Psychic Focus, Sniper"
+                          }
+                        ]
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Blind",
+                        "id": "1688-da10-6400-cf17",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "7566-b279-0ebd-607a"
+                      },
+                      {
+                        "name": "Pinning",
+                        "id": "2385-451d-9e85-963a",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "4cc0-966b-ab26-0aa7"
+                      },
+                      {
+                        "name": "Psychic Focus",
+                        "id": "8e41-a2bb-57e7-48c8",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "5424-a823-35b0-e83f"
+                      },
+                      {
+                        "name": "Sniper",
+                        "id": "87df-a008-4d43-d5a6",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "e4db-0b99-ef96-7a32"
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Frazzle",
+                        "id": "02c6-5861-f325-5695",
+                        "hidden": false,
+                        "description": "Instead of rolling To Hit and To Wound normally, this weapon hits its target on a D6 roll of 2+ and the target of this attack must pass a Toughness test or suffer a Wound. Invulnerable saves and Damage Mitigation rolls may be taken as normal."
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "784a-7142-7332-26bc-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "784a-7142-7332-26bc-max"
+                      }
+                    ]
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Aetheric Lightning",
+                    "hidden": false,
+                    "id": "407f-f8dc-dafa-a5b4",
+                    "type": "selectionEntry",
+                    "targetId": "6a38-505a-36c1-c978",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "77ee-9ef2-e8ec-0f6f-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "77ee-9ef2-e8ec-0f6f-max"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8e77-e9e2-b833-ab04-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8e77-e9e2-b833-ab04-max"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Battle-hardened",
+            "id": "4f04-f0e1-b8b6-e059",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "76cb-bd90-ecb1-941b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "'Ere We Go!",
+            "id": "c387-5f1c-0e86-f723",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5422-0492-0f03-2969"
+          },
+          {
+            "name": "Furious Charge",
+            "id": "5df9-a406-bf92-a7af",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7281-8b61-791e-c0f1"
+          },
+          {
+            "name": "Independent Character",
+            "id": "d5e6-452b-f381-c12a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Mob Rule",
+            "id": "e947-a2bd-d064-a82b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "123e-d00a-177a-b419"
+          },
+          {
+            "name": "Support Squad",
+            "id": "9e20-61ff-b44d-7a85",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "650d-03c6-7f4b-c601"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Warphead",
+            "id": "9d24-d49a-834e-17ae",
+            "hidden": false,
+            "description": "A Weirdboy has access to the Power of the Waaagh! Discipline."
+          }
+        ]
       }
     ],
     "categoryEntries": [
@@ -10486,6 +10979,14 @@
         "id": "cbd4-cdfc-bc5c-3f26",
         "type": "selectionEntry",
         "targetId": "9f76-3785-91b0-0670"
+      },
+      {
+        "import": true,
+        "name": "Weirdboy",
+        "hidden": false,
+        "id": "1871-ebbd-fc13-eaed",
+        "type": "selectionEntry",
+        "targetId": "2ed8-429d-d904-6c3c"
       }
     ],
     "type": "catalogue",

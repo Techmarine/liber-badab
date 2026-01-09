@@ -844,6 +844,34 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Aetheric Lightning",
+            "hidden": false,
+            "id": "aa3e-1f1c-f416-820a",
+            "type": "selectionEntry",
+            "targetId": "6a38-505a-36c1-c978",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "447b-70e1-c934-659f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "447b-70e1-c934-659f-max"
+              }
+            ]
+          }
         ]
       },
       {
@@ -967,6 +995,34 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "f5ea-b808-453d-a749-max"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Aetheric Lightning",
+            "hidden": false,
+            "id": "1d89-7c28-7f33-3a9c",
+            "type": "selectionEntry",
+            "targetId": "6a38-505a-36c1-c978",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b37a-24f1-b122-e9f2-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b37a-24f1-b122-e9f2-max"
               }
             ]
           }
@@ -1095,6 +1151,34 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "12d7-6227-c984-ef6a-max"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Aetheric Lightning",
+            "hidden": false,
+            "id": "f24d-3217-1b52-ec23",
+            "type": "selectionEntry",
+            "targetId": "6a38-505a-36c1-c978",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7685-65d5-79a9-4867-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7685-65d5-79a9-4867-max"
               }
             ]
           }
@@ -1231,6 +1315,34 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Aetheric Lightning",
+            "hidden": false,
+            "id": "a909-6251-8355-70a2",
+            "type": "selectionEntry",
+            "targetId": "6a38-505a-36c1-c978",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "77b1-15e9-584c-bfd0-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "77b1-15e9-584c-bfd0-max"
+              }
+            ]
+          }
         ]
       },
       {
@@ -1348,6 +1460,34 @@
                 "id": "b194-2a7c-c9ac-b62d",
                 "hidden": false,
                 "description": "Weapon with this special rule must make an immediate Pinning test, adding one to the result of the roll for each Hit scored by this attack before the result is decided. For example, if a Psyker attacks an enemy unit that has a Leadership of 8, scoring 3 Hits with Telepathic Hallucinations, then that unit must make an immediate Pinning test and add 3 to the result rolled before determining the result."
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Aetheric Lightning",
+            "hidden": false,
+            "id": "d346-138f-8b7d-baf8",
+            "type": "selectionEntry",
+            "targetId": "6a38-505a-36c1-c978",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4cc8-89db-717d-77aa-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4cc8-89db-717d-77aa-max"
               }
             ]
           }
@@ -1470,6 +1610,86 @@
                 "description": "A weapon with this special rule always Wounds Daemons on a 2+ and any successful Invulnerable Saves made by Daemon models against any Wounds it inflicts must be re-rolled."
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Aetheric Lightning",
+            "hidden": false,
+            "id": "2816-61a5-4f1b-a907",
+            "type": "selectionEntry",
+            "targetId": "6a38-505a-36c1-c978",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dd66-076c-46db-9a86-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dd66-076c-46db-9a86-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Aetheric Lightning",
+        "hidden": false,
+        "id": "6a38-505a-36c1-c978",
+        "profiles": [
+          {
+            "name": "Aetheric Lightning",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "db1d-0081-c7b3-5931",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "18\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 4"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Force"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Force",
+            "id": "3b35-9bb0-4bae-4bcc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e7ad-a93b-a64d-bb10"
           }
         ]
       }
