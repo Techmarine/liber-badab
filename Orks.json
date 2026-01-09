@@ -3449,7 +3449,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Shokka Pistol",
+        "name": "Shokk Pistol",
         "hidden": false,
         "id": "4459-6f60-a726-40c6",
         "profiles": [
@@ -6440,49 +6440,6 @@
                     "import": true,
                     "name": "Shoota",
                     "hidden": false,
-                    "id": "9491-2a16-c4d8-1868",
-                    "type": "selectionEntry",
-                    "targetId": "6852-fe5d-9ff0-b5fb",
-                    "comment": "Twin-linked",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "a073-8192-252d-ede4",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "02f5-cd35-55fc-097d",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 3
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Shoota",
-                    "hidden": false,
                     "id": "59f5-ffc4-ac63-20bd",
                     "type": "selectionEntry",
                     "targetId": "6852-fe5d-9ff0-b5fb",
@@ -6521,6 +6478,21 @@
                         "name": "Points",
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Twin-linked Shoota",
+                    "hidden": false,
+                    "id": "5948-2610-6921-926f",
+                    "type": "selectionEntry",
+                    "targetId": "f8f8-7b3d-0a62-71ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 3
                       }
                     ]
                   }
@@ -7748,49 +7720,6 @@
                 "entryLinks": [
                   {
                     "import": true,
-                    "name": "Shoota",
-                    "hidden": false,
-                    "id": "dfd9-52de-19e6-b9a9",
-                    "type": "selectionEntry",
-                    "targetId": "6852-fe5d-9ff0-b5fb",
-                    "comment": "Twin-linked",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "d10f-c03f-5658-d98a",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "8f50-753f-1b51-80b0",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 3
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
                     "name": "Kombi Weapon with Rokkit Launcha",
                     "hidden": false,
                     "id": "5f94-d82e-c31c-5b63",
@@ -7818,10 +7747,18 @@
                         "value": 7
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Twin-linked Shoota",
+                    "hidden": false,
+                    "id": "5c40-b5f3-cd51-9bbb",
+                    "type": "selectionEntry",
+                    "targetId": "f8f8-7b3d-0a62-71ac"
                   }
                 ],
                 "sortIndex": 2,
-                "defaultSelectionEntryId": "dfd9-52de-19e6-b9a9"
+                "defaultSelectionEntryId": "5c40-b5f3-cd51-9bbb"
               }
             ],
             "sortIndex": 1,
@@ -10477,49 +10414,6 @@
                   },
                   {
                     "import": true,
-                    "name": "Shoota",
-                    "hidden": false,
-                    "id": "6382-5222-b6d9-0aae",
-                    "type": "selectionEntry",
-                    "targetId": "6852-fe5d-9ff0-b5fb",
-                    "comment": "Twin-linked",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "0c46-a2bf-970d-5e7b",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "ecb3-2cbc-a597-43db",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 3
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
                     "name": "Kombi Weapon with Rokkit Launcha",
                     "hidden": false,
                     "id": "c91f-870d-01a7-bda3",
@@ -10548,6 +10442,21 @@
                     "id": "f73d-2787-04eb-1b6b",
                     "type": "selectionEntry",
                     "targetId": "79e1-e59a-8c31-6767"
+                  },
+                  {
+                    "import": true,
+                    "name": "Twin-linked Shoota",
+                    "hidden": false,
+                    "id": "94cb-5152-0898-42d7",
+                    "type": "selectionEntry",
+                    "targetId": "f8f8-7b3d-0a62-71ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 3
+                      }
+                    ]
                   }
                 ],
                 "defaultSelectionEntryId": "f73d-2787-04eb-1b6b",
@@ -11714,49 +11623,6 @@
                   },
                   {
                     "import": true,
-                    "name": "Shoota",
-                    "hidden": false,
-                    "id": "bdd3-be8a-d1ac-e279",
-                    "type": "selectionEntry",
-                    "targetId": "6852-fe5d-9ff0-b5fb",
-                    "comment": "Twin-linked",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "3ab9-ccd6-9810-e704",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "b534-72a8-817f-db26",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 3
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
                     "name": "Kombi Weapon with Rokkit Launcha",
                     "hidden": false,
                     "id": "9e02-3568-9add-4d92",
@@ -11785,6 +11651,21 @@
                     "id": "9ea9-095c-0067-0f7a",
                     "type": "selectionEntry",
                     "targetId": "79e1-e59a-8c31-6767"
+                  },
+                  {
+                    "import": true,
+                    "name": "Twin-linked Shoota",
+                    "hidden": false,
+                    "id": "12c7-ffbc-b28d-a690",
+                    "type": "selectionEntry",
+                    "targetId": "f8f8-7b3d-0a62-71ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 3
+                      }
+                    ]
                   }
                 ],
                 "defaultSelectionEntryId": "9ea9-095c-0067-0f7a",
@@ -12877,42 +12758,6 @@
                 "entryLinks": [
                   {
                     "import": true,
-                    "name": "Shoota",
-                    "hidden": false,
-                    "id": "9989-082c-8a7d-3fb2",
-                    "type": "selectionEntry",
-                    "targetId": "6852-fe5d-9ff0-b5fb",
-                    "comment": "Twin-linked",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Twin-linked",
-                        "hidden": false,
-                        "id": "2d15-fcc5-8099-516a",
-                        "type": "selectionEntryGroup",
-                        "targetId": "b19d-86be-3758-3e72"
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Twin-linked",
-                        "id": "fa5f-82d6-08ff-88d0",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "23d2-bdd7-3df1-be63"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Twin-linked",
-                        "field": "name",
-                        "join": " "
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
                     "name": "Kombi Weapon with Rokkit Launcha",
                     "hidden": false,
                     "id": "aa81-873f-28e3-9c83",
@@ -12953,6 +12798,21 @@
                         "name": "Points",
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Twin-linked Shoota",
+                    "hidden": false,
+                    "id": "6fe4-c58b-2f76-1b6b",
+                    "type": "selectionEntry",
+                    "targetId": "f8f8-7b3d-0a62-71ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 3
                       }
                     ]
                   }
@@ -13417,6 +13277,1503 @@
             "hidden": false,
             "type": "rule",
             "targetId": "cfea-a7be-fbea-da53"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Kommandos Mob",
+        "hidden": false,
+        "id": "9552-5fe3-b17d-3402",
+        "sortIndex": 10,
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Kommando",
+            "hidden": false,
+            "id": "55ea-3ae2-7d01-fb63",
+            "profiles": [
+              {
+                "name": "Kommando",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "beab-2c21-baab-4dea",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "6+"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 10
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 5,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c360-f033-b13f-ac6f"
+              },
+              {
+                "type": "max",
+                "value": 10,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4e65-2245-ba57-aaea"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Kommand Nob Options",
+                "id": "d0f7-e567-dbfb-d98e",
+                "hidden": true,
+                "sortIndex": 6,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Ammo Runt",
+                    "hidden": false,
+                    "id": "0b55-b6c4-fed2-d95f",
+                    "type": "selectionEntry",
+                    "targetId": "8669-6f17-cca7-fae0",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 3
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "4641-b6ca-c557-0644"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Bosspole",
+                    "hidden": false,
+                    "id": "0288-36bc-95ec-d5a5",
+                    "type": "selectionEntry",
+                    "targetId": "7df6-6fac-17eb-9f03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "b67e-e217-9fe3-8f67"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Cybork Body",
+                    "hidden": false,
+                    "id": "4752-817a-e45a-6660",
+                    "type": "selectionEntry",
+                    "targetId": "3dc4-f923-7f7b-d4ee",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "f2d6-55f5-ee24-58cf"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Distraction Grot",
+                    "hidden": false,
+                    "id": "a125-9a45-2f9e-595a",
+                    "type": "selectionEntry",
+                    "targetId": "f07e-793e-32ae-e544",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "fc7a-80da-a2fc-0283"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Iron Gob / Big Horns",
+                    "hidden": false,
+                    "id": "278b-4678-7754-b363",
+                    "type": "selectionEntry",
+                    "targetId": "7cda-0814-d873-b9cd",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "1bd5-bf11-196b-2e40"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Bomb Squig",
+                    "hidden": false,
+                    "id": "e54b-bea3-940f-ff44",
+                    "type": "selectionEntry",
+                    "targetId": "b7ae-b669-aa15-1a40",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "a997-c8d4-bfa3-a382"
+                      }
+                    ]
+                  }
+                ],
+                "flatten": true,
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "1467-4f00-768e-6486",
+                        "shared": true,
+                        "includeChildSelections": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Two-handed Options",
+                "id": "43f9-3853-84c4-e83e",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Slugga and Choppa",
+                    "hidden": false,
+                    "id": "a91e-3988-c081-bf8d",
+                    "type": "selectionEntry",
+                    "targetId": "2981-54b9-7f7f-dabb"
+                  },
+                  {
+                    "import": true,
+                    "name": "Paired Choppas",
+                    "hidden": false,
+                    "id": "7291-8863-9b96-6805",
+                    "type": "selectionEntry",
+                    "targetId": "e49a-9d83-9c08-a2f8"
+                  },
+                  {
+                    "import": true,
+                    "name": "Shoota",
+                    "hidden": false,
+                    "id": "a693-8624-f0fe-caad",
+                    "type": "selectionEntry",
+                    "targetId": "6852-fe5d-9ff0-b5fb"
+                  },
+                  {
+                    "import": true,
+                    "name": "Twin-linked Shoota",
+                    "hidden": false,
+                    "id": "1cf4-4444-d1ca-57bf",
+                    "type": "selectionEntry",
+                    "targetId": "f8f8-7b3d-0a62-71ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 3
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "b150-8878-602d-417c"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "bef5-5c0d-778e-133e"
+                  }
+                ],
+                "defaultSelectionEntryId": "a91e-3988-c081-bf8d",
+                "selectionEntryGroups": [
+                  {
+                    "name": "For every five models",
+                    "id": "a5fb-8e5e-7be8-f7c8",
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "unit",
+                        "shared": true,
+                        "id": "7688-5e3d-04dd-034f"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "increment",
+                        "value": 1,
+                        "field": "7688-5e3d-04dd-034f",
+                        "repeats": [
+                          {
+                            "value": 5,
+                            "repeats": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "model",
+                            "shared": true,
+                            "roundUp": false
+                          }
+                        ]
+                      },
+                      {
+                        "type": "set",
+                        "value": true,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "1467-4f00-768e-6486",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Big Shoota",
+                        "hidden": false,
+                        "id": "c906-b149-dc57-af5a",
+                        "type": "selectionEntry",
+                        "targetId": "af44-5da4-f49f-3409",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Rokkit Launcha",
+                        "hidden": false,
+                        "id": "5e0c-5a08-f9c9-7c1b",
+                        "type": "selectionEntry",
+                        "targetId": "4a75-c17c-1088-b322",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Breacha Ram",
+                        "hidden": false,
+                        "id": "bbf9-a9c9-f41a-b96e",
+                        "type": "selectionEntry",
+                        "targetId": "7d85-4ed9-66b9-9410",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Burna",
+                        "hidden": false,
+                        "id": "5f61-a05a-a0a2-5bd7",
+                        "type": "selectionEntry",
+                        "targetId": "7837-6478-96e3-234d",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 15
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Shokk Pistol and Comms",
+                        "hidden": false,
+                        "id": "c620-1532-ccb9-5034",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Shokk Pistol",
+                            "hidden": false,
+                            "id": "902a-3e9a-026e-2fe8",
+                            "type": "selectionEntry",
+                            "targetId": "4459-6f60-a726-40c6",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "ec14-e297-7661-f982-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "ec14-e297-7661-f982-max"
+                              }
+                            ]
+                          },
+                          {
+                            "import": true,
+                            "name": "Comms",
+                            "hidden": false,
+                            "id": "b266-4ef4-ced0-b4a1",
+                            "type": "selectionEntry",
+                            "targetId": "3166-6a0f-f79a-4177",
+                            "constraints": [
+                              {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "a745-1283-e41b-0234-min"
+                              },
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "a745-1283-e41b-0234-max"
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 20
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 2,
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "bef5-5c0d-778e-133e",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "1467-4f00-768e-6486",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "One-handed Option",
+                "id": "8f93-2de9-18b4-ecf8",
+                "hidden": true,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Choppa",
+                    "hidden": false,
+                    "id": "19aa-ae7f-1879-2c87",
+                    "type": "selectionEntry",
+                    "targetId": "4acf-f0bd-1d20-d70f"
+                  },
+                  {
+                    "import": true,
+                    "name": "Big Choppa",
+                    "hidden": false,
+                    "id": "8131-1bdb-da32-1b10",
+                    "type": "selectionEntry",
+                    "targetId": "a3e8-e1ac-66a9-33a3",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Axe",
+                    "hidden": false,
+                    "id": "1cd2-891e-2726-6fcd",
+                    "type": "selectionEntry",
+                    "targetId": "255e-b873-2404-1da7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Klaw",
+                    "hidden": false,
+                    "id": "445c-987a-326d-29cb",
+                    "type": "selectionEntry",
+                    "targetId": "dd8d-dd3a-1585-f272",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Maul",
+                    "hidden": false,
+                    "id": "bee3-77c7-fc46-f480",
+                    "type": "selectionEntry",
+                    "targetId": "38f4-f7e0-b3d8-63ee",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": false,
+                    "id": "ea50-0286-0afa-b224",
+                    "type": "selectionEntry",
+                    "targetId": "4804-9091-fcfa-7d79",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "1467-4f00-768e-6486",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "3b71-be9c-c6c2-846e"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "a9ae-6d9c-0b73-3f84"
+                  }
+                ],
+                "sortIndex": 3,
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "3b71-be9c-c6c2-846e"
+                      },
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "a9ae-6d9c-0b73-3f84"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "43f9-3853-84c4-e83e",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "One-handed Option",
+                "id": "c06f-f1db-2f36-9da4",
+                "hidden": true,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Slugga",
+                    "hidden": false,
+                    "id": "b48c-dea6-748e-b015",
+                    "type": "selectionEntry",
+                    "targetId": "79e1-e59a-8c31-6767"
+                  },
+                  {
+                    "import": true,
+                    "name": "Kombi Weapon with Rokkit Launcha",
+                    "hidden": false,
+                    "id": "a225-42b0-eea9-bf9d",
+                    "type": "selectionEntry",
+                    "targetId": "a3bf-d528-eb9e-d7a3",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Kombi Weapon with Skorcha",
+                    "hidden": false,
+                    "id": "fde9-7775-e4e0-f255",
+                    "type": "selectionEntry",
+                    "targetId": "6c5d-feb3-0ee3-f680",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "bd33-7c59-82fa-c794"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "e51a-4dd0-7dcb-e39d"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "1467-4f00-768e-6486",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 4,
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "bd33-7c59-82fa-c794"
+                      },
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "e51a-4dd0-7dcb-e39d"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "43f9-3853-84c4-e83e",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Kommando Nob",
+                "hidden": false,
+                "id": "1467-4f00-768e-6486",
+                "sortIndex": 1,
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 10
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "shared": true,
+                    "id": "972a-124b-4901-af3b"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "5",
+                    "field": "6ed0-3b6d-b7d7-894c",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "4",
+                    "field": "99ae-5644-9155-ae6e",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "2",
+                    "field": "cdc0-9287-7039-4792",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "3",
+                    "field": "03f0-9c72-1dc2-55cd",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "3",
+                    "field": "edda-ee37-03b4-f91f",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "7",
+                    "field": "d29a-9b6f-13a6-b7a8",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "append",
+                    "value": "Nob",
+                    "field": "name",
+                    "affects": "profiles.Model",
+                    "join": " ",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "append",
+                    "value": "Nob",
+                    "field": "name",
+                    "join": " ",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "add",
+                    "value": "c0e6-28aa-5286-2fa2",
+                    "field": "category",
+                    "scope": "parent"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Battle-hardened",
+                    "id": "379c-5f41-4e43-00d8",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "76cb-bd90-ecb1-941b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "1",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Gitfinda",
+                "hidden": true,
+                "id": "861b-3a2a-706e-ec44",
+                "type": "selectionEntry",
+                "targetId": "68ae-ec45-4d58-8c2a",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1a19-9e3e-4773-fa74"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "1a19-9e3e-4773-fa74"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditionGroups": [
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "af44-5da4-f49f-3409",
+                                "shared": true
+                              },
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "1467-4f00-768e-6486",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 5,
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Stikkbombs",
+                "hidden": false,
+                "id": "66b5-1326-ee8c-fb27",
+                "type": "selectionEntry",
+                "targetId": "9c17-caa4-72ee-1545",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0dcf-1888-27da-049e-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0dcf-1888-27da-049e-max"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "b9ab-5fb8-9127-17fe",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Light",
+                "hidden": false,
+                "id": "0236-8d9b-8e5d-02ad",
+                "targetId": "fcca-7b6b-7920-a6f5",
+                "primary": false
+              },
+              {
+                "name": "Skirmish",
+                "hidden": false,
+                "id": "9db5-f377-8652-cd6f",
+                "targetId": "e349-c42f-3c5d-1e72",
+                "primary": false
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "d66a-031e-c4fb-e008",
+            "targetId": "a300-5393-99ea-9657",
+            "primary": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "'Ere We Go!",
+            "id": "0b82-27f8-3865-76ec",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5422-0492-0f03-2969"
+          },
+          {
+            "name": "Furious Charge",
+            "id": "fee4-ec8e-9f88-e524",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7281-8b61-791e-c0f1"
+          },
+          {
+            "name": "Infiltrate",
+            "id": "c295-fc88-fa7d-e7d2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a11e-3993-c8ce-9072"
+          },
+          {
+            "name": "Mob Rule",
+            "id": "7d03-00aa-e2e5-5235",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "123e-d00a-177a-b419"
+          },
+          {
+            "name": "Move Through Cover",
+            "id": "4231-5cec-6a71-2aee",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "295d-36fe-4db3-a19f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Twin-linked Shoota",
+        "hidden": false,
+        "id": "f8f8-7b3d-0a62-71ac",
+        "profiles": [
+          {
+            "name": "Shoota",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "e039-a67b-3abd-7729",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "18\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 2"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "More Dakka (1)",
+                "field": "d2a2-1139-48cb-4472",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "More Dakka",
+            "id": "4cad-b342-c8e1-8398",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "be3f-8c18-d0f9-13a1",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Twin-linked",
+            "id": "f343-2aef-b783-0204",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "23d2-bdd7-3df1-be63"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Twin-linked",
+            "hidden": false,
+            "id": "3bee-a41b-7f08-2fde",
+            "type": "selectionEntryGroup",
+            "targetId": "b19d-86be-3758-3e72"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Slugga and Choppa",
+        "hidden": false,
+        "id": "2981-54b9-7f7f-dabb",
+        "profiles": [
+          {
+            "name": "Slugga",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "dfd8-734f-20e5-0088",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Pistol 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "More Dakka (1)",
+                "field": "d2a2-1139-48cb-4472",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Choppa",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "9a9d-9431-bfbe-f5fd",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Choppin' (6+)"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "More Dakka",
+            "id": "bb10-f53c-ea88-f6b8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "be3f-8c18-d0f9-13a1",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "id": "f5f6-49ae-0ee6-63a2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ab6b-cbef-cace-68c2",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Choppin'",
+            "id": "306e-d9cd-2c49-6a5b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8f19-dfc3-72de-7f20",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Paired Choppas",
+        "hidden": false,
+        "id": "e49a-9d83-9c08-a2f8",
+        "profiles": [
+          {
+            "name": "Choppa",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "21bb-f7be-2c85-92eb",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Choppin' (6+)"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Brutal",
+            "id": "433c-f60d-dcc9-7aa5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ab6b-cbef-cace-68c2",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Choppin'",
+            "id": "e7b4-aa7e-17bf-8fa2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8f19-dfc3-72de-7f20",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Paired Choppas",
+            "id": "0b20-e002-b7d7-181f",
+            "hidden": false,
+            "description": "A model with paired choppas gains +2 Attacks instead of the usual +1 Attack for using an additional weapon in combat."
           }
         ]
       }
@@ -14124,6 +15481,14 @@
         "id": "45a1-f3c4-4f31-4633",
         "type": "selectionEntry",
         "targetId": "3449-eedd-9c2d-a5a1"
+      },
+      {
+        "import": true,
+        "name": "Kommandos Mob",
+        "hidden": false,
+        "id": "dccb-32d7-8f48-e6c7",
+        "type": "selectionEntry",
+        "targetId": "9552-5fe3-b17d-3402"
       }
     ],
     "type": "catalogue",
