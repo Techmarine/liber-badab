@@ -122,6 +122,70 @@
                 ],
                 "comment": "TODO: ADD MORE DAKKA (1) TO EACH WEAPON"
               }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "shared": true,
+                "id": "ce30-c921-ccfa-9281-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "shared": true,
+                "id": "ce30-c921-ccfa-9281-max"
+              }
+            ],
+            "defaultSelectionEntryId": "ba76-52a7-ebdc-f375"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "0640-a933-69ec-5916",
+            "includeChildSelections": true
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "fd07-387a-8725-3f8d",
+            "includeChildSelections": true
+          },
+          {
+            "type": "min",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "56a8-2699-24f4-29e0"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 1,
+            "field": "56a8-2699-24f4-29e0",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "7d7f-a3fb-88b6-8a94",
+                "shared": true
+              }
             ]
           }
         ]
@@ -1310,7 +1374,26 @@
             "id": "ab71-d618-89b4-ce44",
             "hidden": false,
             "type": "profile",
-            "targetId": "a585-e8cc-7211-fafb"
+            "targetId": "a585-e8cc-7211-fafb",
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "More Dakka (1)",
+                "field": "d2a2-1139-48cb-4472",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "One Shot",
@@ -1318,6 +1401,36 @@
             "hidden": false,
             "type": "rule",
             "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "More Dakka",
+            "id": "c837-96f2-221b-2a7f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "be3f-8c18-d0f9-13a1",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "profiles": [
@@ -1353,6 +1466,25 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": "One Shot"
               }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "More Dakka (1)",
+                "field": "d2a2-1139-48cb-4472",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -1369,7 +1501,26 @@
             "id": "a424-b0ac-f51d-319c",
             "hidden": false,
             "type": "profile",
-            "targetId": "a585-e8cc-7211-fafb"
+            "targetId": "a585-e8cc-7211-fafb",
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "More Dakka (1)",
+                "field": "d2a2-1139-48cb-4472",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "One Shot",
@@ -1377,6 +1528,36 @@
             "hidden": false,
             "type": "rule",
             "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "More Dakka",
+            "id": "533f-4700-9d28-7b87",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "be3f-8c18-d0f9-13a1",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "profiles": [
@@ -1411,6 +1592,25 @@
                 "name": "Special Rules",
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": "One Shot"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "More Dakka (1)",
+                "field": "d2a2-1139-48cb-4472",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ]
           }
@@ -2298,6 +2498,57 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": ""
               }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "More Dakka (1)",
+                "field": "d2a2-1139-48cb-4472",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "More Dakka",
+            "id": "16c0-032d-8d5b-93a4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "be3f-8c18-d0f9-13a1",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -2340,6 +2591,57 @@
                 "name": "Special Rules",
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": ""
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "More Dakka (1)",
+                "field": "d2a2-1139-48cb-4472",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "More Dakka",
+            "id": "9225-57d5-58d1-bee3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "be3f-8c18-d0f9-13a1",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ]
           }
@@ -3135,6 +3437,25 @@
                 "typeId": "a603-af69-c30b-94ed",
                 "$text": "Choppin' (6+)"
               }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -3150,6 +3471,36 @@
                 "type": "set",
                 "value": "6+",
                 "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "id": "bdd5-a231-12b1-0314",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ]
           }
@@ -3194,6 +3545,25 @@
                 "typeId": "a603-af69-c30b-94ed",
                 "$text": "Choppin' (5+), Reach (1), Two-handed"
               }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -3232,6 +3602,36 @@
             "hidden": false,
             "type": "rule",
             "targetId": "9c96-f071-03a6-7593"
+          },
+          {
+            "name": "Brutal",
+            "id": "6996-5562-de3e-37fa",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -3333,6 +3733,25 @@
                 "typeId": "a603-af69-c30b-94ed",
                 "$text": "Rending (6+), Unwieldy, Specialist Weapon"
               }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -3364,6 +3783,36 @@
             "hidden": false,
             "type": "rule",
             "targetId": "8bee-1459-6f2d-6ab6"
+          },
+          {
+            "name": "Brutal",
+            "id": "7628-5a6a-b227-d2b0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -4478,7 +4927,7 @@
         "entryLinks": [
           {
             "import": true,
-            "name": "Iron Gob",
+            "name": "Iron Gob / Big Horns",
             "hidden": false,
             "id": "0657-7cb6-4e37-4f14",
             "type": "selectionEntry",
@@ -4619,23 +5068,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Big Horns",
-        "hidden": false,
-        "id": "4c0b-ee72-b6ce-c9a9",
-        "infoLinks": [
-          {
-            "name": "Big Horns / Iron Gob",
-            "id": "b424-10b4-4839-0630",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a6ed-0810-c854-b138"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Iron Gob",
+        "name": "Iron Gob / Big Horns",
         "hidden": false,
         "id": "7cda-0814-d873-b9cd",
         "infoLinks": [
@@ -5431,7 +5864,7 @@
             "name": "Stikkbombs",
             "id": "4a04-8f24-6e98-728d",
             "hidden": false,
-            "description": "Using stikkbombs does not count as a Shooting Attack and their effects are entirely covered by the rules presented here.\n\n\nA unit that includes at least one model with stikkbombs makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through\nDifficult Terrain or Dangerous Terrain."
+            "description": "Using stikkbombs does not count as a Shooting Attack and their effects are entirely covered by the rules presented here.\n\nA unit that includes at least one model with stikkbombs makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain."
           }
         ]
       },
@@ -5475,9 +5908,1273 @@
           {
             "name": "HQ",
             "hidden": false,
-            "id": "cad9-9529-6524-dbe2",
+            "id": "438a-0bdf-9014-894c",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "98c5-7292-da80-7fcc",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Warboss",
+            "hidden": false,
+            "id": "caab-f843-e685-d7f9",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ff91-097f-be7f-bc52-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ff91-097f-be7f-bc52-max"
+              }
+            ],
+            "sortIndex": 1,
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 80
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "a5db-6a36-a2a0-445f",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "ab8b-24d4-8198-76fb",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Warboss",
+                "hidden": false,
+                "id": "99c7-11bf-85ca-e4bf",
+                "targetId": "c65d-d77d-ff38-c6f1",
+                "primary": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Warboss",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "0072-5d96-b629-f939",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "4+"
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "May take one of the following",
+                "id": "8d40-3d3d-fd07-68ad",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "3a10-44bf-897b-5009"
+                  }
+                ],
+                "sortIndex": 3,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Shoota",
+                    "hidden": false,
+                    "id": "9491-2a16-c4d8-1868",
+                    "type": "selectionEntry",
+                    "targetId": "6852-fe5d-9ff0-b5fb",
+                    "comment": "Twin-linked",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Twin-linked",
+                        "hidden": false,
+                        "id": "a073-8192-252d-ede4",
+                        "type": "selectionEntryGroup",
+                        "targetId": "b19d-86be-3758-3e72"
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Twin-linked",
+                        "id": "02f5-cd35-55fc-097d",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "23d2-bdd7-3df1-be63"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "prepend",
+                        "value": "Twin-linked",
+                        "field": "name",
+                        "join": " "
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Shoota",
+                    "hidden": false,
+                    "id": "59f5-ffc4-ac63-20bd",
+                    "type": "selectionEntry",
+                    "targetId": "6852-fe5d-9ff0-b5fb",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Kombi Weapon with Rokkit Launcha",
+                    "hidden": false,
+                    "id": "f66f-b2de-a2e4-ff8b",
+                    "type": "selectionEntry",
+                    "targetId": "a3bf-d528-eb9e-d7a3",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Kombi Weapon with Skorcha",
+                    "hidden": false,
+                    "id": "1e9e-9a54-931b-5002",
+                    "type": "selectionEntry",
+                    "targetId": "6c5d-feb3-0ee3-f680",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Must take up to two of the following",
+                "id": "be1d-dbfd-a000-59f3",
+                "hidden": false,
+                "sortIndex": 2,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "35cd-c27f-15f9-ff4b-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "35cd-c27f-15f9-ff4b-max"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Slugga",
+                    "hidden": false,
+                    "id": "d43f-a82a-ea36-c899",
+                    "type": "selectionEntry",
+                    "targetId": "79e1-e59a-8c31-6767",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "56fb-35fb-a707-2a92"
+                      }
+                    ],
+                    "sortIndex": 2,
+                    "defaultAmount": "1"
+                  },
+                  {
+                    "import": true,
+                    "name": "Choppa",
+                    "hidden": false,
+                    "id": "95f0-d534-3764-ecb9",
+                    "type": "selectionEntry",
+                    "targetId": "4acf-f0bd-1d20-d70f",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "acac-5699-f704-5748"
+                      }
+                    ],
+                    "sortIndex": 1,
+                    "defaultAmount": "1"
+                  },
+                  {
+                    "import": true,
+                    "name": "Chainsword",
+                    "hidden": false,
+                    "id": "7a79-7f68-5e93-e23a",
+                    "type": "selectionEntry",
+                    "targetId": "0b7b-df7c-d610-9a5c",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "570d-fd97-2850-0b58"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Big Choppa",
+                    "hidden": false,
+                    "id": "b01c-067c-f4d0-a3b6",
+                    "type": "selectionEntry",
+                    "targetId": "a3e8-e1ac-66a9-33a3",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "ded3-e822-fe9b-7e1c"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": false,
+                    "id": "659d-e700-4b57-0aa9",
+                    "type": "selectionEntry",
+                    "targetId": "4804-9091-fcfa-7d79",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "8c3c-d4c9-cf3a-e1b6"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Maul",
+                    "hidden": false,
+                    "id": "a069-0710-8b5f-ee8c",
+                    "type": "selectionEntry",
+                    "targetId": "38f4-f7e0-b3d8-63ee",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "aebf-2536-68b1-b20e"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Axe",
+                    "hidden": false,
+                    "id": "00bb-8d64-4dcf-7a35",
+                    "type": "selectionEntry",
+                    "targetId": "255e-b873-2404-1da7",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "4af4-7135-1cf0-b291"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Klaw",
+                    "hidden": false,
+                    "id": "26d7-5573-251d-dfda",
+                    "type": "selectionEntry",
+                    "targetId": "dd8d-dd3a-1585-f272",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "499c-f97c-a7fe-9126"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Ammo Runt",
+                "hidden": false,
+                "id": "4792-a97f-0a8d-a3aa",
+                "type": "selectionEntry",
+                "targetId": "8669-6f17-cca7-fae0",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 3,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1570-2416-cf4e-2386"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 3
+                  }
+                ],
+                "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Attack Squig",
+                "hidden": false,
+                "id": "c01f-9fd2-6d81-aef5",
+                "type": "selectionEntry",
+                "targetId": "1da7-6195-c3a0-ca4c",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ],
+                "sortIndex": 5,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0d7f-b803-2f70-5a8a"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Bosspole",
+                "hidden": false,
+                "id": "d131-c9ba-9fb8-1f86",
+                "type": "selectionEntry",
+                "targetId": "7df6-6fac-17eb-9f03",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "sortIndex": 6,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "af7e-2b1c-e28c-d649"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Cybork Body",
+                "hidden": false,
+                "id": "5d1a-1242-1e9b-918c",
+                "type": "selectionEntry",
+                "targetId": "3dc4-f923-7f7b-d4ee",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "sortIndex": 7,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cef0-d2cb-d8bc-ff5a"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Gitfinda",
+                "hidden": false,
+                "id": "85c4-1d68-471c-565e",
+                "type": "selectionEntry",
+                "targetId": "68ae-ec45-4d58-8c2a",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "sortIndex": 8,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1fe0-bf26-6838-51f7"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Gob / Big Horns",
+                "hidden": false,
+                "id": "158d-17fe-bb0d-5468",
+                "type": "selectionEntry",
+                "targetId": "7cda-0814-d873-b9cd",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "sortIndex": 9,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8004-cd0f-fa1a-13b4"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warbike",
+                "hidden": false,
+                "id": "a125-91e4-1a73-08be",
+                "type": "selectionEntry",
+                "targetId": "1db6-1d27-24c0-5cb0",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 25
+                  }
+                ],
+                "sortIndex": 10,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "20c3-78b0-eef0-75e9"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "'Eavy Armour",
+                "hidden": false,
+                "id": "6ff1-2483-c842-e30e",
+                "type": "selectionEntry",
+                "targetId": "e48a-d376-60d9-dbc6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c90b-39d1-ca06-c3a1-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c90b-39d1-ca06-c3a1-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Deflektor",
+                "hidden": false,
+                "id": "7f45-f418-6022-d074",
+                "type": "selectionEntry",
+                "targetId": "f314-3ec3-d12b-425f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fe0e-bfc0-1031-13e3-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fe0e-bfc0-1031-13e3-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Stikkbombs",
+                "hidden": false,
+                "id": "8124-359b-baf4-eb7c",
+                "type": "selectionEntry",
+                "targetId": "9c17-caa4-72ee-1545",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2b75-6022-2cb9-92b9-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2b75-6022-2cb9-92b9-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "31c3-f092-076e-05c1",
+                "type": "selectionEntry",
+                "targetId": "107b-d96b-ec75-67be",
+                "sortIndex": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Arch Overlord",
+                "hidden": false,
+                "id": "2cf3-0afe-d9e6-e109",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "shared": true,
+                    "id": "1d94-2370-10db-a1ec",
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 35
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "4",
+                    "field": "cdc0-9287-7039-4792",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "5",
+                    "field": "edda-ee37-03b4-f91f",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "10",
+                    "field": "d29a-9b6f-13a6-b7a8",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "add",
+                    "value": "7d7f-a3fb-88b6-8a94",
+                    "field": "category",
+                    "scope": "caab-f843-e685-d7f9"
+                  }
+                ],
+                "sortIndex": 11,
+                "infoLinks": [
+                  {
+                    "name": "Fear",
+                    "id": "080d-6a60-c1bc-d40e",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "b19f-31c5-018a-932e",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "1",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Biggest and Best",
+                    "id": "a347-ba18-43b9-63bf",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "33cd-4d5a-c16c-dd92"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Battle-hardened",
+            "id": "a3e0-fb65-6e65-d375",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "76cb-bd90-ecb1-941b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Bulky",
+            "id": "fc70-3a05-6003-a376",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8317-bc69-b786-390d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "'Ere We Go!",
+            "id": "d00c-d33c-cbf0-59a0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5422-0492-0f03-2969"
+          },
+          {
+            "name": "Furious Charge",
+            "id": "b40c-53c5-c80a-ebe5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7281-8b61-791e-c0f1"
+          },
+          {
+            "name": "Independent Character",
+            "id": "116f-f3d4-616a-8169",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Mob Rule",
+            "id": "bbde-e9d6-1d04-9c6c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "123e-d00a-177a-b419"
+          },
+          {
+            "name": "Relentless",
+            "id": "abcf-82af-cbe5-9f04",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "919d-8ad9-f565-2b64"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Chainsword",
+        "hidden": false,
+        "id": "0b7b-df7c-d610-9a5c",
+        "profiles": [
+          {
+            "name": "Chainsword",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "722c-baae-96d7-84fe",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Shred"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Shred",
+            "id": "f76e-14ac-ef84-b13b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          },
+          {
+            "name": "Brutal",
+            "id": "308b-cf1b-a1e1-5189",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power Axe",
+        "hidden": false,
+        "id": "255e-b873-2404-1da7",
+        "infoLinks": [
+          {
+            "name": "Unwieldy",
+            "id": "e1e7-b879-15f5-dd9d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          },
+          {
+            "name": "Brutal",
+            "id": "9c4d-a6bb-84ba-5731",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Power Axe",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "616e-208b-9417-e8c3",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Unwieldy"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power Maul",
+        "hidden": false,
+        "id": "38f4-f7e0-b3d8-63ee",
+        "profiles": [
+          {
+            "name": "Power Maul",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "a825-e821-0735-b68f",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": ""
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Brutal",
+            "id": "657e-812a-29d3-ed5e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power Sword",
+        "hidden": false,
+        "id": "4804-9091-fcfa-7d79",
+        "infoLinks": [
+          {
+            "name": "Rending",
+            "id": "46e7-a45a-a1cc-776a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "id": "0c23-ee7f-7ea0-bfd5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Power Sword",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "f5ab-b47b-ade5-921f",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Rending (6+)"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -5626,7 +7323,53 @@
             "name": "Warboss Sub-type",
             "id": "256c-3c7d-d8d5-8594",
             "hidden": false,
-            "description": "The following rules apply to all models with the Warboss Sub-type:\n- If your primary detachment contains any models with the Warboss Sub-type, one of them must be selected as the Warlord.\n\n- A model with the Warboss Sub-type may select one of the Great Clans of the Orks: Bad Moons, Blood Axes, Deathskulls, Evil Sunz, Goffs, or Snakebites. If your army contains more than one model with the Warboss Sub-type, then each may select a different Great Clan of the Orks. The rules for the Great Clans can be found on the following page.\n\n- A unit with the Slow and Purposeful special rule that contains at least one model with the Warboss Sub-type may still perform Reactions, though may never move as part of those Reactions."
+            "description": "The following rules apply to all models with the Warboss Sub-type:\n\n- If your primary detachment contains any models with the Warboss Sub-type, one of them must be selected as the Warlord.\n\n- A model with the Warboss Sub-type may select one of the Great Clans of the Orks: Bad Moons, Blood Axes, Deathskulls, Evil Sunz, Goffs, or Snakebites. If your army contains more than one model with the Warboss Sub-type, then each may select a different Great Clan of the Orks. The rules for the Great Clans can be found on the following page.\n\n- A unit with the Slow and Purposeful special rule that contains at least one model with the Warboss Sub-type may still perform Reactions, though may never move as part of those Reactions."
+          }
+        ]
+      },
+      {
+        "name": "Great Clan",
+        "id": "809a-c73f-9d8b-58e1",
+        "hidden": false
+      },
+      {
+        "name": "Mekaniak Kult",
+        "id": "e072-7303-f891-1e4f",
+        "hidden": false
+      },
+      {
+        "name": "Biggest and Best",
+        "id": "7d7f-a3fb-88b6-8a94",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "92cc-cb17-74bd-ee3b",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "92cc-cb17-74bd-ee3b",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 2000,
+                "field": "54b5-0978-c8a4-5b5a",
+                "scope": "roster",
+                "childId": "any",
+                "shared": true,
+                "includeChildSelections": false,
+                "includeChildForces": false
+              }
+            ]
           }
         ]
       }
@@ -5841,6 +7584,12 @@
         "id": "a6ed-0810-c854-b138",
         "hidden": false,
         "description": "A model with big horns or an iron gob gains the Hammer of Wrath (1) special rule."
+      },
+      {
+        "name": "Biggest and Best",
+        "id": "33cd-4d5a-c16c-dd92",
+        "hidden": false,
+        "description": "An army must be at least 2,000 points in size to include a model with the Biggest and Best special rule. In addition, an army may only include a maximum of one model with the Biggest and Best special rule. This counts across all Detachments of an army.\n\nA model with the Biggest and Best special rule must be the Warlord. An army that contains a model with the Biggest and Best special rule as its Warlord may use the Waaagh! Advanced Reaction twice per battle, as long as the Warlord has not been removed as a casualty."
       }
     ],
     "sharedProfiles": [
@@ -5889,6 +7638,273 @@
         "targetId": "cae2-f2d4-6853-6a85"
       }
     ],
-    "type": "catalogue"
+    "type": "catalogue",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Space Marines",
+        "id": "15d3-d3a5-5c3e-11f2",
+        "targetId": "0c55-5a03-a16a-69cd"
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "Orks - Primary Detachment",
+        "id": "daa9-dfa0-e722-6046",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Great Clan",
+            "hidden": false,
+            "id": "3e6d-d1ee-f28e-528a",
+            "targetId": "809a-c73f-9d8b-58e1",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5b93-3627-612e-21ca-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5b93-3627-612e-21ca-max"
+              }
+            ]
+          },
+          {
+            "name": "Mekaniak Kult",
+            "hidden": false,
+            "id": "bd7a-8762-c8ec-d19d",
+            "targetId": "e072-7303-f891-1e4f",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a400-389c-2f56-d64b"
+              }
+            ]
+          },
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "802e-b00c-178d-8973",
+            "targetId": "736c-458e-6f4c-887e",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "56d9-1fbe-27e1-c1bf"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3465-9409-169f-2bc6"
+              }
+            ]
+          },
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "f6a8-53a0-fe49-e541",
+            "targetId": "a300-5393-99ea-9657",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0a4d-0955-f58d-bcea"
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "2973-7d2b-2c3d-3131",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1584-2597-ee2a-f64a"
+              },
+              {
+                "type": "max",
+                "value": 6,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5e3c-eb5e-1ae4-294d"
+              }
+            ]
+          },
+          {
+            "name": "Fast Attack",
+            "hidden": false,
+            "id": "52d3-500d-6877-8d82",
+            "targetId": "2e5a-9101-3872-faad",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 3,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "aedf-5a19-faf3-257c"
+              }
+            ]
+          },
+          {
+            "name": "Fortification",
+            "hidden": false,
+            "id": "db9e-3898-e009-03aa",
+            "targetId": "238d-2edf-cc1c-58e6",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8092-d397-2fc2-6331"
+              }
+            ]
+          },
+          {
+            "name": "Heavy Support",
+            "hidden": false,
+            "id": "ef8b-8d77-8800-ea6c",
+            "targetId": "1dff-e2a4-5442-6863",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 3,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "80f2-3d50-9b56-4970"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "forces",
+            "scope": "parent",
+            "shared": true,
+            "id": "3360-3683-4525-24f5"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "forces",
+            "scope": "parent",
+            "shared": true,
+            "id": "f36f-0762-b4f4-0477"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "{this} requires at least 1 selection of Compulsory Choice in HQ",
+            "field": "error",
+            "localConditionGroups": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "scope": "force",
+                "field": "selections",
+                "includeChildSelections": false,
+                "includeChildForces": true,
+                "repeats": 1,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "736c-458e-6f4c-887e",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "be4d-83ab-c864-a7c6",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "{this} requires at least 2 selections of Compulsory Choice in Troops",
+            "field": "error",
+            "localConditionGroups": [
+              {
+                "type": "lessThan",
+                "value": 2,
+                "scope": "force",
+                "field": "selections",
+                "includeChildSelections": false,
+                "includeChildForces": true,
+                "repeats": 1,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "1685-8865-a2b2-5fb9",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "be4d-83ab-c864-a7c6",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

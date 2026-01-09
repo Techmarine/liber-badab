@@ -121,92 +121,6 @@
         "hidden": false
       },
       {
-        "name": "Relic of the Chapter",
-        "id": "b04f-6c8c-d63a-db03",
-        "hidden": false,
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "fb1d-7f99-87bc-c983",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "fb1d-7f99-87bc-c983",
-            "repeats": [
-              {
-                "value": 1000,
-                "repeats": 1,
-                "field": "54b5-0978-c8a4-5b5a",
-                "scope": "roster",
-                "childId": "any",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "fb1d-7f99-87bc-c983",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "5a98-10a7-8364-240c",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 2,
-            "field": "fb1d-7f99-87bc-c983",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "1c46-7a96-775f-8572",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "fb1d-7f99-87bc-c983",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "ac2b-b7c8-7313-ae91",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Bombard",
         "id": "7d4a-3281-a77d-8962",
         "hidden": false
@@ -222,91 +136,8 @@
         "hidden": false
       },
       {
-        "name": "Master of the Company",
-        "id": "08f5-cc3b-5be1-92cb",
-        "hidden": false,
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "7066-526d-9f2e-6a50",
-            "includeChildSelections": true
-          },
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "3eff-f9b0-aefd-fc17",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": 1,
-            "field": "3eff-f9b0-aefd-fc17",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "674e-c4cc-665e-8886",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Chapter Master",
-        "id": "2ca5-c322-c8f3-5ebc",
-        "hidden": false
-      },
-      {
         "name": "Compulsory Choice",
         "id": "be4d-83ab-c864-a7c6",
-        "hidden": false
-      },
-      {
-        "name": "Chapter",
-        "id": "7c29-8e11-7fae-9549",
-        "hidden": false
-      },
-      {
-        "name": "Void Assault",
-        "id": "6b6a-5722-04ab-ff69",
-        "hidden": false
-      },
-      {
-        "name": "1st Company",
-        "id": "e861-088d-eec2-9ffa",
-        "hidden": false
-      },
-      {
-        "name": "8th Company",
-        "id": "e15e-cb8a-0715-ceb2",
-        "hidden": false
-      },
-      {
-        "name": "9th Company",
-        "id": "93d6-6be2-a921-9578",
-        "hidden": false
-      },
-      {
-        "name": "10th Company",
-        "id": "101e-01b9-b003-61dd",
-        "hidden": false
-      },
-      {
-        "name": "Siege Assault Vanguard Force",
-        "id": "4cb3-ddb4-3cf6-1837",
         "hidden": false
       },
       {
@@ -318,801 +149,6 @@
         "name": "Unique",
         "id": "75a3-46b2-47de-9789",
         "hidden": false
-      },
-      {
-        "name": "Company Level Deployment",
-        "id": "674e-c4cc-665e-8886",
-        "hidden": false
-      },
-      {
-        "name": "Master of the Relics",
-        "id": "5a98-10a7-8364-240c",
-        "hidden": false
-      },
-      {
-        "name": "1st Company Infantry",
-        "id": "4554-5526-60c7-9793",
-        "hidden": false,
-        "constraints": [
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "1e9f-74cc-6de8-e0cf",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "e861-088d-eec2-9ffa",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "1e9f-74cc-6de8-e0cf",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "c96a-d708-82e0-fb89",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ],
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "e861-088d-eec2-9ffa",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "1st Company Non-infantry",
-        "id": "c96a-d708-82e0-fb89",
-        "hidden": false,
-        "modifiers": [
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "e861-088d-eec2-9ffa",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Great Clan",
-        "id": "809a-c73f-9d8b-58e1",
-        "hidden": false
-      }
-    ],
-    "forceEntries": [
-      {
-        "name": "Primary Detachment",
-        "id": "468e-3bb6-0edf-1597",
-        "hidden": false,
-        "categoryLinks": [
-          {
-            "name": "Chapter",
-            "hidden": false,
-            "id": "049b-6295-84d3-7b7f",
-            "targetId": "7c29-8e11-7fae-9549",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "8ffb-2ad3-4b6f-920d-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "8ffb-2ad3-4b6f-920d-max"
-              }
-            ]
-          },
-          {
-            "name": "Company Level Deployment",
-            "hidden": false,
-            "id": "ae0c-a625-f071-dc3c",
-            "targetId": "674e-c4cc-665e-8886",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "7f34-c1a7-e1bd-e94b"
-              }
-            ]
-          },
-          {
-            "name": "HQ",
-            "hidden": false,
-            "id": "0f88-31d0-c658-098e",
-            "targetId": "736c-458e-6f4c-887e",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "cf66-ed07-e7cb-8389"
-              },
-              {
-                "type": "max",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "629e-8668-ab8f-4aa7"
-              }
-            ]
-          },
-          {
-            "name": "Elites",
-            "hidden": false,
-            "id": "a6c3-8558-fd99-290f",
-            "targetId": "a300-5393-99ea-9657",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 4,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "3252-ab54-2fdd-13b7"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "increment",
-                "value": 1,
-                "field": "3252-ab54-2fdd-13b7",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "2ca5-c322-c8f3-5ebc",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Troops",
-            "hidden": false,
-            "id": "4a46-6c50-874a-575e",
-            "targetId": "1685-8865-a2b2-5fb9",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "b303-a031-244b-1273"
-              },
-              {
-                "type": "max",
-                "value": 6,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "18ea-080c-aeac-65cd"
-              }
-            ]
-          },
-          {
-            "name": "Fast Attack",
-            "hidden": false,
-            "id": "53a9-1374-f24e-80bd",
-            "targetId": "2e5a-9101-3872-faad",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 3,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "bd50-d2b4-7e64-3107"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 1,
-                "field": "bd50-d2b4-7e64-3107",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "e861-088d-eec2-9ffa",
-                        "shared": true,
-                        "includeChildSelections": true
-                      },
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "93d6-6be2-a921-9578",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Fortification",
-            "hidden": false,
-            "id": "4b9d-3592-d130-64d3",
-            "targetId": "238d-2edf-cc1c-58e6",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "3c9d-e93f-f026-aba3"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 0,
-                "field": "3c9d-e93f-f026-aba3",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "e861-088d-eec2-9ffa",
-                        "shared": true,
-                        "includeChildSelections": true
-                      },
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "e15e-cb8a-0715-ceb2",
-                        "shared": true,
-                        "includeChildSelections": true
-                      },
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "101e-01b9-b003-61dd",
-                        "shared": true,
-                        "includeChildSelections": true
-                      },
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "6b6a-5722-04ab-ff69",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Heavy Support",
-            "hidden": false,
-            "id": "0df7-6c0c-726e-ada3",
-            "targetId": "1dff-e2a4-5442-6863",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 3,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "0181-b1ab-8cfd-6339"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 1,
-                "field": "0181-b1ab-8cfd-6339",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "e861-088d-eec2-9ffa",
-                        "shared": true,
-                        "includeChildSelections": true
-                      },
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "e15e-cb8a-0715-ceb2",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "forces",
-            "scope": "parent",
-            "shared": true,
-            "id": "5b0d-e4a2-72d6-61cb"
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "forces",
-            "scope": "parent",
-            "shared": true,
-            "id": "96b9-be6d-8c3d-e8f4"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "add",
-            "value": "{this} requires at least 1 selection of Compulsory Choice in HQ",
-            "field": "error",
-            "localConditionGroups": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "scope": "force",
-                "field": "selections",
-                "includeChildSelections": false,
-                "includeChildForces": true,
-                "repeats": 1,
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "736c-458e-6f4c-887e",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "be4d-83ab-c864-a7c6",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "add",
-            "value": "{this} requires at least 2 selections of Compulsory Choice in Troops",
-            "field": "error",
-            "localConditionGroups": [
-              {
-                "type": "lessThan",
-                "value": 2,
-                "scope": "force",
-                "field": "selections",
-                "includeChildSelections": false,
-                "includeChildForces": true,
-                "repeats": 1,
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "1685-8865-a2b2-5fb9",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "be4d-83ab-c864-a7c6",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Allied Detachment",
-        "id": "a1d4-6103-ac0c-f0fc",
-        "hidden": false,
-        "categoryLinks": [
-          {
-            "name": "Company Level Deployment",
-            "hidden": false,
-            "id": "0561-6880-e509-df11",
-            "targetId": "674e-c4cc-665e-8886",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "daed-f445-48b1-09ba"
-              }
-            ]
-          },
-          {
-            "name": "HQ",
-            "hidden": false,
-            "id": "7246-eb04-d1d2-f2fe",
-            "targetId": "736c-458e-6f4c-887e",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "7f12-996f-11ea-2576"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "14ec-e414-35f4-6c62"
-              }
-            ]
-          },
-          {
-            "name": "Elites",
-            "hidden": false,
-            "id": "bcc1-2c0c-409d-8af8",
-            "targetId": "a300-5393-99ea-9657",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "bc98-9608-a939-49da"
-              }
-            ]
-          },
-          {
-            "name": "Troops",
-            "hidden": false,
-            "id": "ba58-50d2-13f4-7df6",
-            "targetId": "1685-8865-a2b2-5fb9",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "416e-6db7-8468-af48"
-              },
-              {
-                "type": "max",
-                "value": 4,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "8bb7-9f13-0f48-ffe5"
-              }
-            ]
-          },
-          {
-            "name": "Fast Attack",
-            "hidden": false,
-            "id": "4c2b-f958-3a6d-57d4",
-            "targetId": "2e5a-9101-3872-faad",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "9dc7-a602-9e17-d886"
-              }
-            ]
-          },
-          {
-            "name": "Heavy Support",
-            "hidden": false,
-            "id": "d296-92f2-f5ec-0433",
-            "targetId": "1dff-e2a4-5442-6863",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "5046-0513-c6e4-d206"
-              }
-            ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "forces",
-            "scope": "parent",
-            "shared": true,
-            "id": "2ee8-f7ca-31e0-fd7e"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": 0,
-            "field": "2ee8-f7ca-31e0-fd7e",
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "e861-088d-eec2-9ffa",
-                    "shared": true,
-                    "includeChildSelections": true
-                  },
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "93d6-6be2-a921-9578",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "add",
-            "value": "{this} requires at least 1 selection of Compulsory Choice in HQ",
-            "field": "error",
-            "localConditionGroups": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "scope": "force",
-                "field": "selections",
-                "includeChildSelections": false,
-                "includeChildForces": true,
-                "repeats": 1,
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "736c-458e-6f4c-887e",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "be4d-83ab-c864-a7c6",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "add",
-            "value": "{this} requires at least 1 selections of Compulsory Choice in Troops",
-            "field": "error",
-            "localConditionGroups": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "scope": "force",
-                "field": "selections",
-                "includeChildSelections": false,
-                "includeChildForces": true,
-                "repeats": 1,
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "1685-8865-a2b2-5fb9",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "be4d-83ab-c864-a7c6",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lords of War",
-        "id": "ecf6-ec2d-f7dc-b11d",
-        "hidden": false,
-        "categoryLinks": [
-          {
-            "name": "Chapter",
-            "hidden": false,
-            "id": "90a2-4a36-333a-8ec8",
-            "targetId": "7c29-8e11-7fae-9549",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "897f-2f55-c1c2-52aa"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "cac9-f282-ea9c-177e"
-              }
-            ]
-          },
-          {
-            "name": "Lords of War",
-            "hidden": false,
-            "id": "c762-7904-e51c-d859",
-            "targetId": "6499-290b-b038-5509",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "9821-28e4-aed3-80ba-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "9821-28e4-aed3-80ba-max"
-              }
-            ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "forces",
-            "scope": "parent",
-            "shared": true,
-            "id": "f7d0-1135-273b-973d"
-          }
-        ]
       }
     ],
     "type": "gameSystem",
@@ -1323,12 +359,6 @@
         "description": "A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type."
       },
       {
-        "name": "Breaching",
-        "id": "ee66-f70b-aa5c-b2bf",
-        "hidden": false,
-        "description": "When rolling To Wound for a model that has the Breaching (X) special rule, or is attacking with a weapon that has the Breaching (X) special rule, for each To Wound roll equal to or higher than the value listed in brackets, the controlling player must resolve these wounds at AP 2 instead of the weapon’s normal AP value. This rule has no effect on models that do not have Wounds, such as models with the Vehicle Unit Type."
-      },
-      {
         "name": "Duellist’s Edge",
         "id": "da29-5ae7-e8e9-a008",
         "hidden": false,
@@ -1371,28 +401,10 @@
         "description": "A model fighting with this weapon does not receive +1 Attack for fighting with two weapons unless it is armed with two or more Melee weapons with the Specialist Weapon rule. The additional weapon does not have to be the same weapon as the one used to attack, but it must have the Specialist Weapon rule in order to grant an additional Attack for fighting with two weapons."
       },
       {
-        "name": "Detonation",
-        "id": "26f7-bec6-599d-285f",
-        "hidden": false,
-        "description": "A weapon with this special rule may only be used to attack models of the Vehicle, Dreadnought or Automata Unit Types, any model with a Movement Characteristic of 0 or ‘-’, or Buildings or Fortifications. Furthermore, a model that is chosen to attack with a weapon with this special rule during the Assault phase may only make a single attack in the Fight sub-phase, regardless of its Attacks Characteristic and any bonus attacks from Charging or other special rules."
-      },
-      {
         "name": "Instant Death",
         "id": "0561-70c5-a18f-6672",
         "hidden": false,
         "description": "If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.\n"
-      },
-      {
-        "name": "Reach",
-        "id": "3be4-de2e-abce-247a",
-        "hidden": false,
-        "description": "A model making attacks as part of an Assault using a weapon with this special rule, adds the value of (X) that is included as part of this special rule to its Initiative Characteristic. If a model has more than one weapon with this special rule then that model only increases the value of its Initiative by the value of the special rule on the weapon whose profile is used by that model to attack during the Fight sub-phase. A weapon that is not used to attack does not modify the model’s Initiative Characteristic – models that may attack with more than one weapon, or models claiming the bonus for having a second weapon, may only add the value of the highest variant of this special rule and do not add the values together."
-      },
-      {
-        "name": "Brutal",
-        "id": "fc68-9ea6-18e4-d94b",
-        "hidden": false,
-        "description": "When a model is allocated a Wound inflicted by a weapon with this special rule, it does not suffer only one Wound but instead suffers a number of Wounds equal to the number in brackets associated with the specific variant of this special rule, with all of the Wounds inflicted using the same AP and special rules as that of the initial Wound. Roll to save against each Wound inflicted separately, but note that Wounds caused in excess of a given model’s remaining Wounds do not spill over to other models and are lost. This special rule has no effect on models that do not have a Toughness value."
       },
       {
         "name": "Pyromantic Combustion",
@@ -1467,12 +479,6 @@
         "description": "You may choose to deploy units that contain at least one model with this special rule last, after all other units (friend and foe) have been deployed. If both players have such units and choose to do so, the players roll off and the winner decides who goes first,then alternate deploying these units.\n\n\nUnits that Infiltrate in this way can be set up anywhere on the battlefield that is more than 9\" from any enemy unit, as long as no deployed enemy unit can draw line of sight to them. This includes in a Building, as long as the Building is more than 9\" from any enemy unit. Alternatively, they can be set up anywhere on the battlefield more than 12\" from any enemy unit, even in plain sight.\n\n\nIf a unit with Infiltrate deploys inside a Dedicated Transport, the same rules apply when deploying their Transport.\n\n\nA unit that deploys using these rules cannot Charge in their first turn."
       },
       {
-        "name": "Marked for Death",
-        "id": "8f56-6ba6-fe2c-30c7",
-        "hidden": false,
-        "description": "At the start of the battle, once both armies have set up all their models, including any units with the Infiltrator special rule, a single enemy unit may be chosen by a player that controls any models with this special rule – this unit is considered ‘marked for death’. When any models with this special rule controlled by that player are used to make an attack of any kind against the enemy unit their controlling player has ‘marked for death’, all failed To Wound rolls of ‘1’ may be re-rolled."
-      },
-      {
         "name": "Move Through Cover",
         "id": "295d-36fe-4db3-a19f",
         "hidden": false,
@@ -1521,22 +527,10 @@
         "description": "A model which has this special rule, or that is firing a weapon with this special rule, fires using its normal Ballistic Skill when shooting at Flyers and Skimmers, but it can only fire Snap Shots against other targets."
       },
       {
-        "name": "Inexorable",
-        "id": "1f1d-9364-4027-26a4",
-        "hidden": false,
-        "description": "A unit that contains only models with this special rule ignores modifiers to Leadership when making a Morale check or Pinning test – except those caused by the Fear (X) special rule or the Corrupted and Anathema Sub-types. If a unit has both the Fearless and Inexorable special rules, it uses the rules for Fearless instead of Inexorable."
-      },
-      {
         "name": "Chosen Warriors",
         "id": "2d8a-fe4e-0823-4918",
         "hidden": false,
         "description": "A model with this special rule may issue and accept Challenges as if it had the Character type. Note that this does not allow a model with this special rule to use any other special rules associated with the Character type."
-      },
-      {
-        "name": "Retinue",
-        "id": "2a91-35fc-a75c-b171",
-        "hidden": false,
-        "description": "A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may only be selected as part of a Detachment that includes at least one model with the Master of the Company special rule. A unit selected in this manner is considered a ‘Retinue Squad’ and the model with the Master of the Company special rule is referred to as the Retinue Squad’s Leader for the purposes of this special rule (if the Detachment includes more than one model with the Master of the Company  special rule then the controlling player selects one as the unit’s Leader). The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. The Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may not be selected as part of an army without a Leader."
       },
       {
         "name": "Support Squad",
@@ -1545,22 +539,10 @@
         "description": "A unit with this special rule may not be chosen as a compulsory choice for the army as part of the Force Organisation chart."
       },
       {
-        "name": "Grav-ripple",
-        "id": "93ec-123c-b844-7ace",
-        "hidden": false,
-        "description": "A weapon with the Grav-Ripple effect rolls to hit as normal. To wound it needs whatever the targets Armour save is (Eg if hitting a Space Marine with an armour save of 3+, you would require a 3+ to wound the Marine). Models wounded by a weapon with the Grav-Ripple trait do not make a normal saving through, but instead make save based on their Toughness. EG if a Guardsmen, at Toughness 3 is wounded by a Grav-Ripple Weapon, they will save the wound on a 3+.\n(Let us know how this plays in your games, Wanted something not as busted as Grav in 6th/7th but not as useless as Graviton in HH 2.0, feedback is always wanted and encouraged!)"
-      },
-      {
         "name": "Precision Shots",
         "id": "7c10-c2c4-a901-0907",
         "hidden": false,
         "description": "If a model with this special rule, or attacking with a weapon with this special rule, rolls equal to or higher than the value in brackets when making a To Hit roll as part of a Shooting Attack, that shot is a ‘Precision Shot’. For example, if a model with the Precision Shots (4+) special rule rolls a 4 or higher when making a To Hit roll, then that attack is a Precision Shot.\n\nWounds from Precision Shots are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as the target model is in range and line of sight of the attacking model, rather than following the normal rules for Wound allocation.\n\nNote that Snap Shots and shots from weapons that scatter, or do not roll To Hit, can never be Precision Shots."
-      },
-      {
-        "name": "Dreadnought Talon",
-        "id": "a9c0-2029-d470-db34",
-        "hidden": false,
-        "description": "When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this special rule in a unit must be placed within unit coherency, but afterwards operate independently and are not treated as a unit."
       },
       {
         "name": "It Will not Die",
@@ -1591,30 +573,6 @@
         "id": "8ab4-4caa-d70c-dbf1",
         "hidden": false,
         "description": "A unit that contains at least one model with this special rule ignores the effects of Night Fighting and no model may make Shrouded rolls to negate Wounds inflicted by their attacks."
-      },
-      {
-        "name": "Limited Ammunition",
-        "id": "3b71-0e6c-f19b-559f",
-        "hidden": false,
-        "description": "After all Shooting Attacks for a weapon with this special rule have been fully resolved, roll a D6, adding +1 if the weapon has fired before in the same battle. If the total of this roll is 6 or more then the weapon may no longer be used to make Shooting Attacks in this battle. If this weapon is unable to make further Shooting Attacks then it may not be targeted by a Weapon Destroyed result on the Vehicle Damage table, and for the purposes of such a result is treated as though it had already been destroyed."
-      },
-      {
-        "name": "Inertial Guidance System",
-        "id": "7483-8487-895a-840a",
-        "hidden": false,
-        "description": "When deployed as the first model placed during a Deep Strike Assault, or other deployment that requires a model with this special rule to scatter, the distance the model scatters is reduced by half and if it scatters into Impassable Terrain or off of the battlefield then it is moved the minimum distance required to avoid such obstacles. In addition, if all units included in a Deep Strike Assault have the Inertial Guidance System special rule or are models Embarked on a model with that special rule then any rolls made to determine if the Deep Strike Assault is Disordered may be re-rolled."
-      },
-      {
-        "name": "Impact-reactive Doors",
-        "id": "d637-8ab0-7db7-2764",
-        "hidden": false,
-        "description": "When a model with this special rule is deployed, any doors on the model must be opened to their full extent. All models Embarked within a model with this special rule must then Disembark immediately and no models can thereafter Embark within that model for the remainder of the battle. Any model that has Disembarked from a model with this special rule may not have a Charge declared for it in the same turn. The physical doors attached to a model with this special rule are not treated as part of the model once opened and cannot be targeted by Shooting Attacks and do not impede Movement in any way."
-      },
-      {
-        "name": "Orbital Assault Vehicle",
-        "id": "33e2-0e44-6580-1efb",
-        "hidden": false,
-        "description": "A model with this special rule must be deployed onto the battlefield as part of a Deep Strike Assault, or other deployment that requires the Deep Strike special rule. It may never be deployed as normal, regardless of any other rule or mission, and if forced to do so it is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation). Furthermore, a model with this special rule may never move – and if forced to do so is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation)."
       },
       {
         "name": "Assault Vehicle",
@@ -1665,21 +623,10 @@
         "description": "All Barrage weapons use Blast markers and consequently use the rules for Blast weapons, as indicated by their profile, with the following exceptions:\n\nBarrage weapons can fire indirectly. This means they can fire at a target that they do not have line of sight to, as long as the target is beyond their Minimum Range (if applicable). When firing indirectly, the Ballistic Skill of the firer is not subtracted from the scatter distance; unless a Hit is rolled on the Scatter dice, the Blast marker always scatters a full 2D6\". If a Barrage weapon has line of sight to its target it can fire directly, even if the target is within its Minimum Range.\n\nNote that any Hits inflicted upon Vehicles by an Attack using the Barrage special rule are always resolved against the Vehicle’s Side Armour Value.\n\n\nMultiple Barrages\n\nIf a unit fires more than one shot with the Barrage special rule, they fire together, as follows:\n\nThe Barrage weapon closest to the target unit fires first. Place the Blast marker over the target, then roll for scatter as described earlier. Once the first marker is placed, roll a Scatter dice for each other Barrage weapon shot fired by the unit. If an arrow is rolled, place the marker in the direction indicated so that it is next to and touching the edge of the first marker placed (see diagram below). If a Hit is rolled, the firing player places the marker so that it touches any part of any marker in the group that has already been placed. Note that it is perfectly fine if some markers are placed overlapping one another (including being directly over the top of a previous marker).\n\n\nApocalyptic Barrage\n\n\nAn Apocalyptic Barrage follows all of the rules for a Barrage weapon, but uses the clover-shaped Apocalyptic Barrage marker. Before the marker is placed, the attacker is allowed to rotate the marker about its centre to maximise the number of models that could potentially be hit. Place the marker and roll for scatter in the same way you would for a Barrage. If the marker scatters, be careful to maintain the same orientation as you move it.\n\n\nOnce the final position of the marker has been determined, roll a number of dice equal to the number of attacks on the weapon’s profile. So, for example, with a weapon with the type ‘Heavy 4, Apocalyptic Barrage’, you would roll four dice. Each dice roll corresponds to a ‘strike’ on one of the circles on the Apocalyptic Barrage marker. For example, each roll of a 2 indicates a strike on circle number 2. Resolve the strikes as for a Multiple Barrage, as if each were a Barrage attack that had landed on that circle and hit all the models underneath it. To determine Cover Saves, always assume the shot is coming from the centre of the entire Apocalyptic Barrage marker."
       },
       {
-        "name": "Interceptor",
-        "id": "6c99-006a-25b5-a77f",
-        "hidden": false
-      },
-      {
         "name": "Shell Shock",
         "id": "8175-2eb5-17e1-07b4",
         "hidden": false,
         "description": "Pinning tests taken due to an attack or weapon with this special rule are made with a penalty to Leadership Characteristic equal to the value listed as part of the special rule.\n\n\nFor example, a unit that is forced to take a Pinning test by an attack made using a weapon with the Shell Shock (2) special rule, suffers a penalty of -2 to their Leadership Characteristic when resolving that Test."
-      },
-      {
-        "name": "Transport Bay",
-        "id": "861c-2149-4067-1efc",
-        "hidden": false,
-        "description": "A model with this special rule may carry models of the Dreadnought and Automata Unit Types, as well as models with the Cavalry Unit Type but not the Antigrav Sub-type. Each Dreadnought model uses 10 points of Transport Capacity, while each Automata and Cavalry model uses up a number of Transport Capacity points equal to twice its starting Wounds Characteristic."
       },
       {
         "name": "Furious Charge",
@@ -1710,12 +657,6 @@
         "id": "d9b7-d83e-51e0-bcfc",
         "hidden": false,
         "description": "If a model with this special rule suffers an unsaved Wound from an attack that inflicts Instant Death, it only reduces its Wounds by 1, instead of automatically reducing its Wounds to 0."
-      },
-      {
-        "name": "Reaping Blow",
-        "id": "2cc2-c220-7f11-b44b",
-        "hidden": false,
-        "description": "If a model is in base contact with more than one enemy model in the Initiative step in which they fight, they gain a number of Attacks equal to the value of X as noted in the variant of the special rule (if no value of X is included then count the value of X as 1)."
       },
       {
         "name": "Lance",
@@ -1764,6 +705,18 @@
         "id": "4aab-8d13-caf2-091d",
         "hidden": false,
         "description": "A unit made up entirely of models with this special rule may perform a Deep Strike Assault. Certain Faction or unit special rules may present other options for the deployment of units with the Deep Strike special rule."
+      },
+      {
+        "name": "Master-crafted",
+        "id": "0371-1ea2-8615-e03a",
+        "hidden": false,
+        "description": "Weapons with the Master-crafted special rule allow the bearer to re-roll one failed roll To Hit per turn with that weapon."
+      },
+      {
+        "name": "Battle-hardened",
+        "id": "76cb-bd90-ecb1-941b",
+        "hidden": false,
+        "description": "For the purposes of whether or not attacks of a Strength twice this model’s Toughness value inflict Instant Death, this model’s Toughness is increased by X, where X is the value in brackets after the name of this special rule. If, for any reason, this special rule does not provide a value, then consider the value of X to be 1. This special rule does not alter the scores needed by To Wound rolls or any other Test or Check."
       }
     ],
     "sharedSelectionEntries": [
@@ -2673,96 +1626,42 @@
             "import": true,
             "name": "Bad Moons",
             "hidden": false,
-            "id": "0553-5c5f-a534-224b",
-            "categoryLinks": [
-              {
-                "name": "Great Clan",
-                "hidden": false,
-                "id": "82cc-7ce6-44d9-e913",
-                "targetId": "809a-c73f-9d8b-58e1",
-                "primary": true
-              }
-            ]
+            "id": "0553-5c5f-a534-224b"
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Blood Axes",
             "hidden": false,
-            "id": "7ec4-58ec-deca-5e00",
-            "categoryLinks": [
-              {
-                "name": "Great Clan",
-                "hidden": false,
-                "id": "760c-5ec4-993c-c688",
-                "targetId": "809a-c73f-9d8b-58e1",
-                "primary": true
-              }
-            ]
+            "id": "7ec4-58ec-deca-5e00"
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Deathskulls",
             "hidden": false,
-            "id": "b856-f510-68f1-db10",
-            "categoryLinks": [
-              {
-                "name": "Great Clan",
-                "hidden": false,
-                "id": "c518-531f-7deb-f514",
-                "targetId": "809a-c73f-9d8b-58e1",
-                "primary": true
-              }
-            ]
+            "id": "b856-f510-68f1-db10"
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Evil Sunz",
             "hidden": false,
-            "id": "5822-43cd-84cf-e758",
-            "categoryLinks": [
-              {
-                "name": "Great Clan",
-                "hidden": false,
-                "id": "d9f5-4c28-9cbf-3dfa",
-                "targetId": "809a-c73f-9d8b-58e1",
-                "primary": true
-              }
-            ]
+            "id": "5822-43cd-84cf-e758"
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Goffs",
             "hidden": false,
-            "id": "375d-8805-8c2f-02bf",
-            "categoryLinks": [
-              {
-                "name": "Great Clan",
-                "hidden": false,
-                "id": "36a2-129b-f32b-86b7",
-                "targetId": "809a-c73f-9d8b-58e1",
-                "primary": true
-              }
-            ]
+            "id": "375d-8805-8c2f-02bf"
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Snakebites",
             "hidden": false,
-            "id": "c619-c045-1bb4-85df",
-            "categoryLinks": [
-              {
-                "name": "Great Clan",
-                "hidden": false,
-                "id": "997d-5c99-7436-ba47",
-                "targetId": "809a-c73f-9d8b-58e1",
-                "primary": true
-              }
-            ]
+            "id": "c619-c045-1bb4-85df"
           }
         ],
         "constraints": [
@@ -2816,6 +1715,46 @@
           {
             "type": "prepend",
             "value": "Twin-linked",
+            "field": "name",
+            "scope": "parent",
+            "affects": "profiles.Melee Weapon",
+            "join": " "
+          }
+        ],
+        "flatten": true
+      },
+      {
+        "name": "Master-crafted",
+        "id": "c044-d3ec-ebc4-d882",
+        "hidden": false,
+        "modifiers": [
+          {
+            "type": "append",
+            "value": "Master-crafted",
+            "field": "d2a2-1139-48cb-4472",
+            "scope": "parent",
+            "affects": "profiles.Ranged Weapon",
+            "join": ", "
+          },
+          {
+            "type": "append",
+            "value": "Master-crafted",
+            "field": "a603-af69-c30b-94ed",
+            "scope": "parent",
+            "affects": "profiles.Melee Weapon",
+            "join": ", "
+          },
+          {
+            "type": "prepend",
+            "value": "Master-crafted",
+            "field": "name",
+            "scope": "parent",
+            "affects": "profiles.Ranged Weapon",
+            "join": " "
+          },
+          {
+            "type": "prepend",
+            "value": "Master-crafted",
             "field": "name",
             "scope": "parent",
             "affects": "profiles.Melee Weapon",
