@@ -12940,76 +12940,19 @@
                         "value": 5
                       }
                     ]
-                  }
-                ],
-                "selectionEntries": [
+                  },
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Two Killsaws",
                     "hidden": false,
-                    "id": "a436-85e8-7975-aef2",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Killsaw",
-                        "hidden": false,
-                        "id": "d8d2-d886-1465-d8cb",
-                        "type": "selectionEntry",
-                        "targetId": "c61e-3e60-0737-07f8",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "ba5f-0830-ac83-5785"
-                          }
-                        ]
-                      },
-                      {
-                        "import": true,
-                        "name": "Killsaw",
-                        "hidden": false,
-                        "id": "26b2-02c4-1097-4acd",
-                        "type": "selectionEntry",
-                        "targetId": "c61e-3e60-0737-07f8",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "9f13-a80a-76aa-2dd5"
-                          }
-                        ]
-                      }
-                    ],
+                    "id": "caf9-7732-5492-ff5b",
+                    "type": "selectionEntry",
+                    "targetId": "0d0f-6a33-e46b-6b81",
                     "costs": [
                       {
                         "name": "Points",
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 10
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 2,
-                        "field": "selections",
-                        "scope": "self",
-                        "shared": true,
-                        "id": "0c38-4d1d-b4c1-db2d-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 2,
-                        "field": "selections",
-                        "scope": "self",
-                        "shared": true,
-                        "id": "0c38-4d1d-b4c1-db2d-max"
                       }
                     ]
                   }
@@ -13069,9 +13012,9 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "parent",
-                        "childId": "a436-85e8-7975-aef2",
+                        "childId": "0d0f-6a33-e46b-6b81",
                         "shared": true,
-                        "includeChildSelections": true
+                        "includeChildSelections": false
                       }
                     ]
                   }
@@ -13294,6 +13237,188 @@
         "name": "Battlewagon",
         "hidden": false,
         "id": "42a6-638e-e178-d756"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Two Killsaws",
+        "hidden": false,
+        "id": "0d0f-6a33-e46b-6b81",
+        "profiles": [
+          {
+            "name": "Killsaw",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "3040-8bc6-f522-93e6",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "×2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Armourbane (Melee), Shred, Specialist Weapon,\nUnwieldy"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Killsaw",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "94e8-c76b-0fd1-4107",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "×2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Armourbane (Melee), Shred, Specialist Weapon,\nUnwieldy"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "8e29-d064-45d7-bbc1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Melee",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "id": "acb9-f005-7d86-1353",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ab6b-cbef-cace-68c2",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Shred",
+            "id": "8357-9beb-6e03-1156",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          },
+          {
+            "name": "Specialist Weapon",
+            "id": "5dda-aa3f-a7b0-d575",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8bee-1459-6f2d-6ab6"
+          },
+          {
+            "name": "Unwieldy",
+            "id": "36c4-dba1-f778-c13e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          }
+        ]
       }
     ],
     "categoryEntries": [
