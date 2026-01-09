@@ -68269,7 +68269,7 @@
     ],
     "forceEntries": [
       {
-        "name": "Space Marines - Allied Detachment",
+        "name": "Allied Detachment",
         "id": "a1d4-6103-ac0c-f0fc",
         "hidden": false,
         "categoryLinks": [
@@ -68504,11 +68504,28 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "notInstanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "0c55-5a03-a16a-69cd",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Space Marines - Lords of War",
+        "name": "Lords of War",
         "id": "ecf6-ec2d-f7dc-b11d",
         "hidden": false,
         "categoryLinks": [
@@ -68570,10 +68587,27 @@
             "shared": true,
             "id": "f7d0-1135-273b-973d"
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "notInstanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "0c55-5a03-a16a-69cd",
+                "shared": true
+              }
+            ]
+          }
         ]
       },
       {
-        "name": "Space Marines - Primary Detachment",
+        "name": "Primary Detachment",
         "id": "468e-3bb6-0edf-1597",
         "hidden": false,
         "categoryLinks": [
@@ -68956,6 +68990,21 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "notInstanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "0c55-5a03-a16a-69cd",
+                "shared": true
               }
             ]
           }

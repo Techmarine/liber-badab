@@ -583,7 +583,7 @@
             "id": "0669-5d86-e66f-1393",
             "hidden": false,
             "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
+            "targetId": "6347-29f0-2349-280d",
             "modifiers": [
               {
                 "type": "set",
@@ -1112,7 +1112,7 @@
             "id": "d5c7-87c8-1da9-d72a",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -1169,7 +1169,7 @@
             "id": "f5e2-f634-01f5-214c",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -1242,7 +1242,7 @@
             "id": "4318-2666-969c-0f65",
             "hidden": false,
             "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
+            "targetId": "6347-29f0-2349-280d",
             "modifiers": [
               {
                 "type": "set",
@@ -1671,7 +1671,7 @@
             "id": "856e-a76b-8d41-3c94",
             "hidden": false,
             "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
+            "targetId": "6347-29f0-2349-280d",
             "modifiers": [
               {
                 "type": "set",
@@ -1744,7 +1744,7 @@
             "id": "1939-30d5-9a8d-077a",
             "hidden": false,
             "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
+            "targetId": "6347-29f0-2349-280d",
             "modifiers": [
               {
                 "type": "set",
@@ -1817,7 +1817,7 @@
             "id": "ed27-33c2-b142-dfd4",
             "hidden": false,
             "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
+            "targetId": "6347-29f0-2349-280d",
             "modifiers": [
               {
                 "type": "set",
@@ -3479,7 +3479,7 @@
             "id": "bdd5-a231-12b1-0314",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -3587,7 +3587,7 @@
             "id": "b6d2-4713-54c4-0362",
             "hidden": false,
             "type": "rule",
-            "targetId": "3be4-de2e-abce-247a",
+            "targetId": "44cf-ab36-d847-0992",
             "modifiers": [
               {
                 "type": "set",
@@ -3608,7 +3608,7 @@
             "id": "6996-5562-de3e-37fa",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -3789,7 +3789,7 @@
             "id": "7628-5a6a-b227-d2b0",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -3864,7 +3864,7 @@
             "id": "7e6d-2435-7b2f-6e27",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -3937,7 +3937,7 @@
             "id": "cc4c-ca64-3d42-959a",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -3996,7 +3996,7 @@
             "id": "2934-f425-f98c-de62",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -4083,7 +4083,7 @@
             "id": "965e-212c-9834-e147",
             "hidden": false,
             "type": "rule",
-            "targetId": "3be4-de2e-abce-247a",
+            "targetId": "44cf-ab36-d847-0992",
             "modifiers": [
               {
                 "type": "set",
@@ -4170,7 +4170,7 @@
             "id": "de9a-70f0-9e33-6540",
             "hidden": false,
             "type": "rule",
-            "targetId": "3be4-de2e-abce-247a",
+            "targetId": "44cf-ab36-d847-0992",
             "modifiers": [
               {
                 "type": "set",
@@ -4288,7 +4288,7 @@
             "id": "3616-6b18-5d29-c05d",
             "hidden": false,
             "type": "rule",
-            "targetId": "3be4-de2e-abce-247a",
+            "targetId": "44cf-ab36-d847-0992",
             "modifiers": [
               {
                 "type": "set",
@@ -4632,7 +4632,7 @@
             "id": "0eb9-9460-2705-7e4a",
             "hidden": false,
             "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
+            "targetId": "6347-29f0-2349-280d",
             "modifiers": [
               {
                 "type": "set",
@@ -4712,7 +4712,7 @@
             "id": "dd5b-110b-e389-3c1d",
             "hidden": false,
             "type": "rule",
-            "targetId": "26f7-bec6-599d-285f"
+            "targetId": "74b0-4876-a41c-6856"
           },
           {
             "name": "Unwieldy",
@@ -6677,7 +6677,20 @@
                     "type": "add",
                     "value": "7d7f-a3fb-88b6-8a94",
                     "field": "category",
-                    "scope": "caab-f843-e685-d7f9"
+                    "scope": "root-entry"
+                  },
+                  {
+                    "type": "set",
+                    "value": "Arch Overlord",
+                    "field": "name",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "Arch Overlord",
+                    "field": "name",
+                    "scope": "parent"
                   }
                 ],
                 "sortIndex": 11,
@@ -6772,7 +6785,8 @@
             "type": "rule",
             "targetId": "919d-8ad9-f565-2b64"
           }
-        ]
+        ],
+        "sortIndex": 1
       },
       {
         "type": "upgrade",
@@ -6848,7 +6862,7 @@
             "id": "308b-cf1b-a1e1-5189",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -6894,7 +6908,7 @@
             "id": "9c4d-a6bb-84ba-5731",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -7043,7 +7057,7 @@
             "id": "657e-812a-29d3-ed5e",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -7096,7 +7110,7 @@
             "id": "0c23-ee7f-7ea0-bfd5",
             "hidden": false,
             "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
+            "targetId": "ab6b-cbef-cace-68c2",
             "modifiers": [
               {
                 "type": "set",
@@ -7175,6 +7189,662 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Mega Warboss",
+        "hidden": false,
+        "id": "4149-c85e-c5d4-e471",
+        "sortIndex": 2,
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "5619-8bd3-e176-9ea5",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "7a8d-990c-2ac6-9062",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Mega Warboss",
+            "hidden": false,
+            "id": "2556-77fc-135a-9865",
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "b187-a43c-a9cb-3b4b",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "0797-2495-8ebb-4705",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Heavy",
+                "hidden": false,
+                "id": "c39e-75f8-1151-8d6e",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              },
+              {
+                "name": "Warboss",
+                "hidden": false,
+                "id": "613a-0615-c8cc-7bee",
+                "targetId": "c65d-d77d-ff38-c6f1",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dd14-637c-210d-fe1d-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dd14-637c-210d-fe1d-max"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 115
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Mega Warboss",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "6f21-6633-d359-3644",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Must take one of the following",
+                "id": "6212-842c-0996-a5c6",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "428f-7b4c-96b3-0074-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "428f-7b4c-96b3-0074-max"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Shoota",
+                    "hidden": false,
+                    "id": "dfd9-52de-19e6-b9a9",
+                    "type": "selectionEntry",
+                    "targetId": "6852-fe5d-9ff0-b5fb",
+                    "comment": "Twin-linked",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Twin-linked",
+                        "hidden": false,
+                        "id": "d10f-c03f-5658-d98a",
+                        "type": "selectionEntryGroup",
+                        "targetId": "b19d-86be-3758-3e72"
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Twin-linked",
+                        "id": "8f50-753f-1b51-80b0",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "23d2-bdd7-3df1-be63"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "prepend",
+                        "value": "Twin-linked",
+                        "field": "name",
+                        "join": " "
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Kombi Weapon with Rokkit Launcha",
+                    "hidden": false,
+                    "id": "5f94-d82e-c31c-5b63",
+                    "type": "selectionEntry",
+                    "targetId": "a3bf-d528-eb9e-d7a3",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Kombi Weapon with Skorcha",
+                    "hidden": false,
+                    "id": "1621-3c4c-a634-645e",
+                    "type": "selectionEntry",
+                    "targetId": "6c5d-feb3-0ee3-f680",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 7
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 2,
+                "defaultSelectionEntryId": "dfd9-52de-19e6-b9a9"
+              }
+            ],
+            "sortIndex": 1,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Power Klaw",
+                "hidden": false,
+                "id": "901a-01df-94ad-fcfa",
+                "type": "selectionEntry",
+                "targetId": "dd8d-dd3a-1585-f272",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "15d0-be2b-67ed-24d0-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "15d0-be2b-67ed-24d0-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Mega Armour",
+                "hidden": false,
+                "id": "d4f2-ddba-9a15-9112",
+                "type": "selectionEntry",
+                "targetId": "d7aa-a58f-7625-655a",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "71fb-57ae-b222-67b4-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "71fb-57ae-b222-67b4-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Deflektor",
+                "hidden": false,
+                "id": "7fbd-9ec7-9ca5-f34e",
+                "type": "selectionEntry",
+                "targetId": "f314-3ec3-d12b-425f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "97cb-6cb6-2980-8f92"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "eb52-5274-43c7-ba7a"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Stikkbombs",
+                "hidden": false,
+                "id": "2f1c-4e85-a2b2-b7b7",
+                "type": "selectionEntry",
+                "targetId": "9c17-caa4-72ee-1545",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9034-2f24-fc72-cec5"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5a02-ba70-e657-2900"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Ammo Runt",
+                "hidden": false,
+                "id": "00e8-6157-f72b-dc83",
+                "type": "selectionEntry",
+                "targetId": "8669-6f17-cca7-fae0",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 3,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "846f-7cd8-d4e1-4fbe"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 3
+                  }
+                ],
+                "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Attack Squig",
+                "hidden": false,
+                "id": "6fa9-8b4b-474e-96bf",
+                "type": "selectionEntry",
+                "targetId": "1da7-6195-c3a0-ca4c",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3dbe-4aaf-de7d-a847"
+                  }
+                ],
+                "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Bosspole",
+                "hidden": false,
+                "id": "5fdc-f7c3-39ac-8faf",
+                "type": "selectionEntry",
+                "targetId": "7df6-6fac-17eb-9f03",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "03fe-5a9e-ad6b-203c"
+                  }
+                ],
+                "sortIndex": 5
+              },
+              {
+                "import": true,
+                "name": "Gitfinda",
+                "hidden": false,
+                "id": "7a89-065d-e533-9c55",
+                "type": "selectionEntry",
+                "targetId": "68ae-ec45-4d58-8c2a",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "da72-c06b-ac42-7b27"
+                  }
+                ],
+                "sortIndex": 6
+              },
+              {
+                "import": true,
+                "name": "Iron Gob / Big Horns",
+                "hidden": false,
+                "id": "2f55-c208-e425-67c8",
+                "type": "selectionEntry",
+                "targetId": "7cda-0814-d873-b9cd",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d483-5652-8d84-1931"
+                  }
+                ],
+                "sortIndex": 7
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "41d5-0c0d-666f-654e",
+                "type": "selectionEntry",
+                "targetId": "107b-d96b-ec75-67be",
+                "sortIndex": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Mega Arch Overlord",
+                "hidden": false,
+                "id": "cd93-12d2-f106-1fb6",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "shared": true,
+                    "id": "5ac4-5344-4929-e468",
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 35
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "5",
+                    "field": "cdc0-9287-7039-4792",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "5",
+                    "field": "edda-ee37-03b4-f91f",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "10",
+                    "field": "d29a-9b6f-13a6-b7a8",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "add",
+                    "value": "7d7f-a3fb-88b6-8a94",
+                    "field": "category",
+                    "scope": "root-entry"
+                  },
+                  {
+                    "type": "set",
+                    "value": "Mega Arch Overlord",
+                    "field": "name",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "Mega Arch Overlord",
+                    "field": "name",
+                    "scope": "parent"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Fear",
+                    "id": "dc9c-f2dc-68df-87a0",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "b19f-31c5-018a-932e",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "1",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Biggest and Best",
+                    "id": "6c78-ff89-b5a2-17dd",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "33cd-4d5a-c16c-dd92"
+                  }
+                ],
+                "sortIndex": 8
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Battle-hardened",
+            "id": "89a9-1493-295e-4726",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "76cb-bd90-ecb1-941b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Bulky",
+            "id": "031e-bef5-5bb2-a99e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8317-bc69-b786-390d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "'Ere We Go!",
+            "id": "2c48-8a1b-b0e6-ea0e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5422-0492-0f03-2969"
+          },
+          {
+            "name": "Furious Charge",
+            "id": "93db-b014-3cf9-629c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7281-8b61-791e-c0f1"
+          },
+          {
+            "name": "Independent Character",
+            "id": "61d5-5ad9-1e91-30ba",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Mob Rule",
+            "id": "889c-e552-18a3-b1d4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "123e-d00a-177a-b419"
+          },
+          {
+            "name": "Relentless",
+            "id": "d90c-f527-e244-0cf1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "919d-8ad9-f565-2b64"
           }
         ]
       }
@@ -7590,6 +8260,30 @@
         "id": "33cd-4d5a-c16c-dd92",
         "hidden": false,
         "description": "An army must be at least 2,000 points in size to include a model with the Biggest and Best special rule. In addition, an army may only include a maximum of one model with the Biggest and Best special rule. This counts across all Detachments of an army.\n\nA model with the Biggest and Best special rule must be the Warlord. An army that contains a model with the Biggest and Best special rule as its Warlord may use the Waaagh! Advanced Reaction twice per battle, as long as the Warlord has not been removed as a casualty."
+      },
+      {
+        "name": "Detonation",
+        "id": "74b0-4876-a41c-6856",
+        "hidden": false,
+        "description": "A weapon with this special rule may only be used to attack models of the Vehicle, Dreadnought or Automata Unit Types, any model with a Movement Characteristic of 0 or ‘-’, or Buildings or Fortifications. Furthermore, a model that is chosen to attack with a weapon with this special rule during the Assault phase may only make a single attack in the Fight sub-phase, regardless of its Attacks Characteristic and any bonus attacks from Charging or other special rules."
+      },
+      {
+        "name": "Brutal",
+        "id": "ab6b-cbef-cace-68c2",
+        "hidden": false,
+        "description": "When a model is allocated a Wound inflicted by a weapon with this special rule, it does not suffer only one Wound but instead suffers a number of Wounds equal to the number in brackets associated with the specific variant of this special rule, with all of the Wounds inflicted using the same AP and special rules as that of the initial Wound. Roll to save against each Wound inflicted separately, but note that Wounds caused in excess of a given model’s remaining Wounds do not spill over to other models and are lost. This special rule has no effect on models that do not have a Toughness value."
+      },
+      {
+        "name": "Breaching",
+        "id": "6347-29f0-2349-280d",
+        "hidden": false,
+        "description": "When rolling To Wound for a model that has the Breaching (X) special rule, or is attacking with a weapon that has the Breaching (X) special rule, for each To Wound roll equal to or higher than the value listed in brackets, the controlling player must resolve these wounds at AP 2 instead of the weapon’s normal AP value. This rule has no effect on models that do not have Wounds, such as models with the Vehicle Unit Type."
+      },
+      {
+        "name": "Reach",
+        "id": "44cf-ab36-d847-0992",
+        "hidden": false,
+        "description": "A model making attacks as part of an Assault using a weapon with this special rule, adds the value of (X) that is included as part of this special rule to its Initiative Characteristic. If a model has more than one weapon with this special rule then that model only increases the value of its Initiative by the value of the special rule on the weapon whose profile is used by that model to attack during the Fight sub-phase. A weapon that is not used to attack does not modify the model’s Initiative Characteristic – models that may attack with more than one weapon, or models claiming the bonus for having a second weapon, may only add the value of the highest variant of this special rule and do not add the values together."
       }
     ],
     "sharedProfiles": [
@@ -7636,20 +8330,20 @@
         "id": "2831-a876-4776-e6a0",
         "type": "selectionEntry",
         "targetId": "cae2-f2d4-6853-6a85"
+      },
+      {
+        "import": true,
+        "name": "Mega Warboss",
+        "hidden": false,
+        "id": "708c-808f-1ed1-82ab",
+        "type": "selectionEntry",
+        "targetId": "4149-c85e-c5d4-e471"
       }
     ],
     "type": "catalogue",
-    "catalogueLinks": [
-      {
-        "type": "catalogue",
-        "name": "Space Marines",
-        "id": "15d3-d3a5-5c3e-11f2",
-        "targetId": "0c55-5a03-a16a-69cd"
-      }
-    ],
     "forceEntries": [
       {
-        "name": "Orks - Primary Detachment",
+        "name": "Primary Detachment",
         "id": "daa9-dfa0-e722-6046",
         "hidden": false,
         "categoryLinks": [
@@ -7900,6 +8594,21 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "notInstanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "2afc-37c1-2fb2-1f08",
+                "shared": true
               }
             ]
           }
