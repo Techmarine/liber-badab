@@ -1,0 +1,5894 @@
+{
+  "catalogue": {
+    "library": true,
+    "id": "2afc-37c1-2fb2-1f08",
+    "name": "Orks",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "sharedSelectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Warlord",
+        "hidden": false,
+        "id": "107b-d96b-ec75-67be",
+        "selectionEntryGroups": [
+          {
+            "name": "Warlord Trait",
+            "id": "07b3-faf9-71f7-b56a",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Prophet of Waaagh!",
+                "hidden": false,
+                "id": "ba76-52a7-ebdc-f375",
+                "rules": [
+                  {
+                    "name": "Prophet of Waaagh!",
+                    "id": "5eea-1348-17dd-4386",
+                    "hidden": false,
+                    "description": "A Warlord with this Trait and any unit they have joined gain the Crusader and Stubborn special rules. The Warlord also gains the Fear (1) special rule. If the Warlord already has the Fear (X) special rule or gains it by any other means, the value in brackets is increased by +1 instead. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty."
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Crusader",
+                    "id": "bbb5-ee4b-9973-8618",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d372-1b73-b5c5-5dff"
+                  },
+                  {
+                    "name": "Stubborn",
+                    "id": "1b18-949a-132e-d7e2",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fdf1-31bc-4796-fb3d"
+                  },
+                  {
+                    "name": "Fear",
+                    "id": "d0a8-503a-9e93-a854",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "b19f-31c5-018a-932e",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "1",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Brutal but Kunnin'",
+                "hidden": false,
+                "id": "e6be-d10d-b12c-dee8",
+                "rules": [
+                  {
+                    "name": "Brutal but Kunnin'",
+                    "id": "827a-52da-8bff-cebd",
+                    "hidden": false,
+                    "description": "A Warlord with this Trait and any unit they have joined gain the Hatred special rule, and any Melee weapons wielded by a Warlord with this Trait gain the Brutal (2) special rule. If the Warlord’s Melee weapons already have the Brutal (X) special rule (or otherwise gain it), the number in brackets is increased by +1 instead. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty."
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Hatred",
+                    "id": "4725-a910-8a4c-a512",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "bacb-64aa-bb42-4c9d"
+                  }
+                ],
+                "comment": "TODO: ADD BRUTAL (2) TO EACH WEAPON"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Kunnin' but Brutal",
+                "hidden": false,
+                "id": "c78f-0f9f-6db3-ae54",
+                "rules": [
+                  {
+                    "name": "Kunnin' but Brutal",
+                    "id": "ce48-e8c4-cf0f-9575",
+                    "hidden": false,
+                    "description": "A Warlord with this Trait gains the It Will Not Die (5+) special rule, and the ranged weapons of the Warlord and any unit they have joined gain the More Dakka (1) special rule. If the Warlord’s or the unit’s ranged weapons already have the More Dakka (X) special rule (or otherwise gain it), the number in brackets is increased by +1 for that weapon instead. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty."
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "It Will not Die",
+                    "id": "757e-84ae-e695-c880",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "cc45-e856-80f1-af2f",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "5+",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ],
+                "comment": "TODO: ADD MORE DAKKA (1) TO EACH WEAPON"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Bomb Squig",
+        "hidden": false,
+        "id": "b7ae-b669-aa15-1a40",
+        "profiles": [
+          {
+            "name": "Bomb Squig",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "ab0e-145a-d996-5632",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "18\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Armourbane (Ranged), One Shot, Scuttle Scuttle Blam!"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "59b8-5e90-cc5c-16ba",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Ranged",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "One Shot",
+            "id": "425c-7f1c-e158-a18f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Scuttle Scuttle Blam!",
+            "id": "fca0-9ffc-d651-d6e6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bdd9-3d74-3063-4109"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Big Bomb",
+        "hidden": false,
+        "id": "77b2-501d-3a3a-9524",
+        "profiles": [
+          {
+            "name": "Big Bomb",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "9151-5d9e-23d5-dea4",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Bomb 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), One Shot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "36b1-4a8c-7664-bd40",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "One Shot",
+            "id": "fda0-8ea5-8e8d-cb19",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Boom Bomb",
+        "hidden": false,
+        "id": "f31a-dc8a-9796-bc11",
+        "profiles": [
+          {
+            "name": "Boom Bomb",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "b4de-0388-4f93-92fb",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Bomb 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Armourbane (Ranged), Large Blast (5\"), Screamin’ Descent, One Shot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "db06-1ad8-87c6-6b37",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Ranged",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Blast",
+            "id": "708d-8f34-ef5b-e747",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              },
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Screamin' Descent",
+            "id": "9283-9ae2-088e-91cd",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "85c5-4131-10c6-f5e3"
+          },
+          {
+            "name": "One Shot",
+            "id": "884d-c76d-360a-2abc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Burna Bomb",
+        "hidden": false,
+        "id": "f01e-ed43-e7cb-db24",
+        "profiles": [
+          {
+            "name": "Burna Bomb",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "8d41-3c86-1403-9b0e",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Bomb 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Large Blast (5\"), Ignores Cover, One Shot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "36fa-5249-571a-7854",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              },
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "One Shot",
+            "id": "ff53-2063-a674-3d2c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Ignores Cover",
+            "id": "9956-2c9b-e393-35a9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6917-7b87-ca40-5914"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Burna",
+        "hidden": false,
+        "id": "7837-6478-96e3-234d",
+        "profiles": [
+          {
+            "name": "Burna (Ranged)",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "2da9-5b70-b078-f4f1",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "T"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          },
+          {
+            "name": "Burna (Melee)",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "8905-0677-5cda-b04a",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Breaching (5+), Two-handed"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "0669-5d86-e66f-1393",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Two-handed",
+            "id": "2738-2b6d-b0ff-6545",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9c96-f071-03a6-7593"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Skorcha",
+        "hidden": false,
+        "id": "686e-3b74-8a5d-a566",
+        "profiles": [
+          {
+            "name": "Skorcha",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "56a2-5b16-a9ca-e63c",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "T"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Skorcha Missile",
+        "hidden": false,
+        "id": "fd99-d64a-19a9-3b98",
+        "profiles": [
+          {
+            "name": "Skorcha Missile",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "a8eb-87e4-a246-7345",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Ignores Cover, One Shot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "1844-13f7-61c9-57e1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "One Shot",
+            "id": "5167-1ddd-b560-ff36",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Ignores Cover",
+            "id": "c2b3-f62d-f175-ee09",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6917-7b87-ca40-5914"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Grot Blasta",
+        "hidden": false,
+        "id": "5f1d-b4ac-8ef9-b995",
+        "profiles": [
+          {
+            "name": "Grot Blasta",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "98b4-7e5d-43bd-45e4",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Grotzooka",
+        "hidden": false,
+        "id": "01c5-c813-7438-564d",
+        "profiles": [
+          {
+            "name": "Grotzooka",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "98ec-0dce-6e71-fd92",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "18\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 2"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\")"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "8055-444b-28b6-6c49",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kannon",
+        "hidden": false,
+        "id": "3094-a665-40d0-fcd0",
+        "profiles": [
+          {
+            "name": "Kannon - Frag",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "2c6a-ae39-1737-d251",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\")"
+              }
+            ]
+          },
+          {
+            "name": "Kannon - Shell",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "d949-cd45-7f1a-6fcc",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "904a-3f64-c765-687f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Lobba",
+        "hidden": false,
+        "id": "4a06-b4a6-6962-6337",
+        "profiles": [
+          {
+            "name": "Lobba",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "32ef-0b6c-579e-5266",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": " Barrage, Blast (3\")"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "0cd4-3d15-da9d-2a43",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Barrage",
+            "id": "dfce-3976-fcb1-228b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9687-76a5-98c6-200d"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Killkannon",
+        "hidden": false,
+        "id": "e14a-e2b4-32d6-5d70",
+        "profiles": [
+          {
+            "name": "Killkannon",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "bcb1-17e9-981d-b767",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Pinning"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "2820-e73d-d0b9-a022",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Pinning",
+            "id": "ccc1-885e-8b12-16d2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Supa Kannon",
+        "hidden": false,
+        "id": "ceff-b867-8433-0cad",
+        "profiles": [
+          {
+            "name": "Supa Kannon",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "3767-b852-ab46-4ec5",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "60\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "9"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Ordnance 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Large Blast (5\"), Brutal (2)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "2a4e-3646-65e7-6fe3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              },
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "id": "d5c7-87c8-1da9-d72a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Deff Kannon",
+        "hidden": false,
+        "id": "8741-f6b9-00c2-a1bd",
+        "infoLinks": [
+          {
+            "name": "Rending",
+            "id": "ecf1-9e54-6393-6d71",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Blast",
+            "id": "4330-2440-662c-8624",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              },
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "id": "f5e2-f634-01f5-214c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Deff Kannon",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "2bad-9971-bdf3-92e0",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "72\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "12"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Ordnance 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Large Blast (5\"), Brutal (3), Rending (4+)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Belly Gun",
+        "hidden": false,
+        "id": "a3c0-bfd8-f9e1-9e72",
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "cf1a-37f2-b28a-a562",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3D6\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Breaching",
+            "id": "4318-2666-969c-0f65",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Belly Gun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "a340-fec0-7b38-770b",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "72\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Ordnance 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3D6\"), Breaching (6+)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Bursta Kannon",
+        "hidden": false,
+        "id": "da87-c938-bad6-b0f3",
+        "profiles": [
+          {
+            "name": "Bursta Kannon",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "8724-a1a1-8127-8794",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "14"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Destroyer 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Large Blast (5\"), Concussive (3)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "5aa6-bef1-6d8c-e291",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Concussive",
+            "id": "6b43-bdcd-f38b-356e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "173b-6e52-4626-a146",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kombi Weapon with Rokkit Launcha",
+        "hidden": false,
+        "id": "a3bf-d528-eb9e-d7a3",
+        "infoLinks": [
+          {
+            "name": "Shoota (Primary)",
+            "id": "ab71-d618-89b4-ce44",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "a585-e8cc-7211-fafb"
+          },
+          {
+            "name": "One Shot",
+            "id": "c3b9-1080-c139-3e69",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Rokkit Launcha (Secondary)",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "13a5-739d-63ef-d26e",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "One Shot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kombi Weapon with Skorcha",
+        "hidden": false,
+        "id": "6c5d-feb3-0ee3-f680",
+        "infoLinks": [
+          {
+            "name": "Shoota (Primary)",
+            "id": "a424-b0ac-f51d-319c",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "a585-e8cc-7211-fafb"
+          },
+          {
+            "name": "One Shot",
+            "id": "8482-80e1-d56e-11fe",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Skorcha (Secondary)",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "3a7f-d832-be53-6f6f",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "T"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "One Shot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kustom Mega-blasta",
+        "hidden": false,
+        "id": "9cc1-a85d-a4c0-a277",
+        "profiles": [
+          {
+            "name": "Kustom Mega-blasta",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "11b6-e782-28b9-c30e",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blind, Breaching (4+), Gets Hot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blind",
+            "id": "d79a-4ef5-45c8-82e8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7566-b279-0ebd-607a"
+          },
+          {
+            "name": "Breaching",
+            "id": "856e-a76b-8d41-3c94",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Gets Hot",
+            "id": "cbde-7c89-1dc1-e307",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c7e6-c0f3-d0e4-4238"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kustom Mega-slugga",
+        "hidden": false,
+        "id": "df2a-cd2c-2fd2-ec71",
+        "profiles": [
+          {
+            "name": "Kustom Mega-slugga",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "352f-e667-1641-a31d",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Pistol 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blind, Breaching (4+), Gets Hot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blind",
+            "id": "9914-e953-797b-1fca",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7566-b279-0ebd-607a"
+          },
+          {
+            "name": "Breaching",
+            "id": "1939-30d5-9a8d-077a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Gets Hot",
+            "id": "a0f0-ae9a-d9ff-587d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c7e6-c0f3-d0e4-4238"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kustom Mega-kannon",
+        "hidden": false,
+        "id": "1e60-e5ff-0def-99c7",
+        "profiles": [
+          {
+            "name": "Kustom Mega-kannon",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "7d06-9a21-26de-5460",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Blind, Breaching (4+), Gets Hot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blind",
+            "id": "8308-a5eb-e034-4627",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7566-b279-0ebd-607a"
+          },
+          {
+            "name": "Breaching",
+            "id": "ed27-33c2-b142-dfd4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Gets Hot",
+            "id": "4c11-a521-cff3-fb3c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c7e6-c0f3-d0e4-4238"
+          },
+          {
+            "name": "Blast",
+            "id": "cd0f-4378-3790-81b2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Bubblechukka",
+        "hidden": false,
+        "id": "f48c-d61d-6d81-fb93",
+        "profiles": [
+          {
+            "name": "Bubblechukka",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "50b4-43d3-9475-ad02",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "D6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "D6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Large Blast (5\"), Unstable Field"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "e4a8-39ed-6622-91ea",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              },
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Unstable Field",
+            "id": "fa76-7dcf-bb32-cc18",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8e88-0efa-572a-b093"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Tellyport Blasta",
+        "hidden": false,
+        "id": "6546-2421-d738-6a0c",
+        "profiles": [
+          {
+            "name": "Tellyport Blasta",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "1d51-6d94-dd69-8adb",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Tellyported (6+)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "9ac0-4cc4-53e7-d357",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Tellyported",
+            "id": "0656-497f-321f-e69b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2d44-7947-3efb-4e86",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Tellyport Mega-blasta",
+        "hidden": false,
+        "id": "a507-ae89-d2c0-e417",
+        "profiles": [
+          {
+            "name": "Tellyport Mega-blasta",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "5ff5-8eb2-c486-fa9b",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "18\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Tellyported (6+)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "6d1f-87c9-fc7a-ecb0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Tellyported",
+            "id": "9fca-4964-f8fc-6dcf",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2d44-7947-3efb-4e86",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Shokk Attack Gun",
+        "hidden": false,
+        "id": "649a-7b6a-61cb-5799",
+        "profiles": [
+          {
+            "name": "Shokk Attack Gun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "431f-6be5-ba81-c847",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "60\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "2D6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Ordnance 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Large Blast (5\"), Pinning, Shokk Attack"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "f1c7-2006-b2b2-c51b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              },
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Pinning",
+            "id": "b68e-bc01-a410-6ca1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          },
+          {
+            "name": "Shokk Attack",
+            "id": "1819-6521-4660-8026",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c860-1a20-86b6-c0f8"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Smasha Gun",
+        "hidden": false,
+        "id": "cf97-5948-2557-3daf",
+        "profiles": [
+          {
+            "name": "Smasha Gun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "01e6-d236-78cc-51b8",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "D6+4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Concussive (2)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Concussive",
+            "id": "37b4-0ad4-5f7a-7d63",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "173b-6e52-4626-a146",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Traktor Kannon",
+        "hidden": false,
+        "id": "901b-ffcc-fe93-bf5b",
+        "profiles": [
+          {
+            "name": "Traktor Kannon",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "84e2-587e-cd04-49a7",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Skyfire, Snag"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Skyfire",
+            "id": "7981-4193-c0f8-7606",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "621c-c0ab-b8d5-916a"
+          },
+          {
+            "name": "Snag",
+            "id": "5287-e639-420b-ac9a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "db05-719c-f197-d89b"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Zzap Gun",
+        "hidden": false,
+        "id": "bd3c-3a23-71bd-4531",
+        "profiles": [
+          {
+            "name": "Zzap Gun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "1f93-474c-c9ab-da36",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "2D6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Exo-shock (5+), Gets Hot, Zzap"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Exoshock",
+            "id": "a7ae-eb20-f9ea-1bec",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cdfb-dd74-48fd-104c",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Gets Hot",
+            "id": "91cf-ea6f-cc79-bc98",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c7e6-c0f3-d0e4-4238"
+          },
+          {
+            "name": "Zzap",
+            "id": "f45b-8736-aa2f-4b07",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2846-c816-70c6-58ca"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Rokkit Launcha",
+        "hidden": false,
+        "id": "4a75-c17c-1088-b322",
+        "profiles": [
+          {
+            "name": "Rokkit Launcha",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "ce01-561a-06d1-6493",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Supa Rokkit",
+        "hidden": false,
+        "id": "f234-de17-ce4c-6bad",
+        "profiles": [
+          {
+            "name": "Supa Rokkit",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "0411-8681-d03c-15b8",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Large Blast (5\"), One Shot, Pinning"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "25c9-d8f9-66e8-e2a7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              },
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "One Shot",
+            "id": "9b98-dc69-927c-6ac9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Pinning",
+            "id": "d1b7-2f0a-4f3a-5649",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Slugga",
+        "hidden": false,
+        "id": "79e1-e59a-8c31-6767",
+        "profiles": [
+          {
+            "name": "Slugga",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "25a6-2a49-533a-de5f",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Pistol 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Shoota",
+        "hidden": false,
+        "id": "6852-fe5d-9ff0-b5fb",
+        "profiles": [
+          {
+            "name": "Shoota",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "c7e5-c152-5b77-0b68",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "18\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 2"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Dakkagun",
+        "hidden": false,
+        "id": "4bb7-934e-7063-f105",
+        "profiles": [
+          {
+            "name": "Dakkagun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "46c8-77ee-1da8-6a86",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "18\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 3"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Big Shoota",
+        "hidden": false,
+        "id": "af44-5da4-f49f-3409",
+        "profiles": [
+          {
+            "name": "Big Shoota",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "c3c5-76a0-9a6d-ca6b",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 3"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Concussive (1)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Concussive",
+            "id": "f26b-a817-94ec-1bed",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "173b-6e52-4626-a146",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Supa Shoota",
+        "hidden": false,
+        "id": "9db5-43d4-d510-5032",
+        "profiles": [
+          {
+            "name": "Supa Shoota",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "a738-7db6-f8a3-1b76",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 4"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Concussive",
+            "id": "53db-8d7b-0af2-bbd9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "173b-6e52-4626-a146",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Deffstorm Mega-shoota",
+        "hidden": false,
+        "id": "c069-ddb0-9297-e23a",
+        "profiles": [
+          {
+            "name": "Deffstorm Mega-shoota",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "94f4-112d-4d0b-3678",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 3D6"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Concussive (1)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Concussive",
+            "id": "6a2b-ab64-3b6e-e85c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "173b-6e52-4626-a146",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Gigashoota",
+        "hidden": false,
+        "id": "1fbd-64c9-4dcb-2eba",
+        "profiles": [
+          {
+            "name": "Gigashoota",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "52bb-4b1b-b02f-d461",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 6D6"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Concussive (1)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Concussive",
+            "id": "e2ab-dffd-a98a-985d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "173b-6e52-4626-a146",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Flakka Gunz",
+        "hidden": false,
+        "id": "e79b-eebc-09b8-c1c6",
+        "profiles": [
+          {
+            "name": "Flakka Gunz",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "412a-ca82-05ca-d0ca",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 4"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Skyfire"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Skyfire",
+            "id": "e4a9-fc7b-cc61-d76b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "621c-c0ab-b8d5-916a"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Supa-gatler",
+        "hidden": false,
+        "id": "a456-9010-a2a6-1808",
+        "profiles": [
+          {
+            "name": "Supa-gatler",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "81e5-ded1-c70f-2ad4",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 2D6"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Psycho-dakka-blasta, Whirrrr Click-click"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Psycho-dakka-blasta!",
+            "id": "b8cc-cf57-efc7-f63d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "383d-7217-b569-c4cd"
+          },
+          {
+            "name": "Whirrr Click-click",
+            "id": "3d79-a30d-d36f-54a1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dec4-e297-f772-0f69"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Deffgun",
+        "hidden": false,
+        "id": "d640-9c39-1253-c7f9",
+        "profiles": [
+          {
+            "name": "Deffgun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "6508-e9e0-f061-cbfa",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy D3"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Pinning, Rending (6+), Twin-linked"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Pinning",
+            "id": "f200-1812-2dc2-ca06",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          },
+          {
+            "name": "Rending",
+            "id": "6e44-4616-4131-4a47",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Twin-linked",
+            "id": "fa2c-278c-7f3e-051b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "23d2-bdd7-3df1-be63"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Lifta-droppa",
+        "hidden": false,
+        "id": "df51-d3a3-f5b9-1d90",
+        "profiles": [
+          {
+            "name": "Lifta-droppa",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "17b4-54b6-ed5f-d029",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "-"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Ordnance 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Lifta-droppa"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Lifta-droppa",
+            "id": "cc93-c566-0c1e-ab85",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "45f9-95d4-094e-e6c5"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Shokka Pistol",
+        "hidden": false,
+        "id": "4459-6f60-a726-40c6",
+        "profiles": [
+          {
+            "name": "Shokka Pistol",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "bf2d-47ba-cd19-64d4",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "8\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Pistol"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Haywire"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "4c8a-60a7-706b-91b8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Haywire",
+            "id": "cd72-14a8-06f4-39a3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6330-8635-5d8f-c1d6"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Thump Gun",
+        "hidden": false,
+        "id": "deaa-c28c-ba54-3c4d",
+        "profiles": [
+          {
+            "name": "Thump Gun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "1711-19c5-bca2-0311",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "18\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Concussive (2)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Concussive",
+            "id": "f0aa-e870-a1f2-e279",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "173b-6e52-4626-a146",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Snazzgun",
+        "hidden": false,
+        "id": "2652-6c39-1b09-f933",
+        "profiles": [
+          {
+            "name": "Snazzgun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "d258-97dd-3164-5834",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "D6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 3"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "More Dakka (1)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "More Dakka",
+            "id": "a385-2c99-54f2-1c36",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "be3f-8c18-d0f9-13a1",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Wreckin' Ball",
+        "hidden": false,
+        "id": "c8e8-aee3-d723-4e0a",
+        "profiles": [
+          {
+            "name": "Wreckin' Ball",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "db29-2766-23d5-8877",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "3\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "9"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault D3"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Wrecker"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Wrecker",
+            "id": "4a70-3ee9-f5f7-ceb5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "deaa-d027-e98b-e31b"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Choppa",
+        "hidden": false,
+        "id": "4acf-f0bd-1d20-d70f",
+        "profiles": [
+          {
+            "name": "Choppa",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "9e02-836f-6753-8e69",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Choppin' (6+)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Choppin'",
+            "id": "8764-31ad-20d1-25a2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8f19-dfc3-72de-7f20",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Big Choppa",
+        "hidden": false,
+        "id": "a3e8-e1ac-66a9-33a3",
+        "profiles": [
+          {
+            "name": "Big Choppa",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "fc08-65f4-e3e9-cc2a",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Choppin' (5+), Reach (1), Two-handed"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Choppin'",
+            "id": "78bb-618f-047e-f851",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8f19-dfc3-72de-7f20",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Reach",
+            "id": "b6d2-4713-54c4-0362",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3be4-de2e-abce-247a",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Two-handed",
+            "id": "5692-5b8e-95f7-63ad",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9c96-f071-03a6-7593"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mega Choppa",
+        "hidden": false,
+        "id": "2041-b4a4-a458-c16b",
+        "profiles": [
+          {
+            "name": "Mega Choppa",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "f4dd-4492-7467-2228",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "12"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Destructor, Shred"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Destructor",
+            "id": "c90c-5004-cb54-2e90",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0033-525f-6553-175c"
+          },
+          {
+            "name": "Shred",
+            "id": "87cb-805e-72db-7c02",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power Klaw",
+        "hidden": false,
+        "id": "dd8d-dd3a-1585-f272",
+        "profiles": [
+          {
+            "name": "Power Klaw",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "e282-dfb2-b5fa-d347",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "×2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Rending (6+), Unwieldy, Specialist Weapon"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rending",
+            "id": "e7b0-c411-d52c-2ef0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Unwieldy",
+            "id": "884d-8ca1-af50-c1b1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          },
+          {
+            "name": "Specialist Weapon",
+            "id": "c382-1f6d-fb03-1a77",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8bee-1459-6f2d-6ab6"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kan Klaw",
+        "hidden": false,
+        "id": "69a0-ef77-0202-71ad",
+        "profiles": [
+          {
+            "name": "Kan Klaw",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "9046-2113-adc0-cdf3",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Brutal (2)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Brutal",
+            "id": "7e6d-2435-7b2f-6e27",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Dread Klaw",
+        "hidden": false,
+        "id": "c902-aff0-9f8c-2253",
+        "profiles": [
+          {
+            "name": "Dread Klaw",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "1d9d-e048-94f2-a054",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "9"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Brutal (2), Murderous Strike (6+)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Murderous Strike",
+            "id": "94d7-66a8-25ff-77a4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5e54-e48c-3700-6d3e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "id": "cc4c-ca64-3d42-959a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Klaw of Gork (or Possibly Mork)",
+        "hidden": false,
+        "id": "beaf-b700-e683-061f",
+        "profiles": [
+          {
+            "name": "Klaw of Gork (or Possibly Mork)",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "942c-935a-9c48-35a4",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "10"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Brutal (2), Concussive (1), Murderous Strike (6+)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Brutal",
+            "id": "2934-f425-f98c-de62",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Murderous Strike",
+            "id": "cb86-78a3-8948-2859",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5e54-e48c-3700-6d3e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Concussive",
+            "id": "7d40-39a7-6037-739a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "173b-6e52-4626-a146",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Grabba Stikk",
+        "hidden": false,
+        "id": "2c57-60de-4576-e863",
+        "profiles": [
+          {
+            "name": "Grabba Stikk",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "7dd8-081c-f3db-33c8",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Reach (1), Throttle (1), Two-handed"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Reach",
+            "id": "965e-212c-9834-e147",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3be4-de2e-abce-247a",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Throttle",
+            "id": "065b-b9fb-1b48-fad9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c727-3e0f-ee27-719f"
+          },
+          {
+            "name": "Two-handed",
+            "id": "829f-06c7-4b35-6e8b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9c96-f071-03a6-7593"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Grot Prod",
+        "hidden": false,
+        "id": "4ebe-da42-b635-1381",
+        "profiles": [
+          {
+            "name": "Grot Prod",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "ea88-273a-bbf6-51ae",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Measured Strike, Reach (1), Two-handed"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Measured Strike",
+            "id": "7f47-59e3-7eb8-bbe9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b1d2-e74e-4625-3d62"
+          },
+          {
+            "name": "Two-handed",
+            "id": "0a6f-6f6c-5e80-eae9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9c96-f071-03a6-7593"
+          },
+          {
+            "name": "Reach",
+            "id": "de9a-70f0-9e33-6540",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3be4-de2e-abce-247a",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "'Urty Syringe",
+        "hidden": false,
+        "id": "5834-966e-30f4-feaa",
+        "profiles": [
+          {
+            "name": "'Urty Syringe",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "d592-d3b7-6527-63a2",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Poisoned (4+)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Poisoned",
+            "id": "f312-b442-5c58-1e26",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Weirdboy Staff",
+        "hidden": false,
+        "id": "8e15-6b04-45db-ff17",
+        "profiles": [
+          {
+            "name": "Weirdboy Staff",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "4531-1f16-735a-1b92",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Reach (1), Force"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Reach",
+            "id": "3616-6b18-5d29-c05d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3be4-de2e-abce-247a",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Force",
+            "id": "e412-5e45-0402-2a97",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e7ad-a93b-a64d-bb10"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Killsaw",
+        "hidden": false,
+        "id": "c61e-3e60-0737-07f8",
+        "profiles": [
+          {
+            "name": "Killsaw",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "cb96-7a09-4bc8-b45f",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "×2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Armourbane (Melee), Shred, Specialist Weapon,\nUnwieldy"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "fe28-33a8-da2b-b5e0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Melee",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Shred",
+            "id": "b806-9887-a04c-aa46",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          },
+          {
+            "name": "Specialist Weapon",
+            "id": "6fa9-6cf4-cc4e-9db9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8bee-1459-6f2d-6ab6"
+          },
+          {
+            "name": "Unwieldy",
+            "id": "90c6-9480-2e64-d33b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kan Saw",
+        "hidden": false,
+        "id": "958e-ade2-2721-9cde",
+        "profiles": [
+          {
+            "name": "Kan Saw",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "5bb6-d580-0ba2-1d3c",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Armourbane (Melee), Shred"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Shred",
+            "id": "3247-d2c1-6ec1-ad37",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          },
+          {
+            "name": "Armourbane",
+            "id": "6a4a-cb2f-99af-1583",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Melee",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Dread Saw",
+        "hidden": false,
+        "id": "1226-e0df-5898-0215",
+        "profiles": [
+          {
+            "name": "Dread Saw",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "590e-afab-770b-f936",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "9"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Armourbane (Melee), Shred"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "5142-83ca-a722-d46a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Melee",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Shred",
+            "id": "4ee4-16df-567e-9ed8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mega Killsaw",
+        "hidden": false,
+        "id": "288d-b5b0-305d-76f3",
+        "profiles": [
+          {
+            "name": "Mega Killsaw",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "4777-06f7-be22-c509",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "12"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Armourbane (Melee), Shred"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "404f-b9c6-2ad2-9204",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Melee",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Shred",
+            "id": "8d41-4206-d6eb-3326",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Breacha Ram",
+        "hidden": false,
+        "id": "7d85-4ed9-66b9-9410",
+        "profiles": [
+          {
+            "name": "Breacha Ram",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "a692-62dc-4fce-fa3c",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Breaching (4+), Two-handed, Unwieldy, Wrecker"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "0eb9-9460-2705-7e4a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Two-handed",
+            "id": "5ce5-6b43-35b5-76c9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9c96-f071-03a6-7593"
+          },
+          {
+            "name": "Unwieldy",
+            "id": "7db2-d0f4-e5dc-acdc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          },
+          {
+            "name": "Wrecker",
+            "id": "71ed-dd86-dd6a-ba74",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "deaa-d027-e98b-e31b"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Tankbust Bombs",
+        "hidden": false,
+        "id": "60e5-f39d-b178-a430",
+        "profiles": [
+          {
+            "name": "Tankbust Bombs",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "679c-cd14-a8fb-26de",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Detonation, Unwieldy, Armourbane (Melee), Instant Death"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Detonation",
+            "id": "dd5b-110b-e389-3c1d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "26f7-bec6-599d-285f"
+          },
+          {
+            "name": "Unwieldy",
+            "id": "dbdd-a5ea-cb6a-884c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          },
+          {
+            "name": "Armourbane",
+            "id": "ea8c-9c8b-fdea-c2d6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Melee",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Instant Death",
+            "id": "6910-dd08-66ba-88b3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0561-70c5-a18f-6672"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Tankhammer",
+        "hidden": false,
+        "id": "c7be-bc6a-69bf-5f1b",
+        "profiles": [
+          {
+            "name": "Tankhammer",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "bc06-43a9-0e8f-55eb",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Two-handed, Unwieldy"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Unwieldy",
+            "id": "0d84-381d-aa0f-9f94",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          },
+          {
+            "name": "Two-handed",
+            "id": "7c51-4574-cbe2-db55",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9c96-f071-03a6-7593"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "'Ard Case",
+        "hidden": false,
+        "id": "6d1d-57f0-cf07-23f6",
+        "rules": [
+          {
+            "name": "'Ard Case",
+            "id": "faf1-3aa2-acc4-d21b",
+            "hidden": false,
+            "description": "A Vehicle with an ‘ard case loses the Open-topped Sub-type. Access Points for the Vehicle with an ‘ard case will be listed in the unit entry."
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "remove",
+            "value": "896d-742a-d60c-6429",
+            "field": "category",
+            "scope": "parent"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "'Eavy Armour",
+        "hidden": false,
+        "id": "e48a-d376-60d9-dbc6",
+        "rules": [
+          {
+            "name": "'Eavy Armour",
+            "id": "6da9-66b9-e100-2bb0",
+            "hidden": false,
+            "description": "‘Eavy armour confers a 4+ Armour Save. If a majority of models in a unit with the Light Sub-type are equipped with ‘eavy armour, the entire unit loses the Light Sub-type."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "'Eavy Plates",
+        "hidden": false,
+        "id": "c005-0c7e-668e-09b9",
+        "rules": [
+          {
+            "name": "'Eavy Plates",
+            "id": "4771-fb90-a0fc-87d0",
+            "hidden": false,
+            "description": "A Vehicle with ‘eavy plates increases the Armour Value on its Front Facing by +2 and on its Side Facing by +1."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Deflektor",
+        "hidden": false,
+        "id": "f314-3ec3-d12b-425f",
+        "rules": [
+          {
+            "name": "Deflektor",
+            "id": "7491-cb30-059e-cfd5",
+            "hidden": false,
+            "description": "A model with a deflektor gains a 4+ Invulnerable Save."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kustom Force Field",
+        "hidden": false,
+        "id": "4eda-06b5-b6e3-b20c",
+        "rules": [
+          {
+            "name": "Kustom Force Field",
+            "id": "36c3-baa5-63c0-2590",
+            "hidden": false,
+            "description": "The bearer, and all models within 6\", receive a 5+ Invulnerable Save against any shooting attacks. If the bearer is embarked in a Vehicle, then the Vehicle receives\na 5+ Invulnerable Save against any shooting attacks instead."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Lucky Tattoos",
+        "hidden": false,
+        "id": "e283-72e1-4bd4-5c3d",
+        "rules": [
+          {
+            "name": "Lucky Tattoos",
+            "id": "458a-f7f3-e479-155e",
+            "hidden": false,
+            "description": "A model with lucky tattoos gains a 6+ Invulnerable Save."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mega Armour",
+        "hidden": false,
+        "id": "d7aa-a58f-7625-655a",
+        "rules": [
+          {
+            "name": "Mega Armour",
+            "id": "1474-0cb4-9bbf-7e97",
+            "hidden": false,
+            "description": "Mega armour confers a 2+ Armour Save, and includes a cybork body and an iron gob. A model in Mega Armour has the Slow and Purposeful special rule."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Slow and Purposeful",
+            "id": "f477-4290-763d-019e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a43c-e082-b874-e2f6"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Iron Gob",
+            "hidden": false,
+            "id": "0657-7cb6-4e37-4f14",
+            "type": "selectionEntry",
+            "targetId": "7cda-0814-d873-b9cd",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4bd4-0330-64b2-66fc-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4bd4-0330-64b2-66fc-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Cybork Body",
+            "hidden": false,
+            "id": "13ca-8107-e9e5-167a",
+            "type": "selectionEntry",
+            "targetId": "3dc4-f923-7f7b-d4ee",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ba56-5abe-1de3-9cea-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ba56-5abe-1de3-9cea-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Bosspole",
+        "hidden": false,
+        "id": "7df6-6fac-17eb-9f03",
+        "rules": [
+          {
+            "name": "Bosspole",
+            "id": "0e83-4582-259f-5f99",
+            "hidden": false,
+            "description": "A model with a bosspole gains the Chosen Warriors special rule, unless the model already has the Character Unit Sub-type. In addition, a unit that includes at least\none model with a bosspole adds +1 to the Wounds score used to determine if they win a Combat in the Assault phase. Furthermore, a unit that contains one or more\nbosspoles may choose to inflict a single Strength 4 AP - hit on the unit to re-roll a failed Morale check."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Chosen Warriors",
+            "id": "040c-ef87-c227-3884",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2d8a-fe4e-0823-4918",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "c0e6-28aa-5286-2fa2",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Waaagh! Banner",
+        "hidden": false,
+        "id": "dbca-7844-f48a-5d3e",
+        "rules": [
+          {
+            "name": "Waaagh! Banner",
+            "id": "0c58-99e0-5dea-729b",
+            "hidden": false,
+            "description": "An army may only include a single Waaagh! banner. All models in a unit that includes a Waaagh! banner gain the Fearless special rule and the Line Sub-type\nas long as they remain part of that unit. All benefits are lost immediately if the model with the Waaagh! banner is removed as a casualty."
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "c7d7-d21f-49bb-eb04",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Fearless",
+            "id": "37b9-774b-4c39-f817",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6973-2ab3-7e6b-e323"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "efc6-682f-b0cb-cfa2",
+            "field": "category",
+            "scope": "unit",
+            "affects": "self.entries.model"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Big Horns",
+        "hidden": false,
+        "id": "4c0b-ee72-b6ce-c9a9",
+        "infoLinks": [
+          {
+            "name": "Big Horns / Iron Gob",
+            "id": "b424-10b4-4839-0630",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a6ed-0810-c854-b138"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Iron Gob",
+        "hidden": false,
+        "id": "7cda-0814-d873-b9cd",
+        "infoLinks": [
+          {
+            "name": "Big Horns / Iron Gob",
+            "id": "e4bb-366b-0e7d-9e1c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a6ed-0810-c854-b138"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Billowing Fumes",
+        "hidden": false,
+        "id": "3b3d-67db-fcf8-bb21",
+        "rules": [
+          {
+            "name": "Billowing Fumes",
+            "id": "0206-a4ee-f4fc-a3ef",
+            "hidden": false,
+            "description": "A Vehicle with billowing fumes that chooses to move Flat Out gains the Shrouded (5+) special rule until the start of the controlling player’s next turn."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Boarding Plank",
+        "hidden": false,
+        "id": "2803-9eb9-ad23-ff34",
+        "rules": [
+          {
+            "name": "Boarding Plank",
+            "id": "ae40-ca58-ae0b-5146",
+            "hidden": false,
+            "description": "If a unit disembarks from a Vehicle with the Open-topped Sub-type and a boarding plank and declares a charge in the same turn, it adds +2 to its charge distance (to a maximum of 12)."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Burna Exhaust",
+        "hidden": false,
+        "id": "e4f8-e72b-1166-b6f9",
+        "rules": [
+          {
+            "name": "Burna Exhaust",
+            "id": "1ca9-23df-bad4-0e28",
+            "hidden": false,
+            "description": "Any unit, friend or foe, within 3\" of a Vehicle with a Burna Exhaust and at least partially within either its Side Facings or Rear Facing when the Vehicle begins moving suffers D3 Strength 4 AP 5 Hits. This attack counts as an attack from a Flame weapon."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Comms",
+        "hidden": false,
+        "id": "3166-6a0f-f79a-4177",
+        "rules": [
+          {
+            "name": "Comms",
+            "id": "9db0-7a6b-a241-744f",
+            "hidden": false,
+            "description": "As long as a model with comms is on the battlefield (but not in Reserves) then all Reserves rolls made by the controlling player may be re-rolled. In addition, a unit\nthat includes at least one model with comms ignores the -1 penalty to Leadership imposed by the Night Fighting rules."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Cybork Body",
+        "hidden": false,
+        "id": "3dc4-f923-7f7b-d4ee",
+        "rules": [
+          {
+            "name": "Cybork Body",
+            "id": "79d3-886b-1633-6161",
+            "hidden": false,
+            "description": "A model with a cybork body gains the Feel No Pain (6+) special rule. If they gain another version of the Feel No Pain (X) special rule through other means, a model with a cybork body improves the value in brackets by 1 instead."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Feel No Pain",
+            "id": "9c62-e604-0116-3296",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a80b-2291-817a-5f27",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Gitfinda",
+        "hidden": false,
+        "id": "68ae-ec45-4d58-8c2a",
+        "rules": [
+          {
+            "name": "Gitfinda",
+            "id": "9b70-467f-6a51-2bed",
+            "hidden": false,
+            "description": "A model with a gitfinda that remained stationary during its Movement phase improves its Ballistic Skill by +1 during the controlling player’s following Shooting phase. In addition, a model with a gitfinda ignores the penalty to Ballistic Skill while the Night Fighting rules are in effect."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Grabbin' Klaw and Stikka",
+        "hidden": false,
+        "id": "3e5e-0482-1f2e-76b4",
+        "rules": [
+          {
+            "name": "Grabbin' Klaw and Stikka",
+            "id": "9489-b0a3-8bbb-4940",
+            "hidden": false,
+            "description": "At the beginning of the enemy Movement phase, nominate a single enemy Vehicle that is within 2\" of a Vehicle with a grabbin’ klaw, or within 12\" of a Vehicle with a stikka. On the roll of a 4+, that Vehicle may not move this turn. Flyers and Skimmers cannot be attacked by a grabbin’ klaw, and can only be attacked by a stikka if the result of the roll is a 6."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mine Layer",
+        "hidden": false,
+        "id": "6e8f-e736-3ad1-b253",
+        "rules": [
+          {
+            "name": "Mine Layer",
+            "id": "7b35-b8d9-a7f3-a367",
+            "hidden": false,
+            "description": "After a Vehicle with a Mine Layer moves through any Area Terrain, the controlling player may roll a D6. On a 3+ the Area Terrain now counts as Dangerous Terrain and the Mine Layer may not be used again. On a 1 or 2, the Area Terrain is unaffected but the Mine Layer may be used again in a subsequent turn."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Cyboar",
+        "hidden": false,
+        "id": "a85b-670d-3ad2-cfc2",
+        "rules": [
+          {
+            "name": "Cyboar",
+            "id": "0d5a-2747-e278-a4c6",
+            "hidden": false,
+            "description": "A model with a Cyboar that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.\n\nA model with the Infantry Unit Type that selects a Cyboar as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had. In addition the model must change its Movement Characteristic to 14 and it gains the Hammer of Wrath (D3) and Rampage (D3) special rules."
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "remove",
+            "value": "c447-1b05-5ba8-846a",
+            "field": "category",
+            "scope": "parent"
+          },
+          {
+            "type": "add",
+            "value": "8cce-2496-3746-4f06",
+            "field": "category",
+            "scope": "parent"
+          },
+          {
+            "type": "set",
+            "value": "14",
+            "field": "69ed-cbc7-3fbc-7ba5",
+            "scope": "parent",
+            "affects": "model.profiles.Model"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Hammer of Wrath",
+            "id": "bf71-5b16-3cc5-11cf",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "f7ff-d5d7-7787-efda",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "D3",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Rampage",
+            "id": "f582-ec30-ca22-a2a5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d669-c818-42c3-955a",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "D3",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Deffkopta",
+        "hidden": false,
+        "id": "5f5c-a59d-ea09-d24b",
+        "rules": [
+          {
+            "name": "Deffkopta",
+            "id": "03a3-758e-5c55-3091",
+            "hidden": false,
+            "description": "A Deffkopta has one twin-linked big shoota. In addition, a model with a Deffkopta that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn."
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Big Shoota",
+            "hidden": false,
+            "id": "1a7e-512a-9837-148a",
+            "type": "selectionEntry",
+            "targetId": "af44-5da4-f49f-3409",
+            "infoLinks": [
+              {
+                "name": "Twin-linked",
+                "id": "d262-e59c-1afa-86f6",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "23d2-bdd7-3df1-be63"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Twin-linked",
+                "hidden": false,
+                "id": "f39c-cb5a-e37f-c37b",
+                "type": "selectionEntryGroup",
+                "targetId": "b19d-86be-3758-3e72"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Twin-linked",
+                "field": "name",
+                "join": " "
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d292-8285-333c-b64c-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d292-8285-333c-b64c-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Warbike",
+        "hidden": false,
+        "id": "1db6-1d27-24c0-5cb0",
+        "rules": [
+          {
+            "name": "Warbike",
+            "id": "faea-b9df-38df-e598",
+            "hidden": false,
+            "description": "A Warbike has one twin-linked dakkagun. In addition, a model with a Warbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.\n\nA model with the Infantry Unit Type that selects a Warbike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had. In\naddition the model must change its Movement Characteristic to 14 and it gains the Hammer of Wrath (1) special rule."
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Dakkagun",
+            "hidden": false,
+            "id": "3088-0059-6b5c-8cc6",
+            "type": "selectionEntry",
+            "targetId": "4bb7-934e-7063-f105",
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Twin-linked",
+                "field": "name",
+                "join": " "
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Twin-linked",
+                "id": "c34f-214a-6586-cb81",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "23d2-bdd7-3df1-be63"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Twin-linked",
+                "hidden": false,
+                "id": "14e9-6be2-bba5-8754",
+                "type": "selectionEntryGroup",
+                "targetId": "b19d-86be-3758-3e72"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9229-5b88-1038-5715-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9229-5b88-1038-5715-max"
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": "14",
+            "field": "69ed-cbc7-3fbc-7ba5",
+            "scope": "parent",
+            "affects": "model.profiles.Model"
+          },
+          {
+            "type": "add",
+            "value": "8cce-2496-3746-4f06",
+            "field": "category",
+            "scope": "parent"
+          },
+          {
+            "type": "remove",
+            "value": "c447-1b05-5ba8-846a",
+            "field": "category",
+            "scope": "parent"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Hammer of Wrath",
+            "id": "43e6-581d-1b88-6cb8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "f7ff-d5d7-7787-efda",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Dok's Tools",
+        "hidden": false,
+        "id": "4431-15e1-507d-eca8",
+        "rules": [
+          {
+            "name": "Dok's Tools",
+            "id": "67fa-13ab-26e7-2e5a",
+            "hidden": false,
+            "description": "As long as the bearer is alive, all models in their unit have the Feel No Pain (5+) special rule."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mek's Tools",
+        "hidden": false,
+        "id": "6330-d06c-6598-2e5f",
+        "rules": [
+          {
+            "name": "Mek's Tools",
+            "id": "74c1-034a-49c0-cc43",
+            "hidden": false,
+            "description": "A model with Mek’s Tools has the Battlesmith (5+) special rule."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Battlesmith",
+            "id": "422f-1539-88d0-5fec",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "131d-5e79-6950-6437",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Reinforced Ram",
+        "hidden": false,
+        "id": "4286-dc56-ed79-7bcf",
+        "rules": [
+          {
+            "name": "Reinforced Ram",
+            "id": "94c3-a8f2-a949-4ca6",
+            "hidden": false,
+            "description": "A Vehicle with a reinforced ram treats its front Armour Value as two points higher than normal when Ramming. Furthermore, the Vehicle may re-roll failed Dangerous Terrain tests."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Deff Rolla",
+        "hidden": false,
+        "id": "d862-22bd-67fe-22b8",
+        "rules": [
+          {
+            "name": "Deff Rolla",
+            "id": "2e30-214c-dedb-0e10",
+            "hidden": false,
+            "description": "A Vehicle with a deff rolla counts as a Super-heavy Vehicle when Ramming. Furthermore, the Vehicle may re-roll failed Dangerous Terrain tests."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Rokkit Array",
+        "hidden": false,
+        "id": "35a6-835b-62c0-16c2",
+        "rules": [
+          {
+            "name": "Rokkit Array",
+            "id": "2d08-d670-92b5-6293",
+            "hidden": false,
+            "description": "A rokkit array includes a twin-linked rokkit launcha. In addition, any kannons and rokkit launchas fired by the model with the rokkit array gain the Sunder special rule."
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Rokkit Launcha",
+            "hidden": false,
+            "id": "d0a1-3c7a-9f8a-2394",
+            "type": "selectionEntry",
+            "targetId": "4a75-c17c-1088-b322",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Twin-linked",
+                "hidden": false,
+                "id": "3762-3b8b-d428-3400",
+                "type": "selectionEntryGroup",
+                "targetId": "b19d-86be-3758-3e72"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Twin-linked",
+                "id": "d22c-1ca8-5eef-fec8",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "23d2-bdd7-3df1-be63"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Twin-linked",
+                "field": "name",
+                "join": " "
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c7f7-c5f0-6077-1fc3-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c7f7-c5f0-6077-1fc3-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Rokkit Pack",
+        "hidden": false,
+        "id": "048c-2906-5159-b6ca",
+        "rules": [
+          {
+            "name": "Rokkit Pack",
+            "id": "c99d-53d2-1081-bd6a",
+            "hidden": false,
+            "description": "At the start of the controlling player’s Movement phase, or when deployed as part of a Deep Strike Assault, a model with a rokkit pack may set its Move Characteristic to a value of 12 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ the rokkit pack). This allows a model with a rokkit pack to move up to 12\", regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, all models with a rokkit pack that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their Movement in Dangerous Terrain.\n\nA model with an activated rokkit pack treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its Movement at least 1\" away from any model from another unit. A model with a rokkit pack may still Run if it would normally be  able to Run (this does not allow units that include any models with the Heavy Sub-type to Run). When making a Run move for a model with an activated rokkit pack, roll a D6 and add the value to 12 to determine how far it may move, rather than use the model’s Initiative Characteristic. The model ignores terrain and models from other units while making a Run move with a rokkit pack as previously noted, but may not make Shooting Attacks or declare a Charge in the same turn in which it has Run as per the normal rules for\nRunning. If the D6 value is a 6, all models in the unit with a rokkit pack must take a Dangerous Terrain test once the Run move is complete.\n\nAny model with a rokkit pack also gains the Bulky (2), Hammer of Wrath (1) and Deep Strike special rules.\n\nDuring a Reaction made in any Phase, a player may not choose to activate a model’s rokkit pack to gain any bonus to their Movement Characteristic."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Bulky",
+            "id": "67ac-b71a-5b2d-e8a9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8317-bc69-b786-390d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Hammer of Wrath",
+            "id": "0444-6c79-aeb8-06e1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "f7ff-d5d7-7787-efda",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Deep Strike",
+            "id": "ffab-b5ed-4cfe-f70f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Ammo Runt",
+        "hidden": false,
+        "id": "8669-6f17-cca7-fae0",
+        "rules": [
+          {
+            "name": "Ammo Runt",
+            "id": "a191-fb4e-1119-7be4",
+            "hidden": false,
+            "description": "One Use Only. A unit with an ammo runt can re-roll one To Hit roll when shooting."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Attack Squig",
+        "hidden": false,
+        "id": "1da7-6195-c3a0-ca4c",
+        "rules": [
+          {
+            "name": "Attack Squig",
+            "id": "fc18-5491-dabd-9522",
+            "hidden": false,
+            "description": "A model with an attack squig is allowed to re-roll one To Hit roll in close combat each turn."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Distraction Grot",
+        "hidden": false,
+        "id": "f07e-793e-32ae-e544",
+        "rules": [
+          {
+            "name": "Distraction Grot",
+            "id": "9989-0ac3-7e73-f30d",
+            "hidden": false,
+            "description": "One Use Only. A Distraction grot allows any model in the same unit to re-roll a failed Cover Save or Shrouded roll."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kommanda",
+        "hidden": false,
+        "id": "6484-673d-d353-b373",
+        "rules": [
+          {
+            "name": "Kommanda",
+            "id": "0800-c659-cd8b-72f0",
+            "hidden": false,
+            "description": "Whilst a model with a Kommanda is part of the Grot Tank Battle Mob, it may re-roll the distance it moves (see the Full Speed Ahead special rule), but must accept the second result, even if it is worse. This re-roll can be used to negate any  damage caused by rolling a double 1 for the squadron’s movement, as long as the second roll is not also a double 1."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Grot Runner",
+        "hidden": false,
+        "id": "3743-444e-dd47-772b",
+        "rules": [
+          {
+            "name": "Grot Runner",
+            "id": "4b6f-c84e-0b7c-f73e",
+            "hidden": false,
+            "description": "Shooting attacks for a weapon with a grot gunner are resolved at Ballistic Skill 3. In addition, when any enemy unit that has the Vehicle Unit Type and the Flyer Sub-type enters the battlefield from Reserves, a friendly unit that has the Vehicle Unit Type and the Flyer Sub-type may make the Interceptor Advanced Reaction (see the Horus Heresy: Age of Darkness rulebook, page 309) using only Defensive weapons with grot gunners without expending a point of the Reactive player’s Reaction Allotment. This does not allow the unit to make more than one Reaction\nper Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Grot Oiler",
+        "hidden": false,
+        "id": "5302-e188-c663-e9b2",
+        "rules": [
+          {
+            "name": "Grot Oiler",
+            "id": "f1ec-9c37-55e9-925f",
+            "hidden": false,
+            "description": "One Use Only. A grot oiler allows a Mek to re-roll a failed Battlesmith roll."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Grot Orderly",
+        "hidden": false,
+        "id": "6a41-1125-3505-50c9",
+        "rules": [
+          {
+            "name": "Grot Orderly",
+            "id": "6bcb-9381-bab3-ad49",
+            "hidden": false,
+            "description": "One Use Only. A grot orderly allows a Painboy’s unit to re-roll a single Feel No Pain roll or It Will Not Die roll"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Grot Riggers",
+        "hidden": false,
+        "id": "c72d-61fe-295c-317b",
+        "rules": [
+          {
+            "name": "Grot Riggers",
+            "id": "8682-c394-aaec-a87c",
+            "hidden": false,
+            "description": "A model with grot riggers gains the It Will Not Die (6+) special rule."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Jump Grot",
+        "hidden": false,
+        "id": "0517-d3bc-af7e-dfe2",
+        "rules": [
+          {
+            "name": "Jump Grot",
+            "id": "8dab-75d1-0b8e-2773",
+            "hidden": false,
+            "description": "A unit with a jump grot may re-roll all the dice when rolling for scatter as part of a Deep Strike Assault."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Squig Hound",
+        "hidden": false,
+        "id": "4d12-8777-ec29-3afa",
+        "rules": [
+          {
+            "name": "Squig Hound",
+            "id": "16e5-6c15-9c1f-9bbc",
+            "hidden": false,
+            "description": "Each time a unit with a squig hound fails a Morale check it suffers D6 Strength 3 AP - Hits and must then re-roll the failed Morale check. If the re-roll is failed, it cannot be re-rolled again, and the squig hound will not inflict any further hits. In addition, enemy models cannot be deployed using the Infiltrate special rule within 18\" of a model with a squig hound."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Saw Blades",
+        "hidden": false,
+        "id": "237a-13af-1bca-8e61",
+        "rules": [
+          {
+            "name": "Saw Blades",
+            "id": "c588-5085-54d3-4178",
+            "hidden": false,
+            "description": "Any unit with the Infantry Unit Type that charges a Vehicle with saw blades must make a Disordered Charge."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Shokkjump Engine",
+        "hidden": false,
+        "id": "7c4e-c788-9a8a-16f6",
+        "rules": [
+          {
+            "name": "Shokkjump Engine",
+            "id": "a917-af87-6a59-6814",
+            "hidden": false,
+            "description": "A Vehicle with a shokkjump engine may move an extra D6\" when moving Flat Out. If a 6 is rolled, the model is removed from the battlefield and placed into Reserve. When returning to the battlefield it may deploy using the rules for Deep Strike Assault as though it had the Deep Strike special rule. This may allow the controlling player to perform more than a single Deep Strike Assault. If the model is not on the battlefield at the end of the game it counts as being destroyed."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Snakebite Combat Drugs",
+        "hidden": false,
+        "id": "7dfc-dd7c-e3a7-ecf8",
+        "rules": [
+          {
+            "name": "Snakebite Combat Drugs",
+            "id": "c848-ccb1-187d-e2ef",
+            "hidden": false,
+            "description": "Roll on the following table after deploying a model with Snakebite combat drugs:\n\n\n1: The model begins the game having already lost 1 Wound.\n\n\n2: The model gains the Fleet (2) special rule.\n\n\n3: The model may re-roll the dice when rolling for the number of attacks granted by the Rampage special rule and the number of hits granted by the Hammer of Wrath special rules.\n\n\n4: The model gains the Preferred Enemy (Infantry) special rule.\n\n\n5: The model gains the Feel No Pain (5+) special rule.\n\n\n6: Roll two more D6, applying both results (re-roll any further results of 6)."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Stikkbombs",
+        "hidden": false,
+        "id": "9c17-caa4-72ee-1545",
+        "rules": [
+          {
+            "name": "Stikkbombs",
+            "id": "4a04-8f24-6e98-728d",
+            "hidden": false,
+            "description": "Using stikkbombs does not count as a Shooting Attack and their effects are entirely covered by the rules presented here.\n\n\nA unit that includes at least one model with stikkbombs makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through\nDifficult Terrain or Dangerous Terrain."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Stikkbomb Flinga",
+        "hidden": false,
+        "id": "67d6-e40e-e8c6-4f02",
+        "rules": [
+          {
+            "name": "Stikkbomb Flinga",
+            "id": "eead-1298-40a7-791f",
+            "hidden": false,
+            "description": "Once per game, when a Flyer with a stikkbomb flinga makes the Evade Reaction, it gains the Shrouded (3+) special rule instead of Shrouded (5+)."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Wurrtower",
+        "hidden": false,
+        "id": "d627-dbe3-7447-bc98",
+        "rules": [
+          {
+            "name": "Wurrtower",
+            "id": "f20b-37d9-68b6-61ae",
+            "hidden": false,
+            "description": "A Weirdboy Embarked on a Transport with a Wurrtower extends the range of any psychic weapon without the Melee type by 6\"."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Warboss",
+        "hidden": false,
+        "id": "cae2-f2d4-6853-6a85",
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "cad9-9529-6524-dbe2",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          }
+        ]
+      }
+    ],
+    "categoryEntries": [
+      {
+        "name": "Expendable",
+        "id": "6713-c61a-2380-7ca9",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Expendable Sub-type",
+            "id": "6f84-c807-6416-4b2f",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Expendable Sub-type:\n\n- An enemy player may never score Victory Points for the destruction of a unit that includes any models with the Expendable Sub-type.\n\n- Models with the Independent Character special rule may never join a unit that includes any models with the Expendable Sub-type."
+          }
+        ]
+      },
+      {
+        "name": "Gargantuan",
+        "id": "1ee5-b20c-be22-dd79",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Gargantuan Sub-type",
+            "id": "cf95-b23b-9014-4c16",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Gargantuan Unit Sub-type:\n\n- Models with the Gargantuan Unit Sub-type have the Eternal Warrior and Fearless special rules.\n\n- Models with the Gargantuan Unit Sub-type are not affected by special rules that negatively modify their Characteristics (other than Wounds).\n\n- Models with the Gargantuan Unit Sub-type are not slowed by Difficult Terrain and automatically pass Dangerous Terrain tests – but may not pass through or\nend their move in Impassable Terrain.\n\n- Models with the Gargantuan Unit Sub-type count as ten models for the purposes of determining if the model is outnumbered by another unit.\n\n- Models with the Gargantuan Unit Sub-type may only make Reactions triggered by models with the Armiger, Dreadnought, Primarch or Vehicle Unit Type, or any\nmodel with a Wounds Characteristic of 8 or more.\n\n- Successful Wounds scored by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models with the Gargantuan Unit Sub-type.\n\n- A model with the Gargantuan Unit Sub-type may attack with all weapons they have in each Shooting Attack they make, including as part of a Reaction.\n\n- A model with the Gargantuan Unit Sub-type may make Shooting Attacks with Heavy and Ordnance weapons, counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.\n\n- No model that does not have the Gargantuan Unit Sub-type may join a unit that includes a model with the Gargantuan Unit Sub-type.\n\n- A model with the Gargantuan Unit Sub-type ignores all effects (both detrimental and beneficial) of all Psychic Powers and cannot be Wounded or affected by any\nAttack with the Psychic Focus special rule. Weapons with the Force special rule that are used to make Attacks against a model with the Gargantuan Unit Sub-type are not affected and are resolved normally."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Eternal Warrior",
+            "id": "26d0-a249-fd54-965e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d9b7-d83e-51e0-bcfc"
+          },
+          {
+            "name": "Fearless",
+            "id": "1e56-e7b9-a799-b1ce",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6973-2ab3-7e6b-e323"
+          }
+        ]
+      },
+      {
+        "name": "Mechanised",
+        "id": "d109-f07d-276d-f321",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Mechanised Sub-type",
+            "id": "c2e1-74ad-bede-aa0a",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Mechanised Sub-type:\n\n- Successful Wounds caused by attacks with the Poisoned (X) or Fleshbane special rules must be re-rolled against models with the Mechanised Unit Sub-type.\n\n- Failed rolls To Wound made for weapons with the Armourbane (X) special rule, and against a unit that includes any models with this Unit Sub-type, must be re-rolled.\n\n- A model with the Mechanised Unit Sub-type may attack with all weapons it has when making a Shooting Attack, including as part of a Reaction.\n\n- A model with the Mechanised Unit Sub-type may attack with Heavy and Ordnance weapons while counting as stationary even if it has moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.\n\n- A model with the Mechanised Unit Sub-type is affected by the Haywire, Detonation and Battlesmith (X) special rules as if it had the Dreadnought Unit Type.\n\n- No model that does not also have the Mechanised Unit Sub-type may join a unit that includes one or more models with the Mechanised Unit Sub-type."
+          }
+        ]
+      },
+      {
+        "name": "Monstrous Transport",
+        "id": "c03f-3804-ec07-fc84",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Monstrous Transport Sub-type",
+            "id": "2faf-6f54-de5f-4b8a",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Monstrous Transport Sub-type:\n\n- A model with the Monstrous Transport Sub-type can carry infantry just like a Vehicle Transport, and follows all the rules listed for Transports on page 211 of the Age of Darkness Rulebook except for those specifically pertaining to Vehicles.\n\n- Any weapons carried by a model with the Monstrous Transport Sub-type follow the rules for Vehicle Firing Arcs and Weapon Mounts detailed on page 205 of the Age of Darkness Rulebook."
+          }
+        ]
+      },
+      {
+        "name": "Open-topped",
+        "id": "896d-742a-d60c-6429",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Open-topped Sub-type",
+            "id": "72c0-dab8-478d-85dd",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Open-topped Sub-type:\n\n- A Vehicle with the Open-topped Sub-type adds 1 to the result on the Vehicle Damage Table for any damage it suffers. This is cumulative with other modifiers.\n\n- A model with both the Open-topped Sub-type and Transport Sub-type or Monstrous Transport Sub-type gains the Assault Vehicle special rule. The model does not have a specific Access Point. Instead, the entire model is considered to be an Access Point.\n\n- Passengers embarked on a Vehicle with the Opentopped Sub-type may shoot during the Shooting phase unless the Vehicle moved at Cruising Speed or moved Flat-out. Passengers count as having moved if the Vehicle moved in the Movement phase.\n\n- Passengers embarked on a Cavalry model with the Open-topped Sub-type may shoot during the Shooting phase unless the model ran. Passengers count as having moved if the model moved in the Movement phase.\n\n- If a Vehicle with the Open-topped Sub-type suffers an Explodes result on the Vehicle Damage Table, any Hits suffered by Passengers are resolved at Strength 4 instead of Strength 8."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Assault Vehicle",
+            "id": "f5c4-b104-51fc-42c8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "52d4-8107-08f3-455e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "b966-b1a2-7578-dc41",
+                        "shared": true
+                      },
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "c03f-3804-ec07-fc84",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skirmish",
+        "id": "1909-26f7-31d2-0932",
+        "hidden": false,
+        "comment": "Orks",
+        "rules": [
+          {
+            "name": "Skirmish Sub-type",
+            "id": "0a1c-28c2-98ee-51c9",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Skirmish Sub-type:\n\n- A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3\" rather than 2\".\n\n- A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by terrain by one (i.e., from 6+ to 5+). This only increases existing Cover Saves and does not grant one when in terrain that does not normally grant a Cover Save. This rule cannot increase a Cover Save to better than 2+."
+          }
+        ]
+      },
+      {
+        "name": "Warboss",
+        "id": "c65d-d77d-ff38-c6f1",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Warboss Sub-type",
+            "id": "256c-3c7d-d8d5-8594",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Warboss Sub-type:\n- If your primary detachment contains any models with the Warboss Sub-type, one of them must be selected as the Warlord.\n\n- A model with the Warboss Sub-type may select one of the Great Clans of the Orks: Bad Moons, Blood Axes, Deathskulls, Evil Sunz, Goffs, or Snakebites. If your army contains more than one model with the Warboss Sub-type, then each may select a different Great Clan of the Orks. The rules for the Great Clans can be found on the following page.\n\n- A unit with the Slow and Purposeful special rule that contains at least one model with the Warboss Sub-type may still perform Reactions, though may never move as part of those Reactions."
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Bombs Away!",
+        "id": "0e56-e28c-ff0d-2c0e",
+        "hidden": false,
+        "description": "A model with this special rule may use Bomb weapons even though it is not a Flyer. Follow the rules for Bombing Runs but ignore references to Flyers."
+      },
+      {
+        "name": "Choppin'",
+        "id": "8f19-dfc3-72de-7f20",
+        "hidden": false,
+        "description": "When rolling To Wound for a model that has the Choppin' (X) special rule, or is attacking with a weapon that has the Choppin' (X) special rule, for each To Wound roll equal to or higher than the value listed in brackets, the controlling player must resolve these wounds at AP 3 instead of the weapon’s normal AP value (unless the weapon’s normal AP value is better). This rule only affects models that have the Infantry or Cavalry Unit Types."
+      },
+      {
+        "name": "Crushing Weight",
+        "id": "ff7c-87ba-59fa-4d67",
+        "hidden": false,
+        "description": "When the controlling player resolves a Ram Attack using a model with this special rule, targeting an enemy model that has the Vehicle Unit Type, then any Hits inflicted are always resolved at Strength 12. When resolving a Ram Attack against a unit that is not made up entirely of models with the Vehicle Unit Type, 6+D6 Str 10 Hits are inflicted instead."
+      },
+      {
+        "name": "Destructor",
+        "id": "0033-525f-6553-175c",
+        "hidden": false,
+        "description": "Any model which suffers an unsaved Wound or Hull Point loss from a weapon with this special rule instead suffers D6 unsaved Wounds or Hull Points of damage.\n\nIn addition, if the target of this attack is a model with the Knight, Titan, Super-heavy Vehicle, or Building or Fortification Unit Type, or the Monstrous Unit Sub-type, increase the number of Wounds suffered or Hull Points lost to 2D6."
+      },
+      {
+        "name": "Don't Press Dat!",
+        "id": "2256-f54b-a687-1de9",
+        "hidden": false,
+        "description": "Roll a D6 for each Vehicle with this special rule at the start of their Movement phase. On a roll of 1, the Vehicle must move directly forwards as far as possible. This may mean any passengers may not disembark this turn."
+      },
+      {
+        "name": "Effigy",
+        "id": "826a-a133-aa85-3456",
+        "hidden": false,
+        "description": "A model with this special rule ignores the effects of the Haywire and Disruption (X) special rules. In all cases, weapons which benefit from these special rules must attempt to damage a model with this special rule normally using the attack’s Strength value. In addition, all friendly units with the ‘Ere We Go! special rule and at least one model within 24\" of a model with this special rule gain the Fearless special rule."
+      },
+      {
+        "name": "Engine Damage",
+        "id": "ed64-630f-f9c4-e040",
+        "hidden": false,
+        "description": "When a Vehicle with the Super-heavy Sub-type and this special rule suffers an Explodes result on the Vehicle Damage table, roll a D6. On the score of a 4+, it is Immobilised (as per the entry on the Vehicle Damage table) as well as suffering the effects of any other damage inflicted upon it. This ignores the normal immunity to such damage granted by the Super-heavy Sub-type."
+      },
+      {
+        "name": "'Ere We Go!",
+        "id": "5422-0492-0f03-2969",
+        "hidden": false,
+        "description": "If every model in a unit has this special rule, the unit can re-roll a single dice when determining its charge range. In addition, when a unit made up entirely of models with this special rule makes the Advance Reaction, they may add +D3 to their Initiative Characteristic when determining the number of inches they can move. This is in addition to any other modifiers such as from the Light Sub-type."
+      },
+      {
+        "name": "Full Speed Ahead!",
+        "id": "de89-45e7-8160-113a",
+        "hidden": false,
+        "description": "A Vehicle with this special rule has a Movement value of 2D6 per turn, but always counts as moving at Combat Speed. The Vehicle’s movement ignores the effects of difficult terrain, but is affected by dangerous terrain as normal. When operating in squadrons, roll once for the movement of the entire squadron in each turn. If a double 1 is rolled to determine the Movement value, the Vehicle (or a single Vehicle in the squadron chosen by the controlling player) suffers a Penetrating hit."
+      },
+      {
+        "name": "Kaboom",
+        "id": "4fcd-9d7c-cac1-53b2",
+        "hidden": false,
+        "description": "When a model with this special rule loses its last Wound, but before it is removed as a casualty, all models both friendly and enemy within D6\" suffer an automatic Hit at the Strength of the model with this special rule and AP -."
+      },
+      {
+        "name": "Lifta-droppa",
+        "id": "45f9-95d4-094e-e6c5",
+        "hidden": false,
+        "description": "This weapon may only target models with the Vehicle Unit type that began the game with no more than 4 hull points. If the shot hits successfully, roll a D6 and apply the following result:\n\n1: The target Vehicle suffers no damage but the Vehicle firing the lifta-droppa suffers a Glancing hit.\n\n2-5: The target Vehicle is thrown D6\" in a random direction (roll a Scatter dice, re-rolling any Hit results), stopping if it moves to within 1\" away from any other model, and takes D3 Glancing hits as it is flung about by the lifta-droppa beam.\n\n6: The target vehicle is thrown 2D6\" in a random direction (roll a Scatter dice, re-rolling any Hit results), stopping if it moves to within 1\" away from any other model, and suffers an Explodes! result on the Vehicle Damage table."
+      },
+      {
+        "name": "Living Shield",
+        "id": "6338-4c36-627d-d331",
+        "hidden": false,
+        "description": "For each Troops choice in a detachment (not including other Gretchin Mobs) you may include a single Gretchin Mob. Gretchin Mobs do not use up Force Organisation slots and as such may not fill compulsory slots. A Gretchin Mob and the Troops choice it was included with do not need to deploy together and always operate as separate units."
+      },
+      {
+        "name": "Measured Strike",
+        "id": "b1d2-e74e-4625-3d62",
+        "hidden": false,
+        "description": "A model attacking with a weapon or profile that has this special rule may only make a single attack, regardless of the value of its Attacks Characteristic, any other special rules or whether it has Charged or is wielding more than one weapon."
+      },
+      {
+        "name": "Mob Rule",
+        "id": "123e-d00a-177a-b419",
+        "hidden": false,
+        "description": "A unit made up entirely of models with the Mob Rule special rule may count their Leadership as being equal to the number of models in the unit when taking any\nLeadership tests, to a maximum of 10. If there are more than 10 models in the unit, the unit also gains the Stubborn special rule. Models with the Bulky (X) special rule count as a number of models equal to the value X when determining mob size."
+      },
+      {
+        "name": "More Dakka",
+        "id": "be3f-8c18-d0f9-13a1",
+        "hidden": false,
+        "description": "When making a shooting attack with a weapon with this special rule, for each roll of a natural 6 the weapon may make a number of additional shots with the same profile. The number of additional shots made is equal to the value of (X) that is included as part of this special rule. Roll To Hit as normal for the additional shots. These additional shots do not generate more shots."
+      },
+      {
+        "name": "Orkish War Beast",
+        "id": "2edc-6518-043a-1d90",
+        "hidden": false,
+        "description": "As long as a model with this special rule is transporting at least five friendly models with the ‘Ere We Go! special rule, or is within 3\" of at least five friendly models with the ‘Ere We Go! special rule, it gains the Fearless special rule."
+      },
+      {
+        "name": "Psycho-dakka-blasta!",
+        "id": "383d-7217-b569-c4cd",
+        "hidden": false,
+        "description": "A weapon with this special rule makes three shooting attacks with listed profile each time it fires. Completely resolve each shooting attack before moving on to the next. A new target may be chosen for each attack. This special rule may never be used as part of a Reaction."
+      },
+      {
+        "name": "Ramshackle",
+        "id": "0821-3c7b-97b4-ef81",
+        "hidden": false,
+        "description": "Roll a D6 each time a Vehicle with this special rule suffers a penetrating hit. On the roll of a 6, the Vehicle only suffers a glancing hit instead."
+      },
+      {
+        "name": "Rolling-Walking Scrap Pile",
+        "id": "07bb-15c8-f457-6d7d",
+        "hidden": false,
+        "description": "A model with this special rule has a 5+ Invulnerable Save against all attacks, except those of weapons with the Ordnance, Destroyer, or Armourbane (X) special rules or types."
+      },
+      {
+        "name": "Rumbler",
+        "id": "feed-5540-acf5-37b4",
+        "hidden": false,
+        "description": "A Vehicle with this special rule may re-roll failed Difficult and Dangerous Terrain tests as long as it is moving at combat speed."
+      },
+      {
+        "name": "Screamin' Descent",
+        "id": "85c5-4131-10c6-f5e3",
+        "hidden": false,
+        "description": "When making a Bombing Run attack with a weapon with this special rule, roll 2D6 and refer to the table below. The roll is made after the Blast marker is placed but\nbefore it scatters.\n\n2: Faster! Waaagh!: No bomb is dropped. The Flyer making the attack is Wrecked. When resolving the Crash and Burn for the Wrecked Flyer, centre the Blast marker on the position occupied by the target model.\n\n3: Clipped 'im!: No bomb is dropped. The Flyer making the attack and its target each suffer a single Strength 9 AP2 hit. All hits on Vehicles strike the Vehicle's side facing.\n\n4-9: Just like dis!: Execute the Bombing Run attack normally.\n\n10-12: Dakka-dakka-boom!: Execute the Bombing Run attack normally. In addition, the Flyer making the attack may shoot any of its assault weapons at the target model's unit. All hits on Vehicles strike the Vehicle's rear facing. Any unit that suffers one or more unsaved Wounds from any of the attacks must take a Pinning test. Note that the Flyer may shoot its assault weapons again in the Shooting phase and it can target a different unit."
+      },
+      {
+        "name": "Scavengers",
+        "id": "7aed-b16d-6ce3-62af",
+        "hidden": false,
+        "description": "A unit that contains one or more models with this special rule may not make Sweeping Advances, but may add D3 inches to any Consolidation moves."
+      },
+      {
+        "name": "Scuttle Scuttle Blam!",
+        "id": "bdd9-3d74-3063-4109",
+        "hidden": false,
+        "description": "Bomb squigs always hit the target on a To Hit roll of 2 or more. Bomb squigs can be used as part of a Reaction but cannot be used to make Snap Shots, and cannot be used to attack Flyers, Skimmers or models with the Antigrav Sub-type."
+      },
+      {
+        "name": "Snag",
+        "id": "db05-719c-f197-d89b",
+        "hidden": false,
+        "description": "A weapon with this special rule automatically causes an Immobilised result in addition to any other effects when it scores a glancing or penetrating hit against a Zooming Flyer."
+      },
+      {
+        "name": "Shokk Attack",
+        "id": "c860-1a20-86b6-c0f8",
+        "hidden": false,
+        "description": "To fire the a weapon with this special rule, roll 2D6 to determine its Strength after placing the blast marker but before rolling the Scatter dice. If any double is rolled for the weapon’s Strength, consult the chart below.\n\n1,1: Boom! No shot is fired. Remove the firing model as a casualty.\n\n2,2: Oops! The opponent may choose the target of the weapon this turn, and place the large blast marker. The target can be a unit on the same side as the firing model.\n\n3,3: Gah! Resolve the shot upon the nearest unit to the firing model that is not locked in combat, be it friend or foe.\n\n4,4: Sploosh! Resolve the attack upon the target, but use the small blast marker. Any hits are resolved at AP - but have the Shell Shock (2) special rule.\n\n5,5: Zoink! No shot is fired. Immediately place the firing model in base contact with the closest model or point on the target unit, and treat them as being locked in combat. The target unit must additionally test as if hit by a weapon with the Blind special rule.\n\n6,6: Krakoom! When resolving this attack, the weapon has the Vortex special rule."
+      },
+      {
+        "name": "Tank Hunters",
+        "id": "2c4d-2c96-4e89-77b5",
+        "hidden": false,
+        "description": "Attacks against Vehicles made by a model with this special rule have the Sunder special rule."
+      },
+      {
+        "name": "Tellyported",
+        "id": "2d44-7947-3efb-4e86",
+        "hidden": false,
+        "description": "If the To Wound roll for attacks with this special rule is equal to or greater than the number listed in brackets associated with the specific rule, the attack causes Instant Death and is resolved at AP 1. Roll any viable Saves against this Instant Death-causing Wound separately and before any other Wounds the attack inflicts. Hits against Vehicles always cause a Penetrating Hit on a roll equal to or greater than the number listed in brackets, regardless of whether the armour penetration result was higher than the target’s armour value or not."
+      },
+      {
+        "name": "Throttle",
+        "id": "c727-3e0f-ee27-719f",
+        "hidden": false,
+        "description": "When fighting in a challenge, a model with this special rule or attacking with a weapon with this special rule reduces the Attacks Characteristic of their opponent by the number listed in brackets associated with the specific rule (to a minimum of 1)."
+      },
+      {
+        "name": "Unstable Field",
+        "id": "8e88-0efa-572a-b093",
+        "hidden": false,
+        "description": "Roll once each time a weapon with this special rule shoots to determine both the Strength and AP, after the target unit has been chosen. For example, if you rolled a 3 for an Unstable Field shot, the shot would be resolved at Strength 3 AP 3."
+      },
+      {
+        "name": "Vortex",
+        "id": "4b36-4a88-b3ee-ff63",
+        "hidden": false,
+        "description": "Once an attack with this special rule has been fully resolved, any Blast markers placed as part of that attack are not removed from play and instead are left in place for the remainder of the battle. Such a Blast marker is then referred to as the Vortex marker. The area under a Vortex marker is treated as Area Terrain for the remainder of the battle, and applies the following effects to all models that enter its boundaries:\n\n- No line of sight may be drawn through, into, or out of the area covered by the Vortex marker (as such, models within such an area of terrain cannot draw line of sight to any other model, nor can other models draw a line of sight to them).\n\n- Any models that enter the boundary of this area of terrain, or begin the Movement phase of the model’s Controlling player within its boundaries, immediately suffer one Str 10, AP 1 Hit and the Instant Death and Armourbane (Melee) special rules. If the model has the Vehicle Unit Type and suffers a Penetrating Hit due to this effect then it adds a modifier of +3 to that roll on\nthe Vehicle Damage table.\n\nThis area of terrain does not confer a Cover Save and no model within its boundary may use a Cover Save granted by any other rule or effect."
+      },
+      {
+        "name": "Waaagh! Plane",
+        "id": "922a-89e9-0b84-e8f3",
+        "hidden": false,
+        "description": "A unit or model with this special rule may be placed into Combat Air Patrol at the beginning of the battle, before any models are deployed onto the table. Models assigned to Combat Air Patrol are not deployed onto the battlefield and remain in Reserves – however, no Reserves rolls are made for these models. Instead, the controlling player gains access to the Combat Air Patrol Advanced Reaction:\n\nAdvanced Reaction: Combat Air Patrol\n\nAdvanced Reactions are available to specific players as noted in their description. Unlike Core Reactions they are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.\n\nCombat Air Patrol – This Advanced Reaction may be played whenever any enemy model that has the Vehicle Unit Type and the Flyer Unit Sub-type enters the Battlefield from Reserves. The Reactive player may nominate any one model that has been assigned to Combat Air Patrol. Once the enemy model with the Vehicle Unit Type and Flyer Unit Sub-type that triggered this Reaction has finished any and all Movement as it is brought into play, the chosen model assigned to Combat Air Patrol is brought into play from any point on the edge\nof the battlefield, moving into play as if it had entered play from Reserves. Once the Combat Air Patrol model has finished its Movement, it may immediately make a Shooting Attack targeting the enemy model that triggered this Reaction – as long as it has finished its Movement with a line of sight to that model. Only models with the Vehicle Unit Type and Flyer Unit Sub-type may make the Combat Air Patrol Reaction."
+      },
+      {
+        "name": "Whirrr Click-click",
+        "id": "dec4-e297-f772-0f69",
+        "hidden": false,
+        "description": "If a double is rolled when determining the number of shots for any shooting attack made by a weapon with this special rule, then the weapon runs out of ammunition\nafter that attack has been resolved, and cannot shoot again for the rest of the battle. This rule does not apply to the very first shooting attack the weapon makes in a battle (so it will fire a minimum of two times before running out of ammunition)."
+      },
+      {
+        "name": "Wrecker",
+        "id": "deaa-d027-e98b-e31b",
+        "hidden": false,
+        "description": "Penetrating Hits caused by attacks made with weapons or models with this special rule add +1 to the result of any rolls on the Vehicle or Building Damage tables."
+      },
+      {
+        "name": "Zzap",
+        "id": "2846-c816-70c6-58ca",
+        "hidden": false,
+        "description": "If the Strength result rolled for a weapon with this special rule is above 10, the weapon Gets Hot on any roll of a 1, 2 or 3."
+      },
+      {
+        "name": "Big Horns / Iron Gob",
+        "id": "a6ed-0810-c854-b138",
+        "hidden": false,
+        "description": "A model with big horns or an iron gob gains the Hammer of Wrath (1) special rule."
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Shoota (Primary)",
+        "typeId": "5e31-3867-7c3d-fcb9",
+        "typeName": "Ranged Weapon",
+        "hidden": false,
+        "id": "a585-e8cc-7211-fafb",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "7b0f-9c2a-0ecb-f3a3",
+            "$text": "18\""
+          },
+          {
+            "name": "S",
+            "typeId": "2ecc-1ccc-736f-9d3d",
+            "$text": "4"
+          },
+          {
+            "name": "AP",
+            "typeId": "cbb5-5f04-f87f-a810",
+            "$text": "6"
+          },
+          {
+            "name": "Type",
+            "typeId": "2c90-16ca-a927-898d",
+            "$text": "Assault 2"
+          },
+          {
+            "name": "Special Rules",
+            "typeId": "d2a2-1139-48cb-4472",
+            "$text": ""
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Warboss",
+        "hidden": false,
+        "id": "2831-a876-4776-e6a0",
+        "type": "selectionEntry",
+        "targetId": "cae2-f2d4-6853-6a85"
+      }
+    ],
+    "type": "catalogue"
+  }
+}

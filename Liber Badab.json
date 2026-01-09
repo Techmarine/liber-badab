@@ -413,6 +413,11 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Great Clan",
+        "id": "809a-c73f-9d8b-58e1",
+        "hidden": false
       }
     ],
     "forceEntries": [
@@ -1501,7 +1506,7 @@
         "name": "Fearless",
         "id": "6973-2ab3-7e6b-e323",
         "hidden": false,
-        "description": "Units with one or more models with the Fearless special rule automatically pass Pinning tests, Regroup tests and Morale checks. In addition, models with the Fearless special rule ignore the effects of the Fear special rule.\n\n\nHowever, units containing one or more models with the Fearless special rule cannot use any Reactions that grant a Cover Save, Armour Save or Invulnerable Save, and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. If a unit has become Pinned and then gains the Fearless special rule, all the effects of being Pinned are immediately cancelled."
+        "description": "Units with one or more models with the Fearless special rule automatically pass Pinning tests, Regroup tests and Morale checks. In addition, models with the Fearless special rule ignore the effects of the Fear special rule.\n\nHowever, units containing one or more models with the Fearless special rule cannot use any Reactions that grant a Cover Save, Armour Save or Invulnerable Save, and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. If a unit has become Pinned and then gains the Fearless special rule, all the effects of being Pinned are immediately cancelled."
       },
       {
         "name": "Haywire",
@@ -1741,6 +1746,24 @@
         "id": "bb1e-f9f5-2a51-c8c0",
         "hidden": false,
         "description": "This rule is presented as Preferred Enemy (X) where X identifies a specific type of foe. If the special rule does not specify a type of foe, then everyone is a Preferred Enemy of the unit. A unit that contains at least one model with this special rule re-rolls failed To Hit and To Wound rolls of 1 if attacking its Preferred Enemy. This applies both to Shooting Attacks and close combat attacks.\n\nIf a model with this rule makes an attack against a mixed unit which has one or more models to which their Preferred Enemy rule pertains, but is not entirely composed of such models, it may still benefit from the effects of Preferred Enemy for all attacks made against that unit. For example, a model with Preferred Enemy (Independent Characters) may re-roll failed To Hit and To Wound rolls of 1 against all of the models in a unit which has been joined by an Independent Character."
+      },
+      {
+        "name": "Slow and Purposeful",
+        "id": "a43c-e082-b874-e2f6",
+        "hidden": false,
+        "description": "A unit that contains at least one model with this special rule cannot Run, perform Sweeping Advances or make Reactions. However, models with this special rule can make Shooting Attacks with Heavy and Ordnance weapons, counting as Stationary, even if they moved in the previous Movement phase. They are also allowed to Charge in the same turn they fire Heavy, Ordnance or Rapid Fire weapons."
+      },
+      {
+        "name": "Rampage",
+        "id": "d669-c818-42c3-955a",
+        "hidden": false,
+        "description": "At the start of any Fight sub-phase, models with the Rampage special rule gain a number of Attacks equal to the value listed in brackets if outnumbered by enemy models (including the effects of the Bulky special rule) – count all models locked in the combat, not just those models that are engaged. If the value in brackets is randomly determined by rolling dice, then roll once for each such variant of the Rampage special rule present in the unit to determine the number of Attacks that may be made, applying the result to all models with that variant for the current phase. For example, a model with the Rampage (D3) special rule that is outnumbered by the enemy in close combat receives D3 additional Attacks in that Fight sub-phase.\n\nA model that has made a Disordered Charge that turn receives no benefit from Rampage."
+      },
+      {
+        "name": "Deep Strike",
+        "id": "4aab-8d13-caf2-091d",
+        "hidden": false,
+        "description": "A unit made up entirely of models with this special rule may perform a Deep Strike Assault. Certain Faction or unit special rules may present other options for the deployment of units with the Deep Strike special rule."
       }
     ],
     "sharedSelectionEntries": [
@@ -2639,6 +2662,167 @@
             "targetId": "bff3-be94-f034-ee18"
           }
         ]
+      },
+      {
+        "name": "Great Clan",
+        "id": "81c7-10c0-5e79-e7fa",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Bad Moons",
+            "hidden": false,
+            "id": "0553-5c5f-a534-224b",
+            "categoryLinks": [
+              {
+                "name": "Great Clan",
+                "hidden": false,
+                "id": "82cc-7ce6-44d9-e913",
+                "targetId": "809a-c73f-9d8b-58e1",
+                "primary": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Blood Axes",
+            "hidden": false,
+            "id": "7ec4-58ec-deca-5e00",
+            "categoryLinks": [
+              {
+                "name": "Great Clan",
+                "hidden": false,
+                "id": "760c-5ec4-993c-c688",
+                "targetId": "809a-c73f-9d8b-58e1",
+                "primary": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Deathskulls",
+            "hidden": false,
+            "id": "b856-f510-68f1-db10",
+            "categoryLinks": [
+              {
+                "name": "Great Clan",
+                "hidden": false,
+                "id": "c518-531f-7deb-f514",
+                "targetId": "809a-c73f-9d8b-58e1",
+                "primary": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Evil Sunz",
+            "hidden": false,
+            "id": "5822-43cd-84cf-e758",
+            "categoryLinks": [
+              {
+                "name": "Great Clan",
+                "hidden": false,
+                "id": "d9f5-4c28-9cbf-3dfa",
+                "targetId": "809a-c73f-9d8b-58e1",
+                "primary": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Goffs",
+            "hidden": false,
+            "id": "375d-8805-8c2f-02bf",
+            "categoryLinks": [
+              {
+                "name": "Great Clan",
+                "hidden": false,
+                "id": "36a2-129b-f32b-86b7",
+                "targetId": "809a-c73f-9d8b-58e1",
+                "primary": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Snakebites",
+            "hidden": false,
+            "id": "c619-c045-1bb4-85df",
+            "categoryLinks": [
+              {
+                "name": "Great Clan",
+                "hidden": false,
+                "id": "997d-5c99-7436-ba47",
+                "targetId": "809a-c73f-9d8b-58e1",
+                "primary": true
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "3aa6-1fa6-c1c2-4fa1-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "3aa6-1fa6-c1c2-4fa1-max"
+          }
+        ]
+      },
+      {
+        "name": "Twin-linked",
+        "id": "b19d-86be-3758-3e72",
+        "hidden": false,
+        "modifiers": [
+          {
+            "type": "append",
+            "value": "Twin-linked",
+            "field": "d2a2-1139-48cb-4472",
+            "scope": "parent",
+            "affects": "profiles.Ranged Weapon",
+            "join": ", "
+          },
+          {
+            "type": "append",
+            "value": "Twin-linked",
+            "field": "a603-af69-c30b-94ed",
+            "scope": "parent",
+            "affects": "profiles.Melee Weapon",
+            "join": ", "
+          },
+          {
+            "type": "prepend",
+            "value": "Twin-linked",
+            "field": "name",
+            "scope": "parent",
+            "affects": "profiles.Ranged Weapon",
+            "join": " "
+          },
+          {
+            "type": "prepend",
+            "value": "Twin-linked",
+            "field": "name",
+            "scope": "parent",
+            "affects": "profiles.Melee Weapon",
+            "join": " "
+          }
+        ],
+        "flatten": true
       }
     ]
   }

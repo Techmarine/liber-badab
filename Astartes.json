@@ -65752,12 +65752,6 @@
         "description": "Weapons with the Master-crafted special rule allow the bearer to re-roll one failed roll To Hit per turn with that weapon."
       },
       {
-        "name": "Deep Strike",
-        "id": "4aab-8d13-caf2-091d",
-        "hidden": false,
-        "description": "A unit made up entirely of models with this special rule may perform a Deep Strike Assault. Certain Faction or unit special rules may present other options for the deployment of units with the Deep Strike special rule."
-      },
-      {
         "name": "Chapter Specialist",
         "id": "2b63-2384-7b15-bc8f",
         "hidden": false,
@@ -67707,46 +67701,6 @@
           {
             "type": "prepend",
             "value": "Master-crafted",
-            "field": "name",
-            "scope": "parent",
-            "affects": "profiles.Melee Weapon",
-            "join": " "
-          }
-        ],
-        "flatten": true
-      },
-      {
-        "name": "Twin-linked",
-        "id": "b19d-86be-3758-3e72",
-        "hidden": false,
-        "modifiers": [
-          {
-            "type": "append",
-            "value": "Twin-linked",
-            "field": "d2a2-1139-48cb-4472",
-            "scope": "parent",
-            "affects": "profiles.Ranged Weapon",
-            "join": ", "
-          },
-          {
-            "type": "append",
-            "value": "Twin-linked",
-            "field": "a603-af69-c30b-94ed",
-            "scope": "parent",
-            "affects": "profiles.Melee Weapon",
-            "join": ", "
-          },
-          {
-            "type": "prepend",
-            "value": "Twin-linked",
-            "field": "name",
-            "scope": "parent",
-            "affects": "profiles.Ranged Weapon",
-            "join": " "
-          },
-          {
-            "type": "prepend",
-            "value": "Twin-linked",
             "field": "name",
             "scope": "parent",
             "affects": "profiles.Melee Weapon",
