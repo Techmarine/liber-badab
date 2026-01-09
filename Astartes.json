@@ -2,7 +2,7 @@
   "catalogue": {
     "library": true,
     "id": "0c55-5a03-a16a-69cd",
-    "name": "Astartes",
+    "name": "Space Marines",
     "gameSystemId": "sys-7d1d-5f99-723a-24c5",
     "gameSystemRevision": 1,
     "revision": 1,
@@ -49788,7 +49788,7 @@
                 ],
                 "conditions": [
                   {
-                    "type": "atLeast",
+                    "type": "lessThan",
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
