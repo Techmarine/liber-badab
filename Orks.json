@@ -14776,6 +14776,1956 @@
             "description": "A model with paired choppas gains +2 Attacks instead of the usual +1 Attack for using an additional weapon in combat."
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Flash Gitz Mob",
+        "hidden": false,
+        "id": "fbd0-7b52-c680-1e3e",
+        "sortIndex": 11,
+        "categoryLinks": [
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "4b3b-2a1a-de88-e5a8",
+            "targetId": "a300-5393-99ea-9657",
+            "primary": true
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Kaptin",
+            "hidden": false,
+            "id": "b8ea-eed9-b7ff-a586",
+            "sortIndex": 1,
+            "profiles": [
+              {
+                "name": "Kaptin",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "a6a7-0ed5-206c-fac0",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "4+"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "fbee-5a50-a050-62cd",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Heavy",
+                "hidden": false,
+                "id": "231e-6c0e-9c93-5974",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "4396-e845-858a-c3cc",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Snazzgun",
+                "hidden": false,
+                "id": "ff80-00f1-8a99-1895",
+                "type": "selectionEntry",
+                "targetId": "2652-6c39-1b09-f933",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a7ef-be91-ec2b-31a9-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a7ef-be91-ec2b-31a9-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Gitfinda",
+                "hidden": false,
+                "id": "9208-2ed8-a9d4-66d3",
+                "type": "selectionEntry",
+                "targetId": "68ae-ec45-4d58-8c2a",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2f9a-6256-e34a-db9c-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2f9a-6256-e34a-db9c-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "'Eavy Armour",
+                "hidden": false,
+                "id": "b5db-f5f0-dcc9-f91a",
+                "type": "selectionEntry",
+                "targetId": "e48a-d376-60d9-dbc6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0179-9e68-f455-253d-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0179-9e68-f455-253d-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Bosspole",
+                "hidden": false,
+                "id": "5432-5298-3a24-4800",
+                "type": "selectionEntry",
+                "targetId": "7df6-6fac-17eb-9f03",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "15fe-fed8-d03a-37b7-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "15fe-fed8-d03a-37b7-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Stikkbombs",
+                "hidden": false,
+                "id": "ce10-6786-9895-41c5",
+                "type": "selectionEntry",
+                "targetId": "9c17-caa4-72ee-1545",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0a1e-1c24-8dc3-8ff4-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0a1e-1c24-8dc3-8ff4-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Ammo Runt",
+                "hidden": false,
+                "id": "a5a2-4aaa-13dd-36ad",
+                "type": "selectionEntry",
+                "targetId": "8669-6f17-cca7-fae0",
+                "sortIndex": 2,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5a2d-0a96-9aa8-91fe"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Cybork Body",
+                "hidden": false,
+                "id": "a79a-dcc7-90d6-9f58",
+                "type": "selectionEntry",
+                "targetId": "3dc4-f923-7f7b-d4ee",
+                "sortIndex": 3,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8ff2-47b7-34f1-f19a"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Deflektor",
+                "hidden": false,
+                "id": "4298-078d-b543-e2b1",
+                "type": "selectionEntry",
+                "targetId": "f314-3ec3-d12b-425f",
+                "sortIndex": 4,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1184-2ba2-a5f8-2076"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Power Weapon",
+                "id": "8d84-f016-95e2-19b3",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Power Axe",
+                    "hidden": false,
+                    "id": "1766-f47d-3b36-dfdb",
+                    "type": "selectionEntry",
+                    "targetId": "255e-b873-2404-1da7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Maul",
+                    "hidden": false,
+                    "id": "1d56-deae-4e78-d1ff",
+                    "type": "selectionEntry",
+                    "targetId": "38f4-f7e0-b3d8-63ee",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": false,
+                    "id": "dfc5-c8f6-1393-4431",
+                    "type": "selectionEntry",
+                    "targetId": "4804-9091-fcfa-7d79",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "bf77-56e6-fc6f-7e62"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1931-f8ae-89b9-3d0b-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1931-f8ae-89b9-3d0b-max"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 32
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Flash Git",
+            "hidden": false,
+            "id": "d3ee-b51f-bc6d-bfb9",
+            "profiles": [
+              {
+                "name": "Flash Git",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "e855-227d-6b9a-5395",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "4+"
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 2,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "'Eavy Armour",
+                "hidden": false,
+                "id": "df79-b012-480c-b954",
+                "type": "selectionEntry",
+                "targetId": "e48a-d376-60d9-dbc6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "299d-4728-81db-7795-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "299d-4728-81db-7795-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Ammo Runt",
+                "hidden": false,
+                "id": "3fd4-7b8f-9d60-42cc",
+                "type": "selectionEntry",
+                "targetId": "8669-6f17-cca7-fae0",
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6a61-8b78-3348-ec88"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Bosspole",
+                "hidden": false,
+                "id": "7287-f814-882a-24be",
+                "type": "selectionEntry",
+                "targetId": "7df6-6fac-17eb-9f03",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cdd5-8bee-e342-4df7-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cdd5-8bee-e342-4df7-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Gitfinda",
+                "hidden": false,
+                "id": "b245-eb92-ecbf-125f",
+                "type": "selectionEntry",
+                "targetId": "68ae-ec45-4d58-8c2a",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bd90-d845-2950-a08a-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bd90-d845-2950-a08a-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Snazzgun",
+                "hidden": false,
+                "id": "d6da-8b2d-8883-b839",
+                "type": "selectionEntry",
+                "targetId": "2652-6c39-1b09-f933",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5a11-173e-5053-3906-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5a11-173e-5053-3906-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Stikkbombs",
+                "hidden": false,
+                "id": "f0f5-3aa0-e675-ea47",
+                "type": "selectionEntry",
+                "targetId": "9c17-caa4-72ee-1545",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8903-7565-fd36-5101-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8903-7565-fd36-5101-max"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "4869-47f7-d72a-a34b",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Heavy",
+                "hidden": false,
+                "id": "6e3b-3039-78b3-c3be",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 24
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7818-ecb9-4b5f-e21f"
+              },
+              {
+                "type": "max",
+                "value": 9,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1ec6-4a0e-8fb5-58fc"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "1d95-6580-eb6a-5155",
+            "type": "selectionEntryGroup",
+            "targetId": "63f3-8991-cefb-bbcb",
+            "sortIndex": 3
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Battle-hardened",
+            "id": "f8aa-610a-7151-e6c3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "76cb-bd90-ecb1-941b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Bulky",
+            "id": "046b-d093-2037-53a1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8317-bc69-b786-390d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "'Ere We Go!",
+            "id": "76e9-b94b-29ce-a4fd",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5422-0492-0f03-2969"
+          },
+          {
+            "name": "Furious Charge",
+            "id": "bf70-a106-6d1f-dd53",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7281-8b61-791e-c0f1"
+          },
+          {
+            "name": "Mob Rule",
+            "id": "bc09-9bca-4cb9-570c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "123e-d00a-177a-b419"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Skarboyz Mob",
+        "hidden": false,
+        "id": "debf-3dcc-7757-1699",
+        "sortIndex": 12,
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Skarboy",
+            "hidden": false,
+            "id": "b963-3fec-fb30-8aaa",
+            "sortIndex": 1,
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "2af3-f2e3-343e-64c1",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Light",
+                "hidden": false,
+                "id": "8146-395a-2ae3-2691",
+                "targetId": "fcca-7b6b-7920-a6f5",
+                "primary": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Skarboy",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "188d-27b9-1345-98f3",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "6+"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 5,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b6f8-d1b7-4846-96b0"
+              },
+              {
+                "type": "max",
+                "value": 20,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ca7a-cf75-fb67-d722"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 8
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Dok's Tools",
+                "hidden": true,
+                "id": "7ca9-0e02-ca69-0bce",
+                "type": "selectionEntry",
+                "targetId": "4431-15e1-507d-eca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c708-3f4c-6f9d-2567-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c708-3f4c-6f9d-2567-max"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "c708-3f4c-6f9d-2567-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "c708-3f4c-6f9d-2567-max"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "cc7a-421a-293b-7fbe",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "'Urty Syringe",
+                "hidden": true,
+                "id": "d484-ad89-8b95-9d92",
+                "type": "selectionEntry",
+                "targetId": "5834-966e-30f4-feaa",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9b88-400d-8370-3099-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9b88-400d-8370-3099-max"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "9b88-400d-8370-3099-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "9b88-400d-8370-3099-max"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "cc7a-421a-293b-7fbe",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Stikkbombs",
+                "hidden": false,
+                "id": "b1fe-68bb-3b0b-d66e",
+                "type": "selectionEntry",
+                "targetId": "9c17-caa4-72ee-1545",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "33c4-33e4-f278-9e8c-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "33c4-33e4-f278-9e8c-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Gob / Big Horns",
+                "hidden": false,
+                "id": "94c2-d9d1-5e40-241e",
+                "type": "selectionEntry",
+                "targetId": "7cda-0814-d873-b9cd",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 3
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a5e1-7f26-36a0-624c"
+                  }
+                ],
+                "sortIndex": 6
+              },
+              {
+                "import": true,
+                "name": "'Eavy Armour",
+                "hidden": true,
+                "id": "cd72-2990-7ca9-a20a",
+                "type": "selectionEntry",
+                "targetId": "e48a-d376-60d9-dbc6",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 2
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "86d7-6ffd-836c-f7bc-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "86d7-6ffd-836c-f7bc-max"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "86d7-6ffd-836c-f7bc-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "86d7-6ffd-836c-f7bc-max"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "b1a5-5de8-61a3-98dd",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Cybork Body",
+                "hidden": true,
+                "id": "dd91-4e4b-c033-9c56",
+                "type": "selectionEntry",
+                "targetId": "3dc4-f923-7f7b-d4ee",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3edd-a456-1d84-46e5"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "57ad-11a9-abb2-70ec"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "3edd-a456-1d84-46e5",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "3f14-3b81-d045-bc14",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "57ad-11a9-abb2-70ec"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "cc7a-421a-293b-7fbe",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "3f14-3b81-d045-bc14",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 7
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Two-handed Options",
+                "id": "4111-67cf-ad66-a36f",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Shoota",
+                    "hidden": false,
+                    "id": "9ccd-124a-b682-4052",
+                    "type": "selectionEntry",
+                    "targetId": "6852-fe5d-9ff0-b5fb"
+                  },
+                  {
+                    "import": true,
+                    "name": "Slugga and Chainsword",
+                    "hidden": false,
+                    "id": "eca4-d94a-7cdd-28b1",
+                    "type": "selectionEntry",
+                    "targetId": "621c-b9df-19a1-f474"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "cd93-7b3f-9357-7262"
+                  }
+                ],
+                "sortIndex": 2,
+                "defaultSelectionEntryId": "bb31-9c61-f400-3cf3"
+              },
+              {
+                "name": "One-handed Option",
+                "id": "be43-00e4-921a-2c4b",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Choppa",
+                    "hidden": false,
+                    "id": "38b9-b038-d01a-f0dd",
+                    "type": "selectionEntry",
+                    "targetId": "4acf-f0bd-1d20-d70f"
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "For every five models",
+                    "id": "8478-b6d3-57eb-9f0e",
+                    "hidden": false,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Thump Gun",
+                        "hidden": false,
+                        "id": "4a12-e79d-9e51-d307",
+                        "type": "selectionEntry",
+                        "targetId": "deaa-c28c-ba54-3c4d",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Big Choppa",
+                        "hidden": false,
+                        "id": "e647-5549-ab37-ceea",
+                        "type": "selectionEntry",
+                        "targetId": "a3e8-e1ac-66a9-33a3",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Burna",
+                        "hidden": false,
+                        "id": "8e73-70b3-da1d-4149",
+                        "type": "selectionEntry",
+                        "targetId": "7837-6478-96e3-234d",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 15
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Power Axe",
+                        "hidden": false,
+                        "id": "884f-2f1c-3b58-b4f8",
+                        "type": "selectionEntry",
+                        "targetId": "255e-b873-2404-1da7",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Power Klaw",
+                        "hidden": false,
+                        "id": "dbe1-d259-64ca-6874",
+                        "type": "selectionEntry",
+                        "targetId": "dd8d-dd3a-1585-f272",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 20
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Power Maul",
+                        "hidden": false,
+                        "id": "840b-7b02-447e-a004",
+                        "type": "selectionEntry",
+                        "targetId": "38f4-f7e0-b3d8-63ee",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Power Sword",
+                        "hidden": false,
+                        "id": "e599-b356-0748-900b",
+                        "type": "selectionEntry",
+                        "targetId": "4804-9091-fcfa-7d79",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "unit",
+                        "shared": true,
+                        "id": "6e45-b5e7-2319-efc8",
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "increment",
+                        "value": 1,
+                        "field": "6e45-b5e7-2319-efc8",
+                        "repeats": [
+                          {
+                            "value": 5,
+                            "repeats": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "model",
+                            "shared": true,
+                            "roundUp": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "8000-0b17-232f-2c73-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "8000-0b17-232f-2c73-max"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "8000-0b17-232f-2c73-min",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "4111-67cf-ad66-a36f",
+                        "shared": true,
+                        "includeChildSelections": false
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "8000-0b17-232f-2c73-max",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "4111-67cf-ad66-a36f",
+                        "shared": true,
+                        "includeChildSelections": false
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 3
+              },
+              {
+                "name": "One-handed Option",
+                "id": "0775-4225-c0c1-8a2f",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Slugga",
+                    "hidden": false,
+                    "id": "6e42-cfb7-3d18-d167",
+                    "type": "selectionEntry",
+                    "targetId": "79e1-e59a-8c31-6767"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "e35e-450d-f7d8-ba9a-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "e35e-450d-f7d8-ba9a-max"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "e35e-450d-f7d8-ba9a-min",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "4111-67cf-ad66-a36f",
+                        "shared": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "e35e-450d-f7d8-ba9a-max",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "4111-67cf-ad66-a36f",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 4
+              },
+              {
+                "name": "Mad Dok Options",
+                "id": "e217-74be-cfb4-94c5",
+                "hidden": true,
+                "flatten": true,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Grot Orderly",
+                    "hidden": false,
+                    "id": "a8c6-22e7-3ce1-93ef",
+                    "type": "selectionEntry",
+                    "targetId": "6a41-1125-3505-50c9",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "39ec-ed04-ecd9-6ff8"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Klaw",
+                    "hidden": false,
+                    "id": "e9c2-7bd7-0fa3-40ce",
+                    "type": "selectionEntry",
+                    "targetId": "dd8d-dd3a-1585-f272",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "8e34-6c77-0e3c-ccbb"
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 5,
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "cc7a-421a-293b-7fbe",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Mad Dok",
+                "hidden": false,
+                "id": "cc7a-421a-293b-7fbe",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 20
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "shared": true,
+                    "id": "9e4c-3953-c6e8-4a3d",
+                    "includeChildSelections": true
+                  }
+                ],
+                "sortIndex": 1,
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Mad Dok",
+                    "field": "name",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "Mad Dok",
+                    "field": "name",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "7",
+                    "field": "d29a-9b6f-13a6-b7a8",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "add",
+                    "value": "c0e6-28aa-5286-2fa2",
+                    "field": "category",
+                    "scope": "parent"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "'Eavy Armour",
+            "hidden": false,
+            "id": "b1a5-5de8-61a3-98dd",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cf42-e0c4-4722-6e6f"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "b1a5-5de8-61a3-98dd",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Cybork Bodies",
+            "hidden": false,
+            "id": "3f14-3b81-d045-bc14",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "63ea-df0d-c16f-809a"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 5,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "3f14-3b81-d045-bc14",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "de33-b62a-19d5-81aa",
+            "targetId": "a300-5393-99ea-9657",
+            "primary": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "'Ere We Go!",
+            "id": "3f72-9909-6ae0-a45e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5422-0492-0f03-2969"
+          },
+          {
+            "name": "Furious Charge",
+            "id": "da5f-5531-e11f-6a58",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7281-8b61-791e-c0f1"
+          },
+          {
+            "name": "Mob Rule",
+            "id": "9525-c52c-637c-7861",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "123e-d00a-177a-b419"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "7ecd-0f97-730c-6f7e",
+            "type": "selectionEntryGroup",
+            "targetId": "63f3-8991-cefb-bbcb",
+            "sortIndex": 2
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Slugga and Chainsword",
+        "hidden": false,
+        "id": "621c-b9df-19a1-f474",
+        "profiles": [
+          {
+            "name": "Slugga",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "5eaa-abac-c410-f977",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Pistol 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "More Dakka (1)",
+                "field": "d2a2-1139-48cb-4472",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chainsword",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "f905-4086-03ab-87bd",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Shred"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "More Dakka",
+            "id": "a559-466f-66ba-c8d9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "be3f-8c18-d0f9-13a1",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c78f-0f9f-6db3-ae54",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "id": "f912-0a16-9dbc-1c05",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ab6b-cbef-cace-68c2",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Shred",
+            "id": "d86a-d4df-2249-f255",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          }
+        ]
       }
     ],
     "categoryEntries": [
@@ -15489,6 +17439,22 @@
         "id": "dccb-32d7-8f48-e6c7",
         "type": "selectionEntry",
         "targetId": "9552-5fe3-b17d-3402"
+      },
+      {
+        "import": true,
+        "name": "Flash Gitz Mob",
+        "hidden": false,
+        "id": "aeda-c917-a146-8912",
+        "type": "selectionEntry",
+        "targetId": "fbd0-7b52-c680-1e3e"
+      },
+      {
+        "import": true,
+        "name": "Skarboyz Mob",
+        "hidden": false,
+        "id": "0345-46e0-9575-8c40",
+        "type": "selectionEntry",
+        "targetId": "debf-3dcc-7757-1699"
       }
     ],
     "type": "catalogue",
