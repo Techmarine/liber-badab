@@ -16726,6 +16726,948 @@
             "targetId": "a666-0970-28e2-7c48"
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Deff Dread Mob",
+        "hidden": false,
+        "id": "94f9-d7b6-ff02-cf5f",
+        "sortIndex": 13,
+        "categoryLinks": [
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "dca6-9810-e4d8-090c",
+            "targetId": "a300-5393-99ea-9657",
+            "primary": true
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Deff Dread",
+            "hidden": false,
+            "id": "93a2-5bcf-76bd-3ab2",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 80
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Deff Dread",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "e0d9-2817-ea63-6978",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "3+"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3b33-d837-876d-794c"
+              },
+              {
+                "type": "max",
+                "value": 3,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "196a-a22e-b2db-8fc4"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Grot Riggers",
+                "hidden": false,
+                "id": "df09-3866-ec39-93a0",
+                "type": "selectionEntry",
+                "targetId": "c72d-61fe-295c-317b",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b482-5eb3-aae2-e298"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "sortIndex": 5
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Dreadnought",
+                "hidden": false,
+                "id": "3d5b-3242-3b75-9aa7",
+                "targetId": "eb17-a98e-537b-5de6",
+                "primary": false
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Must take one of the following",
+                "id": "b228-1573-6a0b-7034",
+                "hidden": false,
+                "sortIndex": 1,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Dread Klaw",
+                    "hidden": false,
+                    "id": "1e8a-a742-1034-8705",
+                    "type": "selectionEntry",
+                    "targetId": "c902-aff0-9f8c-2253"
+                  },
+                  {
+                    "import": true,
+                    "name": "Dread Saw",
+                    "hidden": false,
+                    "id": "a541-b354-83cf-8dee",
+                    "type": "selectionEntry",
+                    "targetId": "1226-e0df-5898-0215"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "e452-1466-81a3-a087-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "e452-1466-81a3-a087-max"
+                  }
+                ],
+                "defaultSelectionEntryId": "1e8a-a742-1034-8705"
+              },
+              {
+                "name": "Must take one of the following",
+                "id": "4d19-4e70-0677-232e",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Dread Klaw",
+                    "hidden": false,
+                    "id": "3ad3-5db0-ede8-22fb",
+                    "type": "selectionEntry",
+                    "targetId": "c902-aff0-9f8c-2253"
+                  },
+                  {
+                    "import": true,
+                    "name": "Dread Saw",
+                    "hidden": false,
+                    "id": "40cc-3b6e-d0ec-940b",
+                    "type": "selectionEntry",
+                    "targetId": "1226-e0df-5898-0215"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "31c7-3a7d-f780-e357-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "31c7-3a7d-f780-e357-max"
+                  }
+                ],
+                "defaultSelectionEntryId": "1e8a-a742-1034-8705",
+                "sortIndex": 2
+              },
+              {
+                "name": "May take one of the following",
+                "id": "dbb9-8862-130d-ff8d",
+                "hidden": false,
+                "sortIndex": 3,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Big Shoota",
+                    "hidden": false,
+                    "id": "8caa-11da-c305-ae39",
+                    "type": "selectionEntry",
+                    "targetId": "af44-5da4-f49f-3409"
+                  },
+                  {
+                    "import": true,
+                    "name": "Rokkit Launcha",
+                    "hidden": false,
+                    "id": "43a4-36f4-8f51-e279",
+                    "type": "selectionEntry",
+                    "targetId": "4a75-c17c-1088-b322"
+                  },
+                  {
+                    "import": true,
+                    "name": "Kustom Mega-blasta",
+                    "hidden": false,
+                    "id": "dcd4-a9db-3baf-b528",
+                    "type": "selectionEntry",
+                    "targetId": "9cc1-a85d-a4c0-a277",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Skorcha",
+                    "hidden": false,
+                    "id": "df51-dca7-ac68-1e99",
+                    "type": "selectionEntry",
+                    "targetId": "686e-3b74-8a5d-a566",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Dread Klaw",
+                    "hidden": false,
+                    "id": "e0c2-2d77-2d9d-0788",
+                    "type": "selectionEntry",
+                    "targetId": "c902-aff0-9f8c-2253",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Dread Saw",
+                    "hidden": false,
+                    "id": "21e7-51b0-9359-2ccc",
+                    "type": "selectionEntry",
+                    "targetId": "1226-e0df-5898-0215",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ],
+                "defaultSelectionEntryId": "8caa-11da-c305-ae39",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "9fed-e7a8-f599-9f60"
+                  }
+                ]
+              },
+              {
+                "name": "May take one of the following",
+                "id": "4c5e-421c-9328-35ce",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Big Shoota",
+                    "hidden": false,
+                    "id": "6c67-812b-f1cc-a9e3",
+                    "type": "selectionEntry",
+                    "targetId": "af44-5da4-f49f-3409"
+                  },
+                  {
+                    "import": true,
+                    "name": "Rokkit Launcha",
+                    "hidden": false,
+                    "id": "9218-3def-7a8a-1d8a",
+                    "type": "selectionEntry",
+                    "targetId": "4a75-c17c-1088-b322"
+                  },
+                  {
+                    "import": true,
+                    "name": "Kustom Mega-blasta",
+                    "hidden": false,
+                    "id": "943e-ed3a-39ce-ec94",
+                    "type": "selectionEntry",
+                    "targetId": "9cc1-a85d-a4c0-a277",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Skorcha",
+                    "hidden": false,
+                    "id": "4ddf-77f3-9963-ed11",
+                    "type": "selectionEntry",
+                    "targetId": "686e-3b74-8a5d-a566",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Dread Klaw",
+                    "hidden": false,
+                    "id": "9515-e95d-f6cf-35ce",
+                    "type": "selectionEntry",
+                    "targetId": "c902-aff0-9f8c-2253",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Dread Saw",
+                    "hidden": false,
+                    "id": "62e3-edc7-df01-5ff6",
+                    "type": "selectionEntry",
+                    "targetId": "1226-e0df-5898-0215",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ],
+                "defaultSelectionEntryId": "8caa-11da-c305-ae39",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "12ea-b849-abea-20f1"
+                  }
+                ],
+                "sortIndex": 4
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "decrement",
+                    "value": 2,
+                    "field": "edda-ee37-03b4-f91f",
+                    "affects": "profiles.Model"
+                  },
+                  {
+                    "type": "increment",
+                    "value": 1,
+                    "field": "edda-ee37-03b4-f91f",
+                    "affects": "profiles.Model",
+                    "repeats": [
+                      {
+                        "value": 1,
+                        "repeats": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "c902-aff0-9f8c-2253",
+                        "shared": true,
+                        "roundUp": false
+                      },
+                      {
+                        "value": 1,
+                        "repeats": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "1226-e0df-5898-0215",
+                        "shared": true,
+                        "roundUp": false
+                      }
+                    ]
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 3,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "c902-aff0-9f8c-2253",
+                        "shared": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 3,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "1226-e0df-5898-0215",
+                        "shared": true
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "self",
+                            "childId": "c902-aff0-9f8c-2253",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "self",
+                            "childId": "1226-e0df-5898-0215",
+                            "shared": true
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "self",
+                            "childId": "c902-aff0-9f8c-2253",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 2,
+                            "field": "selections",
+                            "scope": "self",
+                            "childId": "1226-e0df-5898-0215",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 1
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 10
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "'Ere We Go!",
+            "id": "d525-df8c-0c8b-3895",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5422-0492-0f03-2969"
+          },
+          {
+            "name": "Feel No Pain",
+            "id": "4f10-c220-23d4-f8b4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a80b-2291-817a-5f27",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Kaboom",
+            "id": "75de-e881-0c02-5e5d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4fcd-9d7c-cac1-53b2"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Grot Tank Mob",
+        "hidden": false,
+        "id": "10bc-8084-0f52-3919",
+        "sortIndex": 14,
+        "categoryLinks": [
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "4a36-6683-cfca-e854",
+            "targetId": "a300-5393-99ea-9657",
+            "primary": true
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Grot Tank",
+            "hidden": false,
+            "id": "f5ec-ad08-ab26-c2b9",
+            "sortIndex": 1,
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 35
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Vehicle",
+                "hidden": false,
+                "id": "9e75-0602-e10c-a237",
+                "targetId": "188c-5472-9e2c-377c",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 3,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f351-6569-2c95-79b1"
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3610-aef6-43a6-566e"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Turret Mounted Weapon",
+                "id": "9047-dad2-af96-723e",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "ba3f-e84a-4766-ecdb-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "ba3f-e84a-4766-ecdb-max"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Grotzooka",
+                    "hidden": false,
+                    "id": "eaed-3db2-6ea1-7532",
+                    "type": "selectionEntry",
+                    "targetId": "01c5-c813-7438-564d",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Kustom Mega-blasta",
+                    "hidden": false,
+                    "id": "584d-2814-945d-79cd",
+                    "type": "selectionEntry",
+                    "targetId": "9cc1-a85d-a4c0-a277",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Skorcha",
+                    "hidden": false,
+                    "id": "5181-aaa7-e020-178a",
+                    "type": "selectionEntry",
+                    "targetId": "686e-3b74-8a5d-a566",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Rokkit Launcha",
+                    "hidden": false,
+                    "id": "29c7-feb2-a0f6-bc61",
+                    "type": "selectionEntry",
+                    "targetId": "4a75-c17c-1088-b322"
+                  },
+                  {
+                    "import": true,
+                    "name": "Big Shoota",
+                    "hidden": false,
+                    "id": "575b-e0b7-30b7-137d",
+                    "type": "selectionEntry",
+                    "targetId": "af44-5da4-f49f-3409"
+                  }
+                ],
+                "defaultSelectionEntryId": "575b-e0b7-30b7-137d",
+                "sortIndex": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Kommanda",
+                "hidden": false,
+                "id": "d308-1c76-e6cd-dc25",
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "shared": true,
+                    "id": "5c9d-1552-7e04-4965",
+                    "includeChildSelections": true
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Hull (Front) Mounted Weapon",
+                    "id": "6449-621b-2ae1-9548",
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "3c12-fd91-9c95-0189"
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Big Shoota",
+                        "hidden": false,
+                        "id": "354b-4d83-a438-f826",
+                        "type": "selectionEntry",
+                        "targetId": "af44-5da4-f49f-3409",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Rokkit Launcha",
+                        "hidden": false,
+                        "id": "b6b9-ead9-8c25-ede1",
+                        "type": "selectionEntry",
+                        "targetId": "4a75-c17c-1088-b322",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Grotzooka",
+                        "hidden": false,
+                        "id": "5cdf-6943-2187-344f",
+                        "type": "selectionEntry",
+                        "targetId": "01c5-c813-7438-564d",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Kustom Mega-blasta",
+                        "hidden": false,
+                        "id": "ddbc-f22b-87d2-9200",
+                        "type": "selectionEntry",
+                        "targetId": "9cc1-a85d-a4c0-a277",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Skorcha",
+                        "hidden": false,
+                        "id": "b3cf-cc97-40ec-6f14",
+                        "type": "selectionEntry",
+                        "targetId": "686e-3b74-8a5d-a566",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Shoota",
+                "hidden": false,
+                "id": "368c-fc4f-5187-4a02",
+                "type": "selectionEntry",
+                "targetId": "6852-fe5d-9ff0-b5fb",
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Pintle-mounted",
+                    "field": "name",
+                    "join": " "
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "30b3-aecd-5696-c679"
+                  }
+                ],
+                "sortIndex": 3,
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 3
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Grot Tank",
+                "typeId": "554a-e6c5-2c57-a72e",
+                "typeName": "Vehicle",
+                "hidden": false,
+                "id": "3d29-683a-9d77-d5ed",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "d395-76ee-f82b-8906",
+                    "$text": "2D6"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "7249-616a-aae9-a930",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Front",
+                    "typeId": "e5fc-83a0-3f81-7e69",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Side",
+                    "typeId": "77d5-df8c-7931-3f05",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Rear",
+                    "typeId": "ff76-e0b6-7d3a-bd72",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "HP",
+                    "typeId": "a8d5-54a4-d247-236f",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Transport Capacity",
+                    "typeId": "c01c-1a8f-7f1d-1cb6",
+                    "$text": "-"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Full Speed Ahead!",
+            "id": "a41a-a8e0-a039-b003",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "de89-45e7-8160-113a"
+          },
+          {
+            "name": "Rolling-Walking Scrap Pile",
+            "id": "95b8-c0d9-286c-45ba",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "07bb-15c8-f457-6d7d"
+          }
+        ]
       }
     ],
     "categoryEntries": [
@@ -17455,6 +18397,22 @@
         "id": "0345-46e0-9575-8c40",
         "type": "selectionEntry",
         "targetId": "debf-3dcc-7757-1699"
+      },
+      {
+        "import": true,
+        "name": "Deff Dread Mob",
+        "hidden": false,
+        "id": "4449-6a71-673f-ad4c",
+        "type": "selectionEntry",
+        "targetId": "94f9-d7b6-ff02-cf5f"
+      },
+      {
+        "import": true,
+        "name": "Grot Tank Mob",
+        "hidden": false,
+        "id": "720b-157c-afc3-d07f",
+        "type": "selectionEntry",
+        "targetId": "10bc-8084-0f52-3919"
       }
     ],
     "type": "catalogue",
