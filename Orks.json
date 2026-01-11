@@ -19315,6 +19315,829 @@
             "value": -5
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Burna Mob",
+        "hidden": false,
+        "id": "adb8-c8f3-c824-1514",
+        "sortIndex": 17,
+        "categoryLinks": [
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "53c6-f1d2-3f12-a7bc",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "primary": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "'Ere We Go!",
+            "id": "712a-e2ea-68d4-9ccf",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5422-0492-0f03-2969"
+          },
+          {
+            "name": "Furious Charge",
+            "id": "953d-ffa4-d6ad-dbd3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7281-8b61-791e-c0f1"
+          },
+          {
+            "name": "Mob Rule",
+            "id": "3879-0df9-4990-6cfa",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "123e-d00a-177a-b419"
+          },
+          {
+            "name": "Support Squad",
+            "id": "c3d1-1b00-5edb-57b2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "650d-03c6-7f4b-c601"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Burna Boy",
+            "hidden": false,
+            "id": "c75a-b9cf-97b3-6cbb",
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "1b90-65ad-c437-d392",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 12
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 5,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3abc-6c40-5a6d-f456"
+              },
+              {
+                "type": "max",
+                "value": 15,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "50a9-f443-49aa-1679"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Burna",
+                "hidden": false,
+                "id": "dce3-3c76-f827-406d",
+                "type": "selectionEntry",
+                "targetId": "7837-6478-96e3-234d",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1ca7-cfa6-e0d1-e9ed-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1ca7-cfa6-e0d1-e9ed-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Stikkbombs",
+                "hidden": false,
+                "id": "5182-5143-af39-5569",
+                "type": "selectionEntry",
+                "targetId": "9c17-caa4-72ee-1545",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fe33-9095-e723-1666-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fe33-9095-e723-1666-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "'Eavy Armour",
+                "hidden": true,
+                "id": "f005-ea22-ee58-c06e",
+                "type": "selectionEntry",
+                "targetId": "e48a-d376-60d9-dbc6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5ad8-2b74-f7e9-5a64-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5ad8-2b74-f7e9-5a64-max"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "5ad8-2b74-f7e9-5a64-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "5ad8-2b74-f7e9-5a64-max"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "6e0e-2d6a-620e-3289",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 1,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Mek",
+                "hidden": false,
+                "id": "eac1-7b8b-b9b1-d113",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Ammo Runt",
+                    "hidden": false,
+                    "id": "f41a-63c7-5cb5-17c9",
+                    "type": "selectionEntry",
+                    "targetId": "8669-6f17-cca7-fae0",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 3
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "2e32-67dc-1a8f-8e34"
+                      }
+                    ],
+                    "sortIndex": 2
+                  },
+                  {
+                    "import": true,
+                    "name": "Cybork Body",
+                    "hidden": false,
+                    "id": "c873-773c-9575-ef9f",
+                    "type": "selectionEntry",
+                    "targetId": "3dc4-f923-7f7b-d4ee",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "d373-8fc6-b2f6-6c82"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "sortIndex": 3
+                  },
+                  {
+                    "import": true,
+                    "name": "Gitfinda",
+                    "hidden": false,
+                    "id": "0597-e5d8-3ee5-4f19",
+                    "type": "selectionEntry",
+                    "targetId": "68ae-ec45-4d58-8c2a",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6874-7f01-ade3-5416"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "sortIndex": 4
+                  },
+                  {
+                    "import": true,
+                    "name": "Grot Oiler",
+                    "hidden": false,
+                    "id": "105b-7bd9-22cf-603f",
+                    "type": "selectionEntry",
+                    "targetId": "5302-e188-c663-e9b2",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "e1d2-771e-f3ef-cd7b"
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "sortIndex": 5
+                  },
+                  {
+                    "import": true,
+                    "name": "Mek's Tools",
+                    "hidden": false,
+                    "id": "3c62-8497-fff3-7f2b",
+                    "type": "selectionEntry",
+                    "targetId": "6330-d06c-6598-2e5f",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6fe1-cd04-7677-9fcb-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6fe1-cd04-7677-9fcb-max"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "acc8-23bb-abd5-ffbc"
+                  },
+                  {
+                    "type": "max",
+                    "value": 3,
+                    "field": "selections",
+                    "scope": "unit",
+                    "shared": true,
+                    "id": "4055-c88c-0e3d-041a",
+                    "includeChildSelections": true
+                  }
+                ],
+                "sortIndex": 1,
+                "selectionEntryGroups": [
+                  {
+                    "name": "Must take one of the following",
+                    "id": "60d8-cd07-4384-0f8a",
+                    "hidden": false,
+                    "sortIndex": 1,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Slugga and Choppa",
+                        "hidden": false,
+                        "id": "f503-2194-ed79-1422",
+                        "type": "selectionEntry",
+                        "targetId": "2981-54b9-7f7f-dabb"
+                      },
+                      {
+                        "import": true,
+                        "name": "Kustom Mega-slugga and Choppa",
+                        "hidden": false,
+                        "id": "3b1b-d4bb-dffe-b173",
+                        "type": "selectionEntry",
+                        "targetId": "334c-2d8a-00a4-1752",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Kustom Mega-blasta",
+                        "hidden": false,
+                        "id": "17f2-eacb-8f40-dd14",
+                        "type": "selectionEntry",
+                        "targetId": "9cc1-a85d-a4c0-a277",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Rokkit Launcha",
+                        "hidden": false,
+                        "id": "d6aa-ec97-337e-fef2",
+                        "type": "selectionEntry",
+                        "targetId": "4a75-c17c-1088-b322",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      }
+                    ],
+                    "defaultSelectionEntryId": "f503-2194-ed79-1422",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "8c07-1982-7b1e-201f-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "8c07-1982-7b1e-201f-max"
+                      }
+                    ],
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Up to one in unit",
+                        "id": "2c72-11b6-4a74-5de4",
+                        "hidden": false,
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Kustom Force Field",
+                            "hidden": false,
+                            "id": "6d92-0420-1ba0-58af",
+                            "type": "selectionEntry",
+                            "targetId": "4eda-06b5-b6e3-b20c",
+                            "constraints": [
+                              {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "unit",
+                                "shared": true,
+                                "id": "ab51-a97b-0403-acd1",
+                                "includeChildSelections": true
+                              }
+                            ],
+                            "costs": [
+                              {
+                                "name": "Points",
+                                "typeId": "54b5-0978-c8a4-5b5a",
+                                "value": 50
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Mek",
+                    "field": "name",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "Mek",
+                    "field": "name",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "add",
+                    "value": "c0e6-28aa-5286-2fa2",
+                    "field": "category",
+                    "scope": "parent"
+                  },
+                  {
+                    "type": "set",
+                    "value": "7",
+                    "field": "d29a-9b6f-13a6-b7a8",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Burna Boy",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "de10-2a82-13f1-2a4d",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "6+"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "'Eavy Armour",
+            "hidden": false,
+            "id": "6e0e-2d6a-620e-3289",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "374a-9996-6131-59dd"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "6e0e-2d6a-620e-3289",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 2
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 20
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "2030-fa3a-2e8e-a6de",
+            "type": "selectionEntryGroup",
+            "targetId": "63f3-8991-cefb-bbcb",
+            "sortIndex": 3
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Kustom Mega-slugga and Choppa",
+        "hidden": false,
+        "id": "334c-2d8a-00a4-1752",
+        "profiles": [
+          {
+            "name": "Kustom Mega-slugga",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "cfc2-d3e9-22f1-c09a",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Pistol 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blind, Breaching (4+), Gets Hot"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Choppa",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "885c-966e-a371-b858",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Choppin' (6+)"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "Brutal (2)",
+                "field": "a603-af69-c30b-94ed",
+                "join": ", ",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blind",
+            "id": "6556-5892-ddd2-5319",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7566-b279-0ebd-607a"
+          },
+          {
+            "name": "Breaching",
+            "id": "d5ad-228a-8f78-babc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6347-29f0-2349-280d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Brutal",
+            "id": "f8fb-ba32-5429-9525",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ab6b-cbef-cace-68c2",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "e6be-d10d-b12c-dee8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gets Hot",
+            "id": "a8a3-fbbc-377d-961e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c7e6-c0f3-d0e4-4238"
+          },
+          {
+            "name": "Choppin'",
+            "id": "d09e-6fcb-aca5-d5eb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8f19-dfc3-72de-7f20",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
       }
     ],
     "categoryEntries": [
@@ -20137,6 +20960,14 @@
         "id": "d5f4-1d79-b8ed-d0b8",
         "type": "selectionEntry",
         "targetId": "af67-11d2-b446-769e"
+      },
+      {
+        "import": true,
+        "name": "Burna Mob",
+        "hidden": false,
+        "id": "6d95-2d79-ece9-cd72",
+        "type": "selectionEntry",
+        "targetId": "adb8-c8f3-c824-1514"
       }
     ],
     "type": "catalogue",
