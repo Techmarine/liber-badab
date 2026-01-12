@@ -13112,7 +13112,283 @@
         "import": true,
         "name": "Trukk",
         "hidden": false,
-        "id": "7df2-ad3e-90a3-3690"
+        "id": "7df2-ad3e-90a3-3690",
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Trukk",
+            "hidden": false,
+            "id": "91b1-0ae1-a831-abf0",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1ce3-d009-cdd5-4416-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1ce3-d009-cdd5-4416-max"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 30
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Vehicle",
+                "hidden": false,
+                "id": "2510-06cf-878e-2e5a",
+                "targetId": "188c-5472-9e2c-377c",
+                "primary": false
+              },
+              {
+                "name": "Fast",
+                "hidden": false,
+                "id": "751b-ca92-65ab-3d0c",
+                "targetId": "633a-22e8-c34d-c49d",
+                "primary": false
+              },
+              {
+                "name": "Open-topped",
+                "hidden": false,
+                "id": "e6c7-9a87-52b5-ac7e",
+                "targetId": "896d-742a-d60c-6429",
+                "primary": false
+              },
+              {
+                "name": "Transport",
+                "hidden": false,
+                "id": "2144-ba2d-9d49-d0bc",
+                "targetId": "b966-b1a2-7578-dc41",
+                "primary": false
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Pintle Mounted Weapon",
+                "id": "6a10-e978-5815-bf1b",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Big Shoota",
+                    "hidden": false,
+                    "id": "7c27-5641-60e8-004e",
+                    "type": "selectionEntry",
+                    "targetId": "af44-5da4-f49f-3409"
+                  },
+                  {
+                    "import": true,
+                    "name": "Rokkit Launcha",
+                    "hidden": false,
+                    "id": "fffc-4050-b4c5-3af4",
+                    "type": "selectionEntry",
+                    "targetId": "4a75-c17c-1088-b322"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "9fc5-f6e8-5216-976d-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "9fc5-f6e8-5216-976d-max"
+                  }
+                ],
+                "defaultSelectionEntryId": "7c27-5641-60e8-004e",
+                "sortIndex": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Reinforced Ram",
+                "hidden": false,
+                "id": "0f31-e06b-1503-58d2",
+                "type": "selectionEntry",
+                "targetId": "4286-dc56-ed79-7bcf",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bf74-f6db-b57d-5ebe"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Grot Riggers",
+                "hidden": false,
+                "id": "6673-3607-2aee-1d8c",
+                "type": "selectionEntry",
+                "targetId": "c72d-61fe-295c-317b",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 10
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ce4d-8a5a-d47d-165c"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Wreckin' Ball",
+                "hidden": false,
+                "id": "c358-e9ad-3661-97b1",
+                "type": "selectionEntry",
+                "targetId": "c8e8-aee3-d723-4e0a",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 10
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "53b3-aa09-97c7-f461"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Boarding Plank",
+                "hidden": false,
+                "id": "ca6d-e046-c546-93d6",
+                "type": "selectionEntry",
+                "targetId": "2803-9eb9-ad23-ff34",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "43f3-9ecc-5641-8959"
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Trukk",
+                "typeId": "554a-e6c5-2c57-a72e",
+                "typeName": "Vehicle",
+                "hidden": false,
+                "id": "ab8e-7bf7-790f-794d",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "d395-76ee-f82b-8906",
+                    "$text": "16"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "7249-616a-aae9-a930",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Front",
+                    "typeId": "e5fc-83a0-3f81-7e69",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Side",
+                    "typeId": "77d5-df8c-7931-3f05",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Rear",
+                    "typeId": "ff76-e0b6-7d3a-bd72",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "HP",
+                    "typeId": "a8d5-54a4-d247-236f",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Transport Capacity",
+                    "typeId": "c01c-1a8f-7f1d-1cb6",
+                    "$text": "12"
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 1
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Ramshackle",
+            "id": "494b-9784-97f7-bee2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0821-3c7b-97b4-ef81"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "1fb6-b757-2e99-735f",
+            "targetId": "b906-cdc5-0d3b-5270",
+            "primary": true
+          }
+        ]
       },
       {
         "type": "upgrade",
@@ -18761,7 +19037,7 @@
                 "id": "2d3c-c04d-392f-39f6"
               }
             ],
-            "sortIndex": 4
+            "sortIndex": 3
           },
           {
             "type": "upgrade",
@@ -18779,7 +19055,7 @@
                 "id": "bdec-cc0a-849b-7d05"
               }
             ],
-            "sortIndex": 3,
+            "sortIndex": 2,
             "modifiers": [
               {
                 "type": "increment",
@@ -18818,7 +19094,7 @@
             "id": "1396-c3ef-1f87-0344",
             "type": "selectionEntryGroup",
             "targetId": "63f3-8991-cefb-bbcb",
-            "sortIndex": 2
+            "sortIndex": 4
           }
         ],
         "infoLinks": [
@@ -20280,7 +20556,7 @@
               },
               {
                 "import": true,
-                "name": "Tankbust Bombs",
+                "name": "Tankbusta Bombs",
                 "hidden": false,
                 "id": "3fa9-020c-84f5-9e19",
                 "type": "selectionEntry",
@@ -21094,6 +21370,340 @@
             "name": "Points",
             "typeId": "54b5-0978-c8a4-5b5a",
             "value": 5
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Killa Kan Mob",
+        "hidden": false,
+        "id": "ab71-8e2d-f955-cf3e",
+        "sortIndex": 19,
+        "categoryLinks": [
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "7fb2-dd73-c1b7-54e6",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "primary": true
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Killa Kan",
+            "hidden": false,
+            "id": "be87-1d03-8bd2-edd7",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 30
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Killa Kan",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "6cc1-4224-8bf9-3a7c",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "3+"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a0c9-7a21-1efa-2310"
+              },
+              {
+                "type": "max",
+                "value": 9,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "12ac-2ea3-5e40-a1f4"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Grot Riggers",
+                "hidden": false,
+                "id": "b422-e9ed-d6f0-0d90",
+                "type": "selectionEntry",
+                "targetId": "c72d-61fe-295c-317b",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "562e-085b-889b-e3ef"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
+                  }
+                ],
+                "sortIndex": 3
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Must take one of the following",
+                "id": "9af7-8d78-5e01-2c91",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Big Shoota",
+                    "hidden": false,
+                    "id": "86c1-ef23-ee69-6f7a",
+                    "type": "selectionEntry",
+                    "targetId": "af44-5da4-f49f-3409"
+                  },
+                  {
+                    "import": true,
+                    "name": "Rokkit Launcha",
+                    "hidden": false,
+                    "id": "b4ac-a2e1-fc9a-45e5",
+                    "type": "selectionEntry",
+                    "targetId": "4a75-c17c-1088-b322"
+                  },
+                  {
+                    "import": true,
+                    "name": "Grotzooka",
+                    "hidden": false,
+                    "id": "24a2-5791-a332-5e94",
+                    "type": "selectionEntry",
+                    "targetId": "01c5-c813-7438-564d",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Kustom Mega-blasta",
+                    "hidden": false,
+                    "id": "9f88-0725-2061-2312",
+                    "type": "selectionEntry",
+                    "targetId": "9cc1-a85d-a4c0-a277",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Skorcha",
+                    "hidden": false,
+                    "id": "f9b6-0256-cffa-93fb",
+                    "type": "selectionEntry",
+                    "targetId": "686e-3b74-8a5d-a566",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "09ae-e960-9bea-f044-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "09ae-e960-9bea-f044-max"
+                  }
+                ],
+                "defaultSelectionEntryId": "86c1-ef23-ee69-6f7a",
+                "sortIndex": 2
+              },
+              {
+                "name": "Must take on of the following",
+                "id": "74c4-d835-1553-80aa",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Kan Klaw",
+                    "hidden": false,
+                    "id": "ad4c-8a6b-7665-0d30",
+                    "type": "selectionEntry",
+                    "targetId": "69a0-ef77-0202-71ad"
+                  },
+                  {
+                    "import": true,
+                    "name": "Kan Saw",
+                    "hidden": false,
+                    "id": "5e4a-7e97-ce33-b4e0",
+                    "type": "selectionEntry",
+                    "targetId": "958e-ade2-2721-9cde"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "6869-a933-f716-0350-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "6869-a933-f716-0350-max"
+                  }
+                ],
+                "defaultSelectionEntryId": "ad4c-8a6b-7665-0d30",
+                "sortIndex": 1
+              }
+            ],
+            "sortIndex": 1,
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "dfcc-6586-a717-220e",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Mechanised",
+                "hidden": false,
+                "id": "5d3b-50ee-b178-4872",
+                "targetId": "d109-f07d-276d-f321",
+                "primary": false
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 5
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Bulky",
+            "id": "9148-1dec-b389-ac42",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8317-bc69-b786-390d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Feel No Pain",
+            "id": "6bd0-6ef9-1417-1b70",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a80b-2291-817a-5f27",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Support Squad",
+            "id": "45e7-1365-f673-aa14",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "650d-03c6-7f4b-c601"
           }
         ]
       }
@@ -21934,6 +22544,14 @@
         "id": "9079-5334-8c13-2158",
         "type": "selectionEntry",
         "targetId": "55dc-70d9-08a5-e25c"
+      },
+      {
+        "import": true,
+        "name": "Killa Kan Mob",
+        "hidden": false,
+        "id": "c1f5-5faa-f213-249e",
+        "type": "selectionEntry",
+        "targetId": "ab71-8e2d-f955-cf3e"
       }
     ],
     "type": "catalogue",
