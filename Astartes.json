@@ -61755,19 +61755,6 @@
             "targetId": "0a5e-8d46-8f62-9e96"
           }
         ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 25,
-            "field": "54b5-0978-c8a4-5b5a",
-            "scope": "roster",
-            "shared": true,
-            "id": "5658-343b-5b32-a7bd",
-            "percentValue": true,
-            "includeChildSelections": false,
-            "includeChildForces": true
-          }
-        ],
         "entryLinks": [
           {
             "import": true,
@@ -62424,19 +62411,6 @@
           }
         ],
         "sortIndex": 49,
-        "constraints": [
-          {
-            "type": "max",
-            "value": 25,
-            "field": "54b5-0978-c8a4-5b5a",
-            "scope": "roster",
-            "shared": true,
-            "id": "cfd1-e52a-efed-bd93",
-            "percentValue": true,
-            "includeChildSelections": false,
-            "includeChildForces": true
-          }
-        ],
         "entryLinks": [
           {
             "import": true,

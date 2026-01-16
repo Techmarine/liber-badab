@@ -38,7 +38,20 @@
       {
         "name": "Lords of War",
         "id": "6499-290b-b038-5509",
-        "hidden": false
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 25,
+            "field": "54b5-0978-c8a4-5b5a",
+            "scope": "roster",
+            "shared": true,
+            "id": "ebd0-08b3-1db4-866d",
+            "percentValue": true,
+            "includeChildSelections": false,
+            "includeChildForces": true
+          }
+        ]
       },
       {
         "name": "Heavy",
@@ -148,6 +161,26 @@
       {
         "name": "Unique",
         "id": "75a3-46b2-47de-9789",
+        "hidden": false
+      },
+      {
+        "name": "Knight",
+        "id": "1d45-efe9-9dc0-bc16",
+        "hidden": false
+      },
+      {
+        "name": "Monstrous",
+        "id": "8aa6-e45f-c63c-e02b",
+        "hidden": false
+      },
+      {
+        "name": "Titan",
+        "id": "b8c7-99f5-6fbf-f369",
+        "hidden": false
+      },
+      {
+        "name": "Super-heavy",
+        "id": "c323-cb52-ee7a-f990",
         "hidden": false
       }
     ],
@@ -286,6 +319,108 @@
           {
             "name": "Transport Capacity",
             "id": "c01c-1a8f-7f1d-1cb6"
+          }
+        ]
+      },
+      {
+        "name": "Knight",
+        "id": "470f-f3d0-1e7d-2891",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "M",
+            "id": "d8cd-f9bb-52ba-300b"
+          },
+          {
+            "name": "WS",
+            "id": "7e98-48b9-4e64-2ba0"
+          },
+          {
+            "name": "BS",
+            "id": "9b10-bcc7-a770-2e26"
+          },
+          {
+            "name": "S",
+            "id": "614b-d66f-d7ce-8932"
+          },
+          {
+            "name": "Front",
+            "id": "5756-0521-5679-b40d"
+          },
+          {
+            "name": "Side",
+            "id": "0a2c-5b56-66db-fb00"
+          },
+          {
+            "name": "Rear",
+            "id": "3fee-ac0f-c87b-24f3"
+          },
+          {
+            "name": "I",
+            "id": "ac27-173c-754c-6a56"
+          },
+          {
+            "name": "A",
+            "id": "17e4-5028-3f4f-c138"
+          },
+          {
+            "name": "HP",
+            "id": "86c4-5b02-ff6a-9032"
+          },
+          {
+            "name": "Transport Capacity",
+            "id": "5f7b-a4e7-b637-74ee"
+          }
+        ]
+      },
+      {
+        "name": "Model Transport",
+        "id": "2277-39c8-f5fe-2e53",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "M",
+            "id": "75fb-74e7-d1e6-f70d"
+          },
+          {
+            "name": "WS",
+            "id": "8b42-5f6f-b946-34da"
+          },
+          {
+            "name": "BS",
+            "id": "ab7b-fb43-c32c-1958"
+          },
+          {
+            "name": "S",
+            "id": "265b-5c09-4b73-4957"
+          },
+          {
+            "name": "T",
+            "id": "f76e-f795-0692-32ce"
+          },
+          {
+            "name": "W",
+            "id": "09b8-9ec0-65b0-662f"
+          },
+          {
+            "name": "I",
+            "id": "11d0-632b-26fc-b4b3"
+          },
+          {
+            "name": "A",
+            "id": "980e-a079-abb5-6a84"
+          },
+          {
+            "name": "Ld",
+            "id": "477c-f705-6227-fb12"
+          },
+          {
+            "name": "Sv",
+            "id": "1cd3-1a4d-38af-200e"
+          },
+          {
+            "name": "Transport Capacity",
+            "id": "0ee9-2fdd-f0e9-2e6e"
           }
         ]
       }
@@ -717,6 +852,12 @@
         "id": "76cb-bd90-ecb1-941b",
         "hidden": false,
         "description": "For the purposes of whether or not attacks of a Strength twice this model’s Toughness value inflict Instant Death, this model’s Toughness is increased by X, where X is the value in brackets after the name of this special rule. If, for any reason, this special rule does not provide a value, then consider the value of X to be 1. This special rule does not alter the scores needed by To Wound rolls or any other Test or Check."
+      },
+      {
+        "name": "Deadly Cargo",
+        "id": "6722-e73b-7a6c-d8e0",
+        "hidden": false,
+        "description": "If a Vehicle with this special rule takes Hull Point damage from any source, including both Penetrating Hits and Glancing Hits, but is not destroyed, roll a D6. On a 6, the Vehicle suffers an Explodes result on the Vehicle Damage table."
       }
     ],
     "sharedSelectionEntries": [
@@ -1690,6 +1831,49 @@
             "hidden": false,
             "type": "rule",
             "targetId": "e7ad-a93b-a64d-bb10"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Close Combat Weapon",
+        "hidden": false,
+        "id": "7219-9baa-94d6-6a2a",
+        "profiles": [
+          {
+            "name": "Close Combat Weapon",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "285f-4198-d069-81a1",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": ""
+              }
+            ]
           }
         ]
       }
