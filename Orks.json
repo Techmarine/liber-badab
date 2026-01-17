@@ -119,8 +119,7 @@
                       }
                     ]
                   }
-                ],
-                "comment": "TODO: ADD MORE DAKKA (1) TO EACH WEAPON"
+                ]
               }
             ],
             "constraints": [
@@ -1411,26 +1410,7 @@
             "id": "ab71-d618-89b4-ce44",
             "hidden": false,
             "type": "profile",
-            "targetId": "a585-e8cc-7211-fafb",
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
+            "targetId": "a585-e8cc-7211-fafb"
           },
           {
             "name": "One Shot",
@@ -1438,36 +1418,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "ee53-4831-a3cf-1cdb"
-          },
-          {
-            "name": "More Dakka",
-            "id": "c837-96f2-221b-2a7f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
           }
         ],
         "profiles": [
@@ -1503,25 +1453,6 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": "One Shot"
               }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
             ]
           }
         ]
@@ -1538,26 +1469,7 @@
             "id": "a424-b0ac-f51d-319c",
             "hidden": false,
             "type": "profile",
-            "targetId": "a585-e8cc-7211-fafb",
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
+            "targetId": "a585-e8cc-7211-fafb"
           },
           {
             "name": "One Shot",
@@ -1565,36 +1477,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "ee53-4831-a3cf-1cdb"
-          },
-          {
-            "name": "More Dakka",
-            "id": "533f-4700-9d28-7b87",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
           }
         ],
         "profiles": [
@@ -1629,25 +1511,6 @@
                 "name": "Special Rules",
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": "One Shot"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
               }
             ]
           }
@@ -1692,25 +1555,6 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": "Blind, Breaching (4+), Gets Hot"
               }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
             ]
           }
         ],
@@ -1742,36 +1586,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "c7e6-c0f3-d0e4-4238"
-          },
-          {
-            "name": "More Dakka",
-            "id": "6bba-ea8e-268e-1c30",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
@@ -2095,25 +1909,6 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": "Blast (3\"), Tellyported (6+)"
               }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
             ]
           }
         ],
@@ -2143,36 +1938,6 @@
                 "type": "set",
                 "value": "6+",
                 "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "More Dakka",
-            "id": "ed1e-2ffa-ce15-2846",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
               }
             ]
           }
@@ -2290,25 +2055,6 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": "Large Blast (5\"), Pinning, Shokk Attack"
               }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
             ]
           }
         ],
@@ -2346,36 +2092,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "c860-1a20-86b6-c0f8"
-          },
-          {
-            "name": "More Dakka",
-            "id": "0a29-4f4b-2401-17ab",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
@@ -2609,57 +2325,6 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": ""
               }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "More Dakka",
-            "id": "a24b-1a3a-82c5-0418",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
             ]
           }
         ]
@@ -2782,57 +2447,6 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": ""
               }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "More Dakka",
-            "id": "16c0-032d-8d5b-93a4",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
             ]
           }
         ]
@@ -2875,57 +2489,6 @@
                 "name": "Special Rules",
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": ""
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "More Dakka",
-            "id": "9225-57d5-58d1-bee3",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
               }
             ]
           }
@@ -3619,14 +3182,7 @@
             "id": "a385-2c99-54f2-1c36",
             "hidden": false,
             "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              }
-            ]
+            "targetId": "be3f-8c18-d0f9-13a1"
           }
         ]
       },
@@ -5289,7 +4845,7 @@
             "name": "Kustom Force Field",
             "id": "36c3-baa5-63c0-2590",
             "hidden": false,
-            "description": "The bearer, and all models within 6\", receive a 5+ Invulnerable Save against any shooting attacks. If the bearer is embarked in a Vehicle, then the Vehicle receives\na 5+ Invulnerable Save against any shooting attacks instead."
+            "description": "The bearer, and all models within 6\", receive a 5+ Invulnerable Save against any shooting attacks. If the bearer is embarked in a Vehicle, then the Vehicle receives a 5+ Invulnerable Save against any shooting attacks instead."
           }
         ]
       },
@@ -6601,26 +6157,6 @@
                 "entryLinks": [
                   {
                     "import": true,
-                    "name": "Slugga",
-                    "hidden": false,
-                    "id": "d43f-a82a-ea36-c899",
-                    "type": "selectionEntry",
-                    "targetId": "79e1-e59a-8c31-6767",
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "56fb-35fb-a707-2a92"
-                      }
-                    ],
-                    "sortIndex": 2,
-                    "defaultAmount": "1"
-                  },
-                  {
-                    "import": true,
                     "name": "Choppa",
                     "hidden": false,
                     "id": "95f0-d534-3764-ecb9",
@@ -6779,6 +6315,79 @@
                         "name": "Points",
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 25
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Slugga-only Replacement",
+                    "id": "c378-fef7-4ce4-5da2",
+                    "hidden": false,
+                    "flatten": true,
+                    "sortIndex": 2,
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "5f4a-5cc4-3d3d-cae8"
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Slugga",
+                        "hidden": false,
+                        "id": "d43f-a82a-ea36-c899",
+                        "type": "selectionEntry",
+                        "targetId": "79e1-e59a-8c31-6767",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "56fb-35fb-a707-2a92"
+                          }
+                        ],
+                        "defaultAmount": "1"
+                      },
+                      {
+                        "import": true,
+                        "name": "Snazzgun",
+                        "hidden": true,
+                        "id": "f264-adf0-4a3d-c8b3",
+                        "type": "selectionEntry",
+                        "targetId": "2652-6c39-1b09-f933",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "0553-5c5f-a534-224b",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 10
+                          }
+                        ]
                       }
                     ]
                   }
@@ -7832,6 +7441,39 @@
                     "id": "5c40-b5f3-cd51-9bbb",
                     "type": "selectionEntry",
                     "targetId": "f8f8-7b3d-0a62-71ac"
+                  },
+                  {
+                    "import": true,
+                    "name": "Snazzgun",
+                    "hidden": true,
+                    "id": "f4c4-cf7d-c8a4-2e21",
+                    "type": "selectionEntry",
+                    "targetId": "2652-6c39-1b09-f933",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 10
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "0553-5c5f-a534-224b",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "sortIndex": 2,
@@ -9140,6 +8782,14 @@
             "id": "fba5-1fb8-db22-662b",
             "targetId": "809a-c73f-9d8b-58e1",
             "primary": true
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bad Moons",
+            "id": "a7bd-81be-702b-d366",
+            "hidden": false,
+            "description": "- Bad Moons Flash Gitz gain the Line Unit Sub-type.\n\n- A Bad Moons Warboss may exchange their slugga with a snazzgun for 10 points. A Bad Moons Mega Warboss may exchange their twin-linked shoota with a snazzgun for 10 points.\n\n- Any Assault weapon wielded by a Bad Moons model with the 'Ere We Go! special rule gains the More Dakka (1) special rule.\n\n- Any Bad Moons unit with access to a Trukk as a dedicated transport may take a Battlewagon instead.\n\n- A Detachment with any Bad Moons models may only include a maximum of one unit chosen from the following: Skarboyz Mob, Loota Mob."
           }
         ]
       },
@@ -14774,59 +14424,10 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": ""
               }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
             ]
           }
         ],
         "infoLinks": [
-          {
-            "name": "More Dakka",
-            "id": "4cad-b342-c8e1-8398",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
           {
             "name": "Twin-linked",
             "id": "f343-2aef-b783-0204",
@@ -14885,25 +14486,6 @@
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": ""
               }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
             ]
           },
           {
@@ -14961,36 +14543,6 @@
           }
         ],
         "infoLinks": [
-          {
-            "name": "More Dakka",
-            "id": "bb10-f53c-ea88-f6b8",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
           {
             "name": "Brutal",
             "id": "f5f6-49ae-0ee6-63a2",
@@ -15560,6 +15112,25 @@
                 "typeId": "54b5-0978-c8a4-5b5a",
                 "value": 32
               }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "efc6-682f-b0cb-cfa2",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "0553-5c5f-a534-224b",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
             ]
           },
           {
@@ -15827,6 +15398,25 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "1ec6-4a0e-8fb5-58fc"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "efc6-682f-b0cb-cfa2",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "0553-5c5f-a534-224b",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
               }
             ]
           }
@@ -16917,6 +16507,35 @@
             "targetId": "63f3-8991-cefb-bbcb",
             "sortIndex": 2
           }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "b9ea-47ca-3de1-9b84",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 1,
+            "field": "b9ea-47ca-3de1-9b84",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0553-5c5f-a534-224b",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -16957,25 +16576,6 @@
                 "name": "Special Rules",
                 "typeId": "d2a2-1139-48cb-4472",
                 "$text": ""
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "More Dakka (1)",
-                "field": "d2a2-1139-48cb-4472",
-                "join": ", ",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
               }
             ]
           },
@@ -17034,36 +16634,6 @@
           }
         ],
         "infoLinks": [
-          {
-            "name": "More Dakka",
-            "id": "a559-466f-66ba-c8d9",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "be3f-8c18-d0f9-13a1",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              },
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c78f-0f9f-6db3-ae54",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
           {
             "name": "Brutal",
             "id": "f912-0a16-9dbc-1c05",
@@ -27543,6 +27113,35 @@
             "type": "rule",
             "targetId": "7aed-b16d-6ce3-62af"
           }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "7785-1cad-0afd-a4a9",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 1,
+            "field": "7785-1cad-0afd-a4a9",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0553-5c5f-a534-224b",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -34916,30 +34515,14 @@
           {
             "import": true,
             "name": "Trukk",
-            "hidden": false,
+            "hidden": true,
             "id": "1a3a-5e23-580c-e7f7",
             "type": "selectionEntry",
-            "targetId": "7df2-ad3e-90a3-3690"
-          },
-          {
-            "import": true,
-            "name": "Battlewagon",
-            "hidden": false,
-            "id": "9538-7b3a-a51c-184a",
-            "type": "selectionEntry",
-            "targetId": "eeed-762b-eb92-f301"
-          },
-          {
-            "import": true,
-            "name": "Looted Wagon",
-            "hidden": false,
-            "id": "17ab-4b96-f5a9-0ff4",
-            "type": "selectionEntry",
-            "targetId": "b2c2-265c-b486-3e6f",
+            "targetId": "7df2-ad3e-90a3-3690",
             "modifiers": [
               {
                 "type": "set",
-                "value": true,
+                "value": false,
                 "field": "hidden",
                 "conditionGroups": [
                   {
@@ -34999,6 +34582,182 @@
                         "field": "selections",
                         "scope": "parent",
                         "childId": "55dc-70d9-08a5-e25c",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "2fad-bb00-958d-8fbf",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Battlewagon",
+            "hidden": true,
+            "id": "9538-7b3a-a51c-184a",
+            "type": "selectionEntry",
+            "targetId": "eeed-762b-eb92-f301",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "afb4-1d93-2e25-dd7c",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "3449-eedd-9c2d-a5a1",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "fbd0-7b52-c680-1e3e",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "afb4-1d93-2e25-dd7c",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "3449-eedd-9c2d-a5a1",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "fbd0-7b52-c680-1e3e",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "debf-3dcc-7757-1699",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "8a4a-83dd-81ae-4d30",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "adb8-c8f3-c824-1514",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "55dc-70d9-08a5-e25c",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "2fad-bb00-958d-8fbf",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "0553-5c5f-a534-224b",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Looted Wagon",
+            "hidden": true,
+            "id": "17ab-4b96-f5a9-0ff4",
+            "type": "selectionEntry",
+            "targetId": "b2c2-265c-b486-3e6f",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "2fad-bb00-958d-8fbf",
                         "shared": true
                       }
                     ]
