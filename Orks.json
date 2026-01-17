@@ -33285,11 +33285,21 @@
             "includeChildSelections": true
           }
         ],
-        "modifiers": [
+        "modifierGroups": [
           {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": -1,
+                "field": "ca17-943a-137c-d3ce"
+              }
+            ],
             "conditions": [
               {
                 "type": "lessThan",
