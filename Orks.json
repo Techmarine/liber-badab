@@ -16472,6 +16472,13 @@
             "id": "de33-b62a-19d5-81aa",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "Bad Moons Restricted Unit",
+            "hidden": false,
+            "id": "b1e5-11ff-6c9d-ea1e",
+            "targetId": "8301-349b-f880-e491",
+            "primary": false
           }
         ],
         "infoLinks": [
@@ -16506,35 +16513,6 @@
             "type": "selectionEntryGroup",
             "targetId": "63f3-8991-cefb-bbcb",
             "sortIndex": 2
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": -1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "b9ea-47ca-3de1-9b84",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": 1,
-            "field": "b9ea-47ca-3de1-9b84",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "0553-5c5f-a534-224b",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
           }
         ]
       },
@@ -26411,6 +26389,13 @@
             "id": "69df-d673-a185-30eb",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "Bad Moons Restricted Unit",
+            "hidden": false,
+            "id": "7ab6-3f63-dff8-6f6b",
+            "targetId": "8301-349b-f880-e491",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -27112,35 +27097,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "7aed-b16d-6ce3-62af"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": -1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "7785-1cad-0afd-a4a9",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": 1,
-            "field": "7785-1cad-0afd-a4a9",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "0553-5c5f-a534-224b",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
           }
         ]
       },
@@ -33311,6 +33267,40 @@
             "id": "93a5-1530-324c-f51d",
             "includeChildSelections": true,
             "includeChildForces": true
+          }
+        ]
+      },
+      {
+        "name": "Bad Moons Restricted Unit",
+        "id": "8301-349b-f880-e491",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "ca17-943a-137c-d3ce",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0553-5c5f-a534-224b",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       }
