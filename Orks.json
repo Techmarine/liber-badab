@@ -6671,7 +6671,7 @@
                 "id": "e782-bc36-99a4-ec28",
                 "type": "selectionEntryGroup",
                 "targetId": "d915-b894-2ac8-4f15",
-                "sortIndex": 12
+                "sortIndex": 13
               }
             ],
             "selectionEntries": [
@@ -6757,6 +6757,71 @@
                         "field": "annotation"
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Blood Axes: Skirmisher",
+                "hidden": true,
+                "id": "000d-de93-e62a-75db",
+                "sortIndex": 12,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fa51-e224-080b-c97e"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "7ec4-58ec-deca-5e00",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "add",
+                    "value": "1909-26f7-31d2-0932",
+                    "field": "category",
+                    "scope": "model"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Scout",
+                    "id": "6507-1c38-03e4-b6f1",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "e18c-d4da-eb9b-919b"
+                  },
+                  {
+                    "name": "Move Through Cover",
+                    "id": "3bf8-6050-2f0c-adad",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "295d-36fe-4db3-a19f"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
                   }
                 ]
               }
@@ -8807,6 +8872,14 @@
             "targetId": "809a-c73f-9d8b-58e1",
             "primary": true
           }
+        ],
+        "rules": [
+          {
+            "name": "Blood Axes",
+            "id": "767c-112a-9d6d-2988",
+            "hidden": false,
+            "description": "- Blood Axes Kommandos gain the Line Unit Sub-type.\n\n\n- A Blood Axes Warboss may gain the Move Through Cover and Scout special rules and the Skirmish Unit Sub-type for 15 points.\n\n\n- Any Blood Axes model with the Light Unit Sub-type additionally gains the Skirmish Unit Sub-type.\n\n\n- Any Blood Axes unit with access to a Trukk as a dedicated transport may take a Looted Wagon with sufficient transport capacity instead.\n\n\n- A Detachment with any Blood Axes models may only include a maximum of one unit chosen from the following: Burna Mob, Deffkoptas.\n\n\n- A Primary Detachment of Imperialis Militia or Legiones Astartes (Blackshields) may take an Allied Detachment of Orks, counting as Distrusted Allies, if the compulsory HQ choice for the Allied Detachment is a Blood Axes Warboss or Blood Axes Mega Warboss."
+          }
         ]
       },
       {
@@ -9927,6 +10000,24 @@
                   }
                 ]
               }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "1909-26f7-31d2-0932",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7ec4-58ec-deca-5e00",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -11012,6 +11103,24 @@
                 "name": "Points",
                 "typeId": "54b5-0978-c8a4-5b5a",
                 "value": 16
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "1909-26f7-31d2-0932",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7ec4-58ec-deca-5e00",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ]
           },
@@ -14335,6 +14444,40 @@
                 "targetId": "e349-c42f-3c5d-1e72",
                 "primary": false
               }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "efc6-682f-b0cb-cfa2",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7ec4-58ec-deca-5e00",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "1909-26f7-31d2-0932",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7ec4-58ec-deca-5e00",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -16369,6 +16512,24 @@
                     "value": "c0e6-28aa-5286-2fa2",
                     "field": "category",
                     "scope": "parent"
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "1909-26f7-31d2-0932",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7ec4-58ec-deca-5e00",
+                    "shared": true,
+                    "includeChildSelections": true
                   }
                 ]
               }
@@ -18644,6 +18805,24 @@
                 "targetId": "efc6-682f-b0cb-cfa2",
                 "primary": false
               }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "1909-26f7-31d2-0932",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7ec4-58ec-deca-5e00",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           },
           {
@@ -18929,6 +19108,24 @@
                 "typeId": "54b5-0978-c8a4-5b5a",
                 "value": 3
               }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "1909-26f7-31d2-0932",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7ec4-58ec-deca-5e00",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           },
           {
@@ -19206,6 +19403,24 @@
                   }
                 ]
               }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "1909-26f7-31d2-0932",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7ec4-58ec-deca-5e00",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -19231,6 +19446,13 @@
             "id": "53c6-f1d2-3f12-a7bc",
             "targetId": "1685-8865-a2b2-5fb9",
             "primary": true
+          },
+          {
+            "name": "Blood Axes Restricted Unit",
+            "hidden": false,
+            "id": "4c5b-5389-76bf-ec50",
+            "targetId": "0c18-a429-d4e2-3ba6",
+            "primary": false
           }
         ],
         "infoLinks": [
@@ -22820,6 +23042,13 @@
             "id": "6646-3e98-267c-68df",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
+          },
+          {
+            "name": "Blood Axes Restricted Unit",
+            "hidden": false,
+            "id": "c96c-1e5b-b47a-15d7",
+            "targetId": "0c18-a429-d4e2-3ba6",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -33313,6 +33542,50 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Blood Axes Restricted Unit",
+        "id": "0c18-a429-d4e2-3ba6",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "a7e5-5f2d-850a-4c95",
+            "includeChildSelections": true
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": -1,
+                "field": "a7e5-5f2d-850a-4c95"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "7ec4-58ec-deca-5e00",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedRules": [
@@ -34759,6 +35032,90 @@
                         "scope": "parent",
                         "childId": "2fad-bb00-958d-8fbf",
                         "shared": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "afb4-1d93-2e25-dd7c",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "3449-eedd-9c2d-a5a1",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "fbd0-7b52-c680-1e3e",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "debf-3dcc-7757-1699",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "8a4a-83dd-81ae-4d30",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "adb8-c8f3-c824-1514",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "55dc-70d9-08a5-e25c",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "7ec4-58ec-deca-5e00",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
