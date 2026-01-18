@@ -65930,12 +65930,6 @@
         "description": "When a model is allocated a Wound inflicted by a weapon with this special rule, it does not suffer only one Wound but instead suffers a number of Wounds equal to the number in brackets associated with the specific variant of this special rule, with all of the Wounds inflicted using the same AP and special rules as that of the initial Wound. Roll to save against each Wound inflicted separately, but note that Wounds caused in excess of a given model’s remaining Wounds do not spill over to other models and are lost. This special rule has no effect on models that do not have a Toughness value."
       },
       {
-        "name": "Detonation",
-        "id": "26f7-bec6-599d-285f",
-        "hidden": false,
-        "description": "A weapon with this special rule may only be used to attack models of the Vehicle, Dreadnought or Automata Unit Types, any model with a Movement Characteristic of 0 or ‘-’, or Buildings or Fortifications. Furthermore, a model that is chosen to attack with a weapon with this special rule during the Assault phase may only make a single attack in the Fight sub-phase, regardless of its Attacks Characteristic and any bonus attacks from Charging or other special rules."
-      },
-      {
         "name": "Dreadnought Talon",
         "id": "a9c0-2029-d470-db34",
         "hidden": false,

@@ -858,6 +858,12 @@
         "id": "6722-e73b-7a6c-d8e0",
         "hidden": false,
         "description": "If a Vehicle with this special rule takes Hull Point damage from any source, including both Penetrating Hits and Glancing Hits, but is not destroyed, roll a D6. On a 6, the Vehicle suffers an Explodes result on the Vehicle Damage table."
+      },
+      {
+        "name": "Detonation",
+        "id": "26f7-bec6-599d-285f",
+        "hidden": false,
+        "description": "A weapon with this special rule may only be used to attack models of the Vehicle, Dreadnought or Automata Unit Types, any model with a Movement Characteristic of 0 or ‘-’, or Buildings or Fortifications. Furthermore, a model that is chosen to attack with a weapon with this special rule during the Assault phase may only make a single attack in the Fight sub-phase, regardless of its Attacks Characteristic and any bonus attacks from Charging or other special rules."
       }
     ],
     "sharedSelectionEntries": [
