@@ -6979,6 +6979,45 @@
             "hidden": false,
             "type": "rule",
             "targetId": "919d-8ad9-f565-2b64"
+          },
+          {
+            "name": "Hit & Run",
+            "id": "f654-4793-ff73-6a44",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "8343-bec1-04b5-a8d4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "1db6-1d27-24c0-5cb0",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "028c-3ebb-55ae-a33e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "sortIndex": 1,
@@ -8949,6 +8988,39 @@
                   }
                 ]
               }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "be4d-83ab-c864-a7c6",
+                "field": "category",
+                "scope": "force",
+                "affects": "self.entries.recursive.6d57-9b29-067c-6f4d",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "1db6-1d27-24c0-5cb0",
+                        "shared": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "028c-3ebb-55ae-a33e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -9001,6 +9073,45 @@
             "hidden": false,
             "type": "rule",
             "targetId": "123e-d00a-177a-b419"
+          },
+          {
+            "name": "Hit & Run",
+            "id": "f7af-0c77-458a-aba1",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "8343-bec1-04b5-a8d4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "1db6-1d27-24c0-5cb0",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "028c-3ebb-55ae-a33e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -13779,6 +13890,13 @@
             "id": "8013-78a8-655a-0253",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "Kult of Speed Heavy Support",
+            "hidden": false,
+            "id": "c3a0-ae92-c74f-304b",
+            "targetId": "3df2-c405-1697-c787",
+            "primary": false
           }
         ],
         "sortIndex": 31,
@@ -18018,6 +18136,35 @@
                     "includeChildSelections": true
                   }
                 ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "3ae0-b5c2-1347-ef81",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "3ae0-b5c2-1347-ef81",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
               }
             ]
           }
@@ -22290,6 +22437,35 @@
             "type": "rule",
             "targetId": "650d-03c6-7f4b-c601"
           }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "f080-a349-e0b2-3f8b",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "f080-a349-e0b2-3f8b",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -23044,15 +23220,6 @@
         "hidden": false,
         "id": "6d57-9b29-067c-6f4d",
         "sortIndex": 21,
-        "categoryLinks": [
-          {
-            "name": "Fast Attack",
-            "hidden": false,
-            "id": "e159-8be2-33ad-bf71",
-            "targetId": "2e5a-9101-3872-faad",
-            "primary": true
-          }
-        ],
         "selectionEntries": [
           {
             "type": "model",
@@ -24312,6 +24479,31 @@
             "hidden": false,
             "type": "rule",
             "targetId": "e18c-d4da-eb9b-919b"
+          },
+          {
+            "name": "Hit & Run",
+            "id": "aefa-46e7-8dbc-3741",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "8343-bec1-04b5-a8d4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "028c-3ebb-55ae-a33e",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -25638,15 +25830,6 @@
         "hidden": false,
         "id": "5621-57e8-2ddb-f3cf",
         "sortIndex": 27,
-        "categoryLinks": [
-          {
-            "name": "Fast Attack",
-            "hidden": false,
-            "id": "51ec-f20e-0d3f-4445",
-            "targetId": "2e5a-9101-3872-faad",
-            "primary": true
-          }
-        ],
         "selectionEntries": [
           {
             "type": "model",
@@ -27483,6 +27666,35 @@
             "targetId": "6d7c-9334-17ca-08bc",
             "primary": false
           }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "5d04-ad1c-4eed-a5b8",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "5d04-ad1c-4eed-a5b8",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -27505,6 +27717,13 @@
             "hidden": false,
             "id": "7ab6-3f63-dff8-6f6b",
             "targetId": "8301-349b-f880-e491",
+            "primary": false
+          },
+          {
+            "name": "Kult of Speed Heavy Support",
+            "hidden": false,
+            "id": "4c64-50c1-7388-3e61",
+            "targetId": "3df2-c405-1697-c787",
             "primary": false
           }
         ],
@@ -29052,6 +29271,13 @@
             "id": "9389-983f-d035-35cb",
             "targetId": "b966-b1a2-7578-dc41",
             "primary": false
+          },
+          {
+            "name": "Kult of Speed Heavy Support",
+            "hidden": false,
+            "id": "1878-728a-946d-8199",
+            "targetId": "3df2-c405-1697-c787",
+            "primary": false
           }
         ],
         "modifierGroups": [
@@ -29727,6 +29953,13 @@
             "id": "6507-d0a8-0cd5-485a",
             "targetId": "b966-b1a2-7578-dc41",
             "primary": false
+          },
+          {
+            "name": "Kult of Speed Heavy Support",
+            "hidden": false,
+            "id": "8e15-3b20-5e4f-61d2",
+            "targetId": "3df2-c405-1697-c787",
+            "primary": false
           }
         ],
         "sortIndex": 31
@@ -29773,6 +30006,13 @@
             "id": "46ed-3739-4ebc-74ac",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "Kult of Speed Heavy Support",
+            "hidden": false,
+            "id": "2f01-58e9-429a-a321",
+            "targetId": "3df2-c405-1697-c787",
+            "primary": false
           }
         ]
       },
@@ -29790,6 +30030,13 @@
             "id": "2377-a577-68da-6954",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "Kult of Speed Heavy Support",
+            "hidden": false,
+            "id": "28c4-254c-1ac8-64dd",
+            "targetId": "3df2-c405-1697-c787",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -30540,6 +30787,35 @@
             "type": "rule",
             "targetId": "d669-c818-42c3-955a"
           }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "5187-4dcc-06f2-2397",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "5187-4dcc-06f2-2397",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -30932,6 +31208,35 @@
             "type": "rule",
             "targetId": "d669-c818-42c3-955a"
           }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "f5bb-4f6d-4790-6488",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "f5bb-4f6d-4790-6488",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -31237,6 +31542,35 @@
             "id": "caee-6ae2-66f3-b3b4",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "c402-7b9e-a449-7073",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "c402-7b9e-a449-7073",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -31762,6 +32096,13 @@
             "id": "c0f5-2d2f-3270-2bb5",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "Kult of Speed Heavy Support",
+            "hidden": false,
+            "id": "f8c7-8e7c-65ff-22cd",
+            "targetId": "3df2-c405-1697-c787",
+            "primary": false
           }
         ]
       },
@@ -32343,6 +32684,35 @@
             "hidden": false,
             "type": "rule",
             "targetId": "826a-a133-aa85-3456"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "7821-9b55-0845-add3",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "7821-9b55-0845-add3",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -36149,6 +36519,74 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Kult of Speed Heavy Support",
+        "id": "3df2-c405-1697-c787",
+        "hidden": true,
+        "modifiers": [
+          {
+            "type": "set",
+            "value": false,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "e28a-5201-6e12-dc2c",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "2e5a-9101-3872-faad",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "decrement",
+            "value": 1,
+            "field": "e28a-5201-6e12-dc2c",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "3df2-c405-1697-c787",
+                "shared": true,
+                "roundUp": false
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "e28a-5201-6e12-dc2c",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ]
       }
     ],
     "sharedRules": [
@@ -36712,7 +37150,34 @@
         "hidden": false,
         "id": "9809-5268-2ecb-7969",
         "type": "selectionEntry",
-        "targetId": "6d57-9b29-067c-6f4d"
+        "targetId": "6d57-9b29-067c-6f4d",
+        "categoryLinks": [
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "6ce5-719e-0c61-7f53",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       },
       {
         "import": true,
@@ -36760,7 +37225,16 @@
         "hidden": false,
         "id": "6029-ba6a-c89c-2d85",
         "type": "selectionEntry",
-        "targetId": "5621-57e8-2ddb-f3cf"
+        "targetId": "5621-57e8-2ddb-f3cf",
+        "categoryLinks": [
+          {
+            "name": "Fast Attack",
+            "hidden": false,
+            "id": "533c-3107-1842-f7fd",
+            "targetId": "2e5a-9101-3872-faad",
+            "primary": true
+          }
+        ]
       },
       {
         "import": true,
@@ -36873,6 +37347,58 @@
         "id": "e508-1470-1cf2-6ea1",
         "type": "selectionEntry",
         "targetId": "b6c7-97a7-b794-4a97"
+      },
+      {
+        "import": true,
+        "name": "Warbiker Mob",
+        "hidden": false,
+        "id": "95f6-27fb-6c89-4eee",
+        "type": "selectionEntry",
+        "targetId": "6d57-9b29-067c-6f4d",
+        "categoryLinks": [
+          {
+            "name": "Fast Attack",
+            "hidden": false,
+            "id": "b914-08f4-435a-27c9",
+            "targetId": "2e5a-9101-3872-faad",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Warbuggy Squadron",
+        "hidden": false,
+        "id": "58ca-e345-d3c4-2983",
+        "type": "selectionEntry",
+        "targetId": "5621-57e8-2ddb-f3cf",
+        "categoryLinks": [
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "af97-c88b-b5de-baca",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "028c-3ebb-55ae-a33e",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "type": "catalogue",
