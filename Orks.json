@@ -8502,32 +8502,6 @@
                   }
                 ],
                 "sortIndex": 5
-              },
-              {
-                "import": true,
-                "name": "Warbike",
-                "hidden": false,
-                "id": "35fe-76a5-ee56-f4b9",
-                "type": "selectionEntry",
-                "targetId": "1db6-1d27-24c0-5cb0",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 25
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "b42c-8897-ebe4-9105"
-                  }
-                ],
-                "sortIndex": 11
               }
             ],
             "selectionEntryGroups": [
@@ -8897,6 +8871,83 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Mobility Options",
+                "id": "e408-1a6b-3516-10e6",
+                "hidden": false,
+                "sortIndex": 11,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "e7b4-9df7-b505-680b"
+                  }
+                ],
+                "flatten": true,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Warbike",
+                    "hidden": false,
+                    "id": "35fe-76a5-ee56-f4b9",
+                    "type": "selectionEntry",
+                    "targetId": "1db6-1d27-24c0-5cb0",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "b42c-8897-ebe4-9105"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Cyboar",
+                    "hidden": true,
+                    "id": "ce9e-d4a7-c46b-2831",
+                    "type": "selectionEntry",
+                    "targetId": "a85b-670d-3ad2-cfc2",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "c619-c045-1bb4-85df",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -9095,6 +9146,23 @@
             "id": "d523-0931-2f64-7cf5",
             "targetId": "809a-c73f-9d8b-58e1",
             "primary": true
+          }
+        ],
+        "rules": [
+          {
+            "name": "Snakebites",
+            "id": "0478-cca8-8b45-a213",
+            "hidden": false,
+            "description": "- Snakebites Skarboyz Mobs gain the Line Unit Sub-type.\n\n- Any Snakebites model with the Character Unit Sub-type gains the Monster Hunter special rule.\n\n- Any Snakebites model with the Infantry or Cavalry Unit types and the 'Ere We Go! special rule gains Feel No Pain (5+) against Wounds with the Poisoned (X) special rule.\n\n- Any Snakebites model with a Warbike may exchange it for a Cyboar for no additional cost, gaining the Hammer of Wrath (D3) and Rampage (D3) special rules.\n\n- Any Snakebites unit with access to a Trukk as a dedicated transport may take a Squiggoth instead.\n\n- A Detachment with any Snakebites models may only include a maximum of one unit chosen from the following: Stormboyz Mob, Deffkoptas."
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "a0bc-3ab6-57fd-c796",
+            "field": "category",
+            "scope": "force",
+            "affects": "self.entries.recursive.c0e6-28aa-5286-2fa2"
           }
         ]
       },
@@ -11993,6 +12061,104 @@
                   }
                 ],
                 "sortIndex": 5
+              },
+              {
+                "name": "Mobility Options",
+                "id": "8dcb-b5fe-75b6-5b7b",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "0559-02d6-499b-7ba7-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "0559-02d6-499b-7ba7-max"
+                  }
+                ],
+                "flatten": true,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Warbike",
+                    "hidden": false,
+                    "id": "8abe-2dd7-e3d2-4aa0",
+                    "type": "selectionEntry",
+                    "targetId": "1db6-1d27-24c0-5cb0",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "70dd-4f52-f596-aa53"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7d5f-ac12-1152-2518"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "70dd-4f52-f596-aa53",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "c619-c045-1bb4-85df",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Cyboar",
+                    "hidden": true,
+                    "id": "9965-b112-ffe1-6094",
+                    "type": "selectionEntry",
+                    "targetId": "a85b-670d-3ad2-cfc2",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "c619-c045-1bb4-85df",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 11,
+                "defaultSelectionEntryId": "8abe-2dd7-e3d2-4aa0"
               }
             ],
             "entryLinks": [
@@ -12383,32 +12549,6 @@
                         "shared": true
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Warbike",
-                "hidden": false,
-                "id": "536e-f747-b44e-8a48",
-                "type": "selectionEntry",
-                "targetId": "1db6-1d27-24c0-5cb0",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "1564-3f49-d640-c89b-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "1564-3f49-d640-c89b-max"
                   }
                 ]
               },
@@ -16987,6 +17127,22 @@
                     "field": "selections",
                     "scope": "force",
                     "childId": "7ec4-58ec-deca-5e00",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "efc6-682f-b0cb-cfa2",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "c619-c045-1bb4-85df",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -22150,6 +22306,13 @@
             "id": "9b0e-b46b-b3a5-d7cb",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
+          },
+          {
+            "name": "Snakebites Restricted Unit",
+            "hidden": false,
+            "id": "da87-774d-f543-f1cc",
+            "targetId": "93ee-e5ae-9b87-e691",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -23052,32 +23215,6 @@
                     "id": "43da-8a3b-3a18-633f-max"
                   }
                 ]
-              },
-              {
-                "import": true,
-                "name": "Warbike",
-                "hidden": false,
-                "id": "9b1a-a6d1-b259-1662",
-                "type": "selectionEntry",
-                "targetId": "1db6-1d27-24c0-5cb0",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "66e0-7e70-a8de-6300-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "66e0-7e70-a8de-6300-max"
-                  }
-                ]
               }
             ],
             "selectionEntries": [
@@ -23513,6 +23650,104 @@
                   }
                 ],
                 "defaultSelectionEntryId": "a4b3-22de-28f0-47e9"
+              },
+              {
+                "name": "Mobility Options",
+                "id": "ec51-821d-0aaf-56b9",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "9a7d-7f26-5213-bc4e-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "9a7d-7f26-5213-bc4e-max"
+                  }
+                ],
+                "flatten": true,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Warbike",
+                    "hidden": false,
+                    "id": "728d-6b85-b610-5ff3",
+                    "type": "selectionEntry",
+                    "targetId": "1db6-1d27-24c0-5cb0",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "1013-b20f-cd15-170e"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "5777-4d92-aa4b-ced8"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "1013-b20f-cd15-170e",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "c619-c045-1bb4-85df",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Cyboar",
+                    "hidden": true,
+                    "id": "2782-15c3-6845-9037",
+                    "type": "selectionEntry",
+                    "targetId": "a85b-670d-3ad2-cfc2",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "c619-c045-1bb4-85df",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "defaultSelectionEntryId": "8abe-2dd7-e3d2-4aa0",
+                "sortIndex": 3
               }
             ],
             "modifiers": [
@@ -23673,6 +23908,13 @@
             "hidden": false,
             "id": "c96c-1e5b-b47a-15d7",
             "targetId": "0c18-a429-d4e2-3ba6",
+            "primary": false
+          },
+          {
+            "name": "Snakebites Restricted Unit",
+            "hidden": false,
+            "id": "b876-489e-fbbf-d79d",
+            "targetId": "93ee-e5ae-9b87-e691",
             "primary": false
           }
         ],
@@ -35849,6 +36091,64 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Snakebites Monster Hunter",
+        "id": "a0bc-3ab6-57fd-c796",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Monster Hunter",
+            "id": "72c9-03fd-4ce7-9c78",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c463-cfeb-d68a-56ab"
+          }
+        ]
+      },
+      {
+        "name": "Snakebites Restricted Unit",
+        "id": "93ee-e5ae-9b87-e691",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "8f37-1e35-3e60-6d04",
+            "includeChildSelections": true
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": -1,
+                "field": "8f37-1e35-3e60-6d04"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "c619-c045-1bb4-85df",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedRules": [
@@ -37519,6 +37819,92 @@
                             "includeChildSelections": true
                           }
                         ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Squiggoth",
+            "hidden": true,
+            "id": "eccf-3ac9-4327-f965",
+            "type": "selectionEntry",
+            "targetId": "ee04-1feb-b2db-7a62",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "afb4-1d93-2e25-dd7c",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "3449-eedd-9c2d-a5a1",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "fbd0-7b52-c680-1e3e",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "debf-3dcc-7757-1699",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "8a4a-83dd-81ae-4d30",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "adb8-c8f3-c824-1514",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "55dc-70d9-08a5-e25c",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "2fad-bb00-958d-8fbf",
+                        "shared": true
                       }
                     ]
                   }
