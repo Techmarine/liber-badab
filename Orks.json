@@ -9291,6 +9291,20 @@
             "targetId": "e072-7303-f891-1e4f",
             "primary": true
           }
+        ],
+        "rules": [
+          {
+            "name": "Kult of Speed Effects",
+            "id": "0c72-90b4-989a-676f",
+            "hidden": false,
+            "description": "- Warbiker Mobs and Warbuggy Squadrons may be taken as non-compulsory Troops choices in a Detachment following this Mekaniak Kult. If the Detachment\nincludes a Big Mek mounted on a Warbike, Warbiker Mobs may be taken as Compulsory Troops choices too.\n\n- Deffkoptas and Independent Characters on Warbikes in a Detachment following this Mekaniak Kult gain the Hit & Run special rule.\n\n- An army with a Detachment following this Mekaniak Kult may begin rolling for Reserves at the start of their first turn."
+          },
+          {
+            "name": "Kult of Speed Limitations",
+            "id": "ef1c-9300-c022-f087",
+            "hidden": false,
+            "description": "- A Detachment following this Mekaniak Kult may not include any models with the Dreadnought Type or the Artillery, Knight, Mechanised or Titan Sub-types.\n\n- A Detachment following this Mekaniak Kult may not include more Heavy Support choices than Fast Attack choices.\n\n- Every model with the Infantry Unit Type in a Detachment following this Mekaniak Kult must begin the game embarked on a Vehicle with the Transport\nUnit Sub-type."
+          }
         ]
       },
       {
