@@ -4914,6 +4914,31 @@
             "hidden": false,
             "type": "rule",
             "targetId": "a43c-e082-b874-e2f6"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "271e-aa1a-389d-a8ed",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "0b0d-a0f7-d94d-a576",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "entryLinks": [
@@ -9380,6 +9405,20 @@
             "targetId": "e072-7303-f891-1e4f",
             "primary": true
           }
+        ],
+        "rules": [
+          {
+            "name": "Tellyporta Assault Effects",
+            "id": "07c9-8b5c-8d51-e875",
+            "hidden": false,
+            "description": "- All models in mega armour in a Detachment following this Mekaniak Kult gain the Deep Strike special rule.\n\n- Meganobz Mobs may be taken as Troops choices in a Detachment following this Mekaniak Kult.\n\n- Meganobz Mobs taken as Compulsory Troops in the Detachment gain the Line Sub-type.\n\n- In a Detachment following this Mekaniak Kult, any of the following units may be given the Deep Strike special rule for +25 points per unit:\n  - Boyz Mobs without a Dedicated Transport\n  - Flash Gitz Mobs without a Dedicated Transport\n  - Morkanauts"
+          },
+          {
+            "name": "Tellyporta Assault Limitations",
+            "id": "86b5-cd43-e11b-d757",
+            "hidden": false,
+            "description": "- A Detachment following this Mekaniak Kult must include at least one Mega Big Mek with a tellyport blasta.\n\n- Units in a Detachment following this Mekaniak Kult may not take Dedicated Transports.\n\n- Gretchin Mobs may not be taken in a Detachment following this Mekaniak Kult.\n\n- All models in mega armour in a Detachment following this Mekaniak Kult must deploy by means of a Deep Strike Assault.\n\n- On the turn in which they deploy by means of a Deep Strike Assault, units with the Infantry Unit type in a detachment following this Mekaniak Kult may not make use of the Mob Rule special rule."
+          }
         ]
       },
       {
@@ -9902,6 +9941,35 @@
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 25
                       }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "02b5-fe85-3d4d-50b7",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "0b0d-a0f7-d94d-a576",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "02b5-fe85-3d4d-50b7",
+                        "includeChildSelections": true
+                      }
                     ]
                   },
                   {
@@ -10002,6 +10070,35 @@
                 "type": "set",
                 "value": "2",
                 "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 0,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "6e67-885b-6634-dff3",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 1,
+            "field": "6e67-885b-6634-dff3",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0b0d-a0f7-d94d-a576",
+                "shared": true,
+                "includeChildSelections": true
               }
             ]
           }
@@ -13074,13 +13171,6 @@
         "id": "3449-eedd-9c2d-a5a1",
         "sortIndex": 9,
         "categoryLinks": [
-          {
-            "name": "Elites",
-            "hidden": false,
-            "id": "b842-5970-6554-fba3",
-            "targetId": "a300-5393-99ea-9657",
-            "primary": true
-          },
           {
             "name": "Evil Sunz Restricted Unit",
             "hidden": false,
@@ -16353,6 +16443,15 @@
             "id": "1d95-6580-eb6a-5155",
             "type": "selectionEntryGroup",
             "targetId": "63f3-8991-cefb-bbcb",
+            "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Tellyporta Assault: Deep Strike",
+            "hidden": false,
+            "id": "b87f-d713-e626-5335",
+            "type": "selectionEntry",
+            "targetId": "c77b-8a9d-ef52-90ce",
             "sortIndex": 3
           }
         ],
@@ -19806,6 +19905,15 @@
             "id": "1396-c3ef-1f87-0344",
             "type": "selectionEntryGroup",
             "targetId": "63f3-8991-cefb-bbcb",
+            "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Tellyporta Assault: Deep Strike",
+            "hidden": false,
+            "id": "723e-d464-8e41-2f4e",
+            "type": "selectionEntry",
+            "targetId": "c77b-8a9d-ef52-90ce",
             "sortIndex": 4
           }
         ],
@@ -20362,6 +20470,45 @@
             "name": "Points",
             "typeId": "54b5-0978-c8a4-5b5a",
             "value": -5
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "f5dc-98a6-86dd-bdec",
+            "includeChildSelections": true
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "f5dc-98a6-86dd-bdec"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0b0d-a0f7-d94d-a576",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -31280,7 +31427,8 @@
                 "shared": true,
                 "id": "9bc8-5858-3406-c4c7-max"
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ],
         "infoLinks": [
@@ -31319,6 +31467,17 @@
                 "includeChildSelections": true
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Tellyporta Assault: Deep Strike",
+            "hidden": false,
+            "id": "e6ef-9420-8226-6834",
+            "type": "selectionEntry",
+            "targetId": "c77b-8a9d-ef52-90ce",
+            "sortIndex": 2
           }
         ]
       },
@@ -36425,6 +36584,92 @@
             "description": "A Mega-dread with this upgrade gains the Character Sub-type and the Battlesmith (5+), Rage (2) and Eternal Warrior special rules. In addition, it must be selected as the Warlord of an army that includes it, unless the army also includes a model with the Biggest and Best special rule."
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Tellyporta Assault: Deep Strike",
+        "hidden": true,
+        "id": "c77b-8a9d-ef52-90ce",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 25
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Deep Strike",
+            "id": "fedb-e7f1-6823-b284",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "0821-21f4-c951-6f65"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "0821-21f4-c951-6f65",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "63f3-8991-cefb-bbcb",
+                "shared": true
+              }
+            ]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "63f3-8991-cefb-bbcb",
+                        "shared": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "0b0d-a0f7-d94d-a576",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "categoryEntries": [
@@ -37668,7 +37913,16 @@
         "hidden": false,
         "id": "45a1-f3c4-4f31-4633",
         "type": "selectionEntry",
-        "targetId": "3449-eedd-9c2d-a5a1"
+        "targetId": "3449-eedd-9c2d-a5a1",
+        "categoryLinks": [
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "3727-d0b5-a6c6-5ddd",
+            "targetId": "a300-5393-99ea-9657",
+            "primary": true
+          }
+        ]
       },
       {
         "import": true,
@@ -38112,6 +38366,66 @@
         "id": "572b-a77d-4aa7-afbb",
         "type": "selectionEntry",
         "targetId": "b73e-cd1c-4d1f-3700"
+      },
+      {
+        "import": true,
+        "name": "Meganobz Mob",
+        "hidden": false,
+        "id": "29e2-eefb-57e8-5263",
+        "type": "selectionEntry",
+        "targetId": "3449-eedd-9c2d-a5a1",
+        "categoryLinks": [
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "1c3a-1d96-b3ed-ee17",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0b0d-a0f7-d94d-a576",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "efc6-682f-b0cb-cfa2",
+            "field": "category",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "be4d-83ab-c864-a7c6",
+                "shared": true
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "2a70-6c2d-b7fb-1441",
+            "type": "selectionEntry",
+            "targetId": "5b5a-5bf9-e280-3c94"
+          }
+        ]
       }
     ],
     "type": "catalogue",
@@ -39097,71 +39411,87 @@
                 "field": "hidden",
                 "conditionGroups": [
                   {
-                    "type": "or",
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "afb4-1d93-2e25-dd7c",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "3449-eedd-9c2d-a5a1",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "fbd0-7b52-c680-1e3e",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "debf-3dcc-7757-1699",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "8a4a-83dd-81ae-4d30",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "adb8-c8f3-c824-1514",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "55dc-70d9-08a5-e25c",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "2fad-bb00-958d-8fbf",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
                     "conditions": [
                       {
-                        "type": "instanceOf",
+                        "type": "atLeast",
                         "value": 1,
                         "field": "selections",
-                        "scope": "parent",
-                        "childId": "afb4-1d93-2e25-dd7c",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "3449-eedd-9c2d-a5a1",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "fbd0-7b52-c680-1e3e",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "debf-3dcc-7757-1699",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "8a4a-83dd-81ae-4d30",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "adb8-c8f3-c824-1514",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "55dc-70d9-08a5-e25c",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "childId": "2fad-bb00-958d-8fbf",
-                        "shared": true
+                        "scope": "force",
+                        "childId": "c619-c045-1bb4-85df",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -39175,15 +39505,29 @@
             "type": "set",
             "value": true,
             "field": "hidden",
-            "conditions": [
+            "conditionGroups": [
               {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "childId": "d915-b894-2ac8-4f15",
-                "shared": true,
-                "includeChildSelections": true
+                "type": "or",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "d915-b894-2ac8-4f15",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "561d-63a7-d86a-d634",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ]
           }
