@@ -5659,6 +5659,21 @@
                 "type": "set",
                 "value": "2",
                 "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": "3",
+                "field": "annotation",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "caab-f843-e685-d7f9",
+                    "shared": true
+                  }
+                ]
               }
             ]
           },
@@ -6404,6 +6419,84 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Mobility Options",
+                "id": "0df0-f5bc-0116-f24d",
+                "hidden": false,
+                "flatten": true,
+                "sortIndex": 10,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "2e51-84bf-f790-e94f"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Warbike",
+                    "hidden": false,
+                    "id": "a125-91e4-1a73-08be",
+                    "type": "selectionEntry",
+                    "targetId": "1db6-1d27-24c0-5cb0",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "20c3-78b0-eef0-75e9"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Rokkit Pack",
+                    "hidden": true,
+                    "id": "21bf-b7cc-d6ea-704c",
+                    "type": "selectionEntry",
+                    "targetId": "048c-2906-5159-b6ca",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "375d-8805-8c2f-02bf",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": false
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 20
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "entryLinks": [
@@ -6560,32 +6653,6 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "8004-cd0f-fa1a-13b4"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Warbike",
-                "hidden": false,
-                "id": "a125-91e4-1a73-08be",
-                "type": "selectionEntry",
-                "targetId": "1db6-1d27-24c0-5cb0",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 25
-                  }
-                ],
-                "sortIndex": 10,
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "20c3-78b0-eef0-75e9"
                   }
                 ]
               },
@@ -9004,6 +9071,14 @@
             "id": "c06f-e0a7-27d1-e5e3",
             "targetId": "809a-c73f-9d8b-58e1",
             "primary": true
+          }
+        ],
+        "rules": [
+          {
+            "name": "Goffs",
+            "id": "db86-4758-7076-503b",
+            "hidden": false,
+            "description": "- Goffs Stormboyz Mobs gain the Line Unit Sub-type.\n\n- A Goffs Warboss may take a rokkit pack for 20 points, provided it does not have mega armour or a warbike. A Warboss with a rokkit pack gains the Bulky (3) special rule.\n\n- Goffs models with the Character Unit Sub-type gain the Preferred Enemy (Characters) special rule when fighting in a challenge, and must always issue and accept challenges.\n\n- Goffs Deff Dreads gain the Rampage (D3) special rule.\n\n- A Detachment with any Goffs models may only include a maximum of one unit chosen from the following: Kommando Mob, Flash Gitz Mob."
           }
         ]
       },
@@ -14851,6 +14926,13 @@
             "id": "d66a-031e-c4fb-e008",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "Goffs Restricted Unit",
+            "hidden": false,
+            "id": "e2c0-6787-4e8e-3c1f",
+            "targetId": "e3b2-523e-21db-e8e1",
+            "primary": false
           }
         ],
         "infoLinks": [
@@ -15231,6 +15313,13 @@
             "hidden": false,
             "id": "bf35-5e7a-8d8a-3d3d",
             "targetId": "cd9f-5c58-bff2-2b66",
+            "primary": false
+          },
+          {
+            "name": "Goffs Restricted Unit",
+            "hidden": false,
+            "id": "b165-ec78-7a5b-2616",
+            "targetId": "e3b2-523e-21db-e8e1",
             "primary": false
           }
         ],
@@ -17750,6 +17839,31 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4fcd-9d7c-cac1-53b2"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Rampage (D3)",
+            "id": "1358-2c00-39b1-6c0a",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "375d-8805-8c2f-02bf",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -22659,6 +22773,24 @@
                         "field": "annotation"
                       }
                     ]
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "efc6-682f-b0cb-cfa2",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "375d-8805-8c2f-02bf",
+                    "shared": true,
+                    "includeChildSelections": true
                   }
                 ]
               }
@@ -35667,6 +35799,50 @@
                 "field": "selections",
                 "scope": "force",
                 "childId": "5822-43cd-84cf-e758",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Goffs Restricted Unit",
+        "id": "e3b2-523e-21db-e8e1",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "097f-f0ec-4381-e8ce",
+            "includeChildSelections": true
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": -1,
+                "field": "097f-f0ec-4381-e8ce"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "375d-8805-8c2f-02bf",
                 "shared": true,
                 "includeChildSelections": true
               }
