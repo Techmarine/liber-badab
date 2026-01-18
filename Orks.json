@@ -5213,6 +5213,12 @@
             "field": "69ed-cbc7-3fbc-7ba5",
             "scope": "parent",
             "affects": "model.profiles.Model"
+          },
+          {
+            "type": "add",
+            "value": "c8c8-af08-bf02-48f5",
+            "field": "category",
+            "scope": "parent"
           }
         ],
         "infoLinks": [
@@ -5454,6 +5460,12 @@
           {
             "type": "remove",
             "value": "c447-1b05-5ba8-846a",
+            "field": "category",
+            "scope": "parent"
+          },
+          {
+            "type": "add",
+            "value": "c8c8-af08-bf02-48f5",
             "field": "category",
             "scope": "parent"
           }
@@ -6671,7 +6683,7 @@
                 "id": "e782-bc36-99a4-ec28",
                 "type": "selectionEntryGroup",
                 "targetId": "d915-b894-2ac8-4f15",
-                "sortIndex": 14
+                "sortIndex": 15
               },
               {
                 "import": true,
@@ -6902,7 +6914,18 @@
             "targetId": "919d-8ad9-f565-2b64"
           }
         ],
-        "sortIndex": 1
+        "sortIndex": 1,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "d148-ba71-0546-bbeb",
+            "type": "selectionEntryGroup",
+            "targetId": "63f3-8991-cefb-bbcb",
+            "sortIndex": 2
+          }
+        ]
       },
       {
         "type": "upgrade",
@@ -7806,7 +7829,7 @@
                 "id": "89cf-6aac-e177-95fe",
                 "type": "selectionEntryGroup",
                 "targetId": "d915-b894-2ac8-4f15",
-                "sortIndex": 10
+                "sortIndex": 11
               },
               {
                 "import": true,
@@ -7970,6 +7993,17 @@
             "hidden": false,
             "type": "rule",
             "targetId": "919d-8ad9-f565-2b64"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Dedicated Transport",
+            "hidden": false,
+            "id": "eb2b-4e61-cf2a-07e5",
+            "type": "selectionEntryGroup",
+            "targetId": "63f3-8991-cefb-bbcb",
+            "sortIndex": 2
           }
         ]
       },
@@ -8937,6 +8971,23 @@
             "id": "7217-bad5-b354-43eb",
             "targetId": "809a-c73f-9d8b-58e1",
             "primary": true
+          }
+        ],
+        "rules": [
+          {
+            "name": "Evil Sunz",
+            "id": "9ca5-bde4-0d0e-aac1",
+            "hidden": false,
+            "description": "- Evil Sunz Warbiker Mobs gain the Line Unit Sub-type.\n\n- An Evil Sunz Warboss or Mega Warboss without a Retinue may take a Trukk or a Battlewagon as a Dedicated Transport.\n\n- Evil Sunz models with the Cavalry Unit type gain the Sudden Strike (1) special rule. In addition, Evil Sunz models with the Infantry Unit type and the ‘Ere We Go! special rule gain the Sudden Strike (1) special rule on any turn in which they Disembark from a Vehicle, provided they do not also have the Slow and  Purposeful special rule.\n\n- Evil Sunz Vehicles add +1 to their Movement characteristics.\n\n- A Detachment with any Evil Sunz models may only include a maximum of one unit chosen from the following: Mek Gunz Battery, Meganobz Mob."
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "d395-76ee-f82b-8906",
+            "affects": "entries.recursive.profiles.Vehicle",
+            "scope": "force"
           }
         ]
       },
@@ -12412,6 +12463,13 @@
                 "id": "3632-fb69-0af3-4159",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
+              },
+              {
+                "name": "Evil Sunz Cavalry",
+                "hidden": false,
+                "id": "37d4-3865-332e-41b6",
+                "targetId": "c8c8-af08-bf02-48f5",
+                "primary": false
               }
             ],
             "collapsible": true,
@@ -12639,6 +12697,13 @@
             "id": "b842-5970-6554-fba3",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
+          },
+          {
+            "name": "Evil Sunz Restricted Unit",
+            "hidden": false,
+            "id": "0603-81f6-c8c5-73c2",
+            "targetId": "6d7c-9334-17ca-08bc",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -18037,6 +18102,25 @@
                     "typeId": "c01c-1a8f-7f1d-1cb6",
                     "$text": "-"
                   }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "2D5 + 0",
+                    "field": "d395-76ee-f82b-8906",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "5822-43cd-84cf-e758",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "comment": "the value will get modified by 1 in Evil Sunz Great Clan selection"
+                  }
                 ]
               }
             ]
@@ -22695,6 +22779,13 @@
                 "id": "f691-faa0-6c12-0a3b",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
+              },
+              {
+                "name": "Evil Sunz Cavalry",
+                "hidden": false,
+                "id": "a7f6-e5db-9053-7db5",
+                "targetId": "c8c8-af08-bf02-48f5",
+                "primary": false
               }
             ],
             "constraints": [
@@ -23291,6 +23382,24 @@
                 ],
                 "defaultSelectionEntryId": "a4b3-22de-28f0-47e9"
               }
+            ],
+            "modifiers": [
+              {
+                "type": "add",
+                "value": "efc6-682f-b0cb-cfa2",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "5822-43cd-84cf-e758",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -23462,6 +23571,13 @@
                 "hidden": false,
                 "id": "9543-fdf2-d87e-614b",
                 "targetId": "1909-26f7-31d2-0932",
+                "primary": false
+              },
+              {
+                "name": "Evil Sunz Cavalry",
+                "hidden": false,
+                "id": "b870-e5a5-1e93-51b3",
+                "targetId": "c8c8-af08-bf02-48f5",
                 "primary": false
               }
             ],
@@ -26985,6 +27101,13 @@
             "id": "6e85-db50-67c9-81aa",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
+          },
+          {
+            "name": "Evil Sunz Restricted Unit",
+            "hidden": false,
+            "id": "aa8f-46e1-89f6-4167",
+            "targetId": "6d7c-9334-17ca-08bc",
+            "primary": false
           }
         ]
       },
@@ -30847,6 +30970,13 @@
                 "id": "5853-2ecf-b46e-e627",
                 "targetId": "896d-742a-d60c-6429",
                 "primary": false
+              },
+              {
+                "name": "Evil Sunz Cavalry",
+                "hidden": false,
+                "id": "ca7d-a8e0-66c2-c744",
+                "targetId": "c8c8-af08-bf02-48f5",
+                "primary": false
               }
             ],
             "sortIndex": 1,
@@ -33508,6 +33638,13 @@
                 "id": "6a02-b555-b304-e138",
                 "targetId": "896d-742a-d60c-6429",
                 "primary": false
+              },
+              {
+                "name": "Evil Sunz Cavalry",
+                "hidden": false,
+                "id": "41a2-56e0-df4f-8a3f",
+                "targetId": "c8c8-af08-bf02-48f5",
+                "primary": false
               }
             ],
             "constraints": [
@@ -35453,6 +35590,89 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Evil Sunz Cavalry",
+        "id": "c8c8-af08-bf02-48f5",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Sudden Strike",
+            "id": "8790-c49f-2649-f899",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1b3b-17d6-83ce-1378",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "5822-43cd-84cf-e758",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Evil Sunz Restricted Unit",
+        "id": "6d7c-9334-17ca-08bc",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "1394-f348-9535-f19f",
+            "includeChildSelections": true
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": -1,
+                "field": "1394-f348-9535-f19f"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "5822-43cd-84cf-e758",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedRules": [
@@ -35707,6 +35927,12 @@
         "id": "b1de-eecd-5b22-bf73",
         "hidden": false,
         "description": "A Nobz Mob, Warbiker Nobz Mob or Meganobz Mob may be selected as a ‘Retinue Squad’ instead of an Elites choice in a Detachment that includes a model with the Warboss Unit Sub-type as follows: a Warboss or Arch Overlord without a warbike may have a Nobz Mob Retinue Squad, a Warboss or Arch Overlord on a warbike may have a Warbiker Nobz Mob Retinue Squad, and a Mega Warboss or Mega Arch Overlord may have a Meganobz Mob Retinue Squad. The model with the Warboss Unit Sub-type is referred to as the Retinue Squad’s Leader for the\npurposes of this special rule (if the Detachment includes more than one eligible model then the controlling player selects one as the unit’s Leader). The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. The Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play"
+      },
+      {
+        "name": "Sudden Strike",
+        "id": "1b3b-17d6-83ce-1378",
+        "hidden": false,
+        "description": "In a turn in which a model with this special rule Charges into combat, it adds a bonus to its Initiative Characteristic until the end of the Assault phase. The bonus added to the model’s Initiative is equal to the value in brackets after the special rule; for example, a model with Sudden Strike (2) adds a bonus of +2 to its Initiative.\n\nA model that has made a Disordered Charge that turn receives no benefit from Sudden Strike (X)."
       }
     ],
     "sharedProfiles": [
@@ -36769,6 +36995,50 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "5822-43cd-84cf-e758",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "cae2-f2d4-6853-6a85",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "4149-c85e-c5d4-e471",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -36907,6 +37177,50 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "5822-43cd-84cf-e758",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "cae2-f2d4-6853-6a85",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "4149-c85e-c5d4-e471",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -37033,6 +37347,24 @@
                     ]
                   }
                 ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "d915-b894-2ac8-4f15",
+                "shared": true,
+                "includeChildSelections": true
               }
             ]
           }
