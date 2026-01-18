@@ -223,6 +223,35 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "field": "56a8-2699-24f4-29e0",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "9d7c-2d85-6ef0-f554",
+                    "shared": true
+                  },
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7d7f-a3fb-88b6-8a94",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -9321,6 +9350,20 @@
             "targetId": "e072-7303-f891-1e4f",
             "primary": true
           }
+        ],
+        "rules": [
+          {
+            "name": "Great Dread Mob Effects",
+            "id": "26dc-7d30-f7a1-526a",
+            "hidden": false,
+            "description": "- In a Detachment following this Mekaniak Kult, Deff Dread Mobs may be taken as Troops choices.\n\n- Deff Dread Mobs taken as Compulsory Troops in the Detachment gain the Line Sub-type.\n\n- Stompas taken as a Lords of War choice to a Primary Detachment following this Mekaniak Kult gain the Wrecker special rule.\n\n- A single Mega-dread in the Detachment may be selected as an HQ choice. A Mega-dread selected in this manner must take the Kustom Meka-dread upgrade for +30 points, and may additionally take a kustom force field for +50 points."
+          },
+          {
+            "name": "Great Dread Mob Limitations",
+            "id": "24f3-b80f-7cc8-bbf8",
+            "hidden": false,
+            "description": "- All Compulsory Troops choices in a Detachment following this Mekaniak Kult must be Deff Dread Mobs.\n\n\n- A Detachment following this Mekaniak Kult may only include a single Fast Attack choice and a single Heavy Support choice that does not consist entirely of models with the Dreadnought Unit Type or the Knight Unit Subtype.\n\n\n- An army with a Detachment following this Mekaniak Kult may not roll to attempt to Seize the Initiative."
+          }
         ]
       },
       {
@@ -13911,6 +13954,13 @@
             "id": "c3a0-ae92-c74f-304b",
             "targetId": "3df2-c405-1697-c787",
             "primary": false
+          },
+          {
+            "name": "Great Dread Mob Restricted Unit",
+            "hidden": false,
+            "id": "002c-b56a-02d1-ca39",
+            "targetId": "98cb-8222-2c84-bfcc",
+            "primary": false
           }
         ],
         "sortIndex": 31,
@@ -17566,15 +17616,6 @@
         "hidden": false,
         "id": "94f9-d7b6-ff02-cf5f",
         "sortIndex": 13,
-        "categoryLinks": [
-          {
-            "name": "Elites",
-            "hidden": false,
-            "id": "dca6-9810-e4d8-090c",
-            "targetId": "a300-5393-99ea-9657",
-            "primary": true
-          }
-        ],
         "selectionEntries": [
           {
             "type": "model",
@@ -27679,6 +27720,13 @@
             "id": "aa8f-46e1-89f6-4167",
             "targetId": "6d7c-9334-17ca-08bc",
             "primary": false
+          },
+          {
+            "name": "Great Dread Mob Restricted Unit",
+            "hidden": false,
+            "id": "0505-5205-fa78-8a1c",
+            "targetId": "98cb-8222-2c84-bfcc",
+            "primary": false
           }
         ],
         "constraints": [
@@ -27738,6 +27786,13 @@
             "hidden": false,
             "id": "4c64-50c1-7388-3e61",
             "targetId": "3df2-c405-1697-c787",
+            "primary": false
+          },
+          {
+            "name": "Great Dread Mob Restricted Unit",
+            "hidden": false,
+            "id": "fe06-1ac9-14c8-5a3a",
+            "targetId": "98cb-8222-2c84-bfcc",
             "primary": false
           }
         ],
@@ -30027,6 +30082,13 @@
             "id": "2f01-58e9-429a-a321",
             "targetId": "3df2-c405-1697-c787",
             "primary": false
+          },
+          {
+            "name": "Great Dread Mob Restricted Unit",
+            "hidden": false,
+            "id": "cac7-4d2f-5c85-9608",
+            "targetId": "98cb-8222-2c84-bfcc",
+            "primary": false
           }
         ]
       },
@@ -30050,6 +30112,13 @@
             "hidden": false,
             "id": "28c4-254c-1ac8-64dd",
             "targetId": "3df2-c405-1697-c787",
+            "primary": false
+          },
+          {
+            "name": "Great Dread Mob Restricted Unit",
+            "hidden": false,
+            "id": "ec0f-eda0-d03f-b58b",
+            "targetId": "98cb-8222-2c84-bfcc",
             "primary": false
           }
         ],
@@ -31553,7 +31622,7 @@
           {
             "name": "Heavy Support",
             "hidden": false,
-            "id": "caee-6ae2-66f3-b3b4",
+            "id": "642e-b16d-1a05-dfd6",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
           }
@@ -32116,6 +32185,13 @@
             "hidden": false,
             "id": "f8c7-8e7c-65ff-22cd",
             "targetId": "3df2-c405-1697-c787",
+            "primary": false
+          },
+          {
+            "name": "Great Dread Mob Restricted Unit",
+            "hidden": false,
+            "id": "9042-099f-6e1e-116d",
+            "targetId": "98cb-8222-2c84-bfcc",
             "primary": false
           }
         ]
@@ -32698,6 +32774,32 @@
             "hidden": false,
             "type": "rule",
             "targetId": "826a-a133-aa85-3456"
+          },
+          {
+            "name": "Wrecker",
+            "id": "a0b6-6da4-4df8-d7c1",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "deaa-d027-e98b-e31b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "9b08-3120-44c7-d286",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "constraints": [
@@ -35878,6 +35980,451 @@
             ]
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Compulsory Choice",
+        "hidden": false,
+        "id": "5b5a-5bf9-e280-3c94",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "a2fa-c0b4-2053-98b2"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "be4d-83ab-c864-a7c6",
+            "field": "category",
+            "scope": "parent"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Kustom Mega-dread",
+        "hidden": false,
+        "id": "b73e-cd1c-4d1f-3700",
+        "sortIndex": 36,
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Mega-dread",
+            "hidden": false,
+            "id": "9d7c-2d85-6ef0-f554",
+            "sortIndex": 1,
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 205
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3630-e9ff-016d-6166"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a49e-a001-ca14-ec41"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Mega-dread",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "9f7f-abbb-7f6e-36e2",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Must take two of the following",
+                "id": "2bcf-8e24-0e9a-dcab",
+                "hidden": false,
+                "sortIndex": 2,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Klaw of Gork (or Possibly Mork)",
+                    "hidden": false,
+                    "id": "fd4c-dd4d-0b43-3adf",
+                    "type": "selectionEntry",
+                    "targetId": "beaf-b700-e683-061f",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "181e-027c-5685-683e"
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "a020-9cc6-6b99-a0ab"
+                      }
+                    ],
+                    "defaultAmount": "2"
+                  },
+                  {
+                    "import": true,
+                    "name": "Killkannon",
+                    "hidden": false,
+                    "id": "b252-bc37-eaa1-9ea9",
+                    "type": "selectionEntry",
+                    "targetId": "e14a-e2b4-32d6-5d70",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 35
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9df7-5b47-0ff1-48b8"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "3",
+                        "field": "edda-ee37-03b4-f91f",
+                        "affects": "profiles.Model",
+                        "scope": "parent"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Mega Killsaw",
+                    "hidden": false,
+                    "id": "f9a8-b7b5-3f29-ee35",
+                    "type": "selectionEntry",
+                    "targetId": "288d-b5b0-305d-76f3",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "723b-ec9f-ff15-121a"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "f896-c25e-7b42-ecef"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "70be-768e-14f1-cb9d"
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Grot Riggers",
+                "hidden": false,
+                "id": "4a93-90a2-bd88-98e1",
+                "type": "selectionEntry",
+                "targetId": "c72d-61fe-295c-317b",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 10
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6676-b70d-9386-5dc8"
+                  }
+                ],
+                "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Big Shoota",
+                "hidden": false,
+                "id": "afcc-12aa-3d67-e130",
+                "type": "selectionEntry",
+                "targetId": "af44-5da4-f49f-3409",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e25a-c041-a3e2-acf1"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "18cd-e49b-7f47-2b82"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Kustom Force Field",
+                "hidden": false,
+                "id": "157e-4e9d-e2d0-1563",
+                "type": "selectionEntry",
+                "targetId": "4eda-06b5-b6e3-b20c",
+                "sortIndex": 4,
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 50
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3dd2-dabc-eb43-507a"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "86d9-dbd2-3932-6118",
+                "type": "selectionEntry",
+                "targetId": "107b-d96b-ec75-67be",
+                "sortIndex": 1
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Dreadnought",
+                "hidden": false,
+                "id": "12ad-6097-a8e6-392f",
+                "targetId": "eb17-a98e-537b-5de6",
+                "primary": false
+              },
+              {
+                "name": "Heavy",
+                "hidden": false,
+                "id": "455c-c292-c007-141c",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "f5e4-1fe0-3f2b-a876",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rolling-Walking Scrap Pile",
+            "id": "7e25-e344-d1ea-bc39",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "07bb-15c8-f457-6d7d"
+          },
+          {
+            "name": "Kaboom",
+            "id": "154e-b2c2-b9e6-7764",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4fcd-9d7c-cac1-53b2"
+          },
+          {
+            "name": "Battlesmith",
+            "id": "fddd-09a3-b3cf-c7a7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "131d-5e79-6950-6437",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Eternal Warrior",
+            "id": "f630-bfc4-cd42-98eb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d9b7-d83e-51e0-bcfc"
+          },
+          {
+            "name": "Rage",
+            "id": "6f3a-95d0-7cb8-23e3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6845-bbcf-b09b-06bc",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "a2d7-5f0c-bfc1-f1a4",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9b08-3120-44c7-d286",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "d300-3d4b-5f51-0a75",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          }
+        ],
+        "rules": [
+          {
+            "name": "Kustom Mega-dread",
+            "id": "1bbd-8ed2-74fc-e0de",
+            "hidden": false,
+            "description": "A Mega-dread with this upgrade gains the Character Sub-type and the Battlesmith (5+), Rage (2) and Eternal Warrior special rules. In addition, it must be selected as the Warlord of an army that includes it, unless the army also includes a model with the Biggest and Best special rule."
+          }
+        ]
       }
     ],
     "categoryEntries": [
@@ -36538,11 +37085,66 @@
         "name": "Kult of Speed Heavy Support",
         "id": "3df2-c405-1697-c787",
         "hidden": true,
-        "modifiers": [
+        "constraints": [
           {
-            "type": "set",
-            "value": false,
-            "field": "hidden",
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "e28a-5201-6e12-dc2c",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "e28a-5201-6e12-dc2c"
+              },
+              {
+                "type": "decrement",
+                "value": 1,
+                "field": "e28a-5201-6e12-dc2c",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "3df2-c405-1697-c787",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "e28a-5201-6e12-dc2c",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "2e5a-9101-3872-faad",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              }
+            ],
             "conditions": [
               {
                 "type": "atLeast",
@@ -36554,51 +37156,49 @@
                 "includeChildSelections": true
               }
             ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "e28a-5201-6e12-dc2c",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "2e5a-9101-3872-faad",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "e28a-5201-6e12-dc2c",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "parent",
-                "childId": "3df2-c405-1697-c787",
-                "shared": true,
-                "roundUp": false
-              }
-            ]
           }
-        ],
+        ]
+      },
+      {
+        "name": "Great Dread Mob Restricted Unit",
+        "id": "98cb-8222-2c84-bfcc",
+        "hidden": true,
         "constraints": [
           {
             "type": "max",
-            "value": 0,
+            "value": -1,
             "field": "selections",
             "scope": "force",
             "shared": true,
-            "id": "e28a-5201-6e12-dc2c",
-            "includeChildSelections": true,
-            "includeChildForces": true
+            "id": "3e26-cd82-57af-dce9",
+            "includeChildSelections": true
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "3e26-cd82-57af-dce9"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "9b08-3120-44c7-d286",
+                "shared": true
+              }
+            ]
           }
         ]
       }
@@ -37100,7 +37700,16 @@
         "hidden": false,
         "id": "4449-6a71-673f-ad4c",
         "type": "selectionEntry",
-        "targetId": "94f9-d7b6-ff02-cf5f"
+        "targetId": "94f9-d7b6-ff02-cf5f",
+        "categoryLinks": [
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "fdeb-42f2-c30a-dfb9",
+            "targetId": "a300-5393-99ea-9657",
+            "primary": true
+          }
+        ]
       },
       {
         "import": true,
@@ -37413,6 +38022,96 @@
             ]
           }
         ]
+      },
+      {
+        "import": true,
+        "name": "Deff Dread Mob",
+        "hidden": false,
+        "id": "a2a2-2f6d-ba0c-103f",
+        "type": "selectionEntry",
+        "targetId": "94f9-d7b6-ff02-cf5f",
+        "categoryLinks": [
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "f1d0-98bd-57f3-fd8d",
+            "targetId": "1685-8865-a2b2-5fb9",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "lessThan",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9b08-3120-44c7-d286",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "efc6-682f-b0cb-cfa2",
+            "field": "category",
+            "affects": "entries.recursive.model",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "be4d-83ab-c864-a7c6",
+                "shared": true
+              }
+            ],
+            "scope": "parent"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "5144-e4ac-62cb-1e54",
+            "type": "selectionEntry",
+            "targetId": "5b5a-5bf9-e280-3c94",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "6837-c944-d863-3442-min",
+                "includeChildSelections": true
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "6837-c944-d863-3442-max",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Kustom Mega-dread",
+        "hidden": false,
+        "id": "572b-a77d-4aa7-afbb",
+        "type": "selectionEntry",
+        "targetId": "b73e-cd1c-4d1f-3700"
       }
     ],
     "type": "catalogue",
@@ -37549,6 +38248,24 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "aedf-5a19-faf3-257c"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "aedf-5a19-faf3-257c",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "9b08-3120-44c7-d286",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ]
           },
