@@ -9194,24 +9194,6 @@
             "id": "3807-a3f7-ec0b-fa90",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "eff5-542f-4d20-75b7-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "eff5-542f-4d20-75b7-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -10159,24 +10141,6 @@
             "id": "4507-7de5-6898-3fb1",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "4525-a714-d53a-3695-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "4525-a714-d53a-3695-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -10651,24 +10615,6 @@
             "id": "df6d-ca0b-d32a-f743",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "2768-a66c-fb98-4f3b-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "2768-a66c-fb98-4f3b-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -11644,10 +11590,10 @@
                         "type": "atLeast",
                         "value": 1,
                         "field": "selections",
-                        "scope": "force",
-                        "childId": "b856-f510-68f1-db10",
+                        "scope": "unit",
+                        "childId": "33a5-c5ea-ce34-d1f7",
                         "shared": true,
-                        "includeChildSelections": true
+                        "includeChildSelections": false
                       }
                     ]
                   }
@@ -11943,10 +11889,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "b856-f510-68f1-db10",
+                    "scope": "unit",
+                    "childId": "33a5-c5ea-ce34-d1f7",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -11970,24 +11916,6 @@
             "id": "df70-1351-a1ed-7bc0",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "ff75-21a1-cc6f-991b-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "ff75-21a1-cc6f-991b-max"
-              }
-            ],
             "sortIndex": 4
           }
         ],
@@ -12991,10 +12919,10 @@
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
-                            "scope": "force",
-                            "childId": "b856-f510-68f1-db10",
+                            "scope": "unit",
+                            "childId": "33a5-c5ea-ce34-d1f7",
                             "shared": true,
-                            "includeChildSelections": true
+                            "includeChildSelections": false
                           },
                           {
                             "type": "atLeast",
@@ -13268,10 +13196,10 @@
                         "type": "atLeast",
                         "value": 1,
                         "field": "selections",
-                        "scope": "force",
-                        "childId": "b856-f510-68f1-db10",
+                        "scope": "unit",
+                        "childId": "33a5-c5ea-ce34-d1f7",
                         "shared": true,
-                        "includeChildSelections": true
+                        "includeChildSelections": false
                       },
                       {
                         "type": "atLeast",
@@ -13304,24 +13232,6 @@
             "id": "0561-b75e-d55d-182f",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "e8ab-9c08-8213-b3c1-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "e8ab-9c08-8213-b3c1-max"
-              }
-            ],
             "sortIndex": 3
           }
         ]
@@ -13770,10 +13680,10 @@
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
-                            "scope": "force",
-                            "childId": "b856-f510-68f1-db10",
+                            "scope": "unit",
+                            "childId": "33a5-c5ea-ce34-d1f7",
                             "shared": true,
-                            "includeChildSelections": true
+                            "includeChildSelections": false
                           },
                           {
                             "type": "atLeast",
@@ -13871,10 +13781,10 @@
                         "type": "atLeast",
                         "value": 1,
                         "field": "selections",
-                        "scope": "force",
-                        "childId": "b856-f510-68f1-db10",
+                        "scope": "unit",
+                        "childId": "33a5-c5ea-ce34-d1f7",
                         "shared": true,
-                        "includeChildSelections": true
+                        "includeChildSelections": false
                       },
                       {
                         "type": "atLeast",
@@ -13909,24 +13819,6 @@
             "id": "ce2e-d388-d7f7-d6d8",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "30c3-f43c-f62f-84b3-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "30c3-f43c-f62f-84b3-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -14279,24 +14171,6 @@
             "id": "a224-1fb2-3fca-8dd5",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "182e-be5f-1634-a86e-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "182e-be5f-1634-a86e-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -15595,24 +15469,6 @@
             "id": "a9e7-1c88-2566-0e6c",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "11a9-c20f-6da9-75ba-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "11a9-c20f-6da9-75ba-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -16693,24 +16549,6 @@
             "id": "b194-22ff-163b-31b7",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "7e5a-65d4-f6db-ecb5-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "7e5a-65d4-f6db-ecb5-max"
-              }
-            ],
             "sortIndex": 4
           }
         ],
@@ -17837,24 +17675,6 @@
             "id": "0708-048a-6a37-07fa",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "6513-caf3-5ae8-d3b6-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "6513-caf3-5ae8-d3b6-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -18617,24 +18437,6 @@
             "id": "4c88-50e4-e0c4-f2d5",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "9023-8d33-1012-2786-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "9023-8d33-1012-2786-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -19036,24 +18838,6 @@
             "id": "740b-17cc-f768-3a95",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "8f05-82d2-8292-643d-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "8f05-82d2-8292-643d-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -19371,10 +19155,10 @@
                         "type": "atLeast",
                         "value": 1,
                         "field": "selections",
-                        "scope": "force",
-                        "childId": "b856-f510-68f1-db10",
+                        "scope": "unit",
+                        "childId": "33a5-c5ea-ce34-d1f7",
                         "shared": true,
-                        "includeChildSelections": true
+                        "includeChildSelections": false
                       }
                     ]
                   }
@@ -20267,24 +20051,6 @@
             "id": "b7ad-a691-45df-0ce1",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "999e-2970-c3b4-e7cf-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "999e-2970-c3b4-e7cf-max"
-              }
-            ],
             "sortIndex": 5
           }
         ],
@@ -20326,10 +20092,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "b856-f510-68f1-db10",
+                    "scope": "unit",
+                    "childId": "33a5-c5ea-ce34-d1f7",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -20890,24 +20656,6 @@
             "id": "f5c9-3b69-ef40-fdd1",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "3676-2dc1-e85c-4bfe-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "3676-2dc1-e85c-4bfe-max"
-              }
-            ],
             "sortIndex": 3
           }
         ]
@@ -21558,24 +21306,6 @@
             "id": "9ce9-4a3e-56c3-ab9d",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "daf3-13c7-e7ae-de09-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "daf3-13c7-e7ae-de09-max"
-              }
-            ],
             "sortIndex": 3
           }
         ]
@@ -22695,24 +22425,6 @@
             "id": "0bb8-fb2b-3f95-9b7b",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "cafd-c07f-efa2-2aac-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "cafd-c07f-efa2-2aac-max"
-              }
-            ],
             "sortIndex": 6
           }
         ],
@@ -23131,24 +22843,6 @@
             "id": "b42d-01a4-c0d0-163f",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "4415-797f-e4c9-4a18-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "4415-797f-e4c9-4a18-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -23905,24 +23599,6 @@
             "id": "b951-2b48-0119-6f67",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "b453-f707-8a53-656c-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "b453-f707-8a53-656c-max"
-              }
-            ],
             "sortIndex": 3
           }
         ]
@@ -24717,24 +24393,6 @@
             "id": "d682-ca31-ffc9-3979",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "93f3-1210-105f-a65b-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "93f3-1210-105f-a65b-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -25258,24 +24916,6 @@
             "id": "2e1b-322f-888b-e964",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "bca8-7ffe-e0a5-8772-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "bca8-7ffe-e0a5-8772-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -25512,24 +25152,6 @@
             "id": "0619-ffda-2a3b-dcee",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "7065-96b0-8a08-a6a3-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "7065-96b0-8a08-a6a3-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -25953,24 +25575,6 @@
             "id": "a129-57c7-56ee-867e",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "51a7-5b84-a62c-6190-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "51a7-5b84-a62c-6190-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -26268,24 +25872,6 @@
             "id": "8a15-598a-e272-1f62",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "000d-dfed-d644-8f29-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "000d-dfed-d644-8f29-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -26691,24 +26277,6 @@
             "id": "cd6b-1b23-86a2-e733",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "1839-8527-196c-e310-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "1839-8527-196c-e310-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -27074,24 +26642,6 @@
             "id": "c748-17dd-bc38-b63b",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "b671-8f6f-71d5-395f-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "b671-8f6f-71d5-395f-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -28128,24 +27678,6 @@
             "id": "8a95-fa62-2aa0-8a48",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "0d68-e416-47bb-6d5a-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "0d68-e416-47bb-6d5a-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -28659,24 +28191,6 @@
             "id": "75af-dd87-9c61-847e",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "9fd0-d756-c57a-607c-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "9fd0-d756-c57a-607c-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -29313,10 +28827,10 @@
                         "type": "atLeast",
                         "value": 1,
                         "field": "selections",
-                        "scope": "force",
-                        "childId": "b856-f510-68f1-db10",
+                        "scope": "unit",
+                        "childId": "33a5-c5ea-ce34-d1f7",
                         "shared": true,
-                        "includeChildSelections": true
+                        "includeChildSelections": false
                       }
                     ]
                   }
@@ -29334,10 +28848,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "b856-f510-68f1-db10",
+                    "scope": "unit",
+                    "childId": "33a5-c5ea-ce34-d1f7",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -29460,24 +28974,6 @@
             "id": "fbc6-3559-9106-b3dd",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "4597-c384-9e9f-13a2-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "4597-c384-9e9f-13a2-max"
-              }
-            ],
             "sortIndex": 4
           }
         ],
@@ -31024,24 +30520,6 @@
             "id": "beb6-5910-8ba5-d551",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "aa78-0c97-4048-26bc-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "aa78-0c97-4048-26bc-max"
-              }
-            ],
             "sortIndex": 2
           }
         ],
@@ -31490,24 +30968,6 @@
             "id": "aed0-a375-64ba-abec",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "82f4-ec70-d4f7-aa68-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "82f4-ec70-d4f7-aa68-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -31915,24 +31375,6 @@
             "id": "3bf4-70e8-8f22-5c33",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "8207-4184-03cf-ae32-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "8207-4184-03cf-ae32-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -32375,24 +31817,6 @@
             "id": "729f-594f-1f74-3bde",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "e8a7-7259-28cd-df81-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "e8a7-7259-28cd-df81-max"
-              }
-            ],
             "sortIndex": 3
           }
         ]
@@ -32739,24 +32163,6 @@
             "id": "3414-dd17-57ea-cf4d",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "66dd-bfda-5b49-6f40-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "66dd-bfda-5b49-6f40-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -33307,24 +32713,6 @@
             "id": "52bb-1e57-8545-368f",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "0d7c-c20d-a16f-6b17-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "0d7c-c20d-a16f-6b17-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -33972,24 +33360,6 @@
             "id": "56c0-1199-d5e3-beea",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "8418-4c58-e300-050b-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "8418-4c58-e300-050b-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -34678,24 +34048,6 @@
             "id": "c921-ec5d-8663-932f",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "7865-b064-8b9c-9e38-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "7865-b064-8b9c-9e38-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -35262,24 +34614,6 @@
             "id": "bd7a-bf4d-d878-9631",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "96c6-dc2b-a675-5af2-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "96c6-dc2b-a675-5af2-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -35757,24 +35091,6 @@
             "id": "090f-d7f1-96ab-5acb",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "1295-c805-66ca-069a-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "1295-c805-66ca-069a-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -37684,24 +37000,6 @@
             "id": "fff0-7266-fafa-a252",
             "type": "selectionEntryGroup",
             "targetId": "81c7-10c0-5e79-e7fa",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "5730-56c6-eaeb-c89e-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "self",
-                "shared": true,
-                "id": "5730-56c6-eaeb-c89e-max"
-              }
-            ],
             "sortIndex": 2
           }
         ]
@@ -38254,7 +37552,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "b856-f510-68f1-db10",
+                "childId": "33a5-c5ea-ce34-d1f7",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -41460,10 +40758,10 @@
                 "type": "atLeast",
                 "value": 1,
                 "field": "selections",
-                "scope": "force",
-                "childId": "b856-f510-68f1-db10",
+                "scope": "root-entry",
+                "childId": "33a5-c5ea-ce34-d1f7",
                 "shared": true,
-                "includeChildSelections": true
+                "includeChildSelections": false
               }
             ]
           }
