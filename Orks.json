@@ -5516,12 +5516,6 @@
             "value": "c447-1b05-5ba8-846a",
             "field": "category",
             "scope": "parent"
-          },
-          {
-            "type": "add",
-            "value": "c8c8-af08-bf02-48f5",
-            "field": "category",
-            "scope": "parent"
           }
         ],
         "infoLinks": [
@@ -9292,15 +9286,6 @@
             "hidden": false,
             "description": "- Evil Sunz Warbiker Mobs gain the Line Unit Sub-type.\n\n- An Evil Sunz Warboss or Mega Warboss without a Retinue may take a Trukk or a Battlewagon as a Dedicated Transport.\n\n- Evil Sunz models with the Cavalry Unit type gain the Sudden Strike (1) special rule. In addition, Evil Sunz models with the Infantry Unit type and the ‘Ere We Go! special rule gain the Sudden Strike (1) special rule on any turn in which they Disembark from a Vehicle, provided they do not also have the Slow and  Purposeful special rule.\n\n- Evil Sunz Vehicles add +1 to their Movement characteristics.\n\n- A Detachment with any Evil Sunz models may only include a maximum of one unit chosen from the following: Mek Gunz Battery, Meganobz Mob."
           }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "d395-76ee-f82b-8906",
-            "affects": "entries.recursive.profiles.Vehicle",
-            "scope": "force"
-          }
         ]
       },
       {
@@ -13004,13 +12989,6 @@
                 "hidden": false,
                 "id": "3632-fb69-0af3-4159",
                 "targetId": "8cce-2496-3746-4f06",
-                "primary": false
-              },
-              {
-                "name": "Evil Sunz Cavalry",
-                "hidden": false,
-                "id": "37d4-3865-332e-41b6",
-                "targetId": "c8c8-af08-bf02-48f5",
                 "primary": false
               }
             ],
@@ -18801,10 +18779,10 @@
                         "type": "atLeast",
                         "value": 1,
                         "field": "selections",
-                        "scope": "force",
-                        "childId": "5822-43cd-84cf-e758",
+                        "scope": "unit",
+                        "childId": "05c8-ce99-1495-df6e",
                         "shared": true,
-                        "includeChildSelections": true
+                        "includeChildSelections": false
                       }
                     ],
                     "comment": "the value will get modified by 1 in Evil Sunz Great Clan selection"
@@ -23631,13 +23609,6 @@
                 "id": "f691-faa0-6c12-0a3b",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
-              },
-              {
-                "name": "Evil Sunz Cavalry",
-                "hidden": false,
-                "id": "a7f6-e5db-9053-7db5",
-                "targetId": "c8c8-af08-bf02-48f5",
-                "primary": false
               }
             ],
             "constraints": [
@@ -24317,10 +24288,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "5822-43cd-84cf-e758",
+                    "scope": "unit",
+                    "childId": "05c8-ce99-1495-df6e",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -24513,13 +24484,6 @@
                 "hidden": false,
                 "id": "9543-fdf2-d87e-614b",
                 "targetId": "1909-26f7-31d2-0932",
-                "primary": false
-              },
-              {
-                "name": "Evil Sunz Cavalry",
-                "hidden": false,
-                "id": "b870-e5a5-1e93-51b3",
-                "targetId": "c8c8-af08-bf02-48f5",
                 "primary": false
               }
             ],
@@ -32271,13 +32235,6 @@
                 "id": "5853-2ecf-b46e-e627",
                 "targetId": "896d-742a-d60c-6429",
                 "primary": false
-              },
-              {
-                "name": "Evil Sunz Cavalry",
-                "hidden": false,
-                "id": "ca7d-a8e0-66c2-c744",
-                "targetId": "c8c8-af08-bf02-48f5",
-                "primary": false
               }
             ],
             "sortIndex": 1,
@@ -35053,13 +35010,6 @@
                 "id": "6a02-b555-b304-e138",
                 "targetId": "896d-742a-d60c-6429",
                 "primary": false
-              },
-              {
-                "name": "Evil Sunz Cavalry",
-                "hidden": false,
-                "id": "41a2-56e0-df4f-8a3f",
-                "targetId": "c8c8-af08-bf02-48f5",
-                "primary": false
               }
             ],
             "constraints": [
@@ -37561,45 +37511,6 @@
         ]
       },
       {
-        "name": "Evil Sunz Cavalry",
-        "id": "c8c8-af08-bf02-48f5",
-        "hidden": false,
-        "infoLinks": [
-          {
-            "name": "Sudden Strike",
-            "id": "8790-c49f-2649-f899",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1b3b-17d6-83ce-1378",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "5822-43cd-84cf-e758",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Evil Sunz Restricted Unit",
         "id": "6d7c-9334-17ca-08bc",
         "hidden": false,
@@ -37635,7 +37546,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "5822-43cd-84cf-e758",
+                "childId": "05c8-ce99-1495-df6e",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -39501,6 +39412,45 @@
                     "includeChildSelections": true
                   }
                 ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "d395-76ee-f82b-8906",
+                "affects": "entries.recursive.profiles.Vehicle",
+                "scope": "unit"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Sudden Strike",
+                "id": "d456-78d0-d3d6-c3ac",
+                "hidden": true,
+                "type": "rule",
+                "targetId": "1b3b-17d6-83ce-1378",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "1",
+                    "field": "annotation"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "root-entry",
+                        "childId": "8cce-2496-3746-4f06",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -40347,6 +40297,29 @@
                     "childId": "561d-63a7-d86a-d634",
                     "shared": true,
                     "includeChildSelections": true
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "c65d-d77d-ff38-c6f1",
+                        "shared": true
+                      },
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "05c8-ce99-1495-df6e",
+                        "shared": true
+                      }
+                    ]
                   }
                 ]
               }
