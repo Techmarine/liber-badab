@@ -6929,10 +6929,10 @@
                         "type": "atLeast",
                         "value": 1,
                         "field": "selections",
-                        "scope": "force",
-                        "childId": "7ec4-58ec-deca-5e00",
+                        "scope": "root-entry",
+                        "childId": "47ff-6814-2274-9b04",
                         "shared": true,
-                        "includeChildSelections": true
+                        "includeChildSelections": false
                       }
                     ]
                   },
@@ -10573,10 +10573,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "7ec4-58ec-deca-5e00",
+                    "scope": "unit",
+                    "childId": "47ff-6814-2274-9b04",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -11754,10 +11754,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "7ec4-58ec-deca-5e00",
+                    "scope": "unit",
+                    "childId": "47ff-6814-2274-9b04",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -15523,26 +15523,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "7ec4-58ec-deca-5e00",
+                    "scope": "unit",
+                    "childId": "47ff-6814-2274-9b04",
                     "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              },
-              {
-                "type": "add",
-                "value": "1909-26f7-31d2-0932",
-                "field": "category",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "7ec4-58ec-deca-5e00",
-                    "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -17674,22 +17658,6 @@
             "modifiers": [
               {
                 "type": "add",
-                "value": "1909-26f7-31d2-0932",
-                "field": "category",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "7ec4-58ec-deca-5e00",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              },
-              {
-                "type": "add",
                 "value": "efc6-682f-b0cb-cfa2",
                 "field": "category",
                 "conditions": [
@@ -17701,6 +17669,22 @@
                     "childId": "c619-c045-1bb4-85df",
                     "shared": true,
                     "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "1909-26f7-31d2-0932",
+                "field": "category",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "47ff-6814-2274-9b04",
+                    "shared": true,
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -20183,10 +20167,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "7ec4-58ec-deca-5e00",
+                    "scope": "unit",
+                    "childId": "47ff-6814-2274-9b04",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -20547,10 +20531,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "7ec4-58ec-deca-5e00",
+                    "scope": "unit",
+                    "childId": "47ff-6814-2274-9b04",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -20842,10 +20826,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "7ec4-58ec-deca-5e00",
+                    "scope": "unit",
+                    "childId": "47ff-6814-2274-9b04",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               }
@@ -38226,7 +38210,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "7ec4-58ec-deca-5e00",
+                "childId": "47ff-6814-2274-9b04",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -40914,19 +40898,19 @@
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
-                            "scope": "force",
-                            "childId": "7ec4-58ec-deca-5e00",
+                            "scope": "unit",
+                            "childId": "47ff-6814-2274-9b04",
                             "shared": true,
-                            "includeChildSelections": true
+                            "includeChildSelections": false
                           },
                           {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
-                            "scope": "force",
-                            "childId": "b856-f510-68f1-db10",
+                            "scope": "unit",
+                            "childId": "33a5-c5ea-ce34-d1f7",
                             "shared": true,
-                            "includeChildSelections": true
+                            "includeChildSelections": false
                           }
                         ]
                       }
