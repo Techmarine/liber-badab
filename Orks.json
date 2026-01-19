@@ -5267,12 +5267,6 @@
             "field": "69ed-cbc7-3fbc-7ba5",
             "scope": "parent",
             "affects": "model.profiles.Model"
-          },
-          {
-            "type": "add",
-            "value": "c8c8-af08-bf02-48f5",
-            "field": "category",
-            "scope": "parent"
           }
         ],
         "infoLinks": [
@@ -6541,6 +6535,39 @@
                         "name": "Points",
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 20
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Cyboar",
+                    "hidden": true,
+                    "id": "bba4-80df-323f-1858",
+                    "type": "selectionEntry",
+                    "targetId": "a85b-670d-3ad2-cfc2",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "e33f-326f-f4eb-76e4",
+                            "shared": true,
+                            "includeChildSelections": false
+                          }
+                        ]
                       }
                     ]
                   }
@@ -9043,10 +9070,10 @@
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
-                            "scope": "force",
-                            "childId": "c619-c045-1bb4-85df",
+                            "scope": "unit",
+                            "childId": "e33f-326f-f4eb-76e4",
                             "shared": true,
-                            "includeChildSelections": true
+                            "includeChildSelections": false
                           }
                         ]
                       }
@@ -9333,15 +9360,6 @@
             "id": "0478-cca8-8b45-a213",
             "hidden": false,
             "description": "- Snakebites Skarboyz Mobs gain the Line Unit Sub-type.\n\n- Any Snakebites model with the Character Unit Sub-type gains the Monster Hunter special rule.\n\n- Any Snakebites model with the Infantry or Cavalry Unit types and the 'Ere We Go! special rule gains Feel No Pain (5+) against Wounds with the Poisoned (X) special rule.\n\n- Any Snakebites model with a Warbike may exchange it for a Cyboar for no additional cost, gaining the Hammer of Wrath (D3) and Rampage (D3) special rules.\n\n- Any Snakebites unit with access to a Trukk as a dedicated transport may take a Squiggoth instead.\n\n- A Detachment with any Snakebites models may only include a maximum of one unit chosen from the following: Stormboyz Mob, Deffkoptas."
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "add",
-            "value": "a0bc-3ab6-57fd-c796",
-            "field": "category",
-            "scope": "force",
-            "affects": "self.entries.recursive.c0e6-28aa-5286-2fa2"
           }
         ]
       },
@@ -12459,10 +12477,10 @@
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
-                            "scope": "force",
-                            "childId": "c619-c045-1bb4-85df",
+                            "scope": "unit",
+                            "childId": "e33f-326f-f4eb-76e4",
                             "shared": true,
-                            "includeChildSelections": true
+                            "includeChildSelections": false
                           }
                         ]
                       }
@@ -17481,10 +17499,10 @@
                     "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "force",
-                    "childId": "c619-c045-1bb4-85df",
+                    "scope": "unit",
+                    "childId": "e33f-326f-f4eb-76e4",
                     "shared": true,
-                    "includeChildSelections": true
+                    "includeChildSelections": false
                   }
                 ]
               },
@@ -24264,10 +24282,10 @@
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
-                            "scope": "force",
-                            "childId": "c619-c045-1bb4-85df",
+                            "scope": "unit",
+                            "childId": "e33f-326f-f4eb-76e4",
                             "shared": true,
-                            "includeChildSelections": true
+                            "includeChildSelections": false
                           }
                         ]
                       }
@@ -37648,7 +37666,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "c619-c045-1bb4-85df",
+                "childId": "e33f-326f-f4eb-76e4",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -39501,6 +39519,13 @@
                     "includeChildSelections": true
                   }
                 ]
+              },
+              {
+                "type": "add",
+                "value": "a0bc-3ab6-57fd-c796",
+                "field": "category",
+                "scope": "parent",
+                "affects": "entries.recursive.c0e6-28aa-5286-2fa2"
               }
             ]
           }
@@ -40259,10 +40284,10 @@
                         "type": "atLeast",
                         "value": 1,
                         "field": "selections",
-                        "scope": "force",
-                        "childId": "c619-c045-1bb4-85df",
+                        "scope": "unit",
+                        "childId": "e33f-326f-f4eb-76e4",
                         "shared": true,
-                        "includeChildSelections": true
+                        "includeChildSelections": false
                       }
                     ]
                   }
