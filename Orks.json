@@ -4776,20 +4776,28 @@
         "name": "'Ard Case",
         "hidden": false,
         "id": "6d1d-57f0-cf07-23f6",
-        "rules": [
-          {
-            "name": "'Ard Case",
-            "id": "faf1-3aa2-acc4-d21b",
-            "hidden": false,
-            "description": "A Vehicle with an ‘ard case loses the Open-topped Sub-type. Access Points for the Vehicle with an ‘ard case will be listed in the unit entry."
-          }
-        ],
         "modifiers": [
           {
             "type": "remove",
             "value": "896d-742a-d60c-6429",
             "field": "category",
             "scope": "parent"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "'Ard Case",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "bf74-c71f-e650-d481",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A Vehicle with an ‘ard case loses the Open-topped Sub-type. Access Points for the Vehicle with an ‘ard case will be listed in the unit entry."
+              }
+            ]
           }
         ]
       },
@@ -4799,14 +4807,6 @@
         "name": "'Eavy Armour",
         "hidden": false,
         "id": "e48a-d376-60d9-dbc6",
-        "rules": [
-          {
-            "name": "'Eavy Armour",
-            "id": "6da9-66b9-e100-2bb0",
-            "hidden": false,
-            "description": "‘Eavy armour confers a 4+ Armour Save. If a majority of models in a unit with the Light Sub-type are equipped with ‘eavy armour, the entire unit loses the Light Sub-type."
-          }
-        ],
         "modifiers": [
           {
             "type": "set",
@@ -4814,6 +4814,22 @@
             "field": "dc1c-e152-7a5e-2c32",
             "scope": "unit",
             "affects": "self.entries.profiles.Model"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "'Eavy Armour",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "7a0e-2001-bb41-be94",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "‘Eavy armour confers a 4+ Armour Save. If a majority of models in a unit with the Light Sub-type are equipped with ‘eavy armour, the entire unit loses the Light Sub-type."
+              }
+            ]
           }
         ]
       },
@@ -4823,14 +4839,6 @@
         "name": "'Eavy Plates",
         "hidden": false,
         "id": "c005-0c7e-668e-09b9",
-        "rules": [
-          {
-            "name": "'Eavy Plates",
-            "id": "4771-fb90-a0fc-87d0",
-            "hidden": false,
-            "description": "A Vehicle with ‘eavy plates increases the Armour Value on its Front Facing by +2 and on its Side Facing by +1."
-          }
-        ],
         "modifiers": [
           {
             "type": "increment",
@@ -4846,6 +4854,22 @@
             "affects": "profiles.Vehicle",
             "scope": "parent"
           }
+        ],
+        "profiles": [
+          {
+            "name": "'Eavy Plates",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "4e14-c145-11c5-0e8c",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A Vehicle with ‘eavy plates increases the Armour Value on its Front Facing by +2 and on its Side Facing by +1."
+              }
+            ]
+          }
         ]
       },
       {
@@ -4854,12 +4878,20 @@
         "name": "Deflektor",
         "hidden": false,
         "id": "f314-3ec3-d12b-425f",
-        "rules": [
+        "profiles": [
           {
             "name": "Deflektor",
-            "id": "7491-cb30-059e-cfd5",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with a deflektor gains a 4+ Invulnerable Save."
+            "id": "f16a-82b2-8af4-1bc9",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a deflektor gains a 4+ Invulnerable Save."
+              }
+            ]
           }
         ]
       },
@@ -4869,12 +4901,20 @@
         "name": "Kustom Force Field",
         "hidden": false,
         "id": "4eda-06b5-b6e3-b20c",
-        "rules": [
+        "profiles": [
           {
             "name": "Kustom Force Field",
-            "id": "36c3-baa5-63c0-2590",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "The bearer, and all models within 6\", receive a 5+ Invulnerable Save against any shooting attacks. If the bearer is embarked in a Vehicle, then the Vehicle receives a 5+ Invulnerable Save against any shooting attacks instead."
+            "id": "33fd-dec3-578d-531b",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "The bearer, and all models within 6\", receive a 5+ Invulnerable Save against any shooting attacks. If the bearer is embarked in a Vehicle, then the Vehicle receives a 5+ Invulnerable Save against any shooting attacks instead."
+              }
+            ]
           }
         ]
       },
@@ -4884,12 +4924,20 @@
         "name": "Lucky Tattoos",
         "hidden": false,
         "id": "e283-72e1-4bd4-5c3d",
-        "rules": [
+        "profiles": [
           {
             "name": "Lucky Tattoos",
-            "id": "458a-f7f3-e479-155e",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with lucky tattoos gains a 6+ Invulnerable Save."
+            "id": "5d0d-dbc2-f503-48f4",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with lucky tattoos gains a 6+ Invulnerable Save."
+              }
+            ]
           }
         ]
       },
@@ -4899,14 +4947,6 @@
         "name": "Mega Armour",
         "hidden": false,
         "id": "d7aa-a58f-7625-655a",
-        "rules": [
-          {
-            "name": "Mega Armour",
-            "id": "1474-0cb4-9bbf-7e97",
-            "hidden": false,
-            "description": "Mega armour confers a 2+ Armour Save, and includes a cybork body and an iron gob. A model in Mega Armour has the Slow and Purposeful special rule."
-          }
-        ],
         "infoLinks": [
           {
             "name": "Slow and Purposeful",
@@ -4994,6 +5034,22 @@
               }
             ]
           }
+        ],
+        "profiles": [
+          {
+            "name": "Mega Armour",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "c625-8d9b-3dc7-3487",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Mega armour confers a 2+ Armour Save, and includes a cybork body and an iron gob. A model in Mega Armour has the Slow and Purposeful special rule."
+              }
+            ]
+          }
         ]
       },
       {
@@ -5002,14 +5058,6 @@
         "name": "Bosspole",
         "hidden": false,
         "id": "7df6-6fac-17eb-9f03",
-        "rules": [
-          {
-            "name": "Bosspole",
-            "id": "0e83-4582-259f-5f99",
-            "hidden": false,
-            "description": "A model with a bosspole gains the Chosen Warriors special rule, unless the model already has the Character Unit Sub-type. In addition, a unit that includes at least\none model with a bosspole adds +1 to the Wounds score used to determine if they win a Combat in the Assault phase. Furthermore, a unit that contains one or more\nbosspoles may choose to inflict a single Strength 4 AP - hit on the unit to re-roll a failed Morale check."
-          }
-        ],
         "infoLinks": [
           {
             "name": "Chosen Warriors",
@@ -5035,6 +5083,22 @@
               }
             ]
           }
+        ],
+        "profiles": [
+          {
+            "name": "Bosspole",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "4857-5e6b-6c95-8113",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a bosspole gains the Chosen Warriors special rule, unless the model already has the Character Unit Sub-type. In addition, a unit that includes at least one model with a bosspole adds +1 to the Wounds score used to determine if they win a Combat in the Assault phase. Furthermore, a unit that contains one or more bosspoles may choose to inflict a single Strength 4 AP - hit on the unit to re-roll a failed Morale check."
+              }
+            ]
+          }
         ]
       },
       {
@@ -5043,14 +5107,6 @@
         "name": "Waaagh! Banner",
         "hidden": false,
         "id": "dbca-7844-f48a-5d3e",
-        "rules": [
-          {
-            "name": "Waaagh! Banner",
-            "id": "0c58-99e0-5dea-729b",
-            "hidden": false,
-            "description": "An army may only include a single Waaagh! banner. All models in a unit that includes a Waaagh! banner gain the Fearless special rule and the Line Sub-type\nas long as they remain part of that unit. All benefits are lost immediately if the model with the Waaagh! banner is removed as a casualty."
-          }
-        ],
         "constraints": [
           {
             "type": "max",
@@ -5080,6 +5136,22 @@
             "scope": "unit",
             "affects": "self.entries.model"
           }
+        ],
+        "profiles": [
+          {
+            "name": "Waaagh! Banner",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "7836-55eb-1af4-fc96",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "An army may only include a single Waaagh! banner. All models in a unit that includes a Waaagh! banner gain the Fearless special rule and the Line Sub-type as long as they remain part of that unit. All benefits are lost immediately if the model with the Waaagh! banner is removed as a casualty."
+              }
+            ]
+          }
         ]
       },
       {
@@ -5088,13 +5160,20 @@
         "name": "Iron Gob / Big Horns",
         "hidden": false,
         "id": "7cda-0814-d873-b9cd",
-        "infoLinks": [
+        "profiles": [
           {
-            "name": "Big Horns / Iron Gob",
-            "id": "e4bb-366b-0e7d-9e1c",
+            "name": "Iron Gob / Big Horns",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "type": "rule",
-            "targetId": "a6ed-0810-c854-b138"
+            "id": "1d77-bb3b-06ae-f6a8",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with big horns or an iron gob gains the Hammer of Wrath (1) special rule."
+              }
+            ]
           }
         ]
       },
@@ -5104,12 +5183,20 @@
         "name": "Billowing Fumes",
         "hidden": false,
         "id": "3b3d-67db-fcf8-bb21",
-        "rules": [
+        "profiles": [
           {
             "name": "Billowing Fumes",
-            "id": "0206-a4ee-f4fc-a3ef",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A Vehicle with billowing fumes that chooses to move Flat Out gains the Shrouded (5+) special rule until the start of the controlling player’s next turn."
+            "id": "6555-4a42-f69e-167d",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A Vehicle with billowing fumes that chooses to move Flat Out gains the Shrouded (5+) special rule until the start of the controlling player’s next turn."
+              }
+            ]
           }
         ]
       },
@@ -5119,12 +5206,20 @@
         "name": "Boarding Plank",
         "hidden": false,
         "id": "2803-9eb9-ad23-ff34",
-        "rules": [
+        "profiles": [
           {
             "name": "Boarding Plank",
-            "id": "ae40-ca58-ae0b-5146",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "If a unit disembarks from a Vehicle with the Open-topped Sub-type and a boarding plank and declares a charge in the same turn, it adds +2 to its charge distance (to a maximum of 12)."
+            "id": "c1b4-1dc4-07a8-6571",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "If a unit disembarks from a Vehicle with the Open-topped Sub-type and a boarding plank and declares a charge in the same turn, it adds +2 to its charge distance (to a maximum of 12)."
+              }
+            ]
           }
         ]
       },
@@ -5149,12 +5244,20 @@
         "name": "Comms",
         "hidden": false,
         "id": "3166-6a0f-f79a-4177",
-        "rules": [
+        "profiles": [
           {
             "name": "Comms",
-            "id": "9db0-7a6b-a241-744f",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "As long as a model with comms is on the battlefield (but not in Reserves) then all Reserves rolls made by the controlling player may be re-rolled. In addition, a unit\nthat includes at least one model with comms ignores the -1 penalty to Leadership imposed by the Night Fighting rules."
+            "id": "9f19-93c7-9b48-2952",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "As long as a model with comms is on the battlefield (but not in Reserves) then all Reserves rolls made by the controlling player may be re-rolled. In addition, a unit that includes at least one model with comms ignores the -1 penalty to Leadership imposed by the Night Fighting rules."
+              }
+            ]
           }
         ]
       },
@@ -5164,14 +5267,6 @@
         "name": "Cybork Body",
         "hidden": false,
         "id": "3dc4-f923-7f7b-d4ee",
-        "rules": [
-          {
-            "name": "Cybork Body",
-            "id": "79d3-886b-1633-6161",
-            "hidden": false,
-            "description": "A model with a cybork body gains the Feel No Pain (6+) special rule. If they gain another version of the Feel No Pain (X) special rule through other means, a model with a cybork body improves the value in brackets by 1 instead."
-          }
-        ],
         "infoLinks": [
           {
             "name": "Feel No Pain",
@@ -5187,6 +5282,22 @@
               }
             ]
           }
+        ],
+        "profiles": [
+          {
+            "name": "Cybork Body",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "9fc9-cb5c-ef76-1815",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a cybork body gains the Feel No Pain (6+) special rule. If they gain another version of the Feel No Pain (X) special rule through other means, a model with a cybork body improves the value in brackets by 1 instead."
+              }
+            ]
+          }
         ]
       },
       {
@@ -5195,12 +5306,20 @@
         "name": "Gitfinda",
         "hidden": false,
         "id": "68ae-ec45-4d58-8c2a",
-        "rules": [
+        "profiles": [
           {
             "name": "Gitfinda",
-            "id": "9b70-467f-6a51-2bed",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with a gitfinda that remained stationary during its Movement phase improves its Ballistic Skill by +1 during the controlling player’s following Shooting phase. In addition, a model with a gitfinda ignores the penalty to Ballistic Skill while the Night Fighting rules are in effect."
+            "id": "8c64-7efc-4275-9bcf",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a gitfinda that remained stationary during its Movement phase improves its Ballistic Skill by +1 during the controlling player’s following Shooting phase. In addition, a model with a gitfinda ignores the penalty to Ballistic Skill while the Night Fighting rules are in effect."
+              }
+            ]
           }
         ]
       },
@@ -5210,12 +5329,20 @@
         "name": "Grabbin' Klaw",
         "hidden": false,
         "id": "3e5e-0482-1f2e-76b4",
-        "rules": [
+        "profiles": [
           {
             "name": "Grabbin' Klaw",
-            "id": "9489-b0a3-8bbb-4940",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "At the beginning of the enemy Movement phase, nominate a single enemy Vehicle that is within 2\" of a Vehicle with a grabbin’ klaw. On the roll of a 4+, that Vehicle may not move this turn. Flyers and Skimmers cannot be attacked by a grabbin’ klaw."
+            "id": "b678-f993-53f1-4242",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "At the beginning of the enemy Movement phase, nominate a single enemy Vehicle that is within 2\" of a Vehicle with a grabbin’ klaw. On the roll of a 4+, that Vehicle may not move this turn. Flyers and Skimmers cannot be attacked by a grabbin’ klaw."
+              }
+            ]
           }
         ]
       },
@@ -5225,12 +5352,20 @@
         "name": "Mine Layer",
         "hidden": false,
         "id": "6e8f-e736-3ad1-b253",
-        "rules": [
+        "profiles": [
           {
             "name": "Mine Layer",
-            "id": "7b35-b8d9-a7f3-a367",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "After a Vehicle with a Mine Layer moves through any Area Terrain, the controlling player may roll a D6. On a 3+ the Area Terrain now counts as Dangerous Terrain and the Mine Layer may not be used again. On a 1 or 2, the Area Terrain is unaffected but the Mine Layer may be used again in a subsequent turn."
+            "id": "d248-43ab-94ce-d418",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "After a Vehicle with a Mine Layer moves through any Area Terrain, the controlling player may roll a D6. On a 3+ the Area Terrain now counts as Dangerous Terrain and the Mine Layer may not be used again. On a 1 or 2, the Area Terrain is unaffected but the Mine Layer may be used again in a subsequent turn."
+              }
+            ]
           }
         ]
       },
@@ -5240,14 +5375,6 @@
         "name": "Cyboar",
         "hidden": false,
         "id": "a85b-670d-3ad2-cfc2",
-        "rules": [
-          {
-            "name": "Cyboar",
-            "id": "0d5a-2747-e278-a4c6",
-            "hidden": false,
-            "description": "A model with a Cyboar that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.\n\nA model with the Infantry Unit Type that selects a Cyboar as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had. In addition the model must change its Movement Characteristic to 14 and it gains the Hammer of Wrath (D3) and Rampage (D3) special rules."
-          }
-        ],
         "modifiers": [
           {
             "type": "remove",
@@ -5298,6 +5425,22 @@
               }
             ]
           }
+        ],
+        "profiles": [
+          {
+            "name": "Cyboar",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "6162-c988-fe10-8202",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a Cyboar that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.\n\nA model with the Infantry Unit Type that selects a Cyboar as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had. In addition the model must change its Movement Characteristic to 14 and it gains the Hammer of Wrath (D3) and Rampage (D3) special rules."
+              }
+            ]
+          }
         ]
       },
       {
@@ -5306,14 +5449,6 @@
         "name": "Deffkopta",
         "hidden": false,
         "id": "5f5c-a59d-ea09-d24b",
-        "rules": [
-          {
-            "name": "Deffkopta",
-            "id": "03a3-758e-5c55-3091",
-            "hidden": false,
-            "description": "A Deffkopta has one twin-linked big shoota. In addition, a model with a Deffkopta that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn."
-          }
-        ],
         "selectionEntryGroups": [
           {
             "name": "Must take on of the following",
@@ -5420,6 +5555,22 @@
             ],
             "defaultSelectionEntryId": "1a7e-512a-9837-148a"
           }
+        ],
+        "profiles": [
+          {
+            "name": "Deffkopta",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "f676-b27e-3867-be11",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A Deffkopta has one twin-linked big shoota. In addition, a model with a Deffkopta that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn."
+              }
+            ]
+          }
         ]
       },
       {
@@ -5428,14 +5579,6 @@
         "name": "Warbike",
         "hidden": false,
         "id": "1db6-1d27-24c0-5cb0",
-        "rules": [
-          {
-            "name": "Warbike",
-            "id": "faea-b9df-38df-e598",
-            "hidden": false,
-            "description": "A Warbike has one twin-linked dakkagun. In addition, a model with a Warbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.\n\nA model with the Infantry Unit Type that selects a Warbike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had. In\naddition the model must change its Movement Characteristic to 14 and it gains the Hammer of Wrath (1) special rule."
-          }
-        ],
         "entryLinks": [
           {
             "import": true,
@@ -5527,6 +5670,22 @@
               }
             ]
           }
+        ],
+        "profiles": [
+          {
+            "name": "Warbike",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "acbc-8179-bc73-a294",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A Warbike has one twin-linked dakkagun. In addition, a model with a Warbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.\n\nA model with the Infantry Unit Type that selects a Warbike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had. In\naddition the model must change its Movement Characteristic to 14 and it gains the Hammer of Wrath (1) special rule."
+              }
+            ]
+          }
         ]
       },
       {
@@ -5535,12 +5694,20 @@
         "name": "Dok's Tools",
         "hidden": false,
         "id": "4431-15e1-507d-eca8",
-        "rules": [
+        "profiles": [
           {
             "name": "Dok's Tools",
-            "id": "67fa-13ab-26e7-2e5a",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "As long as the bearer is alive, all models in their unit have the Feel No Pain (5+) special rule."
+            "id": "c841-6932-7539-b036",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "As long as the bearer is alive, all models in their unit have the Feel No Pain (5+) special rule."
+              }
+            ]
           }
         ]
       },
@@ -5550,14 +5717,6 @@
         "name": "Mek's Tools",
         "hidden": false,
         "id": "6330-d06c-6598-2e5f",
-        "rules": [
-          {
-            "name": "Mek's Tools",
-            "id": "74c1-034a-49c0-cc43",
-            "hidden": false,
-            "description": "A model with Mek’s Tools has the Battlesmith (5+) special rule."
-          }
-        ],
         "infoLinks": [
           {
             "name": "Battlesmith",
@@ -5573,6 +5732,22 @@
               }
             ]
           }
+        ],
+        "profiles": [
+          {
+            "name": "Mek's Tools",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "6f84-f0da-f4aa-25b7",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with Mek’s Tools has the Battlesmith (5+) special rule."
+              }
+            ]
+          }
         ]
       },
       {
@@ -5581,12 +5756,20 @@
         "name": "Reinforced Ram",
         "hidden": false,
         "id": "4286-dc56-ed79-7bcf",
-        "rules": [
+        "profiles": [
           {
             "name": "Reinforced Ram",
-            "id": "94c3-a8f2-a949-4ca6",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A Vehicle with a reinforced ram treats its front Armour Value as two points higher than normal when Ramming. Furthermore, the Vehicle may re-roll failed Dangerous Terrain tests."
+            "id": "aa48-d7af-3ee4-5b83",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A Vehicle with a reinforced ram treats its front Armour Value as two points higher than normal when Ramming. Furthermore, the Vehicle may re-roll failed Dangerous Terrain tests."
+              }
+            ]
           }
         ]
       },
@@ -5596,12 +5779,20 @@
         "name": "Deff Rolla",
         "hidden": false,
         "id": "d862-22bd-67fe-22b8",
-        "rules": [
+        "profiles": [
           {
             "name": "Deff Rolla",
-            "id": "2e30-214c-dedb-0e10",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A Vehicle with a deff rolla counts as a Super-heavy Vehicle when Ramming. Furthermore, the Vehicle may re-roll failed Dangerous Terrain tests."
+            "id": "44c3-7f19-5a01-57c0",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A Vehicle with a deff rolla counts as a Super-heavy Vehicle when Ramming. Furthermore, the Vehicle may re-roll failed Dangerous Terrain tests."
+              }
+            ]
           }
         ]
       },
@@ -5681,14 +5872,6 @@
         "name": "Rokkit Pack",
         "hidden": false,
         "id": "048c-2906-5159-b6ca",
-        "rules": [
-          {
-            "name": "Rokkit Pack",
-            "id": "c99d-53d2-1081-bd6a",
-            "hidden": false,
-            "description": "At the start of the controlling player’s Movement phase, or when deployed as part of a Deep Strike Assault, a model with a rokkit pack may set its Move Characteristic to a value of 12 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ the rokkit pack). This allows a model with a rokkit pack to move up to 12\", regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, all models with a rokkit pack that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their Movement in Dangerous Terrain.\n\nA model with an activated rokkit pack treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its Movement at least 1\" away from any model from another unit. A model with a rokkit pack may still Run if it would normally be  able to Run (this does not allow units that include any models with the Heavy Sub-type to Run). When making a Run move for a model with an activated rokkit pack, roll a D6 and add the value to 12 to determine how far it may move, rather than use the model’s Initiative Characteristic. The model ignores terrain and models from other units while making a Run move with a rokkit pack as previously noted, but may not make Shooting Attacks or declare a Charge in the same turn in which it has Run as per the normal rules for\nRunning. If the D6 value is a 6, all models in the unit with a rokkit pack must take a Dangerous Terrain test once the Run move is complete.\n\nAny model with a rokkit pack also gains the Bulky (2), Hammer of Wrath (1) and Deep Strike special rules.\n\nDuring a Reaction made in any Phase, a player may not choose to activate a model’s rokkit pack to gain any bonus to their Movement Characteristic."
-          }
-        ],
         "infoLinks": [
           {
             "name": "Bulky",
@@ -5740,6 +5923,22 @@
             "type": "rule",
             "targetId": "4aab-8d13-caf2-091d"
           }
+        ],
+        "profiles": [
+          {
+            "name": "Rokkit Pack",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "8780-ec01-0b84-1099",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "At the start of the controlling player’s Movement phase, or when deployed as part of a Deep Strike Assault, a model with a rokkit pack may set its Move Characteristic to a value of 12 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ the rokkit pack). This allows a model with a rokkit pack to move up to 12\", regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, all models with a rokkit pack that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their Movement in Dangerous Terrain.\n\nA model with an activated rokkit pack treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its Movement at least 1\" away from any model from another unit. A model with a rokkit pack may still Run if it would normally be able to Run (this does not allow units that include any models with the Heavy Sub-type to Run). When making a Run move for a model with an activated rokkit pack, roll a D6 and add the value to 12 to determine how far it may move, rather than use the model’s Initiative Characteristic. The model ignores terrain and models from other units while making a Run move with a rokkit pack as previously noted, but may not make Shooting Attacks or declare a Charge in the same turn in which it has Run as per the normal rules for\nRunning. If the D6 value is a 6, all models in the unit with a rokkit pack must take a Dangerous Terrain test once the Run move is complete.\n\nAny model with a rokkit pack also gains the Bulky (2), Hammer of Wrath (1) and Deep Strike special rules.\n\nDuring a Reaction made in any Phase, a player may not choose to activate a model’s rokkit pack to gain any bonus to their Movement Characteristic."
+              }
+            ]
+          }
         ]
       },
       {
@@ -5748,12 +5947,20 @@
         "name": "Ammo Runt",
         "hidden": false,
         "id": "8669-6f17-cca7-fae0",
-        "rules": [
+        "profiles": [
           {
             "name": "Ammo Runt",
-            "id": "a191-fb4e-1119-7be4",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "One Use Only. A unit with an ammo runt can re-roll one To Hit roll when shooting."
+            "id": "94d4-06a0-7358-d10a",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "One Use Only. A unit with an ammo runt can re-roll one To Hit roll when shooting."
+              }
+            ]
           }
         ]
       },
@@ -5778,27 +5985,20 @@
         "name": "Distraction Grot",
         "hidden": false,
         "id": "f07e-793e-32ae-e544",
-        "rules": [
+        "profiles": [
           {
             "name": "Distraction Grot",
-            "id": "9989-0ac3-7e73-f30d",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "One Use Only. A Distraction grot allows any model in the same unit to re-roll a failed Cover Save or Shrouded roll."
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Kommanda",
-        "hidden": false,
-        "id": "6484-673d-d353-b373",
-        "rules": [
-          {
-            "name": "Kommanda",
-            "id": "0800-c659-cd8b-72f0",
-            "hidden": false,
-            "description": "Whilst a model with a Kommanda is part of the Grot Tank Battle Mob, it may re-roll the distance it moves (see the Full Speed Ahead special rule), but must accept the second result, even if it is worse. This re-roll can be used to negate any  damage caused by rolling a double 1 for the squadron’s movement, as long as the second roll is not also a double 1."
+            "id": "f6e8-cdf4-2dfb-f011",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "One Use Only. A Distraction grot allows any model in the same unit to re-roll a failed Cover Save or Shrouded roll."
+              }
+            ]
           }
         ]
       },
@@ -5808,12 +6008,20 @@
         "name": "Grot Gunner",
         "hidden": false,
         "id": "3743-444e-dd47-772b",
-        "rules": [
+        "profiles": [
           {
-            "name": "Grot Runner",
-            "id": "4b6f-c84e-0b7c-f73e",
+            "name": "Grot Gunner",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Shooting attacks for a weapon with a grot gunner are resolved at Ballistic Skill 3. In addition, when any enemy unit that has the Vehicle Unit Type and the Flyer Sub-type enters the battlefield from Reserves, a friendly unit that has the Vehicle Unit Type and the Flyer Sub-type may make the Interceptor Advanced Reaction (see the Horus Heresy: Age of Darkness rulebook, page 309) using only Defensive weapons with grot gunners without expending a point of the Reactive player’s Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase."
+            "id": "3b3d-c48b-bab5-8900",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Shooting attacks for a weapon with a grot gunner are resolved at Ballistic Skill 3. In addition, when any enemy unit that has the Vehicle Unit Type and the Flyer Sub-type enters the battlefield from Reserves, a friendly unit that has the Vehicle Unit Type and the Flyer Sub-type may make the Interceptor Advanced Reaction (see the Horus Heresy: Age of Darkness rulebook, page 309) using only Defensive weapons with grot gunners without expending a point of the Reactive player’s Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase."
+              }
+            ]
           }
         ]
       },
@@ -5838,12 +6046,20 @@
         "name": "Grot Orderly",
         "hidden": false,
         "id": "6a41-1125-3505-50c9",
-        "rules": [
+        "profiles": [
           {
             "name": "Grot Orderly",
-            "id": "6bcb-9381-bab3-ad49",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "One Use Only. A grot orderly allows a Painboy’s unit to re-roll a single Feel No Pain roll or It Will Not Die roll"
+            "id": "a5b6-e884-4a13-8799",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "One Use Only. A grot orderly allows a Painboy’s unit to re-roll a single Feel No Pain roll or It Will Not Die roll"
+              }
+            ]
           }
         ]
       },
@@ -5853,12 +6069,20 @@
         "name": "Grot Riggers",
         "hidden": false,
         "id": "c72d-61fe-295c-317b",
-        "rules": [
+        "profiles": [
           {
             "name": "Grot Riggers",
-            "id": "8682-c394-aaec-a87c",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with grot riggers gains the It Will Not Die (6+) special rule."
+            "id": "3be8-82ff-b022-9fbb",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with grot riggers gains the It Will Not Die (6+) special rule."
+              }
+            ]
           }
         ]
       },
@@ -5868,12 +6092,20 @@
         "name": "Jump Grot",
         "hidden": false,
         "id": "0517-d3bc-af7e-dfe2",
-        "rules": [
+        "profiles": [
           {
             "name": "Jump Grot",
-            "id": "8dab-75d1-0b8e-2773",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A unit with a jump grot may re-roll all the dice when rolling for scatter as part of a Deep Strike Assault."
+            "id": "68c1-1d82-8efe-7673",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A unit with a jump grot may re-roll all the dice when rolling for scatter as part of a Deep Strike Assault."
+              }
+            ]
           }
         ]
       },
@@ -5883,12 +6115,20 @@
         "name": "Squig Hound",
         "hidden": false,
         "id": "4d12-8777-ec29-3afa",
-        "rules": [
+        "profiles": [
           {
             "name": "Squig Hound",
-            "id": "16e5-6c15-9c1f-9bbc",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Each time a unit with a squig hound fails a Morale check it suffers D6 Strength 3 AP - Hits and must then re-roll the failed Morale check. If the re-roll is failed, it cannot be re-rolled again, and the squig hound will not inflict any further hits. In addition, enemy models cannot be deployed using the Infiltrate special rule within 18\" of a model with a squig hound."
+            "id": "4315-5193-582f-4713",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Each time a unit with a squig hound fails a Morale check it suffers D6 Strength 3 AP - Hits and must then re-roll the failed Morale check. If the re-roll is failed, it cannot be re-rolled again, and the squig hound will not inflict any further hits. In addition, enemy models cannot be deployed using the Infiltrate special rule within 18\" of a model with a squig hound."
+              }
+            ]
           }
         ]
       },
@@ -5913,12 +6153,20 @@
         "name": "Shokkjump Engine",
         "hidden": false,
         "id": "7c4e-c788-9a8a-16f6",
-        "rules": [
+        "profiles": [
           {
             "name": "Shokkjump Engine",
-            "id": "a917-af87-6a59-6814",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A Vehicle with a shokkjump engine may move an extra D6\" when moving Flat Out. If a 6 is rolled, the model is removed from the battlefield and placed into Reserve. When returning to the battlefield it may deploy using the rules for Deep Strike Assault as though it had the Deep Strike special rule. This may allow the controlling player to perform more than a single Deep Strike Assault. If the model is not on the battlefield at the end of the game it counts as being destroyed."
+            "id": "4e3f-42ed-85b2-7cae",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A Vehicle with a shokkjump engine may move an extra D6\" when moving Flat Out. If a 6 is rolled, the model is removed from the battlefield and placed into Reserve. When returning to the battlefield it may deploy using the rules for Deep Strike Assault as though it had the Deep Strike special rule. This may allow the controlling player to perform more than a single Deep Strike Assault. If the model is not on the battlefield at the end of the game it counts as being destroyed."
+              }
+            ]
           }
         ]
       },
@@ -5928,12 +6176,20 @@
         "name": "Snakebite Combat Drugs",
         "hidden": false,
         "id": "7dfc-dd7c-e3a7-ecf8",
-        "rules": [
+        "profiles": [
           {
             "name": "Snakebite Combat Drugs",
-            "id": "c848-ccb1-187d-e2ef",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Roll on the following table after deploying a model with Snakebite combat drugs:\n\n\n1: The model begins the game having already lost 1 Wound.\n\n\n2: The model gains the Fleet (2) special rule.\n\n\n3: The model may re-roll the dice when rolling for the number of attacks granted by the Rampage special rule and the number of hits granted by the Hammer of Wrath special rules.\n\n\n4: The model gains the Preferred Enemy (Infantry) special rule.\n\n\n5: The model gains the Feel No Pain (5+) special rule.\n\n\n6: Roll two more D6, applying both results (re-roll any further results of 6)."
+            "id": "bbd6-38e5-c0ca-f710",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Roll on the following table after deploying a model with Snakebite combat drugs:\n\n1: The model begins the game having already lost 1 Wound.\n2: The model gains the Fleet (2) special rule.\n3: The model may re-roll the dice when rolling for the number of attacks granted by the Rampage special rule and the number of hits granted by the Hammer of Wrath special rules.\n4: The model gains the Preferred Enemy (Infantry) special rule.\n5: The model gains the Feel No Pain (5+) special rule.\n6: Roll two more D6, applying both results (re-roll any further results of 6)."
+              }
+            ]
           }
         ]
       },
@@ -5943,12 +6199,20 @@
         "name": "Stikkbombs",
         "hidden": false,
         "id": "9c17-caa4-72ee-1545",
-        "rules": [
+        "profiles": [
           {
             "name": "Stikkbombs",
-            "id": "4a04-8f24-6e98-728d",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Using stikkbombs does not count as a Shooting Attack and their effects are entirely covered by the rules presented here.\n\nA unit that includes at least one model with stikkbombs makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain."
+            "id": "8370-7bcc-648a-e787",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Using stikkbombs does not count as a Shooting Attack and their effects are entirely covered by the rules presented here.\n\nA unit that includes at least one model with stikkbombs makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain."
+              }
+            ]
           }
         ]
       },
@@ -5958,12 +6222,20 @@
         "name": "Stikkbomb Flinga",
         "hidden": false,
         "id": "67d6-e40e-e8c6-4f02",
-        "rules": [
+        "profiles": [
           {
             "name": "Stikkbomb Flinga",
-            "id": "eead-1298-40a7-791f",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Once per game, when a Flyer with a stikkbomb flinga makes the Evade Reaction, it gains the Shrouded (3+) special rule instead of Shrouded (5+)."
+            "id": "15f3-2bf2-adcc-05ef",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Once per game, when a Flyer with a stikkbomb flinga makes the Evade Reaction, it gains the Shrouded (3+) special rule instead of Shrouded (5+)."
+              }
+            ]
           }
         ]
       },
@@ -5973,12 +6245,20 @@
         "name": "Wurrtower",
         "hidden": false,
         "id": "d627-dbe3-7447-bc98",
-        "rules": [
+        "profiles": [
           {
             "name": "Wurrtower",
-            "id": "f20b-37d9-68b6-61ae",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A Weirdboy Embarked on a Transport with a Wurrtower extends the range of any psychic weapon without the Melee type by 6\"."
+            "id": "987f-cefb-bce7-5550",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A Weirdboy Embarked on a Transport with a Wurrtower extends the range of any psychic weapon without the Melee type by 6\"."
+              }
+            ]
           }
         ]
       },
@@ -6039,7 +6319,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "a5db-6a36-a2a0-445f",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -6959,7 +7239,7 @@
                   },
                   {
                     "type": "add",
-                    "value": "1909-26f7-31d2-0932",
+                    "value": "e349-c42f-3c5d-1e72",
                     "field": "category",
                     "scope": "model"
                   }
@@ -7553,7 +7833,7 @@
             "id": "2556-77fc-135a-9865",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "b187-a43c-a9cb-3b4b",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -7567,7 +7847,7 @@
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "c39e-75f8-1151-8d6e",
                 "targetId": "33d0-319a-741e-573f",
@@ -8245,7 +8525,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "54b6-6472-f593-cb8a",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -9330,12 +9610,20 @@
             "primary": true
           }
         ],
-        "rules": [
+        "profiles": [
           {
             "name": "Goffs",
-            "id": "db86-4758-7076-503b",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "- Goffs Stormboyz Mobs gain the Line Unit Sub-type.\n\n- A Goffs Warboss may take a rokkit pack for 20 points, provided it does not have mega armour or a warbike. A Warboss with a rokkit pack gains the Bulky (3) special rule.\n\n- Goffs models with the Character Unit Sub-type gain the Preferred Enemy (Characters) special rule when fighting in a challenge, and must always issue and accept challenges.\n\n- Goffs Deff Dreads gain the Rampage (D3) special rule.\n\n- A Detachment with any Goffs models may only include a maximum of one unit chosen from the following: Kommando Mob, Flash Gitz Mob."
+            "id": "5156-1aaa-8934-2840",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "- Goffs Stormboyz Mobs gain the Line Unit Sub-type.\n- A Goffs Warboss may take a rokkit pack for 20 points, provided it does not have mega armour or a warbike. A Warboss with a rokkit pack gains the Bulky (3) special rule.\n- Goffs models with the Character Unit Sub-type gain the Preferred Enemy (Characters) special rule when fighting in a challenge, and must always issue and accept challenges.\n- Goffs Deff Dreads gain the Rampage (D3) special rule.\n- A Detachment with any Goffs models may only include a maximum of one unit chosen from the following: Kommando Mob, Flash Gitz Mob."
+              }
+            ]
           }
         ]
       },
@@ -9413,13 +9701,13 @@
             "name": "Great Dread Mob Effects",
             "id": "26dc-7d30-f7a1-526a",
             "hidden": false,
-            "description": "- In a Detachment following this Mekaniak Kult, Deff Dread Mobs may be taken as Troops choices.\n\n- Deff Dread Mobs taken as Compulsory Troops in the Detachment gain the Line Sub-type.\n\n- Stompas taken as a Lords of War choice to a Primary Detachment following this Mekaniak Kult gain the Wrecker special rule.\n\n- A single Mega-dread in the Detachment may be selected as an HQ choice. A Mega-dread selected in this manner must take the Kustom Meka-dread upgrade for +30 points, and may additionally take a kustom force field for +50 points."
+            "description": "- In a Detachment following this Mekaniak Kult, Deff Dread Mobs may be taken as Troops choices.\n- Deff Dread Mobs taken as Compulsory Troops in the Detachment gain the Line Sub-type.\n- Stompas taken as a Lords of War choice to a Primary Detachment following this Mekaniak Kult gain the Wrecker special rule.\n- A single Mega-dread in the Detachment may be selected as an HQ choice. A Mega-dread selected in this manner must take the Kustom Meka-dread upgrade for +30 points, and may additionally take a kustom force field for +50 points."
           },
           {
             "name": "Great Dread Mob Limitations",
             "id": "24f3-b80f-7cc8-bbf8",
             "hidden": false,
-            "description": "- All Compulsory Troops choices in a Detachment following this Mekaniak Kult must be Deff Dread Mobs.\n\n\n- A Detachment following this Mekaniak Kult may only include a single Fast Attack choice and a single Heavy Support choice that does not consist entirely of models with the Dreadnought Unit Type or the Knight Unit Subtype.\n\n\n- An army with a Detachment following this Mekaniak Kult may not roll to attempt to Seize the Initiative."
+            "description": "- All Compulsory Troops choices in a Detachment following this Mekaniak Kult must be Deff Dread Mobs.\n- A Detachment following this Mekaniak Kult may only include a single Fast Attack choice and a single Heavy Support choice that does not consist entirely of models with the Dreadnought Unit Type or the Knight Unit Subtype.\n- An army with a Detachment following this Mekaniak Kult may not roll to attempt to Seize the Initiative."
           }
         ]
       },
@@ -9443,13 +9731,13 @@
             "name": "Tellyporta Assault Effects",
             "id": "07c9-8b5c-8d51-e875",
             "hidden": false,
-            "description": "- All models in mega armour in a Detachment following this Mekaniak Kult gain the Deep Strike special rule.\n\n- Meganobz Mobs may be taken as Troops choices in a Detachment following this Mekaniak Kult.\n\n- Meganobz Mobs taken as Compulsory Troops in the Detachment gain the Line Sub-type.\n\n- In a Detachment following this Mekaniak Kult, any of the following units may be given the Deep Strike special rule for +25 points per unit:\n  - Boyz Mobs without a Dedicated Transport\n  - Flash Gitz Mobs without a Dedicated Transport\n  - Morkanauts"
+            "description": "- All models in mega armour in a Detachment following this Mekaniak Kult gain the Deep Strike special rule.\n- Meganobz Mobs may be taken as Troops choices in a Detachment following this Mekaniak Kult.\n- Meganobz Mobs taken as Compulsory Troops in the Detachment gain the Line Sub-type.\n- In a Detachment following this Mekaniak Kult, any of the following units may be given the Deep Strike special rule for +25 points per unit:\n  - Boyz Mobs without a Dedicated Transport\n  - Flash Gitz Mobs without a Dedicated Transport\n  - Morkanauts"
           },
           {
             "name": "Tellyporta Assault Limitations",
             "id": "86b5-cd43-e11b-d757",
             "hidden": false,
-            "description": "- A Detachment following this Mekaniak Kult must include at least one Mega Big Mek with a tellyport blasta.\n\n- Units in a Detachment following this Mekaniak Kult may not take Dedicated Transports.\n\n- Gretchin Mobs may not be taken in a Detachment following this Mekaniak Kult.\n\n- All models in mega armour in a Detachment following this Mekaniak Kult must deploy by means of a Deep Strike Assault.\n\n- On the turn in which they deploy by means of a Deep Strike Assault, units with the Infantry Unit type in a detachment following this Mekaniak Kult may not make use of the Mob Rule special rule."
+            "description": "- A Detachment following this Mekaniak Kult must include at least one Mega Big Mek with a tellyport blasta.\n- Units in a Detachment following this Mekaniak Kult may not take Dedicated Transports.\n- Gretchin Mobs may not be taken in a Detachment following this Mekaniak Kult.\n- All models in mega armour in a Detachment following this Mekaniak Kult must deploy by means of a Deep Strike Assault.\n- On the turn in which they deploy by means of a Deep Strike Assault, units with the Infantry Unit type in a detachment following this Mekaniak Kult may not make use of the Mob Rule special rule."
           }
         ]
       },
@@ -9564,7 +9852,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "5220-1b6b-9a07-c2a6",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -9578,7 +9866,7 @@
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "672f-b890-95f3-bafd",
                 "targetId": "33d0-319a-741e-573f",
@@ -10313,7 +10601,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "1ed2-f502-472b-6894",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -10327,7 +10615,7 @@
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "845d-ba96-a531-7c02",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -10355,14 +10643,6 @@
                     "name": "Warpath",
                     "hidden": false,
                     "id": "7c33-8dd8-cb02-b023",
-                    "rules": [
-                      {
-                        "name": "Warpath",
-                        "id": "756b-249e-945f-d1c6",
-                        "hidden": false,
-                        "description": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may activate this Psychic Power. The Psyker and any model in a unit he has joined that has the ‘Ere We Go special rule increases their Attacks by +1 for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then both Weapon Skill and Attacks are increased by +1 for the duration of the current player turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp."
-                      }
-                    ],
                     "constraints": [
                       {
                         "type": "min",
@@ -10379,6 +10659,22 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "6556-cd6d-734c-49ce-max"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Warpath",
+                        "typeId": "8d18-819f-6442-e206",
+                        "typeName": "Wargear",
+                        "hidden": false,
+                        "id": "f744-7af8-0a79-2e0c",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "typeId": "73f7-995c-ccc1-9f39",
+                            "$text": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may activate this Psychic Power. The Psyker and any model in a unit he has joined that has the ‘Ere We Go special rule increases their Attacks by +1 for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then both Weapon Skill and Attacks are increased by +1 for the duration of the current player turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp."
+                          }
+                        ]
                       }
                     ]
                   },
@@ -10533,7 +10829,7 @@
             "modifiers": [
               {
                 "type": "add",
-                "value": "1909-26f7-31d2-0932",
+                "value": "e349-c42f-3c5d-1e72",
                 "field": "category",
                 "conditions": [
                   {
@@ -11663,14 +11959,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "058c-09d0-e180-5312",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "35a9-3c3c-0e11-3e26",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -11696,7 +11992,7 @@
             "modifiers": [
               {
                 "type": "add",
-                "value": "1909-26f7-31d2-0932",
+                "value": "e349-c42f-3c5d-1e72",
                 "field": "category",
                 "conditions": [
                   {
@@ -13003,7 +13299,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "3632-fb69-0af3-4159",
                 "targetId": "8cce-2496-3746-4f06",
@@ -13257,14 +13553,14 @@
             "id": "82b4-b18a-0bc4-33ed",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "07f8-ae4a-5321-ffdd",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "70b0-38ab-1293-5cd3",
                 "targetId": "33d0-319a-741e-573f",
@@ -15362,21 +15658,21 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "b9ab-5fb8-9127-17fe",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "0236-8d9b-8e5d-02ad",
                 "targetId": "fcca-7b6b-7920-a6f5",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "9db5-f377-8652-cd6f",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -15890,14 +16186,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "fbee-5a50-a050-62cd",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "231e-6c0e-9c93-5974",
                 "targetId": "33d0-319a-741e-573f",
@@ -16459,14 +16755,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "4869-47f7-d72a-a34b",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "6e3b-3039-78b3-c3be",
                 "targetId": "33d0-319a-741e-573f",
@@ -16617,14 +16913,14 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "2af3-f2e3-343e-64c1",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "8146-395a-2ae3-2691",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -17508,7 +17804,7 @@
               },
               {
                 "type": "add",
-                "value": "1909-26f7-31d2-0932",
+                "value": "e349-c42f-3c5d-1e72",
                 "field": "category",
                 "conditions": [
                   {
@@ -17940,7 +18236,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Dreadnought",
+                "name": "Dreadnought Unit Type",
                 "hidden": false,
                 "id": "3d5b-3242-3b75-9aa7",
                 "targetId": "eb17-a98e-537b-5de6",
@@ -18703,6 +18999,14 @@
                         ]
                       }
                     ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Kommanda",
+                    "id": "d8fe-73dc-c0fb-8999",
+                    "hidden": false,
+                    "description": "Whilst a model with a Kommanda is part of the Grot Tank Battle Mob, it may re-roll the distance it moves (see the Full Speed Ahead special rule), but must accept the second result, even if it is worse. This re-roll can be used to negate any  damage caused by rolling a double 1 for the squadron’s movement, as long as the second roll is not also a double 1."
                   }
                 ]
               }
@@ -19916,14 +20220,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "a1c3-908e-e709-98d6",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "d02b-42d4-6900-00b6",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -19940,7 +20244,7 @@
             "modifiers": [
               {
                 "type": "add",
-                "value": "1909-26f7-31d2-0932",
+                "value": "e349-c42f-3c5d-1e72",
                 "field": "category",
                 "conditions": [
                   {
@@ -20209,7 +20513,7 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "0bf5-301e-24f7-1df6",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -20223,7 +20527,7 @@
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "52f0-9d82-3a67-e8a6",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -20286,7 +20590,7 @@
             "modifiers": [
               {
                 "type": "add",
-                "value": "1909-26f7-31d2-0932",
+                "value": "e349-c42f-3c5d-1e72",
                 "field": "category",
                 "conditions": [
                   {
@@ -20372,14 +20676,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "4b42-4eae-5538-95e1",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "4afa-0cdb-ee8a-22c2",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -20581,7 +20885,7 @@
             "modifiers": [
               {
                 "type": "add",
-                "value": "1909-26f7-31d2-0932",
+                "value": "e349-c42f-3c5d-1e72",
                 "field": "category",
                 "conditions": [
                   {
@@ -20718,7 +21022,7 @@
             "id": "c75a-b9cf-97b3-6cbb",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "1b90-65ad-c437-d392",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -21527,7 +21831,7 @@
             "id": "612f-49d3-f166-9f3b",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "69c8-f102-a7cd-99be",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -22742,7 +23046,7 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "dfcc-6586-a717-220e",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -22875,7 +23179,7 @@
             "id": "ea11-6300-21b6-6576",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "f3e2-2a4b-3f07-1c4a",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -23622,7 +23926,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "f691-faa0-6c12-0a3b",
                 "targetId": "8cce-2496-3746-4f06",
@@ -24484,24 +24788,24 @@
             "id": "4d2a-1fdb-09a8-dc1b",
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "4672-6a85-ff95-9659",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
               },
               {
-                "name": "Antigrav",
+                "name": "Antigrav Sub-type",
                 "hidden": false,
                 "id": "8131-4d3b-25a0-2b9d",
                 "targetId": "84f9-5c1d-9030-0686",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
-                "id": "9543-fdf2-d87e-614b",
-                "targetId": "1909-26f7-31d2-0932",
+                "id": "099e-6b4d-93d0-3f72",
+                "targetId": "e349-c42f-3c5d-1e72",
                 "primary": false
               }
             ],
@@ -27706,14 +28010,14 @@
                 ],
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "0cdf-2e2c-6551-953c",
                     "targetId": "c447-1b05-5ba8-846a",
                     "primary": false
                   },
                   {
-                    "name": "Artillery",
+                    "name": "Artillery Sub-type",
                     "hidden": false,
                     "id": "e514-6278-69b4-baa2",
                     "targetId": "1e5c-9a6e-6e77-4453",
@@ -27952,7 +28256,7 @@
                 ],
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "cc5d-b32a-4c5a-c3fe",
                     "targetId": "c447-1b05-5ba8-846a",
@@ -28248,14 +28552,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "0bc0-7edf-5767-ddda",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "a9f3-b524-1919-4fc1",
                 "targetId": "33d0-319a-741e-573f",
@@ -32067,14 +32371,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Dreadnought",
+                "name": "Dreadnought Unit Type",
                 "hidden": false,
                 "id": "b9d8-8aa4-1596-52ec",
                 "targetId": "eb17-a98e-537b-5de6",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "71a6-ad02-8ba2-ca2b",
                 "targetId": "33d0-319a-741e-573f",
@@ -32227,7 +32531,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "6baa-5ae6-3ff2-34df",
                 "targetId": "8cce-2496-3746-4f06",
@@ -32241,7 +32545,7 @@
                 "primary": false
               },
               {
-                "name": "Monstrous",
+                "name": "Monstrous Sub-type",
                 "hidden": false,
                 "id": "73d7-25f8-61a9-2586",
                 "targetId": "8aa6-e45f-c63c-e02b",
@@ -32698,12 +33002,20 @@
         "name": "Stikka",
         "hidden": false,
         "id": "48cb-fcf5-5b13-c745",
-        "rules": [
+        "profiles": [
           {
             "name": "Stikka",
-            "id": "85d7-aca5-3f59-5b1b",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "At the beginning of the enemy Movement phase, nominate a single enemy Flyer or Skimmer that is within 12\" of a Vehicle with a stikka. On the roll of a 6, that Flyer or Skimmer may not move this turn."
+            "id": "86b8-524a-8daf-8ab6",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "At the beginning of the enemy Movement phase, nominate a single enemy Flyer or Skimmer that is within 12\" of a Vehicle with a stikka. On the roll of a 6, that Flyer or Skimmer may not move this turn."
+              }
+            ]
           }
         ]
       },
@@ -35002,7 +35314,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "4922-c045-74b3-76ff",
                 "targetId": "8cce-2496-3746-4f06",
@@ -36840,14 +37152,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Dreadnought",
+                "name": "Dreadnought Unit Type",
                 "hidden": false,
                 "id": "12ad-6097-a8e6-392f",
                 "targetId": "eb17-a98e-537b-5de6",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "455c-c292-c007-141c",
                 "targetId": "33d0-319a-741e-573f",
@@ -37061,7 +37373,7 @@
     ],
     "categoryEntries": [
       {
-        "name": "Expendable",
+        "name": "Expendable Sub-type",
         "id": "6713-c61a-2380-7ca9",
         "hidden": false,
         "rules": [
@@ -37074,7 +37386,7 @@
         ]
       },
       {
-        "name": "Gargantuan",
+        "name": "Gargantuan Sub-type",
         "id": "1ee5-b20c-be22-dd79",
         "hidden": false,
         "rules": [
@@ -37103,7 +37415,7 @@
         ]
       },
       {
-        "name": "Mechanised",
+        "name": "Mechanised Sub-type",
         "id": "d109-f07d-276d-f321",
         "hidden": false,
         "rules": [
@@ -37111,12 +37423,12 @@
             "name": "Mechanised Sub-type",
             "id": "c2e1-74ad-bede-aa0a",
             "hidden": false,
-            "description": "The following rules apply to all models with the Mechanised Sub-type:\n\n- Successful Wounds caused by attacks with the Poisoned (X) or Fleshbane special rules must be re-rolled against models with the Mechanised Unit Sub-type.\n\n- Failed rolls To Wound made for weapons with the Armourbane (X) special rule, and against a unit that includes any models with this Unit Sub-type, must be re-rolled.\n\n- A model with the Mechanised Unit Sub-type may attack with all weapons it has when making a Shooting Attack, including as part of a Reaction.\n\n- A model with the Mechanised Unit Sub-type may attack with Heavy and Ordnance weapons while counting as stationary even if it has moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.\n\n- A model with the Mechanised Unit Sub-type is affected by the Haywire, Detonation and Battlesmith (X) special rules as if it had the Dreadnought Unit Type.\n\n- No model that does not also have the Mechanised Unit Sub-type may join a unit that includes one or more models with the Mechanised Unit Sub-type."
+            "description": "The following rules apply to all models with the Mechanised Unit Sub-type:\n- Successful Wounds caused by attacks with the Poisoned (X) or Fleshbane special rules must be re-rolled against models with the Mechanised Unit Sub-type.\n- Failed To Wound rolls, made for weapons with the Armourbane (X) special rule, and against a unit that includes any models with this Unit Sub-type must be re-rolled.\n- A model with the Mechanised Unit Sub-type may attack with all weapons it has when making a Shooting Attack, including as part of a Reaction.\n- A model with the Mechanised Unit Sub-type may attack with Heavy and Ordnance weapons while counting as stationary even if it has moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.\n- A model with the Mechanised Unit Sub-type is affected by the Haywire, Detonation and Battlesmith (X) special rules as if it had the Dreadnought Unit Type.\n- No model that does not also have the Mechanised Unit Sub-type may join a unit that includes one or more models with the Mechanised Unit Sub-type."
           }
         ]
       },
       {
-        "name": "Monstrous Transport",
+        "name": "Monstrous Transport Sub-type",
         "id": "c03f-3804-ec07-fc84",
         "hidden": false,
         "rules": [
@@ -37129,7 +37441,7 @@
         ]
       },
       {
-        "name": "Open-topped",
+        "name": "Open-topped Sub-type",
         "id": "896d-742a-d60c-6429",
         "hidden": false,
         "rules": [
@@ -37181,21 +37493,7 @@
         ]
       },
       {
-        "name": "Skirmish",
-        "id": "1909-26f7-31d2-0932",
-        "hidden": false,
-        "comment": "Orks",
-        "rules": [
-          {
-            "name": "Skirmish Sub-type",
-            "id": "0a1c-28c2-98ee-51c9",
-            "hidden": false,
-            "description": "The following rules apply to all models with the Skirmish Sub-type:\n\n- A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3\" rather than 2\".\n\n- A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by terrain by one (i.e., from 6+ to 5+). This only increases existing Cover Saves and does not grant one when in terrain that does not normally grant a Cover Save. This rule cannot increase a Cover Save to better than 2+."
-          }
-        ]
-      },
-      {
-        "name": "Warboss",
+        "name": "Warboss Sub-type",
         "id": "c65d-d77d-ff38-c6f1",
         "hidden": false,
         "rules": [
@@ -38005,7 +38303,7 @@
         "name": "Big Horns / Iron Gob",
         "id": "a6ed-0810-c854-b138",
         "hidden": false,
-        "description": "A model with big horns or an iron gob gains the Hammer of Wrath (1) special rule."
+        "description": ""
       },
       {
         "name": "Biggest and Best",

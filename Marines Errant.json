@@ -300,14 +300,6 @@
                 "name": "Actinic Halo",
                 "hidden": false,
                 "id": "6ccd-7b46-9a66-84aa",
-                "rules": [
-                  {
-                    "name": "Actinic Halo",
-                    "id": "a2a2-5d9c-5a28-8946",
-                    "hidden": false,
-                    "description": "The Actinic Halo provides a 3+ Invulnerable Save. If however if a 1 or 2 is rolled for one of these saves, roll a further dice. On a 4+ the Actinic Halo continues to work as usual, on a 1, 2 or 3 it stops working for the rest of the battle."
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -324,6 +316,22 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "1844-5692-11fa-a157-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Actinic Halo",
+                    "typeId": "8d18-819f-6442-e206",
+                    "typeName": "Wargear",
+                    "hidden": false,
+                    "id": "07d0-f64d-23cf-2531",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "73f7-995c-ccc1-9f39",
+                        "$text": "The Actinic Halo provides a 3+ Invulnerable Save. If however if a 1 or 2 is rolled for one of these saves, roll a further dice. On a 4+ the Actinic Halo continues to work as usual, on a 1, 2 or 3 it stops working for the rest of the battle."
+                      }
+                    ]
                   }
                 ]
               },
@@ -435,7 +443,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "4db5-a3b0-c6ae-d3a1",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -449,14 +457,14 @@
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "7a23-8bbf-e627-7cf5",
                 "targetId": "33d0-319a-741e-573f",
                 "primary": false
               },
               {
-                "name": "Unique",
+                "name": "Unique Sub-type",
                 "hidden": false,
                 "id": "8b57-1a71-af4c-c8b4",
                 "targetId": "75a3-46b2-47de-9789",

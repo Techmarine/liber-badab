@@ -162,7 +162,7 @@
             "id": "f62b-da72-88d4-a3c0",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "212d-567e-c0d5-8a60",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -176,7 +176,7 @@
                 "primary": false
               },
               {
-                "name": "Unique",
+                "name": "Unique Sub-type",
                 "hidden": false,
                 "id": "882d-da5b-e29e-2c0d",
                 "targetId": "75a3-46b2-47de-9789",
@@ -339,12 +339,20 @@
                     "id": "3d0f-37e9-d45a-a7f1"
                   }
                 ],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Grendalin's Bones",
-                    "id": "b90a-9caa-b1a4-ba16",
+                    "typeId": "8d18-819f-6442-e206",
+                    "typeName": "Wargear",
                     "hidden": false,
-                    "description": "Grehdalin’s Bones counts as Artificer armour and conveys the Eternal Warrior* Special Rule.\n\n\n*Already Added to Special Rules"
+                    "id": "b54d-fef0-f774-b239",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "73f7-995c-ccc1-9f39",
+                        "$text": "Grehdalin’s Bones counts as Artificer armour and conveys the Eternal Warrior* Special Rule.\n\n*Already Added to Special Rules"
+                      }
+                    ]
                   }
                 ]
               },
@@ -452,14 +460,6 @@
                 "name": "The Aenigmata Ferrum",
                 "hidden": false,
                 "id": "ca01-dba0-b115-f217",
-                "rules": [
-                  {
-                    "name": "The Aenigmata Ferrum",
-                    "id": "9181-2454-f2bf-7ebd",
-                    "hidden": false,
-                    "description": "Any friendly Space Marines model with the Chapter Tactics (Executioners) within 12\" of Thulsa Kane can re-roll 1s when rolling to wound on the turn in which they charge into an assault."
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -476,6 +476,22 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "fce5-e6f3-b462-4a42"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "The Aenigmata Ferrum",
+                    "typeId": "8d18-819f-6442-e206",
+                    "typeName": "Wargear",
+                    "hidden": false,
+                    "id": "97b1-efca-7dbe-dbe6",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "73f7-995c-ccc1-9f39",
+                        "$text": "Any friendly Space Marines model with the Chapter Tactics (Executioners) within 12\" of Thulsa Kane can re-roll 1s when rolling to wound on the turn in which they charge into an assault."
+                      }
+                    ]
                   }
                 ]
               }

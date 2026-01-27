@@ -54,9 +54,17 @@
         ]
       },
       {
-        "name": "Heavy",
+        "name": "Heavy Sub-type",
         "id": "33d0-319a-741e-573f",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Heavy Sub-type",
+            "id": "e06c-d268-1875-4167",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Heavy sub-type:\n- A unit that includes only models with the Heavy sub- type may re-roll failed Armour Saves against Template and Blast weapons.\n- A unit that includes any models with the Heavy sub-type may not Run and when making a Movement during a Reaction based on its Initiative Characteristic, reduces the distance moved by -1."
+          }
+        ]
       },
       {
         "name": "Character",
@@ -64,19 +72,43 @@
         "hidden": false
       },
       {
-        "name": "Infantry",
+        "name": "Infantry Unit Type",
         "id": "c447-1b05-5ba8-846a",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Infantry Unit Type",
+            "id": "e62e-e7da-d62e-d2ab",
+            "hidden": false,
+            "description": "An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise."
+          }
+        ]
       },
       {
-        "name": "Cavalry",
+        "name": "Cavalry Unit Type",
         "id": "8cce-2496-3746-4f06",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Cavalry Unit Type",
+            "id": "cc64-97da-02a9-d9d6",
+            "hidden": false,
+            "description": "The following rules apply to all Cavalry models and any Cavalry sub-types:\n- Cavalry models cannot be Pinned.\n- Cavalry models are not slowed down by Difficult Terrain, even when Charging. However, Cavalry models treat all Difficult Terrain as Dangerous Terrain instead.\n- Cavalry models move 3D6\" when Falling Back, rather than 2D6\".\n- No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model."
+          }
+        ]
       },
       {
-        "name": "Skirmish",
+        "name": "Skirmish Sub-type",
         "id": "e349-c42f-3c5d-1e72",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Skirmish Sub-type",
+            "id": "60fb-8266-dfdb-0566",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Skirmish Sub-type:\n- A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3\" rather than 2\".\n- A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by terrain by one (i.e., from 6+ to 5+). This only increases existing Cover Saves and does not grant one when in terrain that does not normally grant a Cover Save. This rule cannot increase a Cover Save to better than 2+."
+          }
+        ]
       },
       {
         "name": "Psyker",
@@ -84,9 +116,17 @@
         "hidden": false
       },
       {
-        "name": "Light",
+        "name": "Light Sub-type",
         "id": "fcca-7b6b-7920-a6f5",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Light Sub-type",
+            "id": "c7f3-5f20-4b17-b8e6",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Light sub-type:\n- A unit that includes only models with the Light sub-type gains a +1 modifier to its Initiative when determining how far that unit may Run (this bonus stacks with other bonuses to Run distance, such as the Fleet (X) special rule) and when moving as part of a Reaction.\n- A unit that includes only models with the Light sub-type may make Shooting Attacks after having Run, but makes all such attacks as Snap Shots. Models or weapons that cannot attack as Snap Shots may not attack.\n- Models with the Light sub-type may never claim a Cover Save in the same turn that it makes a Run move."
+          }
+        ]
       },
       {
         "name": "Vehicle",
@@ -94,14 +134,30 @@
         "hidden": false
       },
       {
-        "name": "Dreadnought",
+        "name": "Dreadnought Unit Type",
         "id": "eb17-a98e-537b-5de6",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Dreadnought Unit Type",
+            "id": "0c94-a870-7716-69b1",
+            "hidden": false,
+            "description": "The following rules apply to all Dreadnought models and any Dreadnought sub-types:\n- Successful Wounds scored by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Dreadnought Unit Type.\n- All Dreadnought models have the Fearless special rule.\n- A model with the Dreadnought Unit Type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.\n- A model of the Dreadnought type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.\n- No model that is not also of the Dreadnought Unit Type may join a unit that includes a Dreadnought model."
+          }
+        ]
       },
       {
         "name": "Line",
         "id": "efc6-682f-b0cb-cfa2",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Line Sub-type",
+            "id": "d5f0-6bd5-f658-4548",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Line sub-type:\n- A unit that includes at least one model with the Line sub-type counts as both a Scoring and Denial unit.\n"
+          }
+        ]
       },
       {
         "name": "Transport",
@@ -114,37 +170,81 @@
         "hidden": false
       },
       {
-        "name": "Antigrav",
+        "name": "Antigrav Sub-type",
         "id": "84f9-5c1d-9030-0686",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Antigrav Sub-type",
+            "id": "9792-f4f6-4f34-4865",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Antigrav sub-type:\n- A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.\n- Models with the Antigrav sub-type may never benefit from Cover Saves of any kind."
+          }
+        ]
       },
       {
-        "name": "Flyer",
+        "name": "Flyer Sub-type",
         "id": "63ab-f4ab-6759-c123",
         "hidden": false
       },
       {
         "name": "Hover",
         "id": "8224-00e8-42e4-3074",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Hover Sub-type",
+            "id": "cd10-fd66-1eb2-37bb",
+            "hidden": false,
+            "description": "A Flyer with the Hover sub-type must declare whether it is going to Zoom or Hover before it moves, and before any Embarked models Disembark, each Movement phase. This means that if the Flyer arrives from Reserves, you must declare which type of Movement it is using before placing it on the board. If a Flyer is in a Squadron, all Vehicles in the Squadron must choose the same type of Movement A Flyer in Hover mode cannot switch to Zoom mode if it is Immobilised.\nIf a Flyer is Hovering, it is treated exactly as a Skimmer (see page 214).",
+            "publicationId": "e77a-823a-da94-16b9",
+            "page": ""
+          }
+        ]
       },
       {
-        "name": "Artillery",
+        "name": "Artillery Sub-type",
         "id": "1e5c-9a6e-6e77-4453",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Artillery Sub-type",
+            "id": "9a34-e61f-8242-d858",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Artillery sub-type:\n- If a unit that includes any models with the Artillery sub-type has no models without the Artillery sub-type, then all models in the unit are removed from play as casualties immediately.\n- A unit that includes one or more models with the Artillery sub-type may not Run, declare or otherwise make Charge moves, or make Reactions.\n- A unit that includes one or more models with the Artillery sub-type may never hold or deny Objectives.\n- A unit that includes one or more models with the Artillery sub-type may not make Sweeping Advances and, if targeted by a Sweeping Advance, automatically fails any Sweeping Advance rolls made without rolling any dice and is destroyed."
+          }
+        ]
       },
       {
-        "name": "Bombard",
+        "name": "Bombard Sub-type",
         "id": "7d4a-3281-a77d-8962",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Bombard Sub-type",
+            "id": "ac9d-8836-d19d-14d3",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Bombard Sub-type:\n- When a model with the Vehicle Unit Type and Bombard Sub-type moves at Combat Speed it may fire any number of Ordnance weapons and may also fire any non-Ordnance weapons normally, ignoring the restrictions of Combat Speed. However, when moving at Cruising Speed it may only fire a single Defensive weapon."
+          }
+        ]
       },
       {
-        "name": "Reinforced",
+        "name": "Reinforced Sub-type",
         "id": "bf01-5931-039f-752f",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Reinforced Sub-type",
+            "id": "dbac-669b-298c-868e",
+            "hidden": false,
+            "description": "• A model with the Reinforced Sub-type ignores the effects of any Crew Shaken result on the Vehicle Damage table\n• A model with the Reinforced Sub=type does not have to make Snap Shots due to the effects of the Crew Stunned result on the Vehicle Damage table (but still cannot move or pivot until the end of its next turn).",
+            "publicationId": "817a-6288-e016-7469",
+            "page": ""
+          }
+        ]
       },
       {
-        "name": "Lumbering",
+        "name": "Lumbering Sub-type",
         "id": "dbbf-4090-a327-a20d",
         "hidden": false
       },
@@ -154,32 +254,82 @@
         "hidden": false
       },
       {
-        "name": "Fast",
+        "name": "Fast Sub-type",
         "id": "633a-22e8-c34d-c49d",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Fast Vehicles",
+            "id": "2cbf-c1a1-844a-6456",
+            "hidden": true,
+            "description": "When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.\nIn addition, when a Fast Vehicle moves, it may choose to move at Flat-out:"
+          },
+          {
+            "name": "Flat Out",
+            "id": "4a20-b387-1253-5966",
+            "hidden": false,
+            "description": "Flat-out - A Vehicle choosing to move Flat-out may move up to twice its Movement Characteristic, but at the end of its move must roll a single D6. If the result of this roll is a ‘1’ then the Vehicle suffers a Glancing Hit and all the effects of the Crew Stunned result on the Vehicle Damage table. Vehicles moving at Flat-out speed may only fire Snap Shots.",
+            "publicationId": "e77a-823a-da94-16b9",
+            "page": ""
+          }
+        ]
       },
       {
-        "name": "Unique",
+        "name": "Unique Sub-type",
         "id": "75a3-46b2-47de-9789",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Unique Sub-type",
+            "id": "7ef4-1e89-776e-da87",
+            "hidden": false,
+            "description": "The following rules apply to all models with the Unique Sub-type:\n- An army may not include more than a single instance of a unit with this Sub-type. For example, if Unit A and Unit B both have the Unique Sub-type then a single army could include one of Unit A and one of Unit B, but no more than one of either unit.\n- A model or unit composed entirely of models with the Unique Sub-type may not select any options other than those included on its Army List Profile (this includes Legion specific Wargear for models with the Legiones Astartes (X) special rule)."
+          }
+        ]
       },
       {
-        "name": "Knight",
+        "name": "Knight Sub-type",
         "id": "1d45-efe9-9dc0-bc16",
-        "hidden": false
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Knights and Titans",
+            "id": "6591-ac00-c8a6-e591",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c978-351f-874c-f3f5"
+          }
+        ]
       },
       {
-        "name": "Monstrous",
+        "name": "Monstrous Sub-type",
         "id": "8aa6-e45f-c63c-e02b",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Monstrous Sub-type",
+            "id": "5db6-1fb4-e4d6-e1d8",
+            "hidden": false,
+            "description": "The following rules apply to models with the Monstrous sub-type:\n- A unit that includes any models with the Monstrous sub-type cannot be Pinned.\n- A model with the Monstrous sub-type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.\n- A model with the Monstrous sub-type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.\n- No model that is not also Monstrous may join a unit that includes a Monstrous model."
+          }
+        ]
       },
       {
-        "name": "Titan",
+        "name": "Titan Sub-type",
         "id": "b8c7-99f5-6fbf-f369",
-        "hidden": false
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Knights and Titans",
+            "id": "4bf7-7b20-ab38-0581",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c978-351f-874c-f3f5"
+          }
+        ]
       },
       {
-        "name": "Super-heavy",
+        "name": "Super-heavy Sub-type",
         "id": "c323-cb52-ee7a-f990",
         "hidden": false
       }
@@ -434,6 +584,17 @@
             "id": "73f7-995c-ccc1-9f39"
           }
         ]
+      },
+      {
+        "name": "Psychic Power",
+        "id": "5405-b3c6-e8d0-4e77",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "Description",
+            "id": "4c0f-7e2f-586c-9305"
+          }
+        ]
       }
     ],
     "costTypes": [
@@ -622,7 +783,7 @@
         "name": "Infiltrate",
         "id": "a11e-3993-c8ce-9072",
         "hidden": false,
-        "description": "You may choose to deploy units that contain at least one model with this special rule last, after all other units (friend and foe) have been deployed. If both players have such units and choose to do so, the players roll off and the winner decides who goes first,then alternate deploying these units.\n\n\nUnits that Infiltrate in this way can be set up anywhere on the battlefield that is more than 9\" from any enemy unit, as long as no deployed enemy unit can draw line of sight to them. This includes in a Building, as long as the Building is more than 9\" from any enemy unit. Alternatively, they can be set up anywhere on the battlefield more than 12\" from any enemy unit, even in plain sight.\n\n\nIf a unit with Infiltrate deploys inside a Dedicated Transport, the same rules apply when deploying their Transport.\n\n\nA unit that deploys using these rules cannot Charge in their first turn."
+        "description": "You may choose to deploy units that contain at least one model with this special rule last, after all other units (friend and foe) have been deployed. If both players have such units and choose to do so, the players roll off and the winner decides who goes first,then alternate deploying these units.\n\nUnits that Infiltrate in this way can be set up anywhere on the battlefield that is more than 9\" from any enemy unit, as long as no deployed enemy unit can draw line of sight to them. This includes in a Building, as long as the Building is more than 9\" from any enemy unit. Alternatively, they can be set up anywhere on the battlefield more than 12\" from any enemy unit, even in plain sight.\n\nIf a unit with Infiltrate deploys inside a Dedicated Transport, the same rules apply when deploying their Transport.\n\nA unit that deploys using these rules cannot Charge in their first turn."
       },
       {
         "name": "Move Through Cover",
@@ -946,6 +1107,14 @@
         "id": "7506-547d-2bde-1a09",
         "hidden": false,
         "description": "A weapon with this special rule may double the number of shots it makes, but if it does so the firing model suffers D3 Wounds or Hull Points of damage with no Saves or Damage Mitigation rolls of any kind allowed."
+      },
+      {
+        "name": "Knights and Titans",
+        "id": "c978-351f-874c-f3f5",
+        "hidden": false,
+        "description": "Very long. See 216. Summary from the Omega Coded:\nMeasuring:\n- If model has a base, measure to base. If model does not, measure to the hull, except for when firing its weapons.\nMovement:\n- Ignore Difficult and Dangerous Terrain but may not end its move in Impassable Terrain.\n- May move over enemy Infantry and Cavalry types but may not finish their movement within 1” of a model.\n- May not Run.\n- May not make Ram Attacks.\n- If rammed, enemy vehicle always takes hits at Str10 and inflicts D3 HP of damage. If Knight or Titan survives the Ram, may attack the vehicle in the Assault phase.\nShooting:\n- Always count as stationary, may fire Ordnance weapons with no effect on firing other weapons.\n- May fire all weapons at different targets (must declare all targets before firing).\n- Arm Mounted Weapon Arc: May fire in any Firing Arc, except the Hull (Rear). Count as Defensive weapons.\n- Carapace Mounted Weapon Arc: May fire in any arc but may not target models within 12” of firing model.\nAssault:\n- May declare Charges.\n- Cannot be locked in combat.\n- Any hits are resolved against its Front AV.\n- Gains +1 attack for each Melee weapon after the first\n- In addition to normal attacks may make;\nStomp Attacks:\n- Makes D3+unmodified Attack characteristic attacks, Resolved at initiative 1, AP2 with the model’s unmodified WS and STR.\n- May not make Stomp Attacks against Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.\n- May not Sweeping Advances, Pile-in Moves or Consolidations.\nDamage:\n- Any effects from Shaken, Stunned, Immobilised or Weapon Destroyed have no effect but lose HP as normal.\n- If suffer an explodes result, lose D3 HP instead.\n- Effects which permanently lower AV have no effect.\n- Catastrophic Damage: When loses final HP, it explodes. Every model within 6+D6 measured from the hull takes a str7+d3 AP4 hit. Any units hit must immediately take a Pinning test.\nReactions:\n- May only make Reactions in response to – Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.\n- May not perform Death or Glory Reactions",
+        "publicationId": "e77a-823a-da94-16b9",
+        "page": ""
       }
     ],
     "sharedSelectionEntries": [
@@ -962,14 +1131,6 @@
             "name": "Biomantic Augmentation",
             "hidden": false,
             "id": "056d-8d8a-4d1c-b179",
-            "rules": [
-              {
-                "name": "Biomantic Augmentation",
-                "id": "78a2-b0b7-99e2-3bc6",
-                "hidden": false,
-                "description": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 6\", that unit increases its Strength by +1 for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then both Strength and Toughness are increased by +1 for the duration of the current player turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp."
-              }
-            ],
             "constraints": [
               {
                 "type": "min",
@@ -986,6 +1147,22 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "bd0b-e8a7-accc-5c3a-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Biomantic Augmentation",
+                "typeId": "5405-b3c6-e8d0-4e77",
+                "typeName": "Psychic Power",
+                "hidden": false,
+                "id": "4fb5-f2f7-f325-c1d0",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "4c0f-7e2f-586c-9305",
+                    "$text": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 6\", that unit increases its Strength by +1 for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then both Strength and Toughness are increased by +1 for the duration of the current player turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp."
+                  }
+                ]
               }
             ]
           },
@@ -1116,14 +1293,6 @@
             "name": "Divinatory Aegis",
             "hidden": false,
             "id": "d436-2f13-5227-e3fd",
-            "rules": [
-              {
-                "name": "Divinatory Aegis",
-                "id": "f2bf-0e31-fb50-43f2",
-                "hidden": false,
-                "description": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 12\". The target unit gains the Precision Strikes (6+) and Precision Shots (6+) special rules for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the target unit instead gains the Precision Strikes (5+) and Precision Shots (5+) special rules for the duration of the current player turn. If the Check is failed then no additional benefit is gained and the Psyker suffers Perils of the Warp."
-              }
-            ],
             "constraints": [
               {
                 "type": "min",
@@ -1140,6 +1309,22 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "ff5d-a08e-f716-532c-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Divinatory Aegis",
+                "typeId": "5405-b3c6-e8d0-4e77",
+                "typeName": "Psychic Power",
+                "hidden": false,
+                "id": "f542-f946-faf6-8347",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "4c0f-7e2f-586c-9305",
+                    "$text": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 12\". The target unit gains the Precision Strikes (6+) and Precision Shots (6+) special rules for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the target unit instead gains the Precision Strikes (5+) and Precision Shots (5+) special rules for the duration of the current player turn. If the Check is failed then no additional benefit is gained and the Psyker suffers Perils of the Warp."
+                  }
+                ]
               }
             ]
           },
@@ -1426,14 +1611,6 @@
             "name": "Telekine Dome",
             "hidden": false,
             "id": "b4d9-af3f-d421-cbb7",
-            "rules": [
-              {
-                "name": "Telekine Dome",
-                "id": "2dda-0c67-f70b-b57b",
-                "hidden": false,
-                "description": "Instead of moving during the Movement phase, a Psyker with this Psychic Power may instead activate this Psychic Power. All models, friendly and enemy, that are within 8\" of the Psyker gain a 6+ Invulnerable Save when targeted by any model that is not also within 8\" of the Psyker. If the Psyker moves, makes a Shooting Attack, Charges or is successfully Charged by an enemy unit, then the Psychic Power ends, otherwise it remains in effect indefinitely. When initially using the Psychic Power, or at the start of any of the controlling player’s subsequent Movement phase while it is in effect, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then models affected by this Psychic Power gain a 4+ Invulnerable Save instead of a 6+ Invulnerable Save. If the Check is failed then the Psyker suffers Perils of the Warp and the Psychic Power immediately ends."
-              }
-            ],
             "constraints": [
               {
                 "type": "min",
@@ -1450,6 +1627,22 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "1816-4bc5-18a1-5e4e-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Telekine Dome",
+                "typeId": "5405-b3c6-e8d0-4e77",
+                "typeName": "Psychic Power",
+                "hidden": false,
+                "id": "5ef6-fd06-61ad-af13",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "4c0f-7e2f-586c-9305",
+                    "$text": "Instead of moving during the Movement phase, a Psyker with this Psychic Power may instead activate this Psychic Power. All models, friendly and enemy, that are within 8\" of the Psyker gain a 6+ Invulnerable Save when targeted by any model that is not also within 8\" of the Psyker. If the Psyker moves, makes a Shooting Attack, Charges or is successfully Charged by an enemy unit, then the Psychic Power ends, otherwise it remains in effect indefinitely. When initially using the Psychic Power, or at the start of any of the controlling player’s subsequent Movement phase while it is in effect, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then models affected by this Psychic Power gain a 4+ Invulnerable Save instead of a 6+ Invulnerable Save. If the Check is failed then the Psyker suffers Perils of the Warp and the Psychic Power immediately ends."
+                  }
+                ]
               }
             ]
           },
@@ -1605,12 +1798,20 @@
                 "id": "53b7-4470-64d8-498c-max"
               }
             ],
-            "rules": [
+            "profiles": [
               {
                 "name": "Telepathic Fugue",
-                "id": "ec95-a4f9-a4d5-a219",
+                "typeId": "5405-b3c6-e8d0-4e77",
+                "typeName": "Psychic Power",
                 "hidden": false,
-                "description": "Once per turn, at the start of any Phase, the Psyker with this Psychic Power’s controlling player may select a single enemy unit within 24\" and line of sight of the Psyker and take a Psychic check. If that Check is passed then the target unit may not make any Reactions for the duration of that Phase. If the Check is failed then the Psyker suffers Perils of the Warp."
+                "id": "f976-dd9e-5974-45c1",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "4c0f-7e2f-586c-9305",
+                    "$text": "Once per turn, at the start of any Phase, the Psyker with this Psychic Power’s controlling player may select a single enemy unit within 24\" and line of sight of the Psyker and take a Psychic check. If that Check is passed then the target unit may not make any Reactions for the duration of that Phase. If the Check is failed then the Psyker suffers Perils of the Warp."
+                  }
+                ]
               }
             ]
           },
@@ -1753,12 +1954,20 @@
                 "id": "ea61-a78d-aa0c-3bc8-max"
               }
             ],
-            "rules": [
+            "profiles": [
               {
-                "name": "Thaumaturgic Succour",
-                "id": "b4db-40f8-ff39-91c5",
+                "name": "Thaumaturgic Succour ",
+                "typeId": "5405-b3c6-e8d0-4e77",
+                "typeName": "Psychic Power",
                 "hidden": false,
-                "description": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit with at least one model within 12\" and make a Psychic check. If the Psychic check is passed then all non-Vehicle models in the target unit may roll a D6. On a roll of a 5+, that model regains a single lost Wound. This ability cannot be used to increase a model’s Wounds beyond its starting Wounds Characteristic."
+                "id": "e8de-a367-4d4a-9a4b",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "typeId": "4c0f-7e2f-586c-9305",
+                    "$text": "Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit with at least one model within 12\" and make a Psychic check. If the Psychic check is passed then all non-Vehicle models in the target unit may roll a D6. On a roll of a 5+, that model regains a single lost Wound. This ability cannot be used to increase a model’s Wounds beyond its starting Wounds Characteristic."
+                  }
+                ]
               }
             ]
           },

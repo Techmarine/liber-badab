@@ -518,12 +518,20 @@
         "name": "Artificer Armour",
         "hidden": false,
         "id": "2004-7466-45c8-bca8",
-        "rules": [
+        "profiles": [
           {
             "name": "Artificer Armour",
-            "id": "bef7-2e1a-c83d-89b3",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with an artificer armour gains a 2+ Save."
+            "id": "fdfe-32fb-e4c0-8f90",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with an artificer armour gains a 2+ Save."
+              }
+            ]
           }
         ]
       },
@@ -533,12 +541,20 @@
         "name": "Iron Halo",
         "hidden": false,
         "id": "daaa-0a9c-f1e0-986f",
-        "rules": [
+        "profiles": [
           {
             "name": "Iron Halo",
-            "id": "6993-74ef-b300-6a74",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with an iron halo gains a 4+ Invulnerable Save."
+            "id": "0beb-ab06-fb8e-f98a",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with an iron halo gains a 4+ Invulnerable Save."
+              }
+            ]
           }
         ]
       },
@@ -1576,12 +1592,20 @@
         "name": "Storm Shield",
         "hidden": false,
         "id": "9469-ad6d-9622-4108",
-        "rules": [
+        "profiles": [
           {
             "name": "Storm Shield",
-            "id": "b644-1d12-f84d-75f6",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with a storm shield gains a 3+ Invulnerable Save, Invulnerable Saves granted by a storm shield do not stack with other Invulnerable Saves, and cannot be modified by any other special rule. If a model has another Invulnerable Save then the controlling player must choose one to use. A model with a storm shield may never gain an additional Attack for being armed with two close combat weapons or make attacks using a weapon with the Twohanded special rule."
+            "id": "666c-bcfe-ba1b-46e3",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a storm shield gains a 3+ Invulnerable Save, Invulnerable Saves granted by a storm shield do not stack with other Invulnerable Saves, and cannot be modified by any other special rule. If a model has another Invulnerable Save then the controlling player must choose one to use. A model with a storm shield may never gain an additional Attack for being armed with two close combat weapons or make attacks using a weapon with the Twohanded special rule."
+              }
+            ]
           }
         ]
       },
@@ -1599,12 +1623,20 @@
             "scope": "model"
           }
         ],
-        "rules": [
+        "profiles": [
           {
             "name": "Boarding Shield",
-            "id": "eaaa-e5ab-f092-d0dd",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with a boarding shield gains a 6+ Invulnerable Save. But a model with a boarding shield cannot claim bonus attacks for having more than one melee weapon, or make attacks during the Assault phase using a weapon with the Two-handed special rule."
+            "id": "45a8-c567-0f5b-7600",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a boarding shield gains a 6+ Invulnerable Save. But a model with a boarding shield cannot claim bonus attacks for having more than one melee weapon, or make attacks during the Assault phase using a weapon with the Two-handed special rule."
+              }
+            ]
           }
         ]
       },
@@ -1614,12 +1646,20 @@
         "name": "Combat Shield",
         "hidden": false,
         "id": "1c97-80ae-70cd-c700",
-        "rules": [
+        "profiles": [
           {
             "name": "Combat Shield",
-            "id": "8bb2-7074-6ef7-5a73",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with a combat shield gains a 6+ Invulnerable Save."
+            "id": "792c-b7e4-314f-8ee4",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a combat shield gains a 6+ Invulnerable Save."
+              }
+            ]
           }
         ]
       },
@@ -2168,14 +2208,6 @@
             ]
           }
         ],
-        "rules": [
-          {
-            "name": "Astartes Combat Bike",
-            "id": "65ba-31e7-431f-1e6b",
-            "hidden": false,
-            "description": "An Astartes combat bike has one twin-linked bolter. In addition, a model with a Astartes combat bike that chooses to Run gains the Shrouded (X+) special rule until the start of the controlling player's next turn. A model with the Infantry Unit Type tha selects an Astartes combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. ln addition the model must change its Movement Characteristic to 14, Toughness 5 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules."
-          }
-        ],
         "constraints": [
           {
             "type": "min",
@@ -2256,6 +2288,22 @@
                     ]
                   }
                 ]
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Astartes Combat Bike",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "a01c-79b2-27f9-2416",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "An Astartes combat bike has one twin-linked bolter. In addition, a model with a Astartes combat bike that chooses to Run gains the Shrouded (X+) special rule until the start of the controlling player's next turn. A model with the Infantry Unit Type tha selects an Astartes combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. ln addition the model must change its Movement Characteristic to 14, Toughness 5 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules."
               }
             ]
           }
@@ -3092,14 +3140,14 @@
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "1709-72c6-9aa8-fbd9",
                 "targetId": "33d0-319a-741e-573f",
                 "primary": false
               },
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "6873-b516-90bb-017e",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -5445,7 +5493,7 @@
                 "primary": false
               },
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "cf17-54d0-3dc8-af5f",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -5664,12 +5712,20 @@
         "name": "Psychic Hood",
         "hidden": false,
         "id": "6e2c-170d-034f-f682",
-        "rules": [
+        "profiles": [
           {
             "name": "Psychic Hood",
-            "id": "06cd-0197-af60-7f26",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Any enemy model within 18\" and line of sight of a model with a psychic hood must reduce its Leadership by -2 when making Psychic checks. This modifier is not cumulative and no model may suffer from penalties from more than one psychic hood."
+            "id": "2b89-71a2-3d79-8bd0",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Any enemy model within 18\" and line of sight of a model with a psychic hood must reduce its Leadership by -2 when making Psychic checks. This modifier is not cumulative and no model may suffer from penalties from more than one psychic hood."
+              }
+            ]
           }
         ]
       },
@@ -5913,12 +5969,20 @@
         "name": "Cognis-signum",
         "hidden": false,
         "id": "c08f-c9d8-c634-af8f",
-        "rules": [
+        "profiles": [
           {
             "name": "Cognis-signum",
-            "id": "d77e-32a8-8631-66bb",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with a cognis-signum gains the Night Vision special rule. In addition, in lieu of the model with the cognis-signum making a Shooting Attack in the Shooting phase, all other models in the same unit gain a bonus of +1 to their BS for that Shooting phase. This benefit is not cumulative, and no unit can benefit from more than one bonus to their BS from cognis-signum."
+            "id": "ae70-6494-a864-7088",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a cognis-signum gains the Night Vision special rule. In addition, in lieu of the model with the cognis-signum making a Shooting Attack in the Shooting phase, all other models in the same unit gain a bonus of +1 to their BS for that Shooting phase. This benefit is not cumulative, and no unit can benefit from more than one bonus to their BS from cognis-signum."
+              }
+            ]
           }
         ]
       },
@@ -5943,12 +6007,20 @@
         "name": "Nuncio-vox",
         "hidden": false,
         "id": "f007-799e-11a5-c25b",
-        "rules": [
+        "profiles": [
           {
             "name": "Nuncio-vox",
-            "id": "4561-7ba1-b71c-3670",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "While at least one model with a nuncio-vox is present on the battlefield and not Embarked in a Vehicle or Building, the controlling player may re-roll any Scatter rolls made (whether as part of a weapon attack or the deployment of a model or unit), as long as the model with the nuncio-vox has line of sight to the unit targeted by the attack or the point chosen as the target of the deployment. In addition, a unit that includes at least one model with a nuncio-vox ignores the -1 penalty to Leadership imposed by the Night Fighting rules."
+            "id": "4139-f658-40ef-92ea",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "While at least one model with a nuncio-vox is present on the battlefield and not Embarked in a Vehicle or Building, the controlling player may re-roll any Scatter rolls made (whether as part of a weapon attack or the deployment of a model or unit), as long as the model with the nuncio-vox has line of sight to the unit targeted by the attack or the point chosen as the target of the deployment. In addition, a unit that includes at least one model with a nuncio-vox ignores the -1 penalty to Leadership imposed by the Night Fighting rules."
+              }
+            ]
           }
         ]
       },
@@ -6100,14 +6172,6 @@
         "name": "Narthecium",
         "hidden": false,
         "id": "98ff-b553-78ba-51d3",
-        "rules": [
-          {
-            "name": "Narthecium",
-            "id": "265f-e796-03d4-4456",
-            "hidden": false,
-            "description": "All models with the Infantry or Cavalry Unit Types in a unit that includes at least one model with a narthecium gain the Feel No Pain (5+) special rule. Units that include more than one narthecium do not stack the Feel No Pain (X) special rule and gain no additional benefit. Models with the Artillery Sub-type are not affected by this special rule and do not gain the Feel No Pain (X) special rule."
-          }
-        ],
         "entryLinks": [
           {
             "import": true,
@@ -6116,6 +6180,22 @@
             "id": "4fd1-9272-7a9a-d317",
             "type": "selectionEntry",
             "targetId": "e336-78d8-10c4-868f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Narthecium",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "8714-8daf-797d-2983",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "All models with the Infantry or Cavalry Unit Types in a unit that includes at least one model with a narthecium gain the Feel No Pain (5+) special rule. Units that include more than one narthecium do not stack the Feel No Pain (X) special rule and gain no additional benefit. Models with the Artillery Sub-type are not affected by this special rule and do not gain the Feel No Pain (X) special rule."
+              }
+            ]
           }
         ]
       },
@@ -6201,12 +6281,20 @@
         "name": "Cyber-familiar",
         "hidden": false,
         "id": "46ab-1e3c-23e1-70dd",
-        "rules": [
+        "profiles": [
           {
             "name": "Cyber-familiar",
-            "id": "86f6-9b3b-b48a-8fb7",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with a cyber-familiar adds +1 to its Invulnerable Save (to a maximum of 3+) or an Invulnerable Save of 6+ if they do not already possess one. In addition, they allow them to re-roll failed Characteristic tests other than Leadership tests, Psychic checks or failed Dangerous Terrain tests."
+            "id": "6e7b-04dc-41d1-fce6",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a cyber-familiar adds +1 to its Invulnerable Save (to a maximum of 3+) or an Invulnerable Save of 6+ if they do not already possess one. In addition, they allow them to re-roll failed Characteristic tests other than Leadership tests, Psychic checks or failed Dangerous Terrain tests."
+              }
+            ]
           }
         ]
       },
@@ -6216,12 +6304,13 @@
         "name": "Scout Armour",
         "hidden": false,
         "id": "403c-9462-4f21-29b6",
-        "rules": [
+        "infoLinks": [
           {
             "name": "Scout Armour",
-            "id": "2796-7c77-6783-f398",
+            "id": "4cf8-e0db-2ae3-0998",
             "hidden": false,
-            "description": "A model with a scout armour gains a 4+ Save."
+            "type": "profile",
+            "targetId": "9436-bf24-9306-b516"
           }
         ]
       },
@@ -7365,12 +7454,20 @@
         "name": "Chapter Standard",
         "hidden": false,
         "id": "54cb-982f-4812-bfb6",
-        "rules": [
+        "profiles": [
           {
             "name": "Chapter Standard",
-            "id": "9000-5543-1543-7e46",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "All of the controlling player's units with the Chapter Tactics (X) special rule within 6\" of a friendly model with a Chapter standard are considered to have a Leadership Characteristic of 10 when resolving Morale checks or Pinning tests (but not Psychic checks).\n\n\nIn addition, all models in a unit that includes a Chapter standard gain the Line Sub-type as long as they remain part of that unit. Also the unit containing a Chapter Standard gains +1 to combat resolution. If any reason a combat is drawn, the unit with the Chapter Standard instead wins the combat by 1. If both units have a Chapter Standard, there is no bonus. These benefits are lost immediately if the model with the Chapter Standard is removed as a casualty, in addition the enemy gains D3 Victory Points"
+            "id": "b4f0-4482-f54a-dd77",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "All of the controlling player's units with the Chapter Tactics (X) special rule within 6\" of a friendly model with a Chapter standard are considered to have a Leadership Characteristic of 10 when resolving Morale checks or Pinning tests (but not Psychic checks).\n\nIn addition, all models in a unit that includes a Chapter standard gain the Line Sub-type as long as they remain part of that unit. Also the unit containing a Chapter Standard gains +1 to combat resolution. If any reason a combat is drawn, the unit with the Chapter Standard instead wins the combat by 1. If both units have a Chapter Standard, there is no bonus. These benefits are lost immediately if the model with the Chapter Standard is removed as a casualty, in addition the enemy gains D3 Victory Points"
+              }
+            ]
           }
         ]
       },
@@ -7683,7 +7780,7 @@
             "id": "6753-ea3a-7432-f01f",
             "categoryLinks": [
               {
-                "name": "Dreadnought",
+                "name": "Dreadnought Unit Type",
                 "hidden": false,
                 "id": "91ad-4b6a-3d9f-2de4",
                 "targetId": "eb17-a98e-537b-5de6",
@@ -9072,7 +9169,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "1afb-72bd-8f0b-cf96",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -9817,7 +9914,7 @@
                 "targetId": "7ab4-a7ac-4613-52ab",
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "98af-6be3-069a-67df",
                     "targetId": "c447-1b05-5ba8-846a",
@@ -11036,7 +11133,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "b83d-c407-847a-6f70",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -11541,14 +11638,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "53f4-73e2-2641-cf01",
                 "targetId": "33d0-319a-741e-573f",
                 "primary": false
               },
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "ca92-1692-407a-6689",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -11841,14 +11938,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "1bac-dacb-3402-eb2b",
                 "targetId": "33d0-319a-741e-573f",
                 "primary": false
               },
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "7b42-e2b5-50e3-6b97",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -12683,12 +12780,20 @@
         "name": "Company Standard",
         "hidden": false,
         "id": "7ab4-a7ac-4613-52ab",
-        "rules": [
+        "profiles": [
           {
             "name": "Company Standard",
-            "id": "b462-4c05-34d9-778e",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "All models in a unit that includes a Company standard gain the Line Sub-type as long as they remain part of that unit. In addition to this they gain +1 to combat resolution. If any reason a combat is drawn, the unit with the Company Standard instead wins the combat by 1. If both units have a Company Standard, there is no bonuses. These benefits are lost immediately if the model with the Company Standard is removed as a casualty, in addition the enemy gains 1 Victory Point."
+            "id": "6516-9855-1868-4569",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "All models in a unit that includes a Company standard gain the Line Sub-type as long as they remain part of that unit. In addition to this they gain +1 to combat resolution. If any reason a combat is drawn, the unit with the Company Standard instead wins the combat by 1. If both units have a Company Standard, there is no bonuses. These benefits are lost immediately if the model with the Company Standard is removed as a casualty, in addition the enemy gains 1 Victory Point."
+              }
+            ]
           }
         ]
       },
@@ -12845,7 +12950,7 @@
                 "primary": false
               },
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "e416-7930-2a6c-08e9",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -15701,7 +15806,7 @@
                 "primary": false
               },
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "cf97-6ae5-607a-cd9b",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -15912,7 +16017,7 @@
             "primary": false
           },
           {
-            "name": "Reinforced",
+            "name": "Reinforced Sub-type",
             "hidden": false,
             "id": "d71c-63a5-9808-2feb",
             "targetId": "bf01-5931-039f-752f",
@@ -16757,7 +16862,7 @@
             "primary": false
           },
           {
-            "name": "Reinforced",
+            "name": "Reinforced Sub-type",
             "hidden": false,
             "id": "c8f6-deb7-8c25-6b04",
             "targetId": "bf01-5931-039f-752f",
@@ -16841,7 +16946,7 @@
             "primary": false
           },
           {
-            "name": "Reinforced",
+            "name": "Reinforced Sub-type",
             "hidden": false,
             "id": "8fea-215a-635a-7426",
             "targetId": "bf01-5931-039f-752f",
@@ -18282,7 +18387,7 @@
             "primary": false
           },
           {
-            "name": "Reinforced",
+            "name": "Reinforced Sub-type",
             "hidden": false,
             "id": "da39-c4a4-5566-5c20",
             "targetId": "bf01-5931-039f-752f",
@@ -19245,12 +19350,20 @@
         "name": "Geo-locator Beacon",
         "hidden": false,
         "id": "01d7-e75e-5110-34d7",
-        "rules": [
+        "profiles": [
           {
             "name": "Geo-locator Beacon",
-            "id": "107e-0fb9-b45c-27f3",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "As long as a model with this special rule is deployed on the battlefield, the controlling player may choose to re-roll all failed Reserves roll they make."
+            "id": "0f76-ff99-88d8-b422",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "As long as a model with this special rule is deployed on the battlefield, the controlling player may choose to re-roll all failed Reserves roll they make."
+              }
+            ]
           }
         ]
       },
@@ -19260,12 +19373,20 @@
         "name": "Command Vox Relay",
         "hidden": false,
         "id": "931c-1bb7-7ba3-ed78",
-        "rules": [
+        "profiles": [
           {
             "name": "Command Vox Relay",
-            "id": "654f-43a2-acb1-0192",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Astartes special rule that are within 18\" or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used."
+            "id": "6026-234e-7eda-8b0d",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Astartes special rule that are within 18\" or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used."
+              }
+            ]
           }
         ]
       },
@@ -19516,7 +19637,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "9dc8-cc92-169d-8325",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -19530,7 +19651,7 @@
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "c288-e817-4860-d7c5",
                 "targetId": "33d0-319a-741e-573f",
@@ -20225,14 +20346,14 @@
             "sortIndex": 2,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "53c9-e423-3d03-dab1",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "859c-7b38-9a55-f0a4",
                 "targetId": "33d0-319a-741e-573f",
@@ -21244,12 +21365,20 @@
         "name": "Squad Banner",
         "hidden": false,
         "id": "b5de-e033-69dd-0a1f",
-        "rules": [
+        "profiles": [
           {
             "name": "Squad Banner",
-            "id": "9c74-ca10-a563-3423",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "If a unit contains a Squad banner, if for any reason a combat is drawn, the unit with the Squad Banner instead wins the combat by 1. If both units have a Squad Banner, there is no bonuses."
+            "id": "5796-afac-fb67-8425",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "If a unit contains a Squad banner, if for any reason a combat is drawn, the unit with the Squad Banner instead wins the combat by 1. If both units have a Squad Banner, there is no bonuses."
+              }
+            ]
           }
         ]
       },
@@ -21310,7 +21439,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "97c0-6574-d127-630c",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -22178,7 +22307,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "1134-faa3-b096-a836",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -23580,7 +23709,7 @@
             "id": "6d3d-11f5-0502-397f",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "6ee0-7403-9b09-a620",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -24643,7 +24772,7 @@
             "id": "7291-19ca-c4a4-047c",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "dc83-d632-5df8-72dc",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -26065,12 +26194,20 @@
         "name": "Tempest, Kraken and Vengeance Rounds",
         "hidden": false,
         "id": "1429-ca08-6f9f-4c2a",
-        "rules": [
+        "profiles": [
           {
             "name": "Tempest, Kraken and Vengeance Rounds",
-            "id": "9a04-f9a3-0eac-49d7",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Tempest, Kraken and Vengeance Rounds may be used in Bolters, Storm Bolters and the Bolter half of any combiweapon."
+            "id": "92b4-2abd-6fbd-cfed",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Tempest, Kraken and Vengeance Rounds may be used in Bolters, Storm Bolters and the Bolter half of any combiweapon."
+              }
+            ]
           }
         ]
       },
@@ -26284,12 +26421,20 @@
         "name": "Ferromantic Deflector",
         "hidden": false,
         "id": "36f9-e639-a641-cad6",
-        "rules": [
+        "profiles": [
           {
             "name": "Ferromantic Deflector",
-            "id": "dd3d-86ab-a172-5ec1",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with an ferromantic deflector gains a 5+ Invulnerable Save and any model with a ferromantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses three Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with a ferromantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6\" suffer an automatic Hit at Str 6, AP -."
+            "id": "d91e-96b4-0311-92b5",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with an ferromantic deflector gains a 5+ Invulnerable Save and any model with a ferromantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses three Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with a ferromantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6\" suffer an automatic Hit at Str 6, AP -."
+              }
+            ]
           }
         ]
       },
@@ -27246,12 +27391,20 @@
         "name": "Atomantic Deflector",
         "hidden": false,
         "id": "4862-8fcf-4dfb-feed",
-        "rules": [
+        "profiles": [
           {
             "name": "Atomantic Deflector",
-            "id": "cd1c-5443-fd15-f1b8",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with an atomantic deflector gains a 5+ Invulnerable Save and any model with an atomantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with an atomantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6\" suffer an automatic Hit at Str 8, AP -."
+            "id": "367e-66be-b2b5-5824",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with an atomantic deflector gains a 5+ Invulnerable Save and any model with an atomantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with an atomantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6\" suffer an automatic Hit at Str 8, AP -."
+              }
+            ]
           }
         ]
       },
@@ -27348,14 +27501,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "7fa1-c26c-5ac1-39e8",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "d87b-dff6-cd27-bc96",
                 "targetId": "33d0-319a-741e-573f",
@@ -27757,14 +27910,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "a873-86d1-6f7d-2e33",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "d00e-dd1a-cd68-dedc",
                 "targetId": "33d0-319a-741e-573f",
@@ -28201,12 +28354,20 @@
         "name": "Centurion Armour",
         "hidden": false,
         "id": "690e-0b38-42cd-464c",
-        "rules": [
+        "profiles": [
           {
             "name": "Centurion Armour",
-            "id": "63c7-8c7d-d772-7798",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Centurion armour increases a Marines statline by +1 Strength, +1 Toughness and +2 Wounds, as well as conveying a 2+ Armour save, Heavy Unit Sub-Type and the Move Through Cover, Bulky (3) and Relentless Special Rules*.\n\n\n*Already included in the above statlines"
+            "id": "0e6d-9015-1cf4-fdcf",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Centurion armour increases a Marines statline by +1 Strength, +1 Toughness and +2 Wounds, as well as conveying a 2+ Armour save, Heavy Unit Sub-Type and the Move Through Cover, Bulky (3) and Relentless Special Rules*.\n\n*Already included in the above statlines"
+              }
+            ]
           }
         ]
       },
@@ -28216,12 +28377,20 @@
         "name": "Ironclad Assault Launchers",
         "hidden": false,
         "id": "5396-72a3-24dc-6656",
-        "rules": [
+        "profiles": [
           {
             "name": "Ironclad Assault Launchers",
-            "id": "2209-0e10-3d23-adbb",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model equipped with ironclad assault launchers does not suffer the penalty to its Initiative for charging enemies through difficult terrain. Furthermore, enemies charging a model equipped with ironclad assault launchers do not gain bonus Attacks from charging unless the model was already locked in combat from a previous turn."
+            "id": "7375-26ae-1fa5-bd80",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model equipped with ironclad assault launchers does not suffer the penalty to its Initiative for charging enemies through difficult terrain. Furthermore, enemies charging a model equipped with ironclad assault launchers do not gain bonus Attacks from charging unless the model was already locked in combat from a previous turn."
+              }
+            ]
           }
         ]
       },
@@ -28366,14 +28535,6 @@
         "name": "Omniscope",
         "hidden": false,
         "id": "fc59-2480-c76f-6bed",
-        "rules": [
-          {
-            "name": "Omniscope",
-            "id": "6cf1-ab08-129d-8e9d",
-            "hidden": false,
-            "description": "A model with an omniscope has the Night Vision and Split Fire special rules"
-          }
-        ],
         "infoLinks": [
           {
             "name": "Night Vision",
@@ -28388,6 +28549,22 @@
             "hidden": false,
             "type": "rule",
             "targetId": "d0a8-20f5-0ce8-70cf"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Omniscope",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "cfa3-6b14-7b6e-59d4",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with an omniscope has the Night Vision and Split Fire special rules"
+              }
+            ]
           }
         ]
       },
@@ -28444,7 +28621,7 @@
                 ],
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "3f40-dc5a-4908-5b65",
                     "targetId": "c447-1b05-5ba8-846a",
@@ -29779,7 +29956,7 @@
                 ],
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "69c4-bbb3-2089-803b",
                     "targetId": "c447-1b05-5ba8-846a",
@@ -29940,7 +30117,7 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "1197-e694-44d2-eb51",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -30920,7 +31097,7 @@
             "sortIndex": 2,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "e019-92f3-8652-abe4",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -32628,21 +32805,21 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "abe3-65f7-f806-e019",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "6df2-40e0-cd36-bd12",
                 "targetId": "fcca-7b6b-7920-a6f5",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "4630-3551-3552-73be",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -33387,21 +33564,21 @@
             "sortIndex": 2,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "4561-1f06-5bfc-4053",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "1a8b-59f1-4432-1b36",
                 "targetId": "fcca-7b6b-7920-a6f5",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "bdd8-3035-9de0-f134",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -34398,12 +34575,20 @@
         "name": "Locator Beacon",
         "hidden": false,
         "id": "6e0c-7f2b-995e-9107",
-        "rules": [
+        "profiles": [
           {
             "name": "Locator Beacon",
-            "id": "76cf-6fc5-7d13-6ef7",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "If a model with a Locator Beacon is on the battlefield at the start of the player turn, any Deepstrike/Drop Pod Assaults that occur may chose to place their first model within 12\" of the model with the Locator Beacon. If this is done, do not roll to scatter the original model, simply deploy it as if it had not scattered. In addition to this, all following units automatically pass any Disruption rolls they\nwould be required to make."
+            "id": "3cf9-8630-46fe-33d8",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "If a model with a Locator Beacon is on the battlefield at the start of the player turn, any Deepstrike/Drop Pod Assaults that occur may chose to place their first model within 12\" of the model with the Locator Beacon. If this is done, do not roll to scatter the original model, simply deploy it as if it had not scattered. In addition to this, all following units automatically pass any Disruption rolls they\nwould be required to make."
+              }
+            ]
           }
         ]
       },
@@ -34413,12 +34598,20 @@
         "name": "Teleport Homer",
         "hidden": false,
         "id": "00f5-e89a-3b5f-50e9",
-        "rules": [
+        "profiles": [
           {
             "name": "Teleport Homer",
-            "id": "e1ce-a9b5-1479-3cce",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Friendly units composed entirely of models in Terminator armour do not scatter when they Deep Strike not can terminator models teleporting into the battlefield have their deepstrike become disordered, so long as the first model is placed within 6\" of the teleport homer’s bearer. For this to work, the bearer of the teleport homer must have been on the battlefield at the start of the turn."
+            "id": "824f-d75c-4429-63f8",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Friendly units composed entirely of models in Terminator armour do not scatter when they Deep Strike not can terminator models teleporting into the battlefield have their deepstrike become disordered, so long as the first model is placed within 6\" of the teleport homer’s bearer. For this to work, the bearer of the teleport homer must have been on the battlefield at the start of the turn."
+              }
+            ]
           }
         ]
       },
@@ -34539,21 +34732,21 @@
             ],
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "fc19-043e-4291-98dc",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "a81e-d71e-f8bf-1879",
                 "targetId": "fcca-7b6b-7920-a6f5",
                 "primary": false
               },
               {
-                "name": "Antigrav",
+                "name": "Antigrav Sub-type",
                 "hidden": false,
                 "id": "4ba6-2d9c-6292-73d2",
                 "targetId": "84f9-5c1d-9030-0686",
@@ -35024,7 +35217,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "a06f-94db-c578-fe1f",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -35519,7 +35712,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "293a-7f42-e521-d4e3",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -36574,7 +36767,7 @@
             "sortIndex": 2,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "122d-cd41-4aca-cf9d",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -38011,7 +38204,7 @@
             "id": "d82e-78b8-f030-395c",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "3375-097b-7a93-d027",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -39377,7 +39570,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "2e9c-66d9-61bf-f673",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -41130,7 +41323,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "28bb-2cbe-ce63-cb83",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -41945,7 +42138,7 @@
             "sortIndex": 2,
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "da6f-8d33-171c-691e",
                 "targetId": "8cce-2496-3746-4f06",
@@ -43249,7 +43442,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "75d2-4d3f-bf4b-58e4",
                 "targetId": "8cce-2496-3746-4f06",
@@ -43365,14 +43558,14 @@
             "id": "70d4-6392-ff8e-5a5e",
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "3ddd-17a0-97fb-7278",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "e158-bbaa-0d23-9bb6",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -43386,7 +43579,7 @@
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "990a-b5c8-dffc-b4be",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -44148,21 +44341,21 @@
             ],
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "3d0f-5558-e76b-3ac4",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "4d4d-2faa-48ad-071f",
                 "targetId": "e349-c42f-3c5d-1e72",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "533d-57ec-1737-a2e0",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -44749,14 +44942,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "0e9f-a914-fc24-f354",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
               },
               {
-                "name": "Antigrav",
+                "name": "Antigrav Sub-type",
                 "hidden": false,
                 "id": "2d24-8d8f-31b6-5770",
                 "targetId": "84f9-5c1d-9030-0686",
@@ -47242,7 +47435,7 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "17a2-65fa-33d5-88d1",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -48498,7 +48691,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "aa77-d585-c26e-b8a1",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -48845,14 +49038,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "3965-8e98-4f38-3141",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "a410-bb5b-d28e-f0de",
                 "targetId": "33d0-319a-741e-573f",
@@ -49181,14 +49374,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "6b35-1cdb-d90a-256e",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "da54-f8d3-2917-595e",
                 "targetId": "33d0-319a-741e-573f",
@@ -50095,21 +50288,21 @@
                 ],
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "c703-13d5-352c-0e9b",
                     "targetId": "c447-1b05-5ba8-846a",
                     "primary": false
                   },
                   {
-                    "name": "Artillery",
+                    "name": "Artillery Sub-type",
                     "hidden": false,
                     "id": "10eb-d67a-a934-50c3",
                     "targetId": "1e5c-9a6e-6e77-4453",
                     "primary": false
                   },
                   {
-                    "name": "Heavy",
+                    "name": "Heavy Sub-type",
                     "hidden": false,
                     "id": "4607-75e0-744a-e526",
                     "targetId": "33d0-319a-741e-573f",
@@ -50343,7 +50536,7 @@
                 ],
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "8c4c-1977-d0b7-59e3",
                     "targetId": "c447-1b05-5ba8-846a",
@@ -50357,7 +50550,7 @@
                     "primary": false
                   },
                   {
-                    "name": "Heavy",
+                    "name": "Heavy Sub-type",
                     "hidden": false,
                     "id": "91eb-f13f-1c02-d766",
                     "targetId": "33d0-319a-741e-573f",
@@ -50639,14 +50832,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Dreadnought",
+                "name": "Dreadnought Unit Type",
                 "hidden": false,
                 "id": "5609-811f-b5ce-9cb1",
                 "targetId": "eb17-a98e-537b-5de6",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "343c-3e3a-6fe7-1789",
                 "targetId": "33d0-319a-741e-573f",
@@ -51380,14 +51573,14 @@
             "id": "eade-a170-1d0c-92bb",
             "categoryLinks": [
               {
-                "name": "Dreadnought",
+                "name": "Dreadnought Unit Type",
                 "hidden": false,
                 "id": "fcf9-de46-ea9f-ee29",
                 "targetId": "eb17-a98e-537b-5de6",
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "2e95-fa87-c459-4856",
                 "targetId": "33d0-319a-741e-573f",
@@ -51943,12 +52136,20 @@
         "name": "Helical Targeting Array",
         "hidden": false,
         "id": "00ef-fb26-f578-c701",
-        "rules": [
+        "profiles": [
           {
             "name": "Helical Targeting Array",
-            "id": "ff90-da34-997b-8d51",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "The controlling player of a model with a helical targeting array may activate it at the start of any of their own turns, or, if the controlling player is not taking the first turn of the battle, at the start of the battle, before the beginning of the opposing player’s first turn. Once the helical targeting array is activated, the model is affected by the following conditions until the beginning of the controlling player’s next turn:\n\n\n- The model may not move, Run or declare or make any Reactions other than the Interceptor or Overwatch Reaction.\n\n\n- The controlling player may choose to use the Skyfire special rule when making any Shooting Attacks with the model.\n\n\n- No model may make a Damage Mitigation roll provided by the Shrouded special rule against an attack made by a model with a helical targeting array while it is active.\n\n\n- When the model makes a Shooting Attack as part of the Interceptor Reaction, the Reaction does not cost the controlling player a point from their Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase.\n\n\n- When a model with the Vehicle Unit Type and a helical targeting array makes a Shooting Attack as part of the Interceptor Reaction, that model may fire all of its weapons, not just Defensive Weapons, as part of the Shooting Attack."
+            "id": "cec0-2c6f-7ca3-9c4b",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "The controlling player of a model with a helical targeting array may activate it at the start of any of their own turns, or, if the controlling player is not taking the first turn of the battle, at the start of the battle, before the beginning of the opposing player’s first turn. Once the helical targeting array is activated, the model is affected by the following conditions until the beginning of the controlling player’s next turn:\n\n- The model may not move, Run or declare or make any Reactions other than the Interceptor or Overwatch Reaction.\n- The controlling player may choose to use the Skyfire special rule when making any Shooting Attacks with the model.\n- No model may make a Damage Mitigation roll provided by the Shrouded special rule against an attack made by a model with a helical targeting array while it is active.\n- When the model makes a Shooting Attack as part of the Interceptor Reaction, the Reaction does not cost the controlling player a point from their Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase.\n- When a model with the Vehicle Unit Type and a helical targeting array makes a Shooting Attack as part of the Interceptor Reaction, that model may fire all of its weapons, not just Defensive Weapons, as part of the Shooting Attack."
+              }
+            ]
           }
         ]
       },
@@ -53998,7 +54199,7 @@
                 "primary": false
               },
               {
-                "name": "Bombard",
+                "name": "Bombard Sub-type",
                 "hidden": false,
                 "id": "16a2-f614-70df-4f64",
                 "targetId": "7d4a-3281-a77d-8962",
@@ -55646,14 +55847,14 @@
         ],
         "categoryLinks": [
           {
-            "name": "Dreadnought",
+            "name": "Dreadnought Unit Type",
             "hidden": false,
             "id": "dbf3-8315-a906-f850",
             "targetId": "eb17-a98e-537b-5de6",
             "primary": false
           },
           {
-            "name": "Heavy",
+            "name": "Heavy Sub-type",
             "hidden": false,
             "id": "b913-2301-20f7-6fe4",
             "targetId": "33d0-319a-741e-573f",
@@ -56580,12 +56781,20 @@
         "name": "Explorator Augury Web",
         "hidden": false,
         "id": "7e85-e383-dcd5-1443",
-        "rules": [
+        "profiles": [
           {
             "name": "Explorator Augury Web",
-            "id": "c348-045b-679b-628c",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "At the start of each of the controlling player’s turns, that player may choose to activate the explorator augury web in either Disruption or Relay mode, the effects of which last until the beginning of the controlling player’s next turn:\n\n\n- Disruption Mode: Any Reserves rolls made by an enemy player to bring units into play from Reserve are modified by -1 while this mode is active. This modifier does not stack with any other negative modifiers to Reserves rolls – use the highest single modifier instead. However, once the final negative modifier to a Reserves roll is determined, it can be reduced by any positive modifiers applied to the roll (for example if a Reserves roll was affected by both a -1 and +1 modifier then they would cancel each other and no modifier would be applied).\n\n\n- Relay Mode: Any Reserves rolls made by the controlling player to bring units into play from Reserves may be re-rolled while this mode is active."
+            "id": "33f2-247b-20a8-c8e8",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "At the start of each of the controlling player’s turns, that player may choose to activate the explorator augury web in either Disruption or Relay mode, the effects of which last until the beginning of the controlling player’s next turn:\n\n- Disruption Mode: Any Reserves rolls made by an enemy player to bring units into play from Reserve are modified by -1 while this mode is active. This modifier does not stack with any other negative modifiers to Reserves rolls – use the highest single modifier instead. However, once the final negative modifier to a Reserves roll is determined, it can be reduced by any positive modifiers applied to the roll (for example if a Reserves roll was affected by both a -1 and +1 modifier then they would cancel each other and no modifier would be applied).\n\n- Relay Mode: Any Reserves rolls made by the controlling player to bring units into play from Reserves may be re-rolled while this mode is active."
+              }
+            ]
           }
         ]
       },
@@ -56806,12 +57015,20 @@
         "name": "Frag Assault Launchers",
         "hidden": false,
         "id": "dcb6-8ea4-9c75-ed55",
-        "rules": [
+        "profiles": [
           {
             "name": "Frag Assault Launchers",
-            "id": "0b37-085b-dc26-074d",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "Any unit charging into close combat on the same turn as it disembarks from a transport vehicle equipped with frag assault launchers counts as having frag grenades."
+            "id": "d7a6-b2a6-efb0-cf89",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "Any unit charging into close combat on the same turn as it disembarks from a transport vehicle equipped with frag assault launchers counts as having frag grenades."
+              }
+            ]
           }
         ]
       },
@@ -56891,7 +57108,7 @@
                     "primary": false
                   },
                   {
-                    "name": "Reinforced",
+                    "name": "Reinforced Sub-type",
                     "hidden": false,
                     "id": "7b22-263a-5072-6d23",
                     "targetId": "bf01-5931-039f-752f",
@@ -57371,7 +57588,7 @@
                     "primary": false
                   },
                   {
-                    "name": "Reinforced",
+                    "name": "Reinforced Sub-type",
                     "hidden": false,
                     "id": "1d2d-ed37-8009-0fed",
                     "targetId": "bf01-5931-039f-752f",
@@ -57739,7 +57956,7 @@
                 "primary": false
               },
               {
-                "name": "Reinforced",
+                "name": "Reinforced Sub-type",
                 "hidden": false,
                 "id": "30c4-2407-6db3-7a5a",
                 "targetId": "bf01-5931-039f-752f",
@@ -58285,12 +58502,20 @@
         "name": "Flare Shield",
         "hidden": false,
         "id": "0ac3-bebf-3613-b53f",
-        "rules": [
+        "profiles": [
           {
             "name": "Flare Shield",
-            "id": "2168-c4c5-2e7a-bfee",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with a flare shield reduces the strength of Shooting Attacks made against its Front Armour by -1, or -2 if that Shooting Attack has the Blast special rule or uses a template to determine its Range. A flare shield has no effect on Shooting Attacks inflicted with weapons of the Destroyer type."
+            "id": "0365-3825-8c6e-1200",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a flare shield reduces the strength of Shooting Attacks made against its Front Armour by -1, or -2 if that Shooting Attack has the Blast special rule or uses a template to determine its Range. A flare shield has no effect on Shooting Attacks inflicted with weapons of the Destroyer type."
+              }
+            ]
           }
         ]
       },
@@ -60620,12 +60845,20 @@
         "name": "Ramjet Diffraction Grid",
         "hidden": false,
         "id": "5836-5737-ff98-e97a",
-        "rules": [
+        "profiles": [
           {
             "name": "Ramjet Diffraction Grid",
-            "id": "6a22-d6b1-e796-3816",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "A model with a ramjet diffraction grid reduces the Strength of Shooting Attacks made against its Rear or Side armour by -1, or -2 if that attack has the Blast special rule or uses a template to determine its Range. A ramjet diffraction grid has no effect on attacks inflicted with weapons of the Destroyer type."
+            "id": "b677-4b31-939a-903b",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a ramjet diffraction grid reduces the Strength of Shooting Attacks made against its Rear or Side armour by -1, or -2 if that attack has the Blast special rule or uses a template to determine its Range. A ramjet diffraction grid has no effect on attacks inflicted with weapons of the Destroyer type."
+              }
+            ]
           }
         ]
       },
@@ -61293,15 +61526,16 @@
         "name": "Scout Armour",
         "hidden": false,
         "id": "b85f-71e1-450c-5ba0",
-        "rules": [
+        "comment": "Retinue leader only",
+        "infoLinks": [
           {
             "name": "Scout Armour",
-            "id": "b13a-b742-0819-d140",
+            "id": "c153-23d6-2099-6eab",
             "hidden": false,
-            "description": "A model with a scout armour gains a 4+ Save."
+            "type": "profile",
+            "targetId": "9436-bf24-9306-b516"
           }
-        ],
-        "comment": "Retinue leader only"
+        ]
       },
       {
         "type": "upgrade",
@@ -62034,14 +62268,6 @@
         "name": "Death Mask",
         "hidden": false,
         "id": "8db8-28a3-1a43-1514",
-        "rules": [
-          {
-            "name": "Death Mask",
-            "id": "a28d-15e9-b791-1950",
-            "hidden": false,
-            "description": "A Death Mask gives the model wearing it the Fear (1) and Stubborn Special Rules."
-          }
-        ],
         "infoLinks": [
           {
             "name": "Stubborn",
@@ -62063,6 +62289,13 @@
                 "field": "annotation"
               }
             ]
+          },
+          {
+            "name": "Death Mask",
+            "id": "90aa-ecda-ba97-04ef",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "3194-923c-93cc-0456"
           }
         ]
       },
@@ -62438,14 +62671,6 @@
         "name": "Death Mask",
         "hidden": true,
         "id": "5566-b61d-2f7d-b217",
-        "rules": [
-          {
-            "name": "Death Mask",
-            "id": "7334-b591-7a0e-8c1c",
-            "hidden": false,
-            "description": "A Death Mask gives the model wearing it the Fear (1) and Stubborn Special Rules."
-          }
-        ],
         "infoLinks": [
           {
             "name": "Stubborn",
@@ -62467,6 +62692,13 @@
                 "field": "annotation"
               }
             ]
+          },
+          {
+            "name": "Death Mask",
+            "id": "70a1-b15b-9d9e-b59a",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "3194-923c-93cc-0456"
           }
         ],
         "comment": "Autohides",
@@ -63060,12 +63292,20 @@
             "targetId": "d9b7-d83e-51e0-bcfc"
           }
         ],
-        "rules": [
+        "profiles": [
           {
             "name": "Mantle of the Elder Drake",
-            "id": "8131-557b-c77f-6562",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
             "hidden": false,
-            "description": "If the bearer is wounded by a weapon with the Brutal (X) rule, subtract 1 from the Brutal (X) rule to a minimum of 1."
+            "id": "fbdf-cab0-7198-2175",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "If the bearer is wounded by a weapon with the Brutal (X) rule, subtract 1 from the Brutal (X) rule to a minimum of 1."
+              }
+            ]
           }
         ]
       },
@@ -64468,6 +64708,34 @@
             "name": "Special Rules",
             "typeId": "d2a2-1139-48cb-4472",
             "$text": "Breaching (5+), Gets Hot"
+          }
+        ]
+      },
+      {
+        "name": "Death Mask",
+        "typeId": "8d18-819f-6442-e206",
+        "typeName": "Wargear",
+        "hidden": false,
+        "id": "3194-923c-93cc-0456",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "73f7-995c-ccc1-9f39",
+            "$text": "A Death Mask gives the model wearing it the Fear (1) and Stubborn Special Rules."
+          }
+        ]
+      },
+      {
+        "name": "Scout Armour",
+        "typeId": "8d18-819f-6442-e206",
+        "typeName": "Wargear",
+        "hidden": false,
+        "id": "9436-bf24-9306-b516",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "73f7-995c-ccc1-9f39",
+            "$text": "A model with a scout armour gains a 4+ Save."
           }
         ]
       }

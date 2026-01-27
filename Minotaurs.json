@@ -140,7 +140,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "b3e1-8d4f-b6df-f192",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -154,7 +154,7 @@
                 "primary": false
               },
               {
-                "name": "Unique",
+                "name": "Unique Sub-type",
                 "hidden": false,
                 "id": "37ee-46b2-a801-d3b0",
                 "targetId": "75a3-46b2-47de-9789",
@@ -229,14 +229,6 @@
                 "name": "Tartaros Terminator Armour",
                 "hidden": false,
                 "id": "d5dd-2914-2c40-9d47",
-                "rules": [
-                  {
-                    "name": "Relic Tartaros Terminator Armour",
-                    "id": "9c81-384f-344d-07c0",
-                    "hidden": false,
-                    "description": "A model with the Relic Tartaros Terminator Armour gains a 2+ Save and 5+ Invulnerable Save."
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -253,6 +245,22 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "062d-1a80-9bd0-3c22-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Tartaros Terminator Armour",
+                    "typeId": "8d18-819f-6442-e206",
+                    "typeName": "Wargear",
+                    "hidden": false,
+                    "id": "f4a4-0e38-554a-58ee",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "73f7-995c-ccc1-9f39",
+                        "$text": "A model with the Relic Tartaros Terminator Armour gains a 2+ Save and 5+ Invulnerable Save."
+                      }
+                    ]
                   }
                 ]
               },
@@ -607,7 +615,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "bd0f-3a12-7eb4-aa19",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -621,7 +629,7 @@
                 "primary": false
               },
               {
-                "name": "Unique",
+                "name": "Unique Sub-type",
                 "hidden": false,
                 "id": "85e8-bac1-2487-cbd3",
                 "targetId": "75a3-46b2-47de-9789",
@@ -875,14 +883,6 @@
                 "name": "Relic Rosarius",
                 "hidden": false,
                 "id": "18d6-ad54-0bbe-0a32",
-                "rules": [
-                  {
-                    "name": "Relic Rosarius",
-                    "id": "e264-4f11-c39b-29fd",
-                    "hidden": false,
-                    "description": "The Relic Rosarius confers a 4+ Invulnerable Save"
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -899,6 +899,22 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "d659-3151-bb70-4c3f-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Relic Rosarius",
+                    "typeId": "8d18-819f-6442-e206",
+                    "typeName": "Wargear",
+                    "hidden": false,
+                    "id": "20f0-07f6-50e1-b71e",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "73f7-995c-ccc1-9f39",
+                        "$text": "The Relic Rosarius confers a 4+ Invulnerable Save"
+                      }
+                    ]
                   }
                 ]
               },
