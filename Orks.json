@@ -6333,7 +6333,7 @@
                 "primary": false
               },
               {
-                "name": "Warboss",
+                "name": "Warboss Sub-type",
                 "hidden": false,
                 "id": "99c7-11bf-85ca-e4bf",
                 "targetId": "c65d-d77d-ff38-c6f1",
@@ -7854,7 +7854,7 @@
                 "primary": false
               },
               {
-                "name": "Warboss",
+                "name": "Warboss Sub-type",
                 "hidden": false,
                 "id": "613a-0615-c8cc-7bee",
                 "targetId": "c65d-d77d-ff38-c6f1",
@@ -14162,14 +14162,14 @@
                 "primary": false
               },
               {
-                "name": "Fast",
+                "name": "Fast Sub-type",
                 "hidden": false,
                 "id": "751b-ca92-65ab-3d0c",
                 "targetId": "633a-22e8-c34d-c49d",
                 "primary": false
               },
               {
-                "name": "Open-topped",
+                "name": "Open-topped Sub-type",
                 "hidden": false,
                 "id": "e6c7-9a87-52b5-ac7e",
                 "targetId": "896d-742a-d60c-6429",
@@ -20520,7 +20520,7 @@
                 "primary": false
               },
               {
-                "name": "Expendable",
+                "name": "Expendable Sub-type",
                 "hidden": false,
                 "id": "421d-0ced-20b7-49bc",
                 "targetId": "6713-c61a-2380-7ca9",
@@ -23053,7 +23053,7 @@
                 "primary": false
               },
               {
-                "name": "Mechanised",
+                "name": "Mechanised Sub-type",
                 "hidden": false,
                 "id": "5d3b-50ee-b178-4872",
                 "targetId": "d109-f07d-276d-f321",
@@ -25239,7 +25239,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "d338-39cf-d3b1-9b47",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -25639,7 +25639,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "58bb-f025-cd05-803e",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -25913,7 +25913,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "e81b-8d05-2f99-972e",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -26194,7 +26194,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "9d4a-f080-2531-22cf",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -26701,7 +26701,7 @@
                     "primary": false
                   },
                   {
-                    "name": "Fast",
+                    "name": "Fast Sub-type",
                     "hidden": false,
                     "id": "7c65-436c-4491-d81f",
                     "targetId": "633a-22e8-c34d-c49d",
@@ -26965,14 +26965,14 @@
                 "primary": false
               },
               {
-                "name": "Fast",
+                "name": "Fast Sub-type",
                 "hidden": false,
                 "id": "cf14-94fd-a08e-27a6",
                 "targetId": "633a-22e8-c34d-c49d",
                 "primary": false
               },
               {
-                "name": "Open-topped",
+                "name": "Open-topped Sub-type",
                 "hidden": false,
                 "id": "5b31-2bd4-e6fd-b59c",
                 "targetId": "896d-742a-d60c-6429",
@@ -30059,7 +30059,7 @@
             "primary": false
           },
           {
-            "name": "Open-topped",
+            "name": "Open-topped Sub-type",
             "hidden": false,
             "id": "67ee-f643-971a-3480",
             "targetId": "896d-742a-d60c-6429",
@@ -30741,7 +30741,7 @@
             "primary": false
           },
           {
-            "name": "Open-topped",
+            "name": "Open-topped Sub-type",
             "hidden": false,
             "id": "cfee-45ac-ac36-2900",
             "targetId": "896d-742a-d60c-6429",
@@ -30943,7 +30943,7 @@
                 "primary": false
               },
               {
-                "name": "Open-topped",
+                "name": "Open-topped Sub-type",
                 "hidden": false,
                 "id": "5e1e-2007-396b-6782",
                 "targetId": "896d-742a-d60c-6429",
@@ -31304,7 +31304,7 @@
                 "primary": false
               },
               {
-                "name": "Knight",
+                "name": "Knight Sub-type",
                 "hidden": false,
                 "id": "6023-3746-28bf-d878",
                 "targetId": "1d45-efe9-9dc0-bc16",
@@ -31711,7 +31711,7 @@
                 "primary": false
               },
               {
-                "name": "Knight",
+                "name": "Knight Sub-type",
                 "hidden": false,
                 "id": "38af-d038-20ff-1363",
                 "targetId": "1d45-efe9-9dc0-bc16",
@@ -32538,7 +32538,7 @@
                 "primary": false
               },
               {
-                "name": "Monstrous Transport",
+                "name": "Monstrous Transport Sub-type",
                 "hidden": false,
                 "id": "f172-66cc-37c1-02a1",
                 "targetId": "c03f-3804-ec07-fc84",
@@ -32552,7 +32552,7 @@
                 "primary": false
               },
               {
-                "name": "Open-topped",
+                "name": "Open-topped Sub-type",
                 "hidden": false,
                 "id": "5853-2ecf-b46e-e627",
                 "targetId": "896d-742a-d60c-6429",
@@ -33066,7 +33066,7 @@
                 "primary": false
               },
               {
-                "name": "Titan",
+                "name": "Titan Sub-type",
                 "hidden": false,
                 "id": "0ed6-fded-017a-5f0c",
                 "targetId": "b8c7-99f5-6fbf-f369",
@@ -33813,7 +33813,7 @@
                 "primary": false
               },
               {
-                "name": "Super-heavy",
+                "name": "Super-heavy Sub-type",
                 "hidden": false,
                 "id": "a8c8-54d9-5198-dd4d",
                 "targetId": "c323-cb52-ee7a-f990",
@@ -34396,7 +34396,7 @@
                 "primary": false
               },
               {
-                "name": "Super-heavy",
+                "name": "Super-heavy Sub-type",
                 "hidden": false,
                 "id": "c8c7-c8b2-3252-5937",
                 "targetId": "c323-cb52-ee7a-f990",
@@ -35321,21 +35321,21 @@
                 "primary": false
               },
               {
-                "name": "Gargantuan",
+                "name": "Gargantuan Sub-type",
                 "hidden": false,
                 "id": "fe02-6f5d-f3e8-6db1",
                 "targetId": "1ee5-b20c-be22-dd79",
                 "primary": false
               },
               {
-                "name": "Monstrous Transport",
+                "name": "Monstrous Transport Sub-type",
                 "hidden": false,
                 "id": "ed33-e493-f4a8-b399",
                 "targetId": "c03f-3804-ec07-fc84",
                 "primary": false
               },
               {
-                "name": "Open-topped",
+                "name": "Open-topped Sub-type",
                 "hidden": false,
                 "id": "6a02-b555-b304-e138",
                 "targetId": "896d-742a-d60c-6429",

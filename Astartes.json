@@ -16393,34 +16393,27 @@
           },
           {
             "import": true,
-            "name": "Gravis Lascannon",
+            "name": "Two Sponson Mounted Gravis Lascannons",
             "hidden": false,
-            "id": "c49a-ffa7-c660-cb40",
+            "id": "6f77-3a7c-b0c3-051c",
             "type": "selectionEntry",
-            "targetId": "6396-0471-7214-a97e",
+            "targetId": "c13b-23a4-9842-69ea",
             "constraints": [
               {
                 "type": "min",
-                "value": 2,
+                "value": 1,
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "f7e4-856a-5751-2e28-min"
+                "id": "8488-baad-8577-4c20-min"
               },
               {
                 "type": "max",
-                "value": 2,
+                "value": 1,
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "f7e4-856a-5751-2e28-max"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "prepend",
-                "value": "Sponson Mounted",
-                "field": "name"
+                "id": "8488-baad-8577-4c20-max"
               }
             ]
           }
@@ -16726,15 +16719,15 @@
           },
           {
             "import": true,
-            "name": "Flamestorm Cannon",
+            "name": "Two Sponson Mounted Flamestorm Cannons",
             "hidden": false,
             "id": "564e-54b3-4dbc-caaa",
             "type": "selectionEntry",
-            "targetId": "af4b-38d1-1c35-cd05",
+            "targetId": "2b27-6cf9-c476-6f40",
             "constraints": [
               {
                 "type": "min",
-                "value": 2,
+                "value": 1,
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
@@ -16742,18 +16735,11 @@
               },
               {
                 "type": "max",
-                "value": 2,
+                "value": 1,
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
                 "id": "4e5d-232e-2387-d736-max"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "prepend",
-                "value": "Sponson Mounted",
-                "field": "name"
               }
             ]
           },
@@ -17032,39 +17018,6 @@
           },
           {
             "import": true,
-            "name": "Hurricane Bolter Array",
-            "hidden": false,
-            "id": "940a-cf3e-d7b1-684a",
-            "type": "selectionEntry",
-            "targetId": "bf64-5d4d-1b8c-03fd",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "671e-0742-9957-ccf6-min"
-              },
-              {
-                "type": "max",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "671e-0742-9957-ccf6-max"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "prepend",
-                "value": "Sponson Mounted",
-                "field": "name"
-              }
-            ]
-          },
-          {
-            "import": true,
             "name": "Frag Assault Launchers",
             "hidden": false,
             "id": "dcf4-27b7-20a3-3a4c",
@@ -17198,6 +17151,32 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "ee0c-4c1f-ccdc-6472-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Two Sponson Mounted Hurricane Bolter Arrays",
+            "hidden": false,
+            "id": "c5dc-4c0a-3fce-59c5",
+            "type": "selectionEntry",
+            "targetId": "ffc6-1f51-b5e9-900b",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "796e-9bf5-dec8-7d7b-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "796e-9bf5-dec8-7d7b-max"
               }
             ]
           }
@@ -18680,34 +18659,27 @@
           },
           {
             "import": true,
-            "name": "Gravis Heavy Bolter Battery",
+            "name": "Two Sponson Mounted Gravis Heavy Bolter Batteries",
             "hidden": false,
-            "id": "091e-a38f-282a-c7fb",
+            "id": "1cb5-f07e-c382-198b",
             "type": "selectionEntry",
-            "targetId": "0a54-0d09-f28d-7331",
+            "targetId": "a416-69f0-cb5b-a306",
             "constraints": [
               {
                 "type": "min",
-                "value": 2,
+                "value": 1,
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "108f-7054-25ac-d78b-min"
+                "id": "bcb7-8f51-a6cf-9aea-min"
               },
               {
                 "type": "max",
-                "value": 2,
+                "value": 1,
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "108f-7054-25ac-d78b-max"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "prepend",
-                "value": "Sponson Mounted",
-                "field": "name"
+                "id": "bcb7-8f51-a6cf-9aea-max"
               }
             ]
           }
@@ -19089,15 +19061,14 @@
                 "type": "selectionEntry",
                 "targetId": "377d-da89-6aa5-54eb",
                 "sortIndex": 4
-              }
-            ],
-            "selectionEntries": [
+              },
               {
-                "type": "upgrade",
                 "import": true,
                 "name": "Pintle Mounted Storm Bolter",
                 "hidden": false,
-                "id": "b800-fa6a-a503-aaca",
+                "id": "fd47-4d9f-8884-6aac",
+                "type": "selectionEntry",
+                "targetId": "351a-8549-cdeb-8a45",
                 "constraints": [
                   {
                     "type": "min",
@@ -19105,7 +19076,7 @@
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "ae96-9d48-52f4-2edc"
+                    "id": "00a3-c35b-f948-ef37-min"
                   },
                   {
                     "type": "max",
@@ -19113,43 +19084,7 @@
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "0063-2437-ebf3-226e"
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Storm Bolter",
-                    "typeId": "5e31-3867-7c3d-fcb9",
-                    "typeName": "Ranged Weapon",
-                    "hidden": false,
-                    "id": "999b-4274-4357-791d",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "7b0f-9c2a-0ecb-f3a3",
-                        "$text": "24\""
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "2ecc-1ccc-736f-9d3d",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "cbb5-5f04-f87f-a810",
-                        "$text": "5"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "2c90-16ca-a927-898d",
-                        "$text": "Assault 2"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "d2a2-1139-48cb-4472",
-                        "$text": ""
-                      }
-                    ]
+                    "id": "00a3-c35b-f948-ef37-max"
                   }
                 ]
               }
@@ -19387,160 +19322,6 @@
                 "$text": "While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Astartes special rule that are within 18\" or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Cyclone Missile Launcher",
-        "hidden": false,
-        "id": "d584-b499-8cf8-e1b6",
-        "profiles": [
-          {
-            "name": "Cyclone missile launcher - Frag",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "9d48-73f0-c8ea-5db4",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "6"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Large Blast (5\"), Pinning"
-              }
-            ]
-          },
-          {
-            "name": "Cyclone missile launcher - Krak",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "6b93-aa81-ae41-4eb6",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Twin-linked"
-              }
-            ]
-          },
-          {
-            "name": "Cyclone missile launcher - Flak",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "40c5-2f61-0618-1367",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Twin-linked, Skyfire"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Twin-linked",
-            "id": "4e6d-96db-a10a-20aa",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "23d2-bdd7-3df1-be63"
-          },
-          {
-            "name": "Skyfire",
-            "id": "11f9-e1fc-8c3a-db13",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "621c-c0ab-b8d5-916a"
-          },
-          {
-            "name": "Blast",
-            "id": "fc43-f06b-f211-bf96",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "dd6e-d5d4-9bb3-d2e4",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "5\"",
-                "field": "annotation"
-              },
-              {
-                "type": "prepend",
-                "value": "Large",
-                "field": "name",
-                "join": " "
-              }
-            ]
-          },
-          {
-            "name": "Pinning",
-            "id": "9523-d804-68ad-2814",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cc0-966b-ab26-0aa7"
           }
         ]
       },
@@ -27164,58 +26945,6 @@
                 "id": "4f9b-c0d5-cc8c-d904-max"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Hurricane Bolter Array",
-        "hidden": false,
-        "id": "bf64-5d4d-1b8c-03fd",
-        "profiles": [
-          {
-            "name": "Hurricane Bolter Array",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "d8c1-3bcf-d7c1-0596",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "5"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Rapid Fire 4"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Twin-linked"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Twin-linked",
-            "id": "4829-1813-9c65-02d2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "23d2-bdd7-3df1-be63"
           }
         ]
       },
@@ -45204,64 +44933,6 @@
               },
               {
                 "import": true,
-                "name": "Cyclone Missile Launcher",
-                "hidden": true,
-                "id": "015d-beec-2e14-2880",
-                "type": "selectionEntry",
-                "targetId": "d584-b499-8cf8-e1b6",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3ef1-f03e-17ec-5c52-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3ef1-f03e-17ec-5c52-max"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": false,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 2,
-                        "field": "3ef1-f03e-17ec-5c52-min"
-                      },
-                      {
-                        "type": "set",
-                        "value": 2,
-                        "field": "3ef1-f03e-17ec-5c52-max"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "unit",
-                        "childId": "26b6-b265-fc55-0f84",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "import": true,
                 "name": "Hunter-killer Missile",
                 "hidden": true,
                 "id": "b9b1-b189-466d-1cbe",
@@ -45312,6 +44983,64 @@
                   }
                 ],
                 "sortIndex": 5
+              },
+              {
+                "import": true,
+                "name": "Two Cyclone Missile Launchers",
+                "hidden": true,
+                "id": "5cbe-5f81-9129-828d",
+                "type": "selectionEntry",
+                "targetId": "758d-679f-7ce6-810f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "37ff-26af-787e-0001"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1071-d650-9fd1-3577"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 2,
+                        "field": "37ff-26af-787e-0001"
+                      },
+                      {
+                        "type": "set",
+                        "value": 2,
+                        "field": "1071-d650-9fd1-3577"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "26b6-b265-fc55-0f84",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "modifierGroups": [
@@ -45865,43 +45594,14 @@
                     "id": "9808-9ea0-72a4-d2a1",
                     "type": "selectionEntry",
                     "targetId": "3fed-2a00-a354-cd7a"
-                  }
-                ],
-                "selectionEntries": [
+                  },
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Two Lascannons",
                     "hidden": false,
-                    "id": "83df-7f95-364c-baa9",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Lascannon",
-                        "hidden": false,
-                        "id": "303f-63bd-22d3-fcdb",
-                        "type": "selectionEntry",
-                        "targetId": "efda-205b-9de9-28c8",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "40b4-3aaa-0293-fbcc"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "49bf-08b1-d48e-cfcf"
-                          }
-                        ]
-                      }
-                    ],
+                    "id": "8f19-5ee1-adbd-c4cd",
+                    "type": "selectionEntry",
+                    "targetId": "27e3-47e8-3b69-2a8b",
                     "costs": [
                       {
                         "name": "Points",
@@ -46151,113 +45851,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Typhoon Missile Launcher",
-        "hidden": false,
-        "id": "43bd-d432-d27e-6cab",
-        "profiles": [
-          {
-            "name": "Typhoon Missile Launcher - Frag",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "52ea-6276-69f3-9b4e",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "6"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Blast (3”), Pinning"
-              }
-            ]
-          },
-          {
-            "name": "Typhoon Missile Launcher - Krak",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "4aa3-651b-da74-545d",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Sunder"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Blast",
-            "id": "ced2-daa5-4631-69ad",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "dd6e-d5d4-9bb3-d2e4",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "3\"",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Pinning",
-            "id": "c841-0010-5ebd-86d9",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cc0-966b-ab26-0aa7"
-          },
-          {
-            "name": "Sunder",
-            "id": "7749-5108-c2d0-4b5f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1692-e368-b877-e324"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Havoc Launcher",
         "hidden": false,
         "id": "e582-7ecb-6a99-4d4b",
@@ -46473,7 +46066,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "8d85-9409-7c3a-1865",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -46670,7 +46263,8 @@
                         "field": "name",
                         "join": " "
                       }
-                    ]
+                    ],
+                    "sortIndex": 1
                   },
                   {
                     "import": true,
@@ -46701,43 +46295,14 @@
                         "value": 15
                       }
                     ]
-                  }
-                ],
-                "selectionEntries": [
+                  },
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Two Hellstrike Missiles",
                     "hidden": false,
-                    "id": "8e2a-3928-b9f2-8200",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Hellstrike Missile",
-                        "hidden": false,
-                        "id": "a785-eb29-7c9d-c49b",
-                        "type": "selectionEntry",
-                        "targetId": "4231-d936-f53a-e8ab",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "e1b8-abc4-3b5d-75d0-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "e1b8-abc4-3b5d-75d0-max"
-                          }
-                        ]
-                      }
-                    ],
+                    "id": "50e8-f091-dea7-d734",
+                    "type": "selectionEntry",
+                    "targetId": "660e-0b92-803f-2554",
                     "costs": [
                       {
                         "name": "Points",
@@ -46970,7 +46535,7 @@
                 ]
               },
               {
-                "name": "Must take one of the following",
+                "name": "Hull (Front) Mounted Weapon",
                 "id": "f16f-c025-77ea-ee18",
                 "hidden": false,
                 "sortIndex": 2,
@@ -46992,76 +46557,24 @@
                     "id": "39ec-7ed7-9fe4-d091-max"
                   }
                 ],
-                "selectionEntries": [
+                "defaultSelectionEntryId": "8c06-c111-95a8-7cdb",
+                "entryLinks": [
                   {
-                    "type": "upgrade",
                     "import": true,
-                    "name": "Four Hull (Front) Mounted Tempest Rockets",
+                    "name": "Four Tempest Rockets",
                     "hidden": false,
-                    "id": "6126-b8f6-acf9-4b05",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Tempest Rocket",
-                        "hidden": false,
-                        "id": "ec85-e111-f7e2-9af2",
-                        "type": "selectionEntry",
-                        "targetId": "bb9e-9bb1-be2d-fb22",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "4ed2-bf37-6972-02bf-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "4ed2-bf37-6972-02bf-max"
-                          }
-                        ]
-                      }
-                    ]
+                    "id": "8c06-c111-95a8-7cdb",
+                    "type": "selectionEntry",
+                    "targetId": "4467-b700-5df6-af6d",
+                    "sortIndex": 1
                   },
                   {
-                    "type": "upgrade",
                     "import": true,
-                    "name": "Four Hull (Front) Mounted Hellstrike Missiles",
+                    "name": "Four Hellstrike Missiles",
                     "hidden": false,
-                    "id": "e848-6cef-51ec-71ee",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Hellstrike Missile",
-                        "hidden": false,
-                        "id": "c5e3-2d91-9765-2eac",
-                        "type": "selectionEntry",
-                        "targetId": "4231-d936-f53a-e8ab",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "e93a-7112-07b1-fd4d-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "e93a-7112-07b1-fd4d-max"
-                          }
-                        ]
-                      }
-                    ],
+                    "id": "3ad0-ca3c-ffe9-f209",
+                    "type": "selectionEntry",
+                    "targetId": "ec41-5cca-76d8-0e59",
                     "costs": [
                       {
                         "name": "Points",
@@ -47071,66 +46584,12 @@
                     ]
                   },
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Two Hull (Front) Mounted Twin-linked Lascannons",
                     "hidden": false,
-                    "id": "852f-97e6-5a51-6dd0",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Lascannon",
-                        "hidden": false,
-                        "id": "51ac-3024-5617-8ed9",
-                        "type": "selectionEntry",
-                        "targetId": "efda-205b-9de9-28c8",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Twin-linked",
-                            "hidden": false,
-                            "id": "ca2c-fcc1-8520-e5b5",
-                            "type": "selectionEntryGroup",
-                            "targetId": "b19d-86be-3758-3e72"
-                          }
-                        ],
-                        "infoLinks": [
-                          {
-                            "name": "Twin-linked",
-                            "id": "133a-6dd2-9d9a-84ca",
-                            "hidden": false,
-                            "type": "rule",
-                            "targetId": "23d2-bdd7-3df1-be63"
-                          }
-                        ],
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "f03f-f5ec-3f83-07a9-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "f03f-f5ec-3f83-07a9-max"
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "prepend",
-                            "value": "Twin-linked",
-                            "field": "name",
-                            "join": " "
-                          }
-                        ]
-                      }
-                    ],
+                    "id": "c866-97d2-0687-c710",
+                    "type": "selectionEntry",
+                    "targetId": "60a6-34e5-a3bd-8960",
                     "costs": [
                       {
                         "name": "Points",
@@ -47139,8 +46598,7 @@
                       }
                     ]
                   }
-                ],
-                "defaultSelectionEntryId": "6126-b8f6-acf9-4b05"
+                ]
               }
             ],
             "profiles": [
@@ -47340,65 +46798,6 @@
             "id": "9480-4cae-7f92-7028",
             "type": "selectionEntry",
             "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Tempest Rocket",
-        "hidden": false,
-        "id": "bb9e-9bb1-be2d-fb22",
-        "profiles": [
-          {
-            "name": "Tempest Rocket",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "a00d-4102-510f-f013",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "60\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "One Shot, Sunder"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "One Shot",
-            "id": "5a4b-522b-c954-f3ac",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee53-4831-a3cf-1cdb"
-          },
-          {
-            "name": "Sunder",
-            "id": "71e7-aca3-5172-5e30",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1692-e368-b877-e324"
           }
         ]
       },
@@ -51012,32 +50411,6 @@
             "entryLinks": [
               {
                 "import": true,
-                "name": "Heavy Flamer",
-                "hidden": false,
-                "id": "47ce-e3c4-e4ef-a5e2",
-                "type": "selectionEntry",
-                "targetId": "c553-098b-dbb7-e3a9",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "6108-959b-f23f-eddf-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "6108-959b-f23f-eddf-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
                 "name": "Atomantic Deflector",
                 "hidden": false,
                 "id": "3bc2-93c4-26e1-d8e9",
@@ -51059,6 +50432,32 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "1f53-6e4c-fabd-6dc6-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Two Heavy Flamers",
+                "hidden": false,
+                "id": "93e9-c268-7105-17a8",
+                "type": "selectionEntry",
+                "targetId": "9d40-b61b-6c9c-2fdd",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2b96-6c28-9d7e-035d-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2b96-6c28-9d7e-035d-max"
                   }
                 ]
               }
@@ -51794,43 +51193,15 @@
                         "value": 10
                       }
                     ]
-                  }
-                ],
-                "selectionEntries": [
+                  },
                   {
-                    "type": "upgrade",
                     "import": true,
-                    "name": "Four Boreas Air Defense Missiles",
+                    "name": "Four Boreas Air Defense Missile",
                     "hidden": false,
-                    "id": "703b-f8af-e54f-1298",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Boreas Air Defense Missile",
-                        "hidden": false,
-                        "id": "36a0-ff86-805f-88c3",
-                        "type": "selectionEntry",
-                        "targetId": "1ed4-40bf-44f9-ac39",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "e081-141f-a86a-d6f7-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "e081-141f-a86a-d6f7-max"
-                          }
-                        ]
-                      }
-                    ]
+                    "id": "8767-b818-99e4-3bd9",
+                    "type": "selectionEntry",
+                    "targetId": "bf76-d26a-2075-ece7",
+                    "sortIndex": 1
                   }
                 ],
                 "constraints": [
@@ -51850,7 +51221,8 @@
                     "shared": true,
                     "id": "af45-55c8-0fb3-6b5c-max"
                   }
-                ]
+                ],
+                "defaultSelectionEntryId": "8767-b818-99e4-3bd9"
               }
             ],
             "entryLinks": [
@@ -52061,72 +51433,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "23d2-bdd7-3df1-be63"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Boreas Air Defense Missile",
-        "hidden": false,
-        "id": "1ed4-40bf-44f9-ac39",
-        "profiles": [
-          {
-            "name": "Boreas Air Defense Missile",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "d3e7-2320-c147-e4d5",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Skyfire, Guided Fire, One Shot"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Skyfire",
-            "id": "94ab-3619-9991-b7a8",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "621c-c0ab-b8d5-916a"
-          },
-          {
-            "name": "Guided Fire",
-            "id": "32b5-f328-d463-d7c7",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "615d-ba71-0c3b-d9bc"
-          },
-          {
-            "name": "One Shot",
-            "id": "353a-2207-d329-cefc",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee53-4831-a3cf-1cdb"
           }
         ]
       },
@@ -52660,151 +51966,6 @@
                 "id": "efe1-f8da-cc66-d874",
                 "hidden": false,
                 "sortIndex": 2,
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Heavy Bolters",
-                    "hidden": false,
-                    "id": "3efe-5884-fb74-a5a1",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Heavy Bolter",
-                        "hidden": false,
-                        "id": "71e1-0a7e-940a-d9c9",
-                        "type": "selectionEntry",
-                        "targetId": "6ee1-c83b-803f-eedd",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "9eba-0836-e000-1ac9-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "9eba-0836-e000-1ac9-max"
-                          }
-                        ]
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 20
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Heavy Flamers",
-                    "hidden": false,
-                    "id": "b975-3f3f-d1de-2838",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Heavy Flamer",
-                        "hidden": false,
-                        "id": "aac2-6747-7435-dc60",
-                        "type": "selectionEntry",
-                        "targetId": "c553-098b-dbb7-e3a9",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "b4e0-e0ea-a8fc-015f-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "b4e0-e0ea-a8fc-015f-max"
-                          }
-                        ]
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 20
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Lascannons",
-                    "hidden": false,
-                    "id": "f058-470d-b678-11d9",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Lascannon",
-                        "hidden": false,
-                        "id": "b6be-6959-4725-65ce",
-                        "type": "selectionEntry",
-                        "targetId": "efda-205b-9de9-28c8",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "f98b-0d75-2198-68e2-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "f98b-0d75-2198-68e2-max"
-                          }
-                        ]
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 35
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": true,
-                        "field": "hidden",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "a2cb-1e8e-66b6-b272",
-                            "shared": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "max",
@@ -52813,6 +51974,53 @@
                     "scope": "self",
                     "shared": true,
                     "id": "94ac-d4c6-5393-9dc0"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Two Sponson Mounted Heavy Bolters",
+                    "hidden": false,
+                    "id": "a410-e646-7f5a-7f58",
+                    "type": "selectionEntry",
+                    "targetId": "bc9a-e1fa-e799-1a54",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 20
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Two Sponson Mounted Heavy Flamers",
+                    "hidden": false,
+                    "id": "e379-7afe-dc17-4cea",
+                    "type": "selectionEntry",
+                    "targetId": "3d4f-22ec-346f-de93",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 20
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Two Sponson Mounted Lascannons",
+                    "hidden": false,
+                    "id": "9840-3bbd-9ff5-b0ea",
+                    "type": "selectionEntry",
+                    "targetId": "5ca3-699d-d662-7c4f",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 35
+                      }
+                    ]
                   }
                 ]
               },
@@ -53776,6 +52984,32 @@
                 "id": "34c4-598f-6446-7804",
                 "type": "selectionEntry",
                 "targetId": "377d-da89-6aa5-54eb"
+              },
+              {
+                "import": true,
+                "name": "Pintle Mounted Storm Bolter",
+                "hidden": false,
+                "id": "b8b6-ac90-fe41-caa4",
+                "type": "selectionEntry",
+                "targetId": "351a-8549-cdeb-8a45",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fcc6-f548-664e-c0f0-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fcc6-f548-664e-c0f0-max"
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -53869,69 +53103,6 @@
                     "scope": "self",
                     "shared": true,
                     "id": "5318-e6b3-7deb-0c15"
-                  }
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Pintle Mounted Storm Bolter",
-                "hidden": false,
-                "id": "2de6-abe0-e529-678c",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "930c-eac5-2cbf-87df-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "930c-eac5-2cbf-87df-max"
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Storm Bolter",
-                    "typeId": "5e31-3867-7c3d-fcb9",
-                    "typeName": "Ranged Weapon",
-                    "hidden": false,
-                    "id": "6343-cf6d-f42e-e7f5",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "7b0f-9c2a-0ecb-f3a3",
-                        "$text": "24\""
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "2ecc-1ccc-736f-9d3d",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "cbb5-5f04-f87f-a810",
-                        "$text": "5"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "2c90-16ca-a927-898d",
-                        "$text": "Assault 2"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "d2a2-1139-48cb-4472",
-                        "$text": ""
-                      }
-                    ]
                   }
                 ]
               }
@@ -54587,67 +53758,30 @@
                 "type": "selectionEntry",
                 "targetId": "377d-da89-6aa5-54eb",
                 "sortIndex": 6
-              }
-            ],
-            "selectionEntries": [
+              },
               {
-                "type": "upgrade",
                 "import": true,
                 "name": "Hull (Front) Mounted Storm Bolter",
                 "hidden": false,
-                "id": "2b03-b308-d6ff-b616",
+                "id": "147d-f7ae-501b-d58d",
+                "type": "selectionEntry",
+                "targetId": "0938-da44-3768-bc6a",
                 "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "a903-bb1f-4025-135f-min"
-                  },
                   {
                     "type": "max",
                     "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "a903-bb1f-4025-135f-max"
-                  }
-                ],
-                "profiles": [
+                    "id": "f808-e6fb-eb3c-81b5"
+                  },
                   {
-                    "name": "Storm Bolter",
-                    "typeId": "5e31-3867-7c3d-fcb9",
-                    "typeName": "Ranged Weapon",
-                    "hidden": false,
-                    "id": "7e56-d3a5-c5b9-1ab7",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "7b0f-9c2a-0ecb-f3a3",
-                        "$text": "24\""
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "2ecc-1ccc-736f-9d3d",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "cbb5-5f04-f87f-a810",
-                        "$text": "5"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "2c90-16ca-a927-898d",
-                        "$text": "Assault 2"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "d2a2-1139-48cb-4472",
-                        "$text": ""
-                      }
-                    ]
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "843d-d24f-b32b-c994"
                   }
                 ]
               }
@@ -54681,7 +53815,7 @@
             "constraints": [
               {
                 "type": "min",
-                "value": 1,
+                "value": 0,
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
@@ -54690,7 +53824,7 @@
               },
               {
                 "type": "max",
-                "value": 1,
+                "value": 0,
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
@@ -56726,58 +55860,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Gravis Heavy Bolter Battery",
-        "hidden": false,
-        "id": "0a54-0d09-f28d-7331",
-        "profiles": [
-          {
-            "name": "Gravis Heavy Bolter Battery",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "6627-8a0e-44a6-e05a",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "5"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 8"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Twin-linked"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Twin-linked",
-            "id": "2595-7f67-ac3e-8953",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "23d2-bdd7-3df1-be63"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Explorator Augury Web",
         "hidden": false,
         "id": "7e85-e383-dcd5-1443",
@@ -57299,39 +56381,6 @@
                   },
                   {
                     "import": true,
-                    "name": "Gravis Mult-melta",
-                    "hidden": false,
-                    "id": "2973-6322-2a7d-05bf",
-                    "type": "selectionEntry",
-                    "targetId": "2245-4567-b79a-62c8",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 2,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "55e9-bab7-f341-8c71-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 2,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "55e9-bab7-f341-8c71-max"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Sponson Mounted",
-                        "field": "name"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
                     "name": "Smoke Launchers",
                     "hidden": false,
                     "id": "9e89-992c-0bbb-d5c0",
@@ -57353,6 +56402,32 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "5cdb-1c83-ac5d-de78"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Two Sponson Mounted Gravis Mult-meltas",
+                    "hidden": false,
+                    "id": "81f2-09ec-f7d5-3e0f",
+                    "type": "selectionEntry",
+                    "targetId": "3148-6773-40a9-13b6",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "24a9-b9a1-3310-5a01-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "24a9-b9a1-3310-5a01-max"
                       }
                     ]
                   }
@@ -57779,39 +56854,6 @@
                   },
                   {
                     "import": true,
-                    "name": "Gravis Lascannon",
-                    "hidden": false,
-                    "id": "0337-9c80-5ca7-418b",
-                    "type": "selectionEntry",
-                    "targetId": "6396-0471-7214-a97e",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 2,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "bc15-c238-d9e8-4429"
-                      },
-                      {
-                        "type": "max",
-                        "value": 2,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "fb42-17ed-5da4-e94c"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "prepend",
-                        "value": "Sponson Mounted",
-                        "field": "name"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
                     "name": "Whirlwind Missile Launcher",
                     "hidden": false,
                     "id": "133c-1e1a-cb6c-9fa1",
@@ -57867,6 +56909,32 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "104f-0499-4b86-3e82"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Two Sponson Mounted Gravis Lascannons",
+                    "hidden": false,
+                    "id": "e6b0-3eac-0c64-af11",
+                    "type": "selectionEntry",
+                    "targetId": "c13b-23a4-9842-69ea",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "003b-8f4e-757e-b6aa-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "003b-8f4e-757e-b6aa-max"
                       }
                     ]
                   }
@@ -58172,19 +57240,19 @@
                 "entryLinks": [
                   {
                     "import": true,
-                    "name": "Lascannon Array",
-                    "hidden": false,
-                    "id": "c571-39bd-0389-47c9",
-                    "type": "selectionEntry",
-                    "targetId": "bfee-c206-892f-00d4"
-                  },
-                  {
-                    "import": true,
-                    "name": "Laser Destroyer",
+                    "name": "Two Sponson Mounted Laser Destroyers",
                     "hidden": false,
                     "id": "039d-acb0-5043-604a",
                     "type": "selectionEntry",
-                    "targetId": "5412-1dcc-c0ef-d228"
+                    "targetId": "3fb0-0d62-6c11-6e0a"
+                  },
+                  {
+                    "import": true,
+                    "name": "Two Sponson Mounted Lascannon Arrays",
+                    "hidden": false,
+                    "id": "1e97-a514-9766-f4db",
+                    "type": "selectionEntry",
+                    "targetId": "ffb1-a740-c1b5-432a"
                   }
                 ],
                 "constraints": [
@@ -58520,124 +57588,6 @@
         ]
       },
       {
-        "type": "upgrade",
-        "import": true,
-        "name": "Lascannon Array",
-        "hidden": false,
-        "id": "bfee-c206-892f-00d4",
-        "profiles": [
-          {
-            "name": "Lascannon Array",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "084f-de01-0baf-2765",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "9"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Twin-linked"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Twin-linked",
-            "id": "3d3d-ef3b-166f-8cc5",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "23d2-bdd7-3df1-be63"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Laser Destroyer",
-        "hidden": false,
-        "id": "5412-1dcc-c0ef-d228",
-        "profiles": [
-          {
-            "name": "Laser Destroyer",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "55ee-be4a-9f8c-892b",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "36\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "9"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "1"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Ordnance 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Twin-linked, Exoshock (6+)"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Twin-linked",
-            "id": "7032-c3ed-7930-a4fe",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "23d2-bdd7-3df1-be63"
-          },
-          {
-            "name": "Exoshock",
-            "id": "48c5-c0c0-24ce-070b",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cdfb-dd74-48fd-104c",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "6+",
-                "field": "annotation"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "type": "unit",
         "import": true,
         "name": "Stormraven Gunship",
@@ -58690,7 +57640,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "f469-c53f-2e74-caf5",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -58996,111 +57946,52 @@
                 ]
               },
               {
-                "name": "Sponson Mounted Weapons",
+                "name": "Side Access Hatch Replacement",
                 "id": "0385-741b-504d-4559",
                 "hidden": false,
                 "sortIndex": 3,
-                "selectionEntries": [
+                "constraints": [
                   {
-                    "type": "upgrade",
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "ff94-402a-881e-ef25"
+                  }
+                ],
+                "entryLinks": [
+                  {
                     "import": true,
-                    "name": "Two Hurricane Bolter Arrays",
+                    "name": "Lascannon",
                     "hidden": false,
-                    "id": "67fd-8435-e502-8f67",
+                    "id": "0593-8bb7-0812-1a36",
+                    "type": "selectionEntry",
+                    "targetId": "efda-205b-9de9-28c8",
                     "entryLinks": [
                       {
                         "import": true,
-                        "name": "Hurricane Bolter Array",
+                        "name": "Twin-linked",
                         "hidden": false,
-                        "id": "481b-93ad-8ec5-a32f",
-                        "type": "selectionEntry",
-                        "targetId": "bf64-5d4d-1b8c-03fd",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "3a80-aec5-a34d-a215-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "3a80-aec5-a34d-a215-max"
-                          }
-                        ]
+                        "id": "08ca-b1c2-5ff8-2142",
+                        "type": "selectionEntryGroup",
+                        "targetId": "b19d-86be-3758-3e72"
                       }
                     ],
-                    "costs": [
+                    "infoLinks": [
                       {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 30
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Twin-linked Lascannons",
-                    "hidden": false,
-                    "id": "1db8-e5e3-2232-cbb8",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Lascannon",
+                        "name": "Twin-linked",
+                        "id": "b5a4-b27a-f64a-3c3e",
                         "hidden": false,
-                        "id": "0593-8bb7-0812-1a36",
-                        "type": "selectionEntry",
-                        "targetId": "efda-205b-9de9-28c8",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Twin-linked",
-                            "hidden": false,
-                            "id": "08ca-b1c2-5ff8-2142",
-                            "type": "selectionEntryGroup",
-                            "targetId": "b19d-86be-3758-3e72"
-                          }
-                        ],
-                        "infoLinks": [
-                          {
-                            "name": "Twin-linked",
-                            "id": "b5a4-b27a-f64a-3c3e",
-                            "hidden": false,
-                            "type": "rule",
-                            "targetId": "23d2-bdd7-3df1-be63"
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "prepend",
-                            "value": "Twin-linked",
-                            "field": "name"
-                          }
-                        ],
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "4d31-0359-b110-8232-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "4d31-0359-b110-8232-max"
-                          }
-                        ]
+                        "type": "rule",
+                        "targetId": "23d2-bdd7-3df1-be63"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "prepend",
+                        "value": "Twin-linked",
+                        "field": "name"
                       }
                     ],
                     "costs": [
@@ -59110,16 +58001,21 @@
                         "value": 10
                       }
                     ]
-                  }
-                ],
-                "constraints": [
+                  },
                   {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "ff94-402a-881e-ef25"
+                    "import": true,
+                    "name": "Two Sponson Mounted Hurricane Bolter Arrays",
+                    "hidden": false,
+                    "id": "289a-c90e-25b7-4002",
+                    "type": "selectionEntry",
+                    "targetId": "ffc6-1f51-b5e9-900b",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 30
+                      }
+                    ]
                   }
                 ]
               }
@@ -59179,35 +58075,27 @@
               },
               {
                 "import": true,
-                "name": "Hunter-killer Missile",
+                "name": "Four Hull (Front) Hunter-killer Missiles",
                 "hidden": false,
-                "id": "e517-dd79-0ec3-a735",
+                "id": "7ce1-d06d-7bcd-a226",
                 "type": "selectionEntry",
-                "targetId": "d4fb-b433-66c7-290c",
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Hull (Front) Mounted",
-                    "field": "name",
-                    "join": " "
-                  }
-                ],
+                "targetId": "1427-2983-cf6c-3b91",
                 "constraints": [
                   {
                     "type": "min",
-                    "value": 4,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "9008-8de1-6866-1b8f-min"
+                    "id": "bcac-aaec-4cc7-13e4-min"
                   },
                   {
                     "type": "max",
-                    "value": 4,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "9008-8de1-6866-1b8f-max"
+                    "id": "bcac-aaec-4cc7-13e4-max"
                   }
                 ]
               }
@@ -59372,7 +58260,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "b8a0-a8b6-40b8-a7c7",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -59391,85 +58279,6 @@
                 "name": "Sponson Mounted Weapons",
                 "id": "128b-c5f8-ecb4-1fd7",
                 "hidden": false,
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Gravis Heavy Bolter Batteries",
-                    "hidden": false,
-                    "id": "9ef5-b69b-3fd3-edae",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Gravis Heavy Bolter Battery",
-                        "hidden": false,
-                        "id": "4c88-bb32-20bc-fe88",
-                        "type": "selectionEntry",
-                        "targetId": "0a54-0d09-f28d-7331",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "3991-2448-8712-3838-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "3991-2448-8712-3838-max"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Two Gravis Autocannon Batteries",
-                    "hidden": false,
-                    "id": "a7ee-863f-2bcd-c54e",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Gravis Autocannon Battery",
-                        "hidden": false,
-                        "id": "bd19-aa64-7684-12b2",
-                        "type": "selectionEntry",
-                        "targetId": "f878-06e6-c778-4a42",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "97d1-fcb3-8b1b-a894-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 2,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "97d1-fcb3-8b1b-a894-max"
-                          }
-                        ]
-                      }
-                    ],
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "54b5-0978-c8a4-5b5a",
-                        "value": 15
-                      }
-                    ]
-                  }
-                ],
                 "sortIndex": 2,
                 "constraints": [
                   {
@@ -59489,83 +58298,15 @@
                     "id": "660e-8d97-3943-f117-max"
                   }
                 ],
-                "defaultSelectionEntryId": "9ef5-b69b-3fd3-edae"
-              },
-              {
-                "name": "Hull (Front) Mounted Weapon",
-                "id": "829d-d346-b244-fedb",
-                "hidden": false,
-                "sortIndex": 1,
-                "selectionEntries": [
+                "defaultSelectionEntryId": "7199-3548-7aa7-fb45",
+                "entryLinks": [
                   {
-                    "type": "upgrade",
                     "import": true,
-                    "name": "Four Tempest Rockets",
+                    "name": "Two Sponson Mounted Gravis Autocannon Batteries",
                     "hidden": false,
-                    "id": "06af-a334-3980-2c95",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Hellstrike Missile",
-                        "hidden": false,
-                        "id": "6583-9bad-a098-9d7a",
-                        "type": "selectionEntry",
-                        "targetId": "4231-d936-f53a-e8ab",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "8af3-680e-e46f-c86c-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "8af3-680e-e46f-c86c-max"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Four Hellstrike Missiles",
-                    "hidden": false,
-                    "id": "16c3-99e7-c032-379a",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Tempest Rocket",
-                        "hidden": false,
-                        "id": "dea9-479a-0716-345c",
-                        "type": "selectionEntry",
-                        "targetId": "bb9e-9bb1-be2d-fb22",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "428d-6977-ba21-c7c4-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 4,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "428d-6977-ba21-c7c4-max"
-                          }
-                        ]
-                      }
-                    ],
+                    "id": "7199-3548-7aa7-fb45",
+                    "type": "selectionEntry",
+                    "targetId": "7f3d-a582-1d6a-6b39",
                     "costs": [
                       {
                         "name": "Points",
@@ -59573,8 +58314,23 @@
                         "value": 15
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Two Sponson Mounted Gravis Heavy Bolter Batteries",
+                    "hidden": false,
+                    "id": "4447-3a80-622d-b199",
+                    "type": "selectionEntry",
+                    "targetId": "a416-69f0-cb5b-a306",
+                    "sortIndex": 1
                   }
-                ],
+                ]
+              },
+              {
+                "name": "Hull (Front) Mounted Weapon",
+                "id": "829d-d346-b244-fedb",
+                "hidden": false,
+                "sortIndex": 1,
                 "constraints": [
                   {
                     "type": "min",
@@ -59593,7 +58349,33 @@
                     "id": "3ae8-04b9-014c-4a2b-max"
                   }
                 ],
-                "defaultSelectionEntryId": "06af-a334-3980-2c95"
+                "defaultSelectionEntryId": "7e22-a631-1736-710c",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Four Hellstrike Missiles",
+                    "hidden": false,
+                    "id": "f59b-03a2-4ccd-2f31",
+                    "type": "selectionEntry",
+                    "targetId": "ec41-5cca-76d8-0e59",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 15
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Four Tempest Rockets",
+                    "hidden": false,
+                    "id": "7e22-a631-1736-710c",
+                    "type": "selectionEntry",
+                    "targetId": "4467-b700-5df6-af6d",
+                    "sortIndex": 1
+                  }
+                ]
               }
             ],
             "entryLinks": [
@@ -59706,72 +58488,6 @@
             "id": "847d-9002-7f69-855b",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Gravis Autocannon Battery",
-        "hidden": false,
-        "id": "f878-06e6-c778-4a42",
-        "profiles": [
-          {
-            "name": "Gravis Autocannon Battery",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "f6a6-6ba2-5d46-61db",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 4"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Rending (6+), Twin-linked"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Rending",
-            "id": "37cc-0420-df47-4829",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2508-8e95-11c7-6bd6",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "6+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Twin-linked",
-            "id": "96f1-c55e-26bc-ca4e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "23d2-bdd7-3df1-be63"
           }
         ]
       },
@@ -59941,37 +58657,11 @@
               },
               {
                 "import": true,
-                "name": "Typhoon Missile Launcher",
+                "name": "Two Centerline Mounted Typhoon Missile Launchers",
                 "hidden": false,
-                "id": "7e0e-cf84-48c0-71ac",
+                "id": "b3c6-b2fa-350a-6ba6",
                 "type": "selectionEntry",
-                "targetId": "43bd-d432-d27e-6cab",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5518-3d5a-f53f-f662-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5518-3d5a-f53f-f662-max"
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Sponson Mounted",
-                    "field": "name",
-                    "join": " "
-                  }
-                ]
+                "targetId": "733a-eb33-d293-7c33"
               }
             ],
             "categoryLinks": [
@@ -59990,7 +58680,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "d02f-19b0-fd1a-bac8",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -60479,7 +59169,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "8732-1792-06c0-a614",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -60493,7 +59183,7 @@
                 "primary": false
               },
               {
-                "name": "Lumbering",
+                "name": "Lumbering Sub-type",
                 "hidden": false,
                 "id": "89cb-4c52-2ad7-c80f",
                 "targetId": "dbbf-4090-a327-a20d",
@@ -60589,46 +59279,18 @@
                         "value": 60
                       }
                     ]
-                  }
-                ],
-                "selectionEntries": [
+                  },
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Six Hellstrike Missiles",
                     "hidden": false,
-                    "id": "dbd0-3838-878b-d376",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Hellstrike Missile",
-                        "hidden": false,
-                        "id": "5af0-5f37-ffc4-b944",
-                        "type": "selectionEntry",
-                        "targetId": "4231-d936-f53a-e8ab",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 6,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "6c1a-5f88-5276-c8fc-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 6,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "6c1a-5f88-5276-c8fc-max"
-                          }
-                        ]
-                      }
-                    ]
+                    "id": "037e-276d-77cf-a6be",
+                    "type": "selectionEntry",
+                    "targetId": "c981-bd78-ea3a-c598",
+                    "sortIndex": 1
                   }
                 ],
-                "defaultSelectionEntryId": "dbd0-3838-878b-d376"
+                "defaultSelectionEntryId": "037e-276d-77cf-a6be"
               }
             ],
             "entryLinks": [
@@ -60686,88 +59348,53 @@
               },
               {
                 "import": true,
-                "name": "Heavy Bolter",
+                "name": "Two Hull (Front) Mounted Lascannons",
                 "hidden": false,
-                "id": "a8a4-4a63-a67d-df6f",
+                "id": "851b-fb6c-b13c-99d3",
                 "type": "selectionEntry",
-                "targetId": "6ee1-c83b-803f-eedd",
+                "targetId": "c2aa-c369-8d82-4cc7",
                 "constraints": [
                   {
                     "type": "min",
-                    "value": 2,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "0547-695c-12f4-5ec3-min"
+                    "id": "11ad-1b2e-74fd-385f-min"
                   },
                   {
                     "type": "max",
-                    "value": 2,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "0547-695c-12f4-5ec3-max"
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Twin-linked",
-                    "id": "3ef6-84a1-49a6-331c",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "23d2-bdd7-3df1-be63"
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Twin-linked",
-                    "hidden": false,
-                    "id": "1f7d-5e0e-963b-a529",
-                    "type": "selectionEntryGroup",
-                    "targetId": "b19d-86be-3758-3e72"
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Turret Mounted Twin-linked",
-                    "field": "name",
-                    "join": " "
+                    "id": "11ad-1b2e-74fd-385f-max"
                   }
                 ]
               },
               {
                 "import": true,
-                "name": "Lascannon",
+                "name": "Two Turret Mounted Twin-linked Heavy Bolters",
                 "hidden": false,
-                "id": "21f0-6931-eea5-b53e",
+                "id": "4cd5-805c-cfa2-8a78",
                 "type": "selectionEntry",
-                "targetId": "efda-205b-9de9-28c8",
+                "targetId": "d107-cf6c-9beb-b1e1",
                 "constraints": [
                   {
                     "type": "min",
-                    "value": 2,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "3c84-8185-2885-3f4f-min"
+                    "id": "13e0-a0a7-ab29-117e-min"
                   },
                   {
                     "type": "max",
-                    "value": 2,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "3c84-8185-2885-3f4f-max"
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Hull (Front) Mounted",
-                    "field": "name",
-                    "join": " "
+                    "id": "13e0-a0a7-ab29-117e-max"
                   }
                 ]
               }
@@ -61137,7 +59764,7 @@
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "5a9f-a6f4-e1c8-bd65",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -61151,7 +59778,7 @@
                 "primary": false
               },
               {
-                "name": "Lumbering",
+                "name": "Lumbering Sub-type",
                 "hidden": false,
                 "id": "91c4-a09e-5997-9cb0",
                 "targetId": "dbbf-4090-a327-a20d",
@@ -61197,46 +59824,18 @@
                         "value": 60
                       }
                     ]
-                  }
-                ],
-                "selectionEntries": [
+                  },
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Six Hellstrike Missiles",
                     "hidden": false,
-                    "id": "2549-d678-5c39-489e",
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Hellstrike Missile",
-                        "hidden": false,
-                        "id": "54e0-8283-8019-6478",
-                        "type": "selectionEntry",
-                        "targetId": "4231-d936-f53a-e8ab",
-                        "constraints": [
-                          {
-                            "type": "min",
-                            "value": 6,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "0484-bddd-0c68-a63f-min"
-                          },
-                          {
-                            "type": "max",
-                            "value": 6,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "0484-bddd-0c68-a63f-max"
-                          }
-                        ]
-                      }
-                    ]
+                    "id": "1235-f9d4-8e68-ead1",
+                    "type": "selectionEntry",
+                    "targetId": "c981-bd78-ea3a-c598",
+                    "sortIndex": 1
                   }
                 ],
-                "defaultSelectionEntryId": "2549-d678-5c39-489e"
+                "defaultSelectionEntryId": "1235-f9d4-8e68-ead1"
               }
             ],
             "entryLinks": [
@@ -61294,54 +59893,27 @@
               },
               {
                 "import": true,
-                "name": "Heavy Bolter",
+                "name": "Four Turret Mounted Heavy Bolters",
                 "hidden": false,
-                "id": "a017-bdaf-5b43-bf3d",
+                "id": "ed0b-5ffe-8019-e91f",
                 "type": "selectionEntry",
-                "targetId": "6ee1-c83b-803f-eedd",
+                "targetId": "adb0-e158-2ee7-04b1",
                 "constraints": [
                   {
                     "type": "min",
-                    "value": 4,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "7c5d-10b9-a360-67a1-min"
+                    "id": "a32c-ee65-628c-d72b-min"
                   },
                   {
                     "type": "max",
-                    "value": 4,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "7c5d-10b9-a360-67a1-max"
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Twin-linked",
-                    "id": "3edf-6590-eb76-a413",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "23d2-bdd7-3df1-be63"
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Twin-linked",
-                    "hidden": false,
-                    "id": "173c-2df2-453d-e781",
-                    "type": "selectionEntryGroup",
-                    "targetId": "b19d-86be-3758-3e72"
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Turret Mounted Twin-linked",
-                    "field": "name",
-                    "join": " "
+                    "id": "a32c-ee65-628c-d72b-max"
                   }
                 ]
               }
