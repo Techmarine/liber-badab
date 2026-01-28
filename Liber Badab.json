@@ -7605,7 +7605,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Six Hellstrike Missiles",
+        "name": "Six Hull (Front) Mounted Hellstrike Missiles",
         "hidden": false,
         "id": "c981-bd78-ea3a-c598",
         "infoLinks": [
@@ -7942,7 +7942,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Four Hellstrike Missiles",
+        "name": "Four Hull (Front) Mounted Hellstrike Missiles",
         "hidden": false,
         "id": "ec41-5cca-76d8-0e59",
         "infoLinks": [
@@ -8052,7 +8052,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Four Tempest Rockets",
+        "name": "Four Hull (Front) Mounted Tempest Rockets",
         "hidden": false,
         "id": "4467-b700-5df6-af6d",
         "profiles": [
@@ -8937,7 +8937,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Two Hellstrike Missiles",
+        "name": "Two Hull (Front) Mounted Hellstrike Missiles",
         "hidden": false,
         "id": "660e-0b92-803f-2554",
         "infoLinks": [
@@ -9160,7 +9160,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Four Hull (Front) Hunter-killer Missiles",
+        "name": "Four Hull (Front) Mounted Hunter-killer Missiles",
         "hidden": false,
         "id": "1427-2983-cf6c-3b91",
         "infoLinks": [
