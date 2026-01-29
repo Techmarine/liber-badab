@@ -2278,71 +2278,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Missile Launcher",
-        "hidden": false,
-        "id": "cf48-8c4c-66c0-6b4d",
-        "infoLinks": [
-          {
-            "name": "Blast",
-            "id": "9f9c-4b9b-b96c-0c43",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "dd6e-d5d4-9bb3-d2e4",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "3+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Pinning",
-            "id": "ec5f-090a-1238-1535",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cc0-966b-ab26-0aa7"
-          },
-          {
-            "name": "Sunder",
-            "id": "1af9-fe90-b6a3-1f95",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1692-e368-b877-e324"
-          },
-          {
-            "name": "Skyfire",
-            "id": "e15d-220f-9b17-1abe",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "621c-c0ab-b8d5-916a"
-          },
-          {
-            "name": "Missile Launcher - Flak",
-            "id": "7abf-952a-165d-4d02",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "e5d0-f0e4-11dc-51dd"
-          },
-          {
-            "name": "Missile Launcher - Frag",
-            "id": "804f-0667-b1da-3201",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "253c-8a95-4f35-a8a8"
-          },
-          {
-            "name": "Missile Launcher - Krak",
-            "id": "8f92-8e0c-d59a-d154",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "72a7-3789-6ed6-c2d2"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Lascannon",
         "hidden": false,
         "id": "efda-205b-9de9-28c8",
@@ -2396,131 +2331,6 @@
                 "$text": ""
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Meltagun",
-        "hidden": false,
-        "id": "7fcb-353e-3973-7af6",
-        "profiles": [
-          {
-            "name": "Meltagun",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "aed8-aba6-b3c4-e15f",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "12\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "1"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Armourbane (Melta)"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Armourbane",
-            "id": "7fb2-c610-a1d4-66f6",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a1f5-fb7a-bbf0-a720",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Melta",
-                "field": "annotation"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Plasma Gun",
-        "hidden": false,
-        "id": "cddc-9235-1178-2c86",
-        "profiles": [
-          {
-            "name": "Plasma Gun",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "a44e-8f4e-e9d4-8e99",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Rapid Fire"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (4+), Gets Hot"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "9049-53f2-a988-ffd3",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "4+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Gets Hot",
-            "id": "509a-c199-5257-1e92",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "c7e6-c0f3-d0e4-4238"
           }
         ]
       },
@@ -2627,460 +2437,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Sniper Rifle",
-        "hidden": false,
-        "id": "b59b-16f9-ba15-fa4c",
-        "profiles": [
-          {
-            "name": "Sniper Rifle",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "bc90-1da8-122b-a34e",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "72\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "5"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "5"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Rending (5+), Sniper, Pinning"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Rending",
-            "id": "cd3b-6c8f-b4af-0ef5",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2508-8e95-11c7-6bd6",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "5+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Sniper",
-            "id": "068f-885c-291f-a1f2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e4db-0b99-ef96-7a32"
-          },
-          {
-            "name": "Pinning",
-            "id": "df92-cdc3-8bac-3946",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cc0-966b-ab26-0aa7"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Plasma Pistol",
-        "hidden": false,
-        "id": "ed32-0da6-96ba-315a",
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "4329-e000-9925-616e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "4+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Gets Hot",
-            "id": "d1c4-402d-32de-2478",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "c7e6-c0f3-d0e4-4238"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Plasma Pistol",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "7af2-0fc9-7f30-0c3b",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "12\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Pistol 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (4+), Gets Hot"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Sword",
-        "hidden": false,
-        "id": "9d1a-9908-a202-aa1c",
-        "infoLinks": [
-          {
-            "name": "Rending",
-            "id": "9e1c-1ab2-22c6-4b10",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2508-8e95-11c7-6bd6",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "6+",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Power Sword",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "9a0d-f4a3-4e7d-82ed",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "User"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Rending (6+)"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Maul",
-        "hidden": false,
-        "id": "3286-92f2-a6a3-b00a",
-        "profiles": [
-          {
-            "name": "Power Maul",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "8ba1-05d8-aef3-a0eb",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+2"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Lance",
-        "hidden": false,
-        "id": "2dc6-678c-d159-c946",
-        "infoLinks": [
-          {
-            "name": "Reach",
-            "id": "6c7a-0b83-79b8-c073",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "3be4-de2e-abce-247a",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Power Lance",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "4dc1-885b-d357-9d74",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Reach (1)"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Fist",
-        "hidden": false,
-        "id": "9e66-2773-ac37-7fb3",
-        "infoLinks": [
-          {
-            "name": "Unwieldy",
-            "id": "4d90-4446-1420-9630",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cfea-a7be-fbea-da53"
-          },
-          {
-            "name": "Specialist Weapon",
-            "id": "9ccd-b4d1-8c37-3e60",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "8bee-1459-6f2d-6ab6"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Power Fist",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "ac54-1197-e3fd-f667",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "×2"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Unwieldy, Specialist Weapon"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Axe",
-        "hidden": false,
-        "id": "c8e3-750b-60bc-f318",
-        "infoLinks": [
-          {
-            "name": "Unwieldy",
-            "id": "6d3d-3aa7-e6a2-7c88",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cfea-a7be-fbea-da53"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Power Axe",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "6b83-79c9-8706-9587",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Unwieldy"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Bolt Pistol",
-        "hidden": false,
-        "id": "774a-6d7d-6012-96c4",
-        "profiles": [
-          {
-            "name": "Bolt Pistol",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "52ee-946e-b8b3-f792",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "12\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "5"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Pistol 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Refractor Field",
         "hidden": false,
         "id": "17d6-7775-8f0a-3419",
@@ -3127,58 +2483,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Chainsword",
-        "hidden": false,
-        "id": "9ff6-013d-b0fa-889e",
-        "infoLinks": [
-          {
-            "name": "Shred",
-            "id": "01fb-d458-9111-86dc",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a666-0970-28e2-7c48"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Chainsword",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "98d9-d40a-0565-114a",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "User"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Shred"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Power Armour",
         "hidden": false,
         "id": "c994-b8b2-8ccf-8a8c",
@@ -3196,233 +2500,6 @@
                 "$text": "A model with a power armour gains a 3+ Save."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Servo-arm",
-        "hidden": false,
-        "id": "5ad4-608b-4bef-daaf",
-        "profiles": [
-          {
-            "name": "Servo-arm",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "b094-e7a2-632d-eb51",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Unwieldy"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Unwieldy",
-            "id": "ff9c-5e02-9611-da68",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cfea-a7be-fbea-da53"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Melta Bombs",
-        "hidden": false,
-        "id": "cf24-e8a6-0312-b000",
-        "infoLinks": [
-          {
-            "name": "Detonation",
-            "id": "6aca-c809-2ac3-e81f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "26f7-bec6-599d-285f"
-          },
-          {
-            "name": "Unwieldy",
-            "id": "fc83-72cc-a0bb-358f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cfea-a7be-fbea-da53"
-          },
-          {
-            "name": "Armourbane",
-            "id": "c853-dfef-6b04-1f67",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a1f5-fb7a-bbf0-a720",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Melee",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Instant Death",
-            "id": "4e92-bc6a-8c1e-0a0b",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0561-70c5-a18f-6672"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Melta Bomb",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "39db-cc69-2cf3-1078",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "1"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Detonation, Unwieldy, Armourbane (Melee), Instant Death\n"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Bolter",
-        "hidden": false,
-        "id": "8a74-8351-e55e-ab00",
-        "profiles": [
-          {
-            "name": "Bolter",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "cce8-e98d-1d36-89e5",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "5"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Rapid Fire"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Bayonet",
-        "hidden": false,
-        "id": "87fb-1c6f-cc2c-db1b",
-        "profiles": [
-          {
-            "name": "Bayonet",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "c8b1-41a0-fa2d-8be4",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Two-handed"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Two-handed",
-            "id": "fb54-8961-c909-18a2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9c96-f071-03a6-7593"
           }
         ]
       },
@@ -3554,94 +2631,6 @@
                 "$text": "The controlling player may choose to trigger smoke launchers once a model with them has completed its movement in the Movement phase, and may only choose to trigger them if the model has moved no faster than Combat Speed that turn. Once triggered, the model with smoke launchers counts as being more than 25% obscured, regardless of terrain, until the start of the controlling player’s next turn and gains a 6+ Cover Save. A model whose smoke launchers have been triggered may not make any Shooting Attacks, except as part of a Reaction, in the same turn. Smoke launchers may only be used once per battle, and once triggered may not be further used – in addition, they do not count as a weapon and may not be targeted by Weapon Destroyed results on the Vehicle Damage table."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Multi-melta",
-        "hidden": false,
-        "id": "a7e6-8d4e-15b1-f07b",
-        "infoLinks": [
-          {
-            "name": "Armourbane",
-            "id": "41ae-2cdc-dacd-d5a0",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a1f5-fb7a-bbf0-a720",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Melta",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Twin-linked",
-            "id": "ede0-521d-939a-10e9",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "23d2-bdd7-3df1-be63"
-          },
-          {
-            "name": "Multi-melta",
-            "id": "5733-d194-c716-5636",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "aaeb-3bf9-969b-6676"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Plasma Cannon",
-        "hidden": false,
-        "id": "b9e9-2c52-c63b-3b96",
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "0734-cca0-1350-d87b",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "4+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Gets Hot",
-            "id": "24b3-7cab-a8f7-aaee",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "c7e6-c0f3-d0e4-4238"
-          },
-          {
-            "name": "Blast",
-            "id": "7ad1-cf4d-203c-220f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "dd6e-d5d4-9bb3-d2e4",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "3\"",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Plasma Cannon",
-            "id": "1b94-4750-af3e-4005",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "118d-778a-0e1c-6ee8"
           }
         ]
       },
@@ -3821,22 +2810,6 @@
             "hidden": false,
             "type": "profile",
             "targetId": "b65b-a3ae-5e9f-3e52"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Storm Bolter",
-        "hidden": false,
-        "id": "1efd-a0a4-e452-48eb",
-        "infoLinks": [
-          {
-            "name": "Storm Bolter",
-            "id": "445c-2954-88cd-7f71",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "24f9-a86a-d69b-9f78"
           }
         ]
       },
@@ -6537,7 +5510,7 @@
                 "hidden": false,
                 "id": "e64a-8d70-6f9d-6f6f",
                 "type": "selectionEntry",
-                "targetId": "1efd-a0a4-e452-48eb"
+                "targetId": "b584-e06b-ebeb-4d04"
               },
               {
                 "import": true,
@@ -9218,6 +8191,2353 @@
             "id": "af62-9b4a-35c3-520a"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Astartes Shotgun",
+        "hidden": false,
+        "id": "4bdc-cbf2-100e-e264",
+        "infoLinks": [
+          {
+            "name": "Concussive",
+            "id": "8b0b-14fe-69e4-f0aa",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "173b-6e52-4626-a146",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Astartes Shotgun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "a56b-6ced-a722-41fd",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 2"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Concussive (1)"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "079d-99e0-7529-b1a4",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Master-crafted (Master Artisan)",
+        "hidden": false,
+        "id": "e336-78d8-10c4-868f",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 10
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3b81-b072-0017-f853"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 0,
+                "field": "3b81-b072-0017-f853"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "1a20-b33a-305e-b4ad",
+                    "shared": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "c044-d3ec-ebc4-d882",
+                    "shared": true
+                  },
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "1c46-7a96-775f-8572",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "c0e6-28aa-5286-2fa2",
+                    "shared": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "75a3-46b2-47de-9789",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Master-crafted",
+        "hidden": false,
+        "id": "1a20-b33a-305e-b4ad",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "model",
+            "shared": true,
+            "id": "cd29-cf10-f324-a789",
+            "includeChildSelections": true
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Master-crafted",
+            "id": "dc5b-f3d6-8f63-65ee",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0371-1ea2-8615-e03a"
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 10
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "append",
+            "value": "Master-crafted",
+            "field": "d2a2-1139-48cb-4472",
+            "scope": "parent",
+            "affects": "profiles.Ranged Weapon",
+            "join": ", "
+          },
+          {
+            "type": "append",
+            "value": "Master-crafted",
+            "field": "a603-af69-c30b-94ed",
+            "scope": "parent",
+            "affects": "profiles.Melee Weapon",
+            "join": ", "
+          },
+          {
+            "type": "prepend",
+            "value": "Master-crafted",
+            "field": "name",
+            "scope": "parent",
+            "affects": "profiles.Ranged Weapon",
+            "join": " "
+          },
+          {
+            "type": "prepend",
+            "value": "Master-crafted",
+            "field": "name",
+            "scope": "parent",
+            "affects": "profiles.Melee Weapon",
+            "join": " "
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Bayonet",
+        "hidden": false,
+        "id": "5028-c873-d19a-c80a",
+        "profiles": [
+          {
+            "name": "Bayonet",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "dbba-6595-1d38-265d",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Two-handed"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Two-handed",
+            "id": "0ca8-4b79-1c38-a1e2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9c96-f071-03a6-7593"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "122f-055b-d8be-b48f",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Bolt Pistol",
+        "hidden": false,
+        "id": "95f0-f427-49c0-c7e6",
+        "profiles": [
+          {
+            "name": "Bolt Pistol",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "b600-6ab8-77c0-cdff",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Pistol 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "b99e-5249-932c-e122",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Bolter",
+        "hidden": false,
+        "id": "7fd9-bd72-8e7e-e9c6",
+        "profiles": [
+          {
+            "name": "Bolter",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "8bf7-6b4c-5c13-b4bf",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Rapid Fire"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "3d8f-7be0-fd11-80d5",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Chainsword",
+        "hidden": false,
+        "id": "e241-43f4-e619-113b",
+        "infoLinks": [
+          {
+            "name": "Shred",
+            "id": "f628-577d-87ad-b400",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Chainsword",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "c461-a226-a600-adfb",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Shred"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "abe6-d91a-8be8-8b58",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Storm Bolter",
+        "hidden": false,
+        "id": "b584-e06b-ebeb-4d04",
+        "profiles": [
+          {
+            "name": "Storm Bolter",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "2ba0-9eb3-56af-bb66",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 2"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "3e42-7487-2c0a-1dec",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Melta Bombs",
+        "hidden": false,
+        "id": "edbe-fcf8-664e-f90f",
+        "infoLinks": [
+          {
+            "name": "Detonation",
+            "id": "7a39-39c5-9f7c-1682",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "26f7-bec6-599d-285f"
+          },
+          {
+            "name": "Unwieldy",
+            "id": "3e84-4efc-af91-26fb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          },
+          {
+            "name": "Armourbane",
+            "id": "11e7-aedb-fe93-1e8e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720"
+          },
+          {
+            "name": "Instant Death",
+            "id": "0256-f05a-ddd3-431e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0561-70c5-a18f-6672"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Melta Bomb",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "f7eb-9a1d-2e63-f270",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Detonation, Unwieldy, Armourbane (Melee), Instant Death\n"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "d12e-60c0-204e-bbd7",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Plasma Pistol",
+        "hidden": false,
+        "id": "3f09-f9ad-2440-d174",
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "27f2-5d33-bf22-ce63",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Gets Hot",
+            "id": "d7a2-eb16-3255-b6ad",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c7e6-c0f3-d0e4-4238"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Plasma Pistol",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "e917-947c-f460-bc54",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Pistol 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Breaching (4+), Gets Hot"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "625a-8f46-3c4e-042a",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power Axe",
+        "hidden": false,
+        "id": "bf27-0933-e41a-a152",
+        "infoLinks": [
+          {
+            "name": "Unwieldy",
+            "id": "f16f-8a2a-4f88-6035",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Power Axe",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "e078-9800-1b51-d195",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Unwieldy"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "958a-3b2e-6fef-7039",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power Fist",
+        "hidden": false,
+        "id": "4794-290c-551d-1aa9",
+        "infoLinks": [
+          {
+            "name": "Unwieldy",
+            "id": "0b81-d2e0-2806-da12",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          },
+          {
+            "name": "Specialist Weapon",
+            "id": "4071-1912-b177-da63",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8bee-1459-6f2d-6ab6"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Power Fist",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "85be-b122-1c93-3d37",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "×2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Unwieldy, Specialist Weapon"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "f3eb-f6d7-090a-0291",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power Lance",
+        "hidden": false,
+        "id": "0782-556c-5445-66ad",
+        "infoLinks": [
+          {
+            "name": "Reach",
+            "id": "5a22-fce4-84b2-ac7a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3be4-de2e-abce-247a",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Power Lance",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "8c19-4032-aad1-1165",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Reach (1)"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "3bdb-c8a8-c4ec-65ca",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power Maul",
+        "hidden": false,
+        "id": "ad60-6ada-12a7-f47c",
+        "profiles": [
+          {
+            "name": "Power Maul",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "cf56-3311-d788-ca3e",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "7994-3056-9fde-14ce",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power Sword",
+        "hidden": false,
+        "id": "96af-5a12-180a-5e1a",
+        "infoLinks": [
+          {
+            "name": "Rending",
+            "id": "eb5c-b079-2844-df47",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Power Sword",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "846a-a4bc-c73b-d7e4",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Rending (6+)"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "43e0-2f1a-b236-c42a",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Servo-arm",
+        "hidden": false,
+        "id": "7700-44c7-6f2e-7f6e",
+        "profiles": [
+          {
+            "name": "Servo-arm",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "c1ce-0d29-2535-a619",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Unwieldy"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Unwieldy",
+            "id": "de84-8487-bb99-94ac",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfea-a7be-fbea-da53"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "47e2-3476-4509-47bd",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Plasma Gun",
+        "hidden": false,
+        "id": "10f7-b5ba-5906-a238",
+        "profiles": [
+          {
+            "name": "Plasma Gun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "3f50-ee26-e867-087a",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Rapid Fire"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Breaching (4+), Gets Hot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "a8b8-dc9a-389a-ca64",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Gets Hot",
+            "id": "696f-543d-56b9-f62c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c7e6-c0f3-d0e4-4238"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "aea2-4e7b-78c3-87b0",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Plasma Cannon",
+        "hidden": false,
+        "id": "9e6a-4ab3-72e7-95cb",
+        "profiles": [
+          {
+            "name": "Plasma Cannon",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "b885-9a2c-38bd-1676",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Breaching (4+), Gets Hot, Blast (3\")"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "63c0-0a8c-8651-0e68",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Gets Hot",
+            "id": "2db0-cbd2-5af7-a592",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c7e6-c0f3-d0e4-4238"
+          },
+          {
+            "name": "Blast",
+            "id": "79d1-d782-ddfc-75e6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "f46c-bd52-37e8-4c5d",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Multi-melta",
+        "hidden": false,
+        "id": "25a2-0542-18d3-de18",
+        "profiles": [
+          {
+            "name": "Multi-melta",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "a2b9-57cf-9193-1ede",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Armourbane (Melta), Twin-linked"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "9410-ff7e-3396-efb4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720"
+          },
+          {
+            "name": "Twin-linked",
+            "id": "b33e-ccf4-cec3-00a1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "23d2-bdd7-3df1-be63"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "002c-1566-e4db-ebe4",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Missile Launcher",
+        "hidden": false,
+        "id": "2b2a-9da7-b1b1-a9f7",
+        "profiles": [
+          {
+            "name": "Missile Launcher - Flak",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "4399-3b40-d702-4b20",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Skyfire"
+              }
+            ]
+          },
+          {
+            "name": "Missile Launcher - Frag",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "7b72-072d-8eaf-0823",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Pinning"
+              }
+            ]
+          },
+          {
+            "name": "Missile Launcher - Krak",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "9b8a-be2a-d3ca-ffb0",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "48\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Sunder"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "d0bd-7d46-c268-1128",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Pinning",
+            "id": "c058-974f-5c9a-2a3a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          },
+          {
+            "name": "Sunder",
+            "id": "6a39-f608-fbe2-46ea",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1692-e368-b877-e324"
+          },
+          {
+            "name": "Skyfire",
+            "id": "9328-7155-4ab7-f1f9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "621c-c0ab-b8d5-916a"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "386c-1701-005c-b966",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Meltagun",
+        "hidden": false,
+        "id": "5fc6-b052-616c-bfa7",
+        "profiles": [
+          {
+            "name": "Meltagun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "8d05-c2e2-16a7-542c",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Armourbane (Melta)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "f22e-d17c-43da-ef25",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Melta",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "ef39-b31f-548d-481f",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Sniper Rifle",
+        "hidden": false,
+        "id": "19eb-6da1-12ff-5535",
+        "profiles": [
+          {
+            "name": "Sniper Rifle",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "f8cc-be4a-d009-069b",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "72\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Rending (5+), Sniper, Pinning"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rending",
+            "id": "6712-184d-8991-141d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Sniper",
+            "id": "8fdd-2649-8b51-977f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e4db-0b99-ef96-7a32"
+          },
+          {
+            "name": "Pinning",
+            "id": "d94c-4d4b-8ecf-8840",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "df61-30e5-5023-1cd9",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Charnabal Glaive",
+        "hidden": false,
+        "id": "5eb4-d251-282e-b20e",
+        "infoLinks": [
+          {
+            "name": "Duellist’s Edge",
+            "id": "f7fe-d99b-1e26-87f1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "da29-5ae7-e8e9-a008",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Two-handed",
+            "id": "3fbb-2e63-56a1-2863",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9c96-f071-03a6-7593"
+          },
+          {
+            "name": "Breaching",
+            "id": "c50f-92b6-4dbd-5e0c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Charnabal Glaive",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "205e-67a5-92c6-1a54",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Breaching (5+), Duellist’s Edge (2), Two-handed"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "9f4d-d6e5-1587-d2fc",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Charnabal Sabre",
+        "hidden": false,
+        "id": "d717-73a5-ee89-a525",
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "1d4a-52c3-a858-556d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Duellist’s Edge",
+            "id": "d0c4-b8c4-4f86-420a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "da29-5ae7-e8e9-a008",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Charnabal Sabre",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "d27e-0278-1616-01e1",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "User"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Breaching (5+), Duellist’s Edge (1)"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "fc3e-3620-e65c-1c1e",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Charnabal Tabar",
+        "hidden": false,
+        "id": "5745-2436-2e82-63b8",
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "d06c-b646-bc37-a6f5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Duellist’s Edge",
+            "id": "726f-406a-132b-e220",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "da29-5ae7-e8e9-a008",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Charnabal Tabar",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "189f-b76c-2011-7b83",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "+2"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Breaching (6+), Duellist’s Edge (1)"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "e7d1-92cd-ab1e-580d",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Chainaxe",
+        "hidden": false,
+        "id": "8680-81d2-41f9-75a8",
+        "infoLinks": [
+          {
+            "name": "Shred",
+            "id": "7885-fa3b-d139-89d4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Chainaxe",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "37ad-0376-f1c7-849c",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Shred"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "4999-4a84-b43e-ed2d",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-flamer",
+        "hidden": false,
+        "id": "0a91-723e-9342-a64b",
+        "infoLinks": [
+          {
+            "name": "Bolter (Primary)",
+            "id": "3c89-ec04-f6ca-5945",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "0510-8ac8-5352-169f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Flamer (Secondary)",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "dc13-c2c6-9d1e-f46d",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "T"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "5"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "4686-7d94-a2db-4f84",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-grenade launcher",
+        "hidden": false,
+        "id": "b373-4fd7-8f20-a4d8",
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "d823-bf3a-df60-20dc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Pinning",
+            "id": "b995-bcc8-5a83-379d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          },
+          {
+            "name": "Bolter (Primary)",
+            "id": "2047-6b58-7381-ab12",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "0510-8ac8-5352-169f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Grenade Launcher (Secondary) - Frag",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "f3a4-9e7e-9ab6-e81f",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Pinning"
+              }
+            ]
+          },
+          {
+            "name": "Grenade Launcher (Secondary) - Krak",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "ac99-cad6-c4cc-5bf6",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "5"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "efa9-862a-5363-5dc5",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-melta",
+        "hidden": false,
+        "id": "ab66-c50b-b845-20da",
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "0d6f-9224-e514-d9a1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a1f5-fb7a-bbf0-a720"
+          },
+          {
+            "name": "One Shot",
+            "id": "7280-389b-0aec-8710",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Bolter (Primary)",
+            "id": "c93f-a764-4e02-204e",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "0510-8ac8-5352-169f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Meltagun (Secondary)",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "fbe9-18ca-a705-d033",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "12\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Armourbane (Melta), One Shot"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "f2e3-7aa8-4706-4bbc",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-plasma",
+        "hidden": false,
+        "id": "5237-5fab-96cd-13a9",
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "8b66-b662-b269-7366",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Gets Hot",
+            "id": "83e0-1d0f-f400-5463",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c7e6-c0f3-d0e4-4238"
+          },
+          {
+            "name": "One Shot",
+            "id": "8211-646f-4d2c-aeaa",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Bolter (Primary)",
+            "id": "eddf-b726-6e9c-a004",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "0510-8ac8-5352-169f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Plasma gun (Secondary)",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "e41c-661f-f63f-5604",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "7"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Rapid Fire"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Breaching (4+), Gets Hot, One Shot"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Master-crafted (Master Artisan)",
+            "hidden": false,
+            "id": "7f43-ca4d-ba5f-296f",
+            "type": "selectionEntry",
+            "targetId": "e336-78d8-10c4-868f"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Hand Flamer",
+        "hidden": false,
+        "id": "f5be-750d-a6c9-1b03",
+        "profiles": [
+          {
+            "name": "Hand Flamer",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "d4bd-9242-b78b-dc69",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "T"
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Pistol 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Lightning Claw",
+        "hidden": false,
+        "id": "19f4-1582-f20d-03ba",
+        "infoLinks": [
+          {
+            "name": "Lightning Claw",
+            "id": "13cc-fe1c-9ea8-6397",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "2615-31a6-099a-906d"
+          },
+          {
+            "name": "Shred",
+            "id": "ffbe-736d-3fe7-73bb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          },
+          {
+            "name": "Rending",
+            "id": "61c9-08f9-9a7a-a3b8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Specialist Weapon",
+            "id": "0697-0d5e-419a-7187",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8bee-1459-6f2d-6ab6"
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -10693,6 +12013,74 @@
             "name": "Special Rules",
             "typeId": "d2a2-1139-48cb-4472",
             "$text": "Twin-linked"
+          }
+        ]
+      },
+      {
+        "name": "Bolter (Primary)",
+        "typeId": "5e31-3867-7c3d-fcb9",
+        "typeName": "Ranged Weapon",
+        "hidden": false,
+        "id": "0510-8ac8-5352-169f",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "7b0f-9c2a-0ecb-f3a3",
+            "$text": "24\""
+          },
+          {
+            "name": "S",
+            "typeId": "2ecc-1ccc-736f-9d3d",
+            "$text": "4"
+          },
+          {
+            "name": "AP",
+            "typeId": "cbb5-5f04-f87f-a810",
+            "$text": "5"
+          },
+          {
+            "name": "Type",
+            "typeId": "2c90-16ca-a927-898d",
+            "$text": "Rapid Fire"
+          },
+          {
+            "name": "Special Rules",
+            "typeId": "d2a2-1139-48cb-4472",
+            "$text": ""
+          }
+        ]
+      },
+      {
+        "name": "Lightning Claw",
+        "typeId": "ecd5-ca1d-0842-34a4",
+        "typeName": "Melee Weapon",
+        "hidden": false,
+        "id": "2615-31a6-099a-906d",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "ec4a-5686-1553-4654",
+            "$text": "-"
+          },
+          {
+            "name": "S",
+            "typeId": "b9e5-2eb3-f79d-e995",
+            "$text": "User"
+          },
+          {
+            "name": "AP",
+            "typeId": "0332-8de1-48c6-c94d",
+            "$text": "3"
+          },
+          {
+            "name": "Type",
+            "typeId": "6c0f-3258-2a17-5cc9",
+            "$text": "Melee"
+          },
+          {
+            "name": "Special Rules",
+            "typeId": "a603-af69-c30b-94ed",
+            "$text": "Shred, Rending (6+), Specialist Weapon"
           }
         ]
       }

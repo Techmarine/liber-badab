@@ -695,36 +695,52 @@
                     "type": "add",
                     "value": "Non-flyer Vehicles can not be taken in the Airborne Company",
                     "field": "error",
-                    "localConditionGroups": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "scope": "force",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "includeChildForces": true,
-                        "repeats": 1,
-                        "conditionGroups": [
+                        "type": "and",
+                        "localConditionGroups": [
                           {
-                            "type": "and",
-                            "conditions": [
+                            "type": "atLeast",
+                            "value": 1,
+                            "scope": "force",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "repeats": 1,
+                            "conditionGroups": [
                               {
-                                "type": "instanceOf",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "188c-5472-9e2c-377c",
-                                "shared": true
-                              },
-                              {
-                                "type": "notInstanceOf",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "63ab-f4ab-6759-c123",
-                                "shared": true
+                                "type": "and",
+                                "conditions": [
+                                  {
+                                    "type": "instanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "childId": "188c-5472-9e2c-377c",
+                                    "shared": true
+                                  },
+                                  {
+                                    "type": "notInstanceOf",
+                                    "value": 1,
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "childId": "63ab-f4ab-6759-c123",
+                                    "shared": true
+                                  }
+                                ]
                               }
                             ]
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "d17a-2a6b-b471-e6d3",
+                            "shared": true,
+                            "includeChildSelections": true
                           }
                         ]
                       }
@@ -734,23 +750,39 @@
                     "type": "add",
                     "value": "Cavalry can not be taken in the Airborne Company",
                     "field": "error",
-                    "localConditionGroups": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "scope": "force",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "includeChildForces": true,
-                        "repeats": 1,
+                        "type": "and",
+                        "localConditionGroups": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "scope": "force",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "includeChildForces": true,
+                            "repeats": 1,
+                            "conditions": [
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "8cce-2496-3746-4f06",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ],
                         "conditions": [
                           {
-                            "type": "instanceOf",
+                            "type": "atLeast",
                             "value": 1,
                             "field": "selections",
-                            "scope": "parent",
-                            "childId": "8cce-2496-3746-4f06",
-                            "shared": true
+                            "scope": "force",
+                            "childId": "d17a-2a6b-b471-e6d3",
+                            "shared": true,
+                            "includeChildSelections": true
                           }
                         ]
                       }
@@ -1163,7 +1195,7 @@
                                 "value": 3,
                                 "field": "selections",
                                 "scope": "unit",
-                                "childId": "b59b-16f9-ba15-fa4c",
+                                "childId": "19eb-6da1-12ff-5535",
                                 "shared": true,
                                 "includeChildSelections": true
                               },
@@ -1376,7 +1408,7 @@
                                 "value": 3,
                                 "field": "selections",
                                 "scope": "unit",
-                                "childId": "b59b-16f9-ba15-fa4c",
+                                "childId": "19eb-6da1-12ff-5535",
                                 "shared": true,
                                 "includeChildSelections": true
                               },
@@ -1576,7 +1608,7 @@
                     "hidden": false,
                     "id": "0472-152c-1118-4eab",
                     "type": "selectionEntry",
-                    "targetId": "ed32-0da6-96ba-315a",
+                    "targetId": "3f09-f9ad-2440-d174",
                     "costs": [
                       {
                         "name": "Points",
@@ -1591,7 +1623,7 @@
                     "hidden": false,
                     "id": "cb7d-0416-a370-516d",
                     "type": "selectionEntry",
-                    "targetId": "774a-6d7d-6012-96c4",
+                    "targetId": "95f0-f427-49c0-c7e6",
                     "costs": [
                       {
                         "name": "Points",
@@ -1606,7 +1638,7 @@
                     "hidden": false,
                     "id": "85fa-da17-688f-5500",
                     "type": "selectionEntry",
-                    "targetId": "c8e3-750b-60bc-f318",
+                    "targetId": "bf27-0933-e41a-a152",
                     "costs": [
                       {
                         "name": "Points",
@@ -1621,7 +1653,7 @@
                     "hidden": false,
                     "id": "f441-7ddf-4a9b-e2c7",
                     "type": "selectionEntry",
-                    "targetId": "9e66-2773-ac37-7fb3",
+                    "targetId": "4794-290c-551d-1aa9",
                     "costs": [
                       {
                         "name": "Points",
@@ -1636,7 +1668,7 @@
                     "hidden": false,
                     "id": "154c-9e74-fbab-b510",
                     "type": "selectionEntry",
-                    "targetId": "2dc6-678c-d159-c946",
+                    "targetId": "0782-556c-5445-66ad",
                     "costs": [
                       {
                         "name": "Points",
@@ -1651,7 +1683,7 @@
                     "hidden": false,
                     "id": "cb7d-1477-c117-2d16",
                     "type": "selectionEntry",
-                    "targetId": "3286-92f2-a6a3-b00a",
+                    "targetId": "ad60-6ada-12a7-f47c",
                     "costs": [
                       {
                         "name": "Points",
@@ -1666,7 +1698,7 @@
                     "hidden": false,
                     "id": "0938-b10c-4b4f-4a0e",
                     "type": "selectionEntry",
-                    "targetId": "9d1a-9908-a202-aa1c",
+                    "targetId": "96af-5a12-180a-5e1a",
                     "costs": [
                       {
                         "name": "Points",
@@ -2134,7 +2166,7 @@
                     "hidden": false,
                     "id": "b051-2844-fa32-1816",
                     "type": "selectionEntry",
-                    "targetId": "7fcb-353e-3973-7af6",
+                    "targetId": "5fc6-b052-616c-bfa7",
                     "costs": [
                       {
                         "name": "Points",
@@ -2149,7 +2181,7 @@
                     "hidden": false,
                     "id": "cead-f711-8356-ae46",
                     "type": "selectionEntry",
-                    "targetId": "cddc-9235-1178-2c86",
+                    "targetId": "10f7-b5ba-5906-a238",
                     "costs": [
                       {
                         "name": "Points",
@@ -2164,7 +2196,7 @@
                     "hidden": false,
                     "id": "685c-953e-e6a0-f1dc",
                     "type": "selectionEntry",
-                    "targetId": "b59b-16f9-ba15-fa4c",
+                    "targetId": "19eb-6da1-12ff-5535",
                     "costs": [
                       {
                         "name": "Points",
@@ -3617,7 +3649,7 @@
                 "hidden": false,
                 "id": "04b0-484d-ae9d-5892",
                 "type": "selectionEntry",
-                "targetId": "774a-6d7d-6012-96c4",
+                "targetId": "95f0-f427-49c0-c7e6",
                 "constraints": [
                   {
                     "type": "min",
@@ -3703,7 +3735,7 @@
                     "hidden": false,
                     "id": "55f9-6023-719e-c095",
                     "type": "selectionEntry",
-                    "targetId": "9ff6-013d-b0fa-889e",
+                    "targetId": "e241-43f4-e619-113b",
                     "sortIndex": 1
                   },
                   {
@@ -3712,7 +3744,7 @@
                     "hidden": false,
                     "id": "c4e4-bd90-dc77-0481",
                     "type": "selectionEntry",
-                    "targetId": "c8e3-750b-60bc-f318",
+                    "targetId": "bf27-0933-e41a-a152",
                     "costs": [
                       {
                         "name": "Points",
@@ -3727,7 +3759,7 @@
                     "hidden": false,
                     "id": "dcef-bda8-913c-453b",
                     "type": "selectionEntry",
-                    "targetId": "2dc6-678c-d159-c946",
+                    "targetId": "0782-556c-5445-66ad",
                     "costs": [
                       {
                         "name": "Points",
@@ -3742,7 +3774,7 @@
                     "hidden": false,
                     "id": "d098-937f-2b33-c5ce",
                     "type": "selectionEntry",
-                    "targetId": "3286-92f2-a6a3-b00a",
+                    "targetId": "ad60-6ada-12a7-f47c",
                     "costs": [
                       {
                         "name": "Points",
@@ -3757,7 +3789,7 @@
                     "hidden": false,
                     "id": "812f-c500-186d-83c8",
                     "type": "selectionEntry",
-                    "targetId": "9d1a-9908-a202-aa1c",
+                    "targetId": "96af-5a12-180a-5e1a",
                     "costs": [
                       {
                         "name": "Points",
@@ -4015,7 +4047,7 @@
                     "hidden": false,
                     "id": "602b-ab67-297f-647c",
                     "type": "selectionEntry",
-                    "targetId": "9ff6-013d-b0fa-889e",
+                    "targetId": "e241-43f4-e619-113b",
                     "sortIndex": 1
                   },
                   {
@@ -4024,7 +4056,7 @@
                     "hidden": false,
                     "id": "40f1-5fc7-9936-f704",
                     "type": "selectionEntry",
-                    "targetId": "c8e3-750b-60bc-f318",
+                    "targetId": "bf27-0933-e41a-a152",
                     "costs": [
                       {
                         "name": "Points",
@@ -4039,7 +4071,7 @@
                     "hidden": false,
                     "id": "5c3c-61e1-c848-66fd",
                     "type": "selectionEntry",
-                    "targetId": "2dc6-678c-d159-c946",
+                    "targetId": "0782-556c-5445-66ad",
                     "costs": [
                       {
                         "name": "Points",
@@ -4054,7 +4086,7 @@
                     "hidden": false,
                     "id": "d0b8-eff3-102d-35fe",
                     "type": "selectionEntry",
-                    "targetId": "3286-92f2-a6a3-b00a",
+                    "targetId": "ad60-6ada-12a7-f47c",
                     "costs": [
                       {
                         "name": "Points",
@@ -4069,7 +4101,7 @@
                     "hidden": false,
                     "id": "8559-d59f-a865-d646",
                     "type": "selectionEntry",
-                    "targetId": "9d1a-9908-a202-aa1c",
+                    "targetId": "96af-5a12-180a-5e1a",
                     "costs": [
                       {
                         "name": "Points",
@@ -4215,7 +4247,7 @@
                 "hidden": false,
                 "id": "7b8a-385f-adea-e8d8",
                 "type": "selectionEntry",
-                "targetId": "5ad4-608b-4bef-daaf",
+                "targetId": "7700-44c7-6f2e-7f6e",
                 "constraints": [
                   {
                     "type": "min",
@@ -4267,7 +4299,7 @@
                 "hidden": false,
                 "id": "b0d4-fb2b-eabb-b572",
                 "type": "selectionEntry",
-                "targetId": "cf24-e8a6-0312-b000",
+                "targetId": "edbe-fcf8-664e-f90f",
                 "constraints": [
                   {
                     "type": "max",
@@ -4293,7 +4325,7 @@
                 "hidden": false,
                 "id": "2f4a-4ced-32ea-6e45",
                 "type": "selectionEntry",
-                "targetId": "c8e3-750b-60bc-f318",
+                "targetId": "bf27-0933-e41a-a152",
                 "constraints": [
                   {
                     "type": "min",
@@ -5199,7 +5231,7 @@
                 "hidden": false,
                 "id": "ad5f-7f8b-f43d-7152",
                 "type": "selectionEntry",
-                "targetId": "b59b-16f9-ba15-fa4c",
+                "targetId": "19eb-6da1-12ff-5535",
                 "constraints": [
                   {
                     "type": "min",
@@ -5545,7 +5577,7 @@
                     "hidden": false,
                     "id": "1145-9012-502d-1323",
                     "type": "selectionEntry",
-                    "targetId": "774a-6d7d-6012-96c4",
+                    "targetId": "95f0-f427-49c0-c7e6",
                     "constraints": [
                       {
                         "type": "max",
@@ -5563,7 +5595,7 @@
                     "hidden": false,
                     "id": "5fc2-b385-9f89-4ab4",
                     "type": "selectionEntry",
-                    "targetId": "8a74-8351-e55e-ab00",
+                    "targetId": "7fd9-bd72-8e7e-e9c6",
                     "constraints": [
                       {
                         "type": "max",
@@ -5581,7 +5613,7 @@
                     "hidden": false,
                     "id": "c98d-a32d-e378-9f8e",
                     "type": "selectionEntry",
-                    "targetId": "ed32-0da6-96ba-315a",
+                    "targetId": "3f09-f9ad-2440-d174",
                     "costs": [
                       {
                         "name": "Points",
@@ -5606,7 +5638,7 @@
                     "hidden": false,
                     "id": "ffaa-773f-e4bd-e198",
                     "type": "selectionEntry",
-                    "targetId": "c8e3-750b-60bc-f318",
+                    "targetId": "bf27-0933-e41a-a152",
                     "costs": [
                       {
                         "name": "Points",
@@ -5631,7 +5663,7 @@
                     "hidden": false,
                     "id": "9e04-75a7-1351-9ec4",
                     "type": "selectionEntry",
-                    "targetId": "2dc6-678c-d159-c946",
+                    "targetId": "0782-556c-5445-66ad",
                     "costs": [
                       {
                         "name": "Points",
@@ -5656,7 +5688,7 @@
                     "hidden": false,
                     "id": "9d52-223b-e665-ed8e",
                     "type": "selectionEntry",
-                    "targetId": "3286-92f2-a6a3-b00a",
+                    "targetId": "ad60-6ada-12a7-f47c",
                     "costs": [
                       {
                         "name": "Points",
@@ -5681,7 +5713,7 @@
                     "hidden": false,
                     "id": "4364-697b-867a-b555",
                     "type": "selectionEntry",
-                    "targetId": "9d1a-9908-a202-aa1c",
+                    "targetId": "96af-5a12-180a-5e1a",
                     "costs": [
                       {
                         "name": "Points",
@@ -6195,7 +6227,7 @@
                         "hidden": false,
                         "id": "3252-64a3-4228-741e",
                         "type": "selectionEntry",
-                        "targetId": "cddc-9235-1178-2c86",
+                        "targetId": "10f7-b5ba-5906-a238",
                         "costs": [
                           {
                             "name": "Points",
@@ -6210,7 +6242,7 @@
                         "hidden": false,
                         "id": "b514-27d6-be60-7b4b",
                         "type": "selectionEntry",
-                        "targetId": "7fcb-353e-3973-7af6",
+                        "targetId": "5fc6-b052-616c-bfa7",
                         "costs": [
                           {
                             "name": "Points",
@@ -6646,7 +6678,7 @@
                     "hidden": false,
                     "id": "cd01-cc4a-6750-2085",
                     "type": "selectionEntry",
-                    "targetId": "774a-6d7d-6012-96c4",
+                    "targetId": "95f0-f427-49c0-c7e6",
                     "costs": [
                       {
                         "name": "Points",
@@ -6661,7 +6693,7 @@
                     "hidden": false,
                     "id": "62de-9577-ac59-612e",
                     "type": "selectionEntry",
-                    "targetId": "ed32-0da6-96ba-315a",
+                    "targetId": "3f09-f9ad-2440-d174",
                     "costs": [
                       {
                         "name": "Points",
@@ -6676,7 +6708,7 @@
                     "hidden": false,
                     "id": "ae68-6200-0eae-981c",
                     "type": "selectionEntry",
-                    "targetId": "c8e3-750b-60bc-f318",
+                    "targetId": "bf27-0933-e41a-a152",
                     "costs": [
                       {
                         "name": "Points",
@@ -6691,7 +6723,7 @@
                     "hidden": false,
                     "id": "f8aa-8a1b-1b1d-8392",
                     "type": "selectionEntry",
-                    "targetId": "2dc6-678c-d159-c946",
+                    "targetId": "0782-556c-5445-66ad",
                     "costs": [
                       {
                         "name": "Points",
@@ -6706,7 +6738,7 @@
                     "hidden": false,
                     "id": "b0d5-7cb9-9a5b-1d7a",
                     "type": "selectionEntry",
-                    "targetId": "3286-92f2-a6a3-b00a",
+                    "targetId": "ad60-6ada-12a7-f47c",
                     "costs": [
                       {
                         "name": "Points",
@@ -6721,7 +6753,7 @@
                     "hidden": false,
                     "id": "da2f-12a1-7505-89cd",
                     "type": "selectionEntry",
-                    "targetId": "9d1a-9908-a202-aa1c",
+                    "targetId": "96af-5a12-180a-5e1a",
                     "costs": [
                       {
                         "name": "Points",
@@ -6736,7 +6768,7 @@
                     "hidden": false,
                     "id": "ecbc-80bd-6f41-b969",
                     "type": "selectionEntry",
-                    "targetId": "9e66-2773-ac37-7fb3",
+                    "targetId": "4794-290c-551d-1aa9",
                     "costs": [
                       {
                         "name": "Points",
@@ -7069,7 +7101,7 @@
                 "hidden": true,
                 "id": "ab5e-f526-4927-d12c",
                 "type": "selectionEntry",
-                "targetId": "87fb-1c6f-cc2c-db1b",
+                "targetId": "5028-c873-d19a-c80a",
                 "constraints": [
                   {
                     "type": "min",
@@ -7266,7 +7298,7 @@
                     "hidden": false,
                     "id": "2891-a58b-a7a6-6f84",
                     "type": "selectionEntry",
-                    "targetId": "8a74-8351-e55e-ab00",
+                    "targetId": "7fd9-bd72-8e7e-e9c6",
                     "costs": [
                       {
                         "name": "Points",
@@ -7291,7 +7323,7 @@
                     "hidden": false,
                     "id": "21d2-0eee-de98-14ca",
                     "type": "selectionEntry",
-                    "targetId": "774a-6d7d-6012-96c4",
+                    "targetId": "95f0-f427-49c0-c7e6",
                     "costs": [
                       {
                         "name": "Points",
@@ -7316,7 +7348,7 @@
                     "hidden": false,
                     "id": "4a27-5201-402d-27ab",
                     "type": "selectionEntry",
-                    "targetId": "ed32-0da6-96ba-315a",
+                    "targetId": "3f09-f9ad-2440-d174",
                     "costs": [
                       {
                         "name": "Points",
@@ -7341,7 +7373,7 @@
                     "hidden": false,
                     "id": "a5e8-81ed-1c2d-f6d7",
                     "type": "selectionEntry",
-                    "targetId": "c8e3-750b-60bc-f318",
+                    "targetId": "bf27-0933-e41a-a152",
                     "costs": [
                       {
                         "name": "Points",
@@ -7366,7 +7398,7 @@
                     "hidden": false,
                     "id": "f5bc-c69f-ad66-92de",
                     "type": "selectionEntry",
-                    "targetId": "2dc6-678c-d159-c946",
+                    "targetId": "0782-556c-5445-66ad",
                     "costs": [
                       {
                         "name": "Points",
@@ -7391,7 +7423,7 @@
                     "hidden": false,
                     "id": "2fcd-efd6-9e74-d4d4",
                     "type": "selectionEntry",
-                    "targetId": "3286-92f2-a6a3-b00a",
+                    "targetId": "ad60-6ada-12a7-f47c",
                     "costs": [
                       {
                         "name": "Points",
@@ -7416,7 +7448,7 @@
                     "hidden": false,
                     "id": "5270-6d5d-b452-f9ef",
                     "type": "selectionEntry",
-                    "targetId": "9d1a-9908-a202-aa1c",
+                    "targetId": "96af-5a12-180a-5e1a",
                     "costs": [
                       {
                         "name": "Points",
@@ -7713,7 +7745,7 @@
                     "value": 3,
                     "field": "selections",
                     "scope": "parent",
-                    "childId": "b59b-16f9-ba15-fa4c",
+                    "childId": "19eb-6da1-12ff-5535",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -7740,7 +7772,7 @@
                 "value": 3,
                 "field": "selections",
                 "scope": "parent",
-                "childId": "b59b-16f9-ba15-fa4c",
+                "childId": "19eb-6da1-12ff-5535",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -8034,7 +8066,7 @@
                 "hidden": true,
                 "id": "e95a-fe1f-d794-be76",
                 "type": "selectionEntry",
-                "targetId": "87fb-1c6f-cc2c-db1b",
+                "targetId": "5028-c873-d19a-c80a",
                 "constraints": [
                   {
                     "type": "min",
@@ -8303,7 +8335,7 @@
                 "hidden": true,
                 "id": "0bbe-988c-a00b-5c36",
                 "type": "selectionEntry",
-                "targetId": "cf24-e8a6-0312-b000",
+                "targetId": "edbe-fcf8-664e-f90f",
                 "constraints": [
                   {
                     "type": "min",
@@ -8361,7 +8393,7 @@
                 "hidden": true,
                 "id": "681c-67bb-e907-621b",
                 "type": "selectionEntry",
-                "targetId": "87fb-1c6f-cc2c-db1b",
+                "targetId": "5028-c873-d19a-c80a",
                 "constraints": [
                   {
                     "type": "min",
@@ -8607,7 +8639,7 @@
                     "hidden": false,
                     "id": "5d02-69d5-53ff-cbdc",
                     "type": "selectionEntry",
-                    "targetId": "8a74-8351-e55e-ab00",
+                    "targetId": "7fd9-bd72-8e7e-e9c6",
                     "costs": [
                       {
                         "name": "Points",
@@ -8632,7 +8664,7 @@
                     "hidden": false,
                     "id": "5d76-3db3-7908-8601",
                     "type": "selectionEntry",
-                    "targetId": "774a-6d7d-6012-96c4",
+                    "targetId": "95f0-f427-49c0-c7e6",
                     "costs": [
                       {
                         "name": "Points",
@@ -8657,7 +8689,7 @@
                     "hidden": false,
                     "id": "33ea-edfb-bbc0-2111",
                     "type": "selectionEntry",
-                    "targetId": "ed32-0da6-96ba-315a",
+                    "targetId": "3f09-f9ad-2440-d174",
                     "costs": [
                       {
                         "name": "Points",
@@ -8682,7 +8714,7 @@
                     "hidden": false,
                     "id": "175a-75e7-6210-d949",
                     "type": "selectionEntry",
-                    "targetId": "c8e3-750b-60bc-f318",
+                    "targetId": "bf27-0933-e41a-a152",
                     "costs": [
                       {
                         "name": "Points",
@@ -8707,7 +8739,7 @@
                     "hidden": false,
                     "id": "d7bd-eb62-38f2-17b5",
                     "type": "selectionEntry",
-                    "targetId": "2dc6-678c-d159-c946",
+                    "targetId": "0782-556c-5445-66ad",
                     "costs": [
                       {
                         "name": "Points",
@@ -8732,7 +8764,7 @@
                     "hidden": false,
                     "id": "325b-2275-408d-94ea",
                     "type": "selectionEntry",
-                    "targetId": "3286-92f2-a6a3-b00a",
+                    "targetId": "ad60-6ada-12a7-f47c",
                     "costs": [
                       {
                         "name": "Points",
@@ -8757,7 +8789,7 @@
                     "hidden": false,
                     "id": "2730-c684-bdb9-7e27",
                     "type": "selectionEntry",
-                    "targetId": "9d1a-9908-a202-aa1c",
+                    "targetId": "96af-5a12-180a-5e1a",
                     "costs": [
                       {
                         "name": "Points",
@@ -8782,7 +8814,7 @@
                     "hidden": false,
                     "id": "34a9-4c92-a5f4-a800",
                     "type": "selectionEntry",
-                    "targetId": "9e66-2773-ac37-7fb3",
+                    "targetId": "4794-290c-551d-1aa9",
                     "costs": [
                       {
                         "name": "Points",
@@ -9240,7 +9272,7 @@
                 "hidden": true,
                 "id": "6c12-5062-0749-837b",
                 "type": "selectionEntry",
-                "targetId": "cf24-e8a6-0312-b000",
+                "targetId": "edbe-fcf8-664e-f90f",
                 "constraints": [
                   {
                     "type": "min",
@@ -9364,7 +9396,7 @@
                 "hidden": true,
                 "id": "18f9-1483-8d1b-a48f",
                 "type": "selectionEntry",
-                "targetId": "87fb-1c6f-cc2c-db1b",
+                "targetId": "5028-c873-d19a-c80a",
                 "constraints": [
                   {
                     "type": "min",
@@ -9675,7 +9707,7 @@
                 "hidden": true,
                 "id": "3dc7-1c7d-e070-dac1",
                 "type": "selectionEntry",
-                "targetId": "cf24-e8a6-0312-b000",
+                "targetId": "edbe-fcf8-664e-f90f",
                 "constraints": [
                   {
                     "type": "min",
@@ -9733,7 +9765,7 @@
                 "hidden": true,
                 "id": "338d-43ba-d027-fc6e",
                 "type": "selectionEntry",
-                "targetId": "87fb-1c6f-cc2c-db1b",
+                "targetId": "5028-c873-d19a-c80a",
                 "constraints": [
                   {
                     "type": "min",
@@ -10203,7 +10235,7 @@
                 "hidden": false,
                 "id": "282f-c8e7-1b3e-bb6c",
                 "type": "selectionEntry",
-                "targetId": "3286-92f2-a6a3-b00a",
+                "targetId": "ad60-6ada-12a7-f47c",
                 "constraints": [
                   {
                     "type": "min",
@@ -11575,7 +11607,7 @@
                     "hidden": false,
                     "id": "b659-1547-fdc6-3cd7",
                     "type": "selectionEntry",
-                    "targetId": "774a-6d7d-6012-96c4",
+                    "targetId": "95f0-f427-49c0-c7e6",
                     "constraints": [
                       {
                         "type": "max",
@@ -11600,7 +11632,7 @@
                     "hidden": false,
                     "id": "36ad-959b-62ed-b4fd",
                     "type": "selectionEntry",
-                    "targetId": "8a74-8351-e55e-ab00",
+                    "targetId": "7fd9-bd72-8e7e-e9c6",
                     "constraints": [
                       {
                         "type": "max",
@@ -11625,7 +11657,7 @@
                     "hidden": false,
                     "id": "dcc1-705b-5c83-b5ac",
                     "type": "selectionEntry",
-                    "targetId": "ed32-0da6-96ba-315a",
+                    "targetId": "3f09-f9ad-2440-d174",
                     "constraints": [
                       {
                         "type": "max",
@@ -11650,7 +11682,7 @@
                     "hidden": false,
                     "id": "a4f5-9151-5ec3-9d0a",
                     "type": "selectionEntry",
-                    "targetId": "c8e3-750b-60bc-f318",
+                    "targetId": "bf27-0933-e41a-a152",
                     "constraints": [
                       {
                         "type": "max",
@@ -11675,7 +11707,7 @@
                     "hidden": false,
                     "id": "33cc-a488-a630-5c38",
                     "type": "selectionEntry",
-                    "targetId": "2dc6-678c-d159-c946",
+                    "targetId": "0782-556c-5445-66ad",
                     "constraints": [
                       {
                         "type": "max",
@@ -11700,7 +11732,7 @@
                     "hidden": false,
                     "id": "9ffc-33fc-f8da-8836",
                     "type": "selectionEntry",
-                    "targetId": "3286-92f2-a6a3-b00a",
+                    "targetId": "ad60-6ada-12a7-f47c",
                     "constraints": [
                       {
                         "type": "max",
@@ -11725,7 +11757,7 @@
                     "hidden": false,
                     "id": "16af-d618-2749-72d8",
                     "type": "selectionEntry",
-                    "targetId": "9d1a-9908-a202-aa1c",
+                    "targetId": "96af-5a12-180a-5e1a",
                     "constraints": [
                       {
                         "type": "max",
@@ -12216,7 +12248,7 @@
                     "hidden": false,
                     "id": "8392-c248-5b57-4a17",
                     "type": "selectionEntry",
-                    "targetId": "7fcb-353e-3973-7af6",
+                    "targetId": "5fc6-b052-616c-bfa7",
                     "costs": [
                       {
                         "name": "Points",
@@ -12261,7 +12293,7 @@
                     "hidden": false,
                     "id": "e97f-330c-96a3-118c",
                     "type": "selectionEntry",
-                    "targetId": "cddc-9235-1178-2c86",
+                    "targetId": "10f7-b5ba-5906-a238",
                     "costs": [
                       {
                         "name": "Points",
@@ -12755,7 +12787,7 @@
                     "hidden": false,
                     "id": "b63c-d2e5-0e66-8f61",
                     "type": "selectionEntry",
-                    "targetId": "cf48-8c4c-66c0-6b4d",
+                    "targetId": "2b2a-9da7-b1b1-a9f7",
                     "costs": [
                       {
                         "name": "Points",
@@ -12785,7 +12817,7 @@
                     "hidden": false,
                     "id": "7b45-7586-644a-8b35",
                     "type": "selectionEntry",
-                    "targetId": "a7e6-8d4e-15b1-f07b",
+                    "targetId": "25a2-0542-18d3-de18",
                     "costs": [
                       {
                         "name": "Points",
@@ -12800,7 +12832,7 @@
                     "hidden": true,
                     "id": "c89f-5e92-696d-d2fa",
                     "type": "selectionEntry",
-                    "targetId": "b9e9-2c52-c63b-3b96",
+                    "targetId": "9e6a-4ab3-72e7-95cb",
                     "costs": [
                       {
                         "name": "Points",
@@ -13552,7 +13584,7 @@
                     "hidden": false,
                     "id": "71b6-efcf-737e-0fb3",
                     "type": "selectionEntry",
-                    "targetId": "a7e6-8d4e-15b1-f07b",
+                    "targetId": "25a2-0542-18d3-de18",
                     "costs": [
                       {
                         "name": "Points",
@@ -20131,7 +20163,7 @@
                 "hidden": false,
                 "id": "136c-c4f0-ab74-0394",
                 "type": "selectionEntry",
-                "targetId": "cf48-8c4c-66c0-6b4d",
+                "targetId": "2b2a-9da7-b1b1-a9f7",
                 "costs": [
                   {
                     "name": "Points",
@@ -20950,7 +20982,7 @@
                 "hidden": false,
                 "id": "49b6-aee2-2ab4-d079",
                 "type": "selectionEntry",
-                "targetId": "7fcb-353e-3973-7af6",
+                "targetId": "5fc6-b052-616c-bfa7",
                 "costs": [
                   {
                     "name": "Points",
@@ -20965,7 +20997,7 @@
                 "hidden": false,
                 "id": "5f76-eedf-eddf-182f",
                 "type": "selectionEntry",
-                "targetId": "cddc-9235-1178-2c86",
+                "targetId": "10f7-b5ba-5906-a238",
                 "costs": [
                   {
                     "name": "Points",
@@ -20980,7 +21012,7 @@
                 "hidden": false,
                 "id": "c382-1771-f6eb-072a",
                 "type": "selectionEntry",
-                "targetId": "b59b-16f9-ba15-fa4c",
+                "targetId": "19eb-6da1-12ff-5535",
                 "costs": [
                   {
                     "name": "Points",
@@ -21208,7 +21240,7 @@
                     "hidden": false,
                     "id": "6f64-70df-2da2-ef5e",
                     "type": "selectionEntry",
-                    "targetId": "7fcb-353e-3973-7af6",
+                    "targetId": "5fc6-b052-616c-bfa7",
                     "costs": [
                       {
                         "name": "Points",
@@ -21223,7 +21255,7 @@
                     "hidden": false,
                     "id": "bc71-bae2-8937-7481",
                     "type": "selectionEntry",
-                    "targetId": "cddc-9235-1178-2c86",
+                    "targetId": "10f7-b5ba-5906-a238",
                     "costs": [
                       {
                         "name": "Points",
@@ -21238,7 +21270,7 @@
                     "hidden": false,
                     "id": "dc11-854a-c1a5-6f2c",
                     "type": "selectionEntry",
-                    "targetId": "b59b-16f9-ba15-fa4c",
+                    "targetId": "19eb-6da1-12ff-5535",
                     "costs": [
                       {
                         "name": "Points",
@@ -21374,7 +21406,7 @@
                     "hidden": false,
                     "id": "08b4-85d4-3640-1129",
                     "type": "selectionEntry",
-                    "targetId": "b59b-16f9-ba15-fa4c",
+                    "targetId": "19eb-6da1-12ff-5535",
                     "costs": [
                       {
                         "name": "Points",
@@ -21417,7 +21449,7 @@
                     "hidden": false,
                     "id": "bae1-af55-3c55-8028",
                     "type": "selectionEntry",
-                    "targetId": "cddc-9235-1178-2c86",
+                    "targetId": "10f7-b5ba-5906-a238",
                     "costs": [
                       {
                         "name": "Points",
@@ -21432,7 +21464,7 @@
                     "hidden": false,
                     "id": "e508-ad9b-52aa-4417",
                     "type": "selectionEntry",
-                    "targetId": "7fcb-353e-3973-7af6",
+                    "targetId": "5fc6-b052-616c-bfa7",
                     "costs": [
                       {
                         "name": "Points",
@@ -21548,7 +21580,7 @@
             "hidden": true,
             "id": "5511-1d90-d55c-b445",
             "type": "selectionEntry",
-            "targetId": "87fb-1c6f-cc2c-db1b",
+            "targetId": "5028-c873-d19a-c80a",
             "constraints": [
               {
                 "type": "min",
@@ -21922,7 +21954,7 @@
                 "hidden": false,
                 "id": "2b47-5498-1111-f98b",
                 "type": "selectionEntry",
-                "targetId": "cf48-8c4c-66c0-6b4d",
+                "targetId": "2b2a-9da7-b1b1-a9f7",
                 "costs": [
                   {
                     "name": "Points",
@@ -22051,7 +22083,7 @@
             "hidden": true,
             "id": "ebd0-7101-40a1-1465",
             "type": "selectionEntry",
-            "targetId": "87fb-1c6f-cc2c-db1b",
+            "targetId": "5028-c873-d19a-c80a",
             "constraints": [
               {
                 "type": "min",

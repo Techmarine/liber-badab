@@ -11,510 +11,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Bolter",
-        "hidden": false,
-        "id": "7fd9-bd72-8e7e-e9c6",
-        "profiles": [
-          {
-            "name": "Bolter",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "8bf7-6b4c-5c13-b4bf",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "5"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Rapid Fire"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": ""
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "3d8f-7be0-fd11-80d5",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Storm Bolter",
-        "hidden": false,
-        "id": "b584-e06b-ebeb-4d04",
-        "profiles": [
-          {
-            "name": "Storm Bolter",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "2ba0-9eb3-56af-bb66",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "5"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": ""
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "3e42-7487-2c0a-1dec",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Combi-flamer",
-        "hidden": false,
-        "id": "0a91-723e-9342-a64b",
-        "infoLinks": [
-          {
-            "name": "Bolter (Primary)",
-            "id": "3c89-ec04-f6ca-5945",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0510-8ac8-5352-169f"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Flamer (Secondary)",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "dc13-c2c6-9d1e-f46d",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "T"
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "5"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": ""
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "4686-7d94-a2db-4f84",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Combi-melta",
-        "hidden": false,
-        "id": "ab66-c50b-b845-20da",
-        "infoLinks": [
-          {
-            "name": "Armourbane",
-            "id": "0d6f-9224-e514-d9a1",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a1f5-fb7a-bbf0-a720"
-          },
-          {
-            "name": "One Shot",
-            "id": "7280-389b-0aec-8710",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee53-4831-a3cf-1cdb"
-          },
-          {
-            "name": "Bolter (Primary)",
-            "id": "c93f-a764-4e02-204e",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0510-8ac8-5352-169f"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Meltagun (Secondary)",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "fbe9-18ca-a705-d033",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "12\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "1"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Armourbane (Melta), One Shot"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "f2e3-7aa8-4706-4bbc",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Bolt Pistol",
-        "hidden": false,
-        "id": "95f0-f427-49c0-c7e6",
-        "profiles": [
-          {
-            "name": "Bolt Pistol",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "b600-6ab8-77c0-cdff",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "12\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "5"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Pistol 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": ""
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "b99e-5249-932c-e122",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Combi-plasma",
-        "hidden": false,
-        "id": "5237-5fab-96cd-13a9",
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "8b66-b662-b269-7366",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "4+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Gets Hot",
-            "id": "83e0-1d0f-f400-5463",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "c7e6-c0f3-d0e4-4238"
-          },
-          {
-            "name": "One Shot",
-            "id": "8211-646f-4d2c-aeaa",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee53-4831-a3cf-1cdb"
-          },
-          {
-            "name": "Bolter (Primary)",
-            "id": "eddf-b726-6e9c-a004",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0510-8ac8-5352-169f"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Plasma gun (Secondary)",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "e41c-661f-f63f-5604",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Rapid Fire"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (4+), Gets Hot, One Shot"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "7f43-ca4d-ba5f-296f",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Combi-grenade launcher",
-        "hidden": false,
-        "id": "b373-4fd7-8f20-a4d8",
-        "infoLinks": [
-          {
-            "name": "Blast",
-            "id": "d823-bf3a-df60-20dc",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "dd6e-d5d4-9bb3-d2e4",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "3\"",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Pinning",
-            "id": "b995-bcc8-5a83-379d",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cc0-966b-ab26-0aa7"
-          },
-          {
-            "name": "Bolter (Primary)",
-            "id": "2047-6b58-7381-ab12",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0510-8ac8-5352-169f"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Grenade Launcher (Secondary) - Frag",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "f3a4-9e7e-9ab6-e81f",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "3"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "6"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Blast (3\"), Pinning"
-              }
-            ]
-          },
-          {
-            "name": "Grenade Launcher (Secondary) - Krak",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "ac99-cad6-c4cc-5bf6",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "5"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": ""
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "efa9-862a-5363-5dc5",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Artificer Armour",
         "hidden": false,
         "id": "2004-7466-45c8-bca8",
@@ -553,208 +49,6 @@
                 "name": "Description",
                 "typeId": "73f7-995c-ccc1-9f39",
                 "$text": "A model with an iron halo gains a 4+ Invulnerable Save."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Melta Bombs",
-        "hidden": false,
-        "id": "edbe-fcf8-664e-f90f",
-        "infoLinks": [
-          {
-            "name": "Detonation",
-            "id": "7a39-39c5-9f7c-1682",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "26f7-bec6-599d-285f"
-          },
-          {
-            "name": "Unwieldy",
-            "id": "3e84-4efc-af91-26fb",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cfea-a7be-fbea-da53"
-          },
-          {
-            "name": "Armourbane",
-            "id": "11e7-aedb-fe93-1e8e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a1f5-fb7a-bbf0-a720"
-          },
-          {
-            "name": "Instant Death",
-            "id": "0256-f05a-ddd3-431e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0561-70c5-a18f-6672"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Melta Bomb",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "f7eb-9a1d-2e63-f270",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "1"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Detonation, Unwieldy, Armourbane (Melee), Instant Death\n"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "d12e-60c0-204e-bbd7",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Plasma Pistol",
-        "hidden": false,
-        "id": "3f09-f9ad-2440-d174",
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "27f2-5d33-bf22-ce63",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "4+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Gets Hot",
-            "id": "d7a2-eb16-3255-b6ad",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "c7e6-c0f3-d0e4-4238"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Plasma Pistol",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "e917-947c-f460-bc54",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "12\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Pistol 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (4+), Gets Hot"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "625a-8f46-3c4e-042a",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Hand Flamer",
-        "hidden": false,
-        "id": "f5be-750d-a6c9-1b03",
-        "profiles": [
-          {
-            "name": "Hand Flamer",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "d4bd-9242-b78b-dc69",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "T"
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "3"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Pistol 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": ""
               }
             ]
           }
@@ -823,690 +117,6 @@
                 "$text": "Rending (3+), Master-crafted"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Chainaxe",
-        "hidden": false,
-        "id": "8680-81d2-41f9-75a8",
-        "infoLinks": [
-          {
-            "name": "Shred",
-            "id": "7885-fa3b-d139-89d4",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a666-0970-28e2-7c48"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Chainaxe",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "37ad-0376-f1c7-849c",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Shred"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "4999-4a84-b43e-ed2d",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Charnabal Sabre",
-        "hidden": false,
-        "id": "d717-73a5-ee89-a525",
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "1d4a-52c3-a858-556d",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "5+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Duellist’s Edge",
-            "id": "d0c4-b8c4-4f86-420a",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "da29-5ae7-e8e9-a008",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Charnabal Sabre",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "d27e-0278-1616-01e1",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "User"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (5+), Duellist’s Edge (1)"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "fc3e-3620-e65c-1c1e",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Charnabal Tabar",
-        "hidden": false,
-        "id": "5745-2436-2e82-63b8",
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "d06c-b646-bc37-a6f5",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "6+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Duellist’s Edge",
-            "id": "726f-406a-132b-e220",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "da29-5ae7-e8e9-a008",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Charnabal Tabar",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "189f-b76c-2011-7b83",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "+2"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (6+), Duellist’s Edge (1)"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "e7d1-92cd-ab1e-580d",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Charnabal Glaive",
-        "hidden": false,
-        "id": "5eb4-d251-282e-b20e",
-        "infoLinks": [
-          {
-            "name": "Duellist’s Edge",
-            "id": "f7fe-d99b-1e26-87f1",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "da29-5ae7-e8e9-a008",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "2",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Two-handed",
-            "id": "3fbb-2e63-56a1-2863",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9c96-f071-03a6-7593"
-          },
-          {
-            "name": "Breaching",
-            "id": "c50f-92b6-4dbd-5e0c",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "5+",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Charnabal Glaive",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "205e-67a5-92c6-1a54",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (5+), Duellist’s Edge (2), Two-handed"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "9f4d-d6e5-1587-d2fc",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Sword",
-        "hidden": false,
-        "id": "96af-5a12-180a-5e1a",
-        "infoLinks": [
-          {
-            "name": "Rending",
-            "id": "eb5c-b079-2844-df47",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2508-8e95-11c7-6bd6",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "6+",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Power Sword",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "846a-a4bc-c73b-d7e4",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "User"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Rending (6+)"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "43e0-2f1a-b236-c42a",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Axe",
-        "hidden": false,
-        "id": "bf27-0933-e41a-a152",
-        "infoLinks": [
-          {
-            "name": "Unwieldy",
-            "id": "f16f-8a2a-4f88-6035",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cfea-a7be-fbea-da53"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Power Axe",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "e078-9800-1b51-d195",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Unwieldy"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "958a-3b2e-6fef-7039",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Maul",
-        "hidden": false,
-        "id": "ad60-6ada-12a7-f47c",
-        "profiles": [
-          {
-            "name": "Power Maul",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "cf56-3311-d788-ca3e",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+2"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": ""
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "7994-3056-9fde-14ce",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Lance",
-        "hidden": false,
-        "id": "0782-556c-5445-66ad",
-        "infoLinks": [
-          {
-            "name": "Reach",
-            "id": "5a22-fce4-84b2-ac7a",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "3be4-de2e-abce-247a",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Power Lance",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "8c19-4032-aad1-1165",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Reach (1)"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "3bdb-c8a8-c4ec-65ca",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Power Fist",
-        "hidden": false,
-        "id": "4794-290c-551d-1aa9",
-        "infoLinks": [
-          {
-            "name": "Unwieldy",
-            "id": "0b81-d2e0-2806-da12",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cfea-a7be-fbea-da53"
-          },
-          {
-            "name": "Specialist Weapon",
-            "id": "4071-1912-b177-da63",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "8bee-1459-6f2d-6ab6"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Power Fist",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "85be-b122-1c93-3d37",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "×2"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Unwieldy, Specialist Weapon"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "f3eb-f6d7-090a-0291",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Lightning Claw",
-        "hidden": false,
-        "id": "19f4-1582-f20d-03ba",
-        "infoLinks": [
-          {
-            "name": "Lightning Claw",
-            "id": "13cc-fe1c-9ea8-6397",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "2615-31a6-099a-906d"
-          },
-          {
-            "name": "Shred",
-            "id": "ffbe-736d-3fe7-73bb",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a666-0970-28e2-7c48"
-          },
-          {
-            "name": "Rending",
-            "id": "61c9-08f9-9a7a-a3b8",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2508-8e95-11c7-6bd6",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "6+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Specialist Weapon",
-            "id": "0697-0d5e-419a-7187",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "8bee-1459-6f2d-6ab6"
           }
         ]
       },
@@ -2436,11 +1046,56 @@
               {
                 "import": true,
                 "name": "Death Mask",
-                "hidden": false,
+                "hidden": true,
                 "id": "0ba7-1b42-9cb5-3cb4",
                 "type": "selectionEntry",
-                "targetId": "5566-b61d-2f7d-b217",
-                "sortIndex": 7
+                "targetId": "8db8-28a3-1a43-1514",
+                "sortIndex": 7,
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "99cb-a712-6045-b9da"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1f40-fe51-5c23-c07e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "99cb-a712-6045-b9da"
+                  }
+                ]
               },
               {
                 "import": true,
@@ -2915,18 +1570,78 @@
                   {
                     "import": true,
                     "name": "Encarmine Axe",
-                    "hidden": false,
+                    "hidden": true,
                     "id": "7fb3-0602-c11d-44e5",
                     "type": "selectionEntry",
-                    "targetId": "f0d3-3459-fbf1-8af4"
+                    "targetId": "ddf2-cfc8-41f6-1126",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Master-crafted",
+                        "hidden": false,
+                        "id": "9280-cfc4-9a14-174b",
+                        "type": "selectionEntry",
+                        "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ]
                   },
                   {
                     "import": true,
                     "name": "Encarmine Sword",
-                    "hidden": false,
+                    "hidden": true,
                     "id": "be49-9acc-dc5a-cfff",
                     "type": "selectionEntry",
-                    "targetId": "219f-5562-6eaf-590c"
+                    "targetId": "3181-4f88-191c-a797",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -3406,15 +2121,6 @@
               },
               {
                 "import": true,
-                "name": "Death Mask",
-                "hidden": false,
-                "id": "fbb9-f91c-fc5c-c3b6",
-                "type": "selectionEntry",
-                "targetId": "5566-b61d-2f7d-b217",
-                "sortIndex": 8
-              },
-              {
-                "import": true,
                 "name": "Combat Shield",
                 "hidden": false,
                 "id": "f1e7-d3a3-63b5-c88d",
@@ -3494,6 +2200,60 @@
                 "type": "selectionEntry",
                 "targetId": "b2ba-78dc-1e8e-3a6a",
                 "sortIndex": 9
+              },
+              {
+                "import": true,
+                "name": "Death Mask",
+                "hidden": true,
+                "id": "1026-1b79-be82-b54f",
+                "type": "selectionEntry",
+                "targetId": "8db8-28a3-1a43-1514",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "0460-49c6-72c0-a8b7"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1f40-fe51-5c23-c07e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0460-49c6-72c0-a8b7"
+                  }
+                ],
+                "sortIndex": 8
               }
             ],
             "selectionEntryGroups": [
@@ -4902,10 +3662,10 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
+                        "hidden": true,
                         "id": "bff3-6854-8ae0-3a0e",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d",
+                        "targetId": "7ef3-6c9b-2b53-81ac",
                         "entryLinks": [
                           {
                             "import": true,
@@ -4914,6 +3674,31 @@
                             "id": "c3d0-1c88-1831-36d7",
                             "type": "selectionEntry",
                             "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
                           }
                         ]
                       }
@@ -4967,22 +3752,6 @@
                       },
                       {
                         "import": true,
-                        "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "0c4a-5f0d-b24b-d56b",
-                        "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
-                      },
-                      {
-                        "import": true,
-                        "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "a9b8-d258-8231-b0b7",
-                        "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
-                      },
-                      {
-                        "import": true,
                         "name": "Legatine Axe",
                         "hidden": true,
                         "id": "0238-4bf0-45ea-838a",
@@ -5009,10 +3778,10 @@
                       {
                         "import": true,
                         "name": "Chainaxe",
-                        "hidden": false,
+                        "hidden": true,
                         "id": "88cf-2f9f-7e13-c6bb",
                         "type": "selectionEntry",
-                        "targetId": "2732-ddfd-f72e-3cf9",
+                        "targetId": "8680-81d2-41f9-75a8",
                         "entryLinks": [
                           {
                             "import": true,
@@ -5021,6 +3790,100 @@
                             "id": "0556-6a35-90b5-7eb1",
                             "type": "selectionEntry",
                             "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "9372-9faa-67e3-c89d",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Axe",
+                        "hidden": true,
+                        "id": "8b9c-5ec7-2c42-8bd0",
+                        "type": "selectionEntry",
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "54f3-0499-3d2b-08ab",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Sword",
+                        "hidden": true,
+                        "id": "437e-64d4-28f8-7e70",
+                        "type": "selectionEntry",
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
                           }
                         ]
                       }
@@ -5547,75 +4410,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "ff01-32c4-e72a-2131"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Astartes Shotgun",
-        "hidden": false,
-        "id": "4bdc-cbf2-100e-e264",
-        "infoLinks": [
-          {
-            "name": "Concussive",
-            "id": "8b0b-14fe-69e4-f0aa",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "173b-6e52-4626-a146",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Astartes Shotgun",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "a56b-6ced-a722-41fd",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "12\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Concussive (1)"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "079d-99e0-7529-b1a4",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -7387,68 +6181,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Servo-arm",
-        "hidden": false,
-        "id": "7700-44c7-6f2e-7f6e",
-        "profiles": [
-          {
-            "name": "Servo-arm",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "c1ce-0d29-2535-a619",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Unwieldy"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Unwieldy",
-            "id": "de84-8487-bb99-94ac",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cfea-a7be-fbea-da53"
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "47e2-3476-4509-47bd",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Corposant Stave",
         "hidden": false,
         "id": "bbda-3c7e-d17a-3b35",
@@ -8167,323 +6899,6 @@
                 "includeChildSelections": true
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Plasma Cannon",
-        "hidden": false,
-        "id": "9e6a-4ab3-72e7-95cb",
-        "profiles": [
-          {
-            "name": "Plasma Cannon",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "b885-9a2c-38bd-1676",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "36\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (4+), Gets Hot, Blast (3\")"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "63c0-0a8c-8651-0e68",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "4+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Gets Hot",
-            "id": "2db0-cbd2-5af7-a592",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "c7e6-c0f3-d0e4-4238"
-          },
-          {
-            "name": "Blast",
-            "id": "79d1-d782-ddfc-75e6",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "dd6e-d5d4-9bb3-d2e4",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "3\"",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "f46c-bd52-37e8-4c5d",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Multi-melta",
-        "hidden": false,
-        "id": "25a2-0542-18d3-de18",
-        "profiles": [
-          {
-            "name": "Multi-melta",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "a2b9-57cf-9193-1ede",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "1"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Armourbane (Melta), Twin-linked"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Armourbane",
-            "id": "9410-ff7e-3396-efb4",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a1f5-fb7a-bbf0-a720"
-          },
-          {
-            "name": "Twin-linked",
-            "id": "b33e-ccf4-cec3-00a1",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "23d2-bdd7-3df1-be63"
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "002c-1566-e4db-ebe4",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Missile Launcher",
-        "hidden": false,
-        "id": "2b2a-9da7-b1b1-a9f7",
-        "profiles": [
-          {
-            "name": "Missile Launcher - Flak",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "4399-3b40-d702-4b20",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Skyfire"
-              }
-            ]
-          },
-          {
-            "name": "Missile Launcher - Frag",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "7b72-072d-8eaf-0823",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "6"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Blast (3\"), Pinning"
-              }
-            ]
-          },
-          {
-            "name": "Missile Launcher - Krak",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "9b8a-be2a-d3ca-ffb0",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "48\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Sunder"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Blast",
-            "id": "d0bd-7d46-c268-1128",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "dd6e-d5d4-9bb3-d2e4",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "3+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Pinning",
-            "id": "c058-974f-5c9a-2a3a",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cc0-966b-ab26-0aa7"
-          },
-          {
-            "name": "Sunder",
-            "id": "6a39-f608-fbe2-46ea",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1692-e368-b877-e324"
-          },
-          {
-            "name": "Skyfire",
-            "id": "9328-7155-4ab7-f1f9",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "621c-c0ab-b8d5-916a"
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "386c-1701-005c-b966",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -9517,10 +7932,28 @@
                   {
                     "import": true,
                     "name": "Chainaxe",
-                    "hidden": false,
+                    "hidden": true,
                     "id": "f5cc-0c9f-9e46-0c7e",
                     "type": "selectionEntry",
-                    "targetId": "2732-ddfd-f72e-3cf9"
+                    "targetId": "8680-81d2-41f9-75a8",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "sortIndex": 3,
@@ -10816,10 +9249,28 @@
                   {
                     "import": true,
                     "name": "Chainaxe",
-                    "hidden": false,
+                    "hidden": true,
                     "id": "14d7-43aa-bdc7-e1d8",
                     "type": "selectionEntry",
-                    "targetId": "2732-ddfd-f72e-3cf9"
+                    "targetId": "8680-81d2-41f9-75a8",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "modifierGroups": [
@@ -12647,68 +11098,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Bayonet",
-        "hidden": false,
-        "id": "5028-c873-d19a-c80a",
-        "profiles": [
-          {
-            "name": "Bayonet",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "dbba-6595-1d38-265d",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Two-handed"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Two-handed",
-            "id": "0ca8-4b79-1c38-a1e2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9c96-f071-03a6-7593"
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "122f-055b-d8be-b48f",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Chain Bayonet",
         "hidden": false,
         "id": "782a-0f6c-2c4c-ce28",
@@ -13617,10 +12006,10 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
+                        "hidden": true,
                         "id": "0404-2832-e3b7-f504",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d",
+                        "targetId": "7ef3-6c9b-2b53-81ac",
                         "entryLinks": [
                           {
                             "import": true,
@@ -13629,6 +12018,31 @@
                             "id": "0084-6232-ea24-1b7e",
                             "type": "selectionEntry",
                             "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
                           }
                         ]
                       }
@@ -13672,22 +12086,6 @@
                       },
                       {
                         "import": true,
-                        "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "7732-8e7a-8657-85bc",
-                        "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
-                      },
-                      {
-                        "import": true,
-                        "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "4a40-fa4d-f7d4-32b1",
-                        "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
-                      },
-                      {
-                        "import": true,
                         "name": "Legatine Axe",
                         "hidden": true,
                         "id": "d0b5-3307-85c8-b573",
@@ -13714,10 +12112,10 @@
                       {
                         "import": true,
                         "name": "Chainaxe",
-                        "hidden": false,
+                        "hidden": true,
                         "id": "2772-4b97-8059-5493",
                         "type": "selectionEntry",
-                        "targetId": "2732-ddfd-f72e-3cf9",
+                        "targetId": "8680-81d2-41f9-75a8",
                         "entryLinks": [
                           {
                             "import": true,
@@ -13726,6 +12124,100 @@
                             "id": "fa3e-7cd1-d4a2-6ca4",
                             "type": "selectionEntry",
                             "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "9372-9faa-67e3-c89d",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Axe",
+                        "hidden": true,
+                        "id": "5aa3-1cea-7e10-1b2d",
+                        "type": "selectionEntry",
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "0160-23c6-56b9-992d",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Sword",
+                        "hidden": true,
+                        "id": "5833-18e0-206f-7049",
+                        "type": "selectionEntry",
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
                           }
                         ]
                       }
@@ -14070,15 +12562,6 @@
               },
               {
                 "import": true,
-                "name": "Death Mask",
-                "hidden": false,
-                "id": "a09f-9b27-0d42-bed4",
-                "type": "selectionEntry",
-                "targetId": "5566-b61d-2f7d-b217",
-                "sortIndex": 9
-              },
-              {
-                "import": true,
                 "name": "Aetheling",
                 "hidden": true,
                 "id": "4772-4228-ab35-93e1",
@@ -14103,6 +12586,60 @@
                 "type": "selectionEntry",
                 "targetId": "b2ba-78dc-1e8e-3a6a",
                 "sortIndex": 11
+              },
+              {
+                "import": true,
+                "name": "Death Mask",
+                "hidden": true,
+                "id": "5c70-114f-12c7-eebb",
+                "type": "selectionEntry",
+                "targetId": "8db8-28a3-1a43-1514",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "b1a8-40f1-c1f1-a613"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1f40-fe51-5c23-c07e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b1a8-40f1-c1f1-a613"
+                  }
+                ],
+                "sortIndex": 9
               }
             ],
             "profiles": [
@@ -14329,21 +12866,66 @@
               },
               {
                 "import": true,
-                "name": "Death Mask",
-                "hidden": false,
-                "id": "2a51-5de8-80c3-3282",
-                "type": "selectionEntry",
-                "targetId": "5566-b61d-2f7d-b217",
-                "sortIndex": 7
-              },
-              {
-                "import": true,
                 "name": "Mantle of the Elder Drake",
                 "hidden": false,
                 "id": "eefb-5e9b-3802-1231",
                 "type": "selectionEntry",
                 "targetId": "b2ba-78dc-1e8e-3a6a",
                 "sortIndex": 8
+              },
+              {
+                "import": true,
+                "name": "Death Mask",
+                "hidden": true,
+                "id": "9ce0-ab88-032d-bd13",
+                "type": "selectionEntry",
+                "targetId": "8db8-28a3-1a43-1514",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 15
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "c3ba-8fa2-913b-20f3"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1f40-fe51-5c23-c07e",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c3ba-8fa2-913b-20f3"
+                  }
+                ],
+                "sortIndex": 7
               }
             ],
             "selectionEntryGroups": [
@@ -15262,22 +13844,6 @@
                   },
                   {
                     "import": true,
-                    "name": "Encarmine Axe",
-                    "hidden": false,
-                    "id": "553e-f633-fbe4-f5c0",
-                    "type": "selectionEntry",
-                    "targetId": "f0d3-3459-fbf1-8af4"
-                  },
-                  {
-                    "import": true,
-                    "name": "Encarmine Sword",
-                    "hidden": false,
-                    "id": "cc01-c329-528d-5bfb",
-                    "type": "selectionEntry",
-                    "targetId": "219f-5562-6eaf-590c"
-                  },
-                  {
-                    "import": true,
                     "name": "Legatine Axe",
                     "hidden": true,
                     "id": "6dc1-ae42-d581-bb45",
@@ -15298,6 +13864,72 @@
                         "id": "9bf2-4020-fbc3-18e1",
                         "type": "selectionEntry",
                         "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Encarmine Axe",
+                    "hidden": true,
+                    "id": "0dbe-e68a-47e1-9c32",
+                    "type": "selectionEntry",
+                    "targetId": "ddf2-cfc8-41f6-1126",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Encarmine Sword",
+                    "hidden": true,
+                    "id": "fc7b-7ba1-e62c-7bfd",
+                    "type": "selectionEntry",
+                    "targetId": "3181-4f88-191c-a797",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -19658,18 +18290,68 @@
                   {
                     "import": true,
                     "name": "Encarmine Axe",
-                    "hidden": false,
-                    "id": "f637-fd2e-3d69-43a1",
+                    "hidden": true,
+                    "id": "cd42-a83c-7eb3-460d",
                     "type": "selectionEntry",
-                    "targetId": "f0d3-3459-fbf1-8af4"
+                    "targetId": "ddf2-cfc8-41f6-1126",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
                   },
                   {
                     "import": true,
                     "name": "Encarmine Sword",
-                    "hidden": false,
-                    "id": "3f1e-ebd1-f3f0-28b3",
+                    "hidden": true,
+                    "id": "b1c2-39dd-2afe-962c",
                     "type": "selectionEntry",
-                    "targetId": "219f-5562-6eaf-590c"
+                    "targetId": "3181-4f88-191c-a797",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -21847,7 +20529,25 @@
                         "hidden": false,
                         "id": "8f25-8838-9cf1-6f63",
                         "type": "selectionEntry",
-                        "targetId": "2732-ddfd-f72e-3cf9"
+                        "targetId": "8680-81d2-41f9-75a8",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "9372-9faa-67e3-c89d",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       },
                       {
                         "import": true,
@@ -22651,10 +21351,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
+                        "hidden": true,
                         "id": "7152-82b6-af7c-104a",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   },
@@ -22677,22 +21402,6 @@
                     "entryLinks": [
                       {
                         "import": true,
-                        "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "cbe7-01a2-6a83-a2a5",
-                        "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
-                      },
-                      {
-                        "import": true,
-                        "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "3056-ab81-2bd7-cb5d",
-                        "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
-                      },
-                      {
-                        "import": true,
                         "name": "Chainsword",
                         "hidden": false,
                         "id": "42c2-cf85-9a06-f618",
@@ -22713,10 +21422,94 @@
                       {
                         "import": true,
                         "name": "Chainaxe",
-                        "hidden": false,
+                        "hidden": true,
                         "id": "c528-94a1-9d1e-f541",
                         "type": "selectionEntry",
-                        "targetId": "2732-ddfd-f72e-3cf9"
+                        "targetId": "8680-81d2-41f9-75a8",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "9372-9faa-67e3-c89d",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Axe",
+                        "hidden": true,
+                        "id": "8c5d-9710-8d84-992c",
+                        "type": "selectionEntry",
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Sword",
+                        "hidden": true,
+                        "id": "e491-378c-9891-c663",
+                        "type": "selectionEntry",
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -24744,27 +23537,95 @@
                   },
                   {
                     "import": true,
-                    "name": "Encarmine Axe",
-                    "hidden": false,
-                    "id": "6b8b-ba98-7396-d89c",
+                    "name": "Chainaxe",
+                    "hidden": true,
+                    "id": "8a9b-55be-4f83-260c",
                     "type": "selectionEntry",
-                    "targetId": "f0d3-3459-fbf1-8af4"
+                    "targetId": "8680-81d2-41f9-75a8",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Encarmine Axe",
+                    "hidden": true,
+                    "id": "eadd-1923-7721-3a49",
+                    "type": "selectionEntry",
+                    "targetId": "ddf2-cfc8-41f6-1126",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ]
                   },
                   {
                     "import": true,
                     "name": "Encarmine Sword",
-                    "hidden": false,
-                    "id": "a3dd-9fbe-7c1b-1cd9",
+                    "hidden": true,
+                    "id": "b4f7-e9cb-ef59-31ce",
                     "type": "selectionEntry",
-                    "targetId": "219f-5562-6eaf-590c"
-                  },
-                  {
-                    "import": true,
-                    "name": "Chainaxe",
-                    "hidden": false,
-                    "id": "8a9b-55be-4f83-260c",
-                    "type": "selectionEntry",
-                    "targetId": "2732-ddfd-f72e-3cf9"
+                    "targetId": "3181-4f88-191c-a797",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "defaultSelectionEntryId": "2a67-8fd6-9213-ef72",
@@ -25363,10 +24224,35 @@
                   {
                     "import": true,
                     "name": "Angelus Boltgun",
-                    "hidden": false,
-                    "id": "ec21-62dd-022e-8fd0",
+                    "hidden": true,
+                    "id": "d4c6-e659-c2f1-007a",
                     "type": "selectionEntry",
-                    "targetId": "d7bf-3a6e-1874-661d"
+                    "targetId": "7ef3-6c9b-2b53-81ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -25405,10 +24291,35 @@
                   {
                     "import": true,
                     "name": "Angelus Boltgun",
-                    "hidden": false,
-                    "id": "daa2-a08c-4a63-008f",
+                    "hidden": true,
+                    "id": "0a38-8c69-dedf-0301",
                     "type": "selectionEntry",
-                    "targetId": "d7bf-3a6e-1874-661d"
+                    "targetId": "7ef3-6c9b-2b53-81ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -25559,151 +24470,6 @@
                 "$text": "Tempest, Kraken and Vengeance Rounds may be used in Bolters, Storm Bolters and the Bolter half of any combiweapon."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Meltagun",
-        "hidden": false,
-        "id": "5fc6-b052-616c-bfa7",
-        "profiles": [
-          {
-            "name": "Meltagun",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "8d05-c2e2-16a7-542c",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "12\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "1"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Armourbane (Melta)"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Armourbane",
-            "id": "f22e-d17c-43da-ef25",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a1f5-fb7a-bbf0-a720",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Melta",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "ef39-b31f-548d-481f",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Plasma Gun",
-        "hidden": false,
-        "id": "10f7-b5ba-5906-a238",
-        "profiles": [
-          {
-            "name": "Plasma Gun",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "3f50-ee26-e867-087a",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "7"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Rapid Fire"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (4+), Gets Hot"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "a8b8-dc9a-389a-ca64",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "4+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Gets Hot",
-            "id": "696f-543d-56b9-f62c",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "c7e6-c0f3-d0e4-4238"
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "aea2-4e7b-78c3-87b0",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
           }
         ]
       },
@@ -27916,10 +26682,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "d312-8a65-d4d4-9b46",
+                        "hidden": true,
+                        "id": "9279-f20e-94ec-d859",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -28157,18 +26948,68 @@
                       {
                         "import": true,
                         "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "6ea7-160d-a373-9b99",
+                        "hidden": true,
+                        "id": "a06d-f3eb-6b5a-e395",
                         "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
                       },
                       {
                         "import": true,
                         "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "cae2-4c8e-e03a-476b",
+                        "hidden": true,
+                        "id": "d435-ff1d-b532-f28a",
                         "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -28366,10 +27207,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "5b18-35c7-7deb-0f43",
+                        "hidden": true,
+                        "id": "81fd-e15c-cbcf-d078",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -28678,10 +27544,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "743e-1e71-ad0c-dead",
+                        "hidden": true,
+                        "id": "cf48-ad27-9d1b-249c",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -28828,27 +27719,95 @@
                       },
                       {
                         "import": true,
-                        "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "d9ce-3d8e-84d8-1dab",
+                        "name": "Chainaxe",
+                        "hidden": true,
+                        "id": "bff8-bc75-0196-1f66",
                         "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
+                        "targetId": "8680-81d2-41f9-75a8",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "9372-9faa-67e3-c89d",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Axe",
+                        "hidden": true,
+                        "id": "8f2c-72af-460f-e723",
+                        "type": "selectionEntry",
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
                       },
                       {
                         "import": true,
                         "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "bbc1-28c9-7bf5-364d",
+                        "hidden": true,
+                        "id": "3d82-1223-2044-be33",
                         "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
-                      },
-                      {
-                        "import": true,
-                        "name": "Chainaxe",
-                        "hidden": false,
-                        "id": "bff8-bc75-0196-1f66",
-                        "type": "selectionEntry",
-                        "targetId": "2732-ddfd-f72e-3cf9"
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -29012,10 +27971,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "30a0-a41b-86dd-13be",
+                        "hidden": true,
+                        "id": "a51e-d894-7018-5208",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -29706,10 +28690,35 @@
                   {
                     "import": true,
                     "name": "Angelus Boltgun",
-                    "hidden": false,
-                    "id": "2596-fc87-8fd6-7633",
+                    "hidden": true,
+                    "id": "65e0-98b5-ce30-dc5e",
                     "type": "selectionEntry",
-                    "targetId": "d7bf-3a6e-1874-661d"
+                    "targetId": "7ef3-6c9b-2b53-81ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "sortIndex": 1,
@@ -29954,10 +28963,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "e8b1-5d5b-1c0c-4bab",
+                        "hidden": true,
+                        "id": "3dda-34e7-718c-a077",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -30000,27 +29034,95 @@
                       },
                       {
                         "import": true,
-                        "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "b9d4-2028-ddb0-f63e",
+                        "name": "Chainaxe",
+                        "hidden": true,
+                        "id": "2b22-ecc8-b9a0-bce4",
                         "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
+                        "targetId": "8680-81d2-41f9-75a8",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "9372-9faa-67e3-c89d",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Axe",
+                        "hidden": true,
+                        "id": "1e8e-e617-5bc0-b13d",
+                        "type": "selectionEntry",
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
                       },
                       {
                         "import": true,
                         "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "5c3d-f094-feac-0153",
+                        "hidden": true,
+                        "id": "4267-4852-cc0b-2727",
                         "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
-                      },
-                      {
-                        "import": true,
-                        "name": "Chainaxe",
-                        "hidden": false,
-                        "id": "2b22-ecc8-b9a0-bce4",
-                        "type": "selectionEntry",
-                        "targetId": "2732-ddfd-f72e-3cf9"
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -31953,10 +31055,35 @@
                   {
                     "import": true,
                     "name": "Angelus Boltgun",
-                    "hidden": false,
-                    "id": "24cd-b68e-f6d1-3e0e",
+                    "hidden": true,
+                    "id": "f04c-d848-f55f-163a",
                     "type": "selectionEntry",
-                    "targetId": "d7bf-3a6e-1874-661d"
+                    "targetId": "7ef3-6c9b-2b53-81ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "defaultSelectionEntryId": "a9a6-40f7-89b5-9d95"
@@ -32053,10 +31180,35 @@
                   {
                     "import": true,
                     "name": "Angelus Boltgun",
-                    "hidden": false,
-                    "id": "9651-d386-c723-552e",
+                    "hidden": true,
+                    "id": "e6d0-6140-66c8-e30c",
                     "type": "selectionEntry",
-                    "targetId": "d7bf-3a6e-1874-661d"
+                    "targetId": "7ef3-6c9b-2b53-81ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -33364,89 +32516,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Sniper Rifle",
-        "hidden": false,
-        "id": "19eb-6da1-12ff-5535",
-        "profiles": [
-          {
-            "name": "Sniper Rifle",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "f8cc-be4a-d009-069b",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "72\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "5"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "5"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Rending (5+), Sniper, Pinning"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Rending",
-            "id": "6712-184d-8991-141d",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2508-8e95-11c7-6bd6",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "5+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Sniper",
-            "id": "8fdd-2649-8b51-977f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e4db-0b99-ef96-7a32"
-          },
-          {
-            "name": "Pinning",
-            "id": "d94c-4d4b-8ecf-8840",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cc0-966b-ab26-0aa7"
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "df61-30e5-5023-1cd9",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Locator Beacon",
         "hidden": false,
         "id": "6e0c-7f2b-995e-9107",
@@ -33904,10 +32973,28 @@
                   {
                     "import": true,
                     "name": "Chainaxe",
-                    "hidden": false,
+                    "hidden": true,
                     "id": "0808-f7ab-d7d0-ed9b",
                     "type": "selectionEntry",
-                    "targetId": "2732-ddfd-f72e-3cf9"
+                    "targetId": "8680-81d2-41f9-75a8",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -35109,10 +34196,35 @@
                   {
                     "import": true,
                     "name": "Angelus Boltgun",
-                    "hidden": false,
-                    "id": "9598-9929-6707-5e83",
+                    "hidden": true,
+                    "id": "4bdf-cb2a-c1ea-3224",
                     "type": "selectionEntry",
-                    "targetId": "d7bf-3a6e-1874-661d"
+                    "targetId": "7ef3-6c9b-2b53-81ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "defaultSelectionEntryId": "8f24-8a96-3bf3-8016",
@@ -35255,10 +34367,35 @@
                   {
                     "import": true,
                     "name": "Angelus Boltgun",
-                    "hidden": false,
-                    "id": "febf-e531-d8b7-9621",
+                    "hidden": true,
+                    "id": "9028-b722-e7be-09b4",
                     "type": "selectionEntry",
-                    "targetId": "d7bf-3a6e-1874-661d"
+                    "targetId": "7ef3-6c9b-2b53-81ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -36439,10 +35576,28 @@
                   {
                     "import": true,
                     "name": "Chainaxe",
-                    "hidden": false,
+                    "hidden": true,
                     "id": "dcc2-f1b6-356d-3fa7",
                     "type": "selectionEntry",
-                    "targetId": "2732-ddfd-f72e-3cf9"
+                    "targetId": "8680-81d2-41f9-75a8",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -37758,10 +36913,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "6248-be63-c9f7-3436",
+                        "hidden": true,
+                        "id": "208f-2660-1b06-8e92",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -37804,27 +36984,95 @@
                       },
                       {
                         "import": true,
-                        "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "9616-9dc6-62d7-1197",
+                        "name": "Chainaxe",
+                        "hidden": true,
+                        "id": "d117-f89b-57a1-cb66",
                         "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
+                        "targetId": "8680-81d2-41f9-75a8",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "9372-9faa-67e3-c89d",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Axe",
+                        "hidden": true,
+                        "id": "8e84-78da-50e8-094c",
+                        "type": "selectionEntry",
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
                       },
                       {
                         "import": true,
                         "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "f879-1a65-5772-8e83",
+                        "hidden": true,
+                        "id": "322c-8a9a-0fa9-35bb",
                         "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
-                      },
-                      {
-                        "import": true,
-                        "name": "Chainaxe",
-                        "hidden": false,
-                        "id": "d117-f89b-57a1-cb66",
-                        "type": "selectionEntry",
-                        "targetId": "2732-ddfd-f72e-3cf9"
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -39211,10 +38459,28 @@
                   {
                     "import": true,
                     "name": "Chainaxe",
-                    "hidden": false,
+                    "hidden": true,
                     "id": "2074-2731-b24e-c55e",
                     "type": "selectionEntry",
-                    "targetId": "2732-ddfd-f72e-3cf9"
+                    "targetId": "8680-81d2-41f9-75a8",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -40280,10 +39546,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "b7a7-7da6-3630-a221",
+                        "hidden": true,
+                        "id": "3716-ec37-de6a-c928",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -40326,27 +39617,95 @@
                       },
                       {
                         "import": true,
-                        "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "c24c-5d66-3f08-615b",
+                        "name": "Chainaxe",
+                        "hidden": true,
+                        "id": "ee52-62c6-72bf-0dcc",
                         "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
+                        "targetId": "8680-81d2-41f9-75a8",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "9372-9faa-67e3-c89d",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Axe",
+                        "hidden": true,
+                        "id": "b768-9f69-15b9-9fb6",
+                        "type": "selectionEntry",
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
                       },
                       {
                         "import": true,
                         "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "7ff5-0db3-94bf-ba5e",
+                        "hidden": true,
+                        "id": "6d62-b3b0-f9a2-503a",
                         "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
-                      },
-                      {
-                        "import": true,
-                        "name": "Chainaxe",
-                        "hidden": false,
-                        "id": "ee52-62c6-72bf-0dcc",
-                        "type": "selectionEntry",
-                        "targetId": "2732-ddfd-f72e-3cf9"
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -40894,10 +40253,28 @@
                   {
                     "import": true,
                     "name": "Chainaxe",
-                    "hidden": false,
+                    "hidden": true,
                     "id": "fefb-6ea0-1957-ada0",
                     "type": "selectionEntry",
-                    "targetId": "2732-ddfd-f72e-3cf9"
+                    "targetId": "8680-81d2-41f9-75a8",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -41698,10 +41075,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "5fd8-cbd8-6b00-2c7a",
+                        "hidden": true,
+                        "id": "29b4-7b80-2069-8324",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -41744,27 +41146,95 @@
                       },
                       {
                         "import": true,
-                        "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "9347-6dde-9e66-a75d",
+                        "name": "Chainaxe",
+                        "hidden": true,
+                        "id": "c752-1c68-e80e-7094",
                         "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
+                        "targetId": "8680-81d2-41f9-75a8",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "9372-9faa-67e3-c89d",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Encarmine Axe",
+                        "hidden": true,
+                        "id": "05b2-0b7b-7fb1-bd5d",
+                        "type": "selectionEntry",
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
                       },
                       {
                         "import": true,
                         "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "b38f-4eaa-7d3c-fb6d",
+                        "hidden": true,
+                        "id": "bf2e-134d-81fa-1261",
                         "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
-                      },
-                      {
-                        "import": true,
-                        "name": "Chainaxe",
-                        "hidden": false,
-                        "id": "c752-1c68-e80e-7094",
-                        "type": "selectionEntry",
-                        "targetId": "2732-ddfd-f72e-3cf9"
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -42673,10 +42143,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "26c8-0ed3-b61d-4e25",
+                        "hidden": true,
+                        "id": "afbd-f654-a9ce-e538",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -44309,10 +43804,28 @@
                   {
                     "import": true,
                     "name": "Chainaxe",
-                    "hidden": false,
+                    "hidden": true,
                     "id": "63d0-de64-c40b-bc7e",
                     "type": "selectionEntry",
-                    "targetId": "2732-ddfd-f72e-3cf9"
+                    "targetId": "8680-81d2-41f9-75a8",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   },
                   {
                     "import": true,
@@ -45877,10 +45390,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "595b-68f9-e48f-0345",
+                        "hidden": true,
+                        "id": "dcbe-08ba-3a15-8187",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "flatten": true,
@@ -46077,10 +45615,35 @@
                   {
                     "import": true,
                     "name": "Angelus Boltgun",
-                    "hidden": false,
-                    "id": "5591-d07c-c894-54ed",
+                    "hidden": true,
+                    "id": "ea25-b80c-14e8-807f",
                     "type": "selectionEntry",
-                    "targetId": "d7bf-3a6e-1874-661d"
+                    "targetId": "7ef3-6c9b-2b53-81ac",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -48366,18 +47929,68 @@
                       {
                         "import": true,
                         "name": "Encarmine Axe",
-                        "hidden": false,
-                        "id": "6848-5f9e-abe7-b6a8",
+                        "hidden": true,
+                        "id": "dbd1-392c-46b3-9f37",
                         "type": "selectionEntry",
-                        "targetId": "f0d3-3459-fbf1-8af4"
+                        "targetId": "ddf2-cfc8-41f6-1126",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ]
                       },
                       {
                         "import": true,
                         "name": "Encarmine Sword",
-                        "hidden": false,
-                        "id": "487a-54fd-f002-09c0",
+                        "hidden": true,
+                        "id": "886f-2147-99d8-0977",
                         "type": "selectionEntry",
-                        "targetId": "219f-5562-6eaf-590c"
+                        "targetId": "3181-4f88-191c-a797",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "defaultSelectionEntryId": "bdcb-0e16-9a7a-c211",
@@ -48418,10 +48031,35 @@
                       {
                         "import": true,
                         "name": "Angelus Boltgun",
-                        "hidden": false,
-                        "id": "b597-d361-eac6-2c1a",
+                        "hidden": true,
+                        "id": "8cf8-35a6-3212-cabb",
                         "type": "selectionEntry",
-                        "targetId": "d7bf-3a6e-1874-661d"
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "defaultSelectionEntryId": "8ecb-dde2-32c0-358c",
@@ -59112,335 +58750,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Angelus Boltgun",
-        "hidden": true,
-        "id": "d7bf-3a6e-1874-661d",
-        "profiles": [
-          {
-            "name": "Angelus Boltgun",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "2f83-3eb6-ab7e-233e",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "12\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "4"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": ""
-              }
-            ]
-          }
-        ],
-        "comment": "Autohides",
-        "modifiers": [
-          {
-            "type": "set",
-            "value": false,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "1f40-fe51-5c23-c07e",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "54b5-0978-c8a4-5b5a",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Encarmine Axe",
-        "hidden": true,
-        "id": "f0d3-3459-fbf1-8af4",
-        "profiles": [
-          {
-            "name": "Encarmine Axe",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "2236-4db3-726f-7088",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Master-crafted, Two-handed, Unwieldy"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Master-crafted",
-            "id": "9ee9-7962-7ff9-48b4",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0371-1ea2-8615-e03a"
-          },
-          {
-            "name": "Two-handed",
-            "id": "5f0c-7449-c442-2385",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9c96-f071-03a6-7593"
-          },
-          {
-            "name": "Unwieldy",
-            "id": "2284-5ad7-ac45-bea2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "cfea-a7be-fbea-da53"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": false,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "1f40-fe51-5c23-c07e",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
-        "comment": "Autohides",
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "54b5-0978-c8a4-5b5a",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Encarmine Sword",
-        "hidden": true,
-        "id": "219f-5562-6eaf-590c",
-        "profiles": [
-          {
-            "name": "Encarmine Sword",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "31db-e949-5525-1452",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "User"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Master-crafted, Two-handed"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Master-crafted",
-            "id": "3834-9e13-d10d-5d0e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0371-1ea2-8615-e03a"
-          },
-          {
-            "name": "Two-handed",
-            "id": "99c2-4554-85c5-e734",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9c96-f071-03a6-7593"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": false,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "1f40-fe51-5c23-c07e",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
-        "comment": "Autohides",
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "54b5-0978-c8a4-5b5a",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Death Mask",
-        "hidden": true,
-        "id": "5566-b61d-2f7d-b217",
-        "infoLinks": [
-          {
-            "name": "Stubborn",
-            "id": "661e-ee3c-7c89-4e40",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fdf1-31bc-4796-fb3d"
-          },
-          {
-            "name": "Fear",
-            "id": "4b3f-9a52-73e9-8057",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "b19f-31c5-018a-932e",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "1",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Death Mask",
-            "id": "70a1-b15b-9d9e-b59a",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "3194-923c-93cc-0456"
-          }
-        ],
-        "comment": "Autohides",
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "54b5-0978-c8a4-5b5a",
-            "value": 15
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "0858-b125-90f6-fd97"
-          }
-        ],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden"
-              },
-              {
-                "type": "set",
-                "value": 1,
-                "field": "0858-b125-90f6-fd97"
-              }
-            ],
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "1f40-fe51-5c23-c07e",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Aetheling",
         "hidden": true,
         "id": "d710-1076-f0f6-4431",
@@ -59994,296 +59303,6 @@
                 "name": "Description",
                 "typeId": "73f7-995c-ccc1-9f39",
                 "$text": "If the bearer is wounded by a weapon with the Brutal (X) rule, subtract 1 from the Brutal (X) rule to a minimum of 1."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Chainaxe",
-        "hidden": false,
-        "id": "2732-ddfd-f72e-3cf9",
-        "infoLinks": [
-          {
-            "name": "Shred",
-            "id": "eb1e-c34a-7226-c046",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a666-0970-28e2-7c48"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Chainaxe",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "61e6-9efc-8512-3bd8",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Shred"
-              }
-            ]
-          }
-        ],
-        "comment": "Executioners",
-        "modifiers": [
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "9372-9faa-67e3-c89d",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Chainsword",
-        "hidden": false,
-        "id": "e241-43f4-e619-113b",
-        "infoLinks": [
-          {
-            "name": "Shred",
-            "id": "f628-577d-87ad-b400",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a666-0970-28e2-7c48"
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Chainsword",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "c461-a226-a600-adfb",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "User"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Shred"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Master-crafted (Master Artisan)",
-            "hidden": false,
-            "id": "abe6-d91a-8be8-8b58",
-            "type": "selectionEntry",
-            "targetId": "e336-78d8-10c4-868f"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Master-crafted",
-        "hidden": false,
-        "id": "1a20-b33a-305e-b4ad",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "model",
-            "shared": true,
-            "id": "cd29-cf10-f324-a789",
-            "includeChildSelections": true
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Master-crafted",
-            "id": "dc5b-f3d6-8f63-65ee",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "0371-1ea2-8615-e03a"
-          }
-        ],
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "54b5-0978-c8a4-5b5a",
-            "value": 10
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "append",
-            "value": "Master-crafted",
-            "field": "d2a2-1139-48cb-4472",
-            "scope": "parent",
-            "affects": "profiles.Ranged Weapon",
-            "join": ", "
-          },
-          {
-            "type": "append",
-            "value": "Master-crafted",
-            "field": "a603-af69-c30b-94ed",
-            "scope": "parent",
-            "affects": "profiles.Melee Weapon",
-            "join": ", "
-          },
-          {
-            "type": "prepend",
-            "value": "Master-crafted",
-            "field": "name",
-            "scope": "parent",
-            "affects": "profiles.Ranged Weapon",
-            "join": " "
-          },
-          {
-            "type": "prepend",
-            "value": "Master-crafted",
-            "field": "name",
-            "scope": "parent",
-            "affects": "profiles.Melee Weapon",
-            "join": " "
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Master-crafted (Master Artisan)",
-        "hidden": false,
-        "id": "e336-78d8-10c4-868f",
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "54b5-0978-c8a4-5b5a",
-            "value": 10
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "3b81-b072-0017-f853"
-          }
-        ],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden"
-              },
-              {
-                "type": "set",
-                "value": 0,
-                "field": "3b81-b072-0017-f853"
-              }
-            ],
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "1a20-b33a-305e-b4ad",
-                    "shared": true
-                  },
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "c044-d3ec-ebc4-d882",
-                    "shared": true
-                  },
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "1c46-7a96-775f-8572",
-                    "shared": true,
-                    "includeChildSelections": true
-                  },
-                  {
-                    "type": "notInstanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "c0e6-28aa-5286-2fa2",
-                    "shared": true
-                  },
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "75a3-46b2-47de-9789",
-                    "shared": true
-                  }
-                ]
               }
             ]
           }
@@ -61423,74 +60442,6 @@
       }
     ],
     "sharedProfiles": [
-      {
-        "name": "Bolter (Primary)",
-        "typeId": "5e31-3867-7c3d-fcb9",
-        "typeName": "Ranged Weapon",
-        "hidden": false,
-        "id": "0510-8ac8-5352-169f",
-        "characteristics": [
-          {
-            "name": "Range",
-            "typeId": "7b0f-9c2a-0ecb-f3a3",
-            "$text": "24\""
-          },
-          {
-            "name": "S",
-            "typeId": "2ecc-1ccc-736f-9d3d",
-            "$text": "4"
-          },
-          {
-            "name": "AP",
-            "typeId": "cbb5-5f04-f87f-a810",
-            "$text": "5"
-          },
-          {
-            "name": "Type",
-            "typeId": "2c90-16ca-a927-898d",
-            "$text": "Rapid Fire"
-          },
-          {
-            "name": "Special Rules",
-            "typeId": "d2a2-1139-48cb-4472",
-            "$text": ""
-          }
-        ]
-      },
-      {
-        "name": "Lightning Claw",
-        "typeId": "ecd5-ca1d-0842-34a4",
-        "typeName": "Melee Weapon",
-        "hidden": false,
-        "id": "2615-31a6-099a-906d",
-        "characteristics": [
-          {
-            "name": "Range",
-            "typeId": "ec4a-5686-1553-4654",
-            "$text": "-"
-          },
-          {
-            "name": "S",
-            "typeId": "b9e5-2eb3-f79d-e995",
-            "$text": "User"
-          },
-          {
-            "name": "AP",
-            "typeId": "0332-8de1-48c6-c94d",
-            "$text": "3"
-          },
-          {
-            "name": "Type",
-            "typeId": "6c0f-3258-2a17-5cc9",
-            "$text": "Melee"
-          },
-          {
-            "name": "Special Rules",
-            "typeId": "a603-af69-c30b-94ed",
-            "$text": "Shred, Rending (6+), Specialist Weapon"
-          }
-        ]
-      },
       {
         "name": "Kraken Rounds",
         "typeId": "5e31-3867-7c3d-fcb9",
