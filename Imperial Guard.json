@@ -1503,7 +1503,7 @@
             "id": "ee0f-efe4-77bd-b682",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "388a-881d-6a67-d88d",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -1683,18 +1683,120 @@
               {
                 "import": true,
                 "name": "Krak Grenades",
-                "hidden": false,
+                "hidden": true,
                 "id": "d7a3-c71d-e2e2-9793",
                 "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e"
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1240-67ed-3403-7524-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1240-67ed-3403-7524-max"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "1240-67ed-3403-7524-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "1240-67ed-3403-7524-max"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "import": true,
                 "name": "Carapace Armour",
-                "hidden": false,
+                "hidden": true,
                 "id": "7bf1-28ac-00c5-654f",
                 "type": "selectionEntry",
-                "targetId": "9a68-da87-6259-09e9"
+                "targetId": "b1db-015a-3e1c-1e10",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4096-44b1-844c-4f8f"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d7b4-75d5-acd4-c9d9"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "4096-44b1-844c-4f8f"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "d7b4-75d5-acd4-c9d9"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "033d-d42d-55cf-d3f9",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "import": true,
@@ -1913,7 +2015,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "a3a4-d134-7f9e-7134",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -2114,22 +2216,6 @@
             "entryLinks": [
               {
                 "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "0266-8f72-b5ea-05c6",
-                "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e"
-              },
-              {
-                "import": true,
-                "name": "Carapace Armour",
-                "hidden": false,
-                "id": "b6bf-3315-1305-746b",
-                "type": "selectionEntry",
-                "targetId": "9a68-da87-6259-09e9"
-              },
-              {
-                "import": true,
                 "name": "Flak Armour",
                 "hidden": false,
                 "id": "8cfe-0dc5-df14-3a4a",
@@ -2211,6 +2297,124 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "1b33-3a18-c6a8-7537-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Carapace Armour",
+                "hidden": true,
+                "id": "769c-b892-dbba-9be8",
+                "type": "selectionEntry",
+                "targetId": "b1db-015a-3e1c-1e10",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5fb1-5fc6-4124-f414"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6fff-83c8-7959-2df3"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "5fb1-5fc6-4124-f414"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "6fff-83c8-7959-2df3"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "033d-d42d-55cf-d3f9",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": true,
+                "id": "9cf8-66c8-33b8-3949",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4519-3190-d0c3-ad27"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "20c6-95fe-d0bd-a672"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "4519-3190-d0c3-ad27"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "20c6-95fe-d0bd-a672"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
                   }
                 ]
               }
@@ -2406,7 +2610,7 @@
                 ],
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "de4f-a07a-8ef6-0903",
                     "targetId": "c447-1b05-5ba8-846a",
@@ -2421,22 +2625,6 @@
                   }
                 ],
                 "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Krak Grenades",
-                    "hidden": false,
-                    "id": "9659-583c-e7d9-54b3",
-                    "type": "selectionEntry",
-                    "targetId": "d4f0-d4f0-f372-e02e"
-                  },
-                  {
-                    "import": true,
-                    "name": "Carapace Armour",
-                    "hidden": false,
-                    "id": "c5b2-bcae-0281-5c9e",
-                    "type": "selectionEntry",
-                    "targetId": "9a68-da87-6259-09e9"
-                  },
                   {
                     "import": true,
                     "name": "Flak Armour",
@@ -2520,6 +2708,124 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "21e6-3430-ca7f-8da0-max"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Carapace Armour",
+                    "hidden": true,
+                    "id": "df1f-8f08-2376-c8ba",
+                    "type": "selectionEntry",
+                    "targetId": "b1db-015a-3e1c-1e10",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9ab4-b663-f23b-47de"
+                      },
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "09c0-069f-2c8a-17dc"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "9ab4-b663-f23b-47de"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "09c0-069f-2c8a-17dc"
+                          },
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "033d-d42d-55cf-d3f9",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Krak Grenades",
+                    "hidden": true,
+                    "id": "d0e6-3fdd-175a-f8d0",
+                    "type": "selectionEntry",
+                    "targetId": "bbfb-1c1f-fdbf-90b1",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "a54b-f44e-dc04-fbe6"
+                      },
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7ea9-a075-4c1d-a383"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "a54b-f44e-dc04-fbe6"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "7ea9-a075-4c1d-a383"
+                          },
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "58ba-b4af-bc02-c48f",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -2674,7 +2980,7 @@
                 ],
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "3bcb-6dcc-c2cd-444f",
                     "targetId": "c447-1b05-5ba8-846a",
@@ -2689,22 +2995,6 @@
                   }
                 ],
                 "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Krak Grenades",
-                    "hidden": false,
-                    "id": "c496-1d06-c169-3470",
-                    "type": "selectionEntry",
-                    "targetId": "d4f0-d4f0-f372-e02e"
-                  },
-                  {
-                    "import": true,
-                    "name": "Carapace Armour",
-                    "hidden": false,
-                    "id": "d8f1-e859-dd80-6952",
-                    "type": "selectionEntry",
-                    "targetId": "9a68-da87-6259-09e9"
-                  },
                   {
                     "import": true,
                     "name": "Flak Armour",
@@ -2790,6 +3080,124 @@
                         "id": "584f-9ab2-af5a-9982-max"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Carapace Armour",
+                    "hidden": true,
+                    "id": "5140-cc04-1f19-6586",
+                    "type": "selectionEntry",
+                    "targetId": "b1db-015a-3e1c-1e10",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9127-2015-48e4-b019"
+                      },
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "e01b-7906-9d07-909d"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "9127-2015-48e4-b019"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "e01b-7906-9d07-909d"
+                          },
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "033d-d42d-55cf-d3f9",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Krak Grenades",
+                    "hidden": true,
+                    "id": "6f71-213d-f93c-d5bb",
+                    "type": "selectionEntry",
+                    "targetId": "bbfb-1c1f-fdbf-90b1",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6707-0962-a986-fb68"
+                      },
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "3a6f-315e-7f0b-e454"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "6707-0962-a986-fb68"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "3a6f-315e-7f0b-e454"
+                          },
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "58ba-b4af-bc02-c48f",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "rules": [
@@ -2835,7 +3243,7 @@
                 ],
                 "categoryLinks": [
                   {
-                    "name": "Infantry",
+                    "name": "Infantry Unit Type",
                     "hidden": false,
                     "id": "37d3-2f48-5993-1f28",
                     "targetId": "c447-1b05-5ba8-846a",
@@ -2850,22 +3258,6 @@
                   }
                 ],
                 "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Krak Grenades",
-                    "hidden": false,
-                    "id": "27d1-6c66-9321-6caa",
-                    "type": "selectionEntry",
-                    "targetId": "d4f0-d4f0-f372-e02e"
-                  },
-                  {
-                    "import": true,
-                    "name": "Carapace Armour",
-                    "hidden": false,
-                    "id": "38b4-e5a3-cb3a-c7ff",
-                    "type": "selectionEntry",
-                    "targetId": "9a68-da87-6259-09e9"
-                  },
                   {
                     "import": true,
                     "name": "Flak Armour",
@@ -2951,6 +3343,124 @@
                         "id": "d63e-d5fe-aa75-42f0-max"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Carapace Armour",
+                    "hidden": true,
+                    "id": "339b-da38-76f7-d803",
+                    "type": "selectionEntry",
+                    "targetId": "b1db-015a-3e1c-1e10",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "0f8b-86ee-529b-3429"
+                      },
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "547f-40e7-8094-09e6"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "0f8b-86ee-529b-3429"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "547f-40e7-8094-09e6"
+                          },
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "033d-d42d-55cf-d3f9",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Krak Grenades",
+                    "hidden": true,
+                    "id": "a18d-cd93-33be-4231",
+                    "type": "selectionEntry",
+                    "targetId": "bbfb-1c1f-fdbf-90b1",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "863b-d16b-19ef-3912"
+                      },
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "83d2-614d-5ae1-31d4"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "863b-d16b-19ef-3912"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "83d2-614d-5ae1-31d4"
+                          },
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "58ba-b4af-bc02-c48f",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "rules": [
@@ -3018,7 +3528,7 @@
             "id": "2678-9fed-5600-e95e",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "99b4-b159-a401-17b4",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -3312,7 +3822,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "9153-0413-ed7f-399f",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -3625,7 +4135,7 @@
             "id": "7062-6093-747a-e10a",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "1963-089d-9107-6bf0",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -3639,7 +4149,7 @@
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "d0ab-24f7-3ff9-f64d",
                 "targetId": "33d0-319a-741e-573f",
@@ -3962,7 +4472,7 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "3c70-24c3-152f-a921",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -4073,21 +4583,6 @@
               },
               {
                 "import": true,
-                "name": "Carapace Armour",
-                "hidden": false,
-                "id": "6cf7-b4bd-423a-a2a4",
-                "type": "selectionEntry",
-                "targetId": "9a68-da87-6259-09e9",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ]
-              },
-              {
-                "import": true,
                 "name": "Frag Grenades",
                 "hidden": false,
                 "id": "4d05-600d-21e3-9295",
@@ -4109,6 +4604,72 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "b98b-c95d-5a83-49cd-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Carapace Armour",
+                "hidden": true,
+                "id": "3137-88a9-29f8-f9b1",
+                "type": "selectionEntry",
+                "targetId": "b1db-015a-3e1c-1e10",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9fac-5f0e-aa5f-e481"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6461-5ae1-88e2-eddc"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "9fac-5f0e-aa5f-e481"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "6461-5ae1-88e2-eddc"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "033d-d42d-55cf-d3f9",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
                   }
                 ]
               }
@@ -4176,7 +4737,7 @@
             "sortIndex": 2,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "ade2-2ce8-3b1a-8c1f",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -4280,21 +4841,6 @@
               },
               {
                 "import": true,
-                "name": "Carapace Armour",
-                "hidden": false,
-                "id": "57f4-35f4-bde5-8a5d",
-                "type": "selectionEntry",
-                "targetId": "9a68-da87-6259-09e9",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ]
-              },
-              {
-                "import": true,
                 "name": "Frag Grenades",
                 "hidden": false,
                 "id": "cc1a-678e-794d-8b57",
@@ -4316,6 +4862,72 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "e906-a497-0a8b-d066-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Carapace Armour",
+                "hidden": true,
+                "id": "0998-075f-9f51-85c4",
+                "type": "selectionEntry",
+                "targetId": "b1db-015a-3e1c-1e10",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "29a0-5c57-d600-78a3"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c837-267a-9b46-8410"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "29a0-5c57-d600-78a3"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "c837-267a-9b46-8410"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "033d-d42d-55cf-d3f9",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 5
                   }
                 ]
               }
@@ -4540,14 +5152,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "0e8c-f3cf-3345-a56e",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "2df1-7143-cd62-92a8",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -4861,14 +5473,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "fcd3-c89c-2db0-7867",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "2ab7-5bed-48da-706e",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -5144,22 +5756,6 @@
             "entryLinks": [
               {
                 "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "de3e-4d98-e513-e902",
-                "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 1
-                  }
-                ],
-                "sortIndex": 2
-              },
-              {
-                "import": true,
                 "name": "Frag Grenades",
                 "hidden": false,
                 "id": "3449-461b-4bc0-5173",
@@ -5183,6 +5779,73 @@
                     "id": "4358-bf32-a26b-aeae-max"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": true,
+                "id": "8894-e084-47db-46e5",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7cfc-ed6c-b5fa-19fc"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fa32-1aaa-585f-ec13"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "7cfc-ed6c-b5fa-19fc"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "fa32-1aaa-585f-ec13"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 2,
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 1
+                  }
+                ]
               }
             ],
             "costs": [
@@ -5202,14 +5865,14 @@
             "sortIndex": 2,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "86e7-a39a-fbd5-4a21",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "ce15-e085-1d60-b92a",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -5278,22 +5941,6 @@
               }
             ],
             "entryLinks": [
-              {
-                "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "2031-44d9-6fec-cf34",
-                "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 1
-                  }
-                ],
-                "sortIndex": 3
-              },
               {
                 "import": true,
                 "name": "Hot-shot Laspistol",
@@ -5369,6 +6016,73 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "c4b8-ab5e-9217-8f21-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": true,
+                "id": "6134-cfd7-fdcc-4f0c",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cbf4-9c13-2bcb-0e48"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "15ee-3f21-31eb-0213"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "cbf4-9c13-2bcb-0e48"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "15ee-3f21-31eb-0213"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "sortIndex": 3,
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 1
                   }
                 ]
               }
@@ -5777,7 +6491,7 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "81d0-0d4f-b9be-bc75",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -6039,14 +6753,6 @@
             "entryLinks": [
               {
                 "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "0c88-0819-08fa-5504",
-                "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e"
-              },
-              {
-                "import": true,
                 "name": "Flak Armour",
                 "hidden": false,
                 "id": "b717-4174-64d4-3c1d",
@@ -6102,6 +6808,65 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "694c-4dbb-11fc-ddde"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": true,
+                "id": "4fea-4e54-8cf5-042d",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9419-f256-1bab-33de"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f1e9-d765-a014-8455"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "9419-f256-1bab-33de"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "f1e9-d765-a014-8455"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
                   }
                 ]
               }
@@ -6301,18 +7066,60 @@
               {
                 "import": true,
                 "name": "Bayonet",
-                "hidden": false,
+                "hidden": true,
                 "id": "ab5e-f526-4927-d12c",
                 "type": "selectionEntry",
-                "targetId": "f302-5092-21b4-4f62"
-              },
-              {
-                "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "3da9-f4b8-7c32-965e",
-                "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e"
+                "targetId": "87fb-1c6f-cc2c-db1b",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "21ed-c8bc-e403-31ef-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "21ed-c8bc-e403-31ef-max"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "21ed-c8bc-e403-31ef-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "21ed-c8bc-e403-31ef-max"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "2886-4252-0a7e-6fed",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "import": true,
@@ -6345,6 +7152,65 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "4b92-5b91-a21d-6a91-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": true,
+                "id": "bd49-55d3-b046-931f",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7224-5492-4d6e-c870"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f05a-50c5-d11d-b2ca"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "7224-5492-4d6e-c870"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "f05a-50c5-d11d-b2ca"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
                   }
                 ]
               }
@@ -7001,7 +7867,7 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "05df-83c5-7ef6-3c9d",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -7165,10 +8031,60 @@
               {
                 "import": true,
                 "name": "Bayonet",
-                "hidden": false,
+                "hidden": true,
                 "id": "e95a-fe1f-d794-be76",
                 "type": "selectionEntry",
-                "targetId": "f302-5092-21b4-4f62"
+                "targetId": "87fb-1c6f-cc2c-db1b",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4eb6-3c05-1034-0d05"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1b75-8111-11f8-3b4e"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "4eb6-3c05-1034-0d05"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "1b75-8111-11f8-3b4e"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "2886-4252-0a7e-6fed",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -7276,7 +8192,7 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "144b-f7e6-4b9c-36a0",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -7290,7 +8206,7 @@
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "a936-bd5a-c887-159c",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -7323,14 +8239,6 @@
               }
             ],
             "entryLinks": [
-              {
-                "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "f948-7477-eb08-0598",
-                "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e"
-              },
               {
                 "import": true,
                 "name": "Shroud Bombs",
@@ -7388,14 +8296,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "import": true,
-                "name": "Carapace Armour",
-                "hidden": false,
-                "id": "d12f-7f0a-db92-611e",
-                "type": "selectionEntry",
-                "targetId": "9a68-da87-6259-09e9"
               },
               {
                 "import": true,
@@ -7458,10 +8358,60 @@
               {
                 "import": true,
                 "name": "Bayonet",
-                "hidden": false,
+                "hidden": true,
                 "id": "681c-67bb-e907-621b",
                 "type": "selectionEntry",
-                "targetId": "f302-5092-21b4-4f62"
+                "targetId": "87fb-1c6f-cc2c-db1b",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b853-8a80-be5a-2492"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9815-2d32-0a7c-5fb1"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "b853-8a80-be5a-2492"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "9815-2d32-0a7c-5fb1"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "2886-4252-0a7e-6fed",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "import": true,
@@ -7470,6 +8420,138 @@
                 "id": "a8c3-fe6c-46ec-e498",
                 "type": "selectionEntry",
                 "targetId": "dbf6-2803-32d4-a972"
+              },
+              {
+                "import": true,
+                "name": "Carapace Armour",
+                "hidden": true,
+                "id": "fa66-4081-592c-7d27",
+                "type": "selectionEntry",
+                "targetId": "b1db-015a-3e1c-1e10",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5070-9e82-2541-72ef"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "070b-4c73-1670-a36c"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "5070-9e82-2541-72ef"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "070b-4c73-1670-a36c"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "033d-d42d-55cf-d3f9",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "9703-e7ee-b509-0365",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": true,
+                "id": "fe7a-4e39-3dba-263a",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3cc1-d52c-de12-62ac"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5f6f-f2a2-8589-777d"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "3cc1-d52c-de12-62ac"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "5f6f-f2a2-8589-777d"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -7831,7 +8913,7 @@
             "sortIndex": 2,
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "b6c5-17b9-7a6b-39a3",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -7845,7 +8927,7 @@
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "1410-5d88-c31e-d4d6",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -8096,14 +9178,6 @@
             "entryLinks": [
               {
                 "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "b0c6-f7c9-e66c-1fa8",
-                "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e"
-              },
-              {
-                "import": true,
                 "name": "Shroud Bombs",
                 "hidden": true,
                 "id": "fb67-8e65-94b5-9441",
@@ -8159,14 +9233,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "import": true,
-                "name": "Carapace Armour",
-                "hidden": false,
-                "id": "f255-ba18-24fc-cbf4",
-                "type": "selectionEntry",
-                "targetId": "9a68-da87-6259-09e9"
               },
               {
                 "import": true,
@@ -8295,10 +9361,60 @@
               {
                 "import": true,
                 "name": "Bayonet",
-                "hidden": false,
+                "hidden": true,
                 "id": "18f9-1483-8d1b-a48f",
                 "type": "selectionEntry",
-                "targetId": "f302-5092-21b4-4f62"
+                "targetId": "87fb-1c6f-cc2c-db1b",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "93a1-cea5-3e40-02db"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "512b-f68c-5c0c-e627"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "93a1-cea5-3e40-02db"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "512b-f68c-5c0c-e627"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "2886-4252-0a7e-6fed",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "import": true,
@@ -8333,6 +9449,138 @@
                     "id": "cc88-87bd-38df-c54b-max"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Carapace Armour",
+                "hidden": true,
+                "id": "3da6-bdc5-04bd-0d1e",
+                "type": "selectionEntry",
+                "targetId": "b1db-015a-3e1c-1e10",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9719-d7bb-a852-87bf"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6825-a3eb-7d94-57cf"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "9719-d7bb-a852-87bf"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "6825-a3eb-7d94-57cf"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "033d-d42d-55cf-d3f9",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "9703-e7ee-b509-0365",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": true,
+                "id": "45dd-7b9b-39f3-42e9",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f5ce-145e-3210-5f4d"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c647-f5fc-3d2f-9307"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "f5ce-145e-3210-5f4d"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "c647-f5fc-3d2f-9307"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -8355,7 +9603,7 @@
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "214e-0116-5b80-5555",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -8482,10 +9730,60 @@
               {
                 "import": true,
                 "name": "Bayonet",
-                "hidden": false,
+                "hidden": true,
                 "id": "338d-43ba-d027-fc6e",
                 "type": "selectionEntry",
-                "targetId": "f302-5092-21b4-4f62"
+                "targetId": "87fb-1c6f-cc2c-db1b",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2964-3916-ff7f-0308"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "19c2-4d04-8d4d-b2be"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "2964-3916-ff7f-0308"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "19c2-4d04-8d4d-b2be"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "2886-4252-0a7e-6fed",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -8700,14 +9998,14 @@
             "id": "b8cb-bae5-17db-8dd7",
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "0dd3-d4b5-9303-0a07",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "908d-841f-a506-6ccd",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -9005,14 +10303,14 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "c01a-a36b-6716-255c",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "47c6-81ec-a7c9-0d88",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -9930,21 +11228,21 @@
             "sortIndex": 1,
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "9e8c-43bf-a77d-cbd8",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "8766-be89-8ddd-2adf",
                 "targetId": "fcca-7b6b-7920-a6f5",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "7b47-95d8-22d3-d1da",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -10107,19 +11405,121 @@
               },
               {
                 "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "3508-7232-66e0-e01a",
+                "name": "Carapace Armour",
+                "hidden": true,
+                "id": "d7ed-1792-ff42-a1b1",
                 "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e"
+                "targetId": "b1db-015a-3e1c-1e10",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb8c-49d7-1b87-a7cc"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ce0f-803d-bb5b-fbcd"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "fb8c-49d7-1b87-a7cc"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "ce0f-803d-bb5b-fbcd"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "033d-d42d-55cf-d3f9",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "import": true,
-                "name": "Carapace Armour",
-                "hidden": false,
-                "id": "cb83-61cb-250c-d71d",
+                "name": "Krak Grenades",
+                "hidden": true,
+                "id": "0696-6b16-1b7b-a109",
                 "type": "selectionEntry",
-                "targetId": "9a68-da87-6259-09e9"
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9d5f-9c1e-60ba-3392"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cac2-01eb-530b-3486"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "9d5f-9c1e-60ba-3392"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "cac2-01eb-530b-3486"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -10375,21 +11775,21 @@
             "sortIndex": 2,
             "categoryLinks": [
               {
-                "name": "Cavalry",
+                "name": "Cavalry Unit Type",
                 "hidden": false,
                 "id": "955b-eed6-a077-6587",
                 "targetId": "8cce-2496-3746-4f06",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "74c9-e217-99c2-52d9",
                 "targetId": "fcca-7b6b-7920-a6f5",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "167d-bc87-eb0e-80a0",
                 "targetId": "e349-c42f-3c5d-1e72",
@@ -10571,19 +11971,121 @@
               },
               {
                 "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "6f53-3cc4-222a-b35b",
+                "name": "Carapace Armour",
+                "hidden": true,
+                "id": "9dfa-8a2a-4437-48d1",
                 "type": "selectionEntry",
-                "targetId": "d4f0-d4f0-f372-e02e"
+                "targetId": "b1db-015a-3e1c-1e10",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "168a-9961-a406-eb9a"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1ea0-717f-efd7-483a"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "168a-9961-a406-eb9a"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "1ea0-717f-efd7-483a"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "033d-d42d-55cf-d3f9",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "import": true,
-                "name": "Carapace Armour",
-                "hidden": false,
-                "id": "1347-c703-4ae8-6e40",
+                "name": "Krak Grenades",
+                "hidden": true,
+                "id": "ef7e-29b4-6a55-6d39",
                 "type": "selectionEntry",
-                "targetId": "9a68-da87-6259-09e9"
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "608c-69a6-b64a-34c6"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "25f0-71ae-544a-b0a5"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "608c-69a6-b64a-34c6"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "25f0-71ae-544a-b0a5"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "58ba-b4af-bc02-c48f",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -10871,7 +12373,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "unit",
-                    "childId": "9a68-da87-6259-09e9",
+                    "childId": "b1db-015a-3e1c-1e10",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -11036,10 +12538,60 @@
               {
                 "import": true,
                 "name": "Camo Netting",
-                "hidden": false,
+                "hidden": true,
                 "id": "b777-e90c-a329-77bb",
                 "type": "selectionEntry",
-                "targetId": "e33a-a945-1990-6832"
+                "targetId": "aaf5-0561-b169-4ee4",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1492-b96e-93ab-b056"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "04fa-a6e0-8f2d-e874"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "1492-b96e-93ab-b056"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "04fa-a6e0-8f2d-e874"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "a670-5356-cd5f-5ea8",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -11105,21 +12657,21 @@
             ],
             "categoryLinks": [
               {
-                "name": "Dreadnought",
+                "name": "Dreadnought Unit Type",
                 "hidden": false,
                 "id": "e147-cd9d-cd6d-88e5",
                 "targetId": "eb17-a98e-537b-5de6",
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "b514-6747-6f0b-06f8",
                 "targetId": "e349-c42f-3c5d-1e72",
                 "primary": false
               },
               {
-                "name": "Light",
+                "name": "Light Sub-type",
                 "hidden": false,
                 "id": "4b5e-0f50-fced-66ba",
                 "targetId": "fcca-7b6b-7920-a6f5",
@@ -11668,7 +13220,7 @@
                 "primary": false
               },
               {
-                "name": "Fast",
+                "name": "Fast Sub-type",
                 "hidden": false,
                 "id": "5f39-960a-f950-61f2",
                 "targetId": "633a-22e8-c34d-c49d",
@@ -11789,19 +13341,119 @@
               },
               {
                 "import": true,
-                "name": "Camo Netting",
-                "hidden": false,
-                "id": "9f9f-f389-b64b-ed24",
+                "name": "Smoke Launchers",
+                "hidden": true,
+                "id": "9e63-6681-7667-86d3",
                 "type": "selectionEntry",
-                "targetId": "e33a-a945-1990-6832"
+                "targetId": "22fa-9cf0-d02c-edea",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "060a-9a54-8c97-8801"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "77a8-ed54-0d06-4273"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "060a-9a54-8c97-8801"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "77a8-ed54-0d06-4273"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "9d13-31d2-0154-5267",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "import": true,
-                "name": "Smoke Launchers",
-                "hidden": false,
-                "id": "9e63-6681-7667-86d3",
+                "name": "Camo Netting",
+                "hidden": true,
+                "id": "ef16-540a-785b-559e",
                 "type": "selectionEntry",
-                "targetId": "519b-3754-e603-da8b"
+                "targetId": "aaf5-0561-b169-4ee4",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3b8f-fe78-2cb6-e3b9"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7e53-777e-9c27-03d9"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "3b8f-fe78-2cb6-e3b9"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "7e53-777e-9c27-03d9"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "a670-5356-cd5f-5ea8",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -12136,7 +13788,7 @@
                 "primary": false
               },
               {
-                "name": "Bombard",
+                "name": "Bombard Sub-type",
                 "hidden": false,
                 "id": "9c94-52c8-4ebc-ed3a",
                 "targetId": "7d4a-3281-a77d-8962",
@@ -12283,22 +13935,6 @@
               },
               {
                 "import": true,
-                "name": "Camo Netting",
-                "hidden": false,
-                "id": "c0bc-d682-dab0-1cd5",
-                "type": "selectionEntry",
-                "targetId": "e33a-a945-1990-6832"
-              },
-              {
-                "import": true,
-                "name": "Smoke Launchers",
-                "hidden": false,
-                "id": "5507-c1c8-6586-ccdf",
-                "type": "selectionEntry",
-                "targetId": "519b-3754-e603-da8b"
-              },
-              {
-                "import": true,
                 "name": "Heavy Bolter",
                 "hidden": false,
                 "id": "2419-6cf1-f25a-e112",
@@ -12327,6 +13963,122 @@
                     "type": "prepend",
                     "value": "Hull (Front) Mounted",
                     "field": "name"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Camo Netting",
+                "hidden": true,
+                "id": "ca96-b6fa-edd3-43a5",
+                "type": "selectionEntry",
+                "targetId": "aaf5-0561-b169-4ee4",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "da68-2891-1e64-f4b9"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e9a6-9a29-c052-a173"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "da68-2891-1e64-f4b9"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "e9a6-9a29-c052-a173"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "a670-5356-cd5f-5ea8",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Smoke Launchers",
+                "hidden": true,
+                "id": "9b15-4638-20db-1173",
+                "type": "selectionEntry",
+                "targetId": "22fa-9cf0-d02c-edea",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9ef1-e603-68ae-55a4"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6e1c-60f2-31c1-c8d6"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "9ef1-e603-68ae-55a4"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "6e1c-60f2-31c1-c8d6"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "9d13-31d2-0154-5267",
+                        "shared": true
+                      }
+                    ]
                   }
                 ]
               }
@@ -13119,19 +14871,119 @@
               },
               {
                 "import": true,
-                "name": "Smoke Launchers",
-                "hidden": false,
-                "id": "fed8-c6d9-b9b7-454d",
+                "name": "Camo Netting",
+                "hidden": true,
+                "id": "7ee5-08cc-7ddb-6392",
                 "type": "selectionEntry",
-                "targetId": "519b-3754-e603-da8b"
+                "targetId": "aaf5-0561-b169-4ee4",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb67-0948-d550-e24e"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c0cc-c5a0-902b-1b50"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "fb67-0948-d550-e24e"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "c0cc-c5a0-902b-1b50"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "a670-5356-cd5f-5ea8",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "import": true,
-                "name": "Camo Netting",
-                "hidden": false,
-                "id": "cbe1-2865-7a96-b907",
+                "name": "Smoke Launchers",
+                "hidden": true,
+                "id": "ea00-089c-187e-7de1",
                 "type": "selectionEntry",
-                "targetId": "e33a-a945-1990-6832"
+                "targetId": "22fa-9cf0-d02c-edea",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "aa6f-0b05-d374-ba6f"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4b4f-a914-b305-1287"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "aa6f-0b05-d374-ba6f"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "4b4f-a914-b305-1287"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "9d13-31d2-0154-5267",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -13477,7 +15329,7 @@
                 "primary": false
               },
               {
-                "name": "Bombard",
+                "name": "Bombard Sub-type",
                 "hidden": false,
                 "id": "99c8-5dda-b287-1e26",
                 "targetId": "7d4a-3281-a77d-8962",
@@ -14008,7 +15860,7 @@
                     "primary": false
                   },
                   {
-                    "name": "Flyer",
+                    "name": "Flyer Sub-type",
                     "hidden": false,
                     "id": "a89d-e4d2-3480-6554",
                     "targetId": "63ab-f4ab-6759-c123",
@@ -14561,7 +16413,7 @@
                     "primary": false
                   },
                   {
-                    "name": "Flyer",
+                    "name": "Flyer Sub-type",
                     "hidden": false,
                     "id": "41f0-5f3a-1be0-2686",
                     "targetId": "63ab-f4ab-6759-c123",
@@ -14823,7 +16675,7 @@
                     "primary": false
                   },
                   {
-                    "name": "Flyer",
+                    "name": "Flyer Sub-type",
                     "hidden": false,
                     "id": "7d71-e41b-a899-8146",
                     "targetId": "63ab-f4ab-6759-c123",
@@ -15152,7 +17004,7 @@
                 "primary": false
               },
               {
-                "name": "Super-heavy",
+                "name": "Super-heavy Sub-type",
                 "hidden": false,
                 "id": "7aaa-ca11-c9e3-7519",
                 "targetId": "c323-cb52-ee7a-f990",
@@ -15560,7 +17412,7 @@
                 "primary": false
               },
               {
-                "name": "Super-heavy",
+                "name": "Super-heavy Sub-type",
                 "hidden": false,
                 "id": "db7c-af9c-b47f-8f73",
                 "targetId": "c323-cb52-ee7a-f990",
@@ -15969,7 +17821,7 @@
                 "primary": false
               },
               {
-                "name": "Super-heavy",
+                "name": "Super-heavy Sub-type",
                 "hidden": false,
                 "id": "f0ad-3ce2-681a-5304",
                 "targetId": "c323-cb52-ee7a-f990",
@@ -16318,7 +18170,7 @@
                 "primary": false
               },
               {
-                "name": "Super-heavy",
+                "name": "Super-heavy Sub-type",
                 "hidden": false,
                 "id": "4de2-4a63-5950-abc9",
                 "targetId": "c323-cb52-ee7a-f990",
@@ -16622,7 +18474,7 @@
                 "primary": false
               },
               {
-                "name": "Super-heavy",
+                "name": "Super-heavy Sub-type",
                 "hidden": false,
                 "id": "1237-fc90-d2a9-673e",
                 "targetId": "c323-cb52-ee7a-f990",
@@ -17107,14 +18959,14 @@
                 "primary": false
               },
               {
-                "name": "Lumbering",
+                "name": "Lumbering Sub-type",
                 "hidden": false,
                 "id": "c642-b411-0627-a998",
                 "targetId": "dbbf-4090-a327-a20d",
                 "primary": false
               },
               {
-                "name": "Flyer",
+                "name": "Flyer Sub-type",
                 "hidden": false,
                 "id": "6945-e714-5f25-8379",
                 "targetId": "63ab-f4ab-6759-c123",
@@ -17943,7 +19795,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "parent",
-                "childId": "9a68-da87-6259-09e9",
+                "childId": "b1db-015a-3e1c-1e10",
                 "shared": true
               }
             ]
@@ -17978,6 +19830,12 @@
             "value": "4+",
             "field": "dc1c-e152-7a5e-2c32",
             "affects": "profiles.Model",
+            "scope": "parent"
+          },
+          {
+            "type": "remove",
+            "value": "fcca-7b6b-7920-a6f5",
+            "field": "category",
             "scope": "parent"
           }
         ]
@@ -18113,7 +19971,7 @@
         ],
         "categoryLinks": [
           {
-            "name": "Infantry",
+            "name": "Infantry Unit Type",
             "hidden": false,
             "id": "c677-6887-a0e8-29b0",
             "targetId": "c447-1b05-5ba8-846a",
@@ -18424,14 +20282,6 @@
         "entryLinks": [
           {
             "import": true,
-            "name": "Carapace Armour",
-            "hidden": false,
-            "id": "f875-f84b-db55-0412",
-            "type": "selectionEntry",
-            "targetId": "9a68-da87-6259-09e9"
-          },
-          {
-            "import": true,
             "name": "Close Combat Weapon",
             "hidden": false,
             "id": "d48d-1403-1854-5bcc",
@@ -18492,194 +20342,49 @@
           },
           {
             "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "7835-6e36-96df-47bc",
+            "name": "Carapace Armour",
+            "hidden": true,
+            "id": "891e-519a-706f-9a91",
             "type": "selectionEntry",
-            "targetId": "d4f0-d4f0-f372-e02e"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": 0,
-            "field": "54b5-0978-c8a4-5b5a",
-            "conditions": [
+            "targetId": "b1db-015a-3e1c-1e10",
+            "constraints": [
               {
-                "type": "instanceOf",
-                "value": 1,
+                "type": "min",
+                "value": 0,
                 "field": "selections",
-                "scope": "unit",
-                "childId": "b59c-ce6c-d1c2-0a55",
-                "shared": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Krak Grenades",
-        "hidden": false,
-        "id": "58ba-b4af-bc02-c48f",
-        "comment": "whole unit",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "af62-9b4a-35c3-520a"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Krak Grenades",
-        "hidden": true,
-        "id": "d4f0-d4f0-f372-e02e",
-        "comment": "autoselection on whole unit",
-        "constraints": [
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "1240-67ed-3403-7524-min"
-          },
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "1240-67ed-3403-7524-max"
-          }
-        ],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 1,
-                "field": "1240-67ed-3403-7524-min"
+                "scope": "parent",
+                "shared": true,
+                "id": "2337-120a-f0c9-d506"
               },
               {
-                "type": "set",
-                "value": 1,
-                "field": "1240-67ed-3403-7524-max"
-              },
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden"
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5044-1193-56cc-c02c"
               }
             ],
-            "conditions": [
+            "modifierGroups": [
               {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "unit",
-                "childId": "58ba-b4af-bc02-c48f",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Krak Grenades",
-            "id": "363c-e191-2c0f-a595",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0ce2-b1c8-d39f-8a86"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Carapace Armour",
-        "hidden": false,
-        "id": "033d-d42d-55cf-d3f9",
-        "comment": "whole unit",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "ba38-787c-8633-25b1"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Carapace Armour",
-        "hidden": true,
-        "id": "9a68-da87-6259-09e9",
-        "profiles": [
-          {
-            "name": "Carapace Armour",
-            "typeId": "8d18-819f-6442-e206",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "9f4d-8bf6-c77f-9567",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "73f7-995c-ccc1-9f39",
-                "$text": "A model with a carapace armour gains a 4+ Save."
-              }
-            ]
-          }
-        ],
-        "comment": "autoselection on whole unit",
-        "constraints": [
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "b0bc-83a3-40c3-5bcc-min"
-          },
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "b0bc-83a3-40c3-5bcc-max"
-          }
-        ],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 1,
-                "field": "b0bc-83a3-40c3-5bcc-min"
-              },
-              {
-                "type": "set",
-                "value": 1,
-                "field": "b0bc-83a3-40c3-5bcc-max"
-              },
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "2337-120a-f0c9-d506"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "5044-1193-56cc-c02c"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  }
+                ],
                 "conditionGroups": [
                   {
                     "type": "or",
@@ -18707,21 +20412,100 @@
                 ]
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": true,
+            "id": "30dc-adc1-0ad8-ce2b",
+            "type": "selectionEntry",
+            "targetId": "bbfb-1c1f-fdbf-90b1",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "eb44-d3be-be6a-2364"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c285-877a-b233-db60"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "eb44-d3be-be6a-2364"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "c285-877a-b233-db60"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
           {
             "type": "set",
-            "value": "4+",
-            "field": "dc1c-e152-7a5e-2c32",
-            "affects": "profiles.Model",
-            "scope": "parent"
-          },
+            "value": 0,
+            "field": "54b5-0978-c8a4-5b5a",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "b59c-ce6c-d1c2-0a55",
+                "shared": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Carapace Armour",
+        "hidden": false,
+        "id": "033d-d42d-55cf-d3f9",
+        "comment": "whole unit",
+        "constraints": [
           {
-            "type": "remove",
-            "value": "fcca-7b6b-7920-a6f5",
-            "field": "category",
-            "scope": "parent"
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ba38-787c-8633-25b1"
           }
         ]
       },
@@ -18998,7 +20782,7 @@
         ],
         "categoryLinks": [
           {
-            "name": "Infantry",
+            "name": "Infantry Unit Type",
             "hidden": false,
             "id": "64a4-f9d8-e938-fc20",
             "targetId": "c447-1b05-5ba8-846a",
@@ -19700,14 +21484,6 @@
         "entryLinks": [
           {
             "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "1daa-66bf-955f-b250",
-            "type": "selectionEntry",
-            "targetId": "d4f0-d4f0-f372-e02e"
-          },
-          {
-            "import": true,
             "name": "Flak Armour",
             "hidden": false,
             "id": "537f-8f76-ae89-f28b",
@@ -19769,10 +21545,119 @@
           {
             "import": true,
             "name": "Bayonet",
-            "hidden": false,
+            "hidden": true,
             "id": "5511-1d90-d55c-b445",
             "type": "selectionEntry",
-            "targetId": "f302-5092-21b4-4f62"
+            "targetId": "87fb-1c6f-cc2c-db1b",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "afa6-814a-10d6-b9aa"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6e07-5946-91e1-d0ed"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "afa6-814a-10d6-b9aa"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "6e07-5946-91e1-d0ed"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "2886-4252-0a7e-6fed",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": true,
+            "id": "2338-4e25-ea45-a5dd",
+            "type": "selectionEntry",
+            "targetId": "bbfb-1c1f-fdbf-90b1",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "18c7-900b-4fd4-c9c8"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c8ac-562e-92dc-b3f8"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "18c7-900b-4fd4-c9c8"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "c8ac-562e-92dc-b3f8"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -19880,7 +21765,7 @@
         ],
         "categoryLinks": [
           {
-            "name": "Infantry",
+            "name": "Infantry Unit Type",
             "hidden": false,
             "id": "808b-72ca-39e5-46fc",
             "targetId": "c447-1b05-5ba8-846a",
@@ -20162,19 +22047,120 @@
           },
           {
             "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "b2a0-ea4d-f0e3-d659",
+            "name": "Bayonet",
+            "hidden": true,
+            "id": "ebd0-7101-40a1-1465",
             "type": "selectionEntry",
-            "targetId": "d4f0-d4f0-f372-e02e"
+            "targetId": "87fb-1c6f-cc2c-db1b",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9045-41aa-1a8f-497c"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "243b-24ec-c078-5e0b"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "9045-41aa-1a8f-497c"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "243b-24ec-c078-5e0b"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "2886-4252-0a7e-6fed",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "import": true,
-            "name": "Bayonet",
-            "hidden": false,
-            "id": "ebd0-7101-40a1-1465",
+            "name": "Krak Grenades",
+            "hidden": true,
+            "id": "f99b-3f77-1cfe-5269",
             "type": "selectionEntry",
-            "targetId": "f302-5092-21b4-4f62"
+            "targetId": "bbfb-1c1f-fdbf-90b1",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3e9d-628e-c81b-b29d"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2a7b-919d-ce11-8949"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "3e9d-628e-c81b-b29d"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "2a7b-919d-ce11-8949"
+                  },
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -20193,109 +22179,6 @@
             "scope": "parent",
             "shared": true,
             "id": "c096-3192-677d-a6a0"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Bayonet",
-        "hidden": true,
-        "id": "f302-5092-21b4-4f62",
-        "comment": "autoselection on whole unit",
-        "profiles": [
-          {
-            "name": "Bayonet",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "24be-ba30-e657-a1e3",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Two-handed"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Two-handed",
-            "id": "bed3-17c5-0545-082e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9c96-f071-03a6-7593"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "21ed-c8bc-e403-31ef-min"
-          },
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "21ed-c8bc-e403-31ef-max"
-          }
-        ],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden"
-              },
-              {
-                "type": "set",
-                "value": 1,
-                "field": "21ed-c8bc-e403-31ef-min"
-              },
-              {
-                "type": "set",
-                "value": 1,
-                "field": "21ed-c8bc-e403-31ef-max"
-              }
-            ],
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "unit",
-                "childId": "2886-4252-0a7e-6fed",
-                "shared": true
-              }
-            ]
           }
         ]
       },
@@ -20368,73 +22251,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "ee53-4831-a3cf-1cdb"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Camo Netting",
-        "hidden": true,
-        "id": "e33a-a945-1990-6832",
-        "comment": "autoselection on whole unit",
-        "constraints": [
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "69c9-dde8-3dad-37bc"
-          },
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "3f9f-1c4a-403a-9db3"
-          }
-        ],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden"
-              },
-              {
-                "type": "set",
-                "value": 1,
-                "field": "69c9-dde8-3dad-37bc"
-              },
-              {
-                "type": "set",
-                "value": 1,
-                "field": "3f9f-1c4a-403a-9db3"
-              }
-            ],
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "unit",
-                "childId": "a670-5356-cd5f-5ea8",
-                "shared": true
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Camo Netting",
-            "id": "e9ac-7c02-92e3-8d57",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "d0b1-9784-a59c-b4e6"
           }
         ]
       },
@@ -20517,7 +22333,7 @@
             "primary": false
           },
           {
-            "name": "Flyer",
+            "name": "Flyer Sub-type",
             "hidden": false,
             "id": "fdd6-cd82-fd4c-b09f",
             "targetId": "63ab-f4ab-6759-c123",
@@ -20946,80 +22762,6 @@
           }
         ],
         "sortIndex": 16
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Smoke Launchers",
-        "hidden": true,
-        "id": "519b-3754-e603-da8b",
-        "comment": "autoselection on whole unit",
-        "profiles": [
-          {
-            "name": "Smoke Launchers",
-            "typeId": "8d18-819f-6442-e206",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "59cf-cc14-2193-0594",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "73f7-995c-ccc1-9f39",
-                "$text": "The controlling player may choose to trigger smoke launchers once a model with them has completed its movement in the Movement phase, and may only choose to trigger them if the model has moved no faster than Combat Speed that turn. Once triggered, the model with smoke launchers counts as being more than 25% obscured, regardless of terrain, until the start of the controlling player’s next turn and gains a 6+ Cover Save. A model whose smoke launchers have been triggered may not make any Shooting Attacks, except as part of a Reaction, in the same turn. Smoke launchers may only be used once per battle, and once triggered may not be further used – in addition, they do not count as a weapon and may not be targeted by Weapon Destroyed results on the Vehicle Damage table."
-              }
-            ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "060a-9a54-8c97-8801"
-          },
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "77a8-ed54-0d06-4273"
-          }
-        ],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden"
-              },
-              {
-                "type": "set",
-                "value": 1,
-                "field": "060a-9a54-8c97-8801"
-              },
-              {
-                "type": "set",
-                "value": 1,
-                "field": "77a8-ed54-0d06-4273"
-              }
-            ],
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "unit",
-                "childId": "9d13-31d2-0154-5267",
-                "shared": true
-              }
-            ]
-          }
-        ]
       },
       {
         "type": "upgrade",

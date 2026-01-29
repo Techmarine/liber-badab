@@ -9200,6 +9200,24 @@
             "targetId": "fede-103d-c56e-1765"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Krak Grenades",
+        "hidden": false,
+        "id": "58ba-b4af-bc02-c48f",
+        "comment": "whole unit",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "af62-9b4a-35c3-520a"
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
