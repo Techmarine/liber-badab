@@ -76,13 +76,6 @@
             "primary": true
           },
           {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "fd9f-d63e-2b55-e6ed",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
-          },
-          {
             "name": "Master of the Company",
             "hidden": false,
             "id": "13d3-3415-5863-792a",
@@ -141,7 +134,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "713a-579d-e1d2-058a",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -155,14 +148,14 @@
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "6657-cffa-f3bf-799b",
                 "targetId": "33d0-319a-741e-573f",
                 "primary": false
               },
               {
-                "name": "Unique",
+                "name": "Unique Sub-type",
                 "hidden": false,
                 "id": "69fe-8a90-634a-9e20",
                 "targetId": "75a3-46b2-47de-9789",
@@ -516,13 +509,6 @@
             "targetId": "b780-4ce8-8482-c432"
           },
           {
-            "name": "Master of the Company",
-            "id": "06a7-334f-d2e9-a1a2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9782-8c2a-c5f0-319d"
-          },
-          {
             "name": "It Will not Die",
             "id": "0584-baaa-f0fa-ea03",
             "hidden": false,
@@ -579,13 +565,6 @@
             "id": "6902-62c4-aa84-40bc",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "cee3-4c00-11f6-820a",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           },
           {
             "name": "Compulsory Choice",
@@ -911,7 +890,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "c8e1-cf57-25ec-10fb",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -925,14 +904,14 @@
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "f9be-20ea-c3f1-e027",
                 "targetId": "33d0-319a-741e-573f",
                 "primary": false
               },
               {
-                "name": "Unique",
+                "name": "Unique Sub-type",
                 "hidden": false,
                 "id": "c3d2-48cd-15a7-7e8e",
                 "targetId": "75a3-46b2-47de-9789",
@@ -1014,13 +993,6 @@
             "primary": true
           },
           {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "029c-6921-70a9-c636",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
-          },
-          {
             "name": "Relic of the Chapter",
             "hidden": false,
             "id": "270c-63a4-0258-98e4",
@@ -1072,7 +1044,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Dreadnought",
+                "name": "Dreadnought Unit Type",
                 "hidden": false,
                 "id": "f12a-474e-d198-4495",
                 "targetId": "eb17-a98e-537b-5de6",
@@ -1086,14 +1058,14 @@
                 "primary": false
               },
               {
-                "name": "Heavy",
+                "name": "Heavy Sub-type",
                 "hidden": false,
                 "id": "4eb1-9283-a34b-0b88",
                 "targetId": "33d0-319a-741e-573f",
                 "primary": false
               },
               {
-                "name": "Unique",
+                "name": "Unique Sub-type",
                 "hidden": false,
                 "id": "80c2-4943-1698-bde9",
                 "targetId": "75a3-46b2-47de-9789",
@@ -1436,13 +1408,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "1288-fea0-dcf4-a742"
-          },
-          {
-            "name": "Relic of the Chapter",
-            "id": "de0c-1f4b-9e4b-bd6c",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "681c-695c-731f-b780"
           },
           {
             "name": "Support Squad",

@@ -53,13 +53,6 @@
         "id": "1038-28d3-f1e2-e80b",
         "infoLinks": [
           {
-            "name": "Master of the Company",
-            "id": "d1d9-f349-46c1-0769",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9782-8c2a-c5f0-319d"
-          },
-          {
             "name": "Chapter Tactics (Executioners)",
             "id": "e4c0-abff-5953-0214",
             "hidden": false,
@@ -136,13 +129,6 @@
             "hidden": false,
             "id": "d4a5-63ed-f7fc-6a29",
             "targetId": "08f5-cc3b-5be1-92cb",
-            "primary": false
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "df87-0492-2705-6787",
-            "targetId": "4554-5526-60c7-9793",
             "primary": false
           },
           {

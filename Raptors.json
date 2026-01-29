@@ -61,13 +61,6 @@
             "primary": true
           },
           {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "e9ce-950d-68ce-a9ea",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
-          },
-          {
             "name": "Chapter Master",
             "hidden": false,
             "id": "e665-e2fe-a2f2-f74f",
@@ -105,7 +98,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "225b-e2a0-2cea-7da8",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -119,14 +112,14 @@
                 "primary": false
               },
               {
-                "name": "Skirmish",
+                "name": "Skirmish Sub-type",
                 "hidden": false,
                 "id": "073d-f300-44ba-b9c3",
                 "targetId": "e349-c42f-3c5d-1e72",
                 "primary": false
               },
               {
-                "name": "Unique",
+                "name": "Unique Sub-type",
                 "hidden": false,
                 "id": "b456-e155-d6ae-261e",
                 "targetId": "75a3-46b2-47de-9789",
@@ -696,20 +689,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "e453-db5d-2916-abcb"
-          },
-          {
-            "name": "Chapter Master",
-            "id": "1d83-af30-5686-80e2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2979-eeea-165c-9ac1"
-          },
-          {
-            "name": "Master of the Company",
-            "id": "8c18-a752-d62b-7df1",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9782-8c2a-c5f0-319d"
           },
           {
             "name": "Scout",

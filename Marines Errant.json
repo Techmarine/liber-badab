@@ -67,13 +67,6 @@
             "primary": false
           },
           {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "766a-3cee-3e92-7cb7",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
-          },
-          {
             "name": "Compulsory Choice",
             "hidden": false,
             "id": "b1bb-a4ed-d139-ed28",
@@ -555,13 +548,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "e453-db5d-2916-abcb"
-          },
-          {
-            "name": "Master of the Company",
-            "id": "26b5-f58b-c1b1-a7c8",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9782-8c2a-c5f0-319d"
           },
           {
             "name": "Scout",

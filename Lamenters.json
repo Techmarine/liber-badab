@@ -77,7 +77,7 @@
             ],
             "categoryLinks": [
               {
-                "name": "Infantry",
+                "name": "Infantry Unit Type",
                 "hidden": false,
                 "id": "d179-674c-898d-2c58",
                 "targetId": "c447-1b05-5ba8-846a",
@@ -91,7 +91,7 @@
                 "primary": false
               },
               {
-                "name": "Unique",
+                "name": "Unique Sub-type",
                 "hidden": false,
                 "id": "62f6-77ac-d075-fc20",
                 "targetId": "75a3-46b2-47de-9789",
@@ -448,13 +448,6 @@
             "primary": false
           },
           {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "d7f4-3db2-6cdf-5b33",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
-          },
-          {
             "name": "Compulsory Choice",
             "hidden": false,
             "id": "7678-6ba6-9001-bf4b",
@@ -551,20 +544,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "fdf1-31bc-4796-fb3d"
-          },
-          {
-            "name": "Chapter Master",
-            "id": "856f-9ec9-208e-11f2",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2979-eeea-165c-9ac1"
-          },
-          {
-            "name": "Master of the Company",
-            "id": "0588-7049-90a5-414d",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9782-8c2a-c5f0-319d"
           }
         ],
         "rules": [
@@ -596,13 +575,6 @@
             "id": "b88a-9eab-f670-16da",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "f12d-1492-7bf1-61ec",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntryGroups": [
@@ -638,14 +610,14 @@
                 "id": "974b-fd0b-8151-e15f",
                 "categoryLinks": [
                   {
-                    "name": "Dreadnought",
+                    "name": "Dreadnought Unit Type",
                     "hidden": false,
                     "id": "663e-226c-2d06-f251",
                     "targetId": "eb17-a98e-537b-5de6",
                     "primary": false
                   },
                   {
-                    "name": "Heavy",
+                    "name": "Heavy Sub-type",
                     "hidden": false,
                     "id": "a6e3-7a38-b679-6ba7",
                     "targetId": "33d0-319a-741e-573f",
@@ -985,14 +957,14 @@
                 "id": "b226-ef55-64ec-dae7",
                 "categoryLinks": [
                   {
-                    "name": "Dreadnought",
+                    "name": "Dreadnought Unit Type",
                     "hidden": false,
                     "id": "9f57-6bf0-11b5-78bc",
                     "targetId": "eb17-a98e-537b-5de6",
                     "primary": false
                   },
                   {
-                    "name": "Heavy",
+                    "name": "Heavy Sub-type",
                     "hidden": false,
                     "id": "e7d4-6249-eeca-709e",
                     "targetId": "33d0-319a-741e-573f",
@@ -1355,14 +1327,14 @@
                 "id": "7a43-0be2-4a8e-eefc",
                 "categoryLinks": [
                   {
-                    "name": "Dreadnought",
+                    "name": "Dreadnought Unit Type",
                     "hidden": false,
                     "id": "a779-974d-6a1d-3f5f",
                     "targetId": "eb17-a98e-537b-5de6",
                     "primary": false
                   },
                   {
-                    "name": "Heavy",
+                    "name": "Heavy Sub-type",
                     "hidden": false,
                     "id": "0a2e-a358-fb53-87a1",
                     "targetId": "33d0-319a-741e-573f",

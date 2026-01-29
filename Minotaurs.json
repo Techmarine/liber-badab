@@ -68,13 +68,6 @@
             "primary": true
           },
           {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "5c0c-3795-5381-8ac0",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
-          },
-          {
             "name": "Chapter Master",
             "hidden": false,
             "id": "a671-a33f-6a8d-1d88",
@@ -478,20 +471,6 @@
         ],
         "infoLinks": [
           {
-            "name": "Master of the Company",
-            "id": "1e4a-c1d8-d1cb-e21e",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9782-8c2a-c5f0-319d"
-          },
-          {
-            "name": "Chapter Master",
-            "id": "4b11-f2b9-b97d-47ad",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2979-eeea-165c-9ac1"
-          },
-          {
             "name": "Independent Character",
             "id": "e7e5-ea10-a959-da11",
             "hidden": false,
@@ -576,13 +555,6 @@
             "id": "e460-1051-ae19-2062",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "1b5a-39bb-c9b3-20ed",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           },
           {
             "name": "Master of the Company",
@@ -1167,13 +1139,6 @@
                 ]
               }
             ]
-          },
-          {
-            "name": "Master of the Company",
-            "id": "bb69-623e-2ccf-a4f8",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9782-8c2a-c5f0-319d"
           }
         ],
         "rules": [

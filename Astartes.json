@@ -2336,13 +2336,6 @@
             "id": "a15f-4f6e-076d-c4a0",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "be82-e8f3-3cdc-610a",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "costs": [
@@ -3165,13 +3158,6 @@
             "targetId": "e453-db5d-2916-abcb"
           },
           {
-            "name": "Master of the Company",
-            "id": "a601-ed28-e099-f252",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9782-8c2a-c5f0-319d"
-          },
-          {
             "name": "Relentless",
             "id": "9593-a25e-986c-63ff",
             "hidden": false,
@@ -3275,13 +3261,6 @@
             "hidden": false,
             "id": "02e1-2d6e-74ef-d108",
             "targetId": "be4d-83ab-c864-a7c6",
-            "primary": false
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "462b-bcfc-3a20-048e",
-            "targetId": "4554-5526-60c7-9793",
             "primary": false
           }
         ],
@@ -5274,7 +5253,7 @@
                                 "value": 1,
                                 "field": "selections",
                                 "scope": "force",
-                                "childId": "101e-01b9-b003-61dd",
+                                "childId": "3aa2-0a37-8cc8-de52",
                                 "shared": true,
                                 "includeChildSelections": true
                               },
@@ -5461,7 +5440,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "e861-088d-eec2-9ffa",
+                    "childId": "e21b-2efb-67ed-253c",
                     "shared": true,
                     "includeChildSelections": true
                   },
@@ -5470,7 +5449,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "e15e-cb8a-0715-ceb2",
+                    "childId": "0518-a7e6-8ea3-cbb9",
                     "shared": true,
                     "includeChildSelections": true
                   },
@@ -5479,7 +5458,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "93d6-6be2-a921-9578",
+                    "childId": "ac2a-4243-390f-3cd0",
                     "shared": true,
                     "includeChildSelections": true
                   },
@@ -5488,7 +5467,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "101e-01b9-b003-61dd",
+                    "childId": "3aa2-0a37-8cc8-de52",
                     "shared": true,
                     "includeChildSelections": true
                   },
@@ -5497,7 +5476,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "6b6a-5722-04ab-ff69",
+                    "childId": "9907-09ee-3bb1-5cc4",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -7541,13 +7520,6 @@
             "id": "8e1b-75bc-bf66-5247",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "a022-0d51-48ff-08bc",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "infoLinks": [
@@ -7626,13 +7598,6 @@
             "hidden": false,
             "id": "b8a6-33a1-05df-419e",
             "targetId": "b04f-6c8c-d63a-db03",
-            "primary": false
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "ce82-807a-a6d2-f7cf",
-            "targetId": "c96a-d708-82e0-fb89",
             "primary": false
           }
         ],
@@ -8131,13 +8096,6 @@
           }
         ],
         "infoLinks": [
-          {
-            "name": "Relic of the Chapter",
-            "id": "c8fe-24cf-7220-9324",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "681c-695c-731f-b780"
-          },
           {
             "name": "Dreadnought Talon",
             "id": "e2b5-084d-e5c5-8945",
@@ -11162,13 +11120,6 @@
             "id": "0c88-6593-3cf2-ea83",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "1666-5496-afc2-5758",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "sortIndex": 5,
@@ -12503,13 +12454,6 @@
             "id": "6f4d-c4f4-2745-b957",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "33ae-f0fb-cbe1-1196",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "infoLinks": [
@@ -13900,7 +13844,7 @@
                             "value": 1,
                             "field": "selections",
                             "scope": "force",
-                            "childId": "101e-01b9-b003-61dd",
+                            "childId": "3aa2-0a37-8cc8-de52",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -14238,13 +14182,6 @@
             "id": "1d71-6bee-4999-01fe",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "e66a-a165-d3ca-1cc9",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "sortIndex": 1,
@@ -14283,13 +14220,6 @@
             "targetId": "e453-db5d-2916-abcb"
           },
           {
-            "name": "Master of the Company",
-            "id": "8db2-d865-b4d3-a586",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "9782-8c2a-c5f0-319d"
-          },
-          {
             "name": "Relentless",
             "id": "9a24-5247-05f3-b267",
             "hidden": false,
@@ -14324,13 +14254,6 @@
             "hidden": false,
             "id": "b14d-dcf8-423a-2f61",
             "targetId": "be4d-83ab-c864-a7c6",
-            "primary": false
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "7c4f-e905-8939-f17e",
-            "targetId": "4554-5526-60c7-9793",
             "primary": false
           }
         ],
@@ -17119,13 +17042,6 @@
             "id": "feb8-2a61-8e4f-0a24",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "01d0-b873-ae07-7b36",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -18141,13 +18057,6 @@
             "id": "4a91-8e02-0d85-c9e3",
             "targetId": "b906-cdc5-0d3b-5270",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "542a-0a67-3046-1a25",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ]
       },
@@ -18541,13 +18450,6 @@
             "id": "a980-5ca3-d512-c314",
             "targetId": "b906-cdc5-0d3b-5270",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "57a8-811c-6967-b417",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "sortIndex": 19,
@@ -19138,13 +19040,6 @@
             "id": "018c-485b-580f-89ab",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "ea5c-8c3b-a57a-f5a0",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -21075,15 +20970,6 @@
                     "field": "category",
                     "scope": "parent"
                   }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Relic of the Chapter",
-                    "id": "e67a-9c37-1ac9-77c6",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "681c-695c-731f-b780"
-                  }
                 ]
               },
               {
@@ -21098,15 +20984,6 @@
                     "value": "b04f-6c8c-d63a-db03",
                     "field": "category",
                     "scope": "parent"
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Relic of the Chapter",
-                    "id": "0d65-9bf8-3762-15c9",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "681c-695c-731f-b780"
                   }
                 ]
               }
@@ -21190,13 +21067,6 @@
             "id": "3286-8687-7145-c66b",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "5032-549c-9caa-3219",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -23092,13 +22962,6 @@
             "id": "346a-8c19-f554-c2a7",
             "targetId": "b906-cdc5-0d3b-5270",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "3466-9f26-200f-1bfc",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -23318,13 +23181,6 @@
             "id": "22e6-644d-0d5f-2c22",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "2807-dbd1-59fd-896a",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -26667,13 +26523,6 @@
             "id": "9302-7b31-5149-9046",
             "targetId": "b906-cdc5-0d3b-5270",
             "primary": false
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "8b98-3a91-6f92-53e1",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -26856,13 +26705,6 @@
             "id": "c1af-e8e9-642b-3fd5",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "a538-a642-3584-f754",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -27867,13 +27709,6 @@
             "id": "1641-f430-fba3-4ef4",
             "targetId": "a300-5393-99ea-9657",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "97e1-e045-15a2-9aa1",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntryGroups": [
@@ -29383,13 +29218,6 @@
             "hidden": false,
             "id": "0303-997c-6c95-e028",
             "targetId": "be4d-83ab-c864-a7c6",
-            "primary": false
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "b9c2-7d23-043e-aaf0",
-            "targetId": "4554-5526-60c7-9793",
             "primary": false
           }
         ],
@@ -31685,7 +31513,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "6b6a-5722-04ab-ff69",
+                    "childId": "9907-09ee-3bb1-5cc4",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -31713,7 +31541,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "101e-01b9-b003-61dd",
+                "childId": "3aa2-0a37-8cc8-de52",
                 "shared": true,
                 "includeChildSelections": true
               },
@@ -31722,7 +31550,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "6b6a-5722-04ab-ff69",
+                "childId": "9907-09ee-3bb1-5cc4",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -31746,7 +31574,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "6b6a-5722-04ab-ff69",
+                "childId": "9907-09ee-3bb1-5cc4",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -31869,13 +31697,6 @@
             "hidden": false,
             "id": "c46f-ef0a-c33a-8c18",
             "targetId": "be4d-83ab-c864-a7c6",
-            "primary": false
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "8b8d-c004-70e9-0389",
-            "targetId": "4554-5526-60c7-9793",
             "primary": false
           }
         ],
@@ -32674,7 +32495,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "101e-01b9-b003-61dd",
+                        "childId": "3aa2-0a37-8cc8-de52",
                         "shared": true,
                         "includeChildSelections": true
                       }
@@ -33456,7 +33277,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "6b6a-5722-04ab-ff69",
+                    "childId": "9907-09ee-3bb1-5cc4",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -33476,7 +33297,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "6b6a-5722-04ab-ff69",
+                "childId": "9907-09ee-3bb1-5cc4",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -33505,7 +33326,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "101e-01b9-b003-61dd",
+                "childId": "3aa2-0a37-8cc8-de52",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -33674,13 +33495,6 @@
             "id": "e9b5-ff08-bab3-6bf4",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "d07e-5a16-8341-3ea4",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -34183,13 +33997,6 @@
             "id": "d7e3-0887-91da-0895",
             "targetId": "1685-8865-a2b2-5fb9",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "f6c6-2247-a4ff-3010",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -35509,7 +35316,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "4cb3-ddb4-3cf6-1837",
+                        "childId": "b145-24ef-b41c-497a",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -35518,7 +35325,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "6b6a-5722-04ab-ff69",
+                        "childId": "9907-09ee-3bb1-5cc4",
                         "shared": true,
                         "includeChildSelections": true
                       }
@@ -35550,7 +35357,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "4cb3-ddb4-3cf6-1837",
+                    "childId": "b145-24ef-b41c-497a",
                     "shared": true,
                     "includeChildSelections": true
                   },
@@ -35559,7 +35366,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "6b6a-5722-04ab-ff69",
+                    "childId": "9907-09ee-3bb1-5cc4",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -35654,13 +35461,6 @@
             "id": "2124-a38f-09b9-d43c",
             "targetId": "1685-8865-a2b2-5fb9",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "f25a-86c8-9618-88b2",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -38193,7 +37993,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "4cb3-ddb4-3cf6-1837",
+                    "childId": "b145-24ef-b41c-497a",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -38221,7 +38021,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "4cb3-ddb4-3cf6-1837",
+                "childId": "b145-24ef-b41c-497a",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -38337,13 +38137,6 @@
             "id": "cd31-ad41-a6d2-f623",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "be7f-1e13-476d-059a",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -40755,13 +40548,6 @@
             "id": "2041-78b8-f104-fc2c",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "bc6c-bf53-5624-f5f8",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -42175,13 +41961,6 @@
             "id": "d379-c5c9-f302-f432",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "c3fc-7201-b104-ea77",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "sortIndex": 25,
@@ -42354,7 +42133,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "101e-01b9-b003-61dd",
+                        "childId": "3aa2-0a37-8cc8-de52",
                         "shared": true,
                         "includeChildSelections": true
                       }
@@ -43394,7 +43173,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "101e-01b9-b003-61dd",
+                "childId": "3aa2-0a37-8cc8-de52",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -43499,13 +43278,6 @@
             "id": "1d0a-e25e-45c3-a811",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "3253-ed6b-e5da-0228",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -44687,15 +44459,6 @@
                 "name": "Javelin",
                 "hidden": false,
                 "id": "f7e0-caa9-ebb0-4680",
-                "infoLinks": [
-                  {
-                    "name": "Relic of the Chapter",
-                    "id": "ff5f-6de2-d776-cc7d",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "681c-695c-731f-b780"
-                  }
-                ],
                 "modifiers": [
                   {
                     "type": "add",
@@ -44711,15 +44474,6 @@
                 "name": "Proteus",
                 "hidden": false,
                 "id": "19da-5911-82d7-6ddf",
-                "infoLinks": [
-                  {
-                    "name": "Relic of the Chapter",
-                    "id": "f0db-08de-612c-1092",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "681c-695c-731f-b780"
-                  }
-                ],
                 "modifiers": [
                   {
                     "type": "add",
@@ -44947,13 +44701,6 @@
             "id": "3a21-474e-9265-92a5",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "6b26-f05d-e0df-dfea",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "sortIndex": 28,
@@ -45275,13 +45022,6 @@
             "id": "c435-1663-2dcd-5581",
             "targetId": "2e5a-9101-3872-faad",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "3dc9-dfad-1883-1a2b",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -45722,13 +45462,6 @@
             "id": "afb1-ef9f-ab20-3208",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "33e8-d4b2-eaa2-5f72",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -47178,13 +46911,6 @@
             "id": "1ec6-e63d-8cac-cf97",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "0868-7dc9-aca6-a565",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -48012,13 +47738,6 @@
             "id": "c2c6-d79d-c731-2817",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Infantry",
-            "hidden": false,
-            "id": "8a07-c9dd-8ca1-dc09",
-            "targetId": "4554-5526-60c7-9793",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -49131,13 +48850,6 @@
             "id": "5b75-f3d5-66a7-3f45",
             "targetId": "b04f-6c8c-d63a-db03",
             "primary": false
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "e90b-8f2a-3297-efe1",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "infoLinks": [
@@ -49161,13 +48873,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "295d-36fe-4db3-a19f"
-          },
-          {
-            "name": "Relic of the Chapter",
-            "id": "26a6-4c32-bac3-7c85",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "681c-695c-731f-b780"
           }
         ],
         "entryLinks": [
@@ -49525,13 +49230,6 @@
             "hidden": false,
             "id": "7436-d4f2-1373-bb3f",
             "targetId": "b04f-6c8c-d63a-db03",
-            "primary": false
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "f1c1-5737-d391-d0b5",
-            "targetId": "c96a-d708-82e0-fb89",
             "primary": false
           }
         ],
@@ -49913,15 +49611,6 @@
               }
             ],
             "sortIndex": 1
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Relic of the Chapter",
-            "id": "f25b-81ee-0f7b-7497",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "681c-695c-731f-b780"
           }
         ],
         "entryLinks": [
@@ -50309,13 +49998,6 @@
             "id": "4f3f-7734-ac25-1368",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "f55a-88a9-4006-29d9",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -50967,45 +50649,6 @@
                     "name": "Points",
                     "typeId": "54b5-0978-c8a4-5b5a",
                     "value": 30
-                  }
-                ]
-              }
-            ],
-            "infoLinks": [
-              {
-                "name": "Relic of the Chapter",
-                "id": "5971-d75f-bdde-006a",
-                "hidden": true,
-                "type": "rule",
-                "targetId": "681c-695c-731f-b780",
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": false,
-                    "field": "hidden",
-                    "conditionGroups": [
-                      {
-                        "type": "or",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "self",
-                            "childId": "7189-01ae-e282-a234",
-                            "shared": true
-                          },
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "self",
-                            "childId": "4f88-7195-d317-8037",
-                            "shared": true
-                          }
-                        ]
-                      }
-                    ]
                   }
                 ]
               }
@@ -51689,13 +51332,6 @@
             "id": "17f9-d909-bd1f-5133",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "884a-169e-095d-b85b",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "entryLinks": [
@@ -51910,13 +51546,6 @@
             "id": "2fdb-12ab-d825-9a84",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "0b42-c1c4-1979-cdcc",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -52815,13 +52444,6 @@
             "id": "e3b2-48a5-ea9c-cdfe",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "3a46-53a2-69b1-a362",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -54536,13 +54158,6 @@
             "id": "c505-b22f-bf67-1341",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "5cdb-776e-a9a5-30ec",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "costs": [
@@ -54577,13 +54192,6 @@
             "id": "173d-fa1c-31e9-0a76",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "5f42-77d5-231d-2239",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "costs": [
@@ -54700,13 +54308,6 @@
             "id": "4e37-347b-6237-e772",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "c80a-f11c-ff32-43cb",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntryGroups": [
@@ -55564,13 +55165,6 @@
             "id": "769d-b0da-816e-b42d",
             "targetId": "b04f-6c8c-d63a-db03",
             "primary": false
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "e228-efdd-d7ee-aed6",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -56126,13 +55720,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "52d4-8107-08f3-455e"
-          },
-          {
-            "name": "Relic of the Chapter",
-            "id": "5820-853a-ed01-6765",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "681c-695c-731f-b780"
           }
         ]
       },
@@ -56173,13 +55760,6 @@
             "id": "ff79-c069-d090-b6e1",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "e953-105a-17f3-171c",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -56743,13 +56323,6 @@
             "id": "25ac-0cba-e0ed-ea7e",
             "targetId": "b04f-6c8c-d63a-db03",
             "primary": false
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "b050-ebb9-7dbf-64dc",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -57043,13 +56616,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4aab-8d13-caf2-091d"
-          },
-          {
-            "name": "Relic of the Chapter",
-            "id": "a86e-4bdc-2fd7-2ff8",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "681c-695c-731f-b780"
           }
         ],
         "entryLinks": [
@@ -57120,13 +56686,6 @@
             "id": "7830-2c04-945b-8636",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "443b-c61a-f018-e8b8",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "infoLinks": [
@@ -57385,13 +56944,6 @@
             "id": "093f-8465-c038-453e",
             "targetId": "1dff-e2a4-5442-6863",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "d252-108d-9a8b-5956",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "selectionEntries": [
@@ -57988,13 +57540,6 @@
             "id": "a92a-ca58-25ce-4b85",
             "targetId": "6499-290b-b038-5509",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "78ac-8e50-a231-55c6",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "infoLinks": [
@@ -58515,13 +58060,6 @@
             "id": "0877-7bdd-be64-0a9c",
             "targetId": "6499-290b-b038-5509",
             "primary": true
-          },
-          {
-            "name": "1st Company Non-infantry",
-            "hidden": false,
-            "id": "a4c8-07ba-3420-0f95",
-            "targetId": "c96a-d708-82e0-fb89",
-            "primary": false
           }
         ],
         "infoLinks": [
@@ -58593,7 +58131,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "e861-088d-eec2-9ffa",
+                    "childId": "e21b-2efb-67ed-253c",
                     "shared": true,
                     "includeChildSelections": true
                   },
@@ -58602,7 +58140,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "e15e-cb8a-0715-ceb2",
+                    "childId": "0518-a7e6-8ea3-cbb9",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -60072,7 +59610,7 @@
                             "value": 1,
                             "field": "selections",
                             "scope": "parent",
-                            "childId": "6b6a-5722-04ab-ff69",
+                            "childId": "9907-09ee-3bb1-5cc4",
                             "shared": true
                           }
                         ]
@@ -61059,7 +60597,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "4cb3-ddb4-3cf6-1837",
+                "childId": "b145-24ef-b41c-497a",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61117,7 +60655,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "4cb3-ddb4-3cf6-1837",
+                "childId": "b145-24ef-b41c-497a",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61143,7 +60681,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "4cb3-ddb4-3cf6-1837",
+                "childId": "b145-24ef-b41c-497a",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61169,7 +60707,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "4cb3-ddb4-3cf6-1837",
+                "childId": "b145-24ef-b41c-497a",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61320,7 +60858,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "4cb3-ddb4-3cf6-1837",
+                "childId": "b145-24ef-b41c-497a",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61411,7 +60949,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "e861-088d-eec2-9ffa",
+                "childId": "e21b-2efb-67ed-253c",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61461,7 +60999,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "e861-088d-eec2-9ffa",
+                "childId": "e21b-2efb-67ed-253c",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61511,7 +61049,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "e861-088d-eec2-9ffa",
+                "childId": "e21b-2efb-67ed-253c",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61561,7 +61099,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "e15e-cb8a-0715-ceb2",
+                "childId": "0518-a7e6-8ea3-cbb9",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61611,7 +61149,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "e15e-cb8a-0715-ceb2",
+                "childId": "0518-a7e6-8ea3-cbb9",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61661,7 +61199,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "e15e-cb8a-0715-ceb2",
+                "childId": "0518-a7e6-8ea3-cbb9",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61721,7 +61259,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "93d6-6be2-a921-9578",
+                "childId": "ac2a-4243-390f-3cd0",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61771,7 +61309,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "93d6-6be2-a921-9578",
+                "childId": "ac2a-4243-390f-3cd0",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61811,7 +61349,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "101e-01b9-b003-61dd",
+                "childId": "3aa2-0a37-8cc8-de52",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61842,7 +61380,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "4cb3-ddb4-3cf6-1837",
+                "childId": "b145-24ef-b41c-497a",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -61858,7 +61396,7 @@
                 "value": 1,
                 "field": "selections",
                 "scope": "force",
-                "childId": "4cb3-ddb4-3cf6-1837",
+                "childId": "b145-24ef-b41c-497a",
                 "shared": true,
                 "includeChildSelections": true
               }
@@ -62618,7 +62156,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "6b6a-5722-04ab-ff69",
+                        "childId": "9907-09ee-3bb1-5cc4",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -62670,7 +62208,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "e15e-cb8a-0715-ceb2",
+                        "childId": "0518-a7e6-8ea3-cbb9",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -62868,7 +62406,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "93d6-6be2-a921-9578",
+                        "childId": "ac2a-4243-390f-3cd0",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -63145,7 +62683,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "101e-01b9-b003-61dd",
+                        "childId": "3aa2-0a37-8cc8-de52",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -63366,22 +62904,6 @@
                 "description": "Once per battle, at the start of any of the controlling player’s turns, this rule may be activated. Once activated take a Leadership test for this model: if passed then all friendly units that are Pinned or Falling Back and have at least one model that can draw line of sight to the model with this special rule immediately rally, and are no longer Pinned or Falling Back and may act normally this turn."
               }
             ],
-            "infoLinks": [
-              {
-                "name": "Master of the Company",
-                "id": "5dd5-4f9c-7cc8-57fc",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "9782-8c2a-c5f0-319d"
-              },
-              {
-                "name": "Chapter Master",
-                "id": "a451-5f47-cf95-2f76",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "2979-eeea-165c-9ac1"
-              }
-            ],
             "entryLinks": [
               {
                 "import": true,
@@ -63479,7 +63001,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "e861-088d-eec2-9ffa",
+                        "childId": "e21b-2efb-67ed-253c",
                         "shared": true,
                         "includeChildSelections": true
                       }
@@ -65729,111 +65251,6 @@
         "hidden": false
       },
       {
-        "name": "1st Company",
-        "id": "e861-088d-eec2-9ffa",
-        "hidden": false
-      },
-      {
-        "name": "1st Company Infantry",
-        "id": "4554-5526-60c7-9793",
-        "hidden": false,
-        "constraints": [
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "1e9f-74cc-6de8-e0cf",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "e861-088d-eec2-9ffa",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "1e9f-74cc-6de8-e0cf",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "c96a-d708-82e0-fb89",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
-              }
-            ],
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "e861-088d-eec2-9ffa",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "1st Company Non-infantry",
-        "id": "c96a-d708-82e0-fb89",
-        "hidden": false,
-        "modifiers": [
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "e861-088d-eec2-9ffa",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "8th Company",
-        "id": "e15e-cb8a-0715-ceb2",
-        "hidden": false
-      },
-      {
-        "name": "9th Company",
-        "id": "93d6-6be2-a921-9578",
-        "hidden": false
-      },
-      {
-        "name": "10th Company",
-        "id": "101e-01b9-b003-61dd",
-        "hidden": false
-      },
-      {
         "name": "Master of the Company",
         "id": "08f5-cc3b-5be1-92cb",
         "hidden": false,
@@ -65873,6 +65290,15 @@
                 "includeChildSelections": true
               }
             ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Master of the Company",
+            "id": "5a16-0111-9d2d-5c58",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9782-8c2a-c5f0-319d"
           }
         ]
       },
@@ -65965,12 +65391,16 @@
               }
             ]
           }
+        ],
+        "infoLinks": [
+          {
+            "name": "Relic of the Chapter",
+            "id": "c8fe-24cf-7220-9324",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "681c-695c-731f-b780"
+          }
         ]
-      },
-      {
-        "name": "Siege Assault Vanguard Force",
-        "id": "4cb3-ddb4-3cf6-1837",
-        "hidden": false
       },
       {
         "name": "Company Level Deployment",
@@ -65980,16 +65410,20 @@
       {
         "name": "Chapter Master",
         "id": "2ca5-c322-c8f3-5ebc",
-        "hidden": false
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Chapter Master",
+            "id": "856f-9ec9-208e-11f2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2979-eeea-165c-9ac1"
+          }
+        ]
       },
       {
         "name": "Chapter",
         "id": "7c29-8e11-7fae-9549",
-        "hidden": false
-      },
-      {
-        "name": "Void Assault",
-        "id": "6b6a-5722-04ab-ff69",
         "hidden": false
       }
     ],
@@ -66168,7 +65602,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "e861-088d-eec2-9ffa",
+                    "childId": "e21b-2efb-67ed-253c",
                     "shared": true,
                     "includeChildSelections": true
                   },
@@ -66177,7 +65611,7 @@
                     "value": 1,
                     "field": "selections",
                     "scope": "force",
-                    "childId": "93d6-6be2-a921-9578",
+                    "childId": "ac2a-4243-390f-3cd0",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -66522,7 +65956,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "e861-088d-eec2-9ffa",
+                        "childId": "e21b-2efb-67ed-253c",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -66531,7 +65965,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "93d6-6be2-a921-9578",
+                        "childId": "ac2a-4243-390f-3cd0",
                         "shared": true,
                         "includeChildSelections": true
                       }
@@ -66570,7 +66004,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "e861-088d-eec2-9ffa",
+                        "childId": "e21b-2efb-67ed-253c",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -66579,7 +66013,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "e15e-cb8a-0715-ceb2",
+                        "childId": "0518-a7e6-8ea3-cbb9",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -66588,7 +66022,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "101e-01b9-b003-61dd",
+                        "childId": "3aa2-0a37-8cc8-de52",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -66597,7 +66031,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "6b6a-5722-04ab-ff69",
+                        "childId": "9907-09ee-3bb1-5cc4",
                         "shared": true,
                         "includeChildSelections": true
                       }
@@ -66636,7 +66070,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "e861-088d-eec2-9ffa",
+                        "childId": "e21b-2efb-67ed-253c",
                         "shared": true,
                         "includeChildSelections": true
                       },
@@ -66645,7 +66079,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "e15e-cb8a-0715-ceb2",
+                        "childId": "0518-a7e6-8ea3-cbb9",
                         "shared": true,
                         "includeChildSelections": true
                       }
