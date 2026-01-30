@@ -7096,7 +7096,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "98a4-1bcc-fedf-81d1",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -8393,7 +8393,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "98a4-1bcc-fedf-81d1",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -9515,24 +9515,6 @@
           {
             "type": "upgrade",
             "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "98a4-1bcc-fedf-81d1",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "445d-48eb-361f-c1bd"
-              }
-            ],
-            "sortIndex": 3
-          },
-          {
-            "type": "upgrade",
-            "import": true,
             "name": "Sanguinary Guard",
             "hidden": true,
             "id": "f31a-4ca2-830d-5a7c",
@@ -9705,6 +9687,43 @@
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
             "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "a0b4-3cfa-315e-668f",
+            "type": "selectionEntry",
+            "targetId": "58ba-b4af-bc02-c48f",
+            "sortIndex": 3,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -20309,7 +20328,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "4315-c053-518e-02c0",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -21115,7 +21134,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "4315-c053-518e-02c0",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -21709,24 +21728,6 @@
               }
             ],
             "sortIndex": 3
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "4315-c053-518e-02c0",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "9e7d-3174-74d4-fa37"
-              }
-            ],
-            "sortIndex": 5
           }
         ],
         "infoLinks": [
@@ -21784,6 +21785,43 @@
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "d0d0-3ade-5f91-9a65",
+            "type": "selectionEntry",
+            "targetId": "58ba-b4af-bc02-c48f",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 5
           }
         ]
       },
@@ -22376,7 +22414,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "1461-d7c0-d2d8-75ae",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -23511,7 +23549,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "1461-d7c0-d2d8-75ae",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -24460,24 +24498,6 @@
               }
             ],
             "sortIndex": 3
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "1461-d7c0-d2d8-75ae",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "79d0-86d5-fff7-0226"
-              }
-            ],
-            "sortIndex": 4
           }
         ],
         "infoLinks": [
@@ -24544,6 +24564,43 @@
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "c8da-c67c-e6af-bf92",
+            "type": "selectionEntry",
+            "targetId": "58ba-b4af-bc02-c48f",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 4
           }
         ]
       },
@@ -28660,7 +28717,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "f257-d1aa-38d9-0d6c",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -29658,7 +29715,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "f257-d1aa-38d9-0d6c",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -30556,24 +30613,6 @@
           {
             "type": "upgrade",
             "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "f257-d1aa-38d9-0d6c",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "b256-b010-f30f-af87"
-              }
-            ],
-            "sortIndex": 3
-          },
-          {
-            "type": "upgrade",
-            "import": true,
             "name": "Reconnaissance Squad",
             "hidden": false,
             "id": "4fdc-506b-acbb-11d1",
@@ -30823,6 +30862,43 @@
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
             "sortIndex": 7
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "99b8-ebd4-3b87-fd46",
+            "type": "selectionEntry",
+            "targetId": "58ba-b4af-bc02-c48f",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 3
           }
         ]
       },
@@ -31623,7 +31699,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "8546-7cfe-32c0-7e77",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -32325,7 +32401,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "8546-7cfe-32c0-7e77",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -32450,24 +32526,6 @@
                 ]
               }
             ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "8546-7cfe-32c0-7e77",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "bd57-3ebf-4d89-739b"
-              }
-            ],
-            "sortIndex": 3
           },
           {
             "type": "upgrade",
@@ -32607,6 +32665,43 @@
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
             "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "cca8-feba-6e51-60dd",
+            "type": "selectionEntry",
+            "targetId": "58ba-b4af-bc02-c48f",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 3
           }
         ]
       },
@@ -33626,7 +33721,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "c4be-321b-eec5-12c7",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -34021,7 +34116,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "c4be-321b-eec5-12c7",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -34510,24 +34605,6 @@
               }
             ],
             "collapsible": true
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "c4be-321b-eec5-12c7",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "6e95-de59-ff99-13f1"
-              }
-            ],
-            "sortIndex": 3
           }
         ],
         "infoLinks": [
@@ -34634,6 +34711,43 @@
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
             "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "7156-7753-77f7-58e6",
+            "type": "selectionEntry",
+            "targetId": "58ba-b4af-bc02-c48f",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 3
           }
         ]
       },
@@ -37773,7 +37887,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "82ab-d93e-21c8-7b93",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -39127,7 +39241,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "82ab-d93e-21c8-7b93",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -39912,24 +40026,6 @@
           {
             "type": "upgrade",
             "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "82ab-d93e-21c8-7b93",
-            "sortIndex": 4,
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "f847-1f52-6721-3ef6"
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
             "name": "Warhawk Jump Pack",
             "hidden": false,
             "id": "a654-f725-5be9-c995",
@@ -39995,6 +40091,43 @@
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "aed0-f39b-3456-43be",
+            "type": "selectionEntry",
+            "targetId": "58ba-b4af-bc02-c48f",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 4
           }
         ]
       },
@@ -45875,7 +46008,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "5d56-521b-19ac-39e6",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -46310,7 +46443,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "unit",
-                        "childId": "5d56-521b-19ac-39e6",
+                        "childId": "58ba-b4af-bc02-c48f",
                         "shared": true
                       }
                     ]
@@ -46406,24 +46539,6 @@
               }
             ],
             "collapsible": true
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Krak Grenades",
-            "hidden": false,
-            "id": "5d56-521b-19ac-39e6",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "c763-8f85-1d20-16f1"
-              }
-            ],
-            "sortIndex": 3
           },
           {
             "type": "upgrade",
@@ -46562,6 +46677,43 @@
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "66ed-ee10-e8c2-c2cc",
+            "type": "selectionEntry",
+            "targetId": "58ba-b4af-bc02-c48f",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "58ba-b4af-bc02-c48f",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 3
           }
         ]
       },
@@ -62464,10 +62616,10 @@
                 "description": "While a model with this special rule is part of a unit, all Dreadnought models in that unit gain the It Will Not Die (5+) special rule."
               },
               {
-                "name": "Master of Relics",
+                "name": "Master of the Relics",
                 "id": "2522-c8f7-7e69-d3da",
                 "hidden": false,
-                "description": " A detachment that contains a model with this special rule may include an additional Relic of the Chapter. Eg a 1000 point army could contain two Relics of the Chapter."
+                "description": "A detachment that contains a model with this special rule may include an additional Relic of the Chapter. Eg a 1000 point army could contain two Relics of the Chapter."
               }
             ],
             "entryLinks": [
