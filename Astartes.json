@@ -4068,7 +4068,7 @@
                     "hidden": true,
                     "id": "a9ef-273f-084a-3566",
                     "type": "selectionEntry",
-                    "targetId": "b85f-71e1-450c-5ba0",
+                    "targetId": "403c-9462-4f21-29b6",
                     "constraints": [
                       {
                         "type": "max",
@@ -7149,15 +7149,43 @@
                         "field": "hidden"
                       }
                     ],
-                    "conditions": [
+                    "modifierGroups": [
+                      {
+                        "type": "and"
+                      }
+                    ],
+                    "localConditionGroups": [
                       {
                         "type": "atLeast",
                         "value": 1,
-                        "field": "selections",
                         "scope": "root-entry",
-                        "childId": "b85f-71e1-450c-5ba0",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "repeats": 1,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "model",
+                                "childId": "403c-9462-4f21-29b6",
+                                "shared": true
+                              },
+                              {
+                                "type": "notInstanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "12a7-f83c-886b-8e94",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -7191,17 +7219,6 @@
                 "modifierGroups": [
                   {
                     "type": "and",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "root-entry",
-                        "childId": "b85f-71e1-450c-5ba0",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ],
                     "modifiers": [
                       {
                         "type": "set",
@@ -7217,6 +7234,40 @@
                         "type": "set",
                         "value": 1,
                         "field": "d20a-f841-3291-c6da-max"
+                      }
+                    ],
+                    "localConditionGroups": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "scope": "root-entry",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "repeats": 1,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "model",
+                                "childId": "403c-9462-4f21-29b6",
+                                "shared": true
+                              },
+                              {
+                                "type": "notInstanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "12a7-f83c-886b-8e94",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -8395,15 +8446,38 @@
                         "field": "hidden"
                       }
                     ],
-                    "conditions": [
+                    "localConditionGroups": [
                       {
                         "type": "atLeast",
                         "value": 1,
-                        "field": "selections",
                         "scope": "root-entry",
-                        "childId": "b85f-71e1-450c-5ba0",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "repeats": 1,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "model",
+                                "childId": "403c-9462-4f21-29b6",
+                                "shared": true
+                              },
+                              {
+                                "type": "notInstanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "12a7-f83c-886b-8e94",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -8437,17 +8511,6 @@
                 "modifierGroups": [
                   {
                     "type": "and",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "root-entry",
-                        "childId": "b85f-71e1-450c-5ba0",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ],
                     "modifiers": [
                       {
                         "type": "set",
@@ -8463,6 +8526,40 @@
                         "type": "set",
                         "value": 1,
                         "field": "8dcc-b989-091a-d57b-max"
+                      }
+                    ],
+                    "localConditionGroups": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "scope": "root-entry",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "includeChildForces": true,
+                        "repeats": 1,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "model",
+                                "childId": "403c-9462-4f21-29b6",
+                                "shared": true
+                              },
+                              {
+                                "type": "notInstanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "12a7-f83c-886b-8e94",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -12303,7 +12400,7 @@
                     "hidden": true,
                     "id": "af15-307c-22cf-55d6",
                     "type": "selectionEntry",
-                    "targetId": "b85f-71e1-450c-5ba0",
+                    "targetId": "403c-9462-4f21-29b6",
                     "constraints": [
                       {
                         "type": "max",
@@ -57845,23 +57942,6 @@
                 "shared": true
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Scout Armour",
-        "hidden": false,
-        "id": "b85f-71e1-450c-5ba0",
-        "comment": "Retinue leader only",
-        "infoLinks": [
-          {
-            "name": "Scout Armour",
-            "id": "c153-23d6-2099-6eab",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "9436-bf24-9306-b516"
           }
         ]
       },
