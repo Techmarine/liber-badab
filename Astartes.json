@@ -16259,6 +16259,24 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -33268,6 +33286,24 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -41654,6 +41690,24 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -42921,6 +42975,24 @@
             "id": "2171-6b67-0f1d-d3e4",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -44257,6 +44329,24 @@
             "id": "ca3d-af8f-6053-f605",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -50590,6 +50680,24 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -51237,6 +51345,24 @@
             "id": "bd44-3141-3d16-43f5",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -52061,6 +52187,24 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -52852,6 +52996,24 @@
             "id": "2d64-99dd-f8f6-2102",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -54071,6 +54233,24 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -54163,6 +54343,24 @@
             "id": "ea6e-f40a-a3d8-87f4",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -55037,6 +55235,24 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
         ]
       },
       {
@@ -55598,7 +55814,8 @@
                 "typeId": "54b5-0978-c8a4-5b5a",
                 "value": 365
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ],
         "infoLinks": [
@@ -55615,6 +55832,34 @@
             "hidden": false,
             "type": "rule",
             "targetId": "52d4-8107-08f3-455e"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "a43a-1654-3d6f-6dbe",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9907-09ee-3bb1-5cc4",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -58539,6 +58784,227 @@
               }
             ],
             "scope": "parent"
+          },
+          {
+            "type": "add",
+            "value": "9103-8708-18ab-007c",
+            "field": "category",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "0518-a7e6-8ea3-cbb9",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "c447-1b05-5ba8-846a",
+                        "shared": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "8cce-2496-3746-4f06",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "scope": "parent"
+          },
+          {
+            "type": "add",
+            "value": "31ba-58c7-91e5-4dac",
+            "field": "category",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "0518-a7e6-8ea3-cbb9",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "c447-1b05-5ba8-846a",
+                        "shared": true
+                      },
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "8cce-2496-3746-4f06",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "scope": "parent"
+          },
+          {
+            "type": "add",
+            "value": "5756-b5f2-abb8-8cf1",
+            "field": "category",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "b145-24ef-b41c-497a",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "a300-5393-99ea-9657",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "scope": "parent"
+          },
+          {
+            "type": "add",
+            "value": "3413-22dc-5288-045c",
+            "field": "category",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "b145-24ef-b41c-497a",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "1dff-e2a4-5442-6863",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "scope": "parent"
+          },
+          {
+            "type": "add",
+            "value": "3dc1-d716-cdd4-ec41",
+            "field": "category",
+            "scope": "parent",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "9907-09ee-3bb1-5cc4",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ],
+                "localConditionGroups": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "scope": "parent",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "includeChildForces": true,
+                    "repeats": 1,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "8cce-2496-3746-4f06",
+                            "shared": true
+                          }
+                        ],
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "188c-5472-9e2c-377c",
+                                "shared": true
+                              },
+                              {
+                                "type": "notInstanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "63ab-f4ab-6759-c123",
+                                "shared": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -59141,7 +59607,7 @@
         ],
         "selectionEntryGroups": [
           {
-            "name": "Company Level Deploymeny",
+            "name": "Company Level Deployment",
             "id": "0981-6043-3664-a929",
             "hidden": false,
             "flatten": true,
@@ -59151,78 +59617,7 @@
                 "import": true,
                 "name": "Void Assault",
                 "hidden": false,
-                "id": "9907-09ee-3bb1-5cc4",
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "{this} does not allow to take non-Flyer Vehicles or Cavalry",
-                    "field": "error",
-                    "conditionGroups": [
-                      {
-                        "type": "and",
-                        "localConditionGroups": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "scope": "force",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "includeChildForces": true,
-                            "repeats": 1,
-                            "conditionGroups": [
-                              {
-                                "type": "or",
-                                "conditionGroups": [
-                                  {
-                                    "type": "and",
-                                    "conditions": [
-                                      {
-                                        "type": "instanceOf",
-                                        "value": 1,
-                                        "field": "selections",
-                                        "scope": "ancestor",
-                                        "childId": "188c-5472-9e2c-377c",
-                                        "shared": true
-                                      },
-                                      {
-                                        "type": "notInstanceOf",
-                                        "value": 1,
-                                        "field": "selections",
-                                        "scope": "ancestor",
-                                        "childId": "63ab-f4ab-6759-c123",
-                                        "shared": true
-                                      }
-                                    ]
-                                  }
-                                ],
-                                "conditions": [
-                                  {
-                                    "type": "instanceOf",
-                                    "value": 1,
-                                    "field": "selections",
-                                    "scope": "ancestor",
-                                    "childId": "8cce-2496-3746-4f06",
-                                    "shared": true
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ],
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "9907-09ee-3bb1-5cc4",
-                            "shared": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "id": "9907-09ee-3bb1-5cc4"
               },
               {
                 "type": "upgrade",
@@ -64685,6 +65080,131 @@
                 "includeChildSelections": false
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "8th Company Infantry/Cavalry",
+        "id": "9103-8708-18ab-007c",
+        "hidden": false
+      },
+      {
+        "name": "8th Company Non-infantry/Non-cavalry",
+        "id": "31ba-58c7-91e5-4dac",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "6641-9100-7c39-4999"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "6641-9100-7c39-4999",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0518-a7e6-8ea3-cbb9",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "6641-9100-7c39-4999",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9103-8708-18ab-007c",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Siege Assault Vanguard Force Elites",
+        "id": "5756-b5f2-abb8-8cf1",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "6213-2750-5270-7094"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "6213-2750-5270-7094",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "b145-24ef-b41c-497a",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "6213-2750-5270-7094",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "3413-22dc-5288-045c",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Siege Assault Vanguard Force Heavy Support",
+        "id": "3413-22dc-5288-045c",
+        "hidden": false
+      },
+      {
+        "name": "Void Assault Non-flyer Vehicle/Cavalry",
+        "id": "3dc1-d716-cdd4-ec41",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "d659-6a2e-92cc-08e6"
           }
         ]
       }
