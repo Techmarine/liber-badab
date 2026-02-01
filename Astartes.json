@@ -58478,6 +58478,68 @@
               }
             ]
           }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "4a1a-aac6-0e7d-addd",
+            "field": "category",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "e21b-2efb-67ed-253c",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "c447-1b05-5ba8-846a",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "scope": "parent"
+          },
+          {
+            "type": "add",
+            "value": "8f52-27b1-69ed-8348",
+            "field": "category",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "e21b-2efb-67ed-253c",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "c447-1b05-5ba8-846a",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "scope": "parent"
+          }
         ]
       },
       {
@@ -59093,12 +59155,6 @@
                 "modifiers": [
                   {
                     "type": "add",
-                    "value": "6b6a-5722-04ab-ff69",
-                    "field": "category",
-                    "scope": "root-entry"
-                  },
-                  {
-                    "type": "add",
                     "value": "{this} does not allow to take non-Flyer Vehicles or Cavalry",
                     "field": "error",
                     "conditionGroups": [
@@ -59174,14 +59230,6 @@
                 "name": "1st Company",
                 "hidden": false,
                 "id": "e21b-2efb-67ed-253c",
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "e861-088d-eec2-9ffa",
-                    "field": "category",
-                    "scope": "root-entry"
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "max",
@@ -59226,60 +59274,28 @@
                 "import": true,
                 "name": "8th Company",
                 "hidden": false,
-                "id": "0518-a7e6-8ea3-cbb9",
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "e15e-cb8a-0715-ceb2",
-                    "field": "category",
-                    "scope": "root-entry"
-                  }
-                ]
+                "id": "0518-a7e6-8ea3-cbb9"
               },
               {
                 "type": "upgrade",
                 "import": true,
                 "name": "9th Company",
                 "hidden": false,
-                "id": "ac2a-4243-390f-3cd0",
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "93d6-6be2-a921-9578",
-                    "field": "category",
-                    "scope": "root-entry"
-                  }
-                ]
+                "id": "ac2a-4243-390f-3cd0"
               },
               {
                 "type": "upgrade",
                 "import": true,
                 "name": "10th Company",
                 "hidden": false,
-                "id": "3aa2-0a37-8cc8-de52",
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "101e-01b9-b003-61dd",
-                    "field": "category",
-                    "scope": "root-entry"
-                  }
-                ]
+                "id": "3aa2-0a37-8cc8-de52"
               },
               {
                 "type": "upgrade",
                 "import": true,
                 "name": "Siege Assault Vanguard Force",
                 "hidden": false,
-                "id": "b145-24ef-b41c-497a",
-                "modifiers": [
-                  {
-                    "type": "add",
-                    "value": "4cb3-ddb4-3cf6-1837",
-                    "field": "category",
-                    "scope": "root-entry"
-                  }
-                ]
+                "id": "b145-24ef-b41c-497a"
               }
             ],
             "constraints": [
@@ -64616,6 +64632,61 @@
         "name": "Chapter",
         "id": "7c29-8e11-7fae-9549",
         "hidden": false
+      },
+      {
+        "name": "1st Company Infantry",
+        "id": "4a1a-aac6-0e7d-addd",
+        "hidden": false
+      },
+      {
+        "name": "1st Company Non-infantry",
+        "id": "8f52-27b1-69ed-8348",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": -1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "0ced-dfa7-8db8-46cf"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "0ced-dfa7-8db8-46cf",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "e21b-2efb-67ed-253c",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "0ced-dfa7-8db8-46cf",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "4a1a-aac6-0e7d-addd",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ]
       }
     ],
     "infoLinks": [
