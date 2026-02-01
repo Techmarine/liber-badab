@@ -53164,7 +53164,7 @@
         ]
       },
       {
-        "type": "model",
+        "type": "unit",
         "import": true,
         "name": "Castraferrum Dreadnought",
         "hidden": false,
