@@ -538,16 +538,6 @@
         ],
         "constraints": [
           {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "9379-833d-81fe-24dc-min",
-            "includeChildSelections": true,
-            "includeChildForces": true
-          },
-          {
             "type": "max",
             "value": 1,
             "field": "selections",
