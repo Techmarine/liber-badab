@@ -113,16 +113,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "907f-67a3-f672-f003-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "19ac-4f04-b7e1-5e9b",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
             ],
             "costs": [
@@ -490,17 +480,11 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ],
         "infoLinks": [
-          {
-            "name": "Chapter Tactics (Salamanders)",
-            "id": "0a49-4710-5e5a-0d69",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1288-fea0-dcf4-a742"
-          },
           {
             "name": "And They Shall Know No Fear",
             "id": "92da-fd67-4f53-e979",
@@ -550,6 +534,28 @@
             "hidden": false,
             "description": "Mir’San and any unit he joins with the Chapter Tactics (Salamanders) special rule gain the Stubborn special rule. In addition, they also gain the Line unit Sub-Type."
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "3525-c79c-0096-64da",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "19ac-4f04-b7e1-5e9b",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
         ]
       },
       {
@@ -597,16 +603,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "fe39-c34d-fa2a-e047-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "aab0-1403-2cdb-b8d0",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
             ],
             "costs": [
@@ -917,17 +913,11 @@
                 "targetId": "75a3-46b2-47de-9789",
                 "primary": false
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ],
         "infoLinks": [
-          {
-            "name": "Chapter Tactics (Salamanders)",
-            "id": "e7e6-8c11-2782-ebda",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1288-fea0-dcf4-a742"
-          },
           {
             "name": "And They Shall Know No Fear",
             "id": "39aa-bcb4-aa79-38e7",
@@ -976,6 +966,28 @@
             "hidden": false,
             "description": "In missions where Victory points are scored for destroying units, if Master Harath Shen is within 6\" of a friendly Space Marine Infantry or Jump Infantry unit which is wiped out by the enemy, roll a D6. On a 5+, the player whose unit was destroyed also gains a Victory point, as well as the enemy"
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "bbc1-9613-1cb5-4498",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "aab0-1403-2cdb-b8d0",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
         ]
       },
       {
@@ -1023,16 +1035,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "f2fd-67bc-fae6-6233-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "d398-1847-6cfe-822e",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
             ],
             "costs": [
@@ -1383,38 +1385,30 @@
                 ]
               }
             ],
-            "infoLinks": [
-              {
-                "name": "It Will not Die",
-                "id": "1999-778e-ddeb-3ff7",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "cc45-e856-80f1-af2f",
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": "5+",
-                    "field": "annotation"
-                  }
-                ]
-              }
-            ]
+            "sortIndex": 1
           }
         ],
         "infoLinks": [
-          {
-            "name": "Chapter Tactics (Salamanders)",
-            "id": "3603-e174-92e6-32fa",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1288-fea0-dcf4-a742"
-          },
           {
             "name": "Support Squad",
             "id": "735e-0760-98ea-947c",
             "hidden": false,
             "type": "rule",
             "targetId": "650d-03c6-7f4b-c601"
+          },
+          {
+            "name": "It Will not Die",
+            "id": "1999-778e-ddeb-3ff7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cc45-e856-80f1-af2f",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
           }
         ],
         "rules": [
@@ -1429,6 +1423,28 @@
             "id": "1973-8681-c958-1e81",
             "hidden": false,
             "description": "Ignore any of the effects or benefits of the following rules against Bray’arth Ashmantle: Shock Pulse, Armourbane (Any) and Haywire."
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "ec1f-a011-dbe4-b62b",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "d398-1847-6cfe-822e",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ]
       }

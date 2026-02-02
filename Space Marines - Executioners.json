@@ -53,13 +53,6 @@
         "id": "1038-28d3-f1e2-e80b",
         "infoLinks": [
           {
-            "name": "Chapter Tactics (Executioners)",
-            "id": "e4c0-abff-5953-0214",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "3510-53ab-ef35-a6a7"
-          },
-          {
             "name": "And They Shall Know No Fear",
             "id": "6f2f-85a4-ac27-4950",
             "hidden": false,
@@ -72,27 +65,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "d9b7-d83e-51e0-bcfc"
-          },
-          {
-            "name": "Rage",
-            "id": "c666-7469-cdbd-4433",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "6845-bbcf-b09b-06bc",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "2",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Independent Character",
-            "id": "13ee-93bf-1ec9-0f0f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
           },
           {
             "name": "Fearless",
@@ -111,6 +83,27 @@
               {
                 "type": "set",
                 "value": "Everything",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Independent Character",
+            "id": "13ee-93bf-1ec9-0f0f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Rage",
+            "id": "c666-7469-cdbd-4433",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6845-bbcf-b09b-06bc",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
                 "field": "annotation"
               }
             ]
@@ -498,18 +491,9 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "712f-ba72-f17b-1f4f-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "2066-b68f-9d59-81f6",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ],
         "rules": [
@@ -518,6 +502,28 @@
             "id": "e7c2-18b9-e4a6-4a83",
             "hidden": false,
             "description": "Both Thulsa Kane and any unit with the Chapter Tactics (Executioners) special rule that he joins gain the Fearless rule as well as Hatred (Everything!).In addition to this, any unit with Chapter Tactics (Executioners) within 6\" of Thulsa Kane gain the Stubborn special rule."
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "6c23-7374-53de-d270",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "2066-b68f-9d59-81f6",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ]
       }

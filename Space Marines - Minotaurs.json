@@ -112,16 +112,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "dcd3-864f-7b27-2578-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "1663-20cd-995e-7dac",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
             ],
             "costs": [
@@ -466,7 +456,8 @@
                 "targetId": "e290-7819-af75-85c4",
                 "sortIndex": 2
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ],
         "infoLinks": [
@@ -497,13 +488,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4aab-8d13-caf2-091d"
-          },
-          {
-            "name": "Chapter Tactics (Minotaurs)",
-            "id": "30f6-ecd3-dbbd-8409",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cf4-a1b8-3605-1b55"
           },
           {
             "name": "Stubborn",
@@ -539,6 +523,28 @@
             "id": "82b0-c907-e668-b809",
             "hidden": false,
             "description": "Asterion Moloc and any unit he coins gain the Stubborn Special rule. In addition the entire unit counts as being equipped with Frag Grenades."
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "895e-c851-c60f-8ece",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "1663-20cd-995e-7dac",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ]
       },
@@ -624,16 +630,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "7393-c142-4154-197d-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "43aa-61e2-8b4c-6275",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
             ],
             "profiles": [
@@ -1084,17 +1080,11 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ],
         "infoLinks": [
-          {
-            "name": "Chapter Tactics (Minotaurs)",
-            "id": "fb60-9a02-431b-aac6",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cf4-a1b8-3605-1b55"
-          },
           {
             "name": "And They Shall Know No Fear",
             "id": "be0d-c01f-135a-f4ef",
@@ -1171,6 +1161,28 @@
                 "includeChildSelections": true
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "3459-07ad-09dc-0608",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "43aa-61e2-8b4c-6275",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ]
       }

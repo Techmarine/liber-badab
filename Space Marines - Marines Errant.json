@@ -97,16 +97,6 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "2211-6173-85a2-b39e-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "be08-b6c1-50a8-e6ab",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
             ],
             "entryLinks": [
@@ -524,17 +514,11 @@
                   }
                 ]
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ],
         "infoLinks": [
-          {
-            "name": "Chapter Tactics (Marines Errant)",
-            "id": "33ac-0ba7-62b4-a57f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "37f9-06c5-a0a3-d649"
-          },
           {
             "name": "And They Shall Know No Fear",
             "id": "9f6a-6f25-ba60-4a1f",
@@ -584,6 +568,28 @@
             "id": "8942-f323-6650-da14",
             "hidden": false,
             "description": "Anton Naravaez and any unit he joins gains the Scout, Move Through Cover and Precision Shots (6+) Special Rules"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "be08-b6c1-50a8-e6ab",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "5a7f-3a99-466e-3cda",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
           }
         ]
       }

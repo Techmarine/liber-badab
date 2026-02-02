@@ -1,0 +1,564 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "cd85-837d-0c8b-009d",
+    "name": "Space Marines - Carcharodons",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Carcharodons",
+        "hidden": false,
+        "id": "4ee8-a415-715e-2963",
+        "type": "selectionEntry",
+        "targetId": "c50c-f665-e9dc-6460",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "9ea4-705d-ec4a-9efa",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1"
+      },
+      {
+        "import": true,
+        "name": "Tyberos The Red Wake",
+        "hidden": false,
+        "id": "a30b-9573-029a-22b2",
+        "type": "selectionEntry",
+        "targetId": "c9af-c9a1-d9da-6de2"
+      }
+    ],
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Space Marines",
+        "id": "e9a2-9cd3-1f42-b9eb",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "type": "catalogue",
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Tyberos The Red Wake",
+        "hidden": false,
+        "id": "c9af-c9a1-d9da-6de2",
+        "sortIndex": 1,
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "bd06-733a-3e1e-44ff",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "7258-a919-97af-437f",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Chapter Master",
+            "hidden": false,
+            "id": "4921-2b64-9dca-d708",
+            "targetId": "2ca5-c322-c8f3-5ebc",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "a34c-1cdf-1dbf-3c59",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 220
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Tyberos The Red Wake",
+            "hidden": false,
+            "id": "a147-7b6e-98fe-f293",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ffc1-19a6-d614-3083-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ffc1-19a6-d614-3083-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Tyberos The Red Wake",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "da63-23b6-82e8-f8bb",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry Unit Type",
+                "hidden": false,
+                "id": "ee63-de01-8e97-40f3",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "37ea-c78c-a574-5810",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "f224-2d2b-c401-1008",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Tartaros Terminator Armour",
+                "hidden": false,
+                "id": "7fcd-fdae-27be-993e",
+                "type": "selectionEntry",
+                "targetId": "a6d2-e530-08f8-c97b",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Relic Tartaros Terminator Plate",
+                    "field": "name"
+                  },
+                  {
+                    "type": "set",
+                    "value": "Relic Tartaros Terminator Plate",
+                    "field": "name",
+                    "affects": "profiles.Wargear"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "86cf-64d3-d5e7-9757-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "86cf-64d3-d5e7-9757-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "f3d2-133c-494c-feee",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f299-7817-cdba-f7b1-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f299-7817-cdba-f7b1-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Teleport Homer",
+                "hidden": false,
+                "id": "71e9-73f4-12c1-b558",
+                "type": "selectionEntry",
+                "targetId": "00f5-e89a-3b5f-50e9",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "95bd-e696-2007-942e-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "95bd-e696-2007-942e-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "caac-889c-21b1-fcc0",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6fa7-5627-d4d7-8071"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hunger and Sake",
+                "hidden": false,
+                "id": "da8d-7120-f901-2c74",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e74f-4744-9ef9-6c3a-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e74f-4744-9ef9-6c3a-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Hunger",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "7426-e447-4ebf-cf19",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "×2"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Armourbane (Melee), Specialist Weapon, Brutal (2), Unwieldly, Master-Crafted"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Sake",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "cc73-73ed-279a-2ab7",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "User"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Shred, Specialist Weapon. Master-Craed"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Armourbane",
+                    "id": "40a9-c2b4-4ec5-505b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a1f5-fb7a-bbf0-a720",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Melee",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Chapter Specialist",
+                    "id": "b7b4-6dbf-9539-2310",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "2b63-2384-7b15-bc8f"
+                  },
+                  {
+                    "name": "Brutal",
+                    "id": "eb1f-454e-63a4-7087",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fc68-9ea6-18e4-d94b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Unwieldy",
+                    "id": "880d-67b7-52d2-e05f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "cfea-a7be-fbea-da53"
+                  },
+                  {
+                    "name": "Master-crafted",
+                    "id": "3b92-07af-da32-9410",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  },
+                  {
+                    "name": "Shred",
+                    "id": "4c0e-fc85-acd1-3c9f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a666-0970-28e2-7c48"
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "6a54-e619-6b1b-b0d5",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "edb7-4d94-f663-a8ec",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Independent Character",
+            "id": "2bee-27d2-c859-0c76",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Bulky",
+            "id": "9a2b-8819-e7c5-1ca0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8317-bc69-b786-390d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Deep Strike",
+            "id": "cd99-e985-9dba-efd3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          }
+        ],
+        "rules": [
+          {
+            "name": "The Scent of Blood",
+            "id": "f442-1301-4a6f-4435",
+            "hidden": false,
+            "description": "Should Tyberos become subject to the Blooded (X) Special Rule due to the Blood Hunger Special rule, both he and any unit he has joined that are also subject to the Rage (X+1) Special Rule and gain +1 Strength for the remainder of the battle."
+          },
+          {
+            "name": "Weapon Mastery",
+            "id": "6461-934e-a69b-1bbb",
+            "hidden": false,
+            "description": "The dividing of his attacks must be declared before he attacks with any weapon."
+          },
+          {
+            "name": "Captain of the Nicor",
+            "id": "cef9-e77e-6597-5269",
+            "hidden": false,
+            "description": "Tyberos grants up to 3 infantry units the Deep Strike special rule."
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "9379-833d-81fe-24dc-min",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "9379-833d-81fe-24dc-max",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -595,6 +595,17 @@
             "id": "4c0f-7e2f-586c-9305"
           }
         ]
+      },
+      {
+        "name": "Warlord Trait",
+        "id": "c8df-a54b-7b8c-78de",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "Description",
+            "id": "ea6d-ab61-e667-7094"
+          }
+        ]
       }
     ],
     "costTypes": [
@@ -10587,6 +10598,13 @@
             "name": "Minotaurs",
             "hidden": false,
             "id": "ac2b-b7c8-7313-ae91"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Carcharodons",
+            "hidden": false,
+            "id": "c50c-f665-e9dc-6460"
           }
         ],
         "constraints": [

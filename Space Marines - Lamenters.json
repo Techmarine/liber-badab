@@ -411,18 +411,9 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "82c5-9e07-66ad-9735-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "9ce9-f380-ef69-3e1c",
-                "includeChildSelections": true,
-                "includeChildForces": true
               }
-            ]
+            ],
+            "sortIndex": 1
           }
         ],
         "categoryLinks": [
@@ -518,13 +509,6 @@
         ],
         "infoLinks": [
           {
-            "name": "Chapter Tactics (Lamenters)",
-            "id": "d063-11d9-a49c-425d",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "915e-e711-3c08-efd4"
-          },
-          {
             "name": "And They Shall Know No Fear",
             "id": "d3ea-b659-6481-c253",
             "hidden": false,
@@ -558,6 +542,28 @@
             "id": "a24e-948f-31e5-bf53",
             "hidden": false,
             "description": "For every wound Malakim Phoros loses, increase his Strength and Attacks by +1 (Eg if he is down to 2 wounds, he is Strength 6 with 6 Attacks base). In addition to this, he and any unit he joins gains the Rage (1) Special rule."
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "dc42-4e2b-4305-a74b",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "9ce9-f380-ef69-3e1c",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ]
       },
@@ -1753,13 +1759,14 @@
             ]
           }
         ],
-        "infoLinks": [
+        "entryLinks": [
           {
-            "name": "Chapter Tactics (Lamenters)",
-            "id": "6acd-51c6-90eb-86b8",
+            "import": true,
+            "name": "Chapter Tactics",
             "hidden": false,
-            "type": "rule",
-            "targetId": "915e-e711-3c08-efd4"
+            "id": "be1d-9502-389f-1a62",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
           }
         ]
       },
