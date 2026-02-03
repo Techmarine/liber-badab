@@ -97,6 +97,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "2211-6173-85a2-b39e-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "be08-b6c1-50a8-e6ab",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "entryLinks": [
@@ -568,18 +578,6 @@
             "id": "8942-f323-6650-da14",
             "hidden": false,
             "description": "Anton Naravaez and any unit he joins gains the Scout, Move Through Cover and Precision Shots (6+) Special Rules"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "be08-b6c1-50a8-e6ab",
-            "includeChildSelections": true,
-            "includeChildForces": true
           }
         ],
         "entryLinks": [

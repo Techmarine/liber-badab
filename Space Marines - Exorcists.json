@@ -1,0 +1,490 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "8c3c-bfd5-2124-e938",
+    "name": "Space Marines - Exorcists",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Space Marines",
+        "id": "7bf3-dec7-83df-8d8d",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Exorcists",
+        "hidden": false,
+        "id": "1e74-9c4b-cb62-aad3",
+        "type": "selectionEntry",
+        "targetId": "ac66-f192-47b4-7be7",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "58f4-b7b9-0fe8-d6ef",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1"
+      },
+      {
+        "import": true,
+        "name": "Captain Silas Alberec",
+        "hidden": false,
+        "id": "cfd2-6d40-1592-518c",
+        "type": "selectionEntry",
+        "targetId": "1e9a-80ba-aff1-7f21"
+      }
+    ],
+    "type": "catalogue",
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Captain Silas Alberec",
+        "hidden": false,
+        "id": "1e9a-80ba-aff1-7f21",
+        "sortIndex": 1,
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "c337-8545-2e68-fc38",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "b7ee-a4e9-dd9c-f877",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "89ec-b3e8-6c23-0f31",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Captain Silas Alberec",
+            "hidden": false,
+            "id": "09e1-eb43-dcd1-bc92",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5dc5-b148-76a3-9fed-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5dc5-b148-76a3-9fed-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "3344-d896-61f3-0606",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Artificer Armour",
+                "hidden": false,
+                "id": "f368-13c8-fa87-c4ae",
+                "type": "selectionEntry",
+                "targetId": "2004-7466-45c8-bca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "49ab-045e-9572-1012-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "49ab-045e-9572-1012-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "e9e2-4b67-d735-aed5",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3f0a-df7d-e230-5820-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3f0a-df7d-e230-5820-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Bolt Pistol",
+                "hidden": false,
+                "id": "f48f-e4c0-1c0a-5249",
+                "type": "selectionEntry",
+                "targetId": "95f0-f427-49c0-c7e6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "966a-34ba-49d4-6ff3-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "966a-34ba-49d4-6ff3-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "f570-9d2f-7774-262a",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "13c5-a9e8-5aab-96bb-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "13c5-a9e8-5aab-96bb-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "755b-92cb-009a-d201",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5156-f816-ced9-3c92-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5156-f816-ced9-3c92-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Teleport Homer",
+                "hidden": false,
+                "id": "3918-9f11-d900-a11c",
+                "type": "selectionEntry",
+                "targetId": "00f5-e89a-3b5f-50e9",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b2e1-cade-adbb-b8d5-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b2e1-cade-adbb-b8d5-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "34fa-87b0-92c9-0673",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "04d8-df21-6d81-7cdf"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "1e29-fdd8-990d-8912",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Hellslayer",
+                "hidden": false,
+                "id": "deb8-dbfa-0e4f-1a69",
+                "profiles": [
+                  {
+                    "name": "The Hellslayer",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "ecd0-4750-5138-cf9f",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "×2"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Brutal (3), Master-Crafted, Unwieldy, Two-Handed, Witch-bane"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Brutal",
+                    "id": "e612-c34f-a16c-5281",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fc68-9ea6-18e4-d94b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "3",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Master-crafted",
+                    "id": "be65-cf0a-c6d2-7281",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  },
+                  {
+                    "name": "Unwieldy",
+                    "id": "132a-d106-5d51-2195",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "cfea-a7be-fbea-da53"
+                  },
+                  {
+                    "name": "Two-handed",
+                    "id": "d23c-0fb5-6b72-fd93",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "9c96-f071-03a6-7593"
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Witch-bane",
+                    "id": "a81f-003d-5b2a-6009",
+                    "hidden": false,
+                    "description": "This weapon wounds any unit with the Psyker, Daemon or Corrupted Type/Stub-Type automatically"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "21a5-1e8d-95a6-da7d-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "21a5-1e8d-95a6-da7d-max"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry Unit Type",
+                "hidden": false,
+                "id": "d82d-88c9-ef4e-8d7b",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "c2fb-7fac-b9ad-a751",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "1b18-6ce5-f828-000e",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "22ba-5f0b-c7e8-1d84",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "da82-fdfc-51c4-d437",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Adamantium Will",
+            "id": "5510-e699-864b-004f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0f2c-c9a6-fda6-cc5c",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Hexagrammatic Wards",
+            "id": "e50a-200c-3685-5f02",
+            "hidden": false,
+            "description": "Silas Alberec and any unit he joins gains the Feel No Pain (5+) special rule against any wounds caused by Psychic Powers or Force weapons. In addition, when an opponent tests to activate a force weapon in a challenge against Silas Alberec they suffer a minus -2 penalty to their Leadership."
+          },
+          {
+            "name": "Soul-seared Champions",
+            "id": "e6e1-f82b-68c4-6d14",
+            "hidden": false,
+            "description": "Alberec and any unit he joins count as having the Fear (2) special rule to any model within 12” that has the Psyker, Daemon or Corrupted Type/Sub-Type."
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 185
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -530,6 +530,12 @@
                 "value": "Twin-linked",
                 "field": "name",
                 "join": " "
+              },
+              {
+                "type": "multiply",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "affects": "self.entries.57a8-32f1-f062-fb17"
               }
             ]
           },
@@ -3282,11 +3288,21 @@
                         "id": "d81f-4022-d90f-605e"
                       }
                     ],
-                    "modifiers": [
+                    "modifierGroups": [
                       {
-                        "type": "set",
-                        "value": true,
-                        "field": "hidden",
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 0,
+                            "field": "d81f-4022-d90f-605e"
+                          },
+                          {
+                            "type": "set",
+                            "value": true,
+                            "field": "hidden"
+                          }
+                        ],
                         "conditionGroups": [
                           {
                             "type": "or",
@@ -3326,19 +3342,7 @@
                                 "childId": "5d0e-7ee8-d741-c79c",
                                 "shared": true,
                                 "includeChildSelections": true
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "set",
-                        "value": 0,
-                        "field": "d81f-4022-d90f-605e",
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
+                              },
                               {
                                 "type": "atLeast",
                                 "value": 1,
@@ -6424,7 +6428,7 @@
                 "type": "upgrade",
                 "import": true,
                 "name": "Frenzied Swarm",
-                "hidden": false,
+                "hidden": true,
                 "id": "a6b8-069b-b205-df08",
                 "constraints": [
                   {
@@ -6457,7 +6461,7 @@
                         "value": 1,
                         "field": "selections",
                         "scope": "force",
-                        "childId": "a6b8-069b-b205-df08",
+                        "childId": "c50c-f665-e9dc-6460",
                         "shared": true,
                         "includeChildSelections": true
                       }
@@ -6563,6 +6567,179 @@
                             "shared": true
                           }
                         ]
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Preferred Enemy",
+                    "id": "92b8-eb57-2b1b-031d",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "bb1e-f9f5-2a51-c8c0",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Infantry",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Black Soul",
+                "hidden": true,
+                "id": "313a-50fd-46de-ec5f",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1fc3-203e-fd41-ed49"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "1fc3-203e-fd41-ed49"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "ac66-f192-47b4-7be7",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Black Soul",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "00d0-cc36-fa70-c043",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "The Warlord and any unit he joins is completely immune to any psychic attacks or weapons. He may never join a unit with the Psyker sub-type for any reason (Meaning he cannot take a retinue of Enochian Guard). While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "scope": "root-entry",
+                    "affects": "entries.recursive.e290-7819-af75-85c4"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Implacable Discipline",
+                "hidden": true,
+                "id": "97f2-3029-db12-ce2a",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "64fb-3880-c3c6-84ba"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cad4-b828-21d0-894d"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "64fb-3880-c3c6-84ba"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "cad4-b828-21d0-894d"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "ac66-f192-47b4-7be7",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "1e9a-80ba-aff1-7f21",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Implacable Discipline",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "f612-3928-30fd-07a4",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "If Silas Alberec is your army’s warlord, any friendly Space Marine units in a force that includes Alberec may re-roll failed pinning checks, while Alberect himself has the Feel No Pain (5+) universal special rule."
                       }
                     ]
                   }
@@ -10800,7 +10977,8 @@
                     "hidden": false,
                     "id": "69e8-82da-920c-d9c3",
                     "type": "selectionEntry",
-                    "targetId": "96af-5a12-180a-5e1a"
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "sortIndex": 1
                   },
                   {
                     "import": true,
@@ -10879,6 +11057,32 @@
                         "value": 5
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Force Weapon",
+                    "hidden": true,
+                    "id": "d8d4-4231-660f-8b0d",
+                    "type": "selectionEntryGroup",
+                    "targetId": "b4cb-651a-00f0-6257",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "f9d7-2f2b-e29e-e965",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "flatten": true
                   }
                 ],
                 "constraints": [
@@ -11362,6 +11566,32 @@
                         "value": 5
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Force Weapon",
+                    "hidden": true,
+                    "id": "d890-e525-5e8c-58dc",
+                    "type": "selectionEntryGroup",
+                    "targetId": "b4cb-651a-00f0-6257",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "f9d7-2f2b-e29e-e965",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "flatten": true
                   }
                 ],
                 "constraints": [
@@ -11552,10 +11782,9 @@
                 "sortIndex": 1,
                 "selectionEntryGroups": [
                   {
-                    "name": "Heavy Weapon",
+                    "name": "Heavy Weapon (for every five models in unit)",
                     "id": "f0bc-242b-1e19-9072",
                     "hidden": false,
-                    "flatten": true,
                     "entryLinks": [
                       {
                         "import": true,
@@ -11663,7 +11892,6 @@
                 "id": "5252-f0e9-e540-5957",
                 "hidden": false,
                 "sortIndex": 3,
-                "flatten": true,
                 "entryLinks": [
                   {
                     "import": true,
@@ -11907,6 +12135,15 @@
             "id": "fa9b-8f30-ad49-ccdd",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
+            "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Enochian Guard",
+            "hidden": false,
+            "id": "940d-90c8-5a31-1120",
+            "type": "selectionEntry",
+            "targetId": "f9d7-2f2b-e29e-e965",
             "sortIndex": 5
           }
         ]
@@ -12466,11 +12703,21 @@
                         "id": "27e6-058d-f9c1-c7c6"
                       }
                     ],
-                    "modifiers": [
+                    "modifierGroups": [
                       {
-                        "type": "set",
-                        "value": 0,
-                        "field": "27e6-058d-f9c1-c7c6",
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": true,
+                            "field": "hidden"
+                          },
+                          {
+                            "type": "set",
+                            "value": 0,
+                            "field": "27e6-058d-f9c1-c7c6"
+                          }
+                        ],
                         "conditionGroups": [
                           {
                             "type": "or",
@@ -15454,6 +15701,12 @@
                     "type": "prepend",
                     "value": "Twin-linked",
                     "field": "name"
+                  },
+                  {
+                    "type": "multiply",
+                    "value": 2,
+                    "field": "54b5-0978-c8a4-5b5a",
+                    "affects": "self.entries.57a8-32f1-f062-fb17"
                   }
                 ],
                 "infoLinks": [
@@ -19367,6 +19620,32 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Force Weapon",
+                    "hidden": true,
+                    "id": "6b95-756b-68f5-f371",
+                    "type": "selectionEntryGroup",
+                    "targetId": "b4cb-651a-00f0-6257",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "f9d7-2f2b-e29e-e965",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "flatten": true
                   }
                 ],
                 "constraints": [
@@ -19428,7 +19707,6 @@
                 "name": "Paired Weapons",
                 "id": "2e9d-3504-82a3-21a2",
                 "hidden": false,
-                "flatten": true,
                 "entryLinks": [
                   {
                     "import": true,
@@ -20183,6 +20461,21 @@
                             "value": 5
                           }
                         ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Cyclone Missile Launcher and Storm Bolter",
+                        "hidden": false,
+                        "id": "e52f-0da5-644a-1725",
+                        "type": "selectionEntry",
+                        "targetId": "7a5c-4235-fc3e-d0b8",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 25
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -20233,76 +20526,6 @@
                             "childId": "model",
                             "shared": true,
                             "roundUp": false
-                          }
-                        ]
-                      }
-                    ],
-                    "selectionEntries": [
-                      {
-                        "type": "upgrade",
-                        "import": true,
-                        "name": "Cyclone Missile Launcher and Storm Bolter",
-                        "hidden": false,
-                        "id": "6e21-2ac6-ddfe-69a0",
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 25
-                          }
-                        ],
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Cyclone Missile Launcher",
-                            "hidden": false,
-                            "id": "948b-6d36-a417-a008",
-                            "type": "selectionEntry",
-                            "targetId": "d584-b499-8cf8-e1b6",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "721e-50c1-284d-46cd-min"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "721e-50c1-284d-46cd-max"
-                              }
-                            ]
-                          },
-                          {
-                            "import": true,
-                            "name": "Storm Bolter",
-                            "hidden": false,
-                            "id": "762d-a818-c747-ac39",
-                            "type": "selectionEntry",
-                            "targetId": "b584-e06b-ebeb-4d04",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "2e95-2a1e-bf33-464d-min"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "2e95-2a1e-bf33-464d-max"
-                              }
-                            ]
                           }
                         ]
                       }
@@ -20370,6 +20593,32 @@
                         "value": 5
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Force Weapon",
+                    "hidden": true,
+                    "id": "df92-899c-8779-1c3e",
+                    "type": "selectionEntryGroup",
+                    "targetId": "b4cb-651a-00f0-6257",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "unit",
+                            "childId": "f9d7-2f2b-e29e-e965",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "flatten": true
                   }
                 ],
                 "constraints": [
@@ -20432,7 +20681,6 @@
                 "name": "Paired Weapons",
                 "id": "b618-da06-976a-0fef",
                 "hidden": false,
-                "flatten": true,
                 "entryLinks": [
                   {
                     "import": true,
@@ -20919,7 +21167,8 @@
             "hidden": false,
             "id": "2bc3-e307-3de6-ec6d",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 5
           },
           {
             "import": true,
@@ -20928,7 +21177,15 @@
             "id": "6fdd-d62a-aab8-6bc8",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 6
+            "sortIndex": 7
+          },
+          {
+            "import": true,
+            "name": "Enochian Guard",
+            "hidden": false,
+            "id": "85d6-909b-6127-0db3",
+            "type": "selectionEntry",
+            "targetId": "f9d7-2f2b-e29e-e965"
           }
         ]
       },
@@ -22983,7 +23240,7 @@
             "id": "597f-23cd-3d23-7db6",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 6
+            "sortIndex": 7
           },
           {
             "import": true,
@@ -23021,6 +23278,15 @@
               }
             ],
             "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Enochian Guard",
+            "hidden": false,
+            "id": "798a-7aa7-0ebf-1420",
+            "type": "selectionEntry",
+            "targetId": "f9d7-2f2b-e29e-e965",
+            "sortIndex": 6
           }
         ]
       },
@@ -26086,42 +26352,6 @@
         "name": "Gravis Power Fist",
         "hidden": false,
         "id": "3382-0547-3f12-7171",
-        "profiles": [
-          {
-            "name": "Gravis Power Fist",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "3fba-23d5-3e7c-c595",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "9"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Brutal (3)"
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {
             "name": "Brutal",
@@ -26136,154 +26366,23 @@
                 "field": "annotation"
               }
             ]
+          },
+          {
+            "name": "Gravis Power Fist",
+            "id": "436b-848c-5092-0ca3",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "6fdd-8073-79c0-570e"
           }
         ],
-        "selectionEntryGroups": [
+        "entryLinks": [
           {
+            "import": true,
             "name": "In-built Weapon",
-            "id": "df52-3d74-7b13-b3b2",
             "hidden": false,
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Storm Bolter",
-                "hidden": false,
-                "id": "1153-2efa-1088-047e",
-                "type": "selectionEntry",
-                "targetId": "b584-e06b-ebeb-4d04"
-              },
-              {
-                "import": true,
-                "name": "Heavy Flamer",
-                "hidden": false,
-                "id": "9170-0a38-6507-1d3d",
-                "type": "selectionEntry",
-                "targetId": "c553-098b-dbb7-e3a9",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3776-53c0-7a44-576a"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": true,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 0,
-                        "field": "3776-53c0-7a44-576a"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "model",
-                        "childId": "75a3-46b2-47de-9789",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Meltagun",
-                "hidden": false,
-                "id": "0231-7d64-ae00-5c72",
-                "type": "selectionEntry",
-                "targetId": "5fc6-b052-616c-bfa7",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 15
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "1731-5ae0-c6ba-6f58"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "8fd3-5844-2bbd-60a5"
-                  }
-                ],
-                "modifierGroups": [
-                  {
-                    "type": "and",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": true,
-                        "field": "hidden"
-                      },
-                      {
-                        "type": "set",
-                        "value": 0,
-                        "field": "8fd3-5844-2bbd-60a5"
-                      }
-                    ],
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "model",
-                        "childId": "75a3-46b2-47de-9789",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "3aab-650f-e02c-f063-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "3aab-650f-e02c-f063-max"
-              }
-            ],
-            "defaultSelectionEntryId": "1153-2efa-1088-047e"
+            "id": "2281-1677-a233-a8c7",
+            "type": "selectionEntryGroup",
+            "targetId": "84a7-bf63-4f71-db0f"
           }
         ]
       },
@@ -32631,7 +32730,7 @@
               {
                 "name": "Special Rules",
                 "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Grave Ripple, Gets Hot"
+                "$text": "Grave-ripple, Gets Hot"
               }
             ]
           }
@@ -46964,6 +47063,12 @@
                         "value": "Twin-linked",
                         "field": "name",
                         "join": " "
+                      },
+                      {
+                        "type": "multiply",
+                        "value": 2,
+                        "field": "54b5-0978-c8a4-5b5a",
+                        "affects": "self.entries.57a8-32f1-f062-fb17"
                       }
                     ],
                     "sortIndex": 1
@@ -47159,6 +47264,12 @@
                         "value": "Hull (Front) Mounted Twin-linked",
                         "field": "name",
                         "join": " "
+                      },
+                      {
+                        "type": "multiply",
+                        "value": 2,
+                        "field": "54b5-0978-c8a4-5b5a",
+                        "affects": "self.entries.57a8-32f1-f062-fb17"
                       }
                     ]
                   },
@@ -49399,6 +49510,12 @@
                         "value": "Twin-linked",
                         "field": "name",
                         "join": " "
+                      },
+                      {
+                        "type": "multiply",
+                        "value": 2,
+                        "field": "54b5-0978-c8a4-5b5a",
+                        "affects": "self.entries.57a8-32f1-f062-fb17"
                       }
                     ]
                   },
@@ -49742,6 +49859,12 @@
                         "value": "Twin-linked",
                         "field": "name",
                         "join": " "
+                      },
+                      {
+                        "type": "multiply",
+                        "value": 2,
+                        "field": "54b5-0978-c8a4-5b5a",
+                        "affects": "self.entries.57a8-32f1-f062-fb17"
                       }
                     ]
                   },
@@ -51693,6 +51816,12 @@
                         "value": "Twin-linked",
                         "field": "name",
                         "join": " "
+                      },
+                      {
+                        "type": "multiply",
+                        "value": 2,
+                        "field": "54b5-0978-c8a4-5b5a",
+                        "affects": "self.entries.57a8-32f1-f062-fb17"
                       }
                     ]
                   },
@@ -57797,6 +57926,12 @@
                         "type": "prepend",
                         "value": "Twin-linked",
                         "field": "name"
+                      },
+                      {
+                        "type": "multiply",
+                        "value": 2,
+                        "field": "54b5-0978-c8a4-5b5a",
+                        "affects": "self.entries.57a8-32f1-f062-fb17"
                       }
                     ],
                     "infoLinks": [
@@ -58591,6 +58726,12 @@
                         "type": "prepend",
                         "value": "Twin-linked",
                         "field": "name"
+                      },
+                      {
+                        "type": "multiply",
+                        "value": 2,
+                        "field": "54b5-0978-c8a4-5b5a",
+                        "affects": "self.entries.57a8-32f1-f062-fb17"
                       }
                     ]
                   },
@@ -60831,6 +60972,15 @@
                         "childId": "c50c-f665-e9dc-6460",
                         "shared": true,
                         "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "ac66-f192-47b4-7be7",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -61561,6 +61711,52 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "4f6c-8da1-0ec8-7792"
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Exorcists)",
+            "id": "4c09-e49b-0546-a0d2",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "ac66-f192-47b4-7be7",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Indomitable",
+                "id": "5ac7-62fb-0345-1ad2",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7df8-df94-3577-cc99"
+              },
+              {
+                "name": "Battle-hardened",
+                "id": "196a-30c7-6956-49c4",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "76cb-bd90-ecb1-941b",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "1",
+                    "field": "annotation"
+                  }
+                ]
               }
             ]
           }
@@ -62809,6 +63005,107 @@
             "targetId": "54d7-74c8-3a1c-4574"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Enochian Guard",
+        "hidden": true,
+        "id": "f9d7-2f2b-e29e-e965",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "4e90-6cbd-d135-7f79",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 15,
+            "field": "54b5-0978-c8a4-5b5a",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "model",
+                "shared": true,
+                "roundUp": false
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "0e69-ba6c-2394-5c44",
+            "field": "category",
+            "scope": "parent",
+            "affects": "entries.model"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Adamantium Will",
+            "id": "235c-97aa-afb5-b3eb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0f2c-c9a6-fda6-cc5c",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "4e90-6cbd-d135-7f79"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "ac66-f192-47b4-7be7",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "313a-50fd-46de-ec5f",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -63949,6 +64246,40 @@
             "$text": "Rending (5+), Shred, Specialist Weapon, Letting-talons"
           }
         ]
+      },
+      {
+        "name": "Gravis Power Fist",
+        "typeId": "ecd5-ca1d-0842-34a4",
+        "typeName": "Melee Weapon",
+        "hidden": false,
+        "id": "6fdd-8073-79c0-570e",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "ec4a-5686-1553-4654",
+            "$text": "-"
+          },
+          {
+            "name": "S",
+            "typeId": "b9e5-2eb3-f79d-e995",
+            "$text": "9"
+          },
+          {
+            "name": "AP",
+            "typeId": "0332-8de1-48c6-c94d",
+            "$text": "2"
+          },
+          {
+            "name": "Type",
+            "typeId": "6c0f-3258-2a17-5cc9",
+            "$text": "Melee"
+          },
+          {
+            "name": "Special Rules",
+            "typeId": "a603-af69-c30b-94ed",
+            "$text": "Brutal (3)"
+          }
+        ]
       }
     ],
     "type": "catalogue",
@@ -64306,6 +64637,12 @@
         "id": "7690-b0d6-d84b-1cab",
         "hidden": false,
         "description": "When a model has 2 Letting-talons they gain +2 Attacks instead of the usual +1 for using an additional weapon in combat."
+      },
+      {
+        "name": "Indomitable",
+        "id": "7df8-df94-3577-cc99",
+        "hidden": false,
+        "description": "All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -67694,6 +68031,201 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Force Weapon",
+        "id": "b4cb-651a-00f0-6257",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "67ba-921c-2bfe-042d"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Force Axe",
+            "hidden": false,
+            "id": "2c00-7a4c-1251-796d",
+            "type": "selectionEntry",
+            "targetId": "c4cc-d581-1e2d-4280"
+          },
+          {
+            "import": true,
+            "name": "Force Maul",
+            "hidden": false,
+            "id": "4850-9e94-3b48-a236",
+            "type": "selectionEntry",
+            "targetId": "6e74-4813-863c-3a2e"
+          },
+          {
+            "import": true,
+            "name": "Force Staff",
+            "hidden": false,
+            "id": "4185-9581-ecad-367e",
+            "type": "selectionEntry",
+            "targetId": "4eab-e958-c504-0862"
+          },
+          {
+            "import": true,
+            "name": "Force Sword",
+            "hidden": false,
+            "id": "9e8e-6c00-97d8-d2bc",
+            "type": "selectionEntry",
+            "targetId": "29f2-4dcc-0519-06a5"
+          }
+        ]
+      },
+      {
+        "name": "In-built Weapon",
+        "id": "84a7-bf63-4f71-db0f",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Storm Bolter",
+            "hidden": false,
+            "id": "de5e-d07e-7dd8-80b8",
+            "type": "selectionEntry",
+            "targetId": "b584-e06b-ebeb-4d04"
+          },
+          {
+            "import": true,
+            "name": "Heavy Flamer",
+            "hidden": false,
+            "id": "041d-a12e-efae-36fc",
+            "type": "selectionEntry",
+            "targetId": "c553-098b-dbb7-e3a9",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 5
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fd6d-25b1-3c56-74e2"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "fd6d-25b1-3c56-74e2"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "75a3-46b2-47de-9789",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Meltagun",
+            "hidden": false,
+            "id": "ff8b-13da-66cc-55cd",
+            "type": "selectionEntry",
+            "targetId": "5fc6-b052-616c-bfa7",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 15
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "84cb-4d19-7959-f227"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2a81-6602-4b49-607e"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "2a81-6602-4b49-607e"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "model",
+                    "childId": "75a3-46b2-47de-9789",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "b3de-f360-53ed-ab5f"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "5d38-0995-8ff8-b72e"
+          }
+        ],
+        "defaultSelectionEntryId": "1153-2efa-1088-047e"
       }
     ],
     "categoryEntries": [

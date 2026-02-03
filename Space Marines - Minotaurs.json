@@ -112,6 +112,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "dcd3-864f-7b27-2578-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "1663-20cd-995e-7dac",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "costs": [
@@ -534,18 +544,6 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "1663-20cd-995e-7dac",
-            "includeChildSelections": true,
-            "includeChildForces": true
-          }
         ]
       },
       {
@@ -630,6 +628,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "7393-c142-4154-197d-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "43aa-61e2-8b4c-6275",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "profiles": [
@@ -1171,18 +1179,6 @@
             "id": "3459-07ad-09dc-0608",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "43aa-61e2-8b4c-6275",
-            "includeChildSelections": true,
-            "includeChildForces": true
           }
         ]
       }
