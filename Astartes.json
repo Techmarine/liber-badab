@@ -1471,7 +1471,8 @@
                         "type": "selectionEntry",
                         "targetId": "1a20-b33a-305e-b4ad"
                       }
-                    ]
+                    ],
+                    "sortIndex": 1
                   },
                   {
                     "import": true,
@@ -1677,6 +1678,42 @@
                         "name": "Master-crafted",
                         "hidden": false,
                         "id": "28de-d3fc-61b7-4d14",
+                        "type": "selectionEntry",
+                        "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Terranic Greatsword",
+                    "hidden": true,
+                    "id": "566d-ad47-f799-3335",
+                    "type": "selectionEntry",
+                    "targetId": "263d-a858-fb67-042e",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "0895-4d0c-a12e-88bb",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Master-crafted",
+                        "hidden": false,
+                        "id": "b147-a13f-2877-1fc6",
                         "type": "selectionEntry",
                         "targetId": "1a20-b33a-305e-b4ad"
                       }
@@ -6647,15 +6684,6 @@
                       }
                     ]
                   }
-                ],
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": true,
-                    "field": "hidden",
-                    "scope": "root-entry",
-                    "affects": "entries.recursive.e290-7819-af75-85c4"
-                  }
                 ]
               },
               {
@@ -6740,6 +6768,67 @@
                         "name": "Description",
                         "typeId": "ea6d-ab61-e667-7094",
                         "$text": "If Silas Alberec is your army’s warlord, any friendly Space Marine units in a force that includes Alberec may re-roll failed pinning checks, while Alberect himself has the Feel No Pain (5+) universal special rule."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Mechanised Specialist",
+                "hidden": true,
+                "id": "e411-e6e9-2b8d-125e",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "05d1-1a2a-fdee-131a"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "05d1-1a2a-fdee-131a"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "0895-4d0c-a12e-88bb",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Mechanised Specialist",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "3719-9a93-df22-687f",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "While the Warlord is embarked on a vehicle, any other vehicle within 12\" of the Warlords’ Vehicle may increase its move characteristic by +2\". While the warlord is alive, the army may make an additional reaction in the Movement Phase."
                       }
                     ]
                   }
@@ -14852,7 +14941,8 @@
                           }
                         ]
                       }
-                    ]
+                    ],
+                    "sortIndex": 1
                   },
                   {
                     "import": true,
@@ -15084,6 +15174,42 @@
                         "name": "Master-crafted",
                         "hidden": false,
                         "id": "294c-82a0-f4b9-f9d2",
+                        "type": "selectionEntry",
+                        "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Terranic Greatsword",
+                    "hidden": true,
+                    "id": "1e27-24d4-c963-f8e3",
+                    "type": "selectionEntry",
+                    "targetId": "263d-a858-fb67-042e",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "0895-4d0c-a12e-88bb",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Master-crafted",
+                        "hidden": false,
+                        "id": "a455-7212-e6f4-d5a5",
                         "type": "selectionEntry",
                         "targetId": "1a20-b33a-305e-b4ad"
                       }
@@ -17924,6 +18050,15 @@
                 "type": "selectionEntry",
                 "targetId": "377d-da89-6aa5-54eb",
                 "sortIndex": 5
+              },
+              {
+                "import": true,
+                "name": "Extra Armour",
+                "hidden": false,
+                "id": "3e32-bc48-9397-526e",
+                "type": "selectionEntry",
+                "targetId": "b865-a4bb-0869-858a",
+                "sortIndex": 6
               }
             ],
             "sortIndex": 1
@@ -18687,6 +18822,15 @@
                     "id": "00a3-c35b-f948-ef37-max"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Extra Armour",
+                "hidden": false,
+                "id": "1e1d-90ea-ad47-f355",
+                "type": "selectionEntry",
+                "targetId": "b865-a4bb-0869-858a",
+                "sortIndex": 5
               }
             ],
             "sortIndex": 1
@@ -20997,6 +21141,93 @@
               }
             ],
             "sortIndex": 5
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "1st Company Veteran Elite",
+            "hidden": true,
+            "id": "9a5d-576d-1d9a-c4d1",
+            "sortIndex": 6,
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fc61-b497-7c1f-e97d"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "fc61-b497-7c1f-e97d"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "0895-4d0c-a12e-88bb",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 10,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "6ed0-3b6d-b7d7-894c",
+                "affects": "self.entries.profiles.Model",
+                "scope": "parent"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Hatred",
+                "id": "f3d8-eccd-f49c-a5e0",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "bacb-64aa-bb42-4c9d",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Secessionists",
+                    "field": "annotation"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -21163,15 +21394,6 @@
         "entryLinks": [
           {
             "import": true,
-            "name": "Chapter Tactics",
-            "hidden": false,
-            "id": "2bc3-e307-3de6-ec6d",
-            "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf",
-            "sortIndex": 5
-          },
-          {
-            "import": true,
             "name": "Dedicated Transport",
             "hidden": false,
             "id": "6fdd-d62a-aab8-6bc8",
@@ -21186,6 +21408,14 @@
             "id": "85d6-909b-6127-0db3",
             "type": "selectionEntry",
             "targetId": "f9d7-2f2b-e29e-e965"
+          },
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "2bc3-e307-3de6-ec6d",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
           }
         ]
       },
@@ -53098,6 +53328,15 @@
                 "type": "selectionEntry",
                 "targetId": "377d-da89-6aa5-54eb",
                 "sortIndex": 8
+              },
+              {
+                "import": true,
+                "name": "Extra Armour",
+                "hidden": false,
+                "id": "ecb8-0b7a-b4ab-5e62",
+                "type": "selectionEntry",
+                "targetId": "b865-a4bb-0869-858a",
+                "sortIndex": 9
               }
             ],
             "sortIndex": 1,
@@ -53719,7 +53958,8 @@
                 "hidden": false,
                 "id": "34c4-598f-6446-7804",
                 "type": "selectionEntry",
-                "targetId": "377d-da89-6aa5-54eb"
+                "targetId": "377d-da89-6aa5-54eb",
+                "sortIndex": 4
               },
               {
                 "import": true,
@@ -53746,6 +53986,15 @@
                     "id": "fcc6-f548-664e-c0f0-max"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Extra Armour",
+                "hidden": false,
+                "id": "60de-eb65-d9c0-dd51",
+                "type": "selectionEntry",
+                "targetId": "b865-a4bb-0869-858a",
+                "sortIndex": 5
               }
             ],
             "selectionEntryGroups": [
@@ -54524,6 +54773,15 @@
                     "id": "843d-d24f-b32b-c994"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Extra Armour",
+                "hidden": false,
+                "id": "5faa-a45b-911f-41f1",
+                "type": "selectionEntry",
+                "targetId": "b865-a4bb-0869-858a",
+                "sortIndex": 7
               }
             ],
             "rules": [
@@ -60981,6 +61239,15 @@
                         "childId": "ac66-f192-47b4-7be7",
                         "shared": true,
                         "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "0895-4d0c-a12e-88bb",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -61403,6 +61670,78 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "decrement",
+            "value": 5,
+            "field": "54b5-0978-c8a4-5b5a",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0895-4d0c-a12e-88bb",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ],
+            "scope": "parent",
+            "affects": "entries.0c90-b6b0-0e24-5231"
+          },
+          {
+            "type": "decrement",
+            "value": 5,
+            "field": "54b5-0978-c8a4-5b5a",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0895-4d0c-a12e-88bb",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ],
+            "scope": "parent",
+            "affects": "entries.3c60-22bc-73f6-930b"
+          },
+          {
+            "type": "decrement",
+            "value": 10,
+            "field": "54b5-0978-c8a4-5b5a",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0895-4d0c-a12e-88bb",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ],
+            "scope": "parent",
+            "affects": "entries.6357-8a7f-dc52-243b"
+          },
+          {
+            "type": "decrement",
+            "value": 10,
+            "field": "54b5-0978-c8a4-5b5a",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "0895-4d0c-a12e-88bb",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ],
+            "scope": "parent",
+            "affects": "entries.e998-b304-efa3-a6f4"
           }
         ],
         "infoGroups": [
@@ -61757,6 +62096,52 @@
                     "field": "annotation"
                   }
                 ]
+              },
+              {
+                "name": "Chapter Tactics (Exorcists)",
+                "id": "a6bc-d59b-53d1-97b0",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "23a3-481c-5cb7-4b6e"
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Fire Angels)",
+            "id": "7341-ea6e-5efe-ab66",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "0895-4d0c-a12e-88bb",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Gladius Incandor",
+                "id": "7acb-0904-4afb-d624",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "6f6b-fe32-80ea-91b1"
+              },
+              {
+                "name": "Chapter Tactics (Fire Angels)",
+                "id": "5b01-fc70-d191-54ee",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3372-4df4-6fb7-d990"
               }
             ]
           }
@@ -63104,6 +63489,119 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Terranic Greatsword",
+        "hidden": false,
+        "id": "263d-a858-fb67-042e",
+        "profiles": [
+          {
+            "name": "Terranic Greatsword",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "f7bd-0a3c-19ba-79fd",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+2"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Two-Handed, Rending (5+), Murderous Strike (5+)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Two-handed",
+            "id": "5174-4e37-e383-62bd",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9c96-f071-03a6-7593"
+          },
+          {
+            "name": "Rending",
+            "id": "8b1a-55c6-ba22-87ff",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Murderous Strike",
+            "id": "4a86-e957-185d-c155",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5e54-e48c-3700-6d3e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Extra Armour",
+        "hidden": true,
+        "id": "b865-a4bb-0869-858a",
+        "profiles": [
+          {
+            "name": "Extra Armour",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "e0a0-e636-3ab6-321a",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with the Extra Armour Wargear counts a Crew Stunned result on the Vehicle Damage Table as Crew Shaken instead."
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "0dc5-6237-2d9d-5361"
           }
         ]
       }
@@ -64570,7 +65068,7 @@
         "name": "Bitter Mettle",
         "id": "3407-db2a-4d80-a346",
         "hidden": false,
-        "description": "All models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc.\n\n\n(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).\n-Badab Enthusiast)"
+        "description": "All models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc.\n\n(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).\n-Badab Enthusiast)"
       },
       {
         "name": "Unrelenting Assault",
@@ -64643,6 +65141,24 @@
         "id": "7df8-df94-3577-cc99",
         "hidden": false,
         "description": "All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw."
+      },
+      {
+        "name": "Gladius Incandor",
+        "id": "6f6b-fe32-80ea-91b1",
+        "hidden": false,
+        "description": "All units with the chapter tactic (Fire Angels) gain a bonus +1 to hit when rolling To Hit with in an assault with one of the following weapons: Chainsword, Force Sword, Power Sword, Terranic Great Sword. In addition, models with the Vehicle Sub-type gain +1 Strength when making a ram action."
+      },
+      {
+        "name": "Chapter Tactics (Exorcists)",
+        "id": "23a3-481c-5cb7-4b6e",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Exorcists) Special Rule gains Indomitable Special Rule."
+      },
+      {
+        "name": "Chapter Tactics (Fire Angels)",
+        "id": "3372-4df4-6fb7-d990",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Fire Angels) Special Rule gains Gladius Incandor Special Rule."
       }
     ],
     "sharedSelectionEntryGroups": [

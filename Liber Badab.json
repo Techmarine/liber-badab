@@ -11066,6 +11066,13 @@
             "name": "Exorcists",
             "hidden": false,
             "id": "ac66-f192-47b4-7be7"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Fire Angels",
+            "hidden": false,
+            "id": "0895-4d0c-a12e-88bb"
           }
         ],
         "constraints": [
