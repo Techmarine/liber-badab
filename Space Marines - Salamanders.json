@@ -113,6 +113,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "907f-67a3-f672-f003-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "19ac-4f04-b7e1-5e9b",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "costs": [
@@ -544,18 +554,6 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "19ac-4f04-b7e1-5e9b",
-            "includeChildSelections": true,
-            "includeChildForces": true
-          }
         ]
       },
       {
@@ -603,6 +601,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "fe39-c34d-fa2a-e047-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "aab0-1403-2cdb-b8d0",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "costs": [
@@ -976,18 +984,6 @@
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "aab0-1403-2cdb-b8d0",
-            "includeChildSelections": true,
-            "includeChildForces": true
-          }
         ]
       },
       {
@@ -1035,6 +1031,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "f2fd-67bc-fae6-6233-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "d398-1847-6cfe-822e",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "costs": [
@@ -1433,18 +1439,6 @@
             "id": "ec1f-a011-dbe4-b62b",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "d398-1847-6cfe-822e",
-            "includeChildSelections": true,
-            "includeChildForces": true
           }
         ]
       }

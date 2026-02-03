@@ -411,6 +411,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "82c5-9e07-66ad-9735-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "9ce9-f380-ef69-3e1c",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "sortIndex": 1
@@ -552,18 +562,6 @@
             "id": "dc42-4e2b-4305-a74b",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "9ce9-f380-ef69-3e1c",
-            "includeChildSelections": true,
-            "includeChildForces": true
           }
         ]
       },
@@ -1084,66 +1082,23 @@
                               }
                             ]
                           }
-                        ]
+                        ],
+                        "sortIndex": 1
                       },
                       {
                         "type": "upgrade",
                         "import": true,
                         "name": "Gravis Powerfist with Frag Cannon",
                         "hidden": false,
-                        "id": "bec5-95e4-3384-7565",
+                        "id": "efe6-47bb-87ed-ba7c",
                         "entryLinks": [
                           {
                             "import": true,
-                            "name": "Gravis Power Fist",
+                            "name": "In-built Weapon",
                             "hidden": false,
-                            "id": "1d43-cea4-5acf-b515",
-                            "type": "selectionEntry",
-                            "targetId": "3382-0547-3f12-7171",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "9e60-0ae5-6de6-b974-min"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "9e60-0ae5-6de6-b974-max"
-                              }
-                            ]
-                          },
-                          {
-                            "import": true,
-                            "name": "Frag Cannon",
-                            "hidden": false,
-                            "id": "ed65-8b0b-8549-e7e2",
-                            "type": "selectionEntry",
-                            "targetId": "8bc8-31dc-2dd4-3e7c",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "cfa4-a94b-6135-1a6d-min"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "cfa4-a94b-6135-1a6d-max"
-                              }
-                            ]
+                            "id": "5032-8319-5937-a517",
+                            "type": "selectionEntryGroup",
+                            "targetId": "84a7-bf63-4f71-db0f"
                           }
                         ],
                         "modifiers": [
@@ -1160,6 +1115,57 @@
                             "name": "Points",
                             "typeId": "54b5-0978-c8a4-5b5a",
                             "value": 10
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Breaching",
+                            "id": "e9d0-4da4-0247-3ac3",
+                            "hidden": false,
+                            "type": "rule",
+                            "targetId": "ee66-f70b-aa5c-b2bf",
+                            "modifiers": [
+                              {
+                                "type": "set",
+                                "value": "5+",
+                                "field": "annotation"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Pinning",
+                            "id": "9829-a04d-2605-da1d",
+                            "hidden": false,
+                            "type": "rule",
+                            "targetId": "4cc0-966b-ab26-0aa7"
+                          },
+                          {
+                            "name": "Frag Cannon",
+                            "id": "7d17-c451-127c-79d5",
+                            "hidden": false,
+                            "type": "profile",
+                            "targetId": "402c-d865-f225-44d6"
+                          },
+                          {
+                            "name": "Gravis Power Fist",
+                            "id": "9d01-c787-85fe-b12e",
+                            "hidden": false,
+                            "type": "profile",
+                            "targetId": "6fdd-8073-79c0-570e"
+                          },
+                          {
+                            "name": "Brutal",
+                            "id": "4b3f-c454-f8d4-40f8",
+                            "hidden": false,
+                            "type": "rule",
+                            "targetId": "fc68-9ea6-18e4-d94b",
+                            "modifiers": [
+                              {
+                                "type": "set",
+                                "value": "3",
+                                "field": "annotation"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -1454,77 +1460,19 @@
                               }
                             ]
                           }
-                        ]
-                      },
+                        ],
+                        "sortIndex": 1
+                      }
+                    ],
+                    "defaultSelectionEntryId": "ad91-8248-d211-f52d",
+                    "entryLinks": [
                       {
-                        "type": "upgrade",
                         "import": true,
                         "name": "Gravis Powerfist with Frag Cannon",
                         "hidden": false,
-                        "id": "5d00-d251-ed61-7e70",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Gravis Power Fist",
-                            "hidden": false,
-                            "id": "9f15-90cb-6547-ec4b",
-                            "type": "selectionEntry",
-                            "targetId": "3382-0547-3f12-7171",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "9b10-175e-11e5-89ad-min"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "9b10-175e-11e5-89ad-max"
-                              }
-                            ]
-                          },
-                          {
-                            "import": true,
-                            "name": "Frag Cannon",
-                            "hidden": false,
-                            "id": "b4e2-5ebd-0235-c3a0",
-                            "type": "selectionEntry",
-                            "targetId": "8bc8-31dc-2dd4-3e7c",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "106a-2a28-3542-6e1d-min"
-                              },
-                              {
-                                "type": "max",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "106a-2a28-3542-6e1d-max"
-                              }
-                            ]
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "edda-ee37-03b4-f91f",
-                            "affects": "profiles.Model",
-                            "scope": "parent"
-                          }
-                        ],
+                        "id": "2904-ab78-078e-3eef",
+                        "type": "selectionEntry",
+                        "targetId": "095a-2603-3042-6651",
                         "costs": [
                           {
                             "name": "Points",
@@ -1533,8 +1481,7 @@
                           }
                         ]
                       }
-                    ],
-                    "defaultSelectionEntryId": "15b7-3729-1a4f-a88f"
+                    ]
                   }
                 ],
                 "entryLinks": [
@@ -1847,7 +1794,8 @@
                 "hidden": false,
                 "id": "f40f-4a5c-919d-14fc",
                 "type": "selectionEntry",
-                "targetId": "b584-e06b-ebeb-4d04"
+                "targetId": "b584-e06b-ebeb-4d04",
+                "sortIndex": 1
               },
               {
                 "import": true,
@@ -1898,7 +1846,7 @@
                 "id": "6bef-28bb-c516-8a6e"
               }
             ],
-            "defaultSelectionEntryId": "1153-2efa-1088-047e"
+            "defaultSelectionEntryId": "f40f-4a5c-919d-14fc"
           }
         ]
       },
@@ -1965,6 +1913,119 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4cc0-966b-ab26-0aa7"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Gravis Powerfist with Frag Cannon",
+        "hidden": false,
+        "id": "095a-2603-3042-6651",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "In-built Weapon",
+            "hidden": false,
+            "id": "62f2-7d10-a5fb-c3ce",
+            "type": "selectionEntryGroup",
+            "targetId": "84a7-bf63-4f71-db0f"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "decrement",
+            "value": 1,
+            "field": "edda-ee37-03b4-f91f",
+            "affects": "profiles.Model",
+            "scope": "parent"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Breaching",
+            "id": "22c6-b811-479f-0d4f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Pinning",
+            "id": "b4b3-69fe-0767-4cdb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          },
+          {
+            "name": "Frag Cannon",
+            "id": "8080-aa1a-d835-6554",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "402c-d865-f225-44d6"
+          },
+          {
+            "name": "Gravis Power Fist",
+            "id": "716a-dce9-4cff-6eec",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "6fdd-8073-79c0-570e"
+          },
+          {
+            "name": "Brutal",
+            "id": "caae-db65-fc82-9ad3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc68-9ea6-18e4-d94b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3",
+                "field": "annotation"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Frag Cannon",
+        "typeId": "5e31-3867-7c3d-fcb9",
+        "typeName": "Ranged Weapon",
+        "hidden": false,
+        "id": "402c-d865-f225-44d6",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "7b0f-9c2a-0ecb-f3a3",
+            "$text": "T"
+          },
+          {
+            "name": "S",
+            "typeId": "2ecc-1ccc-736f-9d3d",
+            "$text": "6"
+          },
+          {
+            "name": "AP",
+            "typeId": "cbb5-5f04-f87f-a810",
+            "$text": "-"
+          },
+          {
+            "name": "Type",
+            "typeId": "2c90-16ca-a927-898d",
+            "$text": "Assault 2"
+          },
+          {
+            "name": "Special Rules",
+            "typeId": "d2a2-1139-48cb-4472",
+            "$text": "Breaching (5+), Pinning"
           }
         ]
       }

@@ -113,6 +113,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "ffc1-19a6-d614-3083-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "9379-833d-81fe-24dc-max",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "profiles": [
@@ -477,6 +487,15 @@
             "id": "6a54-e619-6b1b-b0d5",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Retinue",
+            "hidden": false,
+            "id": "9e1d-190d-7464-c031",
+            "type": "selectionEntryGroup",
+            "targetId": "e290-7819-af75-85c4",
+            "sortIndex": 2
           }
         ],
         "infoLinks": [
@@ -534,18 +553,6 @@
             "id": "cef9-e77e-6597-5269",
             "hidden": false,
             "description": "Tyberos grants up to 3 infantry units the Deep Strike special rule."
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "9379-833d-81fe-24dc-max",
-            "includeChildSelections": true,
-            "includeChildForces": true
           }
         ]
       }

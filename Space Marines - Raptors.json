@@ -142,6 +142,16 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "f7a5-a867-b78e-116c-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "b5be-8767-a509-5f22",
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ],
             "entryLinks": [
@@ -722,18 +732,6 @@
             "id": "1883-d52a-2b75-48c1",
             "hidden": false,
             "description": "If Lias Issodon begins the game in reserve, when he enters play the controlling player may select an enemy unit, non-flyer vehicle, or fortification that is on the battlefield.\n\n\nThe unit suffers either D6 Str 6 AP 2 hits if it has a Toughness value, or a single automatic penetrating hit at AP 1. Cover or Shrouded saves may not be taken against this attack."
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "b5be-8767-a509-5f22",
-            "includeChildSelections": true,
-            "includeChildForces": true
           }
         ],
         "entryLinks": [
