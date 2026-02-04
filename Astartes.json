@@ -1764,6 +1764,50 @@
                         "targetId": "1a20-b33a-305e-b4ad"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "ad77-612b-c7cf-6dbe",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Master-crafted",
+                        "hidden": false,
+                        "id": "7aa4-6e19-8f92-0417",
+                        "type": "selectionEntry",
+                        "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -3625,6 +3669,60 @@
                         "id": "4762-3abf-2941-76d2",
                         "type": "selectionEntry",
                         "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "5f39-d583-35a6-eaf2",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "e5d2-471d-9ad2-d94d"
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Master-crafted",
+                        "hidden": false,
+                        "id": "df86-8a47-67b9-cbaf",
+                        "type": "selectionEntry",
+                        "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -7076,6 +7174,67 @@
                         "name": "Description",
                         "typeId": "ea6d-ab61-e667-7094",
                         "$text": "If you include Knight-Captain Courbray is the armies warlord, then all flamer weapons count as twin-linked. In addition while Knight-Captain Courbray is alive, the controlling player may make an additional reaction in the Movement Phase."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Forward, for the Emperor!",
+                "hidden": true,
+                "id": "b924-6159-4204-cfd6",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c6fe-a38f-43b4-9902"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "c6fe-a38f-43b4-9902"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "80a9-2141-1026-4bc8",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Forward, for the Emperor!",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "af42-2597-1c14-e5d5",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "The warlord and all friendly units within 6\", add +1 to their initiative for any Run moves or Movement Reactions. While the Warlord is alive, the controlling player may make an additional reaction in the Movement Phase."
                       }
                     ]
                   }
@@ -13506,6 +13665,60 @@
                         "targetId": "1a20-b33a-305e-b4ad"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "5ea3-d128-94e8-885b",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "00b4-ab25-c1af-32d4"
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Master-crafted",
+                        "hidden": false,
+                        "id": "8020-6d1d-1685-23a7",
+                        "type": "selectionEntry",
+                        "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "sortIndex": 3,
@@ -15590,6 +15803,50 @@
                         "id": "a455-7212-e6f4-d5a5",
                         "type": "selectionEntry",
                         "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "1a9f-8162-e4d9-8836",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Master-crafted",
+                        "hidden": false,
+                        "id": "611a-b844-7fea-b6f8",
+                        "type": "selectionEntry",
+                        "targetId": "1a20-b33a-305e-b4ad"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -20168,6 +20425,40 @@
                       }
                     ],
                     "flatten": true
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "b0ca-84a2-366c-dab1",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -23523,6 +23814,50 @@
                         "id": "4762-ec3d-b922-10cb"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "823c-2f8f-7121-6a16",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "addc-ea5f-a842-4a2d"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -26072,6 +26407,40 @@
                         "name": "Points",
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "c3cf-b3dc-1939-5f1b",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -30407,6 +30776,40 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Griffon Warblade",
+                        "hidden": true,
+                        "id": "7286-2bd4-48fe-fbe5",
+                        "type": "selectionEntry",
+                        "targetId": "7134-7da1-af1b-a7c7",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 5
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "roster",
+                                "childId": "80a9-2141-1026-4bc8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "includeChildForces": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -31663,6 +32066,50 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "d297-450d-7f23-bf99"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "21f8-c57e-dc21-11fe",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "450f-7ef9-e8e5-492a"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -34158,6 +34605,40 @@
                             "childId": "1f40-fe51-5c23-c07e",
                             "shared": true,
                             "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "89a5-0476-366b-a411",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
                           }
                         ]
                       }
@@ -37711,6 +38192,40 @@
                         "value": 5
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "9445-a71a-e1fa-1ffd",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -40309,6 +40824,50 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "d7a2-9f92-800b-1630"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "9190-53a8-4ab1-c9a8",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "520a-f89d-c896-a8fb"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -43109,6 +43668,50 @@
                         "id": "d0b0-f7e5-6033-b4f6"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "5501-bf24-c55f-52ae",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "ba8a-d9f3-1b48-e8a5"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -44768,6 +45371,50 @@
                         "id": "ad2b-1edb-d09f-53c5"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "6238-fe5f-39d7-ea89",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "dd1b-cd4f-97bc-cc0a"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -45898,6 +46545,50 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "0c25-9b5e-b3e3-cc44"
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "a2b4-ee6a-b420-ea04",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "9cd6-3a48-be5f-2fe7"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -49256,6 +49947,40 @@
                         "name": "Points",
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Griffon Warblade",
+                    "hidden": true,
+                    "id": "6ede-9042-d2e7-d875",
+                    "type": "selectionEntry",
+                    "targetId": "7134-7da1-af1b-a7c7",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -62392,6 +63117,24 @@
                         "childId": "0895-4d0c-a12e-88bb",
                         "shared": true,
                         "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "8024-8905-4ee4-c1a4",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "80a9-2141-1026-4bc8",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -63332,6 +64075,45 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "f0be-92e8-8936-ac5e"
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Howling Griffons)",
+            "id": "6cae-2bfa-a0ee-21e8",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "80a9-2141-1026-4bc8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Chapter Tactics (Howling Griffons)",
+                "id": "f478-8ab2-877d-eefb",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "848a-fb14-b938-236d"
+              },
+              {
+                "name": "Into the Fray",
+                "id": "1a99-7513-eee8-c312",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e00f-3924-c3b1-df2d"
               }
             ]
           }
@@ -64892,6 +65674,65 @@
             "field": "category",
             "scope": "parent",
             "affects": "entries.model"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Griffon Warblade",
+        "hidden": false,
+        "id": "7134-7da1-af1b-a7c7",
+        "profiles": [
+          {
+            "name": "Griffon Warblade",
+            "typeId": "ecd5-ca1d-0842-34a4",
+            "typeName": "Melee Weapon",
+            "hidden": false,
+            "id": "1592-83ad-b886-34ff",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "ec4a-5686-1553-4654",
+                "$text": "-"
+              },
+              {
+                "name": "S",
+                "typeId": "b9e5-2eb3-f79d-e995",
+                "$text": "+1"
+              },
+              {
+                "name": "AP",
+                "typeId": "0332-8de1-48c6-c94d",
+                "$text": "3"
+              },
+              {
+                "name": "Type",
+                "typeId": "6c0f-3258-2a17-5cc9",
+                "$text": "Melee"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "a603-af69-c30b-94ed",
+                "$text": "Rending (5+)"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Rending",
+            "id": "b9ac-b063-7642-9ecd",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
           }
         ]
       }
@@ -66473,6 +67314,18 @@
         "id": "f0be-92e8-8936-ac5e",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Fire Hawks) special rule lessens all cover saves they are receiving by 1. Eg. If a Fire Hawks Tactical Marine was in a ruin (5+ Cover Save) It would instead be a 6+ cover save."
+      },
+      {
+        "name": "Chapter Tactics (Howling Griffons)",
+        "id": "848a-fb14-b938-236d",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Howling Griffons) Special Rule gains Into the Fray Special Rule."
+      },
+      {
+        "name": "Into the Fray",
+        "id": "e00f-3924-c3b1-df2d",
+        "hidden": false,
+        "description": "On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal – after any initiative modifiers from other special rules have been taken into account."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -66500,6 +67353,22 @@
                 "value": "0e69-ba6c-2394-5c44",
                 "field": "category",
                 "scope": "model"
+              },
+              {
+                "type": "set",
+                "value": -1,
+                "field": "843e-7f3f-b2eb-1936",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "80a9-2141-1026-4bc8",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ],
             "entryLinks": [
@@ -66526,7 +67395,8 @@
                     "typeId": "54b5-0978-c8a4-5b5a",
                     "value": 15
                   }
-                ]
+                ],
+                "sortIndex": 2
               },
               {
                 "import": true,
@@ -66534,7 +67404,17 @@
                 "hidden": false,
                 "id": "908d-fd6c-8dbc-b348",
                 "type": "selectionEntryGroup",
-                "targetId": "a909-2c2a-9dba-237c"
+                "targetId": "a909-2c2a-9dba-237c",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Epistolary Librarian",
+                "hidden": true,
+                "id": "f266-f9b3-f728-a52e",
+                "type": "selectionEntry",
+                "targetId": "01d9-0338-26ca-b2b8",
+                "sortIndex": 3
               }
             ],
             "constraints": [
@@ -69922,7 +70802,8 @@
             "hidden": false,
             "id": "de5e-d07e-7dd8-80b8",
             "type": "selectionEntry",
-            "targetId": "b584-e06b-ebeb-4d04"
+            "targetId": "b584-e06b-ebeb-4d04",
+            "sortIndex": 1
           },
           {
             "import": true,
@@ -69938,16 +70819,6 @@
                 "value": 5
               }
             ],
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "fd6d-25b1-3c56-74e2"
-              }
-            ],
             "modifierGroups": [
               {
                 "type": "and",
@@ -69956,11 +70827,6 @@
                     "type": "set",
                     "value": true,
                     "field": "hidden"
-                  },
-                  {
-                    "type": "set",
-                    "value": 0,
-                    "field": "fd6d-25b1-3c56-74e2"
                   }
                 ],
                 "conditions": [
@@ -69968,8 +70834,25 @@
                     "type": "instanceOf",
                     "value": 1,
                     "field": "selections",
-                    "scope": "model",
-                    "childId": "75a3-46b2-47de-9789",
+                    "scope": "unit",
+                    "childId": "59fe-4a5e-acb2-a7ce",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "54b5-0978-c8a4-5b5a",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "7c9d-93ae-361b-8238",
                     "shared": true
                   }
                 ]
@@ -69990,47 +70873,32 @@
                 "value": 15
               }
             ],
-            "constraints": [
+            "modifiers": [
               {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "84cb-4d19-7959-f227"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "2a81-6602-4b49-607e"
-              }
-            ],
-            "modifierGroups": [
-              {
-                "type": "and",
-                "modifiers": [
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
                   {
-                    "type": "set",
-                    "value": true,
-                    "field": "hidden"
-                  },
-                  {
-                    "type": "set",
-                    "value": 0,
-                    "field": "2a81-6602-4b49-607e"
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "model",
-                    "childId": "75a3-46b2-47de-9789",
-                    "shared": true
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "59fe-4a5e-acb2-a7ce",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "7c9d-93ae-361b-8238",
+                        "shared": true
+                      }
+                    ]
                   }
                 ]
               }
@@ -70042,20 +70910,20 @@
             "type": "min",
             "value": 1,
             "field": "selections",
-            "scope": "parent",
+            "scope": "self",
             "shared": true,
-            "id": "b3de-f360-53ed-ab5f"
+            "id": "b425-263c-cfba-4187-min"
           },
           {
             "type": "max",
             "value": 1,
             "field": "selections",
-            "scope": "parent",
+            "scope": "self",
             "shared": true,
-            "id": "5d38-0995-8ff8-b72e"
+            "id": "b425-263c-cfba-4187-max"
           }
         ],
-        "defaultSelectionEntryId": "1153-2efa-1088-047e"
+        "defaultSelectionEntryId": "de5e-d07e-7dd8-80b8"
       }
     ],
     "categoryEntries": [

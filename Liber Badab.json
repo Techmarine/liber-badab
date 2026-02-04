@@ -11003,6 +11003,48 @@
             "targetId": "a666-0970-28e2-7c48"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Epistolary Librarian",
+        "hidden": true,
+        "id": "01d9-0338-26ca-b2b8",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 25
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": false,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "80a9-2141-1026-4bc8",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "f95d-c2f0-d4c3-bbeb"
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -11080,6 +11122,13 @@
             "name": "Fire Hawks",
             "hidden": false,
             "id": "8024-8905-4ee4-c1a4"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Howling Griffons",
+            "hidden": false,
+            "id": "80a9-2141-1026-4bc8"
           }
         ],
         "constraints": [
@@ -11131,7 +11180,17 @@
             "id": "beec-d087-ad59-c94d",
             "type": "selectionEntry",
             "targetId": "84d4-417d-b332-b7f8",
-            "defaultAmount": "1"
+            "defaultAmount": "1",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d414-7034-0656-7f19"
+              }
+            ]
           },
           {
             "import": true,
@@ -11139,7 +11198,17 @@
             "hidden": false,
             "id": "ab9b-3cbc-2829-f788",
             "type": "selectionEntry",
-            "targetId": "67e8-287e-4259-4379"
+            "targetId": "67e8-287e-4259-4379",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "194e-3d15-03ba-47e8"
+              }
+            ]
           },
           {
             "import": true,
@@ -11147,7 +11216,17 @@
             "hidden": false,
             "id": "a626-22f8-1307-cbbc",
             "type": "selectionEntry",
-            "targetId": "0f5d-6a84-3744-f037"
+            "targetId": "0f5d-6a84-3744-f037",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "aa75-5302-2acb-bcf2"
+              }
+            ]
           },
           {
             "import": true,
@@ -11155,7 +11234,17 @@
             "hidden": false,
             "id": "c8db-6868-0ddc-68c0",
             "type": "selectionEntry",
-            "targetId": "27bd-a90f-a44d-f46b"
+            "targetId": "27bd-a90f-a44d-f46b",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d20a-305f-9517-7477"
+              }
+            ]
           },
           {
             "import": true,
@@ -11163,7 +11252,17 @@
             "hidden": false,
             "id": "38e1-2371-552f-90dd",
             "type": "selectionEntry",
-            "targetId": "d781-b222-3c54-dab2"
+            "targetId": "d781-b222-3c54-dab2",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "96e8-e7d9-7246-7960"
+              }
+            ]
           },
           {
             "import": true,
@@ -11171,7 +11270,34 @@
             "hidden": false,
             "id": "b340-dc51-204a-e0d1",
             "type": "selectionEntry",
-            "targetId": "bff3-be94-f034-ee18"
+            "targetId": "bff3-be94-f034-ee18",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "94ed-1c32-684d-e636"
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "6f61-4185-7a33-4a1a",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "01d9-0338-26ca-b2b8",
+                "shared": true
+              }
+            ]
           }
         ]
       },
