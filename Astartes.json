@@ -454,6 +454,51 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "add",
+            "value": "efc6-682f-b0cb-cfa2",
+            "field": "category",
+            "scope": "parent",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "8024-8905-4ee4-c1a4",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "84c6-eed5-760f-f499",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "9f78-4194-5763-f6ad",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "profiles": [
@@ -1294,7 +1339,8 @@
                         "typeId": "54b5-0978-c8a4-5b5a",
                         "value": 15
                       }
-                    ]
+                    ],
+                    "sortIndex": 1
                   }
                 ],
                 "constraints": [
@@ -3846,7 +3892,8 @@
                               }
                             ]
                           }
-                        ]
+                        ],
+                        "sortIndex": 1
                       },
                       {
                         "import": true,
@@ -3888,6 +3935,49 @@
                                 "includeChildSelections": true
                               }
                             ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "ec82-f7bd-0921-2080",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "d102-176f-c804-508f",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 3
                           }
                         ]
                       }
@@ -4562,6 +4652,15 @@
             "type": "selectionEntry",
             "targetId": "b3f3-4f17-6be2-4082",
             "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "23dd-78ca-8879-4e91",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 3
           }
         ],
         "infoLinks": [
@@ -6833,6 +6932,154 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Raptorus Rex is Watching",
+                "hidden": true,
+                "id": "6fc0-5daf-abf6-3be9",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7955-2abd-d210-4cb9"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "7955-2abd-d210-4cb9"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "8024-8905-4ee4-c1a4",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "The Raptorus Rex is Watching",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "5512-425c-988a-4a98",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "While the Warlord is alive, the controlling player may reroll all 1’s when rolling for reserves. The Warlord and his unit may also re-roll their charge moves on a turn they arrive from reserve. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Burning Rage",
+                "hidden": true,
+                "id": "30d0-bbe1-0682-7af7",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ff5a-2085-1dc1-1f07"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6f39-57d2-fada-fd5c"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "66a5-eff3-276e-96e8",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "ff5a-2085-1dc1-1f07"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "6f39-57d2-fada-fd5c"
+                      },
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Burning Rage",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "289f-cdd2-1280-ee32",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "If you include Knight-Captain Courbray is the armies warlord, then all flamer weapons count as twin-linked. In addition while Knight-Captain Courbray is alive, the controlling player may make an additional reaction in the Movement Phase."
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "defaultSelectionEntryId": "2dda-e1f2-6bd3-daca"
@@ -8164,15 +8411,6 @@
                 "entryLinks": [
                   {
                     "import": true,
-                    "name": "Bolter",
-                    "hidden": false,
-                    "id": "a80e-3f69-b903-ba54",
-                    "type": "selectionEntry",
-                    "targetId": "7fd9-bd72-8e7e-e9c6",
-                    "sortIndex": 1
-                  },
-                  {
-                    "import": true,
                     "name": "Combi-flamer",
                     "hidden": false,
                     "id": "dde3-c1c6-7601-1276",
@@ -8304,6 +8542,49 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Bolter",
+                    "hidden": false,
+                    "id": "e624-4a18-7ba0-5d64",
+                    "type": "selectionEntry",
+                    "targetId": "7fd9-bd72-8e7e-e9c6",
+                    "defaultAmount": "1",
+                    "sortIndex": 1
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "1d3f-207d-b5e8-9626",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -8324,7 +8605,7 @@
                     "id": "3915-df15-779c-bbf0"
                   }
                 ],
-                "defaultSelectionEntryId": "76df-2c50-1961-ccf1",
+                "defaultSelectionEntryId": "e624-4a18-7ba0-5d64",
                 "sortIndex": 1,
                 "modifierGroups": [
                   {
@@ -9641,15 +9922,6 @@
                 "entryLinks": [
                   {
                     "import": true,
-                    "name": "Bolter",
-                    "hidden": false,
-                    "id": "76df-2c50-1961-ccf1",
-                    "type": "selectionEntry",
-                    "targetId": "7fd9-bd72-8e7e-e9c6",
-                    "sortIndex": 1
-                  },
-                  {
-                    "import": true,
                     "name": "Combi-flamer",
                     "hidden": false,
                     "id": "cfee-26d6-2326-ca33",
@@ -9775,6 +10047,49 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "c50c-f665-e9dc-6460",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Bolter",
+                    "hidden": false,
+                    "id": "76df-2c50-1961-ccf1",
+                    "type": "selectionEntry",
+                    "targetId": "7fd9-bd72-8e7e-e9c6",
+                    "defaultAmount": "1",
+                    "sortIndex": 1
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "32f8-81c7-86c6-6eea",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -10636,6 +10951,15 @@
                 ]
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "88cf-c6c6-6851-dc0b",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 7
           }
         ],
         "modifiers": [
@@ -13187,97 +13511,6 @@
                 "sortIndex": 3,
                 "selectionEntryGroups": [
                   {
-                    "name": "Bolt Pistol",
-                    "id": "18f3-f33a-4010-2774",
-                    "hidden": false,
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "self",
-                        "shared": true,
-                        "id": "34e7-2a1f-73bf-1700"
-                      }
-                    ],
-                    "flatten": true,
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Bolt Pistol",
-                        "hidden": false,
-                        "id": "d3d9-a1b6-8648-1125",
-                        "type": "selectionEntry",
-                        "targetId": "95f0-f427-49c0-c7e6",
-                        "defaultAmount": "1",
-                        "constraints": [
-                          {
-                            "type": "max",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "6115-7ae8-0189-2699"
-                          }
-                        ],
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Master-crafted",
-                            "hidden": false,
-                            "id": "45b7-4118-d39f-b63e",
-                            "type": "selectionEntry",
-                            "targetId": "1a20-b33a-305e-b4ad"
-                          }
-                        ]
-                      },
-                      {
-                        "import": true,
-                        "name": "Angelus Boltgun",
-                        "hidden": true,
-                        "id": "0404-2832-e3b7-f504",
-                        "type": "selectionEntry",
-                        "targetId": "7ef3-6c9b-2b53-81ac",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Master-crafted",
-                            "hidden": false,
-                            "id": "0084-6232-ea24-1b7e",
-                            "type": "selectionEntry",
-                            "targetId": "1a20-b33a-305e-b4ad"
-                          }
-                        ],
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 2
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": false,
-                            "field": "hidden",
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "force",
-                                "childId": "1f40-fe51-5c23-c07e",
-                                "shared": true,
-                                "includeChildSelections": true
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "sortIndex": 1
-                  },
-                  {
                     "name": "Chainsword",
                     "id": "1ab3-46b5-b27e-7cc6",
                     "hidden": false,
@@ -13461,6 +13694,141 @@
                       }
                     ],
                     "flatten": true
+                  },
+                  {
+                    "name": "Bolt Pistol",
+                    "id": "4c48-2028-5a84-9222",
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "fa4d-9ff4-4086-5c69"
+                      }
+                    ],
+                    "flatten": true,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Bolt Pistol",
+                        "hidden": false,
+                        "id": "0218-f21b-fb9f-3770",
+                        "type": "selectionEntry",
+                        "targetId": "95f0-f427-49c0-c7e6",
+                        "defaultAmount": "1",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "f581-5208-a113-1dce"
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "0fa5-7ccd-8e0a-735c",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ],
+                        "sortIndex": 1
+                      },
+                      {
+                        "import": true,
+                        "name": "Angelus Boltgun",
+                        "hidden": true,
+                        "id": "031a-bf5f-a7c9-0b76",
+                        "type": "selectionEntry",
+                        "targetId": "7ef3-6c9b-2b53-81ac",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "e3bb-6b69-0216-a0ad",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "3ae6-d0a8-f3e9-d5b6",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "bef4-bc11-7239-c75f",
+                            "type": "selectionEntry",
+                            "targetId": "1a20-b33a-305e-b4ad"
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 3
+                          }
+                        ]
+                      }
+                    ],
+                    "sortIndex": 1
                   }
                 ]
               },
@@ -13984,6 +14352,15 @@
             "type": "selectionEntry",
             "targetId": "b3f3-4f17-6be2-4082",
             "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "f698-28bf-f82a-1f42",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 3
           }
         ],
         "infoLinks": [
@@ -14227,7 +14604,8 @@
                         "targetId": "1a20-b33a-305e-b4ad"
                       }
                     ],
-                    "defaultAmount": ""
+                    "defaultAmount": "",
+                    "sortIndex": 1
                   },
                   {
                     "import": true,
@@ -21935,26 +22313,6 @@
                 "entryLinks": [
                   {
                     "import": true,
-                    "name": "Bolt Pistol",
-                    "hidden": false,
-                    "id": "e249-8995-4323-2c32",
-                    "type": "selectionEntry",
-                    "targetId": "95f0-f427-49c0-c7e6",
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "47b6-5aaa-3cc0-f934"
-                      }
-                    ],
-                    "defaultAmount": "1",
-                    "sortIndex": 1
-                  },
-                  {
-                    "import": true,
                     "name": "Power Axe",
                     "hidden": false,
                     "id": "301c-99f7-c90d-2589",
@@ -22330,6 +22688,78 @@
                       }
                     ],
                     "flatten": true
+                  },
+                  {
+                    "name": "Bolt Pistol",
+                    "id": "2175-6038-3d8e-78da",
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "7aae-f8ab-21e5-e153"
+                      }
+                    ],
+                    "flatten": true,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Bolt Pistol",
+                        "hidden": false,
+                        "id": "3c06-1fc9-d5ab-60cc",
+                        "type": "selectionEntry",
+                        "targetId": "95f0-f427-49c0-c7e6",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "cf5d-7853-9856-edda"
+                          }
+                        ],
+                        "defaultAmount": "1",
+                        "sortIndex": 1
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "11f7-bfa3-ce38-f213",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ],
+                    "sortIndex": 1
                   }
                 ]
               }
@@ -23148,7 +23578,8 @@
                             "id": "874f-445d-f1c5-2683"
                           }
                         ],
-                        "defaultAmount": "1"
+                        "defaultAmount": "1",
+                        "sortIndex": 1
                       },
                       {
                         "import": true,
@@ -23180,6 +23611,39 @@
                                 "includeChildSelections": true
                               }
                             ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "662c-3bc4-c6a9-09e5",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ],
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
                           }
                         ]
                       }
@@ -23470,7 +23934,7 @@
             "id": "597f-23cd-3d23-7db6",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 7
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -23517,6 +23981,15 @@
             "type": "selectionEntry",
             "targetId": "f9d7-2f2b-e29e-e965",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "ce77-1560-c474-9503",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 7
           }
         ]
       },
@@ -24783,6 +25256,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "c50c-f665-e9dc-6460",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "e591-6170-9398-75f9",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -26255,6 +26761,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "afe3-b18a-e912-228e",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -26430,7 +26969,7 @@
             "id": "cdd3-0705-4eab-6870",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 6
+            "sortIndex": 7
           },
           {
             "import": true,
@@ -26468,6 +27007,15 @@
               }
             ],
             "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "9ff4-8df6-f85b-adea",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 6
           }
         ]
       },
@@ -28625,6 +29173,39 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "0317-a2ed-ec74-b7d3",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -29557,6 +30138,39 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "cacc-6d49-1f3a-c388",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 2
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "constraints": [
@@ -30182,6 +30796,15 @@
             "id": "1053-8410-03be-1d03",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "1c3d-76ec-d06a-2944",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 2
           }
         ]
       },
@@ -30776,6 +31399,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "c50c-f665-e9dc-6460",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "00be-1341-d11c-f56e",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -31978,6 +32634,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "8e44-fa75-d2ed-acb0",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "selectionEntryGroups": [
@@ -32882,7 +33571,7 @@
             "id": "92ca-8d0c-de30-452b",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 7
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -32920,6 +33609,15 @@
               }
             ],
             "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "a63f-b2a1-3332-7c58",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 7
           }
         ]
       },
@@ -33299,6 +33997,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "c50c-f665-e9dc-6460",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "99f6-fb84-c199-43cb",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -34113,6 +34844,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "c50c-f665-e9dc-6460",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "f570-f8e0-ea6c-c30f",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -35609,6 +36373,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "bdf4-07ff-92e1-8169",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "defaultSelectionEntryId": "e870-bcb4-7e37-7909",
@@ -36677,6 +37474,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "5bb1-1d37-90f0-1adb",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "defaultSelectionEntryId": "8f24-8a96-3bf3-8016",
@@ -37003,7 +37833,7 @@
             "id": "0258-68ea-ea8f-7f42",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 4
+            "sortIndex": 5
           },
           {
             "import": true,
@@ -37041,6 +37871,15 @@
               }
             ],
             "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "0740-114e-9eb3-fc89",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 4
           }
         ]
       },
@@ -37782,31 +38621,82 @@
                         ]
                       }
                     ]
-                  }
-                ],
-                "sortIndex": 1,
-                "entryLinks": [
+                  },
                   {
-                    "import": true,
                     "name": "Bolt Pistol",
+                    "id": "6e1c-47d5-4e5c-ca8a",
                     "hidden": false,
-                    "id": "dbb5-effb-fbed-74be",
-                    "type": "selectionEntry",
-                    "targetId": "95f0-f427-49c0-c7e6",
                     "constraints": [
                       {
                         "type": "max",
                         "value": 1,
                         "field": "selections",
-                        "scope": "parent",
+                        "scope": "self",
                         "shared": true,
-                        "id": "72a0-f244-4109-112f"
+                        "id": "710e-2122-d631-4a3f"
                       }
                     ],
-                    "defaultAmount": "1",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Bolt Pistol",
+                        "hidden": false,
+                        "id": "7f83-6eea-32d2-4e71",
+                        "type": "selectionEntry",
+                        "targetId": "95f0-f427-49c0-c7e6",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "66f1-1803-7ca1-2126"
+                          }
+                        ],
+                        "defaultAmount": "1",
+                        "sortIndex": 1
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "c497-5320-5b32-97f0",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 3
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "flatten": true,
+                    "defaultSelectionEntryId": "ea65-7a31-aa6a-b931",
                     "sortIndex": 1
                   }
                 ],
+                "sortIndex": 1,
                 "constraints": [
                   {
                     "type": "min",
@@ -39475,7 +40365,8 @@
                             "id": "e9a7-0af0-908f-c211"
                           }
                         ],
-                        "defaultAmount": "1"
+                        "defaultAmount": "1",
+                        "sortIndex": 1
                       },
                       {
                         "import": true,
@@ -39503,6 +40394,39 @@
                                 "field": "selections",
                                 "scope": "force",
                                 "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "39d7-428e-55ae-7396",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 3
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
                                 "shared": true,
                                 "includeChildSelections": true
                               }
@@ -39876,6 +40800,15 @@
             "id": "9081-68a5-85ef-1b33",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
+            "sortIndex": 7
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "be89-3114-364f-b6c6",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 6
           }
         ]
@@ -40653,27 +41586,78 @@
                         ]
                       }
                     ]
-                  }
-                ],
-                "entryLinks": [
+                  },
                   {
-                    "import": true,
                     "name": "Bolt Pistol",
+                    "id": "79be-ac64-895f-96ee",
                     "hidden": false,
-                    "id": "b5a9-4229-1a7c-4bc3",
-                    "type": "selectionEntry",
-                    "targetId": "95f0-f427-49c0-c7e6",
                     "constraints": [
                       {
                         "type": "max",
                         "value": 1,
                         "field": "selections",
-                        "scope": "parent",
+                        "scope": "self",
                         "shared": true,
-                        "id": "6854-77f0-3bd9-4727"
+                        "id": "804a-c7fe-442c-3374"
                       }
                     ],
-                    "defaultAmount": "1",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Bolt Pistol",
+                        "hidden": false,
+                        "id": "92a4-2d13-b229-8030",
+                        "type": "selectionEntry",
+                        "targetId": "95f0-f427-49c0-c7e6",
+                        "constraints": [
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "1da8-b92e-78ee-54ad"
+                          }
+                        ],
+                        "defaultAmount": "1",
+                        "sortIndex": 1
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "3e0b-0d68-a87f-63ef",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 3
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "flatten": true,
+                    "defaultSelectionEntryId": "ea65-7a31-aa6a-b931",
                     "sortIndex": 1
                   }
                 ],
@@ -42171,7 +43155,8 @@
                             "id": "9c2a-27f8-97b8-3b52"
                           }
                         ],
-                        "defaultAmount": "1"
+                        "defaultAmount": "1",
+                        "sortIndex": 1
                       },
                       {
                         "import": true,
@@ -42199,6 +43184,39 @@
                                 "field": "selections",
                                 "scope": "force",
                                 "childId": "1f40-fe51-5c23-c07e",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "c63a-c331-56ac-c1b2",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 3
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
                                 "shared": true,
                                 "includeChildSelections": true
                               }
@@ -42499,7 +43517,7 @@
             "id": "a27f-1647-138d-dd19",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 6
+            "sortIndex": 7
           },
           {
             "import": true,
@@ -42537,6 +43555,15 @@
               }
             ],
             "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "0325-c9d2-7705-cc65",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 6
           }
         ]
       },
@@ -48605,6 +49632,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "7a85-7fbd-5354-577e",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -49029,6 +50089,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "c50c-f665-e9dc-6460",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Hand Flamer",
+                    "hidden": true,
+                    "id": "cf8a-1ef5-dc58-c345",
+                    "type": "selectionEntry",
+                    "targetId": "f5be-750d-a6c9-1b03",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 2
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -49485,7 +50578,7 @@
             "id": "dcaf-6239-daac-726f",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 6
+            "sortIndex": 7
           },
           {
             "import": true,
@@ -49523,6 +50616,15 @@
               }
             ],
             "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "2f2a-a4c5-cb1d-11f0",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 6
           }
         ]
       },
@@ -51141,6 +52243,39 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "import": true,
+                        "name": "Hand Flamer",
+                        "hidden": true,
+                        "id": "5cb8-825b-f439-7165",
+                        "type": "selectionEntry",
+                        "targetId": "f5be-750d-a6c9-1b03",
+                        "costs": [
+                          {
+                            "name": "Points",
+                            "typeId": "54b5-0978-c8a4-5b5a",
+                            "value": 3
+                          }
+                        ],
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "8024-8905-4ee4-c1a4",
+                                "shared": true,
+                                "includeChildSelections": true
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ],
                     "defaultSelectionEntryId": "8ecb-dde2-32c0-358c",
@@ -51223,6 +52358,15 @@
             "id": "f355-42d0-4c49-5aab",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "MkIII Iron Armour Stores",
+            "hidden": false,
+            "id": "eb5a-a557-c6a3-98cf",
+            "type": "selectionEntry",
+            "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 2
           }
         ]
@@ -62144,6 +63288,52 @@
                 "targetId": "3372-4df4-6fb7-d990"
               }
             ]
+          },
+          {
+            "name": "Chapter Tactics (Fire Hawks)",
+            "id": "c1b6-f6ea-4a1d-8939",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "8024-8905-4ee4-c1a4",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "On Wings of Fire",
+                "id": "22bc-f6d4-6b9f-bba1",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2499-f2c2-b262-5d92"
+              },
+              {
+                "name": "Speed and Fury",
+                "id": "fd1f-9da0-1c15-a11b",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "480e-3a13-fe0d-99f9"
+              },
+              {
+                "name": "The Livery of Curs",
+                "id": "feb0-856f-8644-424d",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f0be-92e8-8936-ac5e"
+              }
+            ]
           }
         ]
       },
@@ -63602,6 +64792,106 @@
             "scope": "parent",
             "shared": true,
             "id": "0dc5-6237-2d9d-5361"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "MkIII Iron Armour Stores",
+        "hidden": true,
+        "id": "7c84-5ebd-ea9c-748b",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "d808-17c2-c939-1ce5"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "d808-17c2-c939-1ce5"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "8024-8905-4ee4-c1a4",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "2004-7466-45c8-bca8",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "c994-b8b2-8ccf-8a8c",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 2,
+            "field": "54b5-0978-c8a4-5b5a",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "model",
+                "shared": true,
+                "roundUp": false
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "33d0-319a-741e-573f",
+            "field": "category",
+            "scope": "parent",
+            "affects": "entries.model"
           }
         ]
       }
@@ -65159,6 +66449,30 @@
         "id": "3372-4df4-6fb7-d990",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Fire Angels) Special Rule gains Gladius Incandor Special Rule."
+      },
+      {
+        "name": "Chapter Tactics (Fire Hawks)",
+        "id": "4b0d-c077-a822-fbea",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Fire Hawks) Special Rule gains On Wings of Fire, Speed and Fury and The Livery of Curs Special Rules."
+      },
+      {
+        "name": "On Wings of Fire",
+        "id": "2499-f2c2-b262-5d92",
+        "hidden": false,
+        "description": "All Flamer, Hand Flamer and Heavy Flamer attacks made by models with Chapter Tactics (Fire Hawks) gain +1 Strength on the turn in which the unit enters play using the Deep Strike special rule (including models exiting from Drop Pods). Hammer of Wrath attacks made by jump pack-equipped models with Chapter Tactics (Fire Hawks) also gain +1 Strength."
+      },
+      {
+        "name": "Speed and Fury",
+        "id": "480e-3a13-fe0d-99f9",
+        "hidden": false,
+        "description": "All Assault squads and Vanguard Veteran squads equipped with Warhawk Jump Packs with the Chapter Tactics (Fire Hawks) special rule, chosen as part of a Primary Detachment gain the Line unit Sub-Type."
+      },
+      {
+        "name": "The Livery of Curs",
+        "id": "f0be-92e8-8936-ac5e",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Fire Hawks) special rule lessens all cover saves they are receiving by 1. Eg. If a Fire Hawks Tactical Marine was in a ruin (5+ Cover Save) It would instead be a 6+ cover save."
       }
     ],
     "sharedSelectionEntryGroups": [

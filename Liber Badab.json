@@ -11073,6 +11073,13 @@
             "name": "Fire Angels",
             "hidden": false,
             "id": "0895-4d0c-a12e-88bb"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Fire Hawks",
+            "hidden": false,
+            "id": "8024-8905-4ee4-c1a4"
           }
         ],
         "constraints": [
