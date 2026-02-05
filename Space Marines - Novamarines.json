@@ -1,8 +1,8 @@
 {
   "catalogue": {
     "library": false,
-    "id": "6d2c-a4d2-bd44-4e71",
-    "name": "Space Marines - Fire Hawks",
+    "id": "ab36-dbc2-5128-a56e",
+    "name": "Space Marines - Novamarines",
     "gameSystemId": "sys-7d1d-5f99-723a-24c5",
     "gameSystemRevision": 1,
     "revision": 1,
@@ -11,7 +11,7 @@
       {
         "type": "catalogue",
         "name": "Space Marines",
-        "id": "491c-4fcb-2490-a567",
+        "id": "31f5-b386-a13d-a08f",
         "targetId": "0c55-5a03-a16a-69cd",
         "importRootEntries": true
       }
@@ -19,16 +19,16 @@
     "entryLinks": [
       {
         "import": true,
-        "name": "Fire Hawks",
+        "name": "Novamarines",
         "hidden": false,
-        "id": "915b-d6ae-67b3-9f86",
+        "id": "532d-9533-2005-d416",
         "type": "selectionEntry",
-        "targetId": "8024-8905-4ee4-c1a4",
+        "targetId": "111f-a1af-b225-0e21",
         "categoryLinks": [
           {
             "name": "Chapter",
             "hidden": false,
-            "id": "0dae-c10e-036e-5d55",
+            "id": "9b69-02d1-a6c8-a94c",
             "targetId": "7c29-8e11-7fae-9549",
             "primary": true
           }
@@ -37,11 +37,11 @@
       },
       {
         "import": true,
-        "name": "Knight-captain Elam Coubray",
+        "name": "Captain Mordaci Blaylock",
         "hidden": false,
-        "id": "8e26-de00-5a45-2aa4",
+        "id": "3cc1-83a6-d33d-d2f4",
         "type": "selectionEntry",
-        "targetId": "66a5-eff3-276e-96e8"
+        "targetId": "dc5f-5ccc-7776-39e1"
       }
     ],
     "type": "catalogue",
@@ -49,9 +49,9 @@
       {
         "type": "unit",
         "import": true,
-        "name": "Knight-captain Elam Coubray",
+        "name": "Captain Mordaci Blaylock",
         "hidden": false,
-        "id": "66a5-eff3-276e-96e8",
+        "id": "dc5f-5ccc-7776-39e1",
         "costs": [
           {
             "name": "Points",
@@ -63,21 +63,21 @@
           {
             "name": "HQ",
             "hidden": false,
-            "id": "63d5-c5c1-ceb2-6614",
+            "id": "2688-8c4e-52aa-8e4e",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
           },
           {
             "name": "Compulsory Choice",
             "hidden": false,
-            "id": "4bdc-0828-5bbb-d025",
+            "id": "8156-98bf-b262-4e38",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
           },
           {
             "name": "Master of the Company",
             "hidden": false,
-            "id": "af34-747e-6b77-2f53",
+            "id": "bb37-088a-e5b0-726b",
             "targetId": "08f5-cc3b-5be1-92cb",
             "primary": false
           }
@@ -86,46 +86,46 @@
           {
             "type": "model",
             "import": true,
-            "name": "Knight-captain Elam Coubray",
+            "name": "Captain Mordaci Blaylock",
             "hidden": false,
-            "id": "c281-787a-503a-e6c7",
+            "id": "8e33-829c-14ea-1624",
             "categoryLinks": [
               {
                 "name": "Infantry Unit Type",
                 "hidden": false,
-                "id": "ea70-a8f7-9ff9-e555",
+                "id": "20ce-da4a-42cf-0e77",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
                 "name": "Character",
                 "hidden": false,
-                "id": "31d9-2330-8c87-3017",
+                "id": "3f1f-5b30-e4a5-7b13",
                 "targetId": "c0e6-28aa-5286-2fa2",
                 "primary": false
               },
               {
                 "name": "Unique Sub-type",
                 "hidden": false,
-                "id": "9c5d-6954-3a72-0ec2",
+                "id": "1dff-0642-665c-6a81",
                 "targetId": "75a3-46b2-47de-9789",
                 "primary": false
               },
               {
                 "name": "Heavy Sub-type",
                 "hidden": false,
-                "id": "18fd-c9e1-4c95-aa46",
+                "id": "3bc6-aa40-4bc9-b5f9",
                 "targetId": "33d0-319a-741e-573f",
                 "primary": false
               }
             ],
             "profiles": [
               {
-                "name": "Knight-captain Elam Coubray",
+                "name": "Captain Mordaci Blaylock",
                 "typeId": "dd4a-7345-17fe-9c76",
                 "typeName": "Model",
                 "hidden": false,
-                "id": "10f3-3a82-c47d-81b2",
+                "id": "56d6-69a8-3ed4-e242",
                 "characteristics": [
                   {
                     "name": "M",
@@ -135,12 +135,12 @@
                   {
                     "name": "WS",
                     "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "8"
+                    "$text": "6"
                   },
                   {
                     "name": "BS",
                     "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "4"
+                    "$text": "5"
                   },
                   {
                     "name": "S",
@@ -155,17 +155,17 @@
                   {
                     "name": "W",
                     "typeId": "cdc0-9287-7039-4792",
-                    "$text": "3"
+                    "$text": "4"
                   },
                   {
                     "name": "I",
                     "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "6"
+                    "$text": "5"
                   },
                   {
                     "name": "A",
                     "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "3"
+                    "$text": "4"
                   },
                   {
                     "name": "Ld",
@@ -187,7 +187,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "1a24-680f-2e58-69c8-min"
+                "id": "1a5d-066d-c35d-9e84-min"
               },
               {
                 "type": "max",
@@ -195,7 +195,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "1a24-680f-2e58-69c8-max"
+                "id": "1a5d-066d-c35d-9e84-max"
               },
               {
                 "type": "max",
@@ -203,7 +203,7 @@
                 "field": "selections",
                 "scope": "roster",
                 "shared": true,
-                "id": "08d6-1fa4-9e9f-5064",
+                "id": "0756-835f-4224-38e9",
                 "includeChildSelections": true,
                 "includeChildForces": true
               }
@@ -211,35 +211,9 @@
             "entryLinks": [
               {
                 "import": true,
-                "name": "Artificer Armour",
-                "hidden": false,
-                "id": "00fd-3f7b-2cde-7d5e",
-                "type": "selectionEntry",
-                "targetId": "2004-7466-45c8-bca8",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "9b38-a84f-d85e-8ff5-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "9b38-a84f-d85e-8ff5-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
                 "name": "Iron Halo",
                 "hidden": false,
-                "id": "d7fd-3778-0032-76f2",
+                "id": "411f-7fe8-1a08-5c77",
                 "type": "selectionEntry",
                 "targetId": "daaa-0a9c-f1e0-986f",
                 "constraints": [
@@ -249,7 +223,7 @@
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "a5f1-7d15-00f0-69c8-min"
+                    "id": "5d6a-de23-4467-68f1-min"
                   },
                   {
                     "type": "max",
@@ -257,17 +231,17 @@
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "a5f1-7d15-00f0-69c8-max"
+                    "id": "5d6a-de23-4467-68f1-max"
                   }
                 ]
               },
               {
                 "import": true,
-                "name": "Hand Flamer",
+                "name": "Indomitus Terminator Armour",
                 "hidden": false,
-                "id": "9444-4f4c-fd57-91f4",
+                "id": "c445-d9cc-bf2e-e87b",
                 "type": "selectionEntry",
-                "targetId": "f5be-750d-a6c9-1b03",
+                "targetId": "aa95-1188-68f8-70c3",
                 "constraints": [
                   {
                     "type": "min",
@@ -275,7 +249,7 @@
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "09ec-5cc3-ff8c-efa2-min"
+                    "id": "9089-139e-414a-3278-min"
                   },
                   {
                     "type": "max",
@@ -283,17 +257,36 @@
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "09ec-5cc3-ff8c-efa2-max"
+                    "id": "9089-139e-414a-3278-max"
                   }
                 ]
               },
               {
                 "import": true,
-                "name": "Warhawk Jump Pack",
+                "name": "Storm Bolter",
                 "hidden": false,
-                "id": "6ce6-3928-2aed-f9df",
+                "id": "a2d0-39f7-fac9-231c",
                 "type": "selectionEntry",
-                "targetId": "954a-f392-16da-5caa",
+                "targetId": "b584-e06b-ebeb-4d04",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Master-crafted",
+                    "hidden": false,
+                    "id": "928e-6f4c-527f-fd3e",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c044-d3ec-ebc4-d882"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Master-crafted",
+                    "id": "96bf-172a-ace4-e99f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  }
+                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -301,7 +294,7 @@
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "bb48-3de0-6292-619c-min"
+                    "id": "1b3e-9e51-97f8-7ddb-min"
                   },
                   {
                     "type": "max",
@@ -309,59 +302,7 @@
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
-                    "id": "bb48-3de0-6292-619c-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Frag Grenades",
-                "hidden": false,
-                "id": "63c8-17f6-b2cb-cbf7",
-                "type": "selectionEntry",
-                "targetId": "e72d-68cc-bd83-6066",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "db7f-d499-9e1f-e5b0-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "db7f-d499-9e1f-e5b0-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "a9a3-7148-f1c7-a932",
-                "type": "selectionEntry",
-                "targetId": "bbfb-1c1f-fdbf-90b1",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "ba25-7856-b0cb-c029-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "ba25-7856-b0cb-c029-max"
+                    "id": "1b3e-9e51-97f8-7ddb-max"
                   }
                 ]
               },
@@ -369,7 +310,7 @@
                 "import": true,
                 "name": "Warlord",
                 "hidden": false,
-                "id": "2c1e-2c91-2a27-69b7",
+                "id": "8857-c3b8-bf2f-77bd",
                 "type": "selectionEntry",
                 "targetId": "dafc-695e-c908-6848",
                 "sortIndex": 1
@@ -378,7 +319,7 @@
                 "import": true,
                 "name": "Retinue",
                 "hidden": false,
-                "id": "7b0b-4bf6-f757-fbc1",
+                "id": "b803-b090-804f-cee5",
                 "type": "selectionEntryGroup",
                 "targetId": "e290-7819-af75-85c4",
                 "sortIndex": 2
@@ -388,68 +329,16 @@
               {
                 "type": "upgrade",
                 "import": true,
-                "name": "Excellus",
+                "name": "Foe Ripper",
                 "hidden": false,
-                "id": "71af-c806-7a68-d343",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "b80f-60a6-7a29-4313-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "b80f-60a6-7a29-4313-max"
-                  }
-                ],
+                "id": "bdb1-5513-a45a-0341",
                 "profiles": [
                   {
-                    "name": "Excellus (One Handed)",
+                    "name": "Foe Ripper",
                     "typeId": "ecd5-ca1d-0842-34a4",
                     "typeName": "Melee Weapon",
                     "hidden": false,
-                    "id": "463f-c079-f7f9-a070",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "ec4a-5686-1553-4654",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "b9e5-2eb3-f79d-e995",
-                        "$text": "User"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "6c0f-3258-2a17-5cc9",
-                        "$text": "Melee"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "a603-af69-c30b-94ed",
-                        "$text": " Master-Crafted, Breaching (4+), Deflagrate, The Sword Excellus"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Excellus (Two Handed)",
-                    "typeId": "ecd5-ca1d-0842-34a4",
-                    "typeName": "Melee Weapon",
-                    "hidden": false,
-                    "id": "1043-fc4d-80e5-b52f",
+                    "id": "c242-2d50-f202-876a",
                     "characteristics": [
                       {
                         "name": "Range",
@@ -464,7 +353,7 @@
                       {
                         "name": "AP",
                         "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "2"
+                        "$text": "1"
                       },
                       {
                         "name": "Type",
@@ -474,43 +363,43 @@
                       {
                         "name": "Special Rules",
                         "typeId": "a603-af69-c30b-94ed",
-                        "$text": "Brutal (2), Two-handed, The Sword Excellus"
+                        "$text": "Armourbane (Melee), Master-Crafted, Unwieldly, Brutal (2)"
                       }
                     ]
                   }
                 ],
                 "infoLinks": [
                   {
-                    "name": "Master-crafted",
-                    "id": "f623-a664-335e-35c8",
+                    "name": "Armourbane",
+                    "id": "3cb5-6530-aab4-9997",
                     "hidden": false,
                     "type": "rule",
-                    "targetId": "0371-1ea2-8615-e03a"
-                  },
-                  {
-                    "name": "Breaching",
-                    "id": "5ff8-79ad-b671-1786",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "ee66-f70b-aa5c-b2bf",
+                    "targetId": "a1f5-fb7a-bbf0-a720",
                     "modifiers": [
                       {
                         "type": "set",
-                        "value": "4+",
+                        "value": "Melee",
                         "field": "annotation"
                       }
                     ]
                   },
                   {
-                    "name": "Deflagrate",
-                    "id": "3680-21ca-de84-88d9",
+                    "name": "Master-crafted",
+                    "id": "261c-61ce-bcf9-a329",
                     "hidden": false,
                     "type": "rule",
-                    "targetId": "ca6b-5030-24a4-aabe"
+                    "targetId": "0371-1ea2-8615-e03a"
+                  },
+                  {
+                    "name": "Unwieldy",
+                    "id": "9047-79d6-fcb3-9f91",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "cfea-a7be-fbea-da53"
                   },
                   {
                     "name": "Brutal",
-                    "id": "7590-67b9-73f9-0744",
+                    "id": "53ed-80ea-77cb-ad50",
                     "hidden": false,
                     "type": "rule",
                     "targetId": "fc68-9ea6-18e4-d94b",
@@ -521,26 +410,36 @@
                         "field": "annotation"
                       }
                     ]
-                  },
-                  {
-                    "name": "Two-handed",
-                    "id": "e4e9-5941-91a8-71d9",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "9c96-f071-03a6-7593"
                   }
                 ],
-                "rules": [
+                "constraints": [
                   {
-                    "name": "The Sword Excellus",
-                    "id": "c6d3-20ec-ae66-d454",
-                    "hidden": false,
-                    "description": "At the start of each Assault Phase, Elam Courbray may chose to use the Sword Excellus in a one handed or two handed stance. This must be declared before any attacks have been rolled for the combat."
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dfa3-2769-27a1-fd34-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dfa3-2769-27a1-fd34-max"
                   }
                 ]
               }
             ],
-            "sortIndex": 1
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "69ed-cbc7-3fbc-7ba5",
+                "affects": "profiles.Model"
+              }
+            ]
           }
         ],
         "entryLinks": [
@@ -548,7 +447,7 @@
             "import": true,
             "name": "Chapter Tactics",
             "hidden": false,
-            "id": "a378-0f35-da6d-3e6b",
+            "id": "588e-0e3c-2879-4649",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
@@ -556,31 +455,53 @@
         "infoLinks": [
           {
             "name": "And They Shall Know No Fear",
-            "id": "9c26-0480-0d94-6138",
+            "id": "d24a-926e-5571-f9ee",
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
           },
           {
             "name": "Independent Character",
-            "id": "a023-27dc-b247-44e1",
+            "id": "f5e9-9849-67d3-e020",
             "hidden": false,
             "type": "rule",
             "targetId": "e453-db5d-2916-abcb"
+          },
+          {
+            "name": "Stubborn",
+            "id": "5fa9-66e9-0c84-9e98",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fdf1-31bc-4796-fb3d"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "f20d-58f4-d960-4686",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          },
+          {
+            "name": "Battle-hardened",
+            "id": "1674-e216-cfb1-566b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "76cb-bd90-ecb1-941b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
           }
         ],
         "rules": [
           {
-            "name": "Martial Contempt",
-            "id": "046b-9571-2bcd-9c78",
+            "name": "Hard as Stone",
+            "id": "a73d-fb56-332c-f1c2",
             "hidden": false,
-            "description": "Knight-Captain Elam Courbray must always issue or accept a challenge whenever possible."
-          },
-          {
-            "name": "Firefall",
-            "id": "41a2-9c6f-60f2-737e",
-            "hidden": false,
-            "description": "Courbray and any Warhawk Jump Pack equipped unit that he joins that also has the Chapter Tactics (Fire Hawks) special rule gains the Counter Attack (1) and Hit and Run Special Rules while he is part of the unit."
+            "description": "Mordaci Blaylock and any unit he joins add +1 to Combat Resolution score when determining the victor of a combat."
           }
         ]
       }

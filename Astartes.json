@@ -7239,6 +7239,171 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Tenets of the Codex",
+                "hidden": true,
+                "id": "837c-d15f-3b2d-0ebf",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2d20-55ef-16f6-bd3a"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "2d20-55ef-16f6-bd3a"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "111f-a1af-b225-0e21",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Tenets of the Codex",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "4f20-8e4c-3831-b176",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "The warlord and any unit he joins gains both the Line Sub-Type and the Heart of the Chapter Special Rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "add",
+                    "value": "efc6-682f-b0cb-cfa2",
+                    "field": "category",
+                    "scope": "model"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Heart of the Chapter",
+                    "id": "6773-213f-eca2-8cd4",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "318f-88ba-de6f-9210"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Terminator Attack",
+                "hidden": true,
+                "id": "9a74-2af9-416f-f08a",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3140-a3ed-1982-cc1c"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "951a-9188-0c27-4c08"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "3140-a3ed-1982-cc1c"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "951a-9188-0c27-4c08"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "dc5f-5ccc-7776-39e1",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Terminator Attack",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "ffc7-9089-1686-0b9c",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "All Terminator Squads get the Line unit sub-type. While Blaylock is alive, the controlling player may make an additional reaction in any phase (only 1 addiontal reaction per player turn)."
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "defaultSelectionEntryId": "2dda-e1f2-6bd3-daca"
@@ -7608,7 +7773,7 @@
             ],
             "selectionEntryGroups": [
               {
-                "name": "Must take up to two of the following",
+                "name": "Must take two of the following",
                 "id": "e498-cdf2-42aa-92c6",
                 "hidden": false,
                 "entryLinks": [
@@ -8738,6 +8903,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "d636-4e69-f19f-f591",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -10249,6 +10447,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "2724-232d-b7c5-3f39",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -21897,6 +22128,75 @@
                 ]
               }
             ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Storm Chasers",
+            "hidden": true,
+            "id": "a995-2cb2-4658-df34",
+            "sortIndex": 7,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "111f-a1af-b225-0e21",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 10,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Stubborn",
+                "id": "e594-3d56-5903-131e",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "fdf1-31bc-4796-fb3d"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Iron Bulwark",
+                "id": "a7b0-f2f5-6150-02da",
+                "hidden": false,
+                "description": "If a unit includes at least three models with the Iron Bulwark Special rule and is not locked in combat, all friendly models in that unit (including those without Iron Bulwark) gain the Battle- Hardened (1) Special Rule for the duration of any Assault Phase in which they charge or are charged by one or more enemy units."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ffe0-4f25-473f-adce"
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -22068,7 +22368,7 @@
             "id": "6fdd-d62a-aab8-6bc8",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 7
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -22085,6 +22385,25 @@
             "id": "2bc3-e307-3de6-ec6d",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "efc6-682f-b0cb-cfa2",
+            "field": "category",
+            "affects": "self.entries.model",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9a74-2af9-416f-f08a",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
           }
         ]
       },
@@ -22899,7 +23218,7 @@
                 "constraints": [
                   {
                     "type": "min",
-                    "value": 2,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
@@ -23863,7 +24182,7 @@
                 "constraints": [
                   {
                     "type": "min",
-                    "value": 2,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
@@ -25023,6 +25342,15 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Close Combat Weapon",
+                "hidden": false,
+                "id": "dd52-586b-baed-8425",
+                "type": "selectionEntryGroup",
+                "targetId": "ef43-031c-15fc-7999",
+                "sortIndex": 8
               }
             ],
             "selectionEntryGroups": [
@@ -25624,6 +25952,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "1928-3b76-0e2c-f3dc",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -32118,7 +32479,7 @@
                 "constraints": [
                   {
                     "type": "min",
-                    "value": 2,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
@@ -32912,6 +33273,15 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Close Combat Weapon",
+                "hidden": false,
+                "id": "f95d-54fc-7b06-0a74",
+                "type": "selectionEntryGroup",
+                "targetId": "ef43-031c-15fc-7999",
+                "sortIndex": 9
               }
             ],
             "selectionEntryGroups": [
@@ -33108,6 +33478,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "97f8-2e83-2e0a-a3ed",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -33724,7 +34127,7 @@
                 "constraints": [
                   {
                     "type": "min",
-                    "value": 2,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
@@ -35364,6 +35767,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "a9b8-6cac-9412-217b",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "defaultSelectionEntryId": "0eca-af90-641b-2069",
@@ -35863,6 +36299,15 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Close Combat Weapon",
+                "hidden": false,
+                "id": "0089-ffe8-d918-5be4",
+                "type": "selectionEntryGroup",
+                "targetId": "ef43-031c-15fc-7999",
+                "sortIndex": 7
               }
             ]
           },
@@ -36061,7 +36506,7 @@
               {
                 "name": "Description",
                 "typeId": "73f7-995c-ccc1-9f39",
-                "$text": "If a model with a Locator Beacon is on the battlefield at the start of the player turn, any Deepstrike/Drop Pod Assaults that occur may chose to place their first model within 12\" of the model with the Locator Beacon. If this is done, do not roll to scatter the original model, simply deploy it as if it had not scattered. In addition to this, all following units automatically pass any Disruption rolls they\nwould be required to make."
+                "$text": "If a model with a Locator Beacon is on the battlefield at the start of the player turn, any Deepstrike/Drop Pod Assaults that occur may chose to place their first model within 12\" of the model with the Locator Beacon. If this is done, do not roll to scatter the original model, simply deploy it as if it had not scattered. In addition to this, all following units automatically pass any Disruption rolls they would be required to make."
               }
             ]
           }
@@ -36527,59 +36972,40 @@
                     "id": "74b2-3bbc-4e00-3cba",
                     "type": "selectionEntry",
                     "targetId": "e241-43f4-e619-113b",
-                    "constraints": [
+                    "sortIndex": 1
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "ccc6-9938-a083-c6e4",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
                       {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "d479-2ab6-d406-0770"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "222a-3548-c9b4-f98a"
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
                       }
                     ],
                     "modifiers": [
                       {
                         "type": "set",
-                        "value": 0,
-                        "field": "d479-2ab6-d406-0770",
+                        "value": false,
+                        "field": "hidden",
                         "conditions": [
                           {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
                             "scope": "force",
-                            "childId": "9372-9faa-67e3-c89d",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ]
-                      },
-                      {
-                        "type": "set",
-                        "value": 2,
-                        "field": "222a-3548-c9b4-f98a",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "force",
-                            "childId": "c50c-f665-e9dc-6460",
+                            "childId": "111f-a1af-b225-0e21",
                             "shared": true,
                             "includeChildSelections": true
                           }
                         ]
                       }
-                    ],
-                    "sortIndex": 1
+                    ]
                   }
                 ],
                 "flatten": true,
@@ -36881,6 +37307,39 @@
                             "field": "selections",
                             "scope": "force",
                             "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "c88c-d464-0815-95f1",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
                             "shared": true,
                             "includeChildSelections": true
                           }
@@ -37248,6 +37707,15 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Close Combat Weapon",
+                "hidden": false,
+                "id": "7545-c9e6-3b11-a4fe",
+                "type": "selectionEntryGroup",
+                "targetId": "ef43-031c-15fc-7999",
+                "sortIndex": 6
               }
             ]
           },
@@ -39518,6 +39986,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "e71d-e320-cb50-f407",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -40876,7 +41377,7 @@
                 "constraints": [
                   {
                     "type": "min",
-                    "value": 2,
+                    "value": 1,
                     "field": "selections",
                     "scope": "parent",
                     "shared": true,
@@ -42602,6 +43103,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "0f34-7780-6575-cd4f",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -42924,6 +43458,14 @@
                     "scope": "self",
                     "shared": true,
                     "id": "4af3-03e5-811a-db5d"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "62e1-143d-15e0-faa1"
                   }
                 ],
                 "sortIndex": 1,
@@ -43722,6 +44264,14 @@
                     "scope": "self",
                     "shared": true,
                     "id": "1807-c2ee-5847-8b48"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "1f83-85e1-9cfd-ce0c"
                   }
                 ],
                 "sortIndex": 1,
@@ -44805,6 +45355,15 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Close Combat Weapon",
+                "hidden": false,
+                "id": "7d8c-127f-a656-9a76",
+                "type": "selectionEntryGroup",
+                "targetId": "ef43-031c-15fc-7999",
+                "sortIndex": 5
               }
             ],
             "modifiers": [
@@ -45425,6 +45984,14 @@
                     "scope": "self",
                     "shared": true,
                     "id": "a556-8e4e-22cc-6475"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "f232-f298-c568-8709"
                   }
                 ],
                 "sortIndex": 1,
@@ -46601,6 +47168,14 @@
                     "scope": "self",
                     "shared": true,
                     "id": "1cf5-0aaf-7f2e-2847"
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "d0e9-98bf-2221-b8b4"
                   }
                 ],
                 "sortIndex": 1,
@@ -47031,6 +47606,15 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Close Combat Weapon",
+                "hidden": false,
+                "id": "e3a0-60ec-2be8-1865",
+                "type": "selectionEntryGroup",
+                "targetId": "ef43-031c-15fc-7999",
+                "sortIndex": 6
               }
             ],
             "selectionEntryGroups": [
@@ -48425,6 +49009,40 @@
                           }
                         ]
                       }
+                    ],
+                    "sortIndex": 1
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "7dbf-e3e7-9dd9-c04e",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
                     ]
                   }
                 ],
@@ -48434,7 +49052,7 @@
                     "type": "min",
                     "value": 1,
                     "field": "selections",
-                    "scope": "parent",
+                    "scope": "self",
                     "shared": true,
                     "id": "47d1-ac37-9a4b-0951-min"
                   },
@@ -48442,11 +49060,12 @@
                     "type": "max",
                     "value": 1,
                     "field": "selections",
-                    "scope": "parent",
+                    "scope": "self",
                     "shared": true,
                     "id": "47d1-ac37-9a4b-0951-max"
                   }
-                ]
+                ],
+                "sortIndex": 7
               }
             ],
             "sortIndex": 2
@@ -49524,7 +50143,7 @@
             "modifiers": [
               {
                 "type": "set",
-                "value": "3+",
+                "value": "3\"",
                 "field": "annotation"
               }
             ]
@@ -50853,6 +51472,39 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power Sword",
+                    "hidden": true,
+                    "id": "6051-9c7e-e753-8426",
+                    "type": "selectionEntry",
+                    "targetId": "96af-5a12-180a-5e1a",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 5
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "selectionEntryGroups": [
@@ -51154,6 +51806,15 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Close Combat Weapon",
+                "hidden": false,
+                "id": "a76c-3a32-256f-fb2a",
+                "type": "selectionEntryGroup",
+                "targetId": "ef43-031c-15fc-7999",
+                "sortIndex": 4
               }
             ],
             "categoryLinks": [
@@ -53153,7 +53814,7 @@
             ],
             "selectionEntryGroups": [
               {
-                "name": "Must take up to two of the following",
+                "name": "Must take two of the following",
                 "id": "9b97-48d3-61ba-8e64",
                 "hidden": false,
                 "entryLinks": [
@@ -53174,7 +53835,8 @@
                         "id": "b8e3-13ac-e2db-84b5"
                       }
                     ],
-                    "defaultAmount": "1"
+                    "defaultAmount": "1",
+                    "sortIndex": 1
                   },
                   {
                     "import": true,
@@ -53236,7 +53898,8 @@
                         "id": "fc74-b6b1-6c88-c07a"
                       }
                     ],
-                    "defaultAmount": "1"
+                    "defaultAmount": "1",
+                    "sortIndex": 2
                   }
                 ],
                 "constraints": [
@@ -58086,7 +58749,7 @@
             "sortIndex": 1
           },
           {
-            "name": "Must take up to two of the following",
+            "name": "Must take two of the following",
             "id": "ca13-24a9-d19a-b3ec",
             "hidden": false,
             "sortIndex": 2,
@@ -61589,7 +62252,25 @@
                 "hidden": false,
                 "id": "b3c6-b2fa-350a-6ba6",
                 "type": "selectionEntry",
-                "targetId": "733a-eb33-d293-7c33"
+                "targetId": "733a-eb33-d293-7c33",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6400-923c-3062-dc93"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0b8d-783f-15d3-1981"
+                  }
+                ]
               }
             ],
             "categoryLinks": [
@@ -63135,6 +63816,15 @@
                         "childId": "80a9-2141-1026-4bc8",
                         "shared": true,
                         "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "111f-a1af-b225-0e21",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -63300,7 +63990,8 @@
                     "field": "selections",
                     "scope": "parent",
                     "childId": "c447-1b05-5ba8-846a",
-                    "shared": true
+                    "shared": true,
+                    "includeChildSelections": true
                   }
                 ]
               }
@@ -63330,7 +64021,8 @@
                     "field": "selections",
                     "scope": "parent",
                     "childId": "c447-1b05-5ba8-846a",
-                    "shared": true
+                    "shared": true,
+                    "includeChildSelections": true
                   }
                 ]
               }
@@ -63365,7 +64057,8 @@
                         "field": "selections",
                         "scope": "parent",
                         "childId": "c447-1b05-5ba8-846a",
-                        "shared": true
+                        "shared": true,
+                        "includeChildSelections": true
                       },
                       {
                         "type": "atLeast",
@@ -63373,7 +64066,8 @@
                         "field": "selections",
                         "scope": "parent",
                         "childId": "8cce-2496-3746-4f06",
-                        "shared": true
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -63410,7 +64104,8 @@
                         "field": "selections",
                         "scope": "parent",
                         "childId": "c447-1b05-5ba8-846a",
-                        "shared": true
+                        "shared": true,
+                        "includeChildSelections": true
                       },
                       {
                         "type": "lessThan",
@@ -63418,7 +64113,8 @@
                         "field": "selections",
                         "scope": "parent",
                         "childId": "8cce-2496-3746-4f06",
-                        "shared": true
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -64114,6 +64810,45 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "e00f-3924-c3b1-df2d"
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Novamarines)",
+            "id": "8c5e-fc00-4ad3-eac9",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "111f-a1af-b225-0e21",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Chapter Tactics (Novamarines)",
+                "id": "a273-8be7-73a1-2dbb",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "ffc2-27e7-f46d-fd6c"
+              },
+              {
+                "name": "The Strength of Wisdom",
+                "id": "2a47-1fa1-2a69-e288",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a160-eb17-4cad-3749"
               }
             ]
           }
@@ -66675,6 +67410,54 @@
         "id": "59ab-3588-4aa8-283a",
         "type": "selectionEntry",
         "targetId": "f007-872b-9b97-8f9f"
+      },
+      {
+        "import": true,
+        "name": "Terminator Squad",
+        "hidden": false,
+        "id": "8cc5-cf50-2dc7-fb8d",
+        "type": "selectionEntry",
+        "targetId": "2cb8-42f4-d373-d7d5",
+        "categoryLinks": [
+          {
+            "name": "Elites (Novamarines)",
+            "hidden": false,
+            "id": "90fa-658f-9275-08c5",
+            "targetId": "7d54-d758-7b05-5a8d",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "remove",
+            "value": "a300-5393-99ea-9657",
+            "field": "category"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Castraferrum Dreadnought Talon",
+        "hidden": false,
+        "id": "4b74-0686-e1f7-4c4e",
+        "type": "selectionEntry",
+        "targetId": "0bb3-0253-836f-d58c",
+        "categoryLinks": [
+          {
+            "name": "Elites (Novamarines)",
+            "hidden": false,
+            "id": "3ea8-067e-394e-0d5a",
+            "targetId": "7d54-d758-7b05-5a8d",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "remove",
+            "value": "a300-5393-99ea-9657",
+            "field": "category"
+          }
+        ]
       }
     ],
     "sharedProfiles": [
@@ -67326,6 +68109,18 @@
         "id": "e00f-3924-c3b1-df2d",
         "hidden": false,
         "description": "On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal – after any initiative modifiers from other special rules have been taken into account."
+      },
+      {
+        "name": "Chapter Tactics (Novamarines)",
+        "id": "ffc2-27e7-f46d-fd6c",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Novamarines) Special Rule gains The Strength of Wisdom Special Rules."
+      },
+      {
+        "name": "The Strength of Wisdom",
+        "id": "a160-eb17-4cad-3749",
+        "hidden": false,
+        "description": "When rolling To Hit with this special rule as part of a Shooting Attack add+1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of the models with this special rule in the same shooting phase, and if the attacking model is within 6\" of a model from that friendly unit. This does not affect attacks made with a Blast or Barrage special rules."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -70924,6 +71719,74 @@
           }
         ],
         "defaultSelectionEntryId": "de5e-d07e-7dd8-80b8"
+      },
+      {
+        "name": "Close Combat Weapon",
+        "id": "ef43-031c-15fc-7999",
+        "hidden": false,
+        "flatten": true,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Power Sword",
+            "hidden": true,
+            "id": "663b-c8d5-870c-1cb3",
+            "type": "selectionEntry",
+            "targetId": "96af-5a12-180a-5e1a",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 5
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "111f-a1af-b225-0e21",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Close Combat Weapon",
+            "hidden": false,
+            "id": "a920-f8e2-7e08-199e",
+            "type": "selectionEntry",
+            "targetId": "7219-9baa-94d6-6a2a",
+            "sortIndex": 1
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "f5f0-64bb-2923-7024-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "f5f0-64bb-2923-7024-max"
+          }
+        ]
       }
     ],
     "categoryEntries": [
@@ -71080,6 +71943,15 @@
                     "field": "selections",
                     "scope": "force",
                     "childId": "c50c-f665-e9dc-6460",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "111f-a1af-b225-0e21",
                     "shared": true,
                     "includeChildSelections": true
                   }
@@ -71301,6 +72173,49 @@
             "id": "d659-6a2e-92cc-08e6"
           }
         ]
+      },
+      {
+        "name": "Elites (Novamarines)",
+        "id": "7d54-d758-7b05-5a8d",
+        "hidden": true,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "dfaf-37e4-47de-1570"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "dfaf-37e4-47de-1570"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "111f-a1af-b225-0e21",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "infoLinks": [
@@ -71396,6 +72311,12 @@
                 "id": "bc98-9608-a939-49da"
               }
             ]
+          },
+          {
+            "name": "Elites (Novamarines)",
+            "hidden": false,
+            "id": "cf47-f9cb-43e6-8dd5",
+            "targetId": "7d54-d758-7b05-5a8d"
           },
           {
             "name": "Troops",
@@ -71778,6 +72699,12 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Elites (Novamarines)",
+            "hidden": false,
+            "id": "e5aa-d068-8554-ba6b",
+            "targetId": "7d54-d758-7b05-5a8d"
           },
           {
             "name": "Troops",

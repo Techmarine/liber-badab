@@ -194,7 +194,7 @@
                 "id": "8a62-630d-c743-1184",
                 "type": "selectionEntry",
                 "targetId": "3382-0547-3f12-7171",
-                "sortIndex": 1,
+                "sortIndex": 2,
                 "constraints": [
                   {
                     "type": "min",
@@ -265,6 +265,15 @@
                     "id": "1bef-9b05-325d-cfdb-max"
                   }
                 ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "e2e5-e4e8-c4af-d872",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
               }
             ],
             "selectionEntryGroups": [
@@ -272,7 +281,7 @@
                 "name": "Ranged Weapon",
                 "id": "f59c-e4ed-dfea-26f1",
                 "hidden": false,
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "constraints": [
                   {
                     "type": "min",

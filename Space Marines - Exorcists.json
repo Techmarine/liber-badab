@@ -275,17 +275,7 @@
                 "id": "34fa-87b0-92c9-0673",
                 "type": "selectionEntry",
                 "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1,
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "04d8-df21-6d81-7cdf"
-                  }
-                ]
+                "sortIndex": 1
               },
               {
                 "import": true,

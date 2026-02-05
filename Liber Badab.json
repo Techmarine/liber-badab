@@ -11129,6 +11129,13 @@
             "name": "Howling Griffons",
             "hidden": false,
             "id": "80a9-2141-1026-4bc8"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Novamarines",
+            "hidden": false,
+            "id": "111f-a1af-b225-0e21"
           }
         ],
         "constraints": [

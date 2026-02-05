@@ -305,6 +305,15 @@
                 "type": "selectionEntry",
                 "targetId": "dafc-695e-c908-6848",
                 "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "5e87-9830-6a87-e45d",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
               }
             ],
             "selectionEntries": [
