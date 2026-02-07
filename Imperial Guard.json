@@ -658,7 +658,16 @@
                 "import": true,
                 "name": "Storm Trooper Regiment",
                 "hidden": false,
-                "id": "7163-a5d1-d84b-8b81"
+                "id": "7163-a5d1-d84b-8b81",
+                "infoLinks": [
+                  {
+                    "name": "Imperial Guard (Storm Troopers Regiment)",
+                    "id": "d640-876b-64ab-b155",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "1fc8-e1a4-a520-aa27"
+                  }
+                ]
               },
               {
                 "type": "upgrade",
@@ -681,6 +690,15 @@
                         "shared": true
                       }
                     ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Imperial Guard (Airborne Company)",
+                    "id": "201a-1688-12bd-6567",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fb52-be35-a827-626b"
                   }
                 ]
               },
@@ -788,6 +806,15 @@
                       }
                     ]
                   }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Imperial Guard (Armoured Company)",
+                    "id": "f464-a159-5454-6fde",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0941-9a58-00d1-9826"
+                  }
                 ]
               },
               {
@@ -795,7 +822,16 @@
                 "import": true,
                 "name": "Cavalry Squadron",
                 "hidden": false,
-                "id": "3d68-8dd8-5a0f-5810"
+                "id": "3d68-8dd8-5a0f-5810",
+                "infoLinks": [
+                  {
+                    "name": "Imperial Guard (Cavalry Squadron)",
+                    "id": "9c22-412b-df66-e5c3",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a307-078d-0dac-cae8"
+                  }
+                ]
               },
               {
                 "type": "upgrade",
@@ -803,21 +839,48 @@
                 "name": "Infantry Company",
                 "hidden": false,
                 "id": "5764-823e-ec3a-ce9d",
-                "defaultAmount": ""
+                "defaultAmount": "",
+                "infoLinks": [
+                  {
+                    "name": "Imperial Guard (Infantry Company)",
+                    "id": "2a5f-626f-5203-c3f8",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "7956-e047-5003-cf54"
+                  }
+                ]
               },
               {
                 "type": "upgrade",
                 "import": true,
                 "name": "Penal Battalion",
                 "hidden": false,
-                "id": "6837-fbd0-1de0-360e"
+                "id": "6837-fbd0-1de0-360e",
+                "infoLinks": [
+                  {
+                    "name": "Imperial Guard (Penal Battalion)",
+                    "id": "01c2-efa8-82ac-8158",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "042c-1d6d-6d33-72ed"
+                  }
+                ]
               },
               {
                 "type": "upgrade",
                 "import": true,
                 "name": "Scout Regiment",
                 "hidden": false,
-                "id": "1ffa-6e31-a876-13fb"
+                "id": "1ffa-6e31-a876-13fb",
+                "infoLinks": [
+                  {
+                    "name": "Imperial Guard (Scout Regiment)",
+                    "id": "b2ad-b079-d1ed-0b3c",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "7aae-593a-a331-de5b"
+                  }
+                ]
               }
             ],
             "constraints": [
@@ -867,174 +930,6 @@
           }
         ],
         "rules": [
-          {
-            "name": "Imperial Guard (Airborne Company)",
-            "id": "e2f1-92db-671e-d24a",
-            "hidden": true,
-            "description": "Any Model with the Imperial Guard (Airborne Company) gains the following rule:\n- Coordinated Drop: As long as a unit with the Imperial Guard (Airborne Company) is already on the table at the start of the turn, any models that are attempting to Deep Strike within 6\" of that model do not scatter, nor can they become disrupted. In addition to this, any unit that has the Deep Strike special rule, that attempts a Grav-Chute insertion from a Valkyrie or Vendetta may rerolll the scatter dice.\n- All units that have access to a Chimera as a Dedicated Transport may instead take a Valkyrie Assault Carrier.\n- In Addition to this, All Infantry units that do not already have access to the Deep Strike, Infiltrate or a Dedicated Transport with the Flyer unit type, must be upgraded to have Grav-Chutes for +10 points per squad, or +50 points for a platoon, no matter the amount of squads, which in turn gives them the Deep Strike Special Rule. Scout Sentinels may also be upgraded in this way for +15 points per model.\n- Due to the highly specific nature of this formation no units with the Vehicle type may be taken unless they also have the Flyer Sub-Type, nor may any units with the Cavalry Sub-Type be taken.\n- The Following Units may be taken with no Restricitons:\n- 1-3 Heavy Weapon Squads may be taken without a parent Platoon as a single Heavy Support choice, but lose the Line Sub-Type.\n- 1-3 Special Weapon Squads may be taken without a parent Platoon as a single Elites choice, but lose the Line Sub-Type.\n- The following units may not be taken in an Airborne Company: Ogryn Squads, Ratling Squads, Conscript Squads, Penal Legion Squads, Chimera Armoured Transports, Rough Rider Squadrons, Armoured Sentinel Squadrons, Hellhound Flame Tanks, Leman Russ Battle Tanks, Self-Propelled Support Battery, Mantiocre Rocket Launcher, Any Lords of War.",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "1e64-b3ce-1e9f-51f3",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Imperial Guard (Armoured Company)",
-            "id": "0b4c-24af-1b39-dda0",
-            "hidden": true,
-            "description": "Any Model with the Imperial Guard (Armoured Company) special rule gains the following benefits.\n- Crush Them! Any Ramming Attacks Strength is increased by +1 in addition to any other modifiers they receive.\n- If detachment has Imperial Guard (Armoured Company) Special Rule, then the following unit types must be selected as Compulsory Troop Choices and gain the Line unit Sub-Type: Leman Russ Battle Tanks Squadrons (Consisting of a Single Tank)\n- In Addition to this, All Infantry units that may take a Chimera as a Dedicated Transport, must. If any Infantry Unit cannot start the game deployed in a vehicle of some kind, it may not be a part of a Detachment with the Imperial Guard (Armoured Company) Special Rule.",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "d17a-2a6b-b471-e6d3",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Imperial Guard (Cavalry Squadron)",
-            "id": "c69d-8e94-af9e-4970",
-            "hidden": true,
-            "description": "Any Model with the Imperial Guard (Cavalry Squadron) special rule gains the following benefits.\n- Thundering Charge: Any model with Cavalry Unit Type may re-roll any charge rolls and gains Rage (2) special rule.\n- If detachment has Imperial Guard (Cavalry Squadron) Special Rule, then the following unit types must be selected as Compulsory Troop Choices and gain the Line unit Sub-Type: Rough Rider Squadrons.\n- In addition, the following units become a a 0-1 Option: Storm Troopers, Ogryns, Ratlings, Valkyrie Carrier Squadrons and only 1 Heavy Support Choice may be chosen.",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "3d68-8dd8-5a0f-5810",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Imperial Guard (Infantry Company)",
-            "id": "6e66-88d2-a909-0420",
-            "hidden": true,
-            "description": "Any Model with the Imperial Guard (Infantry Company) special rule gains the following benefits.\n- Stand Your Ground!: Any unit with this special rule may make a free Overwatch Reaction when declared a target of a charge, but all shots will be made as Snap Shots. This special Stand Your Grown Overwatch attack does not use up any of your reaction allotment in the Assault Phase, but each unit may still only react once per phase.",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "5764-823e-ec3a-ce9d",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Imperial Guard (Penal Battalion)",
-            "id": "a756-0633-bfcc-9bec",
-            "hidden": true,
-            "description": "Any Model with the Imperial Guard (Penal Battalion) special rule gains the following benefits.\n- Harsh Overseers: Any model with the Infantry or Cavalry Type may re-roll failed leadership tests.\n- If detachment has Imperial Guard (Penal Battalions) Special Rule, then the following units must be selected as Compulsory Troop Choices and gain the Line unit Sub-Type (any combination is allowed): Penal Legion Squad, Conscript Squad (Does not need ‘Parent’ Infantry Platoon).\n- Any Penal Legion or Conscript Squads may take the following upgrade for +15 points a unit: \n- Send in the next wave!: If a unit with the special rule is removed off of the table for any reason (Sweeping Advance, Killed to a man, retreats off the board etc), roll a D6, on a 4+ an exact copy of that unit that was just removed is placed into ongoing reserves and may attempt to enter the battlefield at the beginning of its owners next player turn. Any 'new' units that are created from the Send in the Next Wave rule do not count in anyway for victory point purposes.\n- In addition, the following unit choices gain the following limitations 0-1 Veteran Squad, 0-1 Infantry Platoon, 0-0 Storm Troopers and only 1 Heavy Support Choice may be chosen.",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "6837-fbd0-1de0-360e",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Imperial Guard (Scout Regiment)",
-            "id": "ffc6-b904-8668-32bf",
-            "hidden": true,
-            "description": "Any Model with the Imperial Guard (Scout Regiment) special rule gains the following benefits.\n- Target their Officers: Any to hit roll of a 6 with a Lasgun gains the Precision Shot Special Rule. In addition to this, any unit consisting wholly of Infantry models gains the Skirmish unit sub-type.\n- Any unit with the Infantry Type may also purchase the Scout and/or Infiltrators special rule for +10 Points per rule, per unit.\n- In additon 0-3 Special Weapon Squads, upgraded only with Sniper Rifles, may be taken as a Single Elites Choice. The Guardsmen in these squads gain +1 BS.\n- If the detachment has Imperial Guard (Scout Company) Special Rule, then the following choices instead become a 0-1 Option: Storm Troopers, Ogryns, Hellhound Flametank and only 1 Heavy Support Choice may be chosen.",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "1ffa-6e31-a876-13fb",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Imperial Guard (Storm Troopers Regiment)",
-            "id": "fb59-bbae-437f-fe54",
-            "hidden": true,
-            "description": "Any Model with the Imperial Guard (Storm Troopers Regiment) special rule gains the following benefits.\n- Schola Progenium Precision: Any model with the Infantry or Cavalry Type may re-roll 1’s to hit while making a shooting attack.\n- If detachment has Imperial Guard (Storm Trooper Regiment) Special Rule, then the following unit types must be selected as Compulsory Troop Choices and gain the Line unit Sub-Type: Storm Troopers.",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": false,
-                "field": "hidden",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "7163-a5d1-d84b-8b81",
-                    "shared": true,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ]
-          },
           {
             "name": "Imperial Guard (X)",
             "id": "ee82-9e9b-7b23-5505",
@@ -1496,6 +1391,181 @@
                         "includeChildSelections": true
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Guard (Airborne Company)",
+            "id": "338c-7eb3-8909-8ec7",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "fb52-be35-a827-626b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "1e64-b3ce-1e9f-51f3",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Guard (Armoured Company)",
+            "id": "a571-c555-327e-7661",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "0941-9a58-00d1-9826",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "d17a-2a6b-b471-e6d3",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Guard (Cavalry Squadron)",
+            "id": "2cd9-0f96-f82c-423d",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "a307-078d-0dac-cae8",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "3d68-8dd8-5a0f-5810",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Guard (Infantry Company)",
+            "id": "3a0d-1e37-a0cd-6ce8",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "7956-e047-5003-cf54",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "5764-823e-ec3a-ce9d",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Guard (Penal Battalion)",
+            "id": "9081-1a51-4f03-1ffa",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "042c-1d6d-6d33-72ed",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "6837-fbd0-1de0-360e",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Guard (Scout Regiment)",
+            "id": "7311-65d6-ea7c-f798",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "7aae-593a-a331-de5b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "1ffa-6e31-a876-13fb",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Imperial Guard (Storm Troopers Regiment)",
+            "id": "2c8f-9f77-9f9c-4cfd",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "1fc8-e1a4-a520-aa27",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7163-a5d1-d84b-8b81",
+                    "shared": true,
+                    "includeChildSelections": true
                   }
                 ]
               }
@@ -23051,6 +23121,48 @@
         "id": "0222-9c47-1294-35b8",
         "hidden": false,
         "description": "While chosen as a squadron for the purposes of army selection, each Vehicle is treated as a separate unit during the game rather than as part of a vehicle squadron and may deploy and operate independently of each other."
+      },
+      {
+        "name": "Imperial Guard (Airborne Company)",
+        "id": "fb52-be35-a827-626b",
+        "hidden": false,
+        "description": "Any Model with the Imperial Guard (Airborne Company) gains the following rule:\n- Coordinated Drop: As long as a unit with the Imperial Guard (Airborne Company) is already on the table at the start of the turn, any models that are attempting to Deep Strike within 6\" of that model do not scatter, nor can they become disrupted. In addition to this, any unit that has the Deep Strike special rule, that attempts a Grav-Chute insertion from a Valkyrie or Vendetta may rerolll the scatter dice.\n- All units that have access to a Chimera as a Dedicated Transport may instead take a Valkyrie Assault Carrier.\n- In Addition to this, All Infantry units that do not already have access to the Deep Strike, Infiltrate or a Dedicated Transport with the Flyer unit type, must be upgraded to have Grav-Chutes for +10 points per squad, or +50 points for a platoon, no matter the amount of squads, which in turn gives them the Deep Strike Special Rule. Scout Sentinels may also be upgraded in this way for +15 points per model.\n- Due to the highly specific nature of this formation no units with the Vehicle type may be taken unless they also have the Flyer Sub-Type, nor may any units with the Cavalry Sub-Type be taken.\n- The Following Units may be taken with no Restricitons:\n- 1-3 Heavy Weapon Squads may be taken without a parent Platoon as a single Heavy Support choice, but lose the Line Sub-Type.\n- 1-3 Special Weapon Squads may be taken without a parent Platoon as a single Elites choice, but lose the Line Sub-Type.\n- The following units may not be taken in an Airborne Company: Ogryn Squads, Ratling Squads, Conscript Squads, Penal Legion Squads, Chimera Armoured Transports, Rough Rider Squadrons, Armoured Sentinel Squadrons, Hellhound Flame Tanks, Leman Russ Battle Tanks, Self-Propelled Support Battery, Mantiocre Rocket Launcher, Any Lords of War."
+      },
+      {
+        "name": "Imperial Guard (Armoured Company)",
+        "id": "0941-9a58-00d1-9826",
+        "hidden": false,
+        "description": "Any Model with the Imperial Guard (Armoured Company) special rule gains the following benefits.\n- Crush Them! Any Ramming Attacks Strength is increased by +1 in addition to any other modifiers they receive.\n- If detachment has Imperial Guard (Armoured Company) Special Rule, then the following unit types must be selected as Compulsory Troop Choices and gain the Line unit Sub-Type: Leman Russ Battle Tanks Squadrons (Consisting of a Single Tank)\n- In Addition to this, All Infantry units that may take a Chimera as a Dedicated Transport, must. If any Infantry Unit cannot start the game deployed in a vehicle of some kind, it may not be a part of a Detachment with the Imperial Guard (Armoured Company) Special Rule."
+      },
+      {
+        "name": "Imperial Guard (Cavalry Squadron)",
+        "id": "a307-078d-0dac-cae8",
+        "hidden": false,
+        "description": "Any Model with the Imperial Guard (Cavalry Squadron) special rule gains the following benefits.\n- Thundering Charge: Any model with Cavalry Unit Type may re-roll any charge rolls and gains Rage (2) special rule.\n- If detachment has Imperial Guard (Cavalry Squadron) Special Rule, then the following unit types must be selected as Compulsory Troop Choices and gain the Line unit Sub-Type: Rough Rider Squadrons.\n- In addition, the following units become a a 0-1 Option: Storm Troopers, Ogryns, Ratlings, Valkyrie Carrier Squadrons and only 1 Heavy Support Choice may be chosen."
+      },
+      {
+        "name": "Imperial Guard (Infantry Company)",
+        "id": "7956-e047-5003-cf54",
+        "hidden": false,
+        "description": "Any Model with the Imperial Guard (Infantry Company) special rule gains the following benefits.\n- Stand Your Ground!: Any unit with this special rule may make a free Overwatch Reaction when declared a target of a charge, but all shots will be made as Snap Shots. This special Stand Your Grown Overwatch attack does not use up any of your reaction allotment in the Assault Phase, but each unit may still only react once per phase."
+      },
+      {
+        "name": "Imperial Guard (Penal Battalion)",
+        "id": "042c-1d6d-6d33-72ed",
+        "hidden": false,
+        "description": "Any Model with the Imperial Guard (Penal Battalion) special rule gains the following benefits.\n- Harsh Overseers: Any model with the Infantry or Cavalry Type may re-roll failed leadership tests.\n- If detachment has Imperial Guard (Penal Battalions) Special Rule, then the following units must be selected as Compulsory Troop Choices and gain the Line unit Sub-Type (any combination is allowed): Penal Legion Squad, Conscript Squad (Does not need ‘Parent’ Infantry Platoon).\n- Any Penal Legion or Conscript Squads may take the following upgrade for +15 points a unit: \n- Send in the next wave!: If a unit with the special rule is removed off of the table for any reason (Sweeping Advance, Killed to a man, retreats off the board etc), roll a D6, on a 4+ an exact copy of that unit that was just removed is placed into ongoing reserves and may attempt to enter the battlefield at the beginning of its owners next player turn. Any 'new' units that are created from the Send in the Next Wave rule do not count in anyway for victory point purposes.\n- In addition, the following unit choices gain the following limitations 0-1 Veteran Squad, 0-1 Infantry Platoon, 0-0 Storm Troopers and only 1 Heavy Support Choice may be chosen."
+      },
+      {
+        "name": "Imperial Guard (Scout Regiment)",
+        "id": "7aae-593a-a331-de5b",
+        "hidden": false,
+        "description": "Any Model with the Imperial Guard (Scout Regiment) special rule gains the following benefits.\n- Target their Officers: Any to hit roll of a 6 with a Lasgun gains the Precision Shot Special Rule. In addition to this, any unit consisting wholly of Infantry models gains the Skirmish unit sub-type.\n- Any unit with the Infantry Type may also purchase the Scout and/or Infiltrators special rule for +10 Points per rule, per unit.\n- In additon 0-3 Special Weapon Squads, upgraded only with Sniper Rifles, may be taken as a Single Elites Choice. The Guardsmen in these squads gain +1 BS.\n- If the detachment has Imperial Guard (Scout Company) Special Rule, then the following choices instead become a 0-1 Option: Storm Troopers, Ogryns, Hellhound Flametank and only 1 Heavy Support Choice may be chosen."
+      },
+      {
+        "name": "Imperial Guard (Storm Troopers Regiment)",
+        "id": "1fc8-e1a4-a520-aa27",
+        "hidden": false,
+        "description": "Any Model with the Imperial Guard (Storm Troopers Regiment) special rule gains the following benefits.\n- Schola Progenium Precision: Any model with the Infantry or Cavalry Type may re-roll 1’s to hit while making a shooting attack.\n- If detachment has Imperial Guard (Storm Trooper Regiment) Special Rule, then the following unit types must be selected as Compulsory Troop Choices and gain the Line unit Sub-Type: Storm Troopers."
       }
     ],
     "profileTypes": [

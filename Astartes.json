@@ -5797,22 +5797,13 @@
                         "field": "annotation"
                       }
                     ]
-                  }
-                ],
-                "profiles": [
+                  },
                   {
                     "name": "Stalk Unseen",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "86a5-ed32-83a2-a5fd",
                     "hidden": false,
-                    "id": "67c9-d3ee-0f98-e8ef",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he joins gains the Shrouded (6+) Special Rule, this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "96b3-ff86-8f51-b548"
                   }
                 ]
               },
@@ -5873,20 +5864,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Marauding Belligerent",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "270c-6e8e-4213-b56e",
                     "hidden": false,
-                    "id": "f1a0-05b1-71b0-d7a5",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and up to 3 units may be given the Outflank special rule. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "f56a-d13b-44e9-9e3f"
                   }
                 ]
               },
@@ -6034,23 +6018,16 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "comment": "Marines Errant",
+                "infoLinks": [
                   {
                     "name": "Coordinated Assault",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "e63d-8866-e8ba-2f4a",
                     "hidden": false,
-                    "id": "078a-27b0-c4d4-6623",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and all friendly units within 6\", add +1 to their results when rolling for charge distance. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "a58b-1e7c-4df9-fae8"
                   }
-                ],
-                "comment": "Marines Errant"
+                ]
               },
               {
                 "type": "upgrade",
@@ -6314,20 +6291,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Promethean Grit",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "e425-1da5-9173-b637",
                     "hidden": false,
-                    "id": "7de3-46ee-ffd5-07d8",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and his unit may Run and still make Snap Shots with any Melta, Plasma or Flame Weaponry they carry (Template Weapons go to D3 hits if in range). While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "6421-0254-b31b-374c"
                   }
                 ]
               },
@@ -6470,20 +6440,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Forlorn Charge",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "d97e-b4ed-2bdb-17a0",
                     "hidden": false,
-                    "id": "bc26-b840-8b96-1fee",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and any unit he joins automatically passes Pinning tests. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "11d1-1453-98fa-cee1"
                   }
                 ]
               },
@@ -6638,22 +6601,13 @@
                     "hidden": false,
                     "type": "rule",
                     "targetId": "4aab-8d13-caf2-091d"
-                  }
-                ],
-                "profiles": [
+                  },
                   {
                     "name": "Shock and Awe",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "e900-696a-b180-f397",
                     "hidden": false,
-                    "id": "5c12-feda-fd45-3ef3",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he joins gain the Deep Strike Special rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "c41b-d3fd-23b8-d4e5"
                   }
                 ]
               },
@@ -6888,20 +6842,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Frenzied Swarm",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "444f-e5ef-eec6-2326",
                     "hidden": false,
-                    "id": "36e4-7db2-75f5-0427",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he has joined may reroll charge distance when charging into existing combat where a model (on either side) has already been slain. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "ba99-6796-b007-0149"
                   }
                 ]
               },
@@ -7065,20 +7012,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Black Soul",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "41ea-3041-a9b1-f12a",
                     "hidden": false,
-                    "id": "00d0-cc36-fa70-c043",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he joins is completely immune to any psychic attacks or weapons. He may never join a unit with the Psyker sub-type for any reason (Meaning he cannot take a retinue of Enochian Guard). While the warlord is alive, the army may make an additional reaction in the Assault Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "66bd-9a6a-1d89-d418"
                   }
                 ]
               },
@@ -7226,20 +7166,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Mechanised Specialist",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "0e00-d1d9-9e6e-e975",
                     "hidden": false,
-                    "id": "3719-9a93-df22-687f",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "While the Warlord is embarked on a vehicle, any other vehicle within 12\" of the Warlords’ Vehicle may increase its move characteristic by +2\". While the warlord is alive, the army may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "d86b-64a7-cb48-19b8"
                   }
                 ]
               },
@@ -7300,20 +7233,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "The Raptorus Rex is Watching",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "235c-0c75-f9ef-25f6",
                     "hidden": false,
-                    "id": "5512-425c-988a-4a98",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "While the Warlord is alive, the controlling player may reroll all 1’s when rolling for reserves. The Warlord and his unit may also re-roll their charge moves on a turn they arrive from reserve. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "758e-abd0-0ca3-180a"
                   }
                 ]
               },
@@ -7461,20 +7387,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Forward, for the Emperor!",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "04e4-493e-44d6-3928",
                     "hidden": false,
-                    "id": "af42-2597-1c14-e5d5",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and all friendly units within 6\", add +1 to their initiative for any Run moves or Movement Reactions. While the Warlord is alive, the controlling player may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "c9fb-2f44-7db8-a4c3"
                   }
                 ]
               },
@@ -7535,22 +7454,6 @@
                     ]
                   }
                 ],
-                "profiles": [
-                  {
-                    "name": "Tenets of the Codex",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
-                    "hidden": false,
-                    "id": "4f20-8e4c-3831-b176",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and any unit he joins gains both the Line Sub-Type and the Heart of the Chapter Special Rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
-                      }
-                    ]
-                  }
-                ],
                 "modifiers": [
                   {
                     "type": "add",
@@ -7566,6 +7469,13 @@
                     "hidden": false,
                     "type": "rule",
                     "targetId": "318f-88ba-de6f-9210"
+                  },
+                  {
+                    "name": "Tenets of the Codex",
+                    "id": "08ed-96db-c0a0-324b",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "5f3a-79b4-2f6d-d105"
                   }
                 ]
               },
@@ -7713,23 +7623,16 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "comment": "Red Scorpions",
+                "infoLinks": [
                   {
                     "name": "Coordinated Assault",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "4eae-82b3-1c50-cfde",
                     "hidden": false,
-                    "id": "086a-5291-633e-2720",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and all friendly units within 12\", add +1 to their results when rolling for charge distance. In addition, while the warlord is alive the army may make an additional reaction in the movement phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "8bef-5c98-d811-985d"
                   }
-                ],
-                "comment": "Red Scorpions"
+                ]
               },
               {
                 "type": "upgrade",
@@ -7925,22 +7828,6 @@
                     ]
                   }
                 ],
-                "profiles": [
-                  {
-                    "name": "Defiance Before Death!",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
-                    "hidden": false,
-                    "id": "e855-9eb2-b17d-b971",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he joins gains the Battle Hardened (1) Special Rule. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
-                      }
-                    ]
-                  }
-                ],
                 "infoLinks": [
                   {
                     "name": "Battle-hardened",
@@ -7955,6 +7842,13 @@
                         "field": "annotation"
                       }
                     ]
+                  },
+                  {
+                    "name": "Defiance Before Death!",
+                    "id": "12f6-0bc5-5f8d-71af",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "3742-8f7d-e73b-e4ad"
                   }
                 ]
               },
@@ -8105,22 +7999,6 @@
                     ]
                   }
                 ],
-                "profiles": [
-                  {
-                    "name": "Weapon Mastery",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
-                    "hidden": false,
-                    "id": "db50-cdb7-fba0-1690",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and unit he joins lose the One Shot rule from any Combi-melta or Combi-plasma weapons the unit carries. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
-                      }
-                    ]
-                  }
-                ],
                 "modifiers": [
                   {
                     "type": "replace",
@@ -8137,6 +8015,15 @@
                     "scope": "unit",
                     "affects": "entries.recursive.5237-5fab-96cd-13a9.profiles.Ranged Weapon",
                     "arg": ", One Shot"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Weapon Mastery",
+                    "id": "def3-0269-0642-d24d",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "8645-894c-6568-43df"
                   }
                 ]
               }
@@ -12359,21 +12246,12 @@
           },
           {
             "import": true,
-            "name": "Dark Void Elite",
-            "hidden": false,
-            "id": "a193-fe81-29bd-06e4",
-            "type": "selectionEntry",
-            "targetId": "b3f3-4f17-6be2-4082",
-            "sortIndex": 5
-          },
-          {
-            "import": true,
             "name": "Dedicated Transport",
             "hidden": false,
             "id": "0881-6460-80df-8f3a",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 9
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -12419,7 +12297,7 @@
             "id": "88cf-c6c6-6851-dc0b",
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
-            "sortIndex": 6
+            "sortIndex": 5
           },
           {
             "import": true,
@@ -12428,7 +12306,7 @@
             "id": "1742-24e1-fa79-3e05",
             "type": "selectionEntry",
             "targetId": "1134-51a6-5c1a-2fa7",
-            "sortIndex": 7
+            "sortIndex": 6
           },
           {
             "import": true,
@@ -12437,7 +12315,7 @@
             "id": "036d-7655-fd2d-bc34",
             "type": "selectionEntry",
             "targetId": "b375-1723-1ab9-42f9",
-            "sortIndex": 8
+            "sortIndex": 7
           }
         ],
         "modifiers": [
@@ -12452,6 +12330,22 @@
                 "field": "selections",
                 "scope": "root-entry",
                 "childId": "46ed-4db5-6aec-996c",
+                "shared": true
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "33d0-319a-741e-573f",
+            "field": "category",
+            "affects": "entries.model",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "root-entry",
+                "childId": "b3f3-4f17-6be2-4082",
                 "shared": true
               }
             ]
@@ -14012,21 +13906,12 @@
           },
           {
             "import": true,
-            "name": "Dark Void Elite",
-            "hidden": false,
-            "id": "890b-847e-8d29-11b0",
-            "type": "selectionEntry",
-            "targetId": "b3f3-4f17-6be2-4082",
-            "sortIndex": 4
-          },
-          {
-            "import": true,
             "name": "Dedicated Transport",
             "hidden": false,
             "id": "fa9b-8f30-ad49-ccdd",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 7
           },
           {
             "import": true,
@@ -14035,7 +13920,7 @@
             "id": "940d-90c8-5a31-1120",
             "type": "selectionEntry",
             "targetId": "f9d7-2f2b-e29e-e965",
-            "sortIndex": 5
+            "sortIndex": 4
           },
           {
             "import": true,
@@ -14044,7 +13929,7 @@
             "id": "dc57-2f8e-ad0b-b63c",
             "type": "selectionEntry",
             "targetId": "0b27-9ff7-c2c8-cff6",
-            "sortIndex": 6
+            "sortIndex": 5
           },
           {
             "import": true,
@@ -14053,7 +13938,25 @@
             "id": "d7ca-13d2-344e-3255",
             "type": "selectionEntry",
             "targetId": "b375-1723-1ab9-42f9",
-            "sortIndex": 7
+            "sortIndex": 6
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "33d0-319a-741e-573f",
+            "field": "category",
+            "affects": "entries.model",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "root-entry",
+                "childId": "b3f3-4f17-6be2-4082",
+                "shared": true
+              }
+            ]
           }
         ]
       },
@@ -67702,7 +67605,7 @@
               },
               {
                 "name": "Fortitude and Contempt",
-                "id": "8282-4a20-ebb4-6d83",
+                "id": "b183-e4b1-5d2a-d381",
                 "hidden": false,
                 "type": "rule",
                 "targetId": "33f4-4409-380e-6255"
@@ -68519,7 +68422,7 @@
             "value": "33d0-319a-741e-573f",
             "field": "category",
             "scope": "parent",
-            "affects": "self.entries.model"
+            "affects": "entries.model"
           }
         ],
         "modifierGroups": [
@@ -69576,12 +69479,13 @@
             ]
           }
         ],
-        "rules": [
+        "infoLinks": [
           {
             "name": "Cloaked in Honour",
-            "id": "5b5d-176b-370e-73f9",
+            "id": "c613-6868-12e8-11ea",
             "hidden": false,
-            "description": "Whenever a unit containing models with this special rule declares a charge targeting a unit already engaged in combat, the charge roll gains an additional +1 modifier, if the charge is successful then all models in the charging unit with the Cloaked in Honour special rule gain +1 to hit for the duration of the turn in which that charge is made."
+            "type": "rule",
+            "targetId": "a3e3-ed00-490c-9b7c"
           }
         ]
       },
@@ -71749,12 +71653,6 @@
         "description": "A Model with this special rule also has the Master of the Company Special rule. In addition, if this model is fielded it must be a part of the Primary Detachment and must be the armies Warlord. Due to the truly legendary prospect of a Chapter Master taking to the field of battle, an army may also take an additional Elites choice."
       },
       {
-        "name": "The Black Rage",
-        "id": "51e6-55a6-1ff3-6187",
-        "hidden": false,
-        "description": "A unit with this special rule may only ever be joined by a Reclusiarchs. They may also never score, no matter what."
-      },
-      {
         "name": "Chapter Tactics (Lamenters)",
         "id": "915e-e711-3c08-efd4",
         "hidden": false,
@@ -71911,100 +71809,16 @@
         "description": "A model with this special rule may carry models of the Dreadnought and Automata Unit Types, as well as models with the Cavalry Unit Type but not the Antigrav Sub-type. Each Dreadnought model uses 10 points of Transport Capacity, while each Automata and Cavalry model uses up a number of Transport Capacity points equal to twice its starting Wounds Characteristic."
       },
       {
-        "name": "Fervent Fighters",
-        "id": "4e66-57db-c81f-e5a9",
-        "hidden": false,
-        "description": "During a turn in which a unit made up entirely of models with the Marines Errant special rule successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1."
-      },
-      {
-        "name": "Headhunters",
-        "id": "6152-1216-69b3-4e68",
-        "hidden": false,
-        "description": "All character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge – roll saves against these attacks separately.\n\nThe character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible."
-      },
-      {
-        "name": "Bitter Mettle",
-        "id": "3407-db2a-4d80-a346",
-        "hidden": false,
-        "description": "All models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc.\n\n(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).\n-Badab Enthusiast)"
-      },
-      {
-        "name": "Unrelenting Assault",
-        "id": "a390-0e92-c93a-1bb2",
-        "hidden": false,
-        "description": "Models with Chapter Tactics (Minotaurs) do not take Morale checks due to casualties in any shooting phase and may re-roll failed Pinning Checks. They may never make use of the Withdraw Reaction."
-      },
-      {
-        "name": "Trample and Crush",
-        "id": "9821-070b-08d6-2255",
-        "hidden": false,
-        "description": "Models with Chapter Tactics (Minotaurs) gain the Crusader special rule. In addition, they add +1 to any roll to determine charge distances while in an enemy deployment zone."
-      },
-      {
-        "name": "Strike from the Shadows",
-        "id": "2882-bec3-d025-f862",
-        "hidden": false,
-        "description": "Models in this detachment have the Scout special rule. In addition, on the first game turn, models in the detachment have the Shrouded (6+) this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc.\n\nNote that units which contain models with any variant of the Bulky (x) special rule do not benefit from either rule."
-      },
-      {
-        "name": "Legendary Marksmen",
-        "id": "b681-2932-ef31-7816",
-        "hidden": false,
-        "description": "Any unit with this special rule that does not move in the Movement phase of their turn or is not pinned, may choose to gain the Rending (6+) special rule when firing in the Shooting phase of that turn with boltguns, combi-weapons fired as boltguns or bolt pistols. When using this rule, such weapons are counted as being Heavy 1 instead of their usual type for that attack.\n"
-      },
-      {
-        "name": "Encarmine Fury",
-        "id": "6c27-4817-8d2d-30d7",
-        "hidden": false,
-        "description": "All models with The Lamenters chapter tactic require one lower result to wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful charge against an enemy unit even if that Charge is counted as Disordered."
-      },
-      {
-        "name": "Maelstrom Warder",
-        "id": "a60d-2f58-e0d2-f805",
-        "hidden": false,
-        "description": "Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone."
-      },
-      {
-        "name": "Blood of Fire",
-        "id": "f15b-2311-eff1-0df7",
-        "hidden": false,
-        "description": "When rolling to wound against a model with this special rule for any attack inflicted by a flame, melta, or plasma weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the strength of the weapon, only the roll to wound). In addition, all models that have more than one wound or Hull point gain the It Will Not Die (6+) special rule."
-      },
-      {
         "name": "Chapter Tactics (Carcharodons)",
         "id": "4f6c-8da1-0ec8-7792",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Carcharodons) Special Rule gains Blood Hunger Special Rule."
       },
       {
-        "name": "Blood Hunger",
-        "id": "818c-7e08-c0b0-e52a",
-        "hidden": false,
-        "description": "All units with Chapter Tactics (Carcharodons) gain the Blooded (x) special rule after they have either destroyed an enemy infantry or cavalry unit in an assault or forced one to Fall Back. Place a suitable marker on any unit that gains the Blooded (x) special rule to indicate this has occurred. For each additional unit destroyed or made to fall back, place another Blooded (x) token on the unit. When one of these marked units makes a consolidation move, it must move towards the nearest enemy unit."
-      },
-      {
-        "name": "Blooded (X)",
-        "id": "0134-7058-e752-1adf",
-        "hidden": false,
-        "description": "A Model with the Blooded (X) special rule receives X amount of extra attacks on a turn it charges into combat, this is in addition to Rage (X), Rampage (X) etc. The X is the number of Blooded tokens the unit currently has. If there is an Independent Character within the unit that also has Blooded (X) tokens, simply pick the higher of the two token pools and use for the Blooded (X) special Rule."
-      },
-      {
         "name": "Letting-talons",
         "id": "7690-b0d6-d84b-1cab",
         "hidden": false,
         "description": "When a model has 2 Letting-talons they gain +2 Attacks instead of the usual +1 for using an additional weapon in combat."
-      },
-      {
-        "name": "Indomitable",
-        "id": "7df8-df94-3577-cc99",
-        "hidden": false,
-        "description": "All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw."
-      },
-      {
-        "name": "Gladius Incandor",
-        "id": "6f6b-fe32-80ea-91b1",
-        "hidden": false,
-        "description": "All units with the chapter tactic (Fire Angels) gain a bonus +1 to hit when rolling To Hit with in an assault with one of the following weapons: Chainsword, Force Sword, Power Sword, Terranic Great Sword. In addition, models with the Vehicle Sub-type gain +1 Strength when making a ram action."
       },
       {
         "name": "Chapter Tactics (Exorcists)",
@@ -72025,34 +71839,10 @@
         "description": "Any model with the Chapter Tactics (Fire Hawks) Special Rule gains On Wings of Fire, Speed and Fury and The Livery of Curs Special Rules."
       },
       {
-        "name": "On Wings of Fire",
-        "id": "2499-f2c2-b262-5d92",
-        "hidden": false,
-        "description": "All Flamer, Hand Flamer and Heavy Flamer attacks made by models with Chapter Tactics (Fire Hawks) gain +1 Strength on the turn in which the unit enters play using the Deep Strike special rule (including models exiting from Drop Pods). Hammer of Wrath attacks made by jump pack-equipped models with Chapter Tactics (Fire Hawks) also gain +1 Strength."
-      },
-      {
-        "name": "Speed and Fury",
-        "id": "480e-3a13-fe0d-99f9",
-        "hidden": false,
-        "description": "All Assault squads and Vanguard Veteran squads equipped with Warhawk Jump Packs with the Chapter Tactics (Fire Hawks) special rule, chosen as part of a Primary Detachment gain the Line unit Sub-Type."
-      },
-      {
-        "name": "The Livery of Curs",
-        "id": "f0be-92e8-8936-ac5e",
-        "hidden": false,
-        "description": "Any model with the Chapter Tactics (Fire Hawks) special rule lessens all cover saves they are receiving by 1. Eg. If a Fire Hawks Tactical Marine was in a ruin (5+ Cover Save) It would instead be a 6+ cover save."
-      },
-      {
         "name": "Chapter Tactics (Howling Griffons)",
         "id": "848a-fb14-b938-236d",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Howling Griffons) Special Rule gains Into the Fray Special Rule."
-      },
-      {
-        "name": "Into the Fray",
-        "id": "e00f-3924-c3b1-df2d",
-        "hidden": false,
-        "description": "On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal – after any initiative modifiers from other special rules have been taken into account."
       },
       {
         "name": "Chapter Tactics (Novamarines)",
@@ -72061,22 +71851,10 @@
         "description": "Any model with the Chapter Tactics (Novamarines) Special Rule gains The Strength of Wisdom Special Rules."
       },
       {
-        "name": "The Strength of Wisdom",
-        "id": "a160-eb17-4cad-3749",
-        "hidden": false,
-        "description": "When rolling To Hit with this special rule as part of a Shooting Attack add+1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of the models with this special rule in the same shooting phase, and if the attacking model is within 6\" of a model from that friendly unit. This does not affect attacks made with a Blast or Barrage special rules."
-      },
-      {
         "name": "Chapter Tactics (Red Scorpions)",
         "id": "e753-72e1-0d1f-6164",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Red Scorpions) Special Rule gains Fortitude and Contempt Special Rules."
-      },
-      {
-        "name": "Fortitude and Contempt",
-        "id": "33f4-4409-380e-6255",
-        "hidden": false,
-        "description": "Models with Chapter Tactics (Red Scorpions) may re-roll all failed Pinning tests but cannot benefit from the Evade Reaction."
       },
       {
         "name": "Chapter Tactics (Sons of Medusa)",
@@ -72085,34 +71863,10 @@
         "description": "Any model with the Chapter Tactics (Sons of Medusa) Special Rule gains True Sons Special Rule."
       },
       {
-        "name": "True Sons",
-        "id": "11cf-8af4-8945-d775",
-        "hidden": false,
-        "description": "All shooting attacks made against a model with this special rule that does not have the Vehicle Unit Type, suffer a modifier of -1 to the strength of the attack."
-      },
-      {
         "name": "Chapter Tactics (Star Phantoms)",
         "id": "acc4-6de1-f1b8-c6e1",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Star Phantoms) Special Rule gains Orbital Wave Attack, Hail of Destruction and Unfettered Destruction Special Rules."
-      },
-      {
-        "name": "Orbital Wave Attack",
-        "id": "bd3e-6234-5646-de0d",
-        "hidden": false,
-        "description": "Any unit in the detachment arriving via Deep Strike may re-roll any Reserve roll of 1 if its controlling player wishes."
-      },
-      {
-        "name": "Hail of Destruction",
-        "id": "4ecb-7145-fb6c-a617",
-        "hidden": false,
-        "description": "Once per game, the player may declare the use of this ability and its effects last\nfrom the start of the controlling player’s Shooting phase until the start of their next Shooting phase. During this period, all infantry and cavalry units in the detachment with Chapter Tactics (Star Phantoms) count their Rapid Fire, Assault and Heavy Weapons as being twin-linked."
-      },
-      {
-        "name": "Unfettered Destruction",
-        "id": "d08a-ad91-a7ba-65de",
-        "hidden": false,
-        "description": "Any model with the Chapter Tactics (Star Phantoms) Special rule receives +1 to hit attacking with any ‘Plasma’ or ‘Melta’ weapons."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -76206,38 +75960,6 @@
         "name": "Commander of the 9th Company",
         "id": "9971-204e-8dd6-dbb7",
         "hidden": false
-      }
-    ],
-    "infoLinks": [
-      {
-        "name": "Preferred Enemy",
-        "id": "dbdd-bd4f-3e93-2149",
-        "hidden": false,
-        "type": "rule",
-        "targetId": "bb1e-f9f5-2a51-c8c0",
-        "modifiers": [
-          {
-            "type": "set",
-            "value": "Space Marines",
-            "field": "annotation"
-          },
-          {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "ac2b-b7c8-7313-ae91",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
-          }
-        ]
       }
     ],
     "forceEntries": [
