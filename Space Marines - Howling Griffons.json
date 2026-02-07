@@ -1,0 +1,407 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "e1fc-5f3f-39b6-92c5",
+    "name": "Space Marines - Howling Griffons",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Space Marines",
+        "id": "ab4a-222e-23bd-4c15",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Howling Griffons",
+        "hidden": false,
+        "id": "deee-c687-8395-da34",
+        "type": "selectionEntry",
+        "targetId": "80a9-2141-1026-4bc8",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "a77e-e91b-d09a-03a8",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1"
+      },
+      {
+        "import": true,
+        "name": "Chaplain Dreadnought Titus",
+        "hidden": false,
+        "id": "1924-c8cf-93c7-61d1",
+        "type": "selectionEntry",
+        "targetId": "7c9d-93ae-361b-8238"
+      }
+    ],
+    "type": "catalogue",
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Chaplain Dreadnought Titus",
+        "hidden": false,
+        "id": "7c9d-93ae-361b-8238",
+        "sortIndex": 1,
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 200
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Chaplain Dreadnought Titus",
+            "hidden": false,
+            "id": "86f4-0fbe-2d3b-3125",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b1a9-3438-0ce2-19c9-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b1a9-3438-0ce2-19c9-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "d40a-c351-db97-e7f2",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Dreadnought Unit Type",
+                "hidden": false,
+                "id": "ca3c-9166-038a-7094",
+                "targetId": "eb17-a98e-537b-5de6",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "b9b9-a44e-459c-3234",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "cc12-a3b6-4d38-d7a3",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              },
+              {
+                "name": "Heavy Sub-type",
+                "hidden": false,
+                "id": "ebda-00c4-dfce-2263",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Chaplain Dreadnought Titus",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "d888-4f94-97c9-58ab",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Gravis Power Fist",
+                "hidden": false,
+                "id": "8a62-630d-c743-1184",
+                "type": "selectionEntry",
+                "targetId": "3382-0547-3f12-7171",
+                "sortIndex": 2,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d847-3b97-7b5c-fd22-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d847-3b97-7b5c-fd22-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "77c0-b491-719e-aa92",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8419-c476-36ef-32bd-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8419-c476-36ef-32bd-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Ferromantic Deflector",
+                "hidden": false,
+                "id": "196d-81fa-b126-a534",
+                "type": "selectionEntry",
+                "targetId": "36f9-e639-a641-cad6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1bef-9b05-325d-cfdb-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1bef-9b05-325d-cfdb-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "e2e5-e4e8-c4af-d872",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Ranged Weapon",
+                "id": "f59c-e4ed-dfea-26f1",
+                "hidden": false,
+                "sortIndex": 3,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "1a95-ce76-dc9e-8a17-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "1a95-ce76-dc9e-8a17-max"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Gravis Lascannon",
+                    "hidden": false,
+                    "id": "9c79-08a6-40d4-b021",
+                    "type": "selectionEntry",
+                    "targetId": "6396-0471-7214-a97e",
+                    "sortIndex": 1
+                  },
+                  {
+                    "import": true,
+                    "name": "Assault Cannon",
+                    "hidden": false,
+                    "id": "195e-22d6-c4cc-e387",
+                    "type": "selectionEntry",
+                    "targetId": "7f93-a2d4-3040-fc41"
+                  }
+                ],
+                "defaultSelectionEntryId": "9c79-08a6-40d4-b021"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "6be3-1f3b-fe64-c060",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "efaf-7c8a-bda9-56b3",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "It Will not Die",
+            "id": "9b13-ab6f-90bc-1ea8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cc45-e856-80f1-af2f",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Support Squad",
+            "id": "4841-7dca-8ea2-33da",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "650d-03c6-7f4b-c601"
+          },
+          {
+            "name": "Stubborn",
+            "id": "e6f7-0fed-5dc9-a8b3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fdf1-31bc-4796-fb3d"
+          },
+          {
+            "name": "Hatred",
+            "id": "d1d6-f46e-544d-d899",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bacb-64aa-bb42-4c9d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Everything",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Living Icon of the Chapter",
+            "id": "13f2-1ea1-6fd9-f41c",
+            "hidden": false,
+            "description": "All models with the Chapter Tactics (Howling Griffons) Special rule that are within 12” of Chaplain Dreadnought Titus have the Stubborn Special Rule."
+          },
+          {
+            "name": "Litany of Hate",
+            "id": "d7e3-f32a-d7e0-9703",
+            "hidden": false,
+            "description": "All models with the Chapter Tactics (Howling Griffons) Special Rule within 12” of Chaplain Dreadnought Titus gain the Hatred (Everything) Special Rule."
+          }
+        ]
+      }
+    ]
+  }
+}

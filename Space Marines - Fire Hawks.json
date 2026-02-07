@@ -1,8 +1,8 @@
 {
   "catalogue": {
     "library": false,
-    "id": "8a6b-6491-0d2f-3074",
-    "name": "Space Marines - Fire Angels",
+    "id": "6d2c-a4d2-bd44-4e71",
+    "name": "Space Marines - Fire Hawks",
     "gameSystemId": "sys-7d1d-5f99-723a-24c5",
     "gameSystemRevision": 1,
     "revision": 1,
@@ -11,7 +11,7 @@
       {
         "type": "catalogue",
         "name": "Space Marines",
-        "id": "b410-da0a-c424-f8c5",
+        "id": "491c-4fcb-2490-a567",
         "targetId": "0c55-5a03-a16a-69cd",
         "importRootEntries": true
       }
@@ -19,16 +19,16 @@
     "entryLinks": [
       {
         "import": true,
-        "name": "Fire Angels",
+        "name": "Fire Hawks",
         "hidden": false,
-        "id": "fc24-d5a5-619e-98e5",
+        "id": "915b-d6ae-67b3-9f86",
         "type": "selectionEntry",
-        "targetId": "0895-4d0c-a12e-88bb",
+        "targetId": "8024-8905-4ee4-c1a4",
         "categoryLinks": [
           {
             "name": "Chapter",
             "hidden": false,
-            "id": "3ae9-5ce6-94cf-8afb",
+            "id": "0dae-c10e-036e-5d55",
             "targetId": "7c29-8e11-7fae-9549",
             "primary": true
           }
@@ -37,54 +37,54 @@
       },
       {
         "import": true,
-        "name": "Captain Tarnus Vale",
+        "name": "Knight-captain Elam Coubray",
         "hidden": false,
-        "id": "18ce-c304-f488-e7ff",
+        "id": "8e26-de00-5a45-2aa4",
         "type": "selectionEntry",
-        "targetId": "b83b-0269-428b-44e5"
+        "targetId": "66a5-eff3-276e-96e8"
       }
     ],
+    "type": "catalogue",
     "sharedSelectionEntries": [
       {
         "type": "unit",
         "import": true,
-        "name": "Captain Tarnus Vale",
+        "name": "Knight-captain Elam Coubray",
         "hidden": false,
-        "id": "b83b-0269-428b-44e5",
+        "id": "66a5-eff3-276e-96e8",
         "costs": [
           {
             "name": "Points",
             "typeId": "54b5-0978-c8a4-5b5a",
-            "value": 175
+            "value": 185
           }
         ],
-        "sortIndex": 1,
         "categoryLinks": [
           {
             "name": "HQ",
             "hidden": false,
-            "id": "5e12-a3b7-93f8-09e7",
+            "id": "63d5-c5c1-ceb2-6614",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
           },
           {
             "name": "Compulsory Choice",
             "hidden": false,
-            "id": "b4a9-72fb-ad35-8e8a",
+            "id": "4bdc-0828-5bbb-d025",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
           },
           {
             "name": "Master of the Company",
             "hidden": false,
-            "id": "6589-a1b7-56fe-a136",
+            "id": "af34-747e-6b77-2f53",
             "targetId": "08f5-cc3b-5be1-92cb",
             "primary": false
           },
           {
             "name": "Independent Character",
             "hidden": false,
-            "id": "3169-7c95-a0d8-f1c5",
+            "id": "2d4b-3711-648d-482c",
             "targetId": "325c-e791-275c-2ab7",
             "primary": false
           }
@@ -93,330 +93,46 @@
           {
             "type": "model",
             "import": true,
-            "name": "Captain Tarnus Vale",
+            "name": "Knight-captain Elam Coubray",
             "hidden": false,
-            "id": "a8af-b187-5190-bcff",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "8e32-6790-a37b-04b0-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "8e32-6790-a37b-04b0-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "d4a7-088b-dd0d-77cf",
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
+            "id": "c281-787a-503a-e6c7",
             "categoryLinks": [
               {
                 "name": "Infantry Unit Type",
                 "hidden": false,
-                "id": "07c7-ae03-b0d9-da84",
+                "id": "ea70-a8f7-9ff9-e555",
                 "targetId": "c447-1b05-5ba8-846a",
                 "primary": false
               },
               {
                 "name": "Character",
                 "hidden": false,
-                "id": "4c9a-a4d5-6f51-4bdd",
+                "id": "31d9-2330-8c87-3017",
                 "targetId": "c0e6-28aa-5286-2fa2",
                 "primary": false
               },
               {
                 "name": "Unique Sub-type",
                 "hidden": false,
-                "id": "173d-0743-348d-0387",
+                "id": "9c5d-6954-3a72-0ec2",
                 "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              },
+              {
+                "name": "Heavy Sub-type",
+                "hidden": false,
+                "id": "18fd-c9e1-4c95-aa46",
+                "targetId": "33d0-319a-741e-573f",
                 "primary": false
               }
             ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Artificer Armour",
-                "hidden": false,
-                "id": "e6f7-3b74-1aa6-3e77",
-                "type": "selectionEntry",
-                "targetId": "2004-7466-45c8-bca8",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "77eb-a81b-d069-85e0-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "77eb-a81b-d069-85e0-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Iron Halo",
-                "hidden": false,
-                "id": "68ae-d46d-78ad-0cd8",
-                "type": "selectionEntry",
-                "targetId": "daaa-0a9c-f1e0-986f",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "cd9e-7030-b566-0085-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "cd9e-7030-b566-0085-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Plasma Pistol",
-                "hidden": false,
-                "id": "d83e-b01d-39c7-1bd1",
-                "type": "selectionEntry",
-                "targetId": "3f09-f9ad-2440-d174",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "01b3-45c8-0ed2-b8d9-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "01b3-45c8-0ed2-b8d9-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Frag Grenades",
-                "hidden": false,
-                "id": "2e24-ff36-97bc-506b",
-                "type": "selectionEntry",
-                "targetId": "e72d-68cc-bd83-6066",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "c97c-8518-d973-b4c3-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "c97c-8518-d973-b4c3-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "9b42-8531-cab5-0ae2",
-                "type": "selectionEntry",
-                "targetId": "bbfb-1c1f-fdbf-90b1",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2a35-64c5-1a66-086f-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2a35-64c5-1a66-086f-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Melta Bombs",
-                "hidden": false,
-                "id": "f5b8-5152-c83a-9f99",
-                "type": "selectionEntry",
-                "targetId": "edbe-fcf8-664e-f90f",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e8df-198e-26ad-1f8b-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e8df-198e-26ad-1f8b-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Warlord",
-                "hidden": false,
-                "id": "64c9-5047-93cf-ec32",
-                "type": "selectionEntry",
-                "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1
-              },
-              {
-                "import": true,
-                "name": "Retinue",
-                "hidden": false,
-                "id": "5e87-9830-6a87-e45d",
-                "type": "selectionEntryGroup",
-                "targetId": "e290-7819-af75-85c4",
-                "sortIndex": 2
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Terra's Teeth",
-                "hidden": false,
-                "id": "e0d0-4bf8-6afc-1c72",
-                "profiles": [
-                  {
-                    "name": "Terra's Teeth",
-                    "typeId": "ecd5-ca1d-0842-34a4",
-                    "typeName": "Melee Weapon",
-                    "hidden": false,
-                    "id": "8798-ed5b-5269-8ae0",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "ec4a-5686-1553-4654",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "b9e5-2eb3-f79d-e995",
-                        "$text": "+1"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "6c0f-3258-2a17-5cc9",
-                        "$text": "Melee"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "a603-af69-c30b-94ed",
-                        "$text": "Shred, Rending (4+)"
-                      }
-                    ]
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Shred",
-                    "id": "b6d7-8824-b700-b506",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "a666-0970-28e2-7c48"
-                  },
-                  {
-                    "name": "Rending",
-                    "id": "bbb0-25ff-a476-5bde",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2508-8e95-11c7-6bd6",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "4+",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "761e-f961-eb27-233a-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "761e-f961-eb27-233a-max"
-                  }
-                ]
-              }
-            ],
-            "sortIndex": 1,
             "profiles": [
               {
-                "name": "Captain Tarnus Vale",
+                "name": "Knight-captain Elam Coubray",
                 "typeId": "dd4a-7345-17fe-9c76",
                 "typeName": "Model",
                 "hidden": false,
-                "id": "89eb-5b35-4a83-c24b",
+                "id": "10f3-3a82-c47d-81b2",
                 "characteristics": [
                   {
                     "name": "M",
@@ -426,12 +142,12 @@
                   {
                     "name": "WS",
                     "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "6"
+                    "$text": "8"
                   },
                   {
                     "name": "BS",
                     "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "5"
+                    "$text": "4"
                   },
                   {
                     "name": "S",
@@ -451,7 +167,7 @@
                   {
                     "name": "I",
                     "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "5"
+                    "$text": "6"
                   },
                   {
                     "name": "A",
@@ -470,7 +186,368 @@
                   }
                 ]
               }
-            ]
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1a24-680f-2e58-69c8-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1a24-680f-2e58-69c8-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "08d6-1fa4-9e9f-5064",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Artificer Armour",
+                "hidden": false,
+                "id": "00fd-3f7b-2cde-7d5e",
+                "type": "selectionEntry",
+                "targetId": "2004-7466-45c8-bca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9b38-a84f-d85e-8ff5-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9b38-a84f-d85e-8ff5-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "d7fd-3778-0032-76f2",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a5f1-7d15-00f0-69c8-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a5f1-7d15-00f0-69c8-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Hand Flamer",
+                "hidden": false,
+                "id": "9444-4f4c-fd57-91f4",
+                "type": "selectionEntry",
+                "targetId": "f5be-750d-a6c9-1b03",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "09ec-5cc3-ff8c-efa2-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "09ec-5cc3-ff8c-efa2-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warhawk Jump Pack",
+                "hidden": false,
+                "id": "6ce6-3928-2aed-f9df",
+                "type": "selectionEntry",
+                "targetId": "954a-f392-16da-5caa",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bb48-3de0-6292-619c-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bb48-3de0-6292-619c-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "63c8-17f6-b2cb-cbf7",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "db7f-d499-9e1f-e5b0-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "db7f-d499-9e1f-e5b0-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "a9a3-7148-f1c7-a932",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ba25-7856-b0cb-c029-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ba25-7856-b0cb-c029-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "2c1e-2c91-2a27-69b7",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "7b0b-4bf6-f757-fbc1",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Excellus",
+                "hidden": false,
+                "id": "71af-c806-7a68-d343",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b80f-60a6-7a29-4313-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b80f-60a6-7a29-4313-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Excellus (One Handed)",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "463f-c079-f7f9-a070",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "User"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": " Master-Crafted, Breaching (4+), Deflagrate, The Sword Excellus"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Excellus (Two Handed)",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "1043-fc4d-80e5-b52f",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "×2"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Brutal (2), Two-handed, The Sword Excellus"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Master-crafted",
+                    "id": "f623-a664-335e-35c8",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  },
+                  {
+                    "name": "Breaching",
+                    "id": "5ff8-79ad-b671-1786",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ee66-f70b-aa5c-b2bf",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "4+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Deflagrate",
+                    "id": "3680-21ca-de84-88d9",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ca6b-5030-24a4-aabe"
+                  },
+                  {
+                    "name": "Brutal",
+                    "id": "7590-67b9-73f9-0744",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fc68-9ea6-18e4-d94b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Two-handed",
+                    "id": "e4e9-5941-91a8-71d9",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "9c96-f071-03a6-7593"
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "The Sword Excellus",
+                    "id": "c6d3-20ec-ae66-d454",
+                    "hidden": false,
+                    "description": "At the start of each Assault Phase, Elam Courbray may chose to use the Sword Excellus in a one handed or two handed stance. This must be declared before any attacks have been rolled for the combat."
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 1
           }
         ],
         "entryLinks": [
@@ -478,7 +555,7 @@
             "import": true,
             "name": "Chapter Tactics",
             "hidden": false,
-            "id": "b250-d53d-8018-30bd",
+            "id": "a378-0f35-da6d-3e6b",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
           }
@@ -486,50 +563,27 @@
         "infoLinks": [
           {
             "name": "And They Shall Know No Fear",
-            "id": "e09d-c882-6e65-a6da",
+            "id": "9c26-0480-0d94-6138",
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Stubborn",
-            "id": "befa-56de-c7ca-9679",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fdf1-31bc-4796-fb3d"
           }
         ],
         "rules": [
           {
-            "name": "Master Gunner",
-            "id": "657e-4102-8c97-e9dc",
+            "name": "Martial Contempt",
+            "id": "046b-9571-2bcd-9c78",
             "hidden": false,
-            "description": "While Tarnus Vale is transported in a non-flyer vehicle, one weapon may elect to use his Ballistic Skill when firing each shooting phase. If it does so, it also gains the Armourbane (Ranged) Special Rule. In addition, any unit he and his unit are transported within counts as having the Assault Transport special rule when he and his unit disembark in the controlling players movement phase."
+            "description": "Knight-Captain Elam Courbray must always issue or accept a challenge whenever possible."
           },
           {
-            "name": "Vehicle Specialist",
-            "id": "e7d7-1a11-2f21-4851",
+            "name": "Firefall",
+            "id": "41a2-9c6f-60f2-737e",
             "hidden": false,
-            "description": "If Tarnus Vale is taken, all of the following units within his detachment gain the Extra Armour Wargear free of charge: Rhino, Razorback, Predator, Vindicator, Whirlwind."
-          },
-          {
-            "name": "No Retreat, No Surrender!",
-            "id": "3455-2536-ab72-a6c3",
-            "hidden": false,
-            "description": "Tarnus Vale and any infantry unit with the Chapter Tactics (Fire Angels) Special Rule that he joins gains the Stubborn special rule."
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": false,
-            "field": "hidden",
-            "scope": "force",
-            "affects": "entries.recursive.b865-a4bb-0869-858a"
+            "description": "Courbray and any Warhawk Jump Pack equipped unit that he joins that also has the Chapter Tactics (Fire Hawks) special rule gains the Counter Attack (1) and Hit and Run Special Rules while he is part of the unit."
           }
         ]
       }
-    ],
-    "type": "catalogue"
+    ]
   }
 }

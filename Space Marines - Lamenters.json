@@ -454,6 +454,13 @@
             "id": "7678-6ba6-9001-bf4b",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "724f-df9c-ef65-2bcf",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "profiles": [
@@ -524,13 +531,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Independent Character",
-            "id": "0198-9ac6-5b55-1b13",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
           },
           {
             "name": "Stubborn",
@@ -713,11 +713,11 @@
                 "entryLinks": [
                   {
                     "import": true,
-                    "name": "Gravis Power Fist",
+                    "name": "Gravis Power Fist with Built-in Storm Bolter",
                     "hidden": false,
                     "id": "06c2-ef27-ac3d-902b",
                     "type": "selectionEntry",
-                    "targetId": "3382-0547-3f12-7171",
+                    "targetId": "6b31-8f5b-db83-7b32",
                     "constraints": [
                       {
                         "type": "min",
@@ -1006,41 +1006,15 @@
                         "id": "c327-004b-d570-a7df-max"
                       }
                     ],
-                    "selectionEntries": [
+                    "defaultSelectionEntryId": "4153-61e8-a3e3-9f04",
+                    "entryLinks": [
                       {
-                        "type": "upgrade",
                         "import": true,
-                        "name": "Two Blood Talons",
+                        "name": "Gravis Power Fist with Built-in Storm Bolter and Frag Cannon",
                         "hidden": false,
-                        "id": "2e6a-6283-2356-fd28",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Blood Talon",
-                            "hidden": false,
-                            "id": "6495-57ed-992a-73ca",
-                            "type": "selectionEntry",
-                            "targetId": "fe29-0260-8632-8f1c",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 2,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "eaf6-0d2e-f9ec-a3f1-min"
-                              },
-                              {
-                                "type": "max",
-                                "value": 2,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "eaf6-0d2e-f9ec-a3f1-max"
-                              }
-                            ]
-                          }
-                        ],
+                        "id": "527a-627b-b9b8-6dca",
+                        "type": "selectionEntry",
+                        "targetId": "2fe0-89ed-aeb4-8e7e",
                         "costs": [
                           {
                             "name": "Points",
@@ -1050,127 +1024,23 @@
                         ]
                       },
                       {
-                        "type": "upgrade",
                         "import": true,
-                        "name": "Two Gravis Powerfists",
+                        "name": "Two Gravis Power Fists with Built-in Storm Bolters",
                         "hidden": false,
-                        "id": "15b7-3729-1a4f-a88f",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "Gravis Power Fist",
-                            "hidden": false,
-                            "id": "d9b3-65d4-f6b6-4cbd",
-                            "type": "selectionEntry",
-                            "targetId": "3382-0547-3f12-7171",
-                            "constraints": [
-                              {
-                                "type": "min",
-                                "value": 2,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "2c37-f0a9-acb1-d7c5-min"
-                              },
-                              {
-                                "type": "max",
-                                "value": 2,
-                                "field": "selections",
-                                "scope": "parent",
-                                "shared": true,
-                                "id": "2c37-f0a9-acb1-d7c5-max"
-                              }
-                            ]
-                          }
-                        ],
+                        "id": "4153-61e8-a3e3-9f04",
+                        "type": "selectionEntry",
+                        "targetId": "148b-bdbe-a608-5164",
                         "sortIndex": 1
                       },
                       {
-                        "type": "upgrade",
                         "import": true,
-                        "name": "Gravis Powerfist with Frag Cannon",
+                        "name": "Two Blood Talons with Built-in Storm Bolters",
                         "hidden": false,
-                        "id": "efe6-47bb-87ed-ba7c",
-                        "entryLinks": [
-                          {
-                            "import": true,
-                            "name": "In-built Weapon",
-                            "hidden": false,
-                            "id": "5032-8319-5937-a517",
-                            "type": "selectionEntryGroup",
-                            "targetId": "84a7-bf63-4f71-db0f"
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "decrement",
-                            "value": 1,
-                            "field": "edda-ee37-03b4-f91f",
-                            "affects": "profiles.Model",
-                            "scope": "parent"
-                          }
-                        ],
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "54b5-0978-c8a4-5b5a",
-                            "value": 10
-                          }
-                        ],
-                        "infoLinks": [
-                          {
-                            "name": "Breaching",
-                            "id": "e9d0-4da4-0247-3ac3",
-                            "hidden": false,
-                            "type": "rule",
-                            "targetId": "ee66-f70b-aa5c-b2bf",
-                            "modifiers": [
-                              {
-                                "type": "set",
-                                "value": "5+",
-                                "field": "annotation"
-                              }
-                            ]
-                          },
-                          {
-                            "name": "Pinning",
-                            "id": "9829-a04d-2605-da1d",
-                            "hidden": false,
-                            "type": "rule",
-                            "targetId": "4cc0-966b-ab26-0aa7"
-                          },
-                          {
-                            "name": "Frag Cannon",
-                            "id": "7d17-c451-127c-79d5",
-                            "hidden": false,
-                            "type": "profile",
-                            "targetId": "402c-d865-f225-44d6"
-                          },
-                          {
-                            "name": "Gravis Power Fist",
-                            "id": "9d01-c787-85fe-b12e",
-                            "hidden": false,
-                            "type": "profile",
-                            "targetId": "6fdd-8073-79c0-570e"
-                          },
-                          {
-                            "name": "Brutal",
-                            "id": "4b3f-c454-f8d4-40f8",
-                            "hidden": false,
-                            "type": "rule",
-                            "targetId": "fc68-9ea6-18e4-d94b",
-                            "modifiers": [
-                              {
-                                "type": "set",
-                                "value": "3",
-                                "field": "annotation"
-                              }
-                            ]
-                          }
-                        ]
+                        "id": "7877-7a04-1b7e-ea19",
+                        "type": "selectionEntry",
+                        "targetId": "a4bc-b281-b202-6a48"
                       }
-                    ],
-                    "defaultSelectionEntryId": "15b7-3729-1a4f-a88f"
+                    ]
                   }
                 ],
                 "entryLinks": [
@@ -1468,7 +1338,7 @@
                     "entryLinks": [
                       {
                         "import": true,
-                        "name": "Gravis Powerfist with Frag Cannon",
+                        "name": "Gravis Power Fist and Frag Cannon",
                         "hidden": false,
                         "id": "2904-ab78-078e-3eef",
                         "type": "selectionEntry",
@@ -1714,318 +1584,6 @@
             "id": "be1d-9502-389f-1a62",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Blood Talon",
-        "hidden": false,
-        "id": "fe29-0260-8632-8f1c",
-        "profiles": [
-          {
-            "name": "Blood Talon",
-            "typeId": "ecd5-ca1d-0842-34a4",
-            "typeName": "Melee Weapon",
-            "hidden": false,
-            "id": "2538-b89e-3de7-a10f",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "ec4a-5686-1553-4654",
-                "$text": "-"
-              },
-              {
-                "name": "S",
-                "typeId": "b9e5-2eb3-f79d-e995",
-                "$text": "+1"
-              },
-              {
-                "name": "AP",
-                "typeId": "0332-8de1-48c6-c94d",
-                "$text": "3"
-              },
-              {
-                "name": "Type",
-                "typeId": "6c0f-3258-2a17-5cc9",
-                "$text": "Melee"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "a603-af69-c30b-94ed",
-                "$text": "Shred, Rending (4+)"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Shred",
-            "id": "8a14-d387-a802-953c",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "a666-0970-28e2-7c48"
-          },
-          {
-            "name": "Rending",
-            "id": "4fc1-4e32-e49a-a2ad",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2508-8e95-11c7-6bd6",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "4+",
-                "field": "annotation"
-              }
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "In-built Weapon",
-            "id": "3399-c7c1-1bcb-fc33",
-            "hidden": false,
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Storm Bolter",
-                "hidden": false,
-                "id": "f40f-4a5c-919d-14fc",
-                "type": "selectionEntry",
-                "targetId": "b584-e06b-ebeb-4d04",
-                "sortIndex": 1
-              },
-              {
-                "import": true,
-                "name": "Heavy Flamer",
-                "hidden": false,
-                "id": "0bb1-2477-4cb6-0f53",
-                "type": "selectionEntry",
-                "targetId": "c553-098b-dbb7-e3a9",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Meltagun",
-                "hidden": false,
-                "id": "2b89-eadd-ccfa-32e5",
-                "type": "selectionEntry",
-                "targetId": "5fc6-b052-616c-bfa7",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 15
-                  }
-                ]
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "c5bd-86f1-2676-096d"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "6bef-28bb-c516-8a6e"
-              }
-            ],
-            "defaultSelectionEntryId": "f40f-4a5c-919d-14fc"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Frag Cannon",
-        "hidden": false,
-        "id": "8bc8-31dc-2dd4-3e7c",
-        "profiles": [
-          {
-            "name": "Frag Cannon",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "06fd-5b1c-9957-49b4",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "T"
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "6"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "-"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 2"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Breaching (5+), Pinning"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "d23b-36d7-f301-11ae",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "5+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Pinning",
-            "id": "3ebd-981f-5e63-1321",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cc0-966b-ab26-0aa7"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Gravis Powerfist with Frag Cannon",
-        "hidden": false,
-        "id": "095a-2603-3042-6651",
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "In-built Weapon",
-            "hidden": false,
-            "id": "62f2-7d10-a5fb-c3ce",
-            "type": "selectionEntryGroup",
-            "targetId": "84a7-bf63-4f71-db0f"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "decrement",
-            "value": 1,
-            "field": "edda-ee37-03b4-f91f",
-            "affects": "profiles.Model",
-            "scope": "parent"
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Breaching",
-            "id": "22c6-b811-479f-0d4f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee66-f70b-aa5c-b2bf",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "5+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Pinning",
-            "id": "b4b3-69fe-0767-4cdb",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4cc0-966b-ab26-0aa7"
-          },
-          {
-            "name": "Frag Cannon",
-            "id": "8080-aa1a-d835-6554",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "402c-d865-f225-44d6"
-          },
-          {
-            "name": "Gravis Power Fist",
-            "id": "716a-dce9-4cff-6eec",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "6fdd-8073-79c0-570e"
-          },
-          {
-            "name": "Brutal",
-            "id": "caae-db65-fc82-9ad3",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fc68-9ea6-18e4-d94b",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "3",
-                "field": "annotation"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "sharedProfiles": [
-      {
-        "name": "Frag Cannon",
-        "typeId": "5e31-3867-7c3d-fcb9",
-        "typeName": "Ranged Weapon",
-        "hidden": false,
-        "id": "402c-d865-f225-44d6",
-        "characteristics": [
-          {
-            "name": "Range",
-            "typeId": "7b0f-9c2a-0ecb-f3a3",
-            "$text": "T"
-          },
-          {
-            "name": "S",
-            "typeId": "2ecc-1ccc-736f-9d3d",
-            "$text": "6"
-          },
-          {
-            "name": "AP",
-            "typeId": "cbb5-5f04-f87f-a810",
-            "$text": "-"
-          },
-          {
-            "name": "Type",
-            "typeId": "2c90-16ca-a927-898d",
-            "$text": "Assault 2"
-          },
-          {
-            "name": "Special Rules",
-            "typeId": "d2a2-1139-48cb-4472",
-            "$text": "Breaching (5+), Pinning"
           }
         ]
       }

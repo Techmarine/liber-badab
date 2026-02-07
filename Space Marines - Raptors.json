@@ -80,6 +80,13 @@
             "id": "47a4-b5cf-7bdc-e274",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "7767-17a0-422e-7112",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -683,13 +690,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Independent Character",
-            "id": "1f18-ffb0-71bd-ba78",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
           },
           {
             "name": "Scout",

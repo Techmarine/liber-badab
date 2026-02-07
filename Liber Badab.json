@@ -332,6 +332,20 @@
         "name": "Super-heavy Sub-type",
         "id": "c323-cb52-ee7a-f990",
         "hidden": false
+      },
+      {
+        "name": "Independent Character",
+        "id": "325c-e791-275c-2ab7",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Independent Character",
+            "id": "653e-1fd4-ea1c-3ccd",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e453-db5d-2916-abcb"
+          }
+        ]
       }
     ],
     "type": "gameSystem",
@@ -752,13 +766,13 @@
         "name": "Battlesmith",
         "id": "131d-5e79-6950-6437",
         "hidden": false,
-        "description": "If a model with the Battlesmith (X) special rule is in base contact with, or Embarked upon, one or more damaged Vehicles, Dreadnoughts or Automata during the Shooting phase, they can attempt to repair one of them. If they do so, the model that attempted the repair cannot shoot any weapons or use any other abilities that would be used instead of making a Shooting Attack. Roll a D6. If the result is equal to or more than the value listed in brackets as part of this rule then one of the following options may be applied to any one Vehicle, Dreadnought or Automata the model is in base contact with or Embarked upon:\n\n\n- Restore a lost Hull Point.\n- Restore a lost Wound.\n- Repair a Weapon Destroyed result.\n- Repair an Immobilised result.\n\n\nIf a Weapon Destroyed result is repaired, that weapon may not be used to attack in the same phase as it is repaired, but may be used to attack as normal in any phase after that. The Battlesmith cannot use this ability if they are Pinned or Falling Back."
+        "description": "If a model with the Battlesmith (X) special rule is in base contact with, or Embarked upon, one or more damaged Vehicles, Dreadnoughts or Automata during the Shooting phase, they can attempt to repair one of them. If they do so, the model that attempted the repair cannot shoot any weapons or use any other abilities that would be used instead of making a Shooting Attack. Roll a D6. If the result is equal to or more than the value listed in brackets as part of this rule then one of the following options may be applied to any one Vehicle, Dreadnought or Automata the model is in base contact with or Embarked upon:\n\n- Restore a lost Hull Point.\n- Restore a lost Wound.\n- Repair a Weapon Destroyed result.\n- Repair an Immobilised result.\n\nIf a Weapon Destroyed result is repaired, that weapon may not be used to attack in the same phase as it is repaired, but may be used to attack as normal in any phase after that. The Battlesmith cannot use this ability if they are Pinned or Falling Back."
       },
       {
         "name": "Poisoned",
         "id": "92ab-d224-1de1-8685",
         "hidden": false,
-        "description": "If a model has the Poisoned special rule, or is attacking with a Melee weapon that has the Poisoned special rule, it always Wounds on a fixed number (generally shown in brackets), unless a lower result would be required, when attacking in close combat. In addition, if the Strength of the wielder (or the Poisoned weapon) is higher than the Toughness of the victim, the wielder must re-roll failed rolls To Wound in close combat.\n\n\nSimilarly, if a model makes a Shooting Attack with a weapon that has the Poisoned special rule, it always Wounds on a fixed number (generally shown in brackets), unless a lower result would be required. If no number is shown in brackets, the rule is Poisoned (4+).\n\n\nUnless otherwise stated, Poisoned weapons are treated as having a Strength of 1. The Poisoned special rule has no effect against Vehicles."
+        "description": "If a model has the Poisoned special rule, or is attacking with a Melee weapon that has the Poisoned special rule, it always Wounds on a fixed number (generally shown in brackets), unless a lower result would be required, when attacking in close combat. In addition, if the Strength of the wielder (or the Poisoned weapon) is higher than the Toughness of the victim, the wielder must re-roll failed rolls To Wound in close combat.\n\nSimilarly, if a model makes a Shooting Attack with a weapon that has the Poisoned special rule, it always Wounds on a fixed number (generally shown in brackets), unless a lower result would be required. If no number is shown in brackets, the rule is Poisoned (4+).\n\nUnless otherwise stated, Poisoned weapons are treated as having a Strength of 1. The Poisoned special rule has no effect against Vehicles."
       },
       {
         "name": "Stubborn",
@@ -962,7 +976,7 @@
         "name": "Feel No Pain",
         "id": "a80b-2291-817a-5f27",
         "hidden": false,
-        "description": "When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being Wounded (this is a special Saving Throw which is made after unsaved Wounds are suffered).\n\n\nFeel No Pain rolls may not be taken against unsaved Wounds that have the Instant Death special rule.\n\n\nRoll a D6 each time an unsaved Wound is suffered. On a result that is equal to or greater than the value in brackets, the unsaved Wound is discounted – treat it as having been saved. On any other result the Wound is taken as normal.\n\n\nFor example, a unit with the special rule Feel No Pain (5+) would need to score a 5 or 6 in order to discount a Wound inflicted upon it.\n\n\nThis is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound."
+        "description": "When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being Wounded (this is a special Saving Throw which is made after unsaved Wounds are suffered).\n\nFeel No Pain rolls may not be taken against unsaved Wounds that have the Instant Death special rule.\n\nRoll a D6 each time an unsaved Wound is suffered. On a result that is equal to or greater than the value in brackets, the unsaved Wound is discounted – treat it as having been saved. On any other result the Wound is taken as normal.\n\nFor example, a unit with the special rule Feel No Pain (5+) would need to score a 5 or 6 in order to discount a Wound inflicted upon it.\n\nThis is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound."
       },
       {
         "name": "Counter-attack",
@@ -2204,6 +2218,35 @@
             "hidden": false,
             "type": "profile",
             "targetId": "d941-498a-214b-ad48"
+          },
+          {
+            "name": "Poisoned",
+            "id": "b316-c834-20c4-d1e5",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "0b27-9ff7-c2c8-cff6",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "entryLinks": [
@@ -2214,6 +2257,25 @@
             "id": "c377-400b-a54c-26d3",
             "type": "selectionEntry",
             "targetId": "57a8-32f1-f062-fb17"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "append",
+            "value": "Poisoned (2+)",
+            "field": "d2a2-1139-48cb-4472",
+            "affects": "profiles.Ranged Weapon",
+            "join": ", ",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "0b27-9ff7-c2c8-cff6",
+                "shared": true
+              }
+            ]
           }
         ]
       },
@@ -6540,6 +6602,54 @@
                 "field": "annotation"
               }
             ]
+          },
+          {
+            "name": "Poisoned",
+            "id": "281e-623c-9651-7869",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "0b27-9ff7-c2c8-cff6",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "append",
+            "value": "Poisoned (2+)",
+            "field": "d2a2-1139-48cb-4472",
+            "affects": "profiles.Ranged Weapon",
+            "join": ", ",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "0b27-9ff7-c2c8-cff6",
+                "shared": true
+              }
+            ]
           }
         ]
       },
@@ -8641,6 +8751,54 @@
                 "shared": true
               }
             ]
+          },
+          {
+            "type": "append",
+            "value": "Poisoned (2+)",
+            "field": "d2a2-1139-48cb-4472",
+            "affects": "profiles.Ranged Weapon",
+            "join": ", ",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "0b27-9ff7-c2c8-cff6",
+                "shared": true
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Poisoned",
+            "id": "3cdc-ae5a-8b4d-204e",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "0b27-9ff7-c2c8-cff6",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -8702,6 +8860,56 @@
             "id": "745e-6135-61af-da35",
             "type": "selectionEntry",
             "targetId": "57a8-32f1-f062-fb17"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Poisoned",
+            "id": "9bb7-2731-afed-2630",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "0b27-9ff7-c2c8-cff6",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "append",
+            "value": "Poisoned (2+)",
+            "field": "d2a2-1139-48cb-4472",
+            "affects": "profiles.Ranged Weapon",
+            "join": ", ",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "0b27-9ff7-c2c8-cff6",
+                "shared": true
+              }
+            ]
           }
         ]
       },
@@ -8798,6 +9006,54 @@
             "hidden": false,
             "type": "profile",
             "targetId": "24f9-a86a-d69b-9f78"
+          },
+          {
+            "name": "Poisoned",
+            "id": "6a46-4d5d-3097-2370",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "0b27-9ff7-c2c8-cff6",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "append",
+            "value": "Poisoned (2+)",
+            "field": "d2a2-1139-48cb-4472",
+            "affects": "profiles.Ranged Weapon",
+            "join": ", ",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "0b27-9ff7-c2c8-cff6",
+                "shared": true
+              }
+            ]
           }
         ]
       },
@@ -10220,6 +10476,35 @@
             "hidden": false,
             "type": "profile",
             "targetId": "0510-8ac8-5352-169f"
+          },
+          {
+            "name": "Poisoned",
+            "id": "a18f-9a47-b950-3840",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "0b27-9ff7-c2c8-cff6",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "profiles": [
@@ -10311,6 +10596,35 @@
             "hidden": false,
             "type": "profile",
             "targetId": "0510-8ac8-5352-169f"
+          },
+          {
+            "name": "Poisoned",
+            "id": "14c8-d2e6-84de-8870",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "0b27-9ff7-c2c8-cff6",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "profiles": [
@@ -10429,6 +10743,35 @@
             "hidden": false,
             "type": "profile",
             "targetId": "0510-8ac8-5352-169f"
+          },
+          {
+            "name": "Poisoned",
+            "id": "52f4-ea5c-c915-4b9b",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "0b27-9ff7-c2c8-cff6",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "profiles": [
@@ -10527,6 +10870,35 @@
             "hidden": false,
             "type": "profile",
             "targetId": "0510-8ac8-5352-169f"
+          },
+          {
+            "name": "Poisoned",
+            "id": "f6a6-e6f0-0c64-82a6",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "92ab-d224-1de1-8685",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2+",
+                "field": "annotation"
+              },
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "0b27-9ff7-c2c8-cff6",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "profiles": [
@@ -10891,25 +11263,40 @@
             "field": "info",
             "conditionGroups": [
               {
-                "type": "or",
+                "type": "and",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "greaterThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "model",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "greaterThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "unit",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
                 "conditions": [
                   {
-                    "type": "greaterThan",
+                    "type": "atLeast",
                     "value": 1,
                     "field": "selections",
-                    "scope": "unit",
-                    "childId": "model",
-                    "shared": true,
-                    "includeChildSelections": true
-                  },
-                  {
-                    "type": "greaterThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "unit",
-                    "childId": "unit",
-                    "shared": true,
-                    "includeChildSelections": true
+                    "scope": "parent",
+                    "childId": "57a8-32f1-f062-fb17",
+                    "shared": true
                   }
                 ]
               }
@@ -11003,6 +11390,135 @@
             "targetId": "a666-0970-28e2-7c48"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Epistolary Librarian",
+        "hidden": true,
+        "id": "01d9-0338-26ca-b2b8",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 25
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": false,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "80a9-2141-1026-4bc8",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "f95d-c2f0-d4c3-bbeb"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Anphelion Veterans",
+        "hidden": true,
+        "id": "0b27-9ff7-c2c8-cff6",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "a7b4-778c-880c-d664",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "163f-6fcf-6b77-1766",
+            "affects": "entries.profiles.Model",
+            "scope": "parent"
+          },
+          {
+            "type": "increment",
+            "value": 8,
+            "field": "54b5-0978-c8a4-5b5a",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "model",
+                "shared": true,
+                "roundUp": false
+              }
+            ]
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "a7b4-778c-880c-d664"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "1ef8-9b76-c208-d080",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Move Through Cover",
+            "id": "7c1f-9a7e-fda8-ab87",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "295d-36fe-4db3-a19f"
+          },
+          {
+            "name": "Night Vision",
+            "id": "da0b-a8f7-5199-b059",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8ab4-4caa-d70c-dbf1"
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -11058,7 +11574,8 @@
             "import": true,
             "name": "Carcharodons",
             "hidden": false,
-            "id": "c50c-f665-e9dc-6460"
+            "id": "c50c-f665-e9dc-6460",
+            "defaultAmount": ""
           },
           {
             "type": "upgrade",
@@ -11073,6 +11590,62 @@
             "name": "Fire Angels",
             "hidden": false,
             "id": "0895-4d0c-a12e-88bb"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Fire Hawks",
+            "hidden": false,
+            "id": "8024-8905-4ee4-c1a4"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Howling Griffons",
+            "hidden": false,
+            "id": "80a9-2141-1026-4bc8"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Novamarines",
+            "hidden": false,
+            "id": "111f-a1af-b225-0e21"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Red Scorpions",
+            "hidden": false,
+            "id": "1ef8-9b76-c208-d080"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Astral Claws",
+            "hidden": false,
+            "id": "45dd-86b9-f864-7ec7"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Mantis Warriors",
+            "hidden": false,
+            "id": "cfc7-c7c8-d2b8-4fb3"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sons of Medusa",
+            "hidden": false,
+            "id": "bae5-62ec-8bf2-3ab5"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Star Phantoms",
+            "hidden": false,
+            "id": "7d52-2c3a-810d-b85d"
           }
         ],
         "constraints": [
@@ -11124,7 +11697,17 @@
             "id": "beec-d087-ad59-c94d",
             "type": "selectionEntry",
             "targetId": "84d4-417d-b332-b7f8",
-            "defaultAmount": "1"
+            "defaultAmount": "1",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d414-7034-0656-7f19"
+              }
+            ]
           },
           {
             "import": true,
@@ -11132,7 +11715,17 @@
             "hidden": false,
             "id": "ab9b-3cbc-2829-f788",
             "type": "selectionEntry",
-            "targetId": "67e8-287e-4259-4379"
+            "targetId": "67e8-287e-4259-4379",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "194e-3d15-03ba-47e8"
+              }
+            ]
           },
           {
             "import": true,
@@ -11140,7 +11733,17 @@
             "hidden": false,
             "id": "a626-22f8-1307-cbbc",
             "type": "selectionEntry",
-            "targetId": "0f5d-6a84-3744-f037"
+            "targetId": "0f5d-6a84-3744-f037",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "aa75-5302-2acb-bcf2"
+              }
+            ]
           },
           {
             "import": true,
@@ -11148,7 +11751,17 @@
             "hidden": false,
             "id": "c8db-6868-0ddc-68c0",
             "type": "selectionEntry",
-            "targetId": "27bd-a90f-a44d-f46b"
+            "targetId": "27bd-a90f-a44d-f46b",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d20a-305f-9517-7477"
+              }
+            ]
           },
           {
             "import": true,
@@ -11156,7 +11769,17 @@
             "hidden": false,
             "id": "38e1-2371-552f-90dd",
             "type": "selectionEntry",
-            "targetId": "d781-b222-3c54-dab2"
+            "targetId": "d781-b222-3c54-dab2",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "96e8-e7d9-7246-7960"
+              }
+            ]
           },
           {
             "import": true,
@@ -11164,7 +11787,34 @@
             "hidden": false,
             "id": "b340-dc51-204a-e0d1",
             "type": "selectionEntry",
-            "targetId": "bff3-be94-f034-ee18"
+            "targetId": "bff3-be94-f034-ee18",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "94ed-1c32-684d-e636"
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "6f61-4185-7a33-4a1a",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "01d9-0338-26ca-b2b8",
+                "shared": true
+              }
+            ]
           }
         ]
       },
@@ -11247,6 +11897,136 @@
           }
         ],
         "flatten": true
+      },
+      {
+        "name": "Chapter (Loyalists)",
+        "id": "e1e7-7fb7-c4f2-5516",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Carcharodons",
+            "hidden": false,
+            "id": "1404-cee4-2ee5-6495",
+            "type": "selectionEntry",
+            "targetId": "c50c-f665-e9dc-6460",
+            "defaultAmount": "1"
+          },
+          {
+            "import": true,
+            "name": "Exorcists",
+            "hidden": false,
+            "id": "aaa1-6d5f-2336-ca82",
+            "type": "selectionEntry",
+            "targetId": "ac66-f192-47b4-7be7"
+          },
+          {
+            "import": true,
+            "name": "Fire Angels",
+            "hidden": false,
+            "id": "74f2-5319-f925-c5b1",
+            "type": "selectionEntry",
+            "targetId": "0895-4d0c-a12e-88bb"
+          },
+          {
+            "import": true,
+            "name": "Fire Hawks",
+            "hidden": false,
+            "id": "088b-47d3-0555-241e",
+            "type": "selectionEntry",
+            "targetId": "8024-8905-4ee4-c1a4"
+          },
+          {
+            "import": true,
+            "name": "Howling Griffons",
+            "hidden": false,
+            "id": "b164-441e-a6ca-ed35",
+            "type": "selectionEntry",
+            "targetId": "80a9-2141-1026-4bc8"
+          },
+          {
+            "import": true,
+            "name": "Marines Errant",
+            "hidden": false,
+            "id": "1659-1f4d-2b31-12c9",
+            "type": "selectionEntry",
+            "targetId": "ed74-ecf1-d0a6-0124"
+          },
+          {
+            "import": true,
+            "name": "Minotaurs",
+            "hidden": false,
+            "id": "99a7-9ae2-c7c7-a950",
+            "type": "selectionEntry",
+            "targetId": "ac2b-b7c8-7313-ae91"
+          },
+          {
+            "import": true,
+            "name": "Novamarines",
+            "hidden": false,
+            "id": "0387-6625-b7a8-a0e8",
+            "type": "selectionEntry",
+            "targetId": "111f-a1af-b225-0e21"
+          },
+          {
+            "import": true,
+            "name": "Raptors",
+            "hidden": false,
+            "id": "460a-991f-dbc3-6c1e",
+            "type": "selectionEntry",
+            "targetId": "7246-3389-7f60-2b4e"
+          },
+          {
+            "import": true,
+            "name": "Red Scorpions",
+            "hidden": false,
+            "id": "4eb6-e204-340a-792c",
+            "type": "selectionEntry",
+            "targetId": "1ef8-9b76-c208-d080"
+          },
+          {
+            "import": true,
+            "name": "Salamanders",
+            "hidden": false,
+            "id": "ae9a-47a5-1f1c-10dd",
+            "type": "selectionEntry",
+            "targetId": "1c46-7a96-775f-8572"
+          },
+          {
+            "import": true,
+            "name": "Sons of Medusa",
+            "hidden": false,
+            "id": "0a81-15fe-0ffb-5f17",
+            "type": "selectionEntry",
+            "targetId": "bae5-62ec-8bf2-3ab5"
+          },
+          {
+            "import": true,
+            "name": "Star Phantoms",
+            "hidden": false,
+            "id": "ae2f-6e05-9bdc-3db4",
+            "type": "selectionEntry",
+            "targetId": "7d52-2c3a-810d-b85d"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "90f2-6ad5-5b1c-7473-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "90f2-6ad5-5b1c-7473-max"
+          }
+        ]
       }
     ],
     "sharedProfiles": [
@@ -12548,6 +13328,23 @@
                 "field": "selections",
                 "scope": "self",
                 "childId": "57a8-32f1-f062-fb17",
+                "shared": true,
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "type": "append",
+            "value": "Poisoned (2+)",
+            "field": "d2a2-1139-48cb-4472",
+            "join": ", ",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "0b27-9ff7-c2c8-cff6",
                 "shared": true,
                 "includeChildSelections": false
               }

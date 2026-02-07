@@ -6282,6 +6282,13 @@
             "id": "98c5-7292-da80-7fcc",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "292d-ab47-35b3-feb3",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -7315,13 +7322,6 @@
             "targetId": "7281-8b61-791e-c0f1"
           },
           {
-            "name": "Independent Character",
-            "id": "116f-f3d4-616a-8169",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "Mob Rule",
             "id": "bbde-e9d6-1d04-9c6c",
             "hidden": false,
@@ -7417,6 +7417,13 @@
             "hidden": false,
             "id": "7a8d-990c-2ac6-9062",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "b271-4a35-2b8f-6507",
+            "targetId": "325c-e791-275c-2ab7",
             "primary": false
           }
         ],
@@ -8040,13 +8047,6 @@
             "targetId": "7281-8b61-791e-c0f1"
           },
           {
-            "name": "Independent Character",
-            "id": "61d5-5ad9-1e91-30ba",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "Mob Rule",
             "id": "889c-e552-18a3-b1d4",
             "hidden": false,
@@ -8102,6 +8102,13 @@
             "hidden": false,
             "id": "2de2-184c-f963-5068",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "3812-9c5e-b715-4693",
+            "targetId": "325c-e791-275c-2ab7",
             "primary": false
           }
         ],
@@ -9023,13 +9030,6 @@
             "targetId": "7281-8b61-791e-c0f1"
           },
           {
-            "name": "Independent Character",
-            "id": "bd5d-f5bd-6d1c-e058",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "Mekaniak Kults",
             "id": "482f-6de0-60e8-e376",
             "hidden": false,
@@ -9357,6 +9357,13 @@
             "hidden": false,
             "id": "c1c9-3f80-1652-fb1b",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "9c84-c018-07e1-196e",
+            "targetId": "325c-e791-275c-2ab7",
             "primary": false
           }
         ],
@@ -9956,13 +9963,6 @@
             "targetId": "7281-8b61-791e-c0f1"
           },
           {
-            "name": "Independent Character",
-            "id": "8d71-5d78-a6ff-0f9d",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "Mekaniak Kults",
             "id": "1327-4741-9231-b240",
             "hidden": false,
@@ -10045,6 +10045,13 @@
             "id": "c7d4-8ce7-b8a9-79d4",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "00a6-3c62-2f17-18b3",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "sortIndex": 5,
@@ -10471,13 +10478,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "7281-8b61-791e-c0f1"
-          },
-          {
-            "name": "Independent Character",
-            "id": "d5e6-452b-f381-c12a",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
           },
           {
             "name": "Mob Rule",

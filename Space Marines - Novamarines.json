@@ -1,0 +1,518 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "ab36-dbc2-5128-a56e",
+    "name": "Space Marines - Novamarines",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Space Marines",
+        "id": "31f5-b386-a13d-a08f",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Novamarines",
+        "hidden": false,
+        "id": "532d-9533-2005-d416",
+        "type": "selectionEntry",
+        "targetId": "111f-a1af-b225-0e21",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "9b69-02d1-a6c8-a94c",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1"
+      },
+      {
+        "import": true,
+        "name": "Captain Mordaci Blaylock",
+        "hidden": false,
+        "id": "3cc1-83a6-d33d-d2f4",
+        "type": "selectionEntry",
+        "targetId": "dc5f-5ccc-7776-39e1"
+      }
+    ],
+    "type": "catalogue",
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Captain Mordaci Blaylock",
+        "hidden": false,
+        "id": "dc5f-5ccc-7776-39e1",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 185
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "2688-8c4e-52aa-8e4e",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "8156-98bf-b262-4e38",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "bb37-088a-e5b0-726b",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "a7ae-d652-5c9c-7233",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Captain Mordaci Blaylock",
+            "hidden": false,
+            "id": "8e33-829c-14ea-1624",
+            "categoryLinks": [
+              {
+                "name": "Infantry Unit Type",
+                "hidden": false,
+                "id": "20ce-da4a-42cf-0e77",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "3f1f-5b30-e4a5-7b13",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "1dff-0642-665c-6a81",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              },
+              {
+                "name": "Heavy Sub-type",
+                "hidden": false,
+                "id": "3bc6-aa40-4bc9-b5f9",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Captain Mordaci Blaylock",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "56d6-69a8-3ed4-e242",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1a5d-066d-c35d-9e84-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1a5d-066d-c35d-9e84-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "0756-835f-4224-38e9",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "411f-7fe8-1a08-5c77",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5d6a-de23-4467-68f1-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5d6a-de23-4467-68f1-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Indomitus Terminator Armour",
+                "hidden": false,
+                "id": "c445-d9cc-bf2e-e87b",
+                "type": "selectionEntry",
+                "targetId": "aa95-1188-68f8-70c3",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9089-139e-414a-3278-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9089-139e-414a-3278-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Storm Bolter",
+                "hidden": false,
+                "id": "a2d0-39f7-fac9-231c",
+                "type": "selectionEntry",
+                "targetId": "b584-e06b-ebeb-4d04",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Master-crafted",
+                    "hidden": false,
+                    "id": "928e-6f4c-527f-fd3e",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c044-d3ec-ebc4-d882"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Master-crafted",
+                    "id": "96bf-172a-ace4-e99f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1b3e-9e51-97f8-7ddb-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1b3e-9e51-97f8-7ddb-max"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Master-crafted",
+                    "field": "name",
+                    "join": " "
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "8857-c3b8-bf2f-77bd",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "b803-b090-804f-cee5",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Foe Ripper",
+                "hidden": false,
+                "id": "bdb1-5513-a45a-0341",
+                "profiles": [
+                  {
+                    "name": "Foe Ripper",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "c242-2d50-f202-876a",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "×2"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Armourbane (Melee), Master-Crafted, Unwieldly, Brutal (2)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Armourbane",
+                    "id": "3cb5-6530-aab4-9997",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a1f5-fb7a-bbf0-a720",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Melee",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Master-crafted",
+                    "id": "261c-61ce-bcf9-a329",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  },
+                  {
+                    "name": "Unwieldy",
+                    "id": "9047-79d6-fcb3-9f91",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "cfea-a7be-fbea-da53"
+                  },
+                  {
+                    "name": "Brutal",
+                    "id": "53ed-80ea-77cb-ad50",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fc68-9ea6-18e4-d94b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dfa3-2769-27a1-fd34-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dfa3-2769-27a1-fd34-max"
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "69ed-cbc7-3fbc-7ba5",
+                "affects": "profiles.Model"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "588e-0e3c-2879-4649",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "d24a-926e-5571-f9ee",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Stubborn",
+            "id": "5fa9-66e9-0c84-9e98",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fdf1-31bc-4796-fb3d"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "f20d-58f4-d960-4686",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          },
+          {
+            "name": "Battle-hardened",
+            "id": "1674-e216-cfb1-566b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "76cb-bd90-ecb1-941b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "1",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Hard as Stone",
+            "id": "a73d-fb56-332c-f1c2",
+            "hidden": false,
+            "description": "Mordaci Blaylock and any unit he joins add +1 to Combat Resolution score when determining the victor of a combat."
+          }
+        ]
+      }
+    ]
+  }
+}
