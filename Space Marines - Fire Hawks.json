@@ -80,6 +80,13 @@
             "id": "af34-747e-6b77-2f53",
             "targetId": "08f5-cc3b-5be1-92cb",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "2d4b-3711-648d-482c",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -560,13 +567,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Independent Character",
-            "id": "a023-27dc-b247-44e1",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
           }
         ],
         "rules": [

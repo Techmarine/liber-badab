@@ -81,6 +81,13 @@
             "id": "a34c-1cdf-1dbf-3c59",
             "targetId": "08f5-cc3b-5be1-92cb",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "83f6-c2ab-7a0b-2578",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "costs": [
@@ -505,13 +512,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Independent Character",
-            "id": "2bee-27d2-c859-0c76",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
           },
           {
             "name": "Bulky",

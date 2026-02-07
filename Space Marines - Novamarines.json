@@ -80,6 +80,13 @@
             "id": "bb37-088a-e5b0-726b",
             "targetId": "08f5-cc3b-5be1-92cb",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "a7ae-d652-5c9c-7233",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -459,13 +466,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Independent Character",
-            "id": "f5e9-9849-67d3-e020",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
           },
           {
             "name": "Stubborn",

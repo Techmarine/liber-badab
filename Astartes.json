@@ -1005,6 +1005,13 @@
             "id": "a15f-4f6e-076d-c4a0",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "5ad0-3283-5aed-947f",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "costs": [
@@ -2093,13 +2100,6 @@
             ]
           },
           {
-            "name": "Independent Character",
-            "id": "1289-5913-8a51-8be4",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "Relentless",
             "id": "9593-a25e-986c-63ff",
             "hidden": false,
@@ -2203,6 +2203,13 @@
             "hidden": false,
             "id": "02e1-2d6e-74ef-d108",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "bbaf-a93f-6945-70fe",
+            "targetId": "325c-e791-275c-2ab7",
             "primary": false
           }
         ],
@@ -4777,13 +4784,6 @@
             "targetId": "2b63-2384-7b15-bc8f"
           },
           {
-            "name": "Independent Character",
-            "id": "f85c-3b15-f235-5a1a",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "Relentless",
             "id": "2cfa-faac-411e-b55b",
             "hidden": false,
@@ -5553,75 +5553,6 @@
               {
                 "type": "upgrade",
                 "import": true,
-                "name": "Bloody-handed",
-                "hidden": false,
-                "id": "2dda-e1f2-6bd3-daca",
-                "profiles": [
-                  {
-                    "name": "Bloody-handed",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
-                    "hidden": false,
-                    "id": "e115-56b1-e2e3-d449",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "Any combat with at least one friendly model within 12\" of this Warlord, or a combat which includes this Warlord, gains a bonus of +1 to the number of Wounds caused for the purposes of combat resolution. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty."
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Stoic Defender",
-                "hidden": false,
-                "id": "2a2a-9a8f-b918-ea2b",
-                "profiles": [
-                  {
-                    "name": "Stoic Defender",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
-                    "hidden": false,
-                    "id": "69db-903c-90b3-34b3",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "When this Warlord or any friendly unit joined by a Warlord with this Trait makes a Shooting attack, the target unit must make a Pinning test if it suffers any unsaved Wounds. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty."
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Ever-vigilant",
-                "hidden": false,
-                "id": "86b5-2f16-8181-1b07",
-                "profiles": [
-                  {
-                    "name": "Ever-vigilant",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
-                    "hidden": false,
-                    "id": "390c-343c-f129-021f",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "When this Warlord, and any unit it has joined, Runs during the Movement phase, it adds the value of the Warlord’s Initiative Characteristic, increased by 1, to the distance moved, rather than the lowest Initiative Characteristic in the unit. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty."
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
                 "name": "Stalk Unseen",
                 "hidden": true,
                 "id": "36a7-4fce-3a87-d930",
@@ -5650,15 +5581,28 @@
                         "field": "ff6f-d84a-0071-98f3"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "7246-3389-7f60-2b4e",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "7246-3389-7f60-2b4e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -5727,15 +5671,28 @@
                         "field": "8536-e0b0-5066-cc2e"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "9372-9faa-67e3-c89d",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "9372-9faa-67e3-c89d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -5875,15 +5832,28 @@
                         "field": "a72c-7d78-8795-937f"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "ed74-ecf1-d0a6-0124",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "ed74-ecf1-d0a6-0124",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -5903,7 +5873,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "comment": "Marines Errant"
               },
               {
                 "type": "upgrade",
@@ -6141,15 +6112,28 @@
                         "field": "c72d-1444-e910-c8b9"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "1c46-7a96-775f-8572",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1c46-7a96-775f-8572",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -6297,15 +6281,28 @@
                         "field": "edd4-f517-ba1c-460c"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "1f40-fe51-5c23-c07e",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -6445,15 +6442,28 @@
                         "field": "9c16-92e7-3488-dcb3"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "ac2b-b7c8-7313-ae91",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "ac2b-b7c8-7313-ae91",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -6689,15 +6699,28 @@
                         "field": "9980-9c30-1cb7-c1e5"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "c50c-f665-e9dc-6460",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "c50c-f665-e9dc-6460",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -6853,15 +6876,28 @@
                         "field": "1fc3-203e-fd41-ed49"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "ac66-f192-47b4-7be7",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "ac66-f192-47b4-7be7",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -7001,15 +7037,28 @@
                         "field": "05d1-1a2a-fdee-131a"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "0895-4d0c-a12e-88bb",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "0895-4d0c-a12e-88bb",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -7062,15 +7111,28 @@
                         "field": "7955-2abd-d210-4cb9"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "8024-8905-4ee4-c1a4",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "8024-8905-4ee4-c1a4",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -7210,15 +7272,28 @@
                         "field": "c6fe-a38f-43b4-9902"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "80a9-2141-1026-4bc8",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "80a9-2141-1026-4bc8",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -7271,15 +7346,28 @@
                         "field": "2d20-55ef-16f6-bd3a"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "111f-a1af-b225-0e21",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "111f-a1af-b225-0e21",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -7404,9 +7492,548 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Coordinated Assault",
+                "hidden": true,
+                "id": "8c0c-0267-9749-491e",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "28a8-5ce0-b8a5-62b4"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "28a8-5ce0-b8a5-62b4"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "model",
+                            "childId": "75a3-46b2-47de-9789",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1ef8-9b76-c208-d080",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Coordinated Assault",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "086a-5291-633e-2720",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "The warlord and all friendly units within 12\", add +1 to their results when rolling for charge distance. In addition, while the warlord is alive the army may make an additional reaction in the movement phase."
+                      }
+                    ]
+                  }
+                ],
+                "comment": "Red Scorpions"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Trusted Advisor",
+                "hidden": true,
+                "id": "6a56-b00a-a11e-8b1f",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f6b9-1cc1-bcd6-9b34"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3e48-4ba8-26d0-4c77"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "f6b9-1cc1-bcd6-9b34"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "3e48-4ba8-26d0-4c77"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1ef8-9b76-c208-d080",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "3496-7068-df3f-c94b",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Trusted Advisor",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "ec54-4cf6-28af-903c",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "If Sevrin Loth is the armies Warlord, the Primary detachment may take a single additional force organisation slot from the following list; Elites, Fast Attack, Heavy Support. In addition to this, while Sevrin Loth is alive the controlling player may make an additional Reaction in the Assault Phase."
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Additional Force Organisation Slot",
+                    "id": "f632-3f1e-9470-6197",
+                    "hidden": false,
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Elites",
+                        "hidden": false,
+                        "id": "2faf-9450-f449-6446",
+                        "sortIndex": 1
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Fast Attack",
+                        "hidden": false,
+                        "id": "d372-f55c-6c7c-e867"
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Heavy Support",
+                        "hidden": false,
+                        "id": "2fa8-4bfa-660e-a104"
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "0130-d183-1d9e-7305-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "0130-d183-1d9e-7305-max"
+                      }
+                    ],
+                    "defaultSelectionEntryId": "2faf-9450-f449-6446"
+                  }
+                ]
               }
             ],
-            "defaultSelectionEntryId": "2dda-e1f2-6bd3-daca"
+            "defaultSelectionEntryId": "2dda-e1f2-6bd3-daca",
+            "selectionEntryGroups": [
+              {
+                "name": "Frontline Diplomat or Supreme Commander",
+                "id": "f8d6-6420-c331-aaba",
+                "hidden": true,
+                "flatten": true,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Supreme Commander",
+                    "hidden": false,
+                    "id": "5f88-a5e3-a229-2e06",
+                    "profiles": [
+                      {
+                        "name": "Supreme Commander",
+                        "typeId": "c8df-a54b-7b8c-78de",
+                        "typeName": "Warlord Trait",
+                        "hidden": false,
+                        "id": "d88f-6e44-037a-cc6e",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "typeId": "ea6d-ab61-e667-7094",
+                            "$text": "An army led by a model with the Supreme Commander (X) Rule may, if it choses, take 0-1 choices of any non Unique, Non HQ unit from any other army within their faction.\n\nFor instance, in an army led by Carab Culln, he could take a Tactical Squad with Chapter Tactics (Raptors) or an Assault Squad with Chapter Tactics (Marines Errant) in his Primary Detachment, counting the unit for all intents and purposes as part of the Primary Detachment."
+                          }
+                        ]
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "add",
+                        "value": "To add a unit from another Chapter add Allied Chapter Unit force in the Primary Detachment",
+                        "field": "info",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "5f88-a5e3-a229-2e06",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Frontline Diplomat",
+                    "hidden": false,
+                    "id": "6030-5346-2651-69b4",
+                    "profiles": [
+                      {
+                        "name": "Frontline Diplomat",
+                        "typeId": "c8df-a54b-7b8c-78de",
+                        "typeName": "Warlord Trait",
+                        "hidden": false,
+                        "id": "59f9-b99d-8e9d-b6b9",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "typeId": "ea6d-ab61-e667-7094",
+                            "$text": "Given Culln’s overall command during most of the Badab war, he could readily call on almost all of the forces under his command, weather that be fleet assets, Astartes strike forces, or even requisitioning Inquisitorial troops, they would all fight as a\nsingle, unified force under Culln’s exceptional command.\n\nIf Carab Culln is the army’s warlord, the army may take an additional Allied Detachment (2 Allied Detachments in total). In addition to this all Allies count as one better than they would usually be on the allied chart when fighting under Carab Culln. Eg. If two of the detachments were \"By The Tyrant’s/High Commander’s Command\", they would instead become \"Distrusted Allies\" Instead. Also if Carab Culln is involved in a challenge, he gains +1 to hit while he remains in a challenge.\n\nIn Addition to this while Culln is alive, the controlling player may make an additional reaction in any phase (only 1 additionalreaction per player turn)."
+                          }
+                        ]
+                      }
+                    ],
+                    "defaultAmount": ""
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "a9cd-13d0-0c1b-37e5-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "self",
+                    "shared": true,
+                    "id": "a9cd-13d0-0c1b-37e5-max"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "a9cd-13d0-0c1b-37e5-max"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "a9cd-13d0-0c1b-37e5-min"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1ef8-9b76-c208-d080",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "5347-d48f-5683-5ea6",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "defaultSelectionEntryId": "5f88-a5e3-a229-2e06"
+              },
+              {
+                "name": "Common Warlord Traits",
+                "id": "f919-2aa3-3201-9729",
+                "hidden": false,
+                "sortIndex": 1,
+                "flatten": true,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Bloody-handed",
+                    "hidden": false,
+                    "id": "2dda-e1f2-6bd3-daca",
+                    "profiles": [
+                      {
+                        "name": "Bloody-handed",
+                        "typeId": "c8df-a54b-7b8c-78de",
+                        "typeName": "Warlord Trait",
+                        "hidden": false,
+                        "id": "e115-56b1-e2e3-d449",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "typeId": "ea6d-ab61-e667-7094",
+                            "$text": "Any combat with at least one friendly model within 12\" of this Warlord, or a combat which includes this Warlord, gains a bonus of +1 to the number of Wounds caused for the purposes of combat resolution. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Ever-vigilant",
+                    "hidden": false,
+                    "id": "86b5-2f16-8181-1b07",
+                    "profiles": [
+                      {
+                        "name": "Ever-vigilant",
+                        "typeId": "c8df-a54b-7b8c-78de",
+                        "typeName": "Warlord Trait",
+                        "hidden": false,
+                        "id": "390c-343c-f129-021f",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "typeId": "ea6d-ab61-e667-7094",
+                            "$text": "When this Warlord, and any unit it has joined, Runs during the Movement phase, it adds the value of the Warlord’s Initiative Characteristic, increased by 1, to the distance moved, rather than the lowest Initiative Characteristic in the unit. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty."
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Stoic Defender",
+                    "hidden": false,
+                    "id": "2a2a-9a8f-b918-ea2b",
+                    "profiles": [
+                      {
+                        "name": "Stoic Defender",
+                        "typeId": "c8df-a54b-7b8c-78de",
+                        "typeName": "Warlord Trait",
+                        "hidden": false,
+                        "id": "69db-903c-90b3-34b3",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "typeId": "ea6d-ab61-e667-7094",
+                            "$text": "When this Warlord or any friendly unit joined by a Warlord with this Trait makes a Shooting attack, the target unit must make a Pinning test if it suffers any unsaved Wounds. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "66a5-eff3-276e-96e8",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "1e9a-80ba-aff1-7f21",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "6a88-3dc3-014a-6432",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "f075-1490-c16f-7d97",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "c9af-c9a1-d9da-6de2",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "46ed-4db5-6aec-996c",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "dc5f-5ccc-7776-39e1",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "ea2b-70f5-fcb3-1275",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "7cfa-2429-c739-0674",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "3496-7068-df3f-c94b",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "1038-28d3-f1e2-e80b",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "5347-d48f-5683-5ea6",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -11228,7 +11855,7 @@
                 ]
               }
             ],
-            "sortIndex": 5
+            "sortIndex": 4
           }
         ],
         "infoLinks": [
@@ -11294,7 +11921,7 @@
             "id": "a193-fe81-29bd-06e4",
             "type": "selectionEntry",
             "targetId": "b3f3-4f17-6be2-4082",
-            "sortIndex": 6
+            "sortIndex": 5
           },
           {
             "import": true,
@@ -11303,7 +11930,7 @@
             "id": "0881-6460-80df-8f3a",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 4
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -11349,6 +11976,15 @@
             "id": "88cf-c6c6-6851-dc0b",
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
+            "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Honour Guard",
+            "hidden": true,
+            "id": "1742-24e1-fa79-3e05",
+            "type": "selectionEntry",
+            "targetId": "1134-51a6-5c1a-2fa7",
             "sortIndex": 7
           }
         ],
@@ -12938,7 +13574,7 @@
             "id": "fa9b-8f30-ad49-ccdd",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 6
+            "sortIndex": 7
           },
           {
             "import": true,
@@ -12948,6 +13584,15 @@
             "type": "selectionEntry",
             "targetId": "f9d7-2f2b-e29e-e965",
             "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Anphelion Veterans",
+            "hidden": true,
+            "id": "dc57-2f8e-ad0b-b63c",
+            "type": "selectionEntry",
+            "targetId": "0b27-9ff7-c2c8-cff6",
+            "sortIndex": 6
           }
         ]
       },
@@ -14776,6 +15421,13 @@
             "id": "1d71-6bee-4999-01fe",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "44b8-5572-2a17-fb0c",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "sortIndex": 1,
@@ -14816,13 +15468,6 @@
             "targetId": "b780-4ce8-8482-c432"
           },
           {
-            "name": "Independent Character",
-            "id": "bc74-d01c-fd09-7e85",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "Relentless",
             "id": "9a24-5247-05f3-b267",
             "hidden": false,
@@ -14857,6 +15502,13 @@
             "hidden": false,
             "id": "b14d-dcf8-423a-2f61",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "d4ff-a4e2-6672-dffc",
+            "targetId": "325c-e791-275c-2ab7",
             "primary": false
           }
         ],
@@ -16391,13 +17043,6 @@
                     "field": "annotation"
                   }
                 ]
-              },
-              {
-                "name": "Independent Character",
-                "id": "8dc8-38b2-baac-875a",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "e453-db5d-2916-abcb"
               },
               {
                 "name": "Relentless",
@@ -22368,7 +23013,7 @@
             "id": "6fdd-d62a-aab8-6bc8",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 9
           },
           {
             "import": true,
@@ -22385,6 +23030,15 @@
             "id": "2bc3-e307-3de6-ec6d",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Anphelion Veterans",
+            "hidden": true,
+            "id": "e444-740f-450b-8ca0",
+            "type": "selectionEntry",
+            "targetId": "0b27-9ff7-c2c8-cff6",
+            "sortIndex": 8
           }
         ],
         "modifiers": [
@@ -24588,7 +25242,7 @@
             "id": "597f-23cd-3d23-7db6",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 10
           },
           {
             "import": true,
@@ -24644,6 +25298,24 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 7
+          },
+          {
+            "import": true,
+            "name": "Honour Guard",
+            "hidden": true,
+            "id": "e8a9-2593-93ef-aff1",
+            "type": "selectionEntry",
+            "targetId": "1134-51a6-5c1a-2fa7",
+            "sortIndex": 9
+          },
+          {
+            "import": true,
+            "name": "Anphelion Veterans",
+            "hidden": true,
+            "id": "d7b1-993a-9600-a1b0",
+            "type": "selectionEntry",
+            "targetId": "0b27-9ff7-c2c8-cff6",
+            "sortIndex": 8
           }
         ]
       },
@@ -27699,7 +28371,7 @@
             "id": "cdd3-0705-4eab-6870",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 7
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -27746,6 +28418,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Anphelion Veterans",
+            "hidden": true,
+            "id": "b1ad-8aa6-3778-8907",
+            "type": "selectionEntry",
+            "targetId": "0b27-9ff7-c2c8-cff6",
+            "sortIndex": 7
           }
         ]
       },
@@ -31968,6 +32649,60 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Narthecium",
+                "hidden": true,
+                "id": "7944-d7af-bb48-747e",
+                "type": "selectionEntry",
+                "targetId": "98ff-b553-78ba-51d3",
+                "sortIndex": 12,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "531b-281f-5d08-3c6b"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 20
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "531b-281f-5d08-3c6b"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1ef8-9b76-c208-d080",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -38077,6 +38812,60 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Narthecium",
+                "hidden": true,
+                "id": "a79c-6e27-f512-005e",
+                "type": "selectionEntry",
+                "targetId": "98ff-b553-78ba-51d3",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "41b7-aea1-6abe-62c1"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 20
+                  }
+                ],
+                "sortIndex": 11,
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "41b7-aea1-6abe-62c1"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1ef8-9b76-c208-d080",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "selectionEntries": [
@@ -40903,6 +41692,60 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Narthecium",
+                "hidden": true,
+                "id": "49b3-afaf-01a1-f65d",
+                "type": "selectionEntry",
+                "targetId": "98ff-b553-78ba-51d3",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e08d-06fd-deaa-002b"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 20
+                  }
+                ],
+                "sortIndex": 11,
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "e08d-06fd-deaa-002b"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1ef8-9b76-c208-d080",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "selectionEntries": [
@@ -43808,6 +44651,60 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Narthecium",
+                "hidden": true,
+                "id": "9356-7627-6539-4715",
+                "type": "selectionEntry",
+                "targetId": "98ff-b553-78ba-51d3",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1b57-7cf4-9ac8-7f9b"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 20
+                  }
+                ],
+                "sortIndex": 10,
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "1b57-7cf4-9ac8-7f9b"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1ef8-9b76-c208-d080",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "profiles": [
@@ -51193,6 +52090,60 @@
                 "type": "selectionEntryGroup",
                 "targetId": "1375-12a2-1a3c-8b29",
                 "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Narthecium",
+                "hidden": true,
+                "id": "08ee-b660-b7a9-a6ad",
+                "type": "selectionEntry",
+                "targetId": "98ff-b553-78ba-51d3",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "61cb-3afd-2936-a9fd"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "54b5-0978-c8a4-5b5a",
+                    "value": 20
+                  }
+                ],
+                "sortIndex": 10,
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "61cb-3afd-2936-a9fd"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1ef8-9b76-c208-d080",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "collapsible": true
@@ -63683,24 +64634,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Chapter",
-        "hidden": false,
-        "id": "ad4a-c48a-b8a0-7943",
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Chapter",
-            "hidden": false,
-            "id": "33d9-6464-0ba9-a38f",
-            "type": "selectionEntryGroup",
-            "targetId": "0d21-2a2d-aab6-7ff6",
-            "flatten": true
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Chapter Tactics",
         "hidden": false,
         "id": "cc7e-de45-e780-c1bf",
@@ -63823,6 +64756,15 @@
                         "field": "selections",
                         "scope": "force",
                         "childId": "111f-a1af-b225-0e21",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1ef8-9b76-c208-d080",
                         "shared": true,
                         "includeChildSelections": true
                       }
@@ -64849,6 +65791,45 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "a160-eb17-4cad-3749"
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Red Scorpions)",
+            "id": "35e5-a93d-65a0-3bfd",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "1ef8-9b76-c208-d080",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Chapter Tactics (Red Scorpions)",
+                "id": "adb8-78d9-5ce6-1d2f",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e753-72e1-0d1f-6164"
+              },
+              {
+                "name": "Fortitude and Contempt",
+                "id": "8282-4a20-ebb4-6d83",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "33f4-4409-380e-6255"
               }
             ]
           }
@@ -66468,6 +67449,185 @@
                 "field": "annotation"
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Honour Guard",
+        "hidden": true,
+        "id": "1134-51a6-5c1a-2fa7",
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 5,
+            "field": "54b5-0978-c8a4-5b5a",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "model",
+                "shared": true,
+                "roundUp": false
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "8eb1-c801-1079-40ee",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "325c-e791-275c-2ab7",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "1ef8-9b76-c208-d080",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "must be attached to an Independent Character",
+            "field": "info",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "9f78-4194-5763-f6ad",
+                    "shared": true
+                  },
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "1134-51a6-5c1a-2fa7",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "a39d-7554-939b-c56e"
+          },
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "8eb1-c801-1079-40ee",
+            "includeChildSelections": true
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "a39d-7554-939b-c56e"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "1ef8-9b76-c208-d080",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "af8c-8112-b1e1-367d",
+                            "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "325c-e791-275c-2ab7",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "9f78-4194-5763-f6ad",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Cloaked in Honour",
+            "id": "5b5d-176b-370e-73f9",
+            "hidden": false,
+            "description": "Whenever a unit containing models with this special rule declares a charge targeting a unit already engaged in combat, the charge roll gains an additional +1 modifier, if the charge is successful then all models in the charging unit with the Cloaked in Honour special rule gain +1 to hit for the duration of the turn in which that charge is made."
           }
         ]
       }
@@ -68121,6 +69281,18 @@
         "id": "a160-eb17-4cad-3749",
         "hidden": false,
         "description": "When rolling To Hit with this special rule as part of a Shooting Attack add+1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of the models with this special rule in the same shooting phase, and if the attacking model is within 6\" of a model from that friendly unit. This does not affect attacks made with a Blast or Barrage special rules."
+      },
+      {
+        "name": "Chapter Tactics (Red Scorpions)",
+        "id": "e753-72e1-0d1f-6164",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Red Scorpions) Special Rule gains Fortitude and Contempt Special Rules."
+      },
+      {
+        "name": "Fortitude and Contempt",
+        "id": "33f4-4409-380e-6255",
+        "hidden": false,
+        "description": "Models with Chapter Tactics (Red Scorpions) may re-roll all failed Pinning tests but cannot benefit from the Evade Reaction."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -72216,6 +73388,11 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Chapter Selection",
+        "id": "a3ca-46dd-75f7-e0b5",
+        "hidden": false
       }
     ],
     "infoLinks": [
@@ -72310,6 +73487,24 @@
                 "shared": true,
                 "id": "bc98-9608-a939-49da"
               }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "bc98-9608-a939-49da",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "2faf-9450-f449-6446",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           },
           {
@@ -72356,6 +73551,24 @@
                 "shared": true,
                 "id": "9dc7-a602-9e17-d886"
               }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "9dc7-a602-9e17-d886",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "d372-f55c-6c7c-e867",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
             ]
           },
           {
@@ -72371,6 +73584,24 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "5046-0513-c6e4-d206"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "5046-0513-c6e4-d206",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "2fa8-4bfa-660e-a104",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ]
           }
@@ -72498,16 +73729,131 @@
             "type": "set",
             "value": true,
             "field": "hidden",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "e0e3-9dad-3a25-5076",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8c3c-bfd5-2124-e938",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8a6b-6491-0d2f-3074",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "6d2c-a4d2-bd44-4e71",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "e1fc-5f3f-39b6-92c5",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "d1c7-01d0-7db8-bc81",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "348d-a498-1408-c784",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "5d09-481e-11a0-043a",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "ab36-dbc2-5128-a56e",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "6535-ae03-a557-bf06",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "83e2-bfc7-7be1-62cf",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "2e53-3e9e-bc78-8890",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "cd85-837d-0c8b-009d",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "2ee8-f7ca-31e0-fd7e",
             "conditions": [
               {
-                "type": "notInstanceOf",
+                "type": "atLeast",
                 "value": 1,
                 "field": "selections",
-                "scope": "primary-catalogue",
-                "childId": "0c55-5a03-a16a-69cd",
+                "scope": "force",
+                "childId": "6030-5346-2651-69b4",
                 "shared": true,
-                "includeChildSelections": true,
-                "includeChildForces": true
+                "includeChildSelections": true
               }
             ]
           }
@@ -72583,14 +73929,115 @@
             "type": "set",
             "value": true,
             "field": "hidden",
-            "conditions": [
+            "conditionGroups": [
               {
-                "type": "notInstanceOf",
-                "value": 1,
-                "field": "selections",
-                "scope": "primary-catalogue",
-                "childId": "0c55-5a03-a16a-69cd",
-                "shared": true
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "e0e3-9dad-3a25-5076",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8c3c-bfd5-2124-e938",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8a6b-6491-0d2f-3074",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "6d2c-a4d2-bd44-4e71",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "e1fc-5f3f-39b6-92c5",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "d1c7-01d0-7db8-bc81",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "348d-a498-1408-c784",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "5d09-481e-11a0-043a",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "ab36-dbc2-5128-a56e",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "6535-ae03-a557-bf06",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "83e2-bfc7-7be1-62cf",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "2e53-3e9e-bc78-8890",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "cd85-837d-0c8b-009d",
+                    "shared": true
+                  }
+                ]
               }
             ]
           }
@@ -72686,15 +74133,29 @@
                 "type": "increment",
                 "value": 1,
                 "field": "3252-ab54-2fdd-13b7",
-                "conditions": [
+                "conditionGroups": [
                   {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "2ca5-c322-c8f3-5ebc",
-                    "shared": true,
-                    "includeChildSelections": true
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "2ca5-c322-c8f3-5ebc",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "2faf-9450-f449-6446",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
                   }
                 ]
               }
@@ -72773,6 +74234,22 @@
                         "includeChildSelections": true
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "bd50-d2b4-7e64-3107",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "d372-f55c-6c7c-e867",
+                    "shared": true,
+                    "includeChildSelections": true
                   }
                 ]
               }
@@ -72889,6 +74366,22 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "0181-b1ab-8cfd-6339",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "2fa8-4bfa-660e-a104",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
               }
             ]
           }
@@ -72994,19 +74487,450 @@
             "type": "set",
             "value": true,
             "field": "hidden",
-            "conditions": [
+            "conditionGroups": [
               {
-                "type": "notInstanceOf",
-                "value": 1,
-                "field": "selections",
-                "scope": "primary-catalogue",
-                "childId": "0c55-5a03-a16a-69cd",
-                "shared": true
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "e0e3-9dad-3a25-5076",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8c3c-bfd5-2124-e938",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8a6b-6491-0d2f-3074",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "6d2c-a4d2-bd44-4e71",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "e1fc-5f3f-39b6-92c5",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "d1c7-01d0-7db8-bc81",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "348d-a498-1408-c784",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "5d09-481e-11a0-043a",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "ab36-dbc2-5128-a56e",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "6535-ae03-a557-bf06",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "83e2-bfc7-7be1-62cf",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "2e53-3e9e-bc78-8890",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "cd85-837d-0c8b-009d",
+                    "shared": true
+                  }
+                ]
               }
             ]
           }
         ],
-        "sortIndex": 1
+        "sortIndex": 1,
+        "forceEntries": [
+          {
+            "name": "Allied Chapter Unit (Supreme Commander)",
+            "id": "657d-0c64-4d07-bbe5",
+            "hidden": false,
+            "categoryLinks": [
+              {
+                "name": "Chapter Selection",
+                "hidden": false,
+                "id": "980f-b54c-1174-0835",
+                "targetId": "a3ca-46dd-75f7-e0b5",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b14b-99bf-8c23-3c0a-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b14b-99bf-8c23-3c0a-max"
+                  }
+                ]
+              },
+              {
+                "name": "Elites",
+                "hidden": false,
+                "id": "841b-8554-7d44-7eb8",
+                "targetId": "a300-5393-99ea-9657",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bb73-4313-ffc8-72f3"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "bb73-4313-ffc8-72f3",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "1685-8865-a2b2-5fb9",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "2e5a-9101-3872-faad",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "1dff-e2a4-5442-6863",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Troops",
+                "hidden": false,
+                "id": "0eb2-fb65-71d7-9567",
+                "targetId": "1685-8865-a2b2-5fb9",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ca43-8a65-9728-adae"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "ca43-8a65-9728-adae",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "a300-5393-99ea-9657",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "2e5a-9101-3872-faad",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "1dff-e2a4-5442-6863",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Fast Attack",
+                "hidden": false,
+                "id": "3eec-3502-d9dc-1493",
+                "targetId": "2e5a-9101-3872-faad",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9067-1094-34d1-c3dc"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "9067-1094-34d1-c3dc",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "1685-8865-a2b2-5fb9",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "a300-5393-99ea-9657",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "1dff-e2a4-5442-6863",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Heavy Support",
+                "hidden": false,
+                "id": "040b-f32b-c275-fc22",
+                "targetId": "1dff-e2a4-5442-6863",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fc3c-cd3e-019f-fd91"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "fc3c-cd3e-019f-fd91",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "1685-8865-a2b2-5fb9",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "2e5a-9101-3872-faad",
+                            "shared": true
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "a300-5393-99ea-9657",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "forces",
+                "scope": "parent",
+                "shared": true,
+                "id": "71d5-0cbb-2979-02ad"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": true,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "71d5-0cbb-2979-02ad"
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "notInstanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "childId": "83e2-bfc7-7be1-62cf",
+                        "shared": true
+                      },
+                      {
+                        "type": "lessThan",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "roster",
+                        "childId": "5f88-a5e3-a229-2e06",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Chapter",
+        "hidden": false,
+        "id": "86e7-4a54-16c6-e922",
+        "categoryLinks": [
+          {
+            "name": "Chapter Selection",
+            "hidden": false,
+            "id": "e9c7-cc6b-ee2c-948c",
+            "targetId": "a3ca-46dd-75f7-e0b5",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter (Loyalists)",
+            "hidden": false,
+            "id": "d31d-3f6c-a29b-2211",
+            "type": "selectionEntryGroup",
+            "targetId": "e1e7-7fb7-c4f2-5516"
+          }
+        ]
       }
     ]
   }

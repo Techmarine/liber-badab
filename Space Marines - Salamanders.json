@@ -88,6 +88,13 @@
             "id": "93dc-a8c8-fa77-1b19",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "bd1e-d73e-85a9-e2ab",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -517,13 +524,6 @@
             ]
           },
           {
-            "name": "Independent Character",
-            "id": "61fd-5ed9-a18c-aaaf",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "Stubborn",
             "id": "6f57-2ca1-20e4-8959",
             "hidden": false,
@@ -575,6 +575,13 @@
             "hidden": false,
             "id": "4948-de17-6c88-2b65",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "492b-b857-d9be-7a92",
+            "targetId": "325c-e791-275c-2ab7",
             "primary": false
           }
         ],
@@ -932,13 +939,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Independent Character",
-            "id": "1f1f-28e7-4e14-b3e6",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
           },
           {
             "name": "It Will not Die",

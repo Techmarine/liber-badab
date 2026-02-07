@@ -1,0 +1,993 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "83e2-bfc7-7be1-62cf",
+    "name": "Space Marines - Red Scorpions",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Space Marines",
+        "id": "9278-34b6-f2ff-c31f",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Red Scorpions",
+        "hidden": false,
+        "id": "d99f-0c9c-f13e-260e",
+        "type": "selectionEntry",
+        "targetId": "1ef8-9b76-c208-d080",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "291e-e3c8-3eda-4c62",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1"
+      },
+      {
+        "import": true,
+        "name": "Lord High Commander Carab Culln",
+        "hidden": false,
+        "id": "fe25-4b08-00f0-af7b",
+        "type": "selectionEntry",
+        "targetId": "5347-d48f-5683-5ea6"
+      },
+      {
+        "import": true,
+        "name": "Magister Sevrin Loth",
+        "hidden": false,
+        "id": "aac8-d76a-8c0f-7833",
+        "type": "selectionEntry",
+        "targetId": "3496-7068-df3f-c94b"
+      }
+    ],
+    "type": "catalogue",
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Lord High Commander Carab Culln",
+        "hidden": false,
+        "id": "5347-d48f-5683-5ea6",
+        "sortIndex": 1,
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 235
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "b63a-b0f6-0dfb-9ad8",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "7937-ec88-bcf9-4230",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Chapter Master",
+            "hidden": false,
+            "id": "7403-b37d-e833-4b4a",
+            "targetId": "2ca5-c322-c8f3-5ebc",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "07f2-7c1c-c725-28ca",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "3feb-9afc-759d-0f14",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Lord High Commander Carab Culln",
+            "hidden": false,
+            "id": "4582-56ba-35d5-fdd1",
+            "profiles": [
+              {
+                "name": "Lord High Commander Carab Culln",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "0266-ece0-7790-9787",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry Unit Type",
+                "hidden": false,
+                "id": "cee9-96c6-819a-458b",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "685c-e91d-af5d-b6cf",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "9224-5260-d3cb-609e",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              },
+              {
+                "name": "Heavy Sub-type",
+                "hidden": false,
+                "id": "1065-b779-9f70-77ff",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bf14-fd90-1602-b821-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bf14-fd90-1602-b821-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "eeee-c88c-55ce-3acc",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "cce5-545c-f42c-88c7",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1fb9-e08a-8e23-283a"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "4d54-27e6-dccd-6194",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Indomitus Terminator Armour",
+                "hidden": false,
+                "id": "0664-b81f-f2ad-1d7e",
+                "type": "selectionEntry",
+                "targetId": "aa95-1188-68f8-70c3",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cabf-90bb-2643-ee64-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cabf-90bb-2643-ee64-max"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "increment",
+                    "value": 1,
+                    "field": "69ed-cbc7-3fbc-7ba5",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Storm Bolter",
+                "hidden": false,
+                "id": "9606-0739-6ea6-9cae",
+                "type": "selectionEntry",
+                "targetId": "b584-e06b-ebeb-4d04",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Master-crafted",
+                    "hidden": false,
+                    "id": "cbb4-7f83-c333-7ba7",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c044-d3ec-ebc4-d882"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Master-crafted",
+                    "id": "14cc-78fc-34fd-9de7",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9a1d-2ebd-cbdb-d3d6-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9a1d-2ebd-cbdb-d3d6-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "e528-c0b1-a1b1-c957",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b604-a70c-12c8-deed-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b604-a70c-12c8-deed-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Teleport Homer",
+                "hidden": false,
+                "id": "f210-669e-f890-155d",
+                "type": "selectionEntry",
+                "targetId": "00f5-e89a-3b5f-50e9",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bf04-8be8-a916-6c12-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bf04-8be8-a916-6c12-max"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Blade of the Scorpion",
+                "hidden": false,
+                "id": "f976-6e83-a736-ca1b",
+                "profiles": [
+                  {
+                    "name": "The Blade of the Scorpion",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "e8a8-8389-21bd-07f1",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "+1"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Master-Crafted, Murderous Strike (5+) Brutal (2), The Blade of the Scorpion"
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "The Blade of the Scorpion",
+                    "id": "10b2-c7e1-5d38-bd7a",
+                    "hidden": false,
+                    "description": "If Carab Culln’s Weapon Skill is greater than the highest weapon skill of the enemy he is fighting, he gains a bonus number of attacks equal to the difference in the characteristics."
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Master-crafted",
+                    "id": "088b-f76d-c7bd-7632",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  },
+                  {
+                    "name": "Murderous Strike",
+                    "id": "0f26-e863-8e3b-86a0",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "5e54-e48c-3700-6d3e",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "5+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Brutal",
+                    "id": "61e6-28c7-c531-cde5",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fc68-9ea6-18e4-d94b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ddde-3184-2a4c-c6d6-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ddde-3184-2a4c-c6d6-max"
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "8200-ab23-7c5f-3bb3",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Bulky",
+            "id": "6781-9218-bea4-cdd9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8317-bc69-b786-390d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "2",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Eternal Warrior",
+            "id": "ab2f-c473-dfb7-33dd",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d9b7-d83e-51e0-bcfc"
+          },
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "ee28-d63f-00ff-bf28",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Proud to Live, Proud to Die, Hard to Kill",
+            "id": "6e44-d304-1c0d-49aa",
+            "hidden": false,
+            "description": "While Lord Commander Carab Culln is alive all friendly units within 12” add +1 to their combat resolution score. Note, this bonus does not stack for multiple units involved in a single combat."
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Magister Sevrin Loth",
+        "hidden": false,
+        "id": "3496-7068-df3f-c94b",
+        "sortIndex": 2,
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 205
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "b3eb-90f4-451a-6b0f",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "a11f-ecfb-535d-ccbe",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "a465-1be4-7dcc-4c0f",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "61b1-d489-f133-a141",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Magister Sevrin Loth",
+            "hidden": false,
+            "id": "f523-bbfc-ff0b-67b6",
+            "sortIndex": 1,
+            "profiles": [
+              {
+                "name": "Magister Sevrin Loth",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "9851-acf5-1f7e-70c0",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry Unit Type",
+                "hidden": false,
+                "id": "4768-5b3d-6cfe-cfb1",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "7d5b-02fc-5d51-6b51",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "cfbd-4cfe-1eff-fbc3",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              },
+              {
+                "name": "Psyker",
+                "hidden": false,
+                "id": "81cf-a4e8-a2c7-9e1b",
+                "targetId": "0e69-ba6c-2394-5c44",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a3d3-f60d-5829-61ae-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a3d3-f60d-5829-61ae-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "f8c1-4ef5-1188-3c94",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "523b-c539-bd59-b932",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Force Axe",
+                "hidden": false,
+                "id": "e1b4-f760-e87f-6e20",
+                "type": "selectionEntry",
+                "targetId": "c4cc-d581-1e2d-4280",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Master-crafted",
+                    "hidden": false,
+                    "id": "7d4d-78a5-b0e0-441f",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c044-d3ec-ebc4-d882"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Master-crafted",
+                    "id": "dd44-e04d-9847-d67f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d330-c0f4-2826-54c0-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d330-c0f4-2826-54c0-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Psychic Hood",
+                "hidden": false,
+                "id": "eb8f-e3dc-1b0d-256a",
+                "type": "selectionEntry",
+                "targetId": "6e2c-170d-034f-f682",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "840e-75d7-6b02-102b-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "840e-75d7-6b02-102b-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "481f-a19a-abf7-88a7",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "26df-08b5-73f3-2745-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "26df-08b5-73f3-2745-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "ba93-3a62-2edd-3886",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c116-0fa3-58d5-15fc-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c116-0fa3-58d5-15fc-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "e696-78bf-9e20-b02c",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "318b-d02b-af58-2b63-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "318b-d02b-af58-2b63-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Core Psychic Discipline",
+                "hidden": false,
+                "id": "aa26-d747-b609-959a",
+                "type": "selectionEntryGroup",
+                "targetId": "a909-2c2a-9dba-237c",
+                "modifiers": [
+                  {
+                    "type": "increment",
+                    "value": 2,
+                    "field": "6f61-4185-7a33-4a1a"
+                  }
+                ],
+                "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "adf7-afa4-c1a4-5c81",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 3
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Armour of Selket",
+                "hidden": false,
+                "id": "8e9e-0e9f-db93-0f13",
+                "profiles": [
+                  {
+                    "name": "The Armour of Selket",
+                    "typeId": "8d18-819f-6442-e206",
+                    "typeName": "Wargear",
+                    "hidden": false,
+                    "id": "8400-40a5-0477-f9c9",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "73f7-995c-ccc1-9f39",
+                        "$text": "If he chooses, Loth may attempt to imbue the Armour of Selket with his own psychic energies. At the beginning of the controlling players first turn (Before Reserve Rolls have been made) Loth may make a Psychic Check, if passed he receives a 3+ Invulnerable save for himself and a 5+ invulnerable save for his squad until the start of his next player turn."
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9072-7bbe-36c8-3c60-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9072-7bbe-36c8-3c60-max"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "cc02-9a9c-2e9e-08cb",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "885c-96f0-18da-9f72",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Master Psyker",
+            "id": "20e0-356b-3778-8575",
+            "hidden": false,
+            "description": "Sevrin Loth may pick up to 3 of the following psychic disciplines; Biomancy, Divination, Pyromancy, Telekinesis, Telepathy, Thaumaturgy. In addition, Sevrin Loth may use two Psychic Powers or Psychic weapons each phase, but if he does so, the second power’s Psychic Check is made at -1 Leadership"
+          },
+          {
+            "name": "Revered",
+            "id": "dc9c-398c-774a-b4f1",
+            "hidden": false,
+            "description": "Sevrin Loth may take a Retinue as if he had the Master of the Company special rule."
+          }
+        ]
+      }
+    ]
+  }
+}

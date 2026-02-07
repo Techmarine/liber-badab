@@ -87,6 +87,13 @@
             "id": "4b44-c04c-beca-c3f9",
             "targetId": "be4d-83ab-c864-a7c6",
             "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "3b52-4161-4e6c-ce3e",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -472,13 +479,6 @@
         ],
         "infoLinks": [
           {
-            "name": "Independent Character",
-            "id": "e7e5-ea10-a959-da11",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "And They Shall Know No Fear",
             "id": "2bee-7926-7212-f4c4",
             "hidden": false,
@@ -572,6 +572,13 @@
             "hidden": false,
             "id": "aa93-3bb4-6ef0-b05b",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "59cd-296b-19fd-35ca",
+            "targetId": "325c-e791-275c-2ab7",
             "primary": false
           }
         ],
@@ -1099,13 +1106,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "b780-4ce8-8482-c432"
-          },
-          {
-            "name": "Independent Character",
-            "id": "6f9a-30a4-2278-134a",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
           },
           {
             "name": "Preferred Enemy",

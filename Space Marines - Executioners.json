@@ -88,13 +88,6 @@
             ]
           },
           {
-            "name": "Independent Character",
-            "id": "13ee-93bf-1ec9-0f0f",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "e453-db5d-2916-abcb"
-          },
-          {
             "name": "Rage",
             "id": "c666-7469-cdbd-4433",
             "hidden": false,
@@ -129,6 +122,13 @@
             "hidden": false,
             "id": "4b76-35df-920d-a802",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "d828-efc2-8678-dc0f",
+            "targetId": "325c-e791-275c-2ab7",
             "primary": false
           }
         ],
