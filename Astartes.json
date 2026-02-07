@@ -2170,6 +2170,15 @@
             "type": "selectionEntry",
             "targetId": "b3f3-4f17-6be2-4082",
             "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "a4cf-cbe8-51e3-5d6d",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 3
           }
         ],
         "infoLinks": [
@@ -4924,6 +4933,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "45ff-b2d6-f9ac-cc7c",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 4
           }
         ],
         "infoLinks": [
@@ -6439,28 +6457,15 @@
                         "field": "edd4-f517-ba1c-460c"
                       }
                     ],
-                    "conditionGroups": [
+                    "conditions": [
                       {
-                        "type": "and",
-                        "conditions": [
-                          {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "force",
-                            "childId": "1f40-fe51-5c23-c07e",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ]
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1f40-fe51-5c23-c07e",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -8053,6 +8058,85 @@
                         "field": "annotation"
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Weapon Mastery",
+                "hidden": true,
+                "id": "5f06-5ac7-6c16-be0f",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0375-3229-1a4c-00b9"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "0375-3229-1a4c-00b9"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "7d52-2c3a-810d-b85d",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Weapon Mastery",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "db50-cdb7-fba0-1690",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "The Warlord and unit he joins lose the One Shot rule from any Combi-melta or Combi-plasma weapons the unit carries. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "replace",
+                    "value": "",
+                    "field": "d2a2-1139-48cb-4472",
+                    "scope": "unit",
+                    "affects": "entries.recursive.ab66-c50b-b845-20da.profiles.Ranged Weapon",
+                    "arg": ", One Shot"
+                  },
+                  {
+                    "type": "replace",
+                    "value": "",
+                    "field": "d2a2-1139-48cb-4472",
+                    "scope": "unit",
+                    "affects": "entries.recursive.5237-5fab-96cd-13a9.profiles.Ranged Weapon",
+                    "arg": ", One Shot"
                   }
                 ]
               }
@@ -12289,7 +12373,7 @@
             "id": "0881-6460-80df-8f3a",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 9
           },
           {
             "import": true,
@@ -12345,6 +12429,15 @@
             "type": "selectionEntry",
             "targetId": "1134-51a6-5c1a-2fa7",
             "sortIndex": 7
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "036d-7655-fd2d-bc34",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 8
           }
         ],
         "modifiers": [
@@ -13933,7 +14026,7 @@
             "id": "fa9b-8f30-ad49-ccdd",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 7
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -13952,6 +14045,15 @@
             "type": "selectionEntry",
             "targetId": "0b27-9ff7-c2c8-cff6",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "d7ca-13d2-344e-3255",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 7
           }
         ]
       },
@@ -15620,7 +15722,7 @@
                 "id": "c0af-44a8-f58c-11db",
                 "type": "selectionEntryGroup",
                 "targetId": "e290-7819-af75-85c4",
-                "sortIndex": 14
+                "sortIndex": 15
               },
               {
                 "import": true,
@@ -15879,6 +15981,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "2b5f-5d70-385f-56d1",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 4
           }
         ],
         "infoLinks": [
@@ -17667,6 +17778,15 @@
             "type": "selectionEntry",
             "targetId": "b3f3-4f17-6be2-4082",
             "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "65c0-6991-13b9-6663",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 3
           }
         ]
       },
@@ -23640,7 +23760,7 @@
             "id": "6fdd-d62a-aab8-6bc8",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 10
+            "sortIndex": 11
           },
           {
             "import": true,
@@ -23666,6 +23786,15 @@
             "type": "selectionEntry",
             "targetId": "0b27-9ff7-c2c8-cff6",
             "sortIndex": 8
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "e1a7-1223-d639-48b1",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 10
           }
         ],
         "modifiers": [
@@ -25923,7 +26052,7 @@
             "id": "597f-23cd-3d23-7db6",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 10
+            "sortIndex": 11
           },
           {
             "import": true,
@@ -25997,6 +26126,15 @@
             "type": "selectionEntry",
             "targetId": "0b27-9ff7-c2c8-cff6",
             "sortIndex": 8
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "206f-b427-08e4-f6ae",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 10
           }
         ]
       },
@@ -26703,7 +26841,8 @@
                 "id": "dd52-586b-baed-8425",
                 "type": "selectionEntryGroup",
                 "targetId": "ef43-031c-15fc-7999",
-                "sortIndex": 8
+                "sortIndex": 8,
+                "flatten": true
               }
             ],
             "selectionEntryGroups": [
@@ -29106,7 +29245,7 @@
             "id": "cdd3-0705-4eab-6870",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 9
           },
           {
             "import": true,
@@ -29162,6 +29301,15 @@
             "type": "selectionEntry",
             "targetId": "0b27-9ff7-c2c8-cff6",
             "sortIndex": 7
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "0b4a-8df2-d031-5db6",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 8
           }
         ]
       },
@@ -30877,6 +31025,15 @@
             "id": "f63e-1429-b3ed-654c",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
+            "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "ee48-90f8-0495-f4b4",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
             "sortIndex": 3
           }
         ]
@@ -32891,6 +33048,91 @@
                     ],
                     "flatten": true,
                     "defaultSelectionEntryId": "f5e5-e800-4f68-95b0"
+                  },
+                  {
+                    "name": "Narthecium",
+                    "id": "21f5-3968-2a96-53cd",
+                    "hidden": false,
+                    "sortIndex": 11,
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "614f-7238-c353-00f0-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "shared": true,
+                        "id": "614f-7238-c353-00f0-max"
+                      }
+                    ],
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Narthecium",
+                        "hidden": false,
+                        "id": "a747-2ef9-1e80-bdb5",
+                        "type": "selectionEntry",
+                        "targetId": "98ff-b553-78ba-51d3"
+                      },
+                      {
+                        "import": true,
+                        "name": "Power Maul",
+                        "hidden": true,
+                        "id": "2b43-6957-fbd6-28f2",
+                        "type": "selectionEntry",
+                        "targetId": "ad60-6ada-12a7-f47c",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden",
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "951a-d3c5-d620-d1f8",
+                                "shared": true
+                              }
+                            ]
+                          },
+                          {
+                            "type": "prepend",
+                            "value": "Master-crafted",
+                            "field": "name",
+                            "join": " "
+                          }
+                        ],
+                        "entryLinks": [
+                          {
+                            "import": true,
+                            "name": "Master-crafted",
+                            "hidden": false,
+                            "id": "4368-d332-94bd-54a5",
+                            "type": "selectionEntryGroup",
+                            "targetId": "c044-d3ec-ebc4-d882"
+                          }
+                        ],
+                        "infoLinks": [
+                          {
+                            "name": "Master-crafted",
+                            "id": "500c-a566-b971-b45e",
+                            "hidden": false,
+                            "type": "rule",
+                            "targetId": "0371-1ea2-8615-e03a"
+                          }
+                        ]
+                      }
+                    ],
+                    "flatten": true
                   }
                 ],
                 "profiles": [
@@ -32971,32 +33213,6 @@
                   }
                 ],
                 "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Narthecium",
-                    "hidden": false,
-                    "id": "a747-2ef9-1e80-bdb5",
-                    "type": "selectionEntry",
-                    "targetId": "98ff-b553-78ba-51d3",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "1e63-f54b-92f4-14d2-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "1e63-f54b-92f4-14d2-max"
-                      }
-                    ]
-                  },
                   {
                     "import": true,
                     "name": "Frag Grenades",
@@ -33105,7 +33321,71 @@
                     "sortIndex": 9
                   }
                 ],
-                "collapsible": true
+                "collapsible": true,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Mortuary Chaplain",
+                    "hidden": true,
+                    "id": "951a-d3c5-d620-d1f8",
+                    "sortIndex": 10,
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6204-422c-1fd6-9799"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "6204-422c-1fd6-9799"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "7d52-2c3a-810d-b85d",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Hatred",
+                        "id": "635c-3c89-07e1-9260",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "bacb-64aa-bb42-4c9d",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": "Everything",
+                            "field": "annotation"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "constraints": [
@@ -33147,6 +33427,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "bf08-b149-bb35-e6c0",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 3
           }
         ]
       },
@@ -34967,7 +35256,8 @@
                 "id": "f95d-54fc-7b06-0a74",
                 "type": "selectionEntryGroup",
                 "targetId": "ef43-031c-15fc-7999",
-                "sortIndex": 9
+                "sortIndex": 9,
+                "flatten": true
               }
             ],
             "selectionEntryGroups": [
@@ -36107,7 +36397,7 @@
             "id": "92ca-8d0c-de30-452b",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 9
           },
           {
             "import": true,
@@ -36154,6 +36444,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 7
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "c739-2198-010a-f3ee",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 8
           }
         ]
       },
@@ -38047,7 +38346,8 @@
                 "id": "0089-ffe8-d918-5be4",
                 "type": "selectionEntryGroup",
                 "targetId": "ef43-031c-15fc-7999",
-                "sortIndex": 7
+                "sortIndex": 7,
+                "flatten": true
               }
             ]
           },
@@ -38188,7 +38488,7 @@
             "id": "5ba4-942d-791a-bd54",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 5
+            "sortIndex": 6
           },
           {
             "import": true,
@@ -38226,6 +38526,15 @@
               }
             ],
             "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "e5ef-52b8-31ac-b137",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 5
           }
         ]
       },
@@ -39455,7 +39764,8 @@
                 "id": "7545-c9e6-3b11-a4fe",
                 "type": "selectionEntryGroup",
                 "targetId": "ef43-031c-15fc-7999",
-                "sortIndex": 6
+                "sortIndex": 6,
+                "flatten": true
               }
             ]
           },
@@ -40664,7 +40974,7 @@
             "id": "0258-68ea-ea8f-7f42",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 5
+            "sortIndex": 6
           },
           {
             "import": true,
@@ -40711,6 +41021,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "855d-823a-2ffa-11c8",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 5
           }
         ]
       },
@@ -43816,7 +44135,7 @@
             "id": "9081-68a5-85ef-1b33",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 7
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -43826,6 +44145,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "ccf2-5eaa-bc27-2b01",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 7
           }
         ]
       },
@@ -46734,7 +47062,7 @@
             "id": "a27f-1647-138d-dd19",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 7
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -46781,6 +47109,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "4e40-e51c-b152-104a",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 7
           }
         ]
       },
@@ -47427,7 +47764,8 @@
                 "id": "7d8c-127f-a656-9a76",
                 "type": "selectionEntryGroup",
                 "targetId": "ef43-031c-15fc-7999",
-                "sortIndex": 5
+                "sortIndex": 5,
+                "flatten": true
               }
             ],
             "modifiers": [
@@ -49786,7 +50124,8 @@
                 "id": "e3a0-60ec-2be8-1865",
                 "type": "selectionEntryGroup",
                 "targetId": "ef43-031c-15fc-7999",
-                "sortIndex": 6
+                "sortIndex": 6,
+                "flatten": true
               }
             ],
             "selectionEntryGroups": [
@@ -49958,6 +50297,15 @@
             "id": "2171-6b67-0f1d-d3e4",
             "type": "selectionEntry",
             "targetId": "cc7e-de45-e780-c1bf"
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "cb7f-7c04-74fb-d925",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 4
           }
         ],
         "modifiers": [
@@ -54094,7 +54442,8 @@
                 "id": "a76c-3a32-256f-fb2a",
                 "type": "selectionEntryGroup",
                 "targetId": "ef43-031c-15fc-7999",
-                "sortIndex": 4
+                "sortIndex": 4,
+                "flatten": true
               }
             ],
             "categoryLinks": [
@@ -54345,7 +54694,7 @@
             "id": "dcaf-6239-daac-726f",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 9
           },
           {
             "import": true,
@@ -54392,6 +54741,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 6
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "90d1-b428-fc2c-858d",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 8
           }
         ]
       },
@@ -55283,6 +55641,15 @@
             "id": "e147-a051-50f9-0759",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
+            "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "4b70-ebbe-49c2-1f14",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
             "sortIndex": 3
           }
         ]
@@ -56233,7 +56600,7 @@
             "id": "f355-42d0-4c49-5aab",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 3
+            "sortIndex": 4
           },
           {
             "import": true,
@@ -56243,6 +56610,15 @@
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
             "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Badab Assault Force",
+            "hidden": false,
+            "id": "359a-bcd3-adf1-94a4",
+            "type": "selectionEntry",
+            "targetId": "b375-1723-1ab9-42f9",
+            "sortIndex": 3
           }
         ]
       },
@@ -66314,6 +66690,15 @@
                         "childId": "bae5-62ec-8bf2-3ab5",
                         "shared": true,
                         "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "7d52-2c3a-810d-b85d",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -67409,6 +67794,52 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "11cf-8af4-8945-d775"
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Star Phantoms)",
+            "id": "7f48-eef9-112a-244a",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "7d52-2c3a-810d-b85d",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Orbital Wave Attack",
+                "id": "667e-3781-4b5e-6bd0",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "bd3e-6234-5646-de0d"
+              },
+              {
+                "name": "Hail of Destruction",
+                "id": "9193-c528-b5a6-e7c6",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "4ecb-7145-fb6c-a617"
+              },
+              {
+                "name": "Unfettered Destruction",
+                "id": "3f62-5e0d-9072-8134",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d08a-ad91-a7ba-65de"
               }
             ]
           }
@@ -69345,6 +69776,125 @@
             ]
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Badab Assault Force",
+        "hidden": true,
+        "id": "b375-1723-1ab9-42f9",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "f76e-1080-01ca-330b"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "f76e-1080-01ca-330b"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "7d52-2c3a-810d-b85d",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Breacher Charges",
+            "hidden": false,
+            "id": "2156-f1ac-fa4c-ef5b",
+            "type": "selectionEntry",
+            "targetId": "bde9-e0ea-e4f0-e75e",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a6d2-7b59-04a2-223f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a6d2-7b59-04a2-223f-max"
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 20
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Move Through Cover",
+            "id": "7a23-ad2e-1ff0-b268",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "295d-36fe-4db3-a19f"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "1e39-5a54-9525-e52e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Breacher Charges",
+        "hidden": false,
+        "id": "bde9-e0ea-e4f0-e75e",
+        "profiles": [
+          {
+            "name": "Breacher Charges",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "5bed-0b9c-4712-206a",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "The controlling player may choose to have a model with a breacher charge that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification model, inflict one automatic Str 10, AP 2 Hit on the target in Initiative Step 1 instead of attacking normally. Any model in a unit that is chosen to inflict Hits using breacher charges may not otherwise attack or make use of any other special rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal)."
+              }
+            ]
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -70333,6 +70883,46 @@
             "field": "category"
           }
         ]
+      },
+      {
+        "import": true,
+        "name": "Devastator Squad",
+        "hidden": true,
+        "id": "322e-7904-c92e-eeb6",
+        "type": "selectionEntry",
+        "targetId": "5277-208f-0045-754f",
+        "categoryLinks": [
+          {
+            "name": "Elites",
+            "hidden": false,
+            "id": "8022-1b14-f99c-f8f4",
+            "targetId": "a300-5393-99ea-9657",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "remove",
+            "value": "1dff-e2a4-5442-6863",
+            "field": "category"
+          },
+          {
+            "type": "set",
+            "value": false,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "9971-204e-8dd6-dbb7",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedProfiles": [
@@ -71020,6 +71610,30 @@
         "id": "11cf-8af4-8945-d775",
         "hidden": false,
         "description": "All shooting attacks made against a model with this special rule that does not have the Vehicle Unit Type, suffer a modifier of -1 to the strength of the attack."
+      },
+      {
+        "name": "Chapter Tactics (Star Phantoms)",
+        "id": "acc4-6de1-f1b8-c6e1",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Star Phantoms) Special Rule gains Orbital Wave Attack, Hail of Destruction and Unfettered Destruction Special Rules."
+      },
+      {
+        "name": "Orbital Wave Attack",
+        "id": "bd3e-6234-5646-de0d",
+        "hidden": false,
+        "description": "Any unit in the detachment arriving via Deep Strike may re-roll any Reserve roll of 1 if its controlling player wishes."
+      },
+      {
+        "name": "Hail of Destruction",
+        "id": "4ecb-7145-fb6c-a617",
+        "hidden": false,
+        "description": "Once per game, the player may declare the use of this ability and its effects last\nfrom the start of the controlling player’s Shooting phase until the start of their next Shooting phase. During this period, all infantry and cavalry units in the detachment with Chapter Tactics (Star Phantoms) count their Rapid Fire, Assault and Heavy Weapons as being twin-linked."
+      },
+      {
+        "name": "Unfettered Destruction",
+        "id": "d08a-ad91-a7ba-65de",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Star Phantoms) Special rule receives +1 to hit attacking with any ‘Plasma’ or ‘Melta’ weapons."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -75142,6 +75756,11 @@
       {
         "name": "High Artificer",
         "id": "391b-d8aa-f0cb-f617",
+        "hidden": false
+      },
+      {
+        "name": "Commander of the 9th Company",
+        "id": "9971-204e-8dd6-dbb7",
         "hidden": false
       }
     ],

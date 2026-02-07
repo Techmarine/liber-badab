@@ -311,6 +311,14 @@
                     "shared": true,
                     "id": "1b3e-9e51-97f8-7ddb-max"
                   }
+                ],
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Master-crafted",
+                    "field": "name",
+                    "join": " "
+                  }
                 ]
               },
               {

@@ -291,6 +291,14 @@
                     "type": "rule",
                     "targetId": "0371-1ea2-8615-e03a"
                   }
+                ],
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Master-crafted",
+                    "field": "name",
+                    "join": " "
+                  }
                 ]
               },
               {

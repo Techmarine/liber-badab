@@ -1,0 +1,462 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "2866-ba38-3702-2b24",
+    "name": "Space Marines - Star Phantoms",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Space Marines",
+        "id": "bac1-6682-bdb1-ba8b",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Star Phantoms",
+        "hidden": false,
+        "id": "88b9-ef3b-caa5-d122",
+        "type": "selectionEntry",
+        "targetId": "7d52-2c3a-810d-b85d",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "4b2a-07d9-3267-8c7c",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1"
+      },
+      {
+        "import": true,
+        "name": "Captain Zhrukal Andocles",
+        "hidden": false,
+        "id": "728b-85f7-8098-4b89",
+        "type": "selectionEntry",
+        "targetId": "ebcc-80f3-b453-f01b"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Captain Zhrukal Andocles",
+        "hidden": false,
+        "id": "ebcc-80f3-b453-f01b",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 175
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "0e1f-1318-c848-2081",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "24d4-c2d4-5a48-0a7a",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "896a-1547-f568-553f",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "98ee-e555-87b6-4e9f",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          },
+          {
+            "name": "Commander of the 9th Company",
+            "hidden": false,
+            "id": "98f0-c66d-84ca-0ccf",
+            "targetId": "9971-204e-8dd6-dbb7",
+            "primary": false
+          }
+        ],
+        "sortIndex": 1,
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Captain Zhrukal Andocles",
+            "hidden": false,
+            "id": "eb5b-ed32-8646-480e",
+            "sortIndex": 1,
+            "categoryLinks": [
+              {
+                "name": "Infantry Unit Type",
+                "hidden": false,
+                "id": "9549-b38a-8c85-7832",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "6de9-7c47-2ea2-8e83",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "11ba-ce29-b1e3-b09f",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7e91-7838-063c-d692-min",
+                "includeChildSelections": false,
+                "includeChildForces": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7e91-7838-063c-d692-max",
+                "includeChildSelections": false,
+                "includeChildForces": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "0e8b-05e6-8e52-f081",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "46cf-121c-f7a7-95d1",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "9a57-6bfb-aae0-d471",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Artificer Armour",
+                "hidden": false,
+                "id": "e3be-288d-41ef-ede1",
+                "type": "selectionEntry",
+                "targetId": "2004-7466-45c8-bca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2aac-fae7-9691-83b9-min",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2aac-fae7-9691-83b9-max",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "706f-b46e-a325-2a79",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3f1e-812f-f20b-2f92-min",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3f1e-812f-f20b-2f92-max",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Power Fist",
+                "hidden": false,
+                "id": "3fa9-410e-7255-7e73",
+                "type": "selectionEntry",
+                "targetId": "4794-290c-551d-1aa9",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a0d2-1451-ad7c-1d08-min",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a0d2-1451-ad7c-1d08-max",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Combi-melta",
+                "hidden": false,
+                "id": "5fd2-a250-ae87-d711",
+                "type": "selectionEntry",
+                "targetId": "ab66-c50b-b845-20da",
+                "infoLinks": [
+                  {
+                    "name": "Master-crafted",
+                    "id": "5336-0bf0-b986-f287",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Master-crafted",
+                    "hidden": false,
+                    "id": "68ce-6cca-2bcd-1f33",
+                    "type": "selectionEntryGroup",
+                    "targetId": "c044-d3ec-ebc4-d882"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Master-crafted",
+                    "field": "name",
+                    "join": " "
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "783f-9995-3c6e-7755-min",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "783f-9995-3c6e-7755-max",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "4cda-c9cb-1413-1586",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "45a3-4f69-19c0-6606-min",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "45a3-4f69-19c0-6606-max",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "b450-740d-6743-5169",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cf23-424e-404f-e6d4-min",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cf23-424e-404f-e6d4-max",
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "99b8-83c9-6414-d64a",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "eb4a-1cab-ad29-d185",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "710f-d8f1-48eb-b775",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          },
+          {
+            "name": "Move Through Cover",
+            "id": "c6e3-d358-d05b-77e4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "295d-36fe-4db3-a19f"
+          },
+          {
+            "name": "Preferred Enemy",
+            "id": "cc9e-50ae-74c4-be9d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bb1e-f9f5-2a51-c8c0",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Lugft Huron",
+                "field": "annotation"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Commander of the 9th Company",
+            "id": "98e5-5204-482d-a81c",
+            "hidden": false,
+            "description": "If Zhrukal Androcles is present in a detachment, Devastator Squads may be taken as Elites as well as in Heavy Support."
+          },
+          {
+            "name": "Entwined Fate",
+            "id": "efd6-63bf-33ab-d9f0",
+            "hidden": false,
+            "description": "If Lug Huron is part of the opposing players army, Zhrukal Androcles gains the Fearless, Fleet and Eternal Warrior special rules while Lugft Huron is still alive.\n\n\nAnytime Zhrukal Androcles targets a unit containing Lugft Huron, he gains the Precision Strike (2+) rule. In addition any wounds assigned to Lugft Huron from the Melta component of Zhrukal Androclecs Combi-Weapon, it gain the Brutal (3) Special Rule."
+          },
+          {
+            "name": "Master of Destruction",
+            "id": "7f3e-5786-0407-f258",
+            "hidden": false,
+            "description": "Once per turn, either Zhrukal Androcles himself, or a single chosen Space Marine Unit within 6\" of him, may gain the benefit of his experience in taking out enemy fortifications or vehilces. The chosen unit adds +1 to their rolls to wound or penetrate. This bonus is cumulative to any other weapon’s special rules."
+          }
+        ]
+      }
+    ],
+    "type": "catalogue"
+  }
+}

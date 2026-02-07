@@ -338,6 +338,14 @@
                     "shared": true,
                     "id": "9a1d-2ebd-cbdb-d3d6-max"
                   }
+                ],
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Master-crafted",
+                    "field": "name",
+                    "join": " "
+                  }
                 ]
               },
               {
@@ -776,6 +784,14 @@
                     "scope": "parent",
                     "shared": true,
                     "id": "d330-c0f4-2826-54c0-max"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Master-crafted",
+                    "field": "name",
+                    "join": " "
                   }
                 ]
               },
