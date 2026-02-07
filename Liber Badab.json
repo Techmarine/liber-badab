@@ -11632,6 +11632,20 @@
             "name": "Mantis Warriors",
             "hidden": false,
             "id": "cfc7-c7c8-d2b8-4fb3"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sons of Medusa",
+            "hidden": false,
+            "id": "bae5-62ec-8bf2-3ab5"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Star Phantoms",
+            "hidden": false,
+            "id": "7d52-2c3a-810d-b85d"
           }
         ],
         "constraints": [
@@ -11977,6 +11991,22 @@
             "id": "ae9a-47a5-1f1c-10dd",
             "type": "selectionEntry",
             "targetId": "1c46-7a96-775f-8572"
+          },
+          {
+            "import": true,
+            "name": "Sons of Medusa",
+            "hidden": false,
+            "id": "0a81-15fe-0ffb-5f17",
+            "type": "selectionEntry",
+            "targetId": "bae5-62ec-8bf2-3ab5"
+          },
+          {
+            "import": true,
+            "name": "Star Phantoms",
+            "hidden": false,
+            "id": "ae2f-6e05-9bdc-3db4",
+            "type": "selectionEntry",
+            "targetId": "7d52-2c3a-810d-b85d"
           }
         ],
         "constraints": [
