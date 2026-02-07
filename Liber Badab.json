@@ -1005,7 +1005,7 @@
         "name": "Counter-attack",
         "id": "d079-5609-e2c3-e95e",
         "hidden": false,
-        "description": "If a unit contains at least one model with this special rule, and that unit is Charged, every model with the Counter-attack special rule gains a number of additional Attacks equal to the value in brackets listed as part of this special rule. If no value is listed then the unit gains +1 Attack.\n\n\nIf, when Charged, the unit was already locked in combat or has made the Hold the Line Reaction, the Counter-attack special rule has no effect."
+        "description": "If a unit contains at least one model with this special rule, and that unit is Charged, every model with the Counter-attack special rule gains a number of additional Attacks equal to the value in brackets listed as part of this special rule. If no value is listed then the unit gains +1 Attack.\n\nIf, when Charged, the unit was already locked in combat or has made the Hold the Line Reaction, the Counter-attack special rule has no effect."
       },
       {
         "name": "Eternal Warrior",
@@ -11903,17 +11903,17 @@
                   {
                     "name": "Unit Upgrades",
                     "typeId": "60e8-bea8-428a-115b",
-                    "$text": "Death-speaker Chaplains, Slaughter-tallies, Aetheling, Sons of the Executioners"
+                    "$text": "Death-speaker Chaplains, Slaughter-tallies, Aetheling, Sons of the Executioner"
                   }
                 ]
               }
             ],
             "rules": [
               {
-                "name": "Death-speaker Chaplain",
+                "name": "Death-speaker Chaplains",
                 "id": "9c9e-cc83-64c5-0ac9",
                 "hidden": false,
-                "description": "Any Number of Force Commanders may be upgraded to Death-Speaker Chaplains for +35 points. This ignores the normal limitations on Chapter Specialists.\n\n\nA Death- Speaker Chaplain, and all models in a unit he joins, gains the Stubborn and Hatred (Everything!) special rules. In addition, the Chaplain increases his Leadership Characteristic to 10. They also gain the Slaughter-Tallies Special rule."
+                "description": "Any Number of Force Commanders may be upgraded to Death-Speaker Chaplains for +35 points. This ignores the normal limitations on Chapter Specialists.\n\nA Death- Speaker Chaplain, and all models in a unit he joins, gains the Stubborn and Hatred (Everything!) special rules. In addition, the Chaplain increases his Leadership Characteristic to 10. They also gain the Slaughter-Tallies Special rule."
               },
               {
                 "name": "Slaughter-tallies",
@@ -13388,7 +13388,7 @@
             "id": "1404-cee4-2ee5-6495",
             "type": "selectionEntry",
             "targetId": "c50c-f665-e9dc-6460",
-            "defaultAmount": "1"
+            "defaultAmount": ""
           },
           {
             "import": true,
@@ -13503,6 +13503,64 @@
             "scope": "self",
             "shared": true,
             "id": "90f2-6ad5-5b1c-7473-max"
+          }
+        ]
+      },
+      {
+        "name": "Chapter (Secessionists)",
+        "id": "055d-deec-f11e-605e",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Astral Claws",
+            "hidden": false,
+            "id": "70c3-f6d9-9e85-d270",
+            "type": "selectionEntry",
+            "targetId": "45dd-86b9-f864-7ec7"
+          },
+          {
+            "import": true,
+            "name": "Executioners",
+            "hidden": false,
+            "id": "c419-9258-62fd-0680",
+            "type": "selectionEntry",
+            "targetId": "9372-9faa-67e3-c89d",
+            "defaultAmount": ""
+          },
+          {
+            "import": true,
+            "name": "Lamenters",
+            "hidden": false,
+            "id": "36e2-8f0b-0170-f0ed",
+            "type": "selectionEntry",
+            "targetId": "1f40-fe51-5c23-c07e"
+          },
+          {
+            "import": true,
+            "name": "Mantis Warriors",
+            "hidden": false,
+            "id": "c94b-4c6f-791a-c7fa",
+            "type": "selectionEntry",
+            "targetId": "cfc7-c7c8-d2b8-4fb3"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "d6ad-8e79-b700-2210-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "d6ad-8e79-b700-2210-max"
           }
         ]
       }
