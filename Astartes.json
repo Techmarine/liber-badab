@@ -76213,6 +76213,14 @@
                     "scope": "primary-catalogue",
                     "childId": "e76e-5532-05c4-1d87",
                     "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "2866-ba38-3702-2b24",
+                    "shared": true
                   }
                 ]
               }
@@ -76420,6 +76428,14 @@
                     "field": "selections",
                     "scope": "primary-catalogue",
                     "childId": "e76e-5532-05c4-1d87",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "2866-ba38-3702-2b24",
                     "shared": true
                   }
                 ]
@@ -76986,6 +77002,14 @@
                     "field": "selections",
                     "scope": "primary-catalogue",
                     "childId": "e76e-5532-05c4-1d87",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "2866-ba38-3702-2b24",
                     "shared": true
                   }
                 ]
