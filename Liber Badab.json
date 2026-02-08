@@ -1355,6 +1355,18 @@
         "id": "313f-1377-cf84-46bc",
         "hidden": false,
         "description": "Models with this special rule have a cover save of 5+ on the turn they arrive via Deep Strike."
+      },
+      {
+        "name": "Children of Prophecy",
+        "id": "f24e-1fcd-1c3a-de23",
+        "hidden": false,
+        "description": "A force whose primary detachment has Chapter Tactics (Mantis Warriors) may reroll failed attempts to Seize the Initiative where this is a factor in the mission being played."
+      },
+      {
+        "name": "Precision Strikes",
+        "id": "6f60-480c-b0de-6dd4",
+        "hidden": false,
+        "description": "If a model with this special rule, or attacking with a weapon with this special rule, rolls equal to or higher than the value in brackets when making a To Hit roll as part of a melee attack, that hit is a ‘Precision Strike’. For example, if a model with the Precision Strikes (4+) special rule rolls a 4 or higher when making a To Hit roll, then that attack is a Precision Strike.\n\nWounds from Precision Strikes are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as that model is engaged in combat with the attacking model’s unit, rather than following the normal rules for Wound allocation."
       }
     ],
     "sharedSelectionEntries": [
@@ -12941,15 +12953,16 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "313f-1377-cf84-46bc"
+              },
+              {
+                "name": "Children of Prophecy",
+                "id": "3997-13e3-3711-e837",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f24e-1fcd-1c3a-de23"
               }
             ],
             "rules": [
-              {
-                "name": "Children of Prophecy",
-                "id": "2f16-7162-d0c8-cfb1",
-                "hidden": false,
-                "description": "A force whose primary detachment has Chapter Tactics (Mantis Warriors) may reroll failed attempts to Seize the Initiative where this is a factor in the mission being played."
-              },
               {
                 "name": "Tranquility Veterans",
                 "id": "59cf-f859-51e0-cd6c",

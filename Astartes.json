@@ -8244,6 +8244,79 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Strike from the Shadows",
+                "hidden": true,
+                "id": "712a-f81a-ac57-2a93",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5e28-5497-baa0-cd71"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "5e28-5497-baa0-cd71"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "cfc7-c7c8-d2b8-4fb3",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Precision Strikes",
+                    "id": "fa4b-3f1d-dcdd-d950",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "6f60-480c-b0de-6dd4",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Strike from the Shadows",
+                    "id": "277f-1f0e-2663-4891",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "20cb-19a5-a620-e1d9"
+                  }
+                ]
               }
             ],
             "defaultSelectionEntryId": "2dda-e1f2-6bd3-daca",
@@ -27003,6 +27076,64 @@
                 "targetId": "ef43-031c-15fc-7999",
                 "sortIndex": 8,
                 "flatten": true
+              },
+              {
+                "import": true,
+                "name": "Sniper Rifle",
+                "hidden": true,
+                "id": "5fd0-b9f2-2bd1-b643",
+                "type": "selectionEntry",
+                "targetId": "19eb-6da1-12ff-5535",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "0016-b643-fdcf-8cfd-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "0016-b643-fdcf-8cfd-max"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "fde0-011e-48d6-9abb",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0016-b643-fdcf-8cfd-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0016-b643-fdcf-8cfd-max"
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -28245,6 +28376,64 @@
                   }
                 ],
                 "sortIndex": 10
+              },
+              {
+                "import": true,
+                "name": "Sniper Rifle",
+                "hidden": true,
+                "id": "9a60-a8af-1174-dff7",
+                "type": "selectionEntry",
+                "targetId": "19eb-6da1-12ff-5535",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "fb92-20c9-a586-08c8-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "fb92-20c9-a586-08c8-max"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "fde0-011e-48d6-9abb",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb92-20c9-a586-08c8-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb92-20c9-a586-08c8-max"
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -29340,6 +29529,86 @@
               }
             ],
             "sortIndex": 3
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Tranquility Veterans",
+            "hidden": true,
+            "id": "fde0-011e-48d6-9abb",
+            "sortIndex": 9,
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1c32-652e-03da-cafc"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "1c32-652e-03da-cafc"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "cfc7-c7c8-d2b8-4fb3",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 12,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "e349-c42f-3c5d-1e72",
+                "field": "category",
+                "scope": "parent",
+                "affects": "entries.model"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Scout",
+                "id": "bae9-ffc8-ff1e-aada",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e18c-d4da-eb9b-919b"
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -29405,7 +29674,7 @@
             "id": "cdd3-0705-4eab-6870",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 9
+            "sortIndex": 10
           },
           {
             "import": true,
@@ -36604,7 +36873,7 @@
             "id": "92ca-8d0c-de30-452b",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 9
+            "sortIndex": 10
           },
           {
             "import": true,
@@ -36660,6 +36929,15 @@
             "type": "selectionEntry",
             "targetId": "b375-1723-1ab9-42f9",
             "sortIndex": 8
+          },
+          {
+            "import": true,
+            "name": "Guardians of the Endymion Cluster",
+            "hidden": false,
+            "id": "e022-ae3e-a1cc-00c2",
+            "type": "selectionEntry",
+            "targetId": "3daf-d24d-723d-6b21",
+            "sortIndex": 9
           }
         ]
       },
@@ -47387,7 +47665,7 @@
             "id": "a27f-1647-138d-dd19",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 9
           },
           {
             "import": true,
@@ -47443,6 +47721,15 @@
             "type": "selectionEntry",
             "targetId": "b375-1723-1ab9-42f9",
             "sortIndex": 7
+          },
+          {
+            "import": true,
+            "name": "Guardians of the Endymion Cluster",
+            "hidden": false,
+            "id": "f9dc-f068-a3c3-a2ba",
+            "type": "selectionEntry",
+            "targetId": "3daf-d24d-723d-6b21",
+            "sortIndex": 8
           }
         ]
       },
@@ -68332,6 +68619,59 @@
                 "targetId": "a60d-2f58-e0d2-f805"
               }
             ]
+          },
+          {
+            "name": "Chapter Tactics (Raptors)",
+            "id": "6008-8bf2-1518-5b98",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "cfc7-c7c8-d2b8-4fb3",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Chapter Tactics (Mantis Warriors)",
+                "id": "a1e9-5456-aaf7-a8dd",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2aa1-fd50-a063-bd1b"
+              },
+              {
+                "name": "Shadow Killers",
+                "id": "b274-c75c-99fb-27b6",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "de08-a180-b8b7-f02c"
+              },
+              {
+                "name": "Maelstrom Warder",
+                "id": "f623-cb63-875a-885a",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a60d-2f58-e0d2-f805"
+              },
+              {
+                "name": "Children of Prophecy",
+                "id": "1a87-30b7-717c-76f8",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f24e-1fcd-1c3a-de23"
+              }
+            ]
           }
         ]
       },
@@ -71187,6 +71527,92 @@
             "targetId": "7566-b279-0ebd-607a"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Guardians of the Endymion Cluster",
+        "hidden": true,
+        "id": "3daf-d24d-723d-6b21",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "fc52-c8a0-a8df-d914"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "fc52-c8a0-a8df-d914"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "cfc7-c7c8-d2b8-4fb3",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 4,
+            "field": "54b5-0978-c8a4-5b5a",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "model",
+                "shared": true,
+                "roundUp": false
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Deep Strike",
+            "id": "b1de-42b9-a1bd-5e54",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          },
+          {
+            "name": "Sudden Strike",
+            "id": "84be-8c65-4df0-1b71",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "32d6-1fba-bdb8-e7d9"
+          },
+          {
+            "name": "Fateful Appearance",
+            "id": "c0f8-0f41-43a8-9841",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "313f-1377-cf84-46bc"
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -72874,6 +73300,12 @@
         "id": "caef-b10a-4a2d-94ad",
         "hidden": false,
         "description": "An Arch-Centurion/Centurion and all models in a unit he joins gains the Hatred (Loyalists) rules."
+      },
+      {
+        "name": "Chapter Tactics (Mantis Warriors)",
+        "id": "2aa1-fd50-a063-bd1b",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Mantis Warriors) Special Rule gains Shadow Killers, Children of Prophecy and Maelstrom Warder Special Rules."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -77548,6 +77980,14 @@
                     "scope": "primary-catalogue",
                     "childId": "2b69-a51c-207a-dae5",
                     "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8c2b-56b0-a1b0-fb3e",
+                    "shared": true
                   }
                 ]
               }
@@ -77771,6 +78211,14 @@
                     "field": "selections",
                     "scope": "primary-catalogue",
                     "childId": "2b69-a51c-207a-dae5",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8c2b-56b0-a1b0-fb3e",
                     "shared": true
                   }
                 ]
@@ -78353,6 +78801,14 @@
                     "field": "selections",
                     "scope": "primary-catalogue",
                     "childId": "2b69-a51c-207a-dae5",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8c2b-56b0-a1b0-fb3e",
                     "shared": true
                   }
                 ]
