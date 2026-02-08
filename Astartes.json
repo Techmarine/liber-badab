@@ -2369,7 +2369,7 @@
                 "id": "9b98-ee6e-ff8a-c04d",
                 "type": "selectionEntryGroup",
                 "targetId": "1be6-e5a1-360c-75db",
-                "sortIndex": 13
+                "sortIndex": 14
               },
               {
                 "import": true,
@@ -2656,6 +2656,15 @@
                   }
                 ],
                 "sortIndex": 12
+              },
+              {
+                "import": true,
+                "name": "Centurion",
+                "hidden": false,
+                "id": "b489-07b4-fb55-c34a",
+                "type": "selectionEntry",
+                "targetId": "8eb5-cee6-e7b2-c22b",
+                "sortIndex": 13
               }
             ],
             "selectionEntryGroups": [
@@ -5762,14 +5771,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -5797,22 +5798,13 @@
                         "field": "annotation"
                       }
                     ]
-                  }
-                ],
-                "profiles": [
+                  },
                   {
                     "name": "Stalk Unseen",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "86a5-ed32-83a2-a5fd",
                     "hidden": false,
-                    "id": "67c9-d3ee-0f98-e8ef",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he joins gains the Shrouded (6+) Special Rule, this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "96b3-ff86-8f51-b548"
                   }
                 ]
               },
@@ -5852,14 +5844,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -5873,20 +5857,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Marauding Belligerent",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "270c-6e8e-4213-b56e",
                     "hidden": false,
-                    "id": "f1a0-05b1-71b0-d7a5",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and up to 3 units may be given the Outflank special rule. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "f56a-d13b-44e9-9e3f"
                   }
                 ]
               },
@@ -6013,14 +5990,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -6034,23 +6003,16 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "comment": "Marines Errant",
+                "infoLinks": [
                   {
                     "name": "Coordinated Assault",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "e63d-8866-e8ba-2f4a",
                     "hidden": false,
-                    "id": "078a-27b0-c4d4-6623",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and all friendly units within 6\", add +1 to their results when rolling for charge distance. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "a58b-1e7c-4df9-fae8"
                   }
-                ],
-                "comment": "Marines Errant"
+                ]
               },
               {
                 "type": "upgrade",
@@ -6122,124 +6084,6 @@
                     ]
                   }
                 ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Orbital Bombardment",
-                    "hidden": false,
-                    "id": "bc68-ebec-fbc6-c0fb",
-                    "profiles": [
-                      {
-                        "name": "Orbital Bombardment",
-                        "typeId": "5e31-3867-7c3d-fcb9",
-                        "typeName": "Ranged Weapon",
-                        "hidden": false,
-                        "id": "4347-6018-206f-e5aa",
-                        "characteristics": [
-                          {
-                            "name": "Range",
-                            "typeId": "7b0f-9c2a-0ecb-f3a3",
-                            "$text": "80\""
-                          },
-                          {
-                            "name": "S",
-                            "typeId": "2ecc-1ccc-736f-9d3d",
-                            "$text": "10"
-                          },
-                          {
-                            "name": "AP",
-                            "typeId": "cbb5-5f04-f87f-a810",
-                            "$text": "1"
-                          },
-                          {
-                            "name": "Type",
-                            "typeId": "2c90-16ca-a927-898d",
-                            "$text": "Ordnance 1"
-                          },
-                          {
-                            "name": "Special Rules",
-                            "typeId": "d2a2-1139-48cb-4472",
-                            "$text": "Barrage, Large Blast (5”), Lance, One Shot, Orbital Strike"
-                          }
-                        ]
-                      }
-                    ],
-                    "infoLinks": [
-                      {
-                        "name": "Barrage",
-                        "id": "9052-66aa-b347-7290",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "9687-76a5-98c6-200d"
-                      },
-                      {
-                        "name": "Blast",
-                        "id": "cdaa-d086-ff11-d930",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "dd6e-d5d4-9bb3-d2e4",
-                        "modifierGroups": [
-                          {
-                            "type": "and",
-                            "modifiers": [
-                              {
-                                "type": "prepend",
-                                "value": "Large",
-                                "field": "name",
-                                "join": " "
-                              },
-                              {
-                                "type": "set",
-                                "value": "5\"",
-                                "field": "annotation"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "name": "Lance",
-                        "id": "dd06-baf9-6f99-7447",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "ed29-032f-7042-1cf3"
-                      },
-                      {
-                        "name": "One Shot",
-                        "id": "f81f-bbf8-1aa4-f0fe",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "ee53-4831-a3cf-1cdb"
-                      },
-                      {
-                        "name": "Orbital Strike",
-                        "id": "ea62-7f56-d600-f055",
-                        "hidden": false,
-                        "type": "rule",
-                        "targetId": "609a-3502-efae-d675"
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "eb83-f15f-1d72-0c72-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "eb83-f15f-1d72-0c72-max"
-                      }
-                    ]
-                  }
-                ],
                 "profiles": [
                   {
                     "name": "The Star Jackal",
@@ -6252,6 +6096,34 @@
                         "name": "Description",
                         "typeId": "ea6d-ab61-e667-7094",
                         "$text": "Before a battle Naravaez’ s controlling player may elect to use one of the following 3 options for the coming battle. This must be declared after table sides have been picked, but before any units are deployed.\n\nDirect Fire Support\nIn lieu of firing a weapon, Naravaez may call down an Orbital Bombardment once per game. This may be fired even if he moved and may be fired at a different unit than what his unit has shot at and will not stop his unit from charging in the following Assault Phase. It may not be fired as part of a Reaction. In addition the controlling player may make an additional Reaction in the Shooting Phase.\n\nHeavy Drop-craft\nIf chosen the Controlling Player may elect to give up to 3 Vehicles with 4 hull points or less the Deep Strike Special rule. In addition, the Controlling player may make an additional Reaction in the Movement Phase.\n\nPinpoint Augur Sweeps\nIf chosen the controlling player may elect to give up to 3 units, the Night Vision and Scout Special rules. In addition, the controlling player may make an additional reaction in the Assault Phase."
+                      }
+                    ]
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Orbital Bombardment",
+                    "hidden": false,
+                    "id": "2622-ae40-990a-f391",
+                    "type": "selectionEntry",
+                    "targetId": "bde5-28ec-5ade-cce4",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "47c6-ee01-1819-b8ad"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "94c7-41f9-3ad8-a34a"
                       }
                     ]
                   }
@@ -6288,46 +6160,26 @@
                         "field": "c72d-1444-e910-c8b9"
                       }
                     ],
-                    "conditionGroups": [
+                    "conditions": [
                       {
-                        "type": "and",
-                        "conditions": [
-                          {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "force",
-                            "childId": "1c46-7a96-775f-8572",
-                            "shared": true,
-                            "includeChildSelections": true
-                          }
-                        ]
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "1c46-7a96-775f-8572",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Promethean Grit",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "e425-1da5-9173-b637",
                     "hidden": false,
-                    "id": "7de3-46ee-ffd5-07d8",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and his unit may Run and still make Snap Shots with any Melta, Plasma or Flame Weaponry they carry (Template Weapons go to D3 hits if in range). While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "6421-0254-b31b-374c"
                   }
                 ]
               },
@@ -6470,20 +6322,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Forlorn Charge",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "d97e-b4ed-2bdb-17a0",
                     "hidden": false,
-                    "id": "bc26-b840-8b96-1fee",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and any unit he joins automatically passes Pinning tests. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "11d1-1453-98fa-cee1"
                   }
                 ]
               },
@@ -6610,14 +6455,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -6638,22 +6475,13 @@
                     "hidden": false,
                     "type": "rule",
                     "targetId": "4aab-8d13-caf2-091d"
-                  }
-                ],
-                "profiles": [
+                  },
                   {
                     "name": "Shock and Awe",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "e900-696a-b180-f397",
                     "hidden": false,
-                    "id": "5c12-feda-fd45-3ef3",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he joins gain the Deep Strike Special rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "c41b-d3fd-23b8-d4e5"
                   }
                 ]
               },
@@ -6867,14 +6695,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -6888,20 +6708,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Frenzied Swarm",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "444f-e5ef-eec6-2326",
                     "hidden": false,
-                    "id": "36e4-7db2-75f5-0427",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he has joined may reroll charge distance when charging into existing combat where a model (on either side) has already been slain. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "ba99-6796-b007-0149"
                   }
                 ]
               },
@@ -7051,34 +6864,19 @@
                             "childId": "ac66-f192-47b4-7be7",
                             "shared": true,
                             "includeChildSelections": true
-                          },
-                          {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
                           }
                         ]
                       }
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Black Soul",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "41ea-3041-a9b1-f12a",
                     "hidden": false,
-                    "id": "00d0-cc36-fa70-c043",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he joins is completely immune to any psychic attacks or weapons. He may never join a unit with the Psyker sub-type for any reason (Meaning he cannot take a retinue of Enochian Guard). While the warlord is alive, the army may make an additional reaction in the Assault Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "66bd-9a6a-1d89-d418"
                   }
                 ]
               },
@@ -7205,14 +7003,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -7226,20 +7016,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Mechanised Specialist",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "0e00-d1d9-9e6e-e975",
                     "hidden": false,
-                    "id": "3719-9a93-df22-687f",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "While the Warlord is embarked on a vehicle, any other vehicle within 12\" of the Warlords’ Vehicle may increase its move characteristic by +2\". While the warlord is alive, the army may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "d86b-64a7-cb48-19b8"
                   }
                 ]
               },
@@ -7279,14 +7062,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -7300,20 +7075,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "The Raptorus Rex is Watching",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "235c-0c75-f9ef-25f6",
                     "hidden": false,
-                    "id": "5512-425c-988a-4a98",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "While the Warlord is alive, the controlling player may reroll all 1’s when rolling for reserves. The Warlord and his unit may also re-roll their charge moves on a turn they arrive from reserve. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "758e-abd0-0ca3-180a"
                   }
                 ]
               },
@@ -7440,14 +7208,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -7461,20 +7221,13 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "infoLinks": [
                   {
                     "name": "Forward, for the Emperor!",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "04e4-493e-44d6-3928",
                     "hidden": false,
-                    "id": "af42-2597-1c14-e5d5",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and all friendly units within 6\", add +1 to their initiative for any Run moves or Movement Reactions. While the Warlord is alive, the controlling player may make an additional reaction in the Movement Phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "c9fb-2f44-7db8-a4c3"
                   }
                 ]
               },
@@ -7514,14 +7267,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -7531,22 +7276,6 @@
                             "includeChildSelections": true
                           }
                         ]
-                      }
-                    ]
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Tenets of the Codex",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
-                    "hidden": false,
-                    "id": "4f20-8e4c-3831-b176",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and any unit he joins gains both the Line Sub-Type and the Heart of the Chapter Special Rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
                       }
                     ]
                   }
@@ -7566,6 +7295,13 @@
                     "hidden": false,
                     "type": "rule",
                     "targetId": "318f-88ba-de6f-9210"
+                  },
+                  {
+                    "name": "Tenets of the Codex",
+                    "id": "08ed-96db-c0a0-324b",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "5f3a-79b4-2f6d-d105"
                   }
                 ]
               },
@@ -7692,14 +7428,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -7713,23 +7441,16 @@
                     ]
                   }
                 ],
-                "profiles": [
+                "comment": "Red Scorpions",
+                "infoLinks": [
                   {
                     "name": "Coordinated Assault",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
+                    "id": "4eae-82b3-1c50-cfde",
                     "hidden": false,
-                    "id": "086a-5291-633e-2720",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The warlord and all friendly units within 12\", add +1 to their results when rolling for charge distance. In addition, while the warlord is alive the army may make an additional reaction in the movement phase."
-                      }
-                    ]
+                    "type": "profile",
+                    "targetId": "8bef-5c98-d811-985d"
                   }
-                ],
-                "comment": "Red Scorpions"
+                ]
               },
               {
                 "type": "upgrade",
@@ -7904,14 +7625,6 @@
                         "type": "and",
                         "conditions": [
                           {
-                            "type": "notInstanceOf",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "model",
-                            "childId": "75a3-46b2-47de-9789",
-                            "shared": true
-                          },
-                          {
                             "type": "atLeast",
                             "value": 1,
                             "field": "selections",
@@ -7921,22 +7634,6 @@
                             "includeChildSelections": true
                           }
                         ]
-                      }
-                    ]
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Defiance Before Death!",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
-                    "hidden": false,
-                    "id": "e855-9eb2-b17d-b971",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and any unit he joins gains the Battle Hardened (1) Special Rule. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
                       }
                     ]
                   }
@@ -7955,6 +7652,13 @@
                         "field": "annotation"
                       }
                     ]
+                  },
+                  {
+                    "name": "Defiance Before Death!",
+                    "id": "12f6-0bc5-5f8d-71af",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "3742-8f7d-e73b-e4ad"
                   }
                 ]
               },
@@ -8105,22 +7809,6 @@
                     ]
                   }
                 ],
-                "profiles": [
-                  {
-                    "name": "Weapon Mastery",
-                    "typeId": "c8df-a54b-7b8c-78de",
-                    "typeName": "Warlord Trait",
-                    "hidden": false,
-                    "id": "db50-cdb7-fba0-1690",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "typeId": "ea6d-ab61-e667-7094",
-                        "$text": "The Warlord and unit he joins lose the One Shot rule from any Combi-melta or Combi-plasma weapons the unit carries. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
-                      }
-                    ]
-                  }
-                ],
                 "modifiers": [
                   {
                     "type": "replace",
@@ -8138,98 +7826,31 @@
                     "affects": "entries.recursive.5237-5fab-96cd-13a9.profiles.Ranged Weapon",
                     "arg": ", One Shot"
                   }
-                ]
-              }
-            ],
-            "defaultSelectionEntryId": "2dda-e1f2-6bd3-daca",
-            "selectionEntryGroups": [
-              {
-                "name": "Frontline Diplomat or Supreme Commander",
-                "id": "f8d6-6420-c331-aaba",
-                "hidden": true,
-                "flatten": true,
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Supreme Commander",
-                    "hidden": false,
-                    "id": "5f88-a5e3-a229-2e06",
-                    "profiles": [
-                      {
-                        "name": "Supreme Commander",
-                        "typeId": "c8df-a54b-7b8c-78de",
-                        "typeName": "Warlord Trait",
-                        "hidden": false,
-                        "id": "d88f-6e44-037a-cc6e",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "ea6d-ab61-e667-7094",
-                            "$text": "An army led by a model with the Supreme Commander (X) Rule may, if it choses, take 0-1 choices of any non Unique, Non HQ unit from any other army within their faction.\n\nFor instance, in an army led by Carab Culln, he could take a Tactical Squad with Chapter Tactics (Raptors) or an Assault Squad with Chapter Tactics (Marines Errant) in his Primary Detachment, counting the unit for all intents and purposes as part of the Primary Detachment."
-                          }
-                        ]
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "add",
-                        "value": "To add a unit from another Chapter add Allied Chapter Unit force in the Primary Detachment",
-                        "field": "info",
-                        "conditions": [
-                          {
-                            "type": "atLeast",
-                            "value": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "5f88-a5e3-a229-2e06",
-                            "shared": true
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Frontline Diplomat",
-                    "hidden": false,
-                    "id": "6030-5346-2651-69b4",
-                    "profiles": [
-                      {
-                        "name": "Frontline Diplomat",
-                        "typeId": "c8df-a54b-7b8c-78de",
-                        "typeName": "Warlord Trait",
-                        "hidden": false,
-                        "id": "59f9-b99d-8e9d-b6b9",
-                        "characteristics": [
-                          {
-                            "name": "Description",
-                            "typeId": "ea6d-ab61-e667-7094",
-                            "$text": "Given Culln’s overall command during most of the Badab war, he could readily call on almost all of the forces under his command, weather that be fleet assets, Astartes strike forces, or even requisitioning Inquisitorial troops, they would all fight as a\nsingle, unified force under Culln’s exceptional command.\n\nIf Carab Culln is the army’s warlord, the army may take an additional Allied Detachment (2 Allied Detachments in total). In addition to this all Allies count as one better than they would usually be on the allied chart when fighting under Carab Culln. Eg. If two of the detachments were \"By The Tyrant’s/High Commander’s Command\", they would instead become \"Distrusted Allies\" Instead. Also if Carab Culln is involved in a challenge, he gains +1 to hit while he remains in a challenge.\n\nIn Addition to this while Culln is alive, the controlling player may make an additional reaction in any phase (only 1 additionalreaction per player turn)."
-                          }
-                        ]
-                      }
-                    ],
-                    "defaultAmount": ""
-                  }
                 ],
-                "constraints": [
+                "infoLinks": [
                   {
-                    "type": "min",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "a9cd-13d0-0c1b-37e5-min"
-                  },
+                    "name": "Weapon Mastery",
+                    "id": "def3-0269-0642-d24d",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "8645-894c-6568-43df"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Not One Step Back!",
+                "hidden": true,
+                "id": "6ce7-8d53-ab7f-b3d0",
+                "constraints": [
                   {
                     "type": "max",
                     "value": 0,
                     "field": "selections",
-                    "scope": "self",
+                    "scope": "parent",
                     "shared": true,
-                    "id": "a9cd-13d0-0c1b-37e5-max"
+                    "id": "2a4a-a943-d1e1-4672"
                   }
                 ],
                 "modifierGroups": [
@@ -8244,12 +7865,96 @@
                       {
                         "type": "set",
                         "value": 1,
-                        "field": "a9cd-13d0-0c1b-37e5-max"
+                        "field": "2a4a-a943-d1e1-4672"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "45dd-86b9-f864-7ec7",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Not One Step Back!",
+                    "id": "b251-a286-238b-9491",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "d6b1-0d8b-f996-dd5e"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Frontline Diplomat",
+                "hidden": true,
+                "id": "6030-5346-2651-69b4",
+                "profiles": [
+                  {
+                    "name": "Frontline Diplomat",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "59f9-b99d-8e9d-b6b9",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "Given Culln’s overall command during most of the Badab war, he could readily call on almost all of the forces under his command, weather that be fleet assets, Astartes strike forces, or even requisitioning Inquisitorial troops, they would all fight as a\nsingle, unified force under Culln’s exceptional command.\n\nIf Carab Culln is the army’s warlord, the army may take an additional Allied Detachment (2 Allied Detachments in total). In addition to this all Allies count as one better than they would usually be on the allied chart when fighting under Carab Culln. Eg. If two of the detachments were \"By The Tyrant’s/High Commander’s Command\", they would instead become \"Distrusted Allies\" Instead. Also if Carab Culln is involved in a challenge, he gains +1 to hit while he remains in a challenge.\n\nIn Addition to this while Culln is alive, the controlling player may make an additional reaction in any phase (only 1 additionalreaction per player turn)."
+                      }
+                    ]
+                  }
+                ],
+                "defaultAmount": "",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6857-dfd2-e759-9fa7-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6857-dfd2-e759-9fa7-max"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
                       },
                       {
                         "type": "set",
                         "value": 1,
-                        "field": "a9cd-13d0-0c1b-37e5-min"
+                        "field": "6857-dfd2-e759-9fa7-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "6857-dfd2-e759-9fa7-max"
                       }
                     ],
                     "conditionGroups": [
@@ -8277,9 +7982,345 @@
                       }
                     ]
                   }
-                ],
-                "defaultSelectionEntryId": "5f88-a5e3-a229-2e06"
+                ]
               },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Master of the Counter Assault",
+                "hidden": true,
+                "id": "5141-7b5f-e869-354a",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ae90-149d-187f-41a4"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "d784-1cb5-6b76-50f2"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "ae90-149d-187f-41a4"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "d784-1cb5-6b76-50f2"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "45dd-86b9-f864-7ec7",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "a4c8-9dd3-a369-5f3a",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Master of the Counter Assault",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "2eae-669a-de82-9f1b",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "While Lugft Huron is present on the table, any friendly units entering play from Reserves gain the Counter-attack (2) special rule until their subsequent turn after they enter play. In addition to this whenever the controlling player choses to make a Hold the Line reaction, they automatically pass the Morale Check required. While Huron is alive, the controlling player may make an additional reaction in any phase (only 1 additional reaction per player turn)."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Master of Machines",
+                "hidden": true,
+                "id": "00df-00f3-9f5c-8082",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8d0a-de39-c8d7-9844"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dca9-dec1-abb3-97f8"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "8d0a-de39-c8d7-9844"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "dca9-dec1-abb3-97f8"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "45dd-86b9-f864-7ec7",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "0928-2d40-4610-aa60",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Master of Machines",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "5962-2a97-f99b-aea6",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "If Armenneus Valthex if an army’s warlord, any model with the Dreadnought unit type also gains the Line sub-type while within 6\" of Armenneus Valthex."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Cut Them Down!",
+                "hidden": true,
+                "id": "94d9-47dd-01d2-09bd",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "be98-cd05-a8a7-2b38"
+                  },
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c328-d83e-9917-bfc6"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "be98-cd05-a8a7-2b38"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "c328-d83e-9917-bfc6"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "45dd-86b9-f864-7ec7",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "3e99-0bcb-69d3-b8c5",
+                            "shared": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Cut Them Down!",
+                    "typeId": "c8df-a54b-7b8c-78de",
+                    "typeName": "Warlord Trait",
+                    "hidden": false,
+                    "id": "ae01-e2e5-4521-b11b",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "ea6d-ab61-e667-7094",
+                        "$text": "If Carnac Commodus is this army’s warlord, then all units in an Astral Claws or Tyrant’s Legion Primary Detachment in a combat he is a part of may re-roll any sweeping advance rolls they make."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Strike from the Shadows",
+                "hidden": true,
+                "id": "712a-f81a-ac57-2a93",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5e28-5497-baa0-cd71"
+                  }
+                ],
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "5e28-5497-baa0-cd71"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "cfc7-c7c8-d2b8-4fb3",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Precision Strikes",
+                    "id": "fa4b-3f1d-dcdd-d950",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "6f60-480c-b0de-6dd4",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Strike from the Shadows",
+                    "id": "277f-1f0e-2663-4891",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "20cb-19a5-a620-e1d9"
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "2dda-e1f2-6bd3-daca",
+            "selectionEntryGroups": [
               {
                 "name": "Generic Warlord Traits",
                 "id": "f919-2aa3-3201-9729",
@@ -8623,7 +8664,24 @@
                 "id": "c5a2-ffbc-ad05-62d8"
               }
             ],
-            "sortIndex": 1
+            "sortIndex": 1,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "c5a2-ffbc-ad05-62d8",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "12a7-f83c-886b-8e94",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "import": true,
@@ -8640,7 +8698,24 @@
             "id": "5beb-cc91-d08b-ec56",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 2
+            "sortIndex": 2,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "12a7-f83c-886b-8e94",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -9204,7 +9279,24 @@
             "id": "5d19-2092-287e-60ba",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 2
+            "sortIndex": 2,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "12a7-f83c-886b-8e94",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -12359,21 +12451,12 @@
           },
           {
             "import": true,
-            "name": "Dark Void Elite",
-            "hidden": false,
-            "id": "a193-fe81-29bd-06e4",
-            "type": "selectionEntry",
-            "targetId": "b3f3-4f17-6be2-4082",
-            "sortIndex": 5
-          },
-          {
-            "import": true,
             "name": "Dedicated Transport",
             "hidden": false,
             "id": "0881-6460-80df-8f3a",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 9
+            "sortIndex": 8
           },
           {
             "import": true,
@@ -12419,7 +12502,7 @@
             "id": "88cf-c6c6-6851-dc0b",
             "type": "selectionEntry",
             "targetId": "7c84-5ebd-ea9c-748b",
-            "sortIndex": 6
+            "sortIndex": 5
           },
           {
             "import": true,
@@ -12428,7 +12511,7 @@
             "id": "1742-24e1-fa79-3e05",
             "type": "selectionEntry",
             "targetId": "1134-51a6-5c1a-2fa7",
-            "sortIndex": 7
+            "sortIndex": 6
           },
           {
             "import": true,
@@ -12437,7 +12520,7 @@
             "id": "036d-7655-fd2d-bc34",
             "type": "selectionEntry",
             "targetId": "b375-1723-1ab9-42f9",
-            "sortIndex": 8
+            "sortIndex": 7
           }
         ],
         "modifiers": [
@@ -12452,6 +12535,22 @@
                 "field": "selections",
                 "scope": "root-entry",
                 "childId": "46ed-4db5-6aec-996c",
+                "shared": true
+              }
+            ]
+          },
+          {
+            "type": "add",
+            "value": "33d0-319a-741e-573f",
+            "field": "category",
+            "affects": "entries.model",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "root-entry",
+                "childId": "b3f3-4f17-6be2-4082",
                 "shared": true
               }
             ]
@@ -14012,21 +14111,12 @@
           },
           {
             "import": true,
-            "name": "Dark Void Elite",
-            "hidden": false,
-            "id": "890b-847e-8d29-11b0",
-            "type": "selectionEntry",
-            "targetId": "b3f3-4f17-6be2-4082",
-            "sortIndex": 4
-          },
-          {
-            "import": true,
             "name": "Dedicated Transport",
             "hidden": false,
             "id": "fa9b-8f30-ad49-ccdd",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 7
           },
           {
             "import": true,
@@ -14035,7 +14125,7 @@
             "id": "940d-90c8-5a31-1120",
             "type": "selectionEntry",
             "targetId": "f9d7-2f2b-e29e-e965",
-            "sortIndex": 5
+            "sortIndex": 4
           },
           {
             "import": true,
@@ -14044,7 +14134,7 @@
             "id": "dc57-2f8e-ad0b-b63c",
             "type": "selectionEntry",
             "targetId": "0b27-9ff7-c2c8-cff6",
-            "sortIndex": 6
+            "sortIndex": 5
           },
           {
             "import": true,
@@ -14053,7 +14143,25 @@
             "id": "d7ca-13d2-344e-3255",
             "type": "selectionEntry",
             "targetId": "b375-1723-1ab9-42f9",
-            "sortIndex": 7
+            "sortIndex": 6
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "add",
+            "value": "33d0-319a-741e-573f",
+            "field": "category",
+            "affects": "entries.model",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "root-entry",
+                "childId": "b3f3-4f17-6be2-4082",
+                "shared": true
+              }
+            ]
           }
         ]
       },
@@ -14077,6 +14185,16 @@
                 "$text": "All models in a unit that includes a Company standard gain the Line Sub-type as long as they remain part of that unit. In addition to this they gain +1 to combat resolution. If any reason a combat is drawn, the unit with the Company Standard instead wins the combat by 1. If both units have a Company Standard, there is no bonuses. These benefits are lost immediately if the model with the Company Standard is removed as a casualty, in addition the enemy gains 1 Victory Point."
               }
             ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "unit",
+            "shared": true,
+            "id": "2fb7-d66f-7d20-766d"
           }
         ]
       },
@@ -15858,6 +15976,15 @@
                   }
                 ],
                 "sortIndex": 13
+              },
+              {
+                "import": true,
+                "name": "Centurion",
+                "hidden": false,
+                "id": "3da8-443f-fbf3-798a",
+                "type": "selectionEntry",
+                "targetId": "8eb5-cee6-e7b2-c22b",
+                "sortIndex": 14
               }
             ],
             "profiles": [
@@ -24623,6 +24750,59 @@
                         "id": "4209-ac34-30e4-0abf"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Company Standard",
+                    "hidden": true,
+                    "id": "ab4a-0f22-804b-87f6",
+                    "type": "selectionEntry",
+                    "targetId": "7ab4-a7ac-4613-52ab",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "1d46-c13e-11c8-754c"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "1d46-c13e-11c8-754c"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "5aff-769e-a260-7eb9",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 15
+                      }
+                    ]
                   }
                 ],
                 "constraints": [
@@ -25639,6 +25819,59 @@
                             "includeChildForces": true
                           }
                         ]
+                      }
+                    ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Company Standard",
+                    "hidden": true,
+                    "id": "ea10-7c6d-9823-b01e",
+                    "type": "selectionEntry",
+                    "targetId": "7ab4-a7ac-4613-52ab",
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "a781-4ecb-4498-515d"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "a781-4ecb-4498-515d"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "5aff-769e-a260-7eb9",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 15
                       }
                     ]
                   }
@@ -26843,6 +27076,64 @@
                 "targetId": "ef43-031c-15fc-7999",
                 "sortIndex": 8,
                 "flatten": true
+              },
+              {
+                "import": true,
+                "name": "Sniper Rifle",
+                "hidden": true,
+                "id": "5fd0-b9f2-2bd1-b643",
+                "type": "selectionEntry",
+                "targetId": "19eb-6da1-12ff-5535",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "0016-b643-fdcf-8cfd-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "0016-b643-fdcf-8cfd-max"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "fde0-011e-48d6-9abb",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0016-b643-fdcf-8cfd-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0016-b643-fdcf-8cfd-max"
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -28085,6 +28376,64 @@
                   }
                 ],
                 "sortIndex": 10
+              },
+              {
+                "import": true,
+                "name": "Sniper Rifle",
+                "hidden": true,
+                "id": "9a60-a8af-1174-dff7",
+                "type": "selectionEntry",
+                "targetId": "19eb-6da1-12ff-5535",
+                "modifierGroups": [
+                  {
+                    "type": "and",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": false,
+                        "field": "hidden"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "fb92-20c9-a586-08c8-min"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "fb92-20c9-a586-08c8-max"
+                      }
+                    ],
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "unit",
+                        "childId": "fde0-011e-48d6-9abb",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb92-20c9-a586-08c8-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb92-20c9-a586-08c8-max"
+                  }
+                ]
               }
             ],
             "selectionEntryGroups": [
@@ -29180,6 +29529,86 @@
               }
             ],
             "sortIndex": 3
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Tranquility Veterans",
+            "hidden": true,
+            "id": "fde0-011e-48d6-9abb",
+            "sortIndex": 9,
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1c32-652e-03da-cafc"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "1c32-652e-03da-cafc"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "cfc7-c7c8-d2b8-4fb3",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 12,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "e349-c42f-3c5d-1e72",
+                "field": "category",
+                "scope": "parent",
+                "affects": "entries.model"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Scout",
+                "id": "bae9-ffc8-ff1e-aada",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e18c-d4da-eb9b-919b"
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -29245,7 +29674,7 @@
             "id": "cdd3-0705-4eab-6870",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 9
+            "sortIndex": 10
           },
           {
             "import": true,
@@ -33328,6 +33757,91 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Corpse Taker Vivisector",
+                    "hidden": true,
+                    "id": "06d1-80a3-3c00-d5b7",
+                    "sortIndex": 12,
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "e776-fb12-c743-7e57"
+                      }
+                    ],
+                    "modifierGroups": [
+                      {
+                        "type": "and",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": false,
+                            "field": "hidden"
+                          },
+                          {
+                            "type": "set",
+                            "value": 1,
+                            "field": "e776-fb12-c743-7e57"
+                          }
+                        ],
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "45dd-86b9-f864-7ec7",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "54b5-0978-c8a4-5b5a",
+                        "value": 25
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "increment",
+                        "value": 1,
+                        "field": "cdc0-9287-7039-4792",
+                        "affects": "profiles.Model",
+                        "scope": "parent"
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Fear",
+                        "id": "6d71-ec71-cad3-4bb9",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "b19f-31c5-018a-932e",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": "1",
+                            "field": "annotation"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Dark Harvest",
+                        "id": "545a-3c79-0a19-1fad",
+                        "hidden": false,
+                        "type": "rule",
+                        "targetId": "b691-e6ee-55cf-420d"
+                      }
+                    ]
                   }
                 ]
               }
@@ -36088,7 +36602,25 @@
                 ]
               }
             ],
-            "collapsible": true
+            "collapsible": true,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 10,
+                "field": "8dd0-3ab2-e257-46ca",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "45dd-86b9-f864-7ec7",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "upgrade",
@@ -36341,7 +36873,7 @@
             "id": "92ca-8d0c-de30-452b",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 9
+            "sortIndex": 10
           },
           {
             "import": true,
@@ -36397,6 +36929,15 @@
             "type": "selectionEntry",
             "targetId": "b375-1723-1ab9-42f9",
             "sortIndex": 8
+          },
+          {
+            "import": true,
+            "name": "Guardians of the Endymion Cluster",
+            "hidden": false,
+            "id": "e022-ae3e-a1cc-00c2",
+            "type": "selectionEntry",
+            "targetId": "3daf-d24d-723d-6b21",
+            "sortIndex": 9
           }
         ]
       },
@@ -43992,6 +44533,107 @@
               }
             ],
             "sortIndex": 4
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Retaliators",
+            "hidden": true,
+            "id": "d9dd-66d8-c7fa-1f91",
+            "sortIndex": 8,
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b790-f7e6-6146-18e5"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "b790-f7e6-6146-18e5"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "45dd-86b9-f864-7ec7",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 5,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "add",
+                "value": "33d0-319a-741e-573f",
+                "field": "category",
+                "scope": "unit",
+                "affects": "entries.model"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Fear",
+                "id": "6702-1f6a-f97e-acee",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "b19f-31c5-018a-932e",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "1",
+                    "field": "annotation"
+                  }
+                ]
+              },
+              {
+                "name": "Furious Charge",
+                "id": "2608-450b-3642-07b1",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7281-8b61-791e-c0f1",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "1",
+                    "field": "annotation"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -44033,7 +44675,24 @@
             "name": "Tip of the Spear",
             "id": "8815-7e51-e753-91b0",
             "hidden": false,
-            "description": "Siege Assault Squads may re-roll their Sweeping Advance rolls to catch retreating enemy units."
+            "description": "Siege Assault Squads may re-roll their Sweeping Advance rolls to catch retreating enemy units.",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "d9dd-66d8-c7fa-1f91",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "modifiers": [
@@ -44079,7 +44738,7 @@
             "id": "9081-68a5-85ef-1b33",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 9
           },
           {
             "import": true,
@@ -47006,7 +47665,7 @@
             "id": "a27f-1647-138d-dd19",
             "type": "selectionEntryGroup",
             "targetId": "bd57-48dc-d88f-5789",
-            "sortIndex": 8
+            "sortIndex": 9
           },
           {
             "import": true,
@@ -47062,6 +47721,15 @@
             "type": "selectionEntry",
             "targetId": "b375-1723-1ab9-42f9",
             "sortIndex": 7
+          },
+          {
+            "import": true,
+            "name": "Guardians of the Endymion Cluster",
+            "hidden": false,
+            "id": "f9dc-f068-a3c3-a2ba",
+            "type": "selectionEntry",
+            "targetId": "3daf-d24d-723d-6b21",
+            "sortIndex": 8
           }
         ]
       },
@@ -48742,6 +49410,107 @@
               }
             ],
             "sortIndex": 3
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Iron Hunters",
+            "hidden": true,
+            "id": "4ede-812c-8431-b775",
+            "sortIndex": 5,
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "874c-9ac3-e9e9-6492"
+              }
+            ],
+            "modifierGroups": [
+              {
+                "type": "and",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": false,
+                    "field": "hidden"
+                  },
+                  {
+                    "type": "set",
+                    "value": 1,
+                    "field": "874c-9ac3-e9e9-6492"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "45dd-86b9-f864-7ec7",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 10,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "unit",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "6ed0-3b6d-b7d7-894c",
+                "affects": "entries.profiles.Model",
+                "scope": "parent"
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "cdc0-9287-7039-4792",
+                "affects": "entries.profiles.Model",
+                "scope": "parent"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Counter-attack",
+                "id": "6bd4-19a3-d76e-1f06",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d079-5609-e2c3-e95e",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "1",
+                    "field": "annotation"
+                  }
+                ]
+              },
+              {
+                "name": "Move Through Cover",
+                "id": "1575-5c6b-135b-0982",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "295d-36fe-4db3-a19f"
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -61281,7 +62050,7 @@
         ]
       },
       {
-        "type": "unit",
+        "type": "model",
         "import": true,
         "name": "Castraferrum Dreadnought",
         "hidden": false,
@@ -66643,6 +67412,24 @@
                         "childId": "7d52-2c3a-810d-b85d",
                         "shared": true,
                         "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "45dd-86b9-f864-7ec7",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "cfc7-c7c8-d2b8-4fb3",
+                        "shared": true,
+                        "includeChildSelections": true
                       }
                     ]
                   }
@@ -67702,7 +68489,7 @@
               },
               {
                 "name": "Fortitude and Contempt",
-                "id": "8282-4a20-ebb4-6d83",
+                "id": "b183-e4b1-5d2a-d381",
                 "hidden": false,
                 "type": "rule",
                 "targetId": "33f4-4409-380e-6255"
@@ -67784,6 +68571,105 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "d08a-ad91-a7ba-65de"
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Astral Claws)",
+            "id": "ac67-b7b0-5b10-54a6",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "45dd-86b9-f864-7ec7",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Chapter Tactics (Astral Claws)",
+                "id": "e951-c9a1-b7cc-ec19",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "0fac-83ea-dd14-f5be"
+              },
+              {
+                "name": "Reckless Courage",
+                "id": "fe4f-27a0-156a-75a8",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a184-43c5-22fb-3d11"
+              },
+              {
+                "name": "Maelstrom Warder",
+                "id": "d73d-c645-ebc9-1c20",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a60d-2f58-e0d2-f805"
+              }
+            ]
+          },
+          {
+            "name": "Chapter Tactics (Raptors)",
+            "id": "6008-8bf2-1518-5b98",
+            "hidden": true,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "cfc7-c7c8-d2b8-4fb3",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Chapter Tactics (Mantis Warriors)",
+                "id": "a1e9-5456-aaf7-a8dd",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2aa1-fd50-a063-bd1b"
+              },
+              {
+                "name": "Shadow Killers",
+                "id": "b274-c75c-99fb-27b6",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "de08-a180-b8b7-f02c"
+              },
+              {
+                "name": "Maelstrom Warder",
+                "id": "f623-cb63-875a-885a",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a60d-2f58-e0d2-f805"
+              },
+              {
+                "name": "Children of Prophecy",
+                "id": "1a87-30b7-717c-76f8",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f24e-1fcd-1c3a-de23"
               }
             ]
           }
@@ -67955,7 +68841,7 @@
             ]
           },
           {
-            "name": "The Black Rage",
+            "name": "Black Rage",
             "id": "b0cd-0782-fe3c-0ceb",
             "hidden": false,
             "type": "rule",
@@ -68519,7 +69405,7 @@
             "value": "33d0-319a-741e-573f",
             "field": "category",
             "scope": "parent",
-            "affects": "self.entries.model"
+            "affects": "entries.model"
           }
         ],
         "modifierGroups": [
@@ -69576,12 +70462,13 @@
             ]
           }
         ],
-        "rules": [
+        "infoLinks": [
           {
             "name": "Cloaked in Honour",
-            "id": "5b5d-176b-370e-73f9",
+            "id": "c613-6868-12e8-11ea",
             "hidden": false,
-            "description": "Whenever a unit containing models with this special rule declares a charge targeting a unit already engaged in combat, the charge roll gains an additional +1 modifier, if the charge is successful then all models in the charging unit with the Cloaked in Honour special rule gain +1 to hit for the duration of the turn in which that charge is made."
+            "type": "rule",
+            "targetId": "a3e3-ed00-490c-9b7c"
           }
         ]
       },
@@ -70304,6 +71191,426 @@
             "hidden": false,
             "type": "profile",
             "targetId": "8e2e-6e37-ceb7-a892"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Centurion",
+        "hidden": true,
+        "id": "8eb5-cee6-e7b2-c22b",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "9603-7099-72c9-a2f3"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "9603-7099-72c9-a2f3"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "45dd-86b9-f864-7ec7",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 10,
+                "field": "54b5-0978-c8a4-5b5a"
+              },
+              {
+                "type": "prepend",
+                "value": "Arch",
+                "field": "name",
+                "join": "-"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "root-entry",
+                "childId": "e779-59c8-0cd9-d169",
+                "shared": true
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 20
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Hatred",
+            "id": "a26b-56ee-4a9a-a94e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bacb-64aa-bb42-4c9d",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Loyalists",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "The Tyrant's Will",
+            "id": "c259-7427-2bfa-64b6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfca-2350-5ac5-1d7e"
+          },
+          {
+            "name": "Arch-Centurion/Centurion",
+            "id": "9849-574d-0f6a-fb68",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "caef-b10a-4a2d-94ad"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Orbital Bombardment",
+        "hidden": false,
+        "id": "bde5-28ec-5ade-cce4",
+        "profiles": [
+          {
+            "name": "Orbital Bombardment",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "3f6b-5b79-cc67-e3f9",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "80\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "10"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Ordnance 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Barrage, Large Blast (5\"), Lance, One Shot, Orbital Strike"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Barrage",
+            "id": "8cb7-6868-acc6-5a26",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9687-76a5-98c6-200d"
+          },
+          {
+            "name": "Blast",
+            "id": "2aad-eb0a-0509-8e7c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              },
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name"
+              }
+            ]
+          },
+          {
+            "name": "Lance",
+            "id": "253a-f2b5-bee0-f40b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ed29-032f-7042-1cf3"
+          },
+          {
+            "name": "One Shot",
+            "id": "902b-0e7c-e080-025a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Orbital Strike",
+            "id": "12ac-3b24-ee65-b84d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "609a-3502-efae-d675"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Conversion Beamer",
+        "hidden": false,
+        "id": "6c65-74a4-4405-ee83",
+        "profiles": [
+          {
+            "name": "Conversion Beamer - Short Range",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "15a3-85d9-1f18-3c00",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "0\"-18\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "6"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Blind"
+              }
+            ]
+          },
+          {
+            "name": "Conversion Beamer - Medium Range",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "19c5-a949-dd43-5ab5",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "18\"-42\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "4"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Blind"
+              }
+            ]
+          },
+          {
+            "name": "Conversion Beamer - Long Range",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "fd8a-ca57-ddc9-6dd7",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "42\"-72\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "10"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Blast (3\"), Blind"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "bb69-3891-6585-86de",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Blind",
+            "id": "a9a5-d9e2-4841-953f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7566-b279-0ebd-607a"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Guardians of the Endymion Cluster",
+        "hidden": true,
+        "id": "3daf-d24d-723d-6b21",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "fc52-c8a0-a8df-d914"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "fc52-c8a0-a8df-d914"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "cfc7-c7c8-d2b8-4fb3",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 4,
+            "field": "54b5-0978-c8a4-5b5a",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "unit",
+                "childId": "model",
+                "shared": true,
+                "roundUp": false
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Deep Strike",
+            "id": "b1de-42b9-a1bd-5e54",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          },
+          {
+            "name": "Sudden Strike",
+            "id": "84be-8c65-4df0-1b71",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "32d6-1fba-bdb8-e7d9"
+          },
+          {
+            "name": "Fateful Appearance",
+            "id": "c0f8-0f41-43a8-9841",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "313f-1377-cf84-46bc"
           }
         ]
       }
@@ -71749,12 +73056,6 @@
         "description": "A Model with this special rule also has the Master of the Company Special rule. In addition, if this model is fielded it must be a part of the Primary Detachment and must be the armies Warlord. Due to the truly legendary prospect of a Chapter Master taking to the field of battle, an army may also take an additional Elites choice."
       },
       {
-        "name": "The Black Rage",
-        "id": "51e6-55a6-1ff3-6187",
-        "hidden": false,
-        "description": "A unit with this special rule may only ever be joined by a Reclusiarchs. They may also never score, no matter what."
-      },
-      {
         "name": "Chapter Tactics (Lamenters)",
         "id": "915e-e711-3c08-efd4",
         "hidden": false,
@@ -71911,100 +73212,16 @@
         "description": "A model with this special rule may carry models of the Dreadnought and Automata Unit Types, as well as models with the Cavalry Unit Type but not the Antigrav Sub-type. Each Dreadnought model uses 10 points of Transport Capacity, while each Automata and Cavalry model uses up a number of Transport Capacity points equal to twice its starting Wounds Characteristic."
       },
       {
-        "name": "Fervent Fighters",
-        "id": "4e66-57db-c81f-e5a9",
-        "hidden": false,
-        "description": "During a turn in which a unit made up entirely of models with the Marines Errant special rule successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1."
-      },
-      {
-        "name": "Headhunters",
-        "id": "6152-1216-69b3-4e68",
-        "hidden": false,
-        "description": "All character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge – roll saves against these attacks separately.\n\nThe character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible."
-      },
-      {
-        "name": "Bitter Mettle",
-        "id": "3407-db2a-4d80-a346",
-        "hidden": false,
-        "description": "All models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc.\n\n(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).\n-Badab Enthusiast)"
-      },
-      {
-        "name": "Unrelenting Assault",
-        "id": "a390-0e92-c93a-1bb2",
-        "hidden": false,
-        "description": "Models with Chapter Tactics (Minotaurs) do not take Morale checks due to casualties in any shooting phase and may re-roll failed Pinning Checks. They may never make use of the Withdraw Reaction."
-      },
-      {
-        "name": "Trample and Crush",
-        "id": "9821-070b-08d6-2255",
-        "hidden": false,
-        "description": "Models with Chapter Tactics (Minotaurs) gain the Crusader special rule. In addition, they add +1 to any roll to determine charge distances while in an enemy deployment zone."
-      },
-      {
-        "name": "Strike from the Shadows",
-        "id": "2882-bec3-d025-f862",
-        "hidden": false,
-        "description": "Models in this detachment have the Scout special rule. In addition, on the first game turn, models in the detachment have the Shrouded (6+) this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc.\n\nNote that units which contain models with any variant of the Bulky (x) special rule do not benefit from either rule."
-      },
-      {
-        "name": "Legendary Marksmen",
-        "id": "b681-2932-ef31-7816",
-        "hidden": false,
-        "description": "Any unit with this special rule that does not move in the Movement phase of their turn or is not pinned, may choose to gain the Rending (6+) special rule when firing in the Shooting phase of that turn with boltguns, combi-weapons fired as boltguns or bolt pistols. When using this rule, such weapons are counted as being Heavy 1 instead of their usual type for that attack.\n"
-      },
-      {
-        "name": "Encarmine Fury",
-        "id": "6c27-4817-8d2d-30d7",
-        "hidden": false,
-        "description": "All models with The Lamenters chapter tactic require one lower result to wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful charge against an enemy unit even if that Charge is counted as Disordered."
-      },
-      {
-        "name": "Maelstrom Warder",
-        "id": "a60d-2f58-e0d2-f805",
-        "hidden": false,
-        "description": "Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone."
-      },
-      {
-        "name": "Blood of Fire",
-        "id": "f15b-2311-eff1-0df7",
-        "hidden": false,
-        "description": "When rolling to wound against a model with this special rule for any attack inflicted by a flame, melta, or plasma weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the strength of the weapon, only the roll to wound). In addition, all models that have more than one wound or Hull point gain the It Will Not Die (6+) special rule."
-      },
-      {
         "name": "Chapter Tactics (Carcharodons)",
         "id": "4f6c-8da1-0ec8-7792",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Carcharodons) Special Rule gains Blood Hunger Special Rule."
       },
       {
-        "name": "Blood Hunger",
-        "id": "818c-7e08-c0b0-e52a",
-        "hidden": false,
-        "description": "All units with Chapter Tactics (Carcharodons) gain the Blooded (x) special rule after they have either destroyed an enemy infantry or cavalry unit in an assault or forced one to Fall Back. Place a suitable marker on any unit that gains the Blooded (x) special rule to indicate this has occurred. For each additional unit destroyed or made to fall back, place another Blooded (x) token on the unit. When one of these marked units makes a consolidation move, it must move towards the nearest enemy unit."
-      },
-      {
-        "name": "Blooded (X)",
-        "id": "0134-7058-e752-1adf",
-        "hidden": false,
-        "description": "A Model with the Blooded (X) special rule receives X amount of extra attacks on a turn it charges into combat, this is in addition to Rage (X), Rampage (X) etc. The X is the number of Blooded tokens the unit currently has. If there is an Independent Character within the unit that also has Blooded (X) tokens, simply pick the higher of the two token pools and use for the Blooded (X) special Rule."
-      },
-      {
         "name": "Letting-talons",
         "id": "7690-b0d6-d84b-1cab",
         "hidden": false,
         "description": "When a model has 2 Letting-talons they gain +2 Attacks instead of the usual +1 for using an additional weapon in combat."
-      },
-      {
-        "name": "Indomitable",
-        "id": "7df8-df94-3577-cc99",
-        "hidden": false,
-        "description": "All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw."
-      },
-      {
-        "name": "Gladius Incandor",
-        "id": "6f6b-fe32-80ea-91b1",
-        "hidden": false,
-        "description": "All units with the chapter tactic (Fire Angels) gain a bonus +1 to hit when rolling To Hit with in an assault with one of the following weapons: Chainsword, Force Sword, Power Sword, Terranic Great Sword. In addition, models with the Vehicle Sub-type gain +1 Strength when making a ram action."
       },
       {
         "name": "Chapter Tactics (Exorcists)",
@@ -72025,34 +73242,10 @@
         "description": "Any model with the Chapter Tactics (Fire Hawks) Special Rule gains On Wings of Fire, Speed and Fury and The Livery of Curs Special Rules."
       },
       {
-        "name": "On Wings of Fire",
-        "id": "2499-f2c2-b262-5d92",
-        "hidden": false,
-        "description": "All Flamer, Hand Flamer and Heavy Flamer attacks made by models with Chapter Tactics (Fire Hawks) gain +1 Strength on the turn in which the unit enters play using the Deep Strike special rule (including models exiting from Drop Pods). Hammer of Wrath attacks made by jump pack-equipped models with Chapter Tactics (Fire Hawks) also gain +1 Strength."
-      },
-      {
-        "name": "Speed and Fury",
-        "id": "480e-3a13-fe0d-99f9",
-        "hidden": false,
-        "description": "All Assault squads and Vanguard Veteran squads equipped with Warhawk Jump Packs with the Chapter Tactics (Fire Hawks) special rule, chosen as part of a Primary Detachment gain the Line unit Sub-Type."
-      },
-      {
-        "name": "The Livery of Curs",
-        "id": "f0be-92e8-8936-ac5e",
-        "hidden": false,
-        "description": "Any model with the Chapter Tactics (Fire Hawks) special rule lessens all cover saves they are receiving by 1. Eg. If a Fire Hawks Tactical Marine was in a ruin (5+ Cover Save) It would instead be a 6+ cover save."
-      },
-      {
         "name": "Chapter Tactics (Howling Griffons)",
         "id": "848a-fb14-b938-236d",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Howling Griffons) Special Rule gains Into the Fray Special Rule."
-      },
-      {
-        "name": "Into the Fray",
-        "id": "e00f-3924-c3b1-df2d",
-        "hidden": false,
-        "description": "On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal – after any initiative modifiers from other special rules have been taken into account."
       },
       {
         "name": "Chapter Tactics (Novamarines)",
@@ -72061,22 +73254,10 @@
         "description": "Any model with the Chapter Tactics (Novamarines) Special Rule gains The Strength of Wisdom Special Rules."
       },
       {
-        "name": "The Strength of Wisdom",
-        "id": "a160-eb17-4cad-3749",
-        "hidden": false,
-        "description": "When rolling To Hit with this special rule as part of a Shooting Attack add+1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of the models with this special rule in the same shooting phase, and if the attacking model is within 6\" of a model from that friendly unit. This does not affect attacks made with a Blast or Barrage special rules."
-      },
-      {
         "name": "Chapter Tactics (Red Scorpions)",
         "id": "e753-72e1-0d1f-6164",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Red Scorpions) Special Rule gains Fortitude and Contempt Special Rules."
-      },
-      {
-        "name": "Fortitude and Contempt",
-        "id": "33f4-4409-380e-6255",
-        "hidden": false,
-        "description": "Models with Chapter Tactics (Red Scorpions) may re-roll all failed Pinning tests but cannot benefit from the Evade Reaction."
       },
       {
         "name": "Chapter Tactics (Sons of Medusa)",
@@ -72085,34 +73266,46 @@
         "description": "Any model with the Chapter Tactics (Sons of Medusa) Special Rule gains True Sons Special Rule."
       },
       {
-        "name": "True Sons",
-        "id": "11cf-8af4-8945-d775",
-        "hidden": false,
-        "description": "All shooting attacks made against a model with this special rule that does not have the Vehicle Unit Type, suffer a modifier of -1 to the strength of the attack."
-      },
-      {
         "name": "Chapter Tactics (Star Phantoms)",
         "id": "acc4-6de1-f1b8-c6e1",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Star Phantoms) Special Rule gains Orbital Wave Attack, Hail of Destruction and Unfettered Destruction Special Rules."
       },
       {
-        "name": "Orbital Wave Attack",
-        "id": "bd3e-6234-5646-de0d",
+        "name": "Chapter Tactics (Astral Claws)",
+        "id": "0fac-83ea-dd14-f5be",
         "hidden": false,
-        "description": "Any unit in the detachment arriving via Deep Strike may re-roll any Reserve roll of 1 if its controlling player wishes."
+        "description": "Any model with the Chapter Tactics (Astral Claws) Special Rule gains Reckless Courage and Maelstrom Warder Special Rules."
       },
       {
-        "name": "Hail of Destruction",
-        "id": "4ecb-7145-fb6c-a617",
+        "name": "Supreme Commander",
+        "id": "c43b-474f-f85a-a0ea",
         "hidden": false,
-        "description": "Once per game, the player may declare the use of this ability and its effects last\nfrom the start of the controlling player’s Shooting phase until the start of their next Shooting phase. During this period, all infantry and cavalry units in the detachment with Chapter Tactics (Star Phantoms) count their Rapid Fire, Assault and Heavy Weapons as being twin-linked."
+        "description": "An army led by a model with the Supreme Commander (X) Rule may, if it choses, take 0-1 choices of any non Unique, Non HQ unit from any other army within their faction."
       },
       {
-        "name": "Unfettered Destruction",
-        "id": "d08a-ad91-a7ba-65de",
+        "name": "Ancient Devotion",
+        "id": "fd02-c3f5-813e-792e",
         "hidden": false,
-        "description": "Any model with the Chapter Tactics (Star Phantoms) Special rule receives +1 to hit attacking with any ‘Plasma’ or ‘Melta’ weapons."
+        "description": "While a model with this special rule is part of a unit, all Dreadnought models in that unit gain the It Will Not Die (5+) special rule."
+      },
+      {
+        "name": "Keeper of the Dead",
+        "id": "04cf-f528-901f-2b1d",
+        "hidden": false,
+        "description": "A Detachment that includes a model with this special rule may take an additional Castraferrum Dreadnought or Contemptor Dreadnought as part as the same Force Organisation choice as the model with this special rule. The model with this special rule must join the Dreadnought unit that has been selected at the beginning of the battle during deployment and may not voluntarily leave that unit during play - this is an exception to the Dreadnought Unit Type which would normally stop such models from joining a unit including a model with the Dreadnought Unit Type."
+      },
+      {
+        "name": "Arch-Centurion/Centurion",
+        "id": "caef-b10a-4a2d-94ad",
+        "hidden": false,
+        "description": "An Arch-Centurion/Centurion and all models in a unit he joins gains the Hatred (Loyalists) rules."
+      },
+      {
+        "name": "Chapter Tactics (Mantis Warriors)",
+        "id": "2aa1-fd50-a063-bd1b",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Mantis Warriors) Special Rule gains Shadow Killers, Children of Prophecy and Maelstrom Warder Special Rules."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -73632,26 +74825,6 @@
                 "value": 25
               }
             ],
-            "rules": [
-              {
-                "name": "Keeper of the Dead",
-                "id": "7128-4d63-cc6b-01c0",
-                "hidden": false,
-                "description": "Keeper of the Dead: A Detachment that includes a model with this special rule may take an additional Castraferrum Dreadnought or Contemptor Dreadnought as part as the same Force Organisation choice as the model with this special rule. The model with this special rule must join the Dreadnought unit that has been selected at the beginning of the battle during deployment and may not voluntarily leave that unit during play - this is an exception to the Dreadnought Unit Type which would normally stop such models from joining a unit including a model with the Dreadnought Unit Type."
-              },
-              {
-                "name": "Ancient Devotion",
-                "id": "ca5d-1a3f-96d6-3004",
-                "hidden": false,
-                "description": "While a model with this special rule is part of a unit, all Dreadnought models in that unit gain the It Will Not Die (5+) special rule."
-              },
-              {
-                "name": "Master of the Relics",
-                "id": "2522-c8f7-7e69-d3da",
-                "hidden": false,
-                "description": "A detachment that contains a model with this special rule may include an additional Relic of the Chapter. Eg a 1000 point army could contain two Relics of the Chapter."
-              }
-            ],
             "entryLinks": [
               {
                 "import": true,
@@ -73704,42 +74877,15 @@
                     "id": "b356-0cc6-317a-f528-max"
                   }
                 ]
-              }
-            ],
-            "selectionEntryGroups": [
+              },
               {
+                "import": true,
                 "name": "Additional Dreadnought",
-                "id": "d9e3-774a-27ff-6153",
                 "hidden": false,
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Castraferrum Dreadnought",
-                    "hidden": false,
-                    "id": "87b7-e373-821a-477d",
-                    "type": "selectionEntry",
-                    "targetId": "9686-bc25-fb3c-182d",
-                    "defaultAmount": ""
-                  },
-                  {
-                    "import": true,
-                    "name": "Contemptor Dreadnought",
-                    "hidden": false,
-                    "id": "98bc-0dac-2d92-34d8",
-                    "type": "selectionEntry",
-                    "targetId": "0d53-97ee-08b5-589e"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5acb-2971-ce60-4f80"
-                  }
-                ]
+                "id": "f119-57cd-6f96-6d0f",
+                "type": "selectionEntryGroup",
+                "targetId": "d9e3-774a-27ff-6153",
+                "sortIndex": 1
               }
             ],
             "constraints": [
@@ -73759,6 +74905,22 @@
                 "value": "5a98-10a7-8364-240c",
                 "field": "category",
                 "scope": "parent"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Ancient Devotion",
+                "id": "cb85-17f7-d237-d31d",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "fd02-c3f5-813e-792e"
+              },
+              {
+                "name": "Keeper of the Dead",
+                "id": "4c68-6dc6-de87-1d23",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "04cf-f528-901f-2b1d"
               }
             ]
           },
@@ -73875,6 +75037,96 @@
             "id": "c7b1-ea88-c71b-7737",
             "type": "selectionEntry",
             "targetId": "af8c-8112-b1e1-367d"
+          },
+          {
+            "import": true,
+            "name": "Vanguard Veteran Squad",
+            "hidden": true,
+            "id": "6830-9e2f-1a4e-10bc",
+            "type": "selectionEntry",
+            "targetId": "9f78-4194-5763-f6ad",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "5aff-769e-a260-7eb9",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": "Veteran Retaliators",
+                "field": "name"
+              },
+              {
+                "type": "increment",
+                "value": 5,
+                "field": "54b5-0978-c8a4-5b5a",
+                "affects": "self.entries.model"
+              },
+              {
+                "type": "add",
+                "value": "33d0-319a-741e-573f",
+                "field": "category",
+                "affects": "self.entries.model"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "144b-f898-a0e4-e7ac"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Furious Charge",
+                "id": "891b-fb4a-7ba6-55c3",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7281-8b61-791e-c0f1",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "1",
+                    "field": "annotation"
+                  }
+                ]
+              },
+              {
+                "name": "Fear",
+                "id": "0bb8-c729-5f38-3bb2",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "b19f-31c5-018a-932e",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "1",
+                    "field": "annotation"
+                  }
+                ]
+              },
+              {
+                "name": "Retinue",
+                "id": "8d0a-cd44-91e9-970d",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2a91-35fc-a75c-b171"
+              }
+            ]
           }
         ]
       },
@@ -75744,6 +76996,58 @@
             "id": "f5f0-64bb-2923-7024-max"
           }
         ]
+      },
+      {
+        "name": "Additional Dreadnought",
+        "id": "d9e3-774a-27ff-6153",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Castraferrum Dreadnought Talon",
+            "hidden": false,
+            "id": "87b7-e373-821a-477d",
+            "type": "selectionEntry",
+            "targetId": "0bb3-0253-836f-d58c",
+            "defaultAmount": "",
+            "categoryLinks": [
+              {
+                "name": "Retinue",
+                "hidden": false,
+                "id": "8277-7638-90e0-64a4",
+                "targetId": "12a7-f83c-886b-8e94",
+                "primary": false
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Contemptor Dreadnought",
+            "hidden": false,
+            "id": "98bc-0dac-2d92-34d8",
+            "type": "selectionEntry",
+            "targetId": "0d53-97ee-08b5-589e",
+            "categoryLinks": [
+              {
+                "name": "Retinue",
+                "hidden": false,
+                "id": "d3c4-afc4-3d63-d4cb",
+                "targetId": "12a7-f83c-886b-8e94",
+                "primary": false
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "5acb-2971-ce60-4f80"
+          }
+        ]
       }
     ],
     "categoryEntries": [
@@ -75807,7 +77111,15 @@
       {
         "name": "Master of the Relics",
         "id": "5a98-10a7-8364-240c",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Master of the Relics",
+            "id": "2522-c8f7-7e69-d3da",
+            "hidden": false,
+            "description": "A detachment that contains a model with this special rule may include an additional Relic of the Chapter. Eg a 1000 point army could contain two Relics of the Chapter."
+          }
+        ]
       },
       {
         "name": "Relic of the Chapter",
@@ -76206,36 +77518,31 @@
         "name": "Commander of the 9th Company",
         "id": "9971-204e-8dd6-dbb7",
         "hidden": false
-      }
-    ],
-    "infoLinks": [
+      },
       {
-        "name": "Preferred Enemy",
-        "id": "dbdd-bd4f-3e93-2149",
+        "name": "Supreme Commander",
+        "id": "f722-b54b-e2ba-79cc",
         "hidden": false,
-        "type": "rule",
-        "targetId": "bb1e-f9f5-2a51-c8c0",
-        "modifiers": [
+        "infoLinks": [
           {
-            "type": "set",
-            "value": "Space Marines",
-            "field": "annotation"
-          },
+            "name": "Supreme Commander",
+            "id": "27e7-ad43-9290-38ae",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c43b-474f-f85a-a0ea"
+          }
+        ]
+      },
+      {
+        "name": "Legion Overseer",
+        "id": "5aff-769e-a260-7eb9",
+        "hidden": false,
+        "rules": [
           {
-            "type": "set",
-            "value": true,
-            "field": "hidden",
-            "conditions": [
-              {
-                "type": "lessThan",
-                "value": 1,
-                "field": "selections",
-                "scope": "force",
-                "childId": "ac2b-b7c8-7313-ae91",
-                "shared": true,
-                "includeChildSelections": true
-              }
-            ]
+            "name": "Legion Overseer",
+            "id": "1765-538c-786a-de8b",
+            "hidden": false,
+            "description": "A single unit of Vanguard Veterans may be upgraded to Veteran Retaliators at +5 points a model. The unit gain the following:\n- Heavy unit sub-type\n- Furious Charge (1), Fear (1), Retinue Special rules\nOne model may exchange a Bolt Pistol or Chainsword for a Company Standard for +15 points."
           }
         ]
       }
@@ -76665,6 +77972,22 @@
                     "scope": "primary-catalogue",
                     "childId": "2866-ba38-3702-2b24",
                     "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "2b69-a51c-207a-dae5",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8c2b-56b0-a1b0-fb3e",
+                    "shared": true
                   }
                 ]
               }
@@ -76880,6 +78203,22 @@
                     "field": "selections",
                     "scope": "primary-catalogue",
                     "childId": "2866-ba38-3702-2b24",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "2b69-a51c-207a-dae5",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8c2b-56b0-a1b0-fb3e",
                     "shared": true
                   }
                 ]
@@ -77455,6 +78794,22 @@
                     "scope": "primary-catalogue",
                     "childId": "2866-ba38-3702-2b24",
                     "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "2b69-a51c-207a-dae5",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "8c2b-56b0-a1b0-fb3e",
+                    "shared": true
                   }
                 ]
               }
@@ -77739,22 +79094,37 @@
                     "type": "or",
                     "conditions": [
                       {
-                        "type": "notInstanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "primary-catalogue",
-                        "childId": "83e2-bfc7-7be1-62cf",
-                        "shared": true
-                      },
-                      {
                         "type": "lessThan",
                         "value": 1,
                         "field": "selections",
                         "scope": "roster",
-                        "childId": "5f88-a5e3-a229-2e06",
+                        "childId": "f722-b54b-e2ba-79cc",
                         "shared": true,
                         "includeChildSelections": true,
                         "includeChildForces": true
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "childId": "83e2-bfc7-7be1-62cf",
+                            "shared": true
+                          },
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "childId": "2b69-a51c-207a-dae5",
+                            "shared": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -77789,7 +79159,53 @@
             "hidden": false,
             "id": "d31d-3f6c-a29b-2211",
             "type": "selectionEntryGroup",
-            "targetId": "e1e7-7fb7-c4f2-5516"
+            "targetId": "e1e7-7fb7-c4f2-5516",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "45dd-86b9-f864-7ec7",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Chapter (Secessionists)",
+            "hidden": false,
+            "id": "f679-a4fa-c854-1638",
+            "type": "selectionEntryGroup",
+            "targetId": "055d-deec-f11e-605e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "1ef8-9b76-c208-d080",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

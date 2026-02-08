@@ -103,6 +103,13 @@
             "id": "3feb-9afc-759d-0f14",
             "targetId": "325c-e791-275c-2ab7",
             "primary": false
+          },
+          {
+            "name": "Supreme Commander",
+            "hidden": false,
+            "id": "e0e4-daa7-bf79-d6b5",
+            "targetId": "f722-b54b-e2ba-79cc",
+            "primary": false
           }
         ],
         "selectionEntries": [
@@ -292,6 +299,12 @@
                     "field": "69ed-cbc7-3fbc-7ba5",
                     "affects": "profiles.Model",
                     "scope": "parent"
+                  },
+                  {
+                    "type": "prepend",
+                    "value": "Relic",
+                    "field": "name",
+                    "join": " "
                   }
                 ]
               },
@@ -602,6 +615,13 @@
             "hidden": false,
             "id": "61b1-d489-f133-a141",
             "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Supreme Commander",
+            "hidden": false,
+            "id": "e923-aa55-8c8c-936e",
+            "targetId": "f722-b54b-e2ba-79cc",
             "primary": false
           }
         ],

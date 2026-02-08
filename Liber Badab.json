@@ -620,6 +620,29 @@
             "id": "ea6d-ab61-e667-7094"
           }
         ]
+      },
+      {
+        "name": "Chapter Tactics",
+        "id": "a50c-d109-8367-024a",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "Allegiance",
+            "id": "dcb6-a82e-f86a-fa8e"
+          },
+          {
+            "name": "Special Rules",
+            "id": "9a1f-60ed-a905-474e"
+          },
+          {
+            "name": "Warlord Traits",
+            "id": "5821-a01d-f96c-4ff4"
+          },
+          {
+            "name": "Unit Upgrades",
+            "id": "60e8-bea8-428a-115b"
+          }
+        ]
       }
     ],
     "costTypes": [
@@ -982,7 +1005,7 @@
         "name": "Counter-attack",
         "id": "d079-5609-e2c3-e95e",
         "hidden": false,
-        "description": "If a unit contains at least one model with this special rule, and that unit is Charged, every model with the Counter-attack special rule gains a number of additional Attacks equal to the value in brackets listed as part of this special rule. If no value is listed then the unit gains +1 Attack.\n\n\nIf, when Charged, the unit was already locked in combat or has made the Hold the Line Reaction, the Counter-attack special rule has no effect."
+        "description": "If a unit contains at least one model with this special rule, and that unit is Charged, every model with the Counter-attack special rule gains a number of additional Attacks equal to the value in brackets listed as part of this special rule. If no value is listed then the unit gains +1 Attack.\n\nIf, when Charged, the unit was already locked in combat or has made the Hold the Line Reaction, the Counter-attack special rule has no effect."
       },
       {
         "name": "Eternal Warrior",
@@ -1146,6 +1169,204 @@
         "id": "0f2c-c9a6-fda6-cc5c",
         "hidden": false,
         "description": "Models with the Adamantium Will special rule gain an Invulnerable Save against any Wound inflicted by a weapon with the Force or Psychic Focus special rules and Wounds inflicted by Perils of the Warp – the value of this Save is indicated in brackets after the rule. For example, a model with Adamantium Will (5+) gains a 5+ Invulnerable Save against any Wound inflicted by a weapon with the Force or Psychic Focus special rules and Wounds inflicted by Perils of the Warp. If, for any reason, the Adamantium Will special rule is presented without a value in brackets then consider the rule to be Adamantium Will (5+)."
+      },
+      {
+        "name": "Blood Hunger",
+        "id": "818c-7e08-c0b0-e52a",
+        "hidden": false,
+        "description": "All units with Chapter Tactics (Carcharodons) gain the Blooded (x) special rule after they have either destroyed an enemy infantry or cavalry unit in an assault or forced one to Fall Back. Place a suitable marker on any unit that gains the Blooded (x) special rule to indicate this has occurred. For each additional unit destroyed or made to fall back, place another Blooded (x) token on the unit. When one of these marked units makes a consolidation move, it must move towards the nearest enemy unit."
+      },
+      {
+        "name": "Blooded (X)",
+        "id": "0134-7058-e752-1adf",
+        "hidden": false,
+        "description": "A Model with the Blooded (X) special rule receives X amount of extra attacks on a turn it charges into combat, this is in addition to Rage (X), Rampage (X) etc. The X is the number of Blooded tokens the unit currently has. If there is an Independent Character within the unit that also has Blooded (X) tokens, simply pick the higher of the two token pools and use for the Blooded (X) special Rule."
+      },
+      {
+        "name": "Indomitable",
+        "id": "7df8-df94-3577-cc99",
+        "hidden": false,
+        "description": "All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw."
+      },
+      {
+        "name": "Gladius Incandor",
+        "id": "6f6b-fe32-80ea-91b1",
+        "hidden": false,
+        "description": "All units with the chapter tactic (Fire Angels) gain a bonus +1 to hit when rolling To Hit with in an assault with one of the following weapons: Chainsword, Force Sword, Power Sword, Terranic Great Sword. In addition, models with the Vehicle Sub-type gain +1 Strength when making a ram action."
+      },
+      {
+        "name": "On Wings of Fire",
+        "id": "2499-f2c2-b262-5d92",
+        "hidden": false,
+        "description": "All Flamer, Hand Flamer and Heavy Flamer attacks made by models with Chapter Tactics (Fire Hawks) gain +1 Strength on the turn in which the unit enters play using the Deep Strike special rule (including models exiting from Drop Pods). Hammer of Wrath attacks made by jump pack-equipped models with Chapter Tactics (Fire Hawks) also gain +1 Strength."
+      },
+      {
+        "name": "Speed and Fury",
+        "id": "480e-3a13-fe0d-99f9",
+        "hidden": false,
+        "description": "All Assault squads and Vanguard Veteran squads equipped with Warhawk Jump Packs with the Chapter Tactics (Fire Hawks) special rule, chosen as part of a Primary Detachment gain the Line unit Sub-Type."
+      },
+      {
+        "name": "The Livery of Curs",
+        "id": "f0be-92e8-8936-ac5e",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Fire Hawks) special rule lessens all cover saves they are receiving by 1. Eg. If a Fire Hawks Tactical Marine was in a ruin (5+ Cover Save) It would instead be a 6+ cover save."
+      },
+      {
+        "name": "Into the Fray",
+        "id": "e00f-3924-c3b1-df2d",
+        "hidden": false,
+        "description": "On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal – after any initiative modifiers from other special rules have been taken into account."
+      },
+      {
+        "name": "Fervent Fighters",
+        "id": "4e66-57db-c81f-e5a9",
+        "hidden": false,
+        "description": "During a turn in which a unit made up entirely of models with the Marines Errant special rule successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1."
+      },
+      {
+        "name": "Unrelenting Assault",
+        "id": "a390-0e92-c93a-1bb2",
+        "hidden": false,
+        "description": "Models with Chapter Tactics (Minotaurs) do not take Morale checks due to casualties in any shooting phase and may re-roll failed Pinning Checks. They may never make use of the Withdraw Reaction."
+      },
+      {
+        "name": "Trample and Crush",
+        "id": "9821-070b-08d6-2255",
+        "hidden": false,
+        "description": "Models with Chapter Tactics (Minotaurs) gain the Crusader special rule. In addition, they add +1 to any roll to determine charge distances while in an enemy deployment zone."
+      },
+      {
+        "name": "The Strength of Wisdom",
+        "id": "a160-eb17-4cad-3749",
+        "hidden": false,
+        "description": "When rolling To Hit with this special rule as part of a Shooting Attack add+1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of the models with this special rule in the same shooting phase, and if the attacking model is within 6\" of a model from that friendly unit. This does not affect attacks made with a Blast or Barrage special rules."
+      },
+      {
+        "name": "Strike from the Shadows",
+        "id": "2882-bec3-d025-f862",
+        "hidden": false,
+        "description": "Models in this detachment have the Scout special rule. In addition, on the first game turn, models in the detachment have the Shrouded (6+) this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc.\n\nNote that units which contain models with any variant of the Bulky (x) special rule do not benefit from either rule."
+      },
+      {
+        "name": "Legendary Marksmen",
+        "id": "b681-2932-ef31-7816",
+        "hidden": false,
+        "description": "Any unit with this special rule that does not move in the Movement phase of their turn or is not pinned, may choose to gain the Rending (6+) special rule when firing in the Shooting phase of that turn with boltguns, combi-weapons fired as boltguns or bolt pistols. When using this rule, such weapons are counted as being Heavy 1 instead of their usual type for that attack.\n"
+      },
+      {
+        "name": "Fortitude and Contempt",
+        "id": "33f4-4409-380e-6255",
+        "hidden": false,
+        "description": "Models with Chapter Tactics (Red Scorpions) may re-roll all failed Pinning tests but cannot benefit from the Evade Reaction."
+      },
+      {
+        "name": "Cloaked in Honour",
+        "id": "a3e3-ed00-490c-9b7c",
+        "hidden": false,
+        "description": "Whenever a unit containing models with this special rule declares a charge targeting a unit already engaged in combat, the charge roll gains an additional +1 modifier, if the charge is successful then all models in the charging unit with the Cloaked in Honour special rule gain +1 to hit for the duration of the turn in which that charge is made."
+      },
+      {
+        "name": "Blood of Fire",
+        "id": "f15b-2311-eff1-0df7",
+        "hidden": false,
+        "description": "When rolling to wound against a model with this special rule for any attack inflicted by a flame, melta, or plasma weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the strength of the weapon, only the roll to wound). In addition, all models that have more than one wound or Hull point gain the It Will Not Die (6+) special rule."
+      },
+      {
+        "name": "Orbital Wave Attack",
+        "id": "bd3e-6234-5646-de0d",
+        "hidden": false,
+        "description": "Any unit in the detachment arriving via Deep Strike may re-roll any Reserve roll of 1 if its controlling player wishes."
+      },
+      {
+        "name": "Hail of Destruction",
+        "id": "4ecb-7145-fb6c-a617",
+        "hidden": false,
+        "description": "Once per game, the player may declare the use of this ability and its effects last\nfrom the start of the controlling player’s Shooting phase until the start of their next Shooting phase. During this period, all infantry and cavalry units in the detachment with Chapter Tactics (Star Phantoms) count their Rapid Fire, Assault and Heavy Weapons as being twin-linked."
+      },
+      {
+        "name": "Unfettered Destruction",
+        "id": "d08a-ad91-a7ba-65de",
+        "hidden": false,
+        "description": "Any model with the Chapter Tactics (Star Phantoms) Special rule receives +1 to hit attacking with any ‘Plasma’ or ‘Melta’ weapons."
+      },
+      {
+        "name": "Reckless Courage",
+        "id": "a184-43c5-22fb-3d11",
+        "hidden": false,
+        "description": "Any Astral Claws model gains the Stubborn special rule and may never choose to automatically fail a Morale check."
+      },
+      {
+        "name": "Maelstrom Warder",
+        "id": "a60d-2f58-e0d2-f805",
+        "hidden": false,
+        "description": "Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone."
+      },
+      {
+        "name": "Dark Harvest",
+        "id": "b691-e6ee-55cf-420d",
+        "hidden": false,
+        "description": "In games where kill points are being used, if any Infantry unit with the Chapter Tactics (X) special rule is destroyed within 12\" of the Corpse taker Vivisector, the controlling player receives one extra victory point per such unit destroyed.\n\nAll enemy models with the Chapter Tactics (X) special rule gain the Hatred (Corpse Taker Vivisector) rule. Also, if the Vivisector is killed at any point during the battle, the opposing player gains +2 Victory Points and the Controlling player loses any of the bonus ‘harvested’ victory points they had accrued."
+      },
+      {
+        "name": "The Tyrant's Will",
+        "id": "cfca-2350-5ac5-1d7e",
+        "hidden": false,
+        "description": "Any unit without the Chapter Tactics (Astral Claws) within the Tyrant’s Legion that fails any Leadership check within 6\" of a unit with this rule automatically receives D6 AP- Wounds. It then must immediately reroll the failed Leadership Check subtracting the number of wounds taken from the total roll. If the subsequent leadership check fails, then proceed as usual."
+      },
+      {
+        "name": "Bitter Mettle",
+        "id": "3407-db2a-4d80-a346",
+        "hidden": false,
+        "description": "All models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc.\n\n(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).\n-Badab Enthusiast)"
+      },
+      {
+        "name": "Headhunters",
+        "id": "6152-1216-69b3-4e68",
+        "hidden": false,
+        "description": "All character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge – roll saves against these attacks separately.\n\nThe character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible."
+      },
+      {
+        "name": "Encarmine Fury",
+        "id": "6c27-4817-8d2d-30d7",
+        "hidden": false,
+        "description": "All models with The Lamenters chapter tactic require one lower result to wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful charge against an enemy unit even if that Charge is counted as Disordered."
+      },
+      {
+        "name": "Black Rage",
+        "id": "51e6-55a6-1ff3-6187",
+        "hidden": false,
+        "description": "A unit with this special rule may only ever be joined by a Reclusiarchs. They may also never score, no matter what."
+      },
+      {
+        "name": "Shadow Killers",
+        "id": "de08-a180-b8b7-f02c",
+        "hidden": false,
+        "description": "Infantry models with the Chapter Tactics (Mantis Warriors) and without anyform of the Bulky (X) Rule gain the Move Through Cover Special Rule and and add +1 to their movement characteristic.\n\nIn addition, any non-vehicle Model with the Chapter Tactics (Mantis Warriors) Special Rule, on any turn in which they declare a charge from within a terrain feature that grants a cover save (not including any terrain piece purchased as a Fortification choice), they gain the Furious Charge (1) special rule."
+      },
+      {
+        "name": "Sudden Strike",
+        "id": "32d6-1fba-bdb8-e7d9",
+        "hidden": false,
+        "description": "Models with this special rule gain a +1 Initiative bonus in any phase in which they charge."
+      },
+      {
+        "name": "Fateful Appearance",
+        "id": "313f-1377-cf84-46bc",
+        "hidden": false,
+        "description": "Models with this special rule have a cover save of 5+ on the turn they arrive via Deep Strike."
+      },
+      {
+        "name": "Children of Prophecy",
+        "id": "f24e-1fcd-1c3a-de23",
+        "hidden": false,
+        "description": "A force whose primary detachment has Chapter Tactics (Mantis Warriors) may reroll failed attempts to Seize the Initiative where this is a factor in the mission being played."
+      },
+      {
+        "name": "Precision Strikes",
+        "id": "6f60-480c-b0de-6dd4",
+        "hidden": false,
+        "description": "If a model with this special rule, or attacking with a weapon with this special rule, rolls equal to or higher than the value in brackets when making a To Hit roll as part of a melee attack, that hit is a ‘Precision Strike’. For example, if a model with the Precision Strikes (4+) special rule rolls a 4 or higher when making a To Hit roll, then that attack is a Precision Strike.\n\nWounds from Precision Strikes are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as that model is engaged in combat with the attacking model’s unit, rather than following the normal rules for Wound allocation."
       }
     ],
     "sharedSelectionEntries": [
@@ -11532,42 +11753,497 @@
             "import": true,
             "name": "Lamenters",
             "hidden": false,
-            "id": "1f40-fe51-5c23-c07e"
+            "id": "1f40-fe51-5c23-c07e",
+            "profiles": [
+              {
+                "name": "Lamenters",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "8a1c-7949-57e9-bb6a",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Secessionists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Encarmine Fury, Maelstrom Warder"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Forlorn Charge"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Death Company, Black Rage, Sanguinary Guard, Sanguinary Priests, Baal Predator Modification, Overcharged Engines, Relics of Baal, Death Mask"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Encarmine Fury",
+                "id": "7597-33a3-26b7-e8e4",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "6c27-4817-8d2d-30d7"
+              },
+              {
+                "name": "Maelstrom Warder",
+                "id": "0fcf-f493-b4ab-4295",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a60d-2f58-e0d2-f805"
+              },
+              {
+                "name": "Forlorn Charge",
+                "id": "61b0-236d-5bb8-b0bc",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "11d1-1453-98fa-cee1"
+              },
+              {
+                "name": "Black Rage",
+                "id": "871a-1632-20d5-c005",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "51e6-55a6-1ff3-6187"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Death Company",
+                "id": "f8a9-a24a-d833-f65f",
+                "hidden": false,
+                "description": "Any Lamenters Assault Squad, Siege Assault Squad, or Tactical Squad, may be upgraded to death company for 5+ points a model. The unit gains the Fearless, Furious Charge (1), Rage (1), Feel No Pain (6+) and The Black Rage Special Rule. Each model also gains +1 Attack and can access Weapons upgrades as if they each were a Sergeant. These units lose Line and cannot score/deny objectives. Any unit upgraded in such a way remains in its current Force Organization slot, even if they would normally be moved by a Company Level Deployment."
+              },
+              {
+                "name": "Sanguinary Guard",
+                "id": "b039-d227-b1a1-53b2",
+                "hidden": false,
+                "description": "A Lamenters Command Squad that is not mounted on Astartes Combat Bikes may be upgraded to Sanguinary Guard for +15 points per model. They replace their Bolter and Chainsword with an Angelus Boltgun and Encarmine Sword/Axe and gain Death Masks. They also receive the Furious Charge (1) and Stubborn Special Rules."
+              },
+              {
+                "name": "Sanguinary Priests",
+                "id": "62bc-c7f2-3efd-cd05",
+                "hidden": false,
+                "description": "Any model equipped with Narthecium may be upgraded to a Sanguinary Priest for + 25 points. All Infantry models with Chapter Tactics (Lamenters) in a unit that includes at least one Sanguinary Priest adds +1 to their Weapon Skill."
+              },
+              {
+                "name": "Baal Predator Modification",
+                "id": "2fec-e6b2-36ec-829e",
+                "hidden": false,
+                "description": "A Lamenters Predator may be upgraded to represent the anachronous Baal model employed by the sons of Sanguinius for +30 points.\n\nA Baal Predator replaces its Turret Mounted weapon with a Twin- Linked Assault Cannon, which it may swap freely for a Flamestorm cannon. A Baal Predator also freely gains Overcharged Engines wargear. The Baal Predator, may not however upgrade its Sponson Weapons to Lascannons."
+              },
+              {
+                "name": "Overcharged Engines",
+                "id": "15d9-f1ee-5dea-0dbb",
+                "hidden": false,
+                "description": "Any Rhino Based vehicle (Razorback, Predator, Whirlwind etc) may be upgraded to have Overcharged Engines for +15 points per model. If done so the model gains the (Fast) Vehicle Sub-Type in addition to all those it already had."
+              },
+              {
+                "name": "Relics of Baal",
+                "id": "a62f-2dc3-9351-5e45",
+                "hidden": false,
+                "description": "Any model with the Character Sub-Type and the Chapter Tactics (Lamenters) Special Rule may exchange any Power Weapon to an Encarmine Sword or Axe for +5 points. They May also exchange their Bolt Gun or Bolt Pistol for an Angelus Boltgun for +2 Points."
+              },
+              {
+                "name": "Death Mask",
+                "id": "ec93-e471-795e-6d11",
+                "hidden": false,
+                "description": "Any model with the Independent Character and Chapter Tactics (Lamenters) Special rule may be equipped with a Death Mask for +15 points each. A Death Mask gives the model wearing it the Fear (1) and Stubborn Special Rules."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Executioners",
             "hidden": false,
-            "id": "9372-9faa-67e3-c89d"
+            "id": "9372-9faa-67e3-c89d",
+            "infoLinks": [
+              {
+                "name": "Marauding Belligerent",
+                "id": "6a12-0611-d9ae-fa3d",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "f56a-d13b-44e9-9e3f"
+              },
+              {
+                "name": "Bitter Mettle",
+                "id": "5a70-b2aa-942a-41df",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3407-db2a-4d80-a346"
+              },
+              {
+                "name": "Headhunters",
+                "id": "5f10-fbe6-d720-1f7e",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "6152-1216-69b3-4e68"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Executioners",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "5843-2aba-68f0-af3f",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Secessionists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Bitter Mettle, Headhunters"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Marauding Belligerent"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Death-speaker Chaplains, Slaughter-tallies, Aetheling, Sons of the Executioner"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Death-speaker Chaplains",
+                "id": "9c9e-cc83-64c5-0ac9",
+                "hidden": false,
+                "description": "Any Number of Force Commanders may be upgraded to Death-Speaker Chaplains for +35 points. This ignores the normal limitations on Chapter Specialists.\n\nA Death- Speaker Chaplain, and all models in a unit he joins, gains the Stubborn and Hatred (Everything!) special rules. In addition, the Chaplain increases his Leadership Characteristic to 10. They also gain the Slaughter-Tallies Special rule."
+              },
+              {
+                "name": "Slaughter-tallies",
+                "id": "f4b5-c128-03ed-4a57",
+                "hidden": false,
+                "description": "Any enemy with the character sub-type that is slain in a Challenge within 6\" of a Death-Speaker Chaplain gains The Executioners player an extra Victory Point."
+              },
+              {
+                "name": "Aetheling",
+                "id": "2d6e-71c1-f2c9-970c",
+                "hidden": false,
+                "description": "An Executioners Captain may be upgraded to an Aetheling for 10 points. An Aetheling gains the Counter-Attack (1) special rule and confers the Furious Charge Special Rule on a squad he joins."
+              },
+              {
+                "name": "Sons of the Executioner",
+                "id": "a044-5014-5d36-0f5c",
+                "hidden": false,
+                "description": "All models in an Executioners force may exchange a chainsword for a chainaxe for no additional points cost."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Marines Errant",
             "hidden": false,
-            "id": "ed74-ecf1-d0a6-0124"
+            "id": "ed74-ecf1-d0a6-0124",
+            "infoLinks": [
+              {
+                "name": "Coordinated Assault",
+                "id": "594e-6d69-c1a8-37dc",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "a58b-1e7c-4df9-fae8"
+              },
+              {
+                "name": "Fervent Fighters",
+                "id": "e154-d535-cfa7-0b80",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "4e66-57db-c81f-e5a9"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Marines Errant",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "7f45-50e5-8b66-acc3",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Fervent Fighters"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Coordinated Assault"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "The Dark Void Elite, Legatine Axes"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Legatine Axes",
+                "id": "2465-2750-a2ce-9d52",
+                "hidden": false,
+                "description": "Any model with both the Independent Character and Chapter Tactics (Marines Errant) special rules may exchange a Chainsword or a Close Combat Weapon for a Legatine Axe for +20 points, or a power weapon for +10 points."
+              },
+              {
+                "name": "The Dark Void Elite",
+                "id": "2b51-6a77-5b0d-8c89",
+                "hidden": false,
+                "description": "Up to 3 of any of the following units may be upgraded to the Dark Void Elite:\n- Sternguard Veteran Squad\n- Tactical Squad\n- Devastator Squad\n- Character and their Retinue\nfor +20 points a squad. Any unit so upgraded gains the Deep Strike Special Rule and the Heavy unit Sub-type."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Salamanders",
             "hidden": false,
-            "id": "1c46-7a96-775f-8572"
+            "id": "1c46-7a96-775f-8572",
+            "infoLinks": [
+              {
+                "name": "Blood of Fire",
+                "id": "9f17-2258-7dcb-1d11",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f15b-2311-eff1-0df7"
+              },
+              {
+                "name": "Promethean Grit",
+                "id": "2b70-871c-e53c-f461",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "6421-0254-b31b-374c"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Master Artisan",
+                "id": "d2b2-161c-b0f7-7fe8",
+                "hidden": false,
+                "description": "Any model with the Chapter Tactics (Salamanders) and the Character unit sub-type may upgrade their weapon to have the Master-Crafted special rule for +10 points."
+              },
+              {
+                "name": "First Founding Chapter",
+                "id": "0973-196a-fb67-4047",
+                "hidden": false,
+                "description": "A Salamanders Detachment may include up to 2 additional Relics of the Chapter on top of what is usually allowed by points limits or any other special rules."
+              },
+              {
+                "name": "Sons of Pyroclasts",
+                "id": "e4cc-fcd1-c54f-f709",
+                "hidden": false,
+                "description": "A Salamanders Devastator Squad that is entirely equipped Heavy Flamers (sans the sergeant) may be upgraded to Sons of the Pyroclasts for +10 points a model. All models must be upgraded. Each member of that squad gains +1W and the It Will Not Die (5+) Special Rule."
+              },
+              {
+                "name": "Mantle of the Elder Drake",
+                "id": "d35e-8b34-f6b7-775f",
+                "hidden": false,
+                "description": "A Single model in an army with both the Chapter Tactics (Salamanders) special rule and the Character sub-type may take the Manlte of the Eldar Drake for +25 points. This gives the model the the Eternal Warrior special rule, in addition, if wounded by a weapon with the Brutal (X) rule, -1 from the Brutal (X) rule to a minimum of 1."
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Salamanders",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "f04a-df8a-d21e-8bee",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Blood of Fire, Master Artisan, First Founding Chapter"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Promethean Grit"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Sons of Pyroclasts, Mantle of the Elder Drake"
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Raptors",
             "hidden": false,
-            "id": "7246-3389-7f60-2b4e"
+            "id": "7246-3389-7f60-2b4e",
+            "profiles": [
+              {
+                "name": "Raptors",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "ec65-0085-5a45-9866",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Strike from the Shadows, Legendary Marksmen"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Stalk Unseen"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Reconnaissance Squad, Fatal Strike"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Strike from the Shadows",
+                "id": "7aab-1728-d9cd-2c00",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2882-bec3-d025-f862"
+              },
+              {
+                "name": "Legendary Marksmen",
+                "id": "773c-92b6-df80-dcff",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "b681-2932-ef31-7816"
+              },
+              {
+                "name": "Stalk Unseen",
+                "id": "4447-6baa-3846-aae5",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "96b3-ff86-8f51-b548"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Reconnaissance Squad",
+                "id": "0498-ecc9-2354-2b57",
+                "hidden": false,
+                "description": "Any Tactical Squad with the Chapter Tactics (Raptors) Special rule may be upgraded to a Reconnaissance Squad for 6 points a model. All models in a squad must be upgraded. A Reconnaissance Squad gains the Outflank and Fatal Strike Special Rules. In addition, the squad also gains Shroud Bombs."
+              },
+              {
+                "name": "Fatal Strike",
+                "id": "3666-b62b-4bcf-fdb4",
+                "hidden": false,
+                "description": "Once per game, a Raptor Reconnaissance Squad may execute a fatal strike attack against a chosen target. The Reconnaissance Squad’s controlling player declares the Fatal strike at the start of one of the squad’s Shooting phases. For the duration of that phase, the squad’s shooting attacks have both the Twin-linked and Rending (6+) special rules, in addition to any other effects their weapons might have. In the case of weapons already with the Rending (X) Special rule, increase it by 1,eg during the Fatal Strike a weapon with Rending (6+) would go to Rending (5+) for the duration of the attack."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Minotaurs",
             "hidden": false,
-            "id": "ac2b-b7c8-7313-ae91"
+            "id": "ac2b-b7c8-7313-ae91",
+            "profiles": [
+              {
+                "name": "Minotaurs",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "afb8-be22-70bf-4470",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Unrelenting Assault, Trample and Crush, Vaults of Terra"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Shock and Awe"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Hecaton Dreadnoughts, Sacred-band"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Unrelenting Assault",
+                "id": "da97-8f37-c50a-49fe",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a390-0e92-c93a-1bb2"
+              },
+              {
+                "name": "Trample and Crush",
+                "id": "9faf-10da-28e6-db70",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "9821-070b-08d6-2255"
+              },
+              {
+                "name": "Shock and Awe",
+                "id": "838d-fd84-9c01-2533",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "c41b-d3fd-23b8-d4e5"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Hecaton Dreadnoughts",
+                "id": "30ec-7577-049a-9e9f",
+                "hidden": false,
+                "description": "Contemptor Dreadnoughts with the Chapter Tactics (Minotaurs) special rule may be taken in Talons of 2 instead of the usual 1 and receive the Dreadnought Talon special rule."
+              },
+              {
+                "name": "Sacred-band",
+                "id": "aa5b-c9ff-c17f-5168",
+                "hidden": false,
+                "description": "0-1 squad of Minotaurs Terminators may be upgraded to Sacred Band for +10 points a model. All models must be upgraded. A Sacred Band Terminator adds +1 to its WS, and gains the Preferred Enemy (Space Marines) Special Rule."
+              }
+            ]
           },
           {
             "type": "upgrade",
@@ -11575,77 +12251,892 @@
             "name": "Carcharodons",
             "hidden": false,
             "id": "c50c-f665-e9dc-6460",
-            "defaultAmount": ""
+            "defaultAmount": "",
+            "profiles": [
+              {
+                "name": "Carcharodons",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "d44a-6f7e-8f59-ff19",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Reavers of the Outer Darkness, Blood Hunger, Blooded (X)"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Frenzied Swarm"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "The Red Brethren, Letting-talons"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Reavers of the Outer Darkness",
+                "id": "f801-427b-5c1b-6258",
+                "hidden": false,
+                "description": "All models with Chapter Tactics (Carcharodons) may exchange a boltgun they are already equipped with for a close combat weapon for free or a chainsword for +1 point. Any model may also choose to equip an additional close combat weapon for +1 point or chainsword for +2 points per model."
+              },
+              {
+                "name": "The Red Brethren",
+                "id": "67bb-4d2b-dd0c-d28d",
+                "hidden": false,
+                "description": "One Terminator Squad with the Chapter Tactics (Carcharodons) Special rule that is equipped entirely with lightning claws may be upgraded to the Red Brethren for +10 points a model. The Red Brethren gain +1WS, and Battle Hardened (1) and replace their lightning claws with letting-talons."
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Blood Hunger",
+                "id": "b569-8220-25e3-75f3",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "818c-7e08-c0b0-e52a"
+              },
+              {
+                "name": "Blooded (X)",
+                "id": "657b-df0e-2bf5-fbb0",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "0134-7058-e752-1adf"
+              },
+              {
+                "name": "Frenzied Swarm",
+                "id": "e21f-2452-974d-5630",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "ba99-6796-b007-0149"
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Exorcists",
             "hidden": false,
-            "id": "ac66-f192-47b4-7be7"
+            "id": "ac66-f192-47b4-7be7",
+            "profiles": [
+              {
+                "name": "Exorcists",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "bb00-ecb7-c637-5943",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Indomitable"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Black Soul"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Enochian Guard, Asphyx Shells"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Indomitable",
+                "id": "a6a8-45cf-2696-3649",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7df8-df94-3577-cc99"
+              },
+              {
+                "name": "Black Soul",
+                "id": "fb91-ecee-e659-daae",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "66bd-9a6a-1d89-d418"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Enochian Guard",
+                "id": "e57f-f75e-5222-6e80",
+                "hidden": false,
+                "description": "0-1 Terminator Command Squads, Terminator Squads, or Vanguard Veteran Squads with the Chapter Tactics (Exorcists) Special Rule may be upgraded to Enochian Guard at +15 points a model. They Gain the Adamantium Will (4+) Special rule as well as the Psyker Unit (Sub-Type) and may Exchange a Power Fist/Power Weapon for a Force Weapon for free."
+              },
+              {
+                "name": "Asphyx Shells",
+                "id": "328f-d92d-2cf0-bb05",
+                "hidden": false,
+                "description": "Any model with the Chapter Tactics (Exorcists) Special rule may upgrade their Bolt Pistol or Boltgun/Boltgun part of combi-weapon/storm bolter for +1 point a model, or Heavy Bolter for +2 points a model. This may also upgrade twin-linked/gravis variants of these weapons for double the above points. If this model is part of a unit, the entire unit must be upgraded in such a fashion. Any weapon upgraded in such a way gains the Shred special rule."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Fire Angels",
             "hidden": false,
-            "id": "0895-4d0c-a12e-88bb"
+            "id": "0895-4d0c-a12e-88bb",
+            "profiles": [
+              {
+                "name": "Fire Angels",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "7a29-f3b2-3d76-8d84",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Gladius Incandor, Mechanised Furore"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Mechanised Specialist"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "1st Company Veteran Elite, Terranic Greatswords"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Mechanised Specialist",
+                "id": "4c91-84f1-555c-3714",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "d86b-64a7-cb48-19b8"
+              },
+              {
+                "name": "Gladius Incandor",
+                "id": "743c-3248-392c-f540",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "6f6b-fe32-80ea-91b1"
+              }
+            ],
+            "rules": [
+              {
+                "name": "1st Company Veteran Elite",
+                "id": "3f24-6528-f4ca-9c4d",
+                "hidden": false,
+                "description": "A unit of Fire Angels Terminators may be upgraded to 1st Company Veteran Elite for 10 points a model. This unit increases its WS by 1. In addition, these models gain the Hatred (Secessionists) special rule."
+              },
+              {
+                "name": "Terranic Greatswords",
+                "id": "bbf7-2d92-01fc-ae31",
+                "hidden": false,
+                "description": "Any model with both the Independent Character and Chapter Tactics (Fire Angels) special rules may exchange a Power Fist for a Terranic Greatsword for no additional cost."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Fire Hawks",
             "hidden": false,
-            "id": "8024-8905-4ee4-c1a4"
+            "id": "8024-8905-4ee4-c1a4",
+            "profiles": [
+              {
+                "name": "Fire Hawks",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "ffbe-ebd4-20d9-af87",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "On Wings of Fire, Speed and Fury, The Livery of Curs"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "The Raptorus Rex is Watching"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "MkIII Iron Armour Stores, Flame and Fury"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "On Wings of Fire",
+                "id": "a0d4-076c-f042-4368",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2499-f2c2-b262-5d92"
+              },
+              {
+                "name": "Speed and Fury",
+                "id": "9cc7-8ac4-a815-c92a",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "480e-3a13-fe0d-99f9"
+              },
+              {
+                "name": "The Livery of Curs",
+                "id": "0beb-de00-d7f1-6a40",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f0be-92e8-8936-ac5e"
+              },
+              {
+                "name": "The Raptorus Rex is Watching",
+                "id": "25e9-45fa-808f-98d5",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "758e-abd0-0ca3-180a"
+              }
+            ],
+            "rules": [
+              {
+                "name": "MkIII Iron Armour Stores",
+                "id": "7b06-b3e9-e126-af25",
+                "hidden": false,
+                "description": "Any Infantry units with the Chapter Tactics (Fire Hawks) Special rule that is in either Power Armour or Artificer armour may upgrade the entire units armour to MK III Iron Armour for +2 points a model. This gives the unit the Heavy Sub-Type and must be modelled appropriately."
+              },
+              {
+                "name": "Flame and Fury",
+                "id": "c757-55ca-dee6-aba8",
+                "hidden": false,
+                "description": "Any model in an Infantry with the Chapter Tactics (Fire Hawks) Special Rule may exchange their boltgun for a handflamer for +2 points. If they do not have a boltgun, an Infantry unit may exchange their Bolt Pistol for a Hand Flamer for +3 points."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Howling Griffons",
             "hidden": false,
-            "id": "80a9-2141-1026-4bc8"
+            "id": "80a9-2141-1026-4bc8",
+            "profiles": [
+              {
+                "name": "Howling Griffons",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "478c-bb41-fc25-7e3c",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Into the Fray"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Forward, for the Emperor!"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Mancoran Lineage, Hardened Battle-psykers, Griffon Warblades"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Into the Fray",
+                "id": "d12d-ea9b-3f76-bb53",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e00f-3924-c3b1-df2d"
+              },
+              {
+                "name": "Forward, for the Emperor!",
+                "id": "82ae-b2d4-cdc8-12d8",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "c9fb-2f44-7db8-a4c3"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Mancoran Lineage",
+                "id": "a139-5671-25b6-267f",
+                "hidden": false,
+                "description": "A Howling Griffons Detachment may take any number of the Codicier Librarian Chapter Specialists upgrades, ignoring the usual limitation of 1."
+              },
+              {
+                "name": "Hardened Battle-psykers",
+                "id": "df8b-bec2-71d9-ba10",
+                "hidden": false,
+                "description": "Any Codicier Librarian with the Chapter Tactics (Howling Griffons) special rule may be upgraded to an Epistolary Librarian for +25 points. This allows them to know up two different psychic disciplines chosen from those available to them."
+              },
+              {
+                "name": "Griffon Warblades",
+                "id": "c415-df03-07b3-ade9",
+                "hidden": false,
+                "description": "Any model with both the Character Sub-Type and Chapter Tactics (Howling Griffons) special rules with access to a power sword as part of their Wargear options may instead take a Griffon Warblade for + 5 points instead."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Novamarines",
             "hidden": false,
-            "id": "111f-a1af-b225-0e21"
+            "id": "111f-a1af-b225-0e21",
+            "infoLinks": [
+              {
+                "name": "Tenets of the Codex",
+                "id": "1d1b-1ccc-2848-aa3c",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "5f3a-79b4-2f6d-d105"
+              },
+              {
+                "name": "The Strength of Wisdom",
+                "id": "fd3b-86fa-e637-2081",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a160-eb17-4cad-3749"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Novamarines",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "8d74-ea7f-43a3-b568",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "The Strength of Wisdom, 2nd Founding, Wealth of Ages"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Tenets of the Codex"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Storm Chasers, Iron Bulwark"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "2nd Founding",
+                "id": "26e8-8da3-1740-3a40",
+                "hidden": false,
+                "description": "A Novamarines Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules. They may also include an additional Elite Slot, but it may only be used on a Terminator Squad or Castraferrum Dreadnought."
+              },
+              {
+                "name": "Wealth of Ages",
+                "id": "091d-5db7-d84c-01bc",
+                "hidden": false,
+                "description": "Any model with the Chapter Tactics (Novamarines) Special that does not have the Character Sub-Type or Independant Character Special Rule may chose to replace either a Close Combat Weapon/Chainsword or Boltgun with a Power Sword for +5 points each."
+              },
+              {
+                "name": "Storm Chasers",
+                "id": "50fb-310a-5a3d-31f8",
+                "hidden": false,
+                "description": "A Novamarines Terminator Squad may be upgraded to Storm Chasers for 10 points a model. A Storm Chasers Squad gains the Iron Bulwark and Stubborn Special Rule."
+              },
+              {
+                "name": "Iron Bulwark",
+                "id": "0a93-dbc2-282d-a121",
+                "hidden": false,
+                "description": "If a unit includes at least three models with the Iron Bulwark Special rule and is not locked in combat, all friendly models in that unit (including those without Iron Bulwark) gain the Battle-Hardened (1) Special Rule for the duration of any Assault Phase in which they charge or are charged by one or more enemy units."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Red Scorpions",
             "hidden": false,
-            "id": "1ef8-9b76-c208-d080"
+            "id": "1ef8-9b76-c208-d080",
+            "rules": [
+              {
+                "name": "Purity Above All",
+                "id": "3b7d-a2ca-3fa3-5503",
+                "hidden": false,
+                "description": "Any Tactical, Boarding, Siege Assault, Assault or Devastator squad’s Sergeant or Veteran Sergeant with Chapter Tactics (Red Scorpions) may be made a member of the Chapter’s expansive Apothecarion and upgraded to carry a Narthecium for +20 points a model. This does not otherwise alter their wargear, additional options or profile, and should always be appropriately represented on the model."
+              },
+              {
+                "name": "Anphelion Veterans",
+                "id": "93b2-6ed9-957e-3400",
+                "hidden": false,
+                "description": "A single Terminator Command Squad, Terminator Squad, Vanguard Veteran Squad, or Sternguard Veteran Squad may be upgraded to Anphelion Veterans for +8 points a model. They each increase their Ballistic Skill by +1 and the entire units Bolt and Auto weapons gain the Poison (2+) special rule. They also gain the Move Through Cover and Night Vision Special Rules."
+              },
+              {
+                "name": "Honour Guard",
+                "id": "93fa-c511-60b8-8af1",
+                "hidden": false,
+                "description": "A Command Squad or Vanguard Veteran Squad may be upgraded to an Honour Guard for +5 points a model. All models must be upgraded as such. An Honour Guard squad gains the Cloaked in Honour Special Rule.\n\n\nThere may only be as many Honour Guard Squads as there are models with the Independent Character Special Rule and each squad must have an Independent Character attached to them."
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Red Scorpions",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "75fd-4253-76d3-2841",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Fortitude and Contempt"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Coordinated Assault"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Purity Above All, Anphelion Veterans, Honour Guard"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Fortitude and Contempt",
+                "id": "a8ba-ebd0-fbbc-8654",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "33f4-4409-380e-6255"
+              },
+              {
+                "name": "Coordinated Assault",
+                "id": "5406-00a0-40e1-cd51",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "8bef-5c98-d811-985d"
+              },
+              {
+                "name": "Cloaked in Honour",
+                "id": "ae92-3f04-846d-0aae",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a3e3-ed00-490c-9b7c"
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Astral Claws",
             "hidden": false,
-            "id": "45dd-86b9-f864-7ec7"
+            "id": "45dd-86b9-f864-7ec7",
+            "profiles": [
+              {
+                "name": "Astral Claws",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "0447-52a7-ddec-f3d7",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Secessionists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Reckless Courage, Maelstrom Warder"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Not One Step Back!"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Legion Space Marine Cohort, Iron Hunter Squadron, Retaliator Squad, Corpse Taker Vivisectors, Dark Harvest, Legion Centurion, The Tyrant's Will"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Reckless Courage",
+                "id": "c0b0-a1bc-4a86-a9da",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a184-43c5-22fb-3d11"
+              },
+              {
+                "name": "Maelstrom Warder",
+                "id": "2a4c-83b9-3f1e-1730",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a60d-2f58-e0d2-f805"
+              },
+              {
+                "name": "Not One Step Back!",
+                "id": "f09a-fa3e-03a0-670b",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "d6b1-0d8b-f996-dd5e"
+              },
+              {
+                "name": "Dark Harvest",
+                "id": "c2c0-9608-fb04-3e58",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "b691-e6ee-55cf-420d"
+              },
+              {
+                "name": "The Tyrant's Will",
+                "id": "8510-6e77-9f5c-0f96",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "cfca-2350-5ac5-1d7e"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Legion Space Marine Cohort",
+                "id": "8814-5308-6089-bd4a",
+                "hidden": false,
+                "description": "Astral Claws Tactical Squads may take up to 15 additional Tactical Marines, up to a maximum of 20 Tactical Marines."
+              },
+              {
+                "name": "Iron Hunter Squadron",
+                "id": "9521-3f26-fc0c-27ca",
+                "hidden": false,
+                "description": "Any Space Marine Bike Squad can be upgraded to Iron Hunters at +10 points per model. This Increases all models Weapon Skill and Wounds Characteristics by +1 and gives them both the Counter-Attack (1) and Move Through Cover Special Rules."
+              },
+              {
+                "name": "Retaliator Squad",
+                "id": "3227-31f7-b185-55bd",
+                "hidden": false,
+                "description": "An Astral Claws Siege Assault squad can be upgraded to Retaliators for +5 points a model. The unit loses the Tip of the Spear Special rule, but gains the Heavy unit sub-type as well as the Furious Charge (1) and Fear (1) Special rules."
+              },
+              {
+                "name": "Corpse Take Vivsectors",
+                "id": "c4af-9cbe-7f44-a6c8",
+                "hidden": false,
+                "description": "Any Apothecary may be upgraded to a Corpse-Taker Vivisector for +25 points a\nmodel. Any such upgraded Apothecaries gain +1 wound, Fear (1) and the Dark\nHarvest special rule."
+              },
+              {
+                "name": "Legion Centurion",
+                "id": "d79c-40a4-f5ed-0ba9",
+                "hidden": false,
+                "description": "- A Company Captain may be upgraded to an Arch-Centurion for +30 points\n- A Force Commander may be upgraded to a Centurion for +20 point\n- A Legion Arch-Centurion/Centurion and all models in a unit he joins gains the Hatred (Loyalists) special rule\nIn addition, the Legion Arch-Centurion/Centurion gains the The Tyrant’s Will Special Rule."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Mantis Warriors",
             "hidden": false,
-            "id": "cfc7-c7c8-d2b8-4fb3"
+            "id": "cfc7-c7c8-d2b8-4fb3",
+            "profiles": [
+              {
+                "name": "Mantis Warriors",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "1703-85c8-e104-c7bc",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Secessionists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Shadow Killers, Children of Prophecy, Maelstrom Warder"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Strike from the Shadows"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Tranquility Veterans, Guardians of the Endymion Cluster"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Shadow Killers",
+                "id": "d86a-f11d-b8c4-ea27",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "de08-a180-b8b7-f02c"
+              },
+              {
+                "name": "Maelstrom Warder",
+                "id": "6bf5-0b83-3382-1430",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a60d-2f58-e0d2-f805"
+              },
+              {
+                "name": "Strike from the Shadows",
+                "id": "f6ac-921e-2ab3-ca29",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "20cb-19a5-a620-e1d9"
+              },
+              {
+                "name": "Sudden Strike",
+                "id": "f776-6fd0-0725-fe7e",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "32d6-1fba-bdb8-e7d9"
+              },
+              {
+                "name": "Fateful Appearance",
+                "id": "398f-7d43-c889-1131",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "313f-1377-cf84-46bc"
+              },
+              {
+                "name": "Children of Prophecy",
+                "id": "3997-13e3-3711-e837",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f24e-1fcd-1c3a-de23"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Tranquility Veterans",
+                "id": "59cf-f859-51e0-cd6c",
+                "hidden": false,
+                "description": "Any Sternguard Veteran Squad may be upgraded to Tranquillity Veterans for +12 Points a model. They all gain Sniper Rifles in addition to their standard weapons, as well as the Scout Special Rule and the Skirmish unit sub-type."
+              },
+              {
+                "name": "Guardians of the Endymion Cluster",
+                "id": "9f83-9216-67bb-1940",
+                "hidden": false,
+                "description": "Any Tactical Squad or Assault Squad with the Chapter Tactics (Mantis Warriors) special rule may be upgraded to Guardians of the Endymion Cluster for +4 points a model. Members of this Squad gain the Deep Strike, Sudden Strike, and Fateful Appearance Special Rules."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Sons of Medusa",
             "hidden": false,
-            "id": "bae5-62ec-8bf2-3ab5"
+            "id": "bae5-62ec-8bf2-3ab5",
+            "profiles": [
+              {
+                "name": "Sons of Medusa",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "fa62-a9cb-2701-37e9",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "True Sone, Maletek-exorcism Reclamation Protocols"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Defiance Before Death!"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Sons of the Gorgon, Iron Fathers, Cyber-familiar"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Defiance Before Death!",
+                "id": "38c1-b0f3-4a92-59e9",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "3742-8f7d-e73b-e4ad"
+              }
+            ],
+            "rules": [
+              {
+                "name": "True Sons",
+                "id": "11cf-8af4-8945-d775",
+                "hidden": false,
+                "description": "All shooting attacks made against a model with this special rule that does not have the Vehicle Unit Type, suffer a modifier of -1 to the strength of the attack."
+              },
+              {
+                "name": "Maletek-exorcism Reclamation Protocols",
+                "id": "b59c-d5d4-8067-65ee",
+                "hidden": false,
+                "description": "A Sons of Medusa Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules."
+              },
+              {
+                "name": "Sons of the Gorgon",
+                "id": "abc7-0c02-ebec-1d42",
+                "hidden": false,
+                "description": "A Sons of Medusa Terminators Squad may be upgraded to a Gorgon Squad for +12 points a model. All models in the squad must be upgraded. Gorgon Terminators gain the Feel no Pain (5+) and Stubborn, special rule."
+              },
+              {
+                "name": "Iron Fathers",
+                "id": "88a8-3c87-4538-df92",
+                "hidden": false,
+                "description": "Any Sons of Medusa Company Captain/ Company Captain in Terminator Armour or Force Commander/ Force Commander in Terminator Armour may be upgraded to an Iron-Father for +65 points.\n\n\nAn Iron Father gains the benefits below: Battlesmith (3+) and Feel No Pain (5+) Special Rules and a Machinator Array and Cyber-Familiar Wargear. An Iron-Father may not select a Warhawk Jump Pack or Astartes Combat Bike."
+              },
+              {
+                "name": "Cyber-familiar",
+                "id": "be27-e38a-a25e-0b14",
+                "hidden": false,
+                "description": "Any model with the Chapter Tactics (Sons of Medusa Special rule and the Character Unit Sub-Type may take a cyber-familiar for 20 points."
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Star Phantoms",
             "hidden": false,
-            "id": "7d52-2c3a-810d-b85d"
+            "id": "7d52-2c3a-810d-b85d",
+            "infoLinks": [
+              {
+                "name": "Orbital Wave Attack",
+                "id": "43b5-7199-46e4-8aed",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "bd3e-6234-5646-de0d"
+              },
+              {
+                "name": "Hail of Destruction",
+                "id": "64eb-9f4b-6434-b439",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "4ecb-7145-fb6c-a617"
+              },
+              {
+                "name": "Unfettered Destruction",
+                "id": "66cc-cea4-9ed5-087c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "d08a-ad91-a7ba-65de"
+              },
+              {
+                "name": "Weapon Mastery",
+                "id": "760b-428c-b5e3-4880",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "8645-894c-6568-43df"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Star Phantoms",
+                "typeId": "a50c-d109-8367-024a",
+                "typeName": "Chapter Tactics",
+                "hidden": false,
+                "id": "d37c-d296-62dc-ec2e",
+                "characteristics": [
+                  {
+                    "name": "Allegiance",
+                    "typeId": "dcb6-a82e-f86a-fa8e",
+                    "$text": "Loyalists"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "9a1f-60ed-a905-474e",
+                    "$text": "Orbital Wave Attack, Hail of Destruction, Unfettered Destruction"
+                  },
+                  {
+                    "name": "Warlord Traits",
+                    "typeId": "5821-a01d-f96c-4ff4",
+                    "$text": "Weapon Mastery"
+                  },
+                  {
+                    "name": "Unit Upgrades",
+                    "typeId": "60e8-bea8-428a-115b",
+                    "$text": "Chapter Mortuary Cult Imperialis, Badab Assault Force"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Chapter Mortuary Cult Imperialis",
+                "id": "7728-4baf-6c52-5f2e",
+                "hidden": false,
+                "description": "Any Chapter Apothecary may be upgraded to a Mortuary Chaplain for free. If done so must exchange their Narthecium for a Master-Crafted Power Maul and both they and their unit gain the Hatred (Everything!) Special Rule."
+              },
+              {
+                "name": "Badab Assault Force",
+                "id": "349d-88b4-c6c6-0986",
+                "hidden": false,
+                "description": "Any unit consisting wholly of the Infantry Type with the Chapter Tactics (Star Phantoms) special rule may be upgraded to the Badab Assault Force for +20 points a squad. If so upgraded, each squad gains Breacher Charges and the Move Through Cover and Deep Strike special rules."
+              }
+            ]
           }
         ],
         "constraints": [
@@ -11910,7 +13401,7 @@
             "id": "1404-cee4-2ee5-6495",
             "type": "selectionEntry",
             "targetId": "c50c-f665-e9dc-6460",
-            "defaultAmount": "1"
+            "defaultAmount": ""
           },
           {
             "import": true,
@@ -12025,6 +13516,64 @@
             "scope": "self",
             "shared": true,
             "id": "90f2-6ad5-5b1c-7473-max"
+          }
+        ]
+      },
+      {
+        "name": "Chapter (Secessionists)",
+        "id": "055d-deec-f11e-605e",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Astral Claws",
+            "hidden": false,
+            "id": "70c3-f6d9-9e85-d270",
+            "type": "selectionEntry",
+            "targetId": "45dd-86b9-f864-7ec7"
+          },
+          {
+            "import": true,
+            "name": "Executioners",
+            "hidden": false,
+            "id": "c419-9258-62fd-0680",
+            "type": "selectionEntry",
+            "targetId": "9372-9faa-67e3-c89d",
+            "defaultAmount": ""
+          },
+          {
+            "import": true,
+            "name": "Lamenters",
+            "hidden": false,
+            "id": "36e2-8f0b-0170-f0ed",
+            "type": "selectionEntry",
+            "targetId": "1f40-fe51-5c23-c07e"
+          },
+          {
+            "import": true,
+            "name": "Mantis Warriors",
+            "hidden": false,
+            "id": "c94b-4c6f-791a-c7fa",
+            "type": "selectionEntry",
+            "targetId": "cfc7-c7c8-d2b8-4fb3"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "d6ad-8e79-b700-2210-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "self",
+            "shared": true,
+            "id": "d6ad-8e79-b700-2210-max"
           }
         ]
       }
@@ -13383,6 +14932,244 @@
             "name": "Special Rules",
             "typeId": "a603-af69-c30b-94ed",
             "$text": "Shred, Rending (6+), Specialist Weapon"
+          }
+        ]
+      },
+      {
+        "name": "Frenzied Swarm",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "ba99-6796-b007-0149",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The Warlord and any unit he has joined may reroll charge distance when charging into existing combat where a model (on either side) has already been slain. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
+          }
+        ]
+      },
+      {
+        "name": "Black Soul",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "66bd-9a6a-1d89-d418",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The Warlord and any unit he joins is completely immune to any psychic attacks or weapons. He may never join a unit with the Psyker sub-type for any reason (Meaning he cannot take a retinue of Enochian Guard). While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+          }
+        ]
+      },
+      {
+        "name": "Mechanised Specialist",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "d86b-64a7-cb48-19b8",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "While the Warlord is embarked on a vehicle, any other vehicle within 12\" of the Warlords’ Vehicle may increase its move characteristic by +2\". While the warlord is alive, the army may make an additional reaction in the Movement Phase."
+          }
+        ]
+      },
+      {
+        "name": "The Raptorus Rex is Watching",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "758e-abd0-0ca3-180a",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "While the Warlord is alive, the controlling player may reroll all 1’s when rolling for reserves. The Warlord and his unit may also re-roll their charge moves on a turn they arrive from reserve. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
+          }
+        ]
+      },
+      {
+        "name": "Forward, for the Emperor!",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "c9fb-2f44-7db8-a4c3",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The warlord and all friendly units within 6\", add +1 to their initiative for any Run moves or Movement Reactions. While the Warlord is alive, the controlling player may make an additional reaction in the Movement Phase."
+          }
+        ]
+      },
+      {
+        "name": "Coordinated Assault",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "a58b-1e7c-4df9-fae8",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The warlord and all friendly units within 6\", add +1 to their results when rolling for charge distance. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+          }
+        ]
+      },
+      {
+        "name": "Shock and Awe",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "c41b-d3fd-23b8-d4e5",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The Warlord and any unit he joins gain the Deep Strike Special rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+          }
+        ]
+      },
+      {
+        "name": "Tenets of the Codex",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "5f3a-79b4-2f6d-d105",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The warlord and any unit he joins gains both the Line Sub-Type and the Heart of the Chapter Special Rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+          }
+        ]
+      },
+      {
+        "name": "Stalk Unseen",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "96b3-ff86-8f51-b548",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The Warlord and any unit he joins gains the Shrouded (6+) Special Rule, this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
+          }
+        ]
+      },
+      {
+        "name": "Coordinated Assault",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "8bef-5c98-d811-985d",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The warlord and all friendly units within 12\", add +1 to their results when rolling for charge distance. In addition, while the warlord is alive the army may make an additional reaction in the movement phase."
+          }
+        ]
+      },
+      {
+        "name": "Promethean Grit",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "6421-0254-b31b-374c",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The Warlord and his unit may Run and still make Snap Shots with any Melta, Plasma or Flame Weaponry they carry (Template Weapons go to D3 hits if in range). While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
+          }
+        ]
+      },
+      {
+        "name": "Defiance Before Death!",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "3742-8f7d-e73b-e4ad",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The Warlord and any unit he joins gains the Battle Hardened (1) Special Rule. While the warlord is alive, the army may make an additional reaction in the Shooting Phase."
+          }
+        ]
+      },
+      {
+        "name": "Weapon Mastery",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "8645-894c-6568-43df",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The Warlord and unit he joins lose the One Shot rule from any Combi-melta or Combi-plasma weapons the unit carries. While the warlord is alive, the army may make an additional reaction in the Assault Phase."
+          }
+        ]
+      },
+      {
+        "name": "Not One Step Back!",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "d6b1-0d8b-f996-dd5e",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The Warlord and any unit with 12\" of him that is within 3\" of an objective count their Leadership as 1 higher than usual, to a maximum of 10."
+          }
+        ]
+      },
+      {
+        "name": "Marauding Belligerent",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "f56a-d13b-44e9-9e3f",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The warlord and up to 3 units may be given the Outflank special rule. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
+          }
+        ]
+      },
+      {
+        "name": "Forlorn Charge",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "11d1-1453-98fa-cee1",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The warlord and any unit he joins automatically passes Pinning tests. While the warlord is alive, the army may make an additional reaction in the Movement Phase."
+          }
+        ]
+      },
+      {
+        "name": "Strike from the Shadows",
+        "typeId": "c8df-a54b-7b8c-78de",
+        "typeName": "Warlord Trait",
+        "hidden": false,
+        "id": "20cb-19a5-a620-e1d9",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "ea6d-ab61-e667-7094",
+            "$text": "The Warlord Gains the Precision Strike (2+) Special Rule. The Warlord and any unit he joins gains the Shrouded (6+) Special rule while within cover. This stacks with other forms of Shrouded (X). While the warlord is alive, the army may make an additional reaction in the Movement Phase."
           }
         ]
       }

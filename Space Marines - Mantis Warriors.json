@@ -1,0 +1,568 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "8c2b-56b0-a1b0-fb3e",
+    "name": "Space Marines - Mantis Warriors",
+    "gameSystemId": "sys-7d1d-5f99-723a-24c5",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Space Marines",
+        "id": "9f72-ed0b-39ba-2d16",
+        "targetId": "0c55-5a03-a16a-69cd",
+        "importRootEntries": true
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Mantis Warriors",
+        "hidden": false,
+        "id": "eb90-9806-8931-c79c",
+        "type": "selectionEntry",
+        "targetId": "cfc7-c7c8-d2b8-4fb3",
+        "categoryLinks": [
+          {
+            "name": "Chapter",
+            "hidden": false,
+            "id": "4f04-40b8-b934-c2dc",
+            "targetId": "7c29-8e11-7fae-9549",
+            "primary": true
+          }
+        ],
+        "defaultAmount": "1"
+      },
+      {
+        "import": true,
+        "name": "Ahazra Redth",
+        "hidden": false,
+        "id": "4b47-be3b-b5e1-e086",
+        "type": "selectionEntry",
+        "targetId": "a594-f6c9-1539-e9b5"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Ahazra Redth",
+        "hidden": false,
+        "id": "a594-f6c9-1539-e9b5",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 185
+          }
+        ],
+        "sortIndex": 1,
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "6d97-c263-51bf-2d7d",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "b4ec-1200-10e7-27b9",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "f906-d89d-1a00-6739",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "9671-5a1f-b8f8-6251",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Ahazra Redth",
+            "hidden": false,
+            "id": "4b15-3fca-4e2f-7416",
+            "sortIndex": 1,
+            "categoryLinks": [
+              {
+                "name": "Infantry Unit Type",
+                "hidden": false,
+                "id": "f45c-64ea-f154-da75",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "834e-4ee0-b76d-56a5",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "31ea-06aa-ef3d-4dbe",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              },
+              {
+                "name": "Psyker",
+                "hidden": false,
+                "id": "828a-c73e-6087-f983",
+                "targetId": "0e69-ba6c-2394-5c44",
+                "primary": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Ahazra Redth",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "1e61-8fa8-b1ba-484c",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Artificer Armour",
+                "hidden": false,
+                "id": "4d67-6fa8-c29f-2ab4",
+                "type": "selectionEntry",
+                "targetId": "2004-7466-45c8-bca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5bdc-f203-9fa8-d3eb-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5bdc-f203-9fa8-d3eb-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Bolt Pistol",
+                "hidden": false,
+                "id": "dbda-1f55-632b-cb61",
+                "type": "selectionEntry",
+                "targetId": "95f0-f427-49c0-c7e6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b53c-b65b-dc20-71bc-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b53c-b65b-dc20-71bc-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Force Sword",
+                "hidden": false,
+                "id": "9a5f-73b4-99e5-cbda",
+                "type": "selectionEntry",
+                "targetId": "29f2-4dcc-0519-06a5",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c392-9b7d-180d-2fa9-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c392-9b7d-180d-2fa9-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Psychic Hood",
+                "hidden": false,
+                "id": "fbb0-e31d-f00e-0851",
+                "type": "selectionEntry",
+                "targetId": "6e2c-170d-034f-f682",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "02ba-528f-d3a6-7fe5-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "02ba-528f-d3a6-7fe5-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "ca49-f3c8-1480-b090",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb70-0e4e-29a8-7aeb-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb70-0e4e-29a8-7aeb-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "e04d-b00d-7561-02e7",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b4a7-2ee5-0a5d-079f-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b4a7-2ee5-0a5d-079f-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "975a-6515-f5f1-89a3",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "5e1b-7a0c-f937-ae40",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Core Psychic Discipline",
+                "hidden": false,
+                "id": "bace-fedf-9c68-8013",
+                "type": "selectionEntryGroup",
+                "targetId": "a909-2c2a-9dba-237c",
+                "modifiers": [
+                  {
+                    "type": "increment",
+                    "value": 1,
+                    "field": "6f61-4185-7a33-4a1a"
+                  }
+                ],
+                "sortIndex": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Talisman of Sundered Souls",
+                "hidden": false,
+                "id": "b20e-3d77-dd6e-617f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0525-3b25-553a-333b-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "0525-3b25-553a-333b-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Talisman of Sundered Souls",
+                    "typeId": "8d18-819f-6442-e206",
+                    "typeName": "Wargear",
+                    "hidden": false,
+                    "id": "101b-4c10-5463-870b",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "73f7-995c-ccc1-9f39",
+                        "$text": "It grants Ahazra Redth an Invulnerable Save of 4+ and allows him to re-roll any Psychic check once per turn"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Mirage",
+                "hidden": false,
+                "id": "da8a-e6c9-7dc6-0bcc",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1a35-8121-3fb5-bd9a-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1a35-8121-3fb5-bd9a-max"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Mirage",
+                    "typeId": "5405-b3c6-e8d0-4e77",
+                    "typeName": "Psychic Power",
+                    "hidden": false,
+                    "id": "b43b-1e8c-9491-7784",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "typeId": "4c0f-7e2f-586c-9305",
+                        "$text": "Instead of making a Shooting Attack, the controlling player of a Psyker with this Psychic Power may select a single friendly unit with at least one model within 6\" of the Psyker that is composed entirely of models with the Infantry, Cavalry or Dreadnought Unit Types. The chosen unit gains the Shrouded (5+) special rule and all charges count as Disordered against this unit until the beginning of the controlling player’s next Shooting phase. When using this Power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the effect is improved to Shrouded (3+) and any unit charging this unit must make a Disordered Charge as well as making a Dangerous Terrain check, if the Check is failed the Shrouded (5+) special rule is applied to the target unit and the Psyker suffers Perils of the Warp."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2faa-f2e2-02fc-6bad-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2faa-f2e2-02fc-6bad-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "a08a-0b6e-9595-43cb",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "75cd-1eac-8795-08b8",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "5998-d6ae-c3eb-021a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Adamantium Will",
+            "id": "ec48-b1c3-b3f6-6676",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0f2c-c9a6-fda6-cc5c",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Night Vision",
+            "id": "587f-3741-9791-9913",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8ab4-4caa-d70c-dbf1"
+          },
+          {
+            "name": "Scout",
+            "id": "7e89-ca36-8bef-3c37",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e18c-d4da-eb9b-919b"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Whispers of the Wind",
+            "id": "05ac-73f5-907e-a5b6",
+            "hidden": false,
+            "description": "If Ahazra Redth is part of this army and on the battlefield the Mantis Warrior player gets +1 to the steal the initiative roll and Enemy reinforcement rolls are made a -1. In Addition, upon being placed on the Battlefield, Ahazra Redth can choose to have the Skirmish and/or the Light unit sub type."
+          },
+          {
+            "name": "Chief Librarian",
+            "id": "29cf-29a7-1e65-8900",
+            "hidden": false,
+            "description": "Azra Redth counts-as a Master of the Company for all rule interactions."
+          },
+          {
+            "name": "Battle Psyker",
+            "id": "0d85-3fcb-73f5-1679",
+            "hidden": false,
+            "description": "Ahazra may pick up to two of the following Psychic Disciplines; Biomancy, Divination, Pyromancy, Telekinesis, Telepathy, Thaumaturgy, well as knowing the Mirage spell."
+          }
+        ]
+      }
+    ],
+    "type": "catalogue"
+  }
+}
