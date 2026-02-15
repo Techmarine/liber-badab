@@ -346,6 +346,57 @@
             "targetId": "e453-db5d-2916-abcb"
           }
         ]
+      },
+      {
+        "name": "Slow Sub-type",
+        "id": "c4a5-4def-dc2c-7ce2",
+        "hidden": false
+      },
+      {
+        "name": "Dangerous Terrain",
+        "id": "8e7a-49e0-7157-1583",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Dangerous Terrain",
+            "id": "409f-43b2-fa42-8ed6",
+            "hidden": false,
+            "description": "Dangerous Terrain follows all the rules for Difficult Terrain. In addition, each model must make a Dangerous Terrain test as soon as it enters, leaves or moves within Dangerous Terrain."
+          }
+        ]
+      },
+      {
+        "name": "Fortification Unit Type",
+        "id": "f1ad-478e-a1ba-b65d",
+        "hidden": false
+      },
+      {
+        "name": "Building Sub-type",
+        "id": "9f1e-fbf0-3032-32fe",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Building Sub-type",
+            "id": "6c42-15c6-3024-f8fd",
+            "hidden": false,
+            "targetId": "01ec-a939-c01a-8a87",
+            "type": "rule"
+          }
+        ]
+      },
+      {
+        "name": "Barricade",
+        "id": "c251-6726-bc1a-5d2b",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Barricades, Walls and Defence Lines",
+            "id": "c2b9-db03-e6a9-fc56",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "49f3-7f67-5bce-6f85"
+          }
+        ]
       }
     ],
     "type": "gameSystem",
@@ -643,6 +694,45 @@
             "id": "60e8-bea8-428a-115b"
           }
         ]
+      },
+      {
+        "name": "Fortification",
+        "id": "28ce-a91d-15b9-81c4",
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "M",
+            "id": "0412-e2b0-a2cd-22c0"
+          },
+          {
+            "name": "BS",
+            "id": "e21e-b547-56bb-f969"
+          },
+          {
+            "name": "Front",
+            "id": "d152-8eeb-86e5-5f7a"
+          },
+          {
+            "name": "Side",
+            "id": "777b-103a-3cc8-04d3"
+          },
+          {
+            "name": "Rear",
+            "id": "7f82-9cae-51d4-4797"
+          },
+          {
+            "name": "HP",
+            "id": "77cb-0029-8a40-3f6d"
+          },
+          {
+            "name": "Transport Capacity",
+            "id": "a3bf-437e-2046-8096"
+          },
+          {
+            "name": "Base",
+            "id": "c6c8-ac9c-1481-25b7"
+          }
+        ]
       }
     ],
     "costTypes": [
@@ -873,7 +963,7 @@
         "name": "Haywire",
         "id": "6330-8635-5d8f-c1d6",
         "hidden": false,
-        "description": "For each Hit inflicted on a unit that contains at least one model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:\n\n\n1 - No Effect.\n2-5 - A model with the Vehicle Unit Type that is part of the target unit suffers 1 Glancing Hit. Any other model suffers 1 Wound. Only Invulnerable Saves or Damage Mitigation rolls may be taken against Glancing Hits or Wounds inflicted by this result.\n6 - A model with the Vehicle Unit Type that is part of the target unit suffers 1 Penetrating Hit. Any other model suffers 1 Wound. No Saves or Damage Mitigation rolls may be taken against Penetrating Hits or Wounds inflicted by this result."
+        "description": "‘For each Hit inflicted on a unit that contains at least one model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:\nD6 Result\n1: No Effect.\n2-5: Vehicles suffer a Glancing Hit, other models suffer 1 Wound. Only Invulnerable Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.\n6: Vehicles suffer a Penetrating Hit, Dreadnoughts and Automata suffer 1 Wound. No Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result."
       },
       {
         "name": "Skyfire",
@@ -1367,6 +1457,57 @@
         "id": "6f60-480c-b0de-6dd4",
         "hidden": false,
         "description": "If a model with this special rule, or attacking with a weapon with this special rule, rolls equal to or higher than the value in brackets when making a To Hit roll as part of a melee attack, that hit is a ‘Precision Strike’. For example, if a model with the Precision Strikes (4+) special rule rolls a 4 or higher when making a To Hit roll, then that attack is a Precision Strike.\n\nWounds from Precision Strikes are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as that model is engaged in combat with the attacking model’s unit, rather than following the normal rules for Wound allocation."
+      },
+      {
+        "name": "Amphibious",
+        "id": "4188-4bea-7def-c70d",
+        "hidden": false,
+        "description": "A Chimera treats all water features as clear terrain when it moves."
+      },
+      {
+        "name": "Close-in Support",
+        "id": "6c10-dafe-d82b-b3aa",
+        "hidden": false,
+        "description": "A Vulture (ignoring the normal rules for Flyers) may start on the board in Hover Mode if the controlling player choses, but if chosen, it may not swap to Zooming Mode until turn 2."
+      },
+      {
+        "name": "Fighting Platforms",
+        "id": "1b0b-1757-3196-af17",
+        "hidden": false,
+        "description": "Up to 20 Infantry models may fire from the open deck of the Stormlord in the Controlling players Shooting Phase. The do not count as moving (as long as the Stormlord moved no more than 5\" in the proceeding movement phase). They may use any part of the Stormlords hull to draw range and line of site from."
+      },
+      {
+        "name": "Building Sub-type",
+        "id": "01ec-a939-c01a-8a87",
+        "hidden": false,
+        "description": "• A model with the Building Sub-type has an Armour Value instead of Toughness Characteristic and a reduced profile to reflect its limited capabilities. Page 224 of Warhammer: The Horus Heresy – Age of Darkness Rulebook presents rules for making attacks with or against models with this Unit Sub- type.\n• A model with the Building Sub-type uses all of the rules for the Transport Sub-type and other models with either the Infantry or Primarch Unit Types may Embark or Disembark upon them (see page 224 of Warhammer: The Horus Heresy – Age of Darkness Rulebook).\n• A model with this Unit Sub-type may never Move or be Moved by any special rule or effect – if it is forced to Move then it instead suffers the effects of the Total Collapse result on the Building Damage table.",
+        "publicationId": "d0df-7166-5cd3-89fd",
+        "page": 103
+      },
+      {
+        "name": "Battlements",
+        "id": "b02a-e111-b27a-370b",
+        "hidden": false,
+        "description": "This Fortification has battlements."
+      },
+      {
+        "name": "Emplacement Mounted",
+        "id": "1fd2-7337-6b00-14f2",
+        "hidden": false,
+        "description": "An Emplacement Mounted weapon may fire into any arc, but may only be fired if at least one model from the unit that currently Claims the Fortification is either in base contact with the weapon or Embarked in the building upon which it is mounted. When being used to make attacks, the BS of the model is used rather than the BS of the Fortification.",
+        "page": ""
+      },
+      {
+        "name": "Barricades, Walls and Defence Lines",
+        "id": "49f3-7f67-5bce-6f85",
+        "hidden": false,
+        "description": "A model in cover behind a Barricade or Wall has a 5+ Cover Save. For the purposes of Charge Moves, models that are both in base contact with a Barricade and within 2\" of each other are treated as being in base contact. Despite the models on either side not literally being in base contact, they may fight in the Fight subphase as normal. Units Charging an enemy that is behind a Barricade or Wall count as Charging through Difficult Terrain."
+      },
+      {
+        "name": "Blast-shield",
+        "id": "c6d0-c591-ccbc-0c1b",
+        "hidden": false,
+        "description": "A Blast-shield is a Barricade and provides a 5+ Cover Save for models obscured by it. In addition, any Wounds inflicted by attacks with the Blast special rule targeting a model that claims a Cover Save due to a Blast-shield must be re-rolled."
       }
     ],
     "sharedSelectionEntries": [
@@ -3552,42 +3693,6 @@
         "name": "Earthshaker Cannon",
         "hidden": false,
         "id": "f2d1-4820-5c3d-7070",
-        "profiles": [
-          {
-            "name": "Earthshaker Cannon",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "5036-2e77-823a-c16e",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "24\"-240\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "9"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "4"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Ordnance 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Barrage, Blast (5\"), Shred, Pinning, Breaching (6+)"
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {
             "name": "Blast",
@@ -3643,6 +3748,13 @@
                 "field": "annotation"
               }
             ]
+          },
+          {
+            "name": "Earthshaker Cannon",
+            "id": "9274-b7d2-31ae-da3a",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "298f-c183-30e2-3ab8"
           }
         ]
       },
@@ -4026,42 +4138,6 @@
         "name": "Gravis Multilaser",
         "hidden": false,
         "id": "6d81-60d5-f76f-e2b8",
-        "profiles": [
-          {
-            "name": "Gravis Multilaser",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "a815-7d56-31ad-abf8",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "36\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "6"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "6"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Heavy 12"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Twin-linked"
-              }
-            ]
-          }
-        ],
         "infoLinks": [
           {
             "name": "Twin-linked",
@@ -4069,6 +4145,13 @@
             "hidden": false,
             "type": "rule",
             "targetId": "23d2-bdd7-3df1-be63"
+          },
+          {
+            "name": "Gravis Multilaser",
+            "id": "6baa-56b6-58e1-7376",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "99b0-20d3-dfa0-e75c"
           }
         ]
       },
@@ -5600,43 +5683,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Two Centerline Mounted Hellstrike Missiles",
-        "hidden": false,
-        "id": "ce25-a7ca-06f8-d583",
-        "infoLinks": [
-          {
-            "name": "Hellstrike Missile",
-            "id": "72c0-3401-de0b-dca0",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0b42-82d1-d1e9-72e6"
-          },
-          {
-            "name": "One Shot",
-            "id": "bdd2-1437-6149-5de9",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee53-4831-a3cf-1cdb"
-          },
-          {
-            "name": "Sunder",
-            "id": "7a6e-df9f-7946-0524",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "1692-e368-b877-e324"
-          },
-          {
-            "name": "Hellstrike Missile",
-            "id": "7924-cdca-db85-477c",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0b42-82d1-d1e9-72e6"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Two Sponson Mounted Heavy Bolters",
         "hidden": false,
         "id": "bc9a-e1fa-e799-1a54",
@@ -6024,7 +6070,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Baneblade Cannon",
+        "name": "Turret Mounted Baneblade Cannon",
         "hidden": false,
         "id": "e27a-9202-70d1-d758",
         "profiles": [
@@ -11740,6 +11786,1656 @@
             "targetId": "8ab4-4caa-d70c-dbf1"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Flak Armour",
+        "hidden": false,
+        "id": "dbf6-2803-32d4-a972",
+        "profiles": [
+          {
+            "name": "Flak Armour",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "78ff-9e04-3fee-25d7",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a flak armour gains a 5+ Save."
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": "5+",
+            "field": "dc1c-e152-7a5e-2c32",
+            "affects": "profiles.Model",
+            "scope": "parent"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "8e28-efcd-7d35-e109-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "8e28-efcd-7d35-e109-max"
+          }
+        ],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden"
+              },
+              {
+                "type": "set",
+                "value": 0,
+                "field": "8e28-efcd-7d35-e109-min"
+              },
+              {
+                "type": "set",
+                "value": 0,
+                "field": "8e28-efcd-7d35-e109-max"
+              }
+            ],
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "b1db-015a-3e1c-1e10",
+                "shared": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Carapace Armour",
+        "hidden": false,
+        "id": "b1db-015a-3e1c-1e10",
+        "profiles": [
+          {
+            "name": "Carapace Armour",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "0d1c-00a0-68ea-1041",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A model with a carapace armour gains a 4+ Save."
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": "4+",
+            "field": "dc1c-e152-7a5e-2c32",
+            "affects": "profiles.Model",
+            "scope": "parent"
+          },
+          {
+            "type": "remove",
+            "value": "fcca-7b6b-7920-a6f5",
+            "field": "category",
+            "scope": "parent"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Carapace Armour",
+        "hidden": false,
+        "id": "033d-d42d-55cf-d3f9",
+        "comment": "whole unit",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ba38-787c-8633-25b1"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Command Vox",
+        "hidden": false,
+        "id": "e943-248a-bd04-19e7",
+        "profiles": [
+          {
+            "name": "Command Vox",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "23db-b274-e105-6f67",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": " A unit with a Command Vox may use the highest Leadership available to any unit equipped with either a Command Vox, Vox-Caster or Nuncio-Vox in the Detachment.\nIn addition, any scatter dice may be rerolled if they are in line of site of the bearer.\nIn Regards to Imperial Guard forces, if an Order is given through a Command-Vox to a squad with a Command-Vox or Vox- Caster, it may re-roll Failed Order Rolls."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Autogun",
+        "hidden": false,
+        "id": "9f82-5839-a647-1f0a",
+        "profiles": [
+          {
+            "name": "Autogun",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "86b9-0578-d530-513c",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "24\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "3"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "-"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Rapid Fire"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Man-packed Heavy Stubber",
+        "hidden": false,
+        "id": "bfef-74fc-d299-e6f6",
+        "profiles": [
+          {
+            "name": "Man-packed Heavy Stubber",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "be65-811b-66d1-ec51",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "36\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "4"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "6"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Heavy 3"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Demolition Charge",
+        "hidden": false,
+        "id": "96a9-66b0-7778-c00b",
+        "profiles": [
+          {
+            "name": "Demolition Charge",
+            "typeId": "5e31-3867-7c3d-fcb9",
+            "typeName": "Ranged Weapon",
+            "hidden": false,
+            "id": "b9fd-50d5-335a-3210",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "7b0f-9c2a-0ecb-f3a3",
+                "$text": "8\""
+              },
+              {
+                "name": "S",
+                "typeId": "2ecc-1ccc-736f-9d3d",
+                "$text": "8"
+              },
+              {
+                "name": "AP",
+                "typeId": "cbb5-5f04-f87f-a810",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "2c90-16ca-a927-898d",
+                "$text": "Assault 1"
+              },
+              {
+                "name": "Special Rules",
+                "typeId": "d2a2-1139-48cb-4472",
+                "$text": "Large Blast (5\"), One Shot"
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "e6e7-bf0a-54f1-0076",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              },
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              }
+            ]
+          },
+          {
+            "name": "One Shot",
+            "id": "0aa2-aef6-81e0-e09a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vox-caster",
+        "hidden": false,
+        "id": "34db-8efe-c48c-acfb",
+        "profiles": [
+          {
+            "name": "Vox-caster",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "a4de-ab6b-0ed8-12de",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A unit with a Vox-Caster may use the highest Leadership of a unit that contains a Command Vox or Nuncio-Vox in the detachment.\nIn addition, any scatter dice may be rerolled if they are in line of site of the bearer. In Regards to Imperial Guard forces, if an Order is given through a Command-Vox to a squad with a Vox-Caster, it may re-roll Failed Order Rolls."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Medi-pack",
+        "hidden": false,
+        "id": "9063-4bb7-4746-a2f2",
+        "profiles": [
+          {
+            "name": "Medi-pack",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "9c3d-18c7-110d-389a",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "If any model in a unit contains a medi-pack, the whole unit gains the Feel No Pain (5+) Special Rule."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Camo Netting",
+        "hidden": false,
+        "id": "aaf5-0561-b169-4ee4",
+        "infoLinks": [
+          {
+            "name": "Camo Netting",
+            "id": "f25e-1fd7-b7fb-f7ab",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "d0b1-9784-a59c-b4e6"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Hull (Front) Mounted Hunter-killer Missile",
+        "hidden": false,
+        "id": "e6c3-d48c-ab68-717a",
+        "infoLinks": [
+          {
+            "name": "One Shot",
+            "id": "6de0-c226-f6e7-c2ed",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Hunter-killer Missile",
+            "id": "f239-0276-322d-5e1f",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "fede-103d-c56e-1765"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Armoured Cockpit",
+        "hidden": false,
+        "id": "6ed5-8e3c-795b-44f6",
+        "profiles": [
+          {
+            "name": "Armoured Cockpit",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "2c46-17c2-5841-482c",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A vehicle with an Armoured Cockpit on counts all Crew Stunned Results as Crew Shaken instead."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Chaff Launchers",
+        "hidden": false,
+        "id": "d8aa-ecd4-8df3-7964",
+        "profiles": [
+          {
+            "name": "Chaff Launchers",
+            "typeId": "8d18-819f-6442-e206",
+            "typeName": "Wargear",
+            "hidden": false,
+            "id": "332e-50b6-a655-75fa",
+            "characteristics": [
+              {
+                "name": "Description",
+                "typeId": "73f7-995c-ccc1-9f39",
+                "$text": "A vehicle with Chaff Launchers gets a 5+ Invulnerable Save against any Missile or Rocket like weapons."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Two Hellstrike Missiles",
+        "hidden": false,
+        "id": "9fb8-2f1e-8f5f-393c",
+        "infoLinks": [
+          {
+            "name": "Hellstrike Missile",
+            "id": "215d-3d0b-bfc7-daf5",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "0b42-82d1-d1e9-72e6"
+          },
+          {
+            "name": "One Shot",
+            "id": "9f7b-b647-4803-82bd",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Sunder",
+            "id": "1bd5-bf78-f518-017b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1692-e368-b877-e324"
+          },
+          {
+            "name": "Hellstrike Missile",
+            "id": "f8da-3d6f-3087-9df9",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "0b42-82d1-d1e9-72e6"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Two Belt-fed Heavy Stubbers",
+        "hidden": false,
+        "id": "dcf5-9291-a71e-dbb7",
+        "infoLinks": [
+          {
+            "name": "Pinning",
+            "id": "2ae2-6a47-59bc-2112",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          },
+          {
+            "name": "Belt-fed Heavy Stubber",
+            "id": "cda4-126e-5a27-885f",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "3b2f-ffa3-5246-f484"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Two Missile Launchers",
+        "hidden": false,
+        "id": "68f5-43d0-759e-f6c1",
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "35d1-241e-9bad-7f3b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "3+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Pinning",
+            "id": "8054-94d2-5ed8-34d9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          },
+          {
+            "name": "Sunder",
+            "id": "8c7a-c207-ff6c-8f23",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1692-e368-b877-e324"
+          },
+          {
+            "name": "Skyfire",
+            "id": "5437-72f5-fd78-01cb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "621c-c0ab-b8d5-916a"
+          },
+          {
+            "name": "Missile Launcher - Flak",
+            "id": "2e5e-0995-1ff1-a278",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "e5d0-f0e4-11dc-51dd"
+          },
+          {
+            "name": "Missile Launcher - Frag",
+            "id": "2e3a-7037-b17f-1c4d",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "253c-8a95-4f35-a8a8"
+          },
+          {
+            "name": "Missile Launcher - Krak",
+            "id": "bf2c-f84b-209e-917b",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "72a7-3789-6ed6-c2d2"
+          },
+          {
+            "name": "Missile Launcher - Flak",
+            "id": "8b7d-f6ce-a1f3-5635",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "e5d0-f0e4-11dc-51dd"
+          },
+          {
+            "name": "Missile Launcher - Frag",
+            "id": "5ed3-e1eb-89b6-bbd9",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "253c-8a95-4f35-a8a8"
+          },
+          {
+            "name": "Missile Launcher - Krak",
+            "id": "ba0d-890a-4ec1-1321",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "72a7-3789-6ed6-c2d2"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Two Multiple Rocket Pods",
+        "hidden": false,
+        "id": "9b58-9a79-da21-aa50",
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "4ec8-90d6-04df-04f5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              },
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Multiple Rocket Pods",
+            "id": "cff0-be71-a43a-c55b",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "d060-6bc9-bfc6-6bbb"
+          },
+          {
+            "name": "Multiple Rocket Pods",
+            "id": "7c8c-927c-0748-1468",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "d060-6bc9-bfc6-6bbb"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Six Bombs",
+        "hidden": false,
+        "id": "ad84-37bd-0379-35c4",
+        "infoLinks": [
+          {
+            "name": "Bomb",
+            "id": "a2d6-a420-dc10-7e15",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "f394-6bee-ddcd-6814"
+          },
+          {
+            "name": "Bomb",
+            "id": "eb58-7cc6-906b-9578",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "f394-6bee-ddcd-6814"
+          },
+          {
+            "name": "Bomb",
+            "id": "6835-bd94-2549-84dd",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "f394-6bee-ddcd-6814"
+          },
+          {
+            "name": "Bomb",
+            "id": "e4eb-b088-fa44-92cc",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "f394-6bee-ddcd-6814"
+          },
+          {
+            "name": "Blast",
+            "id": "0d70-ff39-6b0e-3969",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              },
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              }
+            ]
+          },
+          {
+            "name": "Breaching",
+            "id": "5537-7182-1832-c3c4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "One Shot",
+            "id": "da2f-9799-773f-3c4c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Bomb",
+            "id": "8107-2fdd-fcbd-c97e",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "f394-6bee-ddcd-6814"
+          },
+          {
+            "name": "Bomb",
+            "id": "3eca-f225-2106-c3e6",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "f394-6bee-ddcd-6814"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Six Hunter-killer Missiles",
+        "hidden": false,
+        "id": "e5cc-1166-a0c5-2293",
+        "infoLinks": [
+          {
+            "name": "One Shot",
+            "id": "a211-5533-6108-c332",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee53-4831-a3cf-1cdb"
+          },
+          {
+            "name": "Hunter-killer Missile",
+            "id": "1e60-d550-dafc-a2ef",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "fede-103d-c56e-1765"
+          },
+          {
+            "name": "Hunter-killer Missile",
+            "id": "1d84-99dd-9af5-fe52",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "fede-103d-c56e-1765"
+          },
+          {
+            "name": "Hunter-killer Missile",
+            "id": "388c-01f1-e0c7-487f",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "fede-103d-c56e-1765"
+          },
+          {
+            "name": "Hunter-killer Missile",
+            "id": "f26d-d2b0-205d-7305",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "fede-103d-c56e-1765"
+          },
+          {
+            "name": "Hunter-killer Missile",
+            "id": "3d0d-36b7-c0c9-b523",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "fede-103d-c56e-1765"
+          },
+          {
+            "name": "Hunter-killer Missile",
+            "id": "18bc-5de0-ddc4-da72",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "fede-103d-c56e-1765"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Two Hull (Rear) Earthshaker Cannons",
+        "hidden": false,
+        "id": "d78e-6bb7-9435-8270",
+        "infoLinks": [
+          {
+            "name": "Blast",
+            "id": "e030-f932-5881-0124",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "dd6e-d5d4-9bb3-d2e4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "5\"",
+                "field": "annotation"
+              },
+              {
+                "type": "prepend",
+                "value": "Large",
+                "field": "name",
+                "join": " "
+              }
+            ]
+          },
+          {
+            "name": "Barrage",
+            "id": "231b-72a3-40d0-886b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9687-76a5-98c6-200d"
+          },
+          {
+            "name": "Shred",
+            "id": "a87c-c71d-919a-6fdb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a666-0970-28e2-7c48"
+          },
+          {
+            "name": "Pinning",
+            "id": "378d-07d9-fd9c-7e61",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4cc0-966b-ab26-0aa7"
+          },
+          {
+            "name": "Breaching",
+            "id": "5e57-0ca8-9178-fc4b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ee66-f70b-aa5c-b2bf",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
+              }
+            ]
+          },
+          {
+            "name": "Earthshaker Cannon",
+            "id": "5c1f-3e8a-a591-c720",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "298f-c183-30e2-3ab8"
+          },
+          {
+            "name": "Earthshaker Cannon",
+            "id": "5c36-72d1-4f37-0630",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "298f-c183-30e2-3ab8"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Fortified Wall (Strongpoint)",
+        "hidden": false,
+        "id": "2ae3-f2e0-7cc8-c3d2",
+        "categoryLinks": [
+          {
+            "name": "Fortification",
+            "hidden": false,
+            "id": "69e9-8020-29f0-7e7e",
+            "targetId": "238d-2edf-cc1c-58e6",
+            "primary": true
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Strongpoint",
+            "hidden": false,
+            "id": "d8ab-4374-d1f7-0ca2",
+            "profiles": [
+              {
+                "name": "Fortified Wall",
+                "typeId": "28ce-a91d-15b9-81c4",
+                "typeName": "Fortification",
+                "hidden": false,
+                "id": "1ffe-961d-f9fa-d565",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "0412-e2b0-a2cd-22c0",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "e21e-b547-56bb-f969",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "Front",
+                    "typeId": "d152-8eeb-86e5-5f7a",
+                    "$text": "13"
+                  },
+                  {
+                    "name": "Side",
+                    "typeId": "777b-103a-3cc8-04d3",
+                    "$text": "13"
+                  },
+                  {
+                    "name": "Rear",
+                    "typeId": "7f82-9cae-51d4-4797",
+                    "$text": "13"
+                  },
+                  {
+                    "name": "HP",
+                    "typeId": "77cb-0029-8a40-3f6d",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Transport Capacity",
+                    "typeId": "a3bf-437e-2046-8096",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Base",
+                    "typeId": "c6c8-ac9c-1481-25b7",
+                    "$text": "Use model"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9f36-3492-494f-9efc"
+              },
+              {
+                "type": "max",
+                "value": 3,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4f8d-cb0e-53cd-5621"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Fortification Unit Type",
+                "hidden": false,
+                "id": "6bf8-bb99-0ef2-e88c",
+                "targetId": "f1ad-478e-a1ba-b65d",
+                "primary": false
+              },
+              {
+                "name": "Building Sub-type",
+                "hidden": false,
+                "id": "4ac1-870c-4180-861c",
+                "targetId": "9f1e-fbf0-3032-32fe",
+                "primary": false
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 55
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Fire Point",
+                "hidden": false,
+                "id": "680c-0681-8749-096b",
+                "type": "selectionEntry",
+                "targetId": "cd95-7d95-2fb5-1899",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Front, 4",
+                    "field": "annotation"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1164-5ef9-8e2b-a5ea-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1164-5ef9-8e2b-a5ea-max"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Fire Points",
+                    "id": "e554-b995-a43d-2cbe",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "1d68-97e5-37b4-5dae",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Front, 4",
+                        "field": "annotation"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 1
+          }
+        ],
+        "rules": [
+          {
+            "name": "Multi-part Fortification (if additional Strongpoints are selected only)",
+            "id": "4b4c-4fed-6a28-4a65",
+            "hidden": false,
+            "description": "If more than one Strongpoint is selected as part of this Fortification choice then all of the Strongpoints must be deployed using the rules for Multi-part Fortifications."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Battlements",
+            "id": "9b71-2c85-932a-5ed2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b02a-e111-b27a-370b"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Fire Point",
+        "hidden": false,
+        "id": "cd95-7d95-2fb5-1899"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Imperial Bunker",
+        "hidden": false,
+        "id": "9240-c510-c06a-7307",
+        "categoryLinks": [
+          {
+            "name": "Fortification",
+            "hidden": false,
+            "id": "f161-c352-0c18-b4b8",
+            "targetId": "238d-2edf-cc1c-58e6",
+            "primary": true
+          },
+          {
+            "name": "Fortification Unit Type",
+            "hidden": false,
+            "id": "d200-6201-3742-83fc",
+            "targetId": "f1ad-478e-a1ba-b65d",
+            "primary": false
+          },
+          {
+            "name": "Building Sub-type",
+            "hidden": false,
+            "id": "afaa-d347-edd6-31e0",
+            "targetId": "9f1e-fbf0-3032-32fe",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Emplacement Mounted Icarus Lascannon",
+            "hidden": false,
+            "id": "4c1d-1246-456a-6d8e",
+            "profiles": [
+              {
+                "name": "Icarus Lascannon",
+                "typeId": "5e31-3867-7c3d-fcb9",
+                "typeName": "Ranged Weapon",
+                "hidden": false,
+                "id": "07fd-9161-7cf8-80dc",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "7b0f-9c2a-0ecb-f3a3",
+                    "$text": "48\""
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "2ecc-1ccc-736f-9d3d",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "cbb5-5f04-f87f-a810",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "2c90-16ca-a927-898d",
+                    "$text": "Heavy 1"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "d2a2-1139-48cb-4472",
+                    "$text": "Skyfire"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Emplacement Mounted",
+                "id": "93a1-7989-573e-f3e5",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1fd2-7337-6b00-14f2"
+              },
+              {
+                "name": "Skyfire",
+                "id": "470f-4caa-2989-ae69",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "621c-c0ab-b8d5-916a"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 25
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d812-2fec-ef6a-97ec"
+              }
+            ],
+            "sortIndex": 1
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 85
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Battlements",
+            "id": "00bf-0a39-0324-347f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b02a-e111-b27a-370b"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Fire Point",
+            "hidden": false,
+            "id": "3333-7fea-ad0b-227c",
+            "type": "selectionEntry",
+            "targetId": "cd95-7d95-2fb5-1899",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "One per hull arc, 2",
+                "field": "annotation"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Fire Points",
+                "id": "c17d-5b28-7ea1-5fbe",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1d68-97e5-37b4-5dae",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "One per hull arc, 2",
+                    "field": "annotation"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fb28-a010-211b-5c08-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fb28-a010-211b-5c08-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Hull Mounted (Front) Heavy Bolter",
+            "hidden": false,
+            "id": "5f96-2732-14e0-1951",
+            "type": "selectionEntry",
+            "targetId": "ab33-461b-9f48-5924",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4089-ad3e-a8b8-91c0-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4089-ad3e-a8b8-91c0-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Hull Mounted (Left) Heavy Bolter",
+            "hidden": false,
+            "id": "d1e5-f828-0c43-ca0b",
+            "type": "selectionEntry",
+            "targetId": "b39e-7359-3bf8-2cc0",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7159-da9f-2372-930c-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7159-da9f-2372-930c-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Hull Mounted (Rear) Heavy Bolter",
+            "hidden": false,
+            "id": "306c-c95f-5cce-f28b",
+            "type": "selectionEntry",
+            "targetId": "2626-9320-cd84-bf00",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d531-7d5c-dd03-41a0-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d531-7d5c-dd03-41a0-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Hull Mounted (Right) Heavy Bolter",
+            "hidden": false,
+            "id": "d334-d981-238e-6df2",
+            "type": "selectionEntry",
+            "targetId": "ce22-00f9-142c-27c6",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bbdf-6bc0-744e-032c-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bbdf-6bc0-744e-032c-max"
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Imperial Bunker",
+            "typeId": "28ce-a91d-15b9-81c4",
+            "typeName": "Fortification",
+            "hidden": false,
+            "id": "7017-b0c9-3e19-5928",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "0412-e2b0-a2cd-22c0",
+                "$text": "-"
+              },
+              {
+                "name": "BS",
+                "typeId": "e21e-b547-56bb-f969",
+                "$text": "3"
+              },
+              {
+                "name": "Front",
+                "typeId": "d152-8eeb-86e5-5f7a",
+                "$text": "14"
+              },
+              {
+                "name": "Side",
+                "typeId": "777b-103a-3cc8-04d3",
+                "$text": "14"
+              },
+              {
+                "name": "Rear",
+                "typeId": "7f82-9cae-51d4-4797",
+                "$text": "14"
+              },
+              {
+                "name": "HP",
+                "typeId": "77cb-0029-8a40-3f6d",
+                "$text": "4"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "a3bf-437e-2046-8096",
+                "$text": "12"
+              },
+              {
+                "name": "Base",
+                "typeId": "c6c8-ac9c-1481-25b7",
+                "$text": "User model"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Hull Mounted (Left) Heavy Bolter",
+        "hidden": false,
+        "id": "b39e-7359-3bf8-2cc0",
+        "infoLinks": [
+          {
+            "name": "Heavy Bolter",
+            "id": "3e6d-d8ae-7da2-b415",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "d941-498a-214b-ad48"
+          }
+        ],
+        "comment": "Imperial Bunker"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Hull Mounted (Front) Heavy Bolter",
+        "hidden": false,
+        "id": "ab33-461b-9f48-5924",
+        "infoLinks": [
+          {
+            "name": "Heavy Bolter",
+            "id": "bb13-98ab-7a80-994b",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "d941-498a-214b-ad48"
+          }
+        ],
+        "comment": "Imperial Bunker"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Hull Mounted (Rear) Heavy Bolter",
+        "hidden": false,
+        "id": "2626-9320-cd84-bf00",
+        "infoLinks": [
+          {
+            "name": "Heavy Bolter",
+            "id": "63be-3fba-4c9c-194c",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "d941-498a-214b-ad48"
+          }
+        ],
+        "comment": "Imperial Bunker"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Hull Mounted (Right) Heavy Bolter",
+        "hidden": false,
+        "id": "ce22-00f9-142c-27c6",
+        "infoLinks": [
+          {
+            "name": "Heavy Bolter",
+            "id": "d558-face-2bec-0d94",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "d941-498a-214b-ad48"
+          }
+        ],
+        "comment": "Imperial Bunker"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Defence Line",
+        "hidden": false,
+        "id": "a950-5d8b-be2e-f667",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 35
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Defence Line",
+            "typeId": "28ce-a91d-15b9-81c4",
+            "typeName": "Fortification",
+            "hidden": false,
+            "id": "2f7e-57fd-46cd-e221",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "0412-e2b0-a2cd-22c0",
+                "$text": "-"
+              },
+              {
+                "name": "BS",
+                "typeId": "e21e-b547-56bb-f969",
+                "$text": "-"
+              },
+              {
+                "name": "Front",
+                "typeId": "d152-8eeb-86e5-5f7a",
+                "$text": "-"
+              },
+              {
+                "name": "Side",
+                "typeId": "777b-103a-3cc8-04d3",
+                "$text": "-"
+              },
+              {
+                "name": "Rear",
+                "typeId": "7f82-9cae-51d4-4797",
+                "$text": "-"
+              },
+              {
+                "name": "HP",
+                "typeId": "77cb-0029-8a40-3f6d",
+                "$text": "-"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "a3bf-437e-2046-8096",
+                "$text": "-"
+              },
+              {
+                "name": "Base",
+                "typeId": "c6c8-ac9c-1481-25b7",
+                "$text": "Use model"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Fortification",
+            "hidden": false,
+            "id": "8ff0-5b53-d6d5-315f",
+            "targetId": "238d-2edf-cc1c-58e6",
+            "primary": true
+          },
+          {
+            "name": "Fortification Unit Type",
+            "hidden": false,
+            "id": "43de-46c8-b9e1-8a07",
+            "targetId": "f1ad-478e-a1ba-b65d",
+            "primary": false
+          },
+          {
+            "name": "Barricade",
+            "hidden": false,
+            "id": "0538-3d7f-42b4-21fb",
+            "targetId": "c251-6726-bc1a-5d2b",
+            "primary": false
+          }
+        ],
+        "rules": [
+          {
+            "name": "Multi-part Fortification",
+            "id": "6210-13b6-40c6-23de",
+            "hidden": false,
+            "description": "All component parts of a Defence Line must be deployed using the rules for Multi-part Fortifications."
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Blast-shield",
+            "id": "d9df-c7a9-bf63-83d0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c6d0-c591-ccbc-0c1b"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Emplacement Mounted Skyreaper Battery",
+            "hidden": false,
+            "id": "2fe1-3b80-66b6-cc6f",
+            "sortIndex": 1,
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "09fd-98a3-9950-5197"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "54b5-0978-c8a4-5b5a",
+                "value": 25
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Skyreaper Battery",
+                "typeId": "5e31-3867-7c3d-fcb9",
+                "typeName": "Ranged Weapon",
+                "hidden": false,
+                "id": "2abb-0a39-5b2a-e43d",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "7b0f-9c2a-0ecb-f3a3",
+                    "$text": "48\""
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "2ecc-1ccc-736f-9d3d",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "cbb5-5f04-f87f-a810",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "2c90-16ca-a927-898d",
+                    "$text": "Heavy 5"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "d2a2-1139-48cb-4472",
+                    "$text": "Skyfire, Twin-linked"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Skyfire",
+                "id": "1ae1-3c63-9a7c-2a2f",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "621c-c0ab-b8d5-916a"
+              },
+              {
+                "name": "Twin-linked",
+                "id": "7aad-5b0b-a332-be4d",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "23d2-bdd7-3df1-be63"
+              },
+              {
+                "name": "Emplacement Mounted",
+                "id": "a5cd-7be6-2646-7bd5",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "1fd2-7337-6b00-14f2"
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -15170,6 +16866,88 @@
             "name": "Description",
             "typeId": "ea6d-ab61-e667-7094",
             "$text": "The Warlord Gains the Precision Strike (2+) Special Rule. The Warlord and any unit he joins gains the Shrouded (6+) Special rule while within cover. This stacks with other forms of Shrouded (X). While the warlord is alive, the army may make an additional reaction in the Movement Phase."
+          }
+        ]
+      },
+      {
+        "name": "Camo Netting",
+        "typeId": "8d18-819f-6442-e206",
+        "typeName": "Wargear",
+        "hidden": false,
+        "id": "d0b1-9784-a59c-b4e6",
+        "characteristics": [
+          {
+            "name": "Description",
+            "typeId": "73f7-995c-ccc1-9f39",
+            "$text": "As long as a model with Camo netting hasn’t moved this game turn for any reason, it gets +2 to any Cover Save it currently has."
+          }
+        ]
+      },
+      {
+        "name": "Gravis Multilaser",
+        "typeId": "5e31-3867-7c3d-fcb9",
+        "typeName": "Ranged Weapon",
+        "hidden": false,
+        "id": "99b0-20d3-dfa0-e75c",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "7b0f-9c2a-0ecb-f3a3",
+            "$text": "36\""
+          },
+          {
+            "name": "S",
+            "typeId": "2ecc-1ccc-736f-9d3d",
+            "$text": "6"
+          },
+          {
+            "name": "AP",
+            "typeId": "cbb5-5f04-f87f-a810",
+            "$text": "6"
+          },
+          {
+            "name": "Type",
+            "typeId": "2c90-16ca-a927-898d",
+            "$text": "Heavy 12"
+          },
+          {
+            "name": "Special Rules",
+            "typeId": "d2a2-1139-48cb-4472",
+            "$text": "Twin-linked"
+          }
+        ]
+      },
+      {
+        "name": "Earthshaker Cannon",
+        "typeId": "5e31-3867-7c3d-fcb9",
+        "typeName": "Ranged Weapon",
+        "hidden": false,
+        "id": "298f-c183-30e2-3ab8",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "7b0f-9c2a-0ecb-f3a3",
+            "$text": "24\"-240\""
+          },
+          {
+            "name": "S",
+            "typeId": "2ecc-1ccc-736f-9d3d",
+            "$text": "9"
+          },
+          {
+            "name": "AP",
+            "typeId": "cbb5-5f04-f87f-a810",
+            "$text": "4"
+          },
+          {
+            "name": "Type",
+            "typeId": "2c90-16ca-a927-898d",
+            "$text": "Ordnance 1"
+          },
+          {
+            "name": "Special Rules",
+            "typeId": "d2a2-1139-48cb-4472",
+            "$text": "Barrage, Blast (5\"), Shred, Pinning, Breaching (6+)"
           }
         ]
       }

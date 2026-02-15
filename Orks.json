@@ -37610,6 +37610,30 @@
             "targetId": "5b5a-5bf9-e280-3c94"
           }
         ]
+      },
+      {
+        "import": true,
+        "name": "Fortified Wall (Strongpoint)",
+        "hidden": false,
+        "id": "bc58-dc80-b1a4-171e",
+        "type": "selectionEntry",
+        "targetId": "2ae3-f2e0-7cc8-c3d2"
+      },
+      {
+        "import": true,
+        "name": "Imperial Bunker",
+        "hidden": false,
+        "id": "9fad-09f8-d9bf-8928",
+        "type": "selectionEntry",
+        "targetId": "9240-c510-c06a-7307"
+      },
+      {
+        "import": true,
+        "name": "Defence Line",
+        "hidden": false,
+        "id": "0edd-b7f5-b08d-5a22",
+        "type": "selectionEntry",
+        "targetId": "a950-5d8b-be2e-f667"
       }
     ],
     "type": "catalogue",
@@ -37740,22 +37764,6 @@
             ]
           },
           {
-            "name": "Fortification",
-            "hidden": false,
-            "id": "db9e-3898-e009-03aa",
-            "targetId": "238d-2edf-cc1c-58e6",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "8092-d397-2fc2-6331"
-              }
-            ]
-          },
-          {
             "name": "Heavy Support",
             "hidden": false,
             "id": "ef8b-8d77-8800-ea6c",
@@ -37768,6 +37776,22 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "80f2-3d50-9b56-4970"
+              }
+            ]
+          },
+          {
+            "name": "Fortification",
+            "hidden": false,
+            "id": "db9e-3898-e009-03aa",
+            "targetId": "238d-2edf-cc1c-58e6",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8092-d397-2fc2-6331"
               }
             ]
           }
@@ -37884,7 +37908,8 @@
               }
             ]
           }
-        ]
+        ],
+        "sortIndex": 1
       },
       {
         "name": "Lords of War",
@@ -37942,7 +37967,8 @@
               }
             ]
           }
-        ]
+        ],
+        "sortIndex": 2
       },
       {
         "name": "Allied Detachment",
@@ -38150,7 +38176,8 @@
               }
             ]
           }
-        ]
+        ],
+        "sortIndex": 3
       }
     ],
     "sharedSelectionEntryGroups": [

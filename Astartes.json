@@ -8519,6 +8519,88 @@
               }
             ]
           }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "4106-0ba5-1555-5677",
+                    "shared": true
+                  },
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "8eb5-cee6-e7b2-c22b",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "4106-0ba5-1555-5677",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "a4c8-9dd3-a369-5f3a",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "3e99-0bcb-69d3-b8c5",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -33773,6 +33855,14 @@
                         "scope": "parent",
                         "shared": true,
                         "id": "e776-fb12-c743-7e57"
+                      },
+                      {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "f778-5bef-f925-09f3"
                       }
                     ],
                     "modifierGroups": [
@@ -33817,6 +33907,21 @@
                         "field": "cdc0-9287-7039-4792",
                         "affects": "profiles.Model",
                         "scope": "parent"
+                      },
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "f778-5bef-f925-09f3",
+                        "conditions": [
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "childId": "31c6-2ed0-0120-bbe8",
+                            "shared": true
+                          }
+                        ]
                       }
                     ],
                     "infoLinks": [
@@ -44549,6 +44654,14 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "b790-f7e6-6146-18e5"
+              },
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2ab7-5230-acca-5fb3"
               }
             ],
             "modifierGroups": [
@@ -44602,6 +44715,21 @@
                 "field": "category",
                 "scope": "unit",
                 "affects": "entries.model"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "2ab7-5230-acca-5fb3",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  }
+                ]
               }
             ],
             "infoLinks": [
@@ -49426,6 +49554,14 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "874c-9ac3-e9e9-6492"
+              },
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "add7-a028-e82c-c258"
               }
             ],
             "modifierGroups": [
@@ -49486,6 +49622,21 @@
                 "field": "cdc0-9287-7039-4792",
                 "affects": "entries.profiles.Model",
                 "scope": "parent"
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "add7-a028-e82c-c258",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  }
+                ]
               }
             ],
             "infoLinks": [
@@ -64139,6 +64290,17 @@
               }
             ]
           }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "92d7-0b77-2a21-d83f",
+            "includeChildSelections": true
+          }
         ]
       },
       {
@@ -67563,6 +67725,60 @@
                         "shared": true,
                         "includeChildSelections": true,
                         "includeChildForces": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "The Tyrant's Due",
+            "id": "bf08-400e-9eb5-e831",
+            "hidden": true,
+            "type": "rule",
+            "targetId": "b1dc-0ea8-5b7c-3fa6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "childId": "31c6-2ed0-0120-bbe8",
+                        "shared": true
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "c447-1b05-5ba8-846a",
+                            "shared": true,
+                            "includeChildSelections": false
+                          },
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "8cce-2496-3746-4f06",
+                            "shared": true,
+                            "includeChildSelections": false
+                          }
+                        ]
                       }
                     ]
                   }
@@ -71613,6 +71829,880 @@
             "targetId": "313f-1377-cf84-46bc"
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Lugft Huron",
+        "hidden": false,
+        "id": "a4c8-9dd3-a369-5f3a",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 265
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "7460-47e9-4ddc-6430",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "c1a1-ffc2-17b7-fd57",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "1e47-8ccb-db0b-9581",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
+          },
+          {
+            "name": "Chapter Master",
+            "hidden": false,
+            "id": "1772-614f-a379-a249",
+            "targetId": "2ca5-c322-c8f3-5ebc",
+            "primary": false
+          },
+          {
+            "name": "Master of the Company",
+            "hidden": false,
+            "id": "2390-0640-66a9-6550",
+            "targetId": "08f5-cc3b-5be1-92cb",
+            "primary": false
+          },
+          {
+            "name": "Supreme Commander",
+            "hidden": false,
+            "id": "a8ca-7497-d072-3863",
+            "targetId": "f722-b54b-e2ba-79cc",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Lugft Huron",
+            "hidden": false,
+            "id": "25a8-04b9-d269-e215",
+            "categoryLinks": [
+              {
+                "name": "Infantry Unit Type",
+                "hidden": false,
+                "id": "c0cb-646c-bb23-4472",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Heavy Sub-type",
+                "hidden": false,
+                "id": "ceff-a21f-f3af-c708",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "85da-f3a1-f1b9-2c30",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "1803-92f4-105c-8a36",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "aaa6-db1a-a52f-c4c6-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "aaa6-db1a-a52f-c4c6-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "beb2-a5de-beb6-0ece",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "sortIndex": 1,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Indomitus Terminator Armour",
+                "hidden": false,
+                "id": "464b-033d-5304-63a4",
+                "type": "selectionEntry",
+                "targetId": "aa95-1188-68f8-70c3",
+                "modifiers": [
+                  {
+                    "type": "prepend",
+                    "value": "Relic",
+                    "field": "name",
+                    "join": " "
+                  },
+                  {
+                    "type": "increment",
+                    "value": 1,
+                    "field": "69ed-cbc7-3fbc-7ba5",
+                    "affects": "profiles.Model",
+                    "scope": "parent"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3bfa-f6a0-f2a0-c0db-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3bfa-f6a0-f2a0-c0db-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "9be3-167e-a2a5-b7c0",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "23da-9975-97cb-eeb7-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "23da-9975-97cb-eeb7-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Heavy Flamer",
+                "hidden": false,
+                "id": "62fa-4d2b-44f7-5022",
+                "type": "selectionEntry",
+                "targetId": "c553-098b-dbb7-e3a9",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "66a9-ac66-758c-0b3c-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "66a9-ac66-758c-0b3c-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "d094-1065-c650-d984",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "95c0-a1aa-4d5b-248f"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Retinue",
+                "hidden": false,
+                "id": "a32a-4878-8af3-e236",
+                "type": "selectionEntryGroup",
+                "targetId": "e290-7819-af75-85c4",
+                "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Orbital Bombardment",
+                "hidden": false,
+                "id": "fb2c-5ae1-7b74-f2e9",
+                "type": "selectionEntry",
+                "targetId": "bde5-28ec-5ade-cce4",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b4e1-62c0-b783-838e-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b4e1-62c0-b783-838e-max"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "The Ghost Razors",
+                "hidden": false,
+                "id": "f9ad-c601-0f1a-9777",
+                "profiles": [
+                  {
+                    "name": "The Ghost Razors",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "1013-4c67-490e-0a81",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "+1"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Shred, Specialist Weapon, Ghost Razor"
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Ghost Razor",
+                    "id": "79de-6a3d-5f5b-c5ae",
+                    "hidden": false,
+                    "description": "All successful invulnerable and Damage Mitigation saves must be re-rolled against wounds from this weapon."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "34b2-e857-f51f-11b1-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "34b2-e857-f51f-11b1-max"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "2b58-2d22-38c6-0e01",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "aae7-e77e-a270-2c3b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "Eternal Warrior",
+            "id": "1291-f660-0cbc-ee05",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d9b7-d83e-51e0-bcfc"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "9985-c045-cb02-78fc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4aab-8d13-caf2-091d"
+          },
+          {
+            "name": "Relentless",
+            "id": "a050-39a6-6e41-1ded",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "919d-8ad9-f565-2b64"
+          },
+          {
+            "name": "The Tyrant's Will",
+            "id": "153a-da45-47be-9245",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfca-2350-5ac5-1d7e"
+          }
+        ],
+        "rules": [
+          {
+            "name": "The Big Guns never Tire",
+            "id": "6685-953b-36ab-156f",
+            "hidden": false,
+            "description": "In lieu of firing his Heavy Flamer, Huron may call down an Orbital Bombardment once per game. This may be fired even if he moved and may be fired at a different unit than what his unit has shot at and will not stop his unit from charging in the following Assault Phase. It may not be fired as part of a Reaction."
+          },
+          {
+            "name": "Living Legend",
+            "id": "1284-9039-4fe5-8792",
+            "hidden": false,
+            "description": "An army which includes Lugft Huron as its Warlord may add +1 to the seize the initiative roll. In addition, any unit with Chapter Tactics (Astral Claws), Maelstrom Warder or Emboldened Masses Special Rules within 12\" of Lugft Huron may use his leadership (applying leadership modifiers as normal)."
+          },
+          {
+            "name": "Shadowed Fate",
+            "id": "1d91-85c3-ecd7-f77e",
+            "hidden": false,
+            "description": "The first time Huron would be removed as a casualty for any reason, leave him on his side on the table where this has happened. Roll a D6 at the beginning of his controlling players next turn, on a 2+ he instead survives with one wound remaining and is placed back in play as close to where he fell as possible."
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Arch-Centurion Carnac Commodus",
+        "hidden": false,
+        "id": "3e99-0bcb-69d3-b8c5",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 155
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "HQ",
+            "hidden": false,
+            "id": "3879-c7ec-fc5f-78f4",
+            "targetId": "736c-458e-6f4c-887e",
+            "primary": true
+          },
+          {
+            "name": "Compulsory Choice",
+            "hidden": false,
+            "id": "4efe-1aef-0fba-42de",
+            "targetId": "be4d-83ab-c864-a7c6",
+            "primary": false
+          },
+          {
+            "name": "Independent Character",
+            "hidden": false,
+            "id": "fcca-b0d8-6c6e-c523",
+            "targetId": "325c-e791-275c-2ab7",
+            "primary": false
+          },
+          {
+            "name": "Legion Overseer",
+            "hidden": false,
+            "id": "5570-ae58-9e26-4cbe",
+            "targetId": "5aff-769e-a260-7eb9",
+            "primary": false
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Arch-Centurion Carnac Commodus",
+            "hidden": false,
+            "id": "b983-65cb-6198-c431",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a3e7-3922-1843-d7a4-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a3e7-3922-1843-d7a4-max"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "a837-edd5-2468-b646",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "sortIndex": 1,
+            "profiles": [
+              {
+                "name": "Arch-Centurion Carnac Commodus",
+                "typeId": "dd4a-7345-17fe-9c76",
+                "typeName": "Model",
+                "hidden": false,
+                "id": "f9bb-5aea-fbef-3504",
+                "characteristics": [
+                  {
+                    "name": "M",
+                    "typeId": "69ed-cbc7-3fbc-7ba5",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "WS",
+                    "typeId": "6ed0-3b6d-b7d7-894c",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "163f-6fcf-6b77-1766",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "99ae-5644-9155-ae6e",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "T",
+                    "typeId": "08d3-1319-227b-1d5c",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "W",
+                    "typeId": "cdc0-9287-7039-4792",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "I",
+                    "typeId": "03f0-9c72-1dc2-55cd",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "A",
+                    "typeId": "edda-ee37-03b4-f91f",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ld",
+                    "typeId": "d29a-9b6f-13a6-b7a8",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Sv",
+                    "typeId": "dc1c-e152-7a5e-2c32",
+                    "$text": "2+"
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Artificer Armour",
+                "hidden": false,
+                "id": "011f-7a22-c5df-0854",
+                "type": "selectionEntry",
+                "targetId": "2004-7466-45c8-bca8",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ffa1-a786-11d7-2ef9-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ffa1-a786-11d7-2ef9-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Bolt Pistol",
+                "hidden": false,
+                "id": "f9d2-1d23-234c-e6ef",
+                "type": "selectionEntry",
+                "targetId": "95f0-f427-49c0-c7e6",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4095-e877-db8c-a1ac-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4095-e877-db8c-a1ac-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Iron Halo",
+                "hidden": false,
+                "id": "f964-4e62-e110-1252",
+                "type": "selectionEntry",
+                "targetId": "daaa-0a9c-f1e0-986f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dd92-804e-fd84-57d1-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "dd92-804e-fd84-57d1-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Krak Grenades",
+                "hidden": false,
+                "id": "401e-f795-4609-d95e",
+                "type": "selectionEntry",
+                "targetId": "bbfb-1c1f-fdbf-90b1",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bd8a-e6b4-1a79-6dc7-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bd8a-e6b4-1a79-6dc7-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Frag Grenades",
+                "hidden": false,
+                "id": "b7bc-e623-133f-26bf",
+                "type": "selectionEntry",
+                "targetId": "e72d-68cc-bd83-6066",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5e4d-44da-f8e4-07db-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5e4d-44da-f8e4-07db-max"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Warlord",
+                "hidden": false,
+                "id": "5c8b-9e6d-3f6b-2ebb",
+                "type": "selectionEntry",
+                "targetId": "dafc-695e-c908-6848",
+                "sortIndex": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Blood Biter",
+                "hidden": false,
+                "id": "1de0-0efa-79b7-636d",
+                "profiles": [
+                  {
+                    "name": "Blood Biter",
+                    "typeId": "ecd5-ca1d-0842-34a4",
+                    "typeName": "Melee Weapon",
+                    "hidden": false,
+                    "id": "bd3c-43c1-bc48-03cb",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "ec4a-5686-1553-4654",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "S",
+                        "typeId": "b9e5-2eb3-f79d-e995",
+                        "$text": "+1"
+                      },
+                      {
+                        "name": "AP",
+                        "typeId": "0332-8de1-48c6-c94d",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "6c0f-3258-2a17-5cc9",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Special Rules",
+                        "typeId": "a603-af69-c30b-94ed",
+                        "$text": "Shred, Rending (5+), Brutal (2), Master-Crafted"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Shred",
+                    "id": "c1f3-11b1-35c4-317b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a666-0970-28e2-7c48"
+                  },
+                  {
+                    "name": "Rending",
+                    "id": "daca-8322-47cb-184b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "2508-8e95-11c7-6bd6",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "5+",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Brutal",
+                    "id": "46fe-3529-8ad3-ddfb",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fc68-9ea6-18e4-d94b",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "2",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Master-crafted",
+                    "id": "6c5c-9b21-59eb-7b32",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0371-1ea2-8615-e03a"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "44da-bb62-7102-5acd-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "44da-bb62-7102-5acd-max"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Infantry Unit Type",
+                "hidden": false,
+                "id": "0ce1-ae2d-d048-909b",
+                "targetId": "c447-1b05-5ba8-846a",
+                "primary": false
+              },
+              {
+                "name": "Character",
+                "hidden": false,
+                "id": "6699-d545-2112-59f3",
+                "targetId": "c0e6-28aa-5286-2fa2",
+                "primary": false
+              },
+              {
+                "name": "Heavy Sub-type",
+                "hidden": false,
+                "id": "b4e5-f6c8-33b4-87be",
+                "targetId": "33d0-319a-741e-573f",
+                "primary": false
+              },
+              {
+                "name": "Unique Sub-type",
+                "hidden": false,
+                "id": "0462-0640-085b-1b12",
+                "targetId": "75a3-46b2-47de-9789",
+                "primary": false
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Chapter Tactics",
+            "hidden": false,
+            "id": "3387-f766-59a7-cb84",
+            "type": "selectionEntry",
+            "targetId": "cc7e-de45-e780-c1bf"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Arch-Centurion/Centurion",
+            "id": "2f60-ca84-1de5-453f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "caef-b10a-4a2d-94ad"
+          },
+          {
+            "name": "And They Shall Know No Fear",
+            "id": "3e63-7192-629a-2d12",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b780-4ce8-8482-c432"
+          },
+          {
+            "name": "The Tyrant's Will",
+            "id": "e6e3-4bd3-23ad-6636",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cfca-2350-5ac5-1d7e"
+          },
+          {
+            "name": "Crusader",
+            "id": "d9f3-808c-572a-f141",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d372-1b73-b5c5-5dff"
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -72641,6 +73731,30 @@
             ]
           }
         ]
+      },
+      {
+        "import": true,
+        "name": "Fortified Wall (Strongpoint)",
+        "hidden": false,
+        "id": "3314-5dd1-0d01-0857",
+        "type": "selectionEntry",
+        "targetId": "2ae3-f2e0-7cc8-c3d2"
+      },
+      {
+        "import": true,
+        "name": "Imperial Bunker",
+        "hidden": false,
+        "id": "9f82-a08e-4352-7f39",
+        "type": "selectionEntry",
+        "targetId": "9240-c510-c06a-7307"
+      },
+      {
+        "import": true,
+        "name": "Defence Line",
+        "hidden": false,
+        "id": "06db-ace9-0699-6d0c",
+        "type": "selectionEntry",
+        "targetId": "a950-5d8b-be2e-f667"
       }
     ],
     "sharedProfiles": [
@@ -73306,6 +74420,12 @@
         "id": "2aa1-fd50-a063-bd1b",
         "hidden": false,
         "description": "Any model with the Chapter Tactics (Mantis Warriors) Special Rule gains Shadow Killers, Children of Prophecy and Maelstrom Warder Special Rules."
+      },
+      {
+        "name": "The Tyrant's Due",
+        "id": "b1dc-0ea8-5b7c-3fa6",
+        "hidden": false,
+        "description": "Any Infantry and/or Cavalry unit with the Chapter Tactics (Astral Claws) special rule may choose to gain either +1 to any Cover Save or +1 to their Shrouded (X) special rule, when targeted by a shooting attack that passes through any friendly unit that has the Infantry Type as well as both the Emboldened Masses and Utterly Expendable Special Rules.\n\nHowever, if this bonus is claimed, the unit that the shooting attack passed through immediately suffers D3 wounds per unit firing through them against which this save bonus has been claimed. Wounds inflicted this way are distributed as per wounds from normal shooting attacks and have no AP value."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -73347,6 +74467,21 @@
                     "childId": "80a9-2141-1026-4bc8",
                     "shared": true,
                     "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
                   }
                 ]
               }
@@ -73637,6 +74772,21 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  }
+                ]
               }
             ],
             "rules": [
@@ -73835,6 +74985,21 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  }
+                ]
               }
             ]
           },
@@ -73932,6 +75097,23 @@
                 "id": "51f7-bb3a-7f5a-d86f",
                 "includeChildSelections": true
               }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  }
+                ]
+              }
             ]
           },
           {
@@ -73977,6 +75159,21 @@
                 "field": "d29a-9b6f-13a6-b7a8",
                 "scope": "root-entry",
                 "affects": "profiles.Unit"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  }
+                ]
               }
             ],
             "constraints": [
@@ -74110,6 +75307,21 @@
                         "shared": true
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
                   }
                 ]
               }
@@ -74308,6 +75520,21 @@
                 "value": "2ca5-c322-c8f3-5ebc",
                 "field": "category",
                 "scope": "parent"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  }
+                ]
               }
             ],
             "rules": [
@@ -74476,6 +75703,21 @@
                     "field": "selections",
                     "scope": "unit",
                     "childId": "4df5-31ac-98f4-8dee",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
                     "shared": true
                   }
                 ]
@@ -74905,6 +76147,21 @@
                 "value": "5a98-10a7-8364-240c",
                 "field": "category",
                 "scope": "parent"
+              },
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
+                  }
+                ]
               }
             ],
             "infoLinks": [
@@ -77988,6 +79245,14 @@
                     "scope": "primary-catalogue",
                     "childId": "8c2b-56b0-a1b0-fb3e",
                     "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
                   }
                 ]
               }
@@ -78220,6 +79485,14 @@
                     "scope": "primary-catalogue",
                     "childId": "8c2b-56b0-a1b0-fb3e",
                     "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
+                    "shared": true
                   }
                 ]
               }
@@ -78440,6 +79713,70 @@
             ]
           },
           {
+            "name": "Heavy Support",
+            "hidden": false,
+            "id": "0df7-6c0c-726e-ada3",
+            "targetId": "1dff-e2a4-5442-6863",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 3,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0181-b1ab-8cfd-6339"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "0181-b1ab-8cfd-6339",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "e21b-2efb-67ed-253c",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "0518-a7e6-8ea3-cbb9",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "0181-b1ab-8cfd-6339",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "2fa8-4bfa-660e-a104",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "name": "Fortification",
             "hidden": false,
             "id": "4b9d-3592-d130-64d3",
@@ -78500,70 +79837,6 @@
                         "includeChildSelections": true
                       }
                     ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Heavy Support",
-            "hidden": false,
-            "id": "0df7-6c0c-726e-ada3",
-            "targetId": "1dff-e2a4-5442-6863",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 3,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "0181-b1ab-8cfd-6339"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 1,
-                "field": "0181-b1ab-8cfd-6339",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "e21b-2efb-67ed-253c",
-                        "shared": true,
-                        "includeChildSelections": true
-                      },
-                      {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "0518-a7e6-8ea3-cbb9",
-                        "shared": true,
-                        "includeChildSelections": true
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "increment",
-                "value": 1,
-                "field": "0181-b1ab-8cfd-6339",
-                "conditions": [
-                  {
-                    "type": "atLeast",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "force",
-                    "childId": "2fa8-4bfa-660e-a104",
-                    "shared": true,
-                    "includeChildSelections": true
                   }
                 ]
               }
@@ -78809,6 +80082,14 @@
                     "field": "selections",
                     "scope": "primary-catalogue",
                     "childId": "8c2b-56b0-a1b0-fb3e",
+                    "shared": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "31c6-2ed0-0120-bbe8",
                     "shared": true
                   }
                 ]
