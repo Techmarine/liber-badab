@@ -421,22 +421,6 @@
             ]
           },
           {
-            "name": "Fortification",
-            "hidden": false,
-            "id": "f3ad-b3c8-15da-dbc8",
-            "targetId": "238d-2edf-cc1c-58e6",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "f1ad-6cf3-08f9-17eb"
-              }
-            ]
-          },
-          {
             "name": "Heavy Support",
             "hidden": false,
             "id": "6934-73dd-e4e6-6891",
@@ -490,6 +474,22 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "name": "Fortification",
+            "hidden": false,
+            "id": "f3ad-b3c8-15da-dbc8",
+            "targetId": "238d-2edf-cc1c-58e6",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f1ad-6cf3-08f9-17eb"
               }
             ]
           }
@@ -16443,14 +16443,13 @@
                     "hidden": false,
                     "type": "rule",
                     "targetId": "0222-9c47-1294-35b8"
-                  }
-                ],
-                "rules": [
+                  },
                   {
-                    "name": "Clos-in Support",
-                    "id": "c560-0024-1d51-11e2",
+                    "name": "Close-in Support",
+                    "id": "0249-fe01-1e6d-bb92",
                     "hidden": false,
-                    "description": "A Vulture (ignoring the normal rules for Flyers) may start on the board in Hover Mode if the controlling player choses, but if chosen, it may not swap to Zooming Mode until turn 2."
+                    "type": "rule",
+                    "targetId": "6c10-dafe-d82b-b3aa"
                   }
                 ]
               },
@@ -17454,6 +17453,13 @@
             "hidden": false,
             "type": "rule",
             "targetId": "52d4-8107-08f3-455e"
+          },
+          {
+            "name": "Fighting Platforms",
+            "id": "305f-1890-ac56-396c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "1b0b-1757-3196-af17"
           }
         ],
         "entryLinks": [
@@ -17464,14 +17470,6 @@
             "id": "a33d-2e12-d347-9073",
             "type": "selectionEntry",
             "targetId": "3df7-330b-1e95-0287"
-          }
-        ],
-        "rules": [
-          {
-            "name": "Fighting Platforms",
-            "id": "5004-d055-602a-a70b",
-            "hidden": false,
-            "description": "Up to 20 Infantry models may fire from the open deck of the Stormlord in the Controlling players Shooting Phase. The do not count as moving (as long as the Stormlord moved no more than 5” in the proceeding movement phase). They may use any part of the Stormlords hull to draw range and line of site from."
           }
         ]
       },
@@ -19710,52 +19708,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Command Vox",
-        "hidden": false,
-        "id": "e943-248a-bd04-19e7",
-        "profiles": [
-          {
-            "name": "Command Vox",
-            "typeId": "8d18-819f-6442-e206",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "23db-b274-e105-6f67",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "73f7-995c-ccc1-9f39",
-                "$text": " A unit with a Command Vox may use the highest Leadership available to any unit equipped with either a Command Vox, Vox-Caster or Nuncio-Vox in the Detachment.\nIn addition, any scatter dice may be rerolled if they are in line of site of the bearer.\nIn Regards to Imperial Guard forces, if an Order is given through a Command-Vox to a squad with a Command-Vox or Vox- Caster, it may re-roll Failed Order Rolls."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Vox-caster",
-        "hidden": false,
-        "id": "34db-8efe-c48c-acfb",
-        "profiles": [
-          {
-            "name": "Vox-caster",
-            "typeId": "8d18-819f-6442-e206",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "a4de-ab6b-0ed8-12de",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "73f7-995c-ccc1-9f39",
-                "$text": "A unit with a Vox-Caster may use the highest Leadership of a unit that contains a Command Vox or Nuncio-Vox in the detachment.\nIn addition, any scatter dice may be rerolled if they are in line of site of the bearer. In Regards to Imperial Guard forces, if an Order is given through a Command-Vox to a squad with a Vox-Caster, it may re-roll Failed Order Rolls."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Company Standard",
         "hidden": false,
         "id": "3107-e93b-2fc1-aa08",
@@ -19796,211 +19748,6 @@
                 "$text": "While the standard bearer is alive, any combat within 6\" counts as having scored an additional wound for the purposes of calculating close combat results."
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Medi-pack",
-        "hidden": false,
-        "id": "9063-4bb7-4746-a2f2",
-        "profiles": [
-          {
-            "name": "Medi-pack",
-            "typeId": "8d18-819f-6442-e206",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "9c3d-18c7-110d-389a",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "73f7-995c-ccc1-9f39",
-                "$text": "If any model in a unit contains a medi-pack, the whole unit gains the Feel No Pain (5+) Special Rule."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Flak Armour",
-        "hidden": false,
-        "id": "dbf6-2803-32d4-a972",
-        "profiles": [
-          {
-            "name": "Flak Armour",
-            "typeId": "8d18-819f-6442-e206",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "78ff-9e04-3fee-25d7",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "73f7-995c-ccc1-9f39",
-                "$text": "A model with a flak armour gains a 5+ Save."
-              }
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": "5+",
-            "field": "dc1c-e152-7a5e-2c32",
-            "affects": "profiles.Model",
-            "scope": "parent"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "8e28-efcd-7d35-e109-min"
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "8e28-efcd-7d35-e109-max"
-          }
-        ],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden"
-              },
-              {
-                "type": "set",
-                "value": 0,
-                "field": "8e28-efcd-7d35-e109-min"
-              },
-              {
-                "type": "set",
-                "value": 0,
-                "field": "8e28-efcd-7d35-e109-max"
-              }
-            ],
-            "conditions": [
-              {
-                "type": "atLeast",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "childId": "b1db-015a-3e1c-1e10",
-                "shared": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Carapace Armour",
-        "hidden": false,
-        "id": "b1db-015a-3e1c-1e10",
-        "profiles": [
-          {
-            "name": "Carapace Armour",
-            "typeId": "8d18-819f-6442-e206",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "0d1c-00a0-68ea-1041",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "73f7-995c-ccc1-9f39",
-                "$text": "A model with a carapace armour gains a 4+ Save."
-              }
-            ]
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": "4+",
-            "field": "dc1c-e152-7a5e-2c32",
-            "affects": "profiles.Model",
-            "scope": "parent"
-          },
-          {
-            "type": "remove",
-            "value": "fcca-7b6b-7920-a6f5",
-            "field": "category",
-            "scope": "parent"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Armoured Cockpit",
-        "hidden": false,
-        "id": "6ed5-8e3c-795b-44f6",
-        "profiles": [
-          {
-            "name": "Armoured Cockpit",
-            "typeId": "8d18-819f-6442-e206",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "2c46-17c2-5841-482c",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "73f7-995c-ccc1-9f39",
-                "$text": "A vehicle with an Armoured Cockpit on counts all Crew Stunned Results as Crew Shaken instead."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Chaff Launchers",
-        "hidden": false,
-        "id": "d8aa-ecd4-8df3-7964",
-        "profiles": [
-          {
-            "name": "Chaff Launchers",
-            "typeId": "8d18-819f-6442-e206",
-            "typeName": "Wargear",
-            "hidden": false,
-            "id": "332e-50b6-a655-75fa",
-            "characteristics": [
-              {
-                "name": "Description",
-                "typeId": "73f7-995c-ccc1-9f39",
-                "$text": "A vehicle with Chaff Launchers gets a 5+ Invulnerable Save against any Missile or Rocket like weapons."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Camo Netting",
-        "hidden": false,
-        "id": "aaf5-0561-b169-4ee4",
-        "infoLinks": [
-          {
-            "name": "Camo Netting",
-            "id": "f25e-1fd7-b7fb-f7ab",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "d0b1-9784-a59c-b4e6"
           }
         ]
       },
@@ -20590,24 +20337,6 @@
                 "shared": true
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Carapace Armour",
-        "hidden": false,
-        "id": "033d-d42d-55cf-d3f9",
-        "comment": "whole unit",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "ba38-787c-8633-25b1"
           }
         ]
       },
@@ -22287,78 +22016,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Demolition Charge",
-        "hidden": false,
-        "id": "96a9-66b0-7778-c00b",
-        "profiles": [
-          {
-            "name": "Demolition Charge",
-            "typeId": "5e31-3867-7c3d-fcb9",
-            "typeName": "Ranged Weapon",
-            "hidden": false,
-            "id": "b9fd-50d5-335a-3210",
-            "characteristics": [
-              {
-                "name": "Range",
-                "typeId": "7b0f-9c2a-0ecb-f3a3",
-                "$text": "8\""
-              },
-              {
-                "name": "S",
-                "typeId": "2ecc-1ccc-736f-9d3d",
-                "$text": "8"
-              },
-              {
-                "name": "AP",
-                "typeId": "cbb5-5f04-f87f-a810",
-                "$text": "2"
-              },
-              {
-                "name": "Type",
-                "typeId": "2c90-16ca-a927-898d",
-                "$text": "Assault 1"
-              },
-              {
-                "name": "Special Rules",
-                "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Large Blast (5\"), One Shot"
-              }
-            ]
-          }
-        ],
-        "infoLinks": [
-          {
-            "name": "Blast",
-            "id": "e6e7-bf0a-54f1-0076",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "dd6e-d5d4-9bb3-d2e4",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "5\"",
-                "field": "annotation"
-              },
-              {
-                "type": "prepend",
-                "value": "Large",
-                "field": "name",
-                "join": " "
-              }
-            ]
-          },
-          {
-            "name": "One Shot",
-            "id": "0aa2-aef6-81e0-e09a",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "ee53-4831-a3cf-1cdb"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Camo Netting",
         "hidden": false,
         "id": "a670-5356-cd5f-5ea8",
@@ -22754,7 +22411,7 @@
                 "hidden": false,
                 "id": "8fa2-047e-e20c-3532",
                 "type": "selectionEntry",
-                "targetId": "ce25-a7ca-06f8-d583",
+                "targetId": "f33f-a1a3-ec74-e428",
                 "sortIndex": 1
               }
             ],
@@ -23111,12 +22768,6 @@
         "description": "An Infantry Platoon uses up a single Troops Choice on the Force Organisation Chart. Each Infantry Platoon can consist of the following units coming up on the following pages.\n1 Platoon Command Squad, 2-5 Infantry Squads, 0-5 Heavy Weapon Squads*, 0-2 Special Weapons Squads, 0-1 Conscript Squads.\n*May not have more Heavy Weapon Squads than Infantry Squads."
       },
       {
-        "name": "Amphibious",
-        "id": "4188-4bea-7def-c70d",
-        "hidden": false,
-        "description": "A Chimera treats all water features as clear terrain when it moves."
-      },
-      {
         "name": "Localised Fleet Strikes",
         "id": "0222-9c47-1294-35b8",
         "hidden": false,
@@ -23379,20 +23030,6 @@
             "name": "Description",
             "typeId": "a407-597b-228e-f736",
             "$text": "If the order is successfully issued, choose one enemy Vehicle, Monstrous Creature, Dreadnought (or anything logically this size and squadrons or squads of these also) visible to the officer. The ordered unit immediately shoots at the nominated target, counting their weapons as twin-linked."
-          }
-        ]
-      },
-      {
-        "name": "Camo Netting",
-        "typeId": "8d18-819f-6442-e206",
-        "typeName": "Wargear",
-        "hidden": false,
-        "id": "d0b1-9784-a59c-b4e6",
-        "characteristics": [
-          {
-            "name": "Description",
-            "typeId": "73f7-995c-ccc1-9f39",
-            "$text": "As long as a model with Camo netting hasn’t moved this game turn for any reason, it gets +2 to any Cover Save it currently has."
           }
         ]
       }
@@ -24064,6 +23701,30 @@
             "field": "category"
           }
         ]
+      },
+      {
+        "import": true,
+        "name": "Fortified Wall (Strongpoint)",
+        "hidden": false,
+        "id": "2b61-d785-dc38-4ce7",
+        "type": "selectionEntry",
+        "targetId": "2ae3-f2e0-7cc8-c3d2"
+      },
+      {
+        "import": true,
+        "name": "Imperial Bunker",
+        "hidden": false,
+        "id": "94a9-f73e-a81a-55ef",
+        "type": "selectionEntry",
+        "targetId": "9240-c510-c06a-7307"
+      },
+      {
+        "import": true,
+        "name": "Defence Line",
+        "hidden": false,
+        "id": "65c8-2632-e7e4-6219",
+        "type": "selectionEntry",
+        "targetId": "a950-5d8b-be2e-f667"
       }
     ],
     "type": "catalogue",
