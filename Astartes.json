@@ -6309,15 +6309,28 @@
                         "field": "edd4-f517-ba1c-460c"
                       }
                     ],
-                    "conditions": [
+                    "conditionGroups": [
                       {
-                        "type": "atLeast",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "force",
-                        "childId": "1f40-fe51-5c23-c07e",
-                        "shared": true,
-                        "includeChildSelections": true
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "force",
+                            "childId": "1f40-fe51-5c23-c07e",
+                            "shared": true,
+                            "includeChildSelections": true
+                          },
+                          {
+                            "type": "notInstanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "7e06-e948-7abb-cede",
+                            "shared": true
+                          }
+                        ]
                       }
                     ]
                   }
@@ -8510,10 +8523,35 @@
                             "scope": "root-entry",
                             "childId": "3549-f5ca-7c82-7fdd",
                             "shared": true
+                          },
+                          {
+                            "type": "instanceOf",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "root-entry",
+                            "childId": "7e06-e948-7abb-cede",
+                            "shared": true
                           }
                         ]
                       }
                     ]
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "953f-7cf5-16f2-1d89-min",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "7e06-e948-7abb-cede",
+                    "shared": true
                   }
                 ]
               }
@@ -9544,13 +9582,6 @@
                 "id": "8db6-0df9-f1c1-e459",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "max",
@@ -11022,13 +11053,6 @@
                 "id": "0067-85d1-b301-7898",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "max",
@@ -12562,16 +12586,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "58ba-b4af-bc02-c48f",
-                    "shared": true
                   }
                 ]
               }
@@ -18847,7 +18861,7 @@
         ],
         "profiles": [
           {
-            "name": "Land Raider Crusader",
+            "name": "Land Raider Redeemer",
             "typeId": "554a-e6c5-2c57-a72e",
             "typeName": "Vehicle",
             "hidden": false,
@@ -18886,7 +18900,7 @@
               {
                 "name": "Transport Capacity",
                 "typeId": "c01c-1a8f-7f1d-1cb6",
-                "$text": "16"
+                "$text": "14"
               }
             ]
           }
@@ -24336,13 +24350,6 @@
                 "id": "f82a-3bc8-42d7-3062",
                 "type": "selectionEntry",
                 "targetId": "954a-f392-16da-5caa",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -24401,13 +24408,6 @@
                 "id": "c7f3-469e-cddd-949f",
                 "type": "selectionEntry",
                 "targetId": "edbe-fcf8-664e-f90f",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -24466,13 +24466,6 @@
                 "id": "fea5-1ec9-2ea0-e739",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -25299,13 +25292,6 @@
                 "id": "d3e0-6f4e-1058-fbf9",
                 "type": "selectionEntry",
                 "targetId": "954a-f392-16da-5caa",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -25364,13 +25350,6 @@
                 "id": "a20c-a78a-e78f-06e5",
                 "type": "selectionEntry",
                 "targetId": "edbe-fcf8-664e-f90f",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -25429,13 +25408,6 @@
                 "id": "2c43-d238-cd1b-64dc",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -26292,7 +26264,25 @@
                 "id": "0329-97c6-78e0-561b"
               }
             ],
-            "sortIndex": 4
+            "sortIndex": 4,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 5,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "upgrade",
@@ -26310,7 +26300,25 @@
                 "id": "217b-3943-d241-34eb"
               }
             ],
-            "sortIndex": 3
+            "sortIndex": 3,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 5,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -26390,16 +26398,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "58ba-b4af-bc02-c48f",
-                    "shared": true
                   }
                 ]
               }
@@ -26991,13 +26989,6 @@
                 "id": "35ce-391c-d78a-427a",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -27056,13 +27047,6 @@
                 "id": "8440-c137-f385-ad0e",
                 "type": "selectionEntry",
                 "targetId": "edbe-fcf8-664e-f90f",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -28264,13 +28248,6 @@
                 "id": "27af-e752-e9a2-dc7a",
                 "type": "selectionEntry",
                 "targetId": "edbe-fcf8-664e-f90f",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -28329,13 +28306,6 @@
                 "id": "7ae6-0478-1042-a14c",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -29610,7 +29580,25 @@
                 "id": "12d8-1cf7-71a1-df27"
               }
             ],
-            "sortIndex": 3
+            "sortIndex": 3,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 5,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "upgrade",
@@ -29779,16 +29767,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "58ba-b4af-bc02-c48f",
-                    "shared": true
                   }
                 ]
               }
@@ -34323,13 +34301,6 @@
                 "id": "b2ec-a5ac-0163-0ce4",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -35618,13 +35589,6 @@
                 "id": "df27-f8c0-37e0-93b7",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -37002,16 +36966,6 @@
                     "shared": true,
                     "roundUp": false
                   }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "58ba-b4af-bc02-c48f",
-                    "shared": true
-                  }
                 ]
               }
             ],
@@ -37083,7 +37037,7 @@
               {
                 "name": "Special Rules",
                 "typeId": "d2a2-1139-48cb-4472",
-                "$text": "Grave-ripple, Gets Hot"
+                "$text": "Grav-ripple, Gets Hot"
               }
             ]
           }
@@ -37887,13 +37841,6 @@
                 "id": "fa91-93df-0864-80a8",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -37952,13 +37899,6 @@
                 "id": "9fe6-aac1-b134-80a5",
                 "type": "selectionEntry",
                 "targetId": "edbe-fcf8-664e-f90f",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -38745,13 +38685,6 @@
                 "id": "ab35-054c-33d6-e8d7",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -38810,13 +38743,6 @@
                 "id": "30f0-cf82-3323-6ef7",
                 "type": "selectionEntry",
                 "targetId": "edbe-fcf8-664e-f90f",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -38957,7 +38883,25 @@
                 "id": "acc9-8a63-304c-1819"
               }
             ],
-            "sortIndex": 4
+            "sortIndex": 4,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 5,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -39101,16 +39045,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "58ba-b4af-bc02-c48f",
-                    "shared": true
                   }
                 ]
               }
@@ -40228,13 +40162,6 @@
                 "id": "f5eb-45b0-402c-0f10",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -40642,13 +40569,6 @@
                 "id": "1a67-56f1-e4e4-6c99",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -41588,16 +41508,6 @@
                     "shared": true,
                     "roundUp": false
                   }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "58ba-b4af-bc02-c48f",
-                    "shared": true
-                  }
                 ]
               }
             ],
@@ -41975,13 +41885,6 @@
                 "id": "6fec-0ece-aa6d-3431",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -43559,13 +43462,6 @@
                 "id": "a479-318d-6145-9a96",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -44637,7 +44533,25 @@
                 "id": "a0c8-7a8c-3eb6-5100"
               }
             ],
-            "sortIndex": 4
+            "sortIndex": 4,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "upgrade",
@@ -45135,13 +45049,6 @@
                 "id": "6342-8fe1-3ca1-609c",
                 "type": "selectionEntry",
                 "targetId": "954a-f392-16da-5caa",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -45200,13 +45107,6 @@
                 "id": "4c86-b7a1-c3f5-cb51",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -46657,13 +46557,6 @@
                 "id": "b9b4-60f9-22e3-5435",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -46722,13 +46615,6 @@
                 "id": "931b-7cbe-390c-65f4",
                 "type": "selectionEntry",
                 "targetId": "954a-f392-16da-5caa",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 5
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -47729,7 +47615,7 @@
           {
             "type": "upgrade",
             "import": true,
-            "name": "Warhawk Jump Pack",
+            "name": "Warhawk Jump Packs",
             "hidden": false,
             "id": "a654-f725-5be9-c995",
             "sortIndex": 3,
@@ -47741,6 +47627,24 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "0e77-04b0-f5ad-0d9d"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 5,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
               }
             ]
           }
@@ -47816,16 +47720,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "58ba-b4af-bc02-c48f",
-                    "shared": true
                   }
                 ]
               }
@@ -48326,13 +48220,6 @@
                 "id": "b462-3d04-55cf-7c5b",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -48703,13 +48590,6 @@
                 "id": "eeb9-cc6b-e76b-9fb3",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -49537,7 +49417,25 @@
                 "id": "dc0c-d61a-b098-81d4"
               }
             ],
-            "sortIndex": 3
+            "sortIndex": 3,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "upgrade",
@@ -50088,13 +49986,6 @@
                 "id": "16c0-60d0-7bc2-676e",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -50888,13 +50779,6 @@
                 "id": "3bae-854b-5467-3519",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -51084,7 +50968,25 @@
                 "id": "28ec-47a7-729f-0bd4"
               }
             ],
-            "sortIndex": 3
+            "sortIndex": 3,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "54b5-0978-c8a4-5b5a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
           }
         ],
         "infoLinks": [
@@ -54476,13 +54378,6 @@
                 "id": "058e-3701-7a2d-5f4d",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -55154,13 +55049,6 @@
                 "id": "c1a5-ff32-d454-7313",
                 "type": "selectionEntry",
                 "targetId": "bbfb-1c1f-fdbf-90b1",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -55581,16 +55469,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "58ba-b4af-bc02-c48f",
-                    "shared": true
                   }
                 ]
               }

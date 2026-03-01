@@ -18847,13 +18847,6 @@
                 "id": "8a31-b197-47ab-bbf6",
                 "type": "selectionEntry",
                 "targetId": "e48a-d376-60d9-dbc6",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "max",
@@ -19905,16 +19898,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "6d6b-8ef1-fef9-0b92",
-                    "shared": true
                   }
                 ]
               }
@@ -21162,16 +21145,6 @@
                     "shared": true,
                     "roundUp": false
                   }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "6e0e-2d6a-620e-3289",
-                    "shared": true
-                  }
                 ]
               }
             ],
@@ -21574,13 +21547,6 @@
                 "id": "e974-4e60-5d86-0d68",
                 "type": "selectionEntry",
                 "targetId": "e48a-d376-60d9-dbc6",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "constraints": [
                   {
                     "type": "min",
@@ -21737,13 +21703,6 @@
                         "shared": true
                       }
                     ]
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
                   }
                 ]
               }
@@ -22216,16 +22175,6 @@
                     "shared": true,
                     "roundUp": false
                   }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "039f-3938-de8a-eb7c",
-                    "shared": true
-                  }
                 ]
               }
             ],
@@ -22261,16 +22210,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "9a1b-79e3-2982-b822",
-                    "shared": true
                   }
                 ]
               }
@@ -22951,13 +22890,6 @@
                     ]
                   }
                 ],
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "sortIndex": 3
               },
               {
@@ -23430,16 +23362,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "65cc-6aab-cc81-61cb",
-                    "shared": true
                   }
                 ]
               }
@@ -28428,13 +28350,6 @@
                     ]
                   }
                 ],
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
-                  }
-                ],
                 "sortIndex": 2
               },
               {
@@ -28517,13 +28432,6 @@
                         "shared": true
                       }
                     ]
-                  }
-                ],
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "54b5-0978-c8a4-5b5a",
-                    "value": 2
                   }
                 ],
                 "sortIndex": 3
@@ -28701,16 +28609,6 @@
                     "shared": true,
                     "roundUp": false
                   }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "3f7a-9058-712d-687c",
-                    "shared": true
-                  }
                 ]
               }
             ],
@@ -28746,16 +28644,6 @@
                     "childId": "model",
                     "shared": true,
                     "roundUp": false
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "lessThan",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "d943-ad85-7af1-ced7",
-                    "shared": true
                   }
                 ]
               }
