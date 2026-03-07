@@ -2701,30 +2701,7 @@
         "import": true,
         "name": "Autocannon",
         "hidden": false,
-        "id": "e8cc-be33-d12d-91ae",
-        "infoLinks": [
-          {
-            "name": "Rending",
-            "id": "4256-cf37-b364-53d6",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2508-8e95-11c7-6bd6",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "6+",
-                "field": "annotation"
-              }
-            ]
-          },
-          {
-            "name": "Autocannon",
-            "id": "a78a-3575-5d2f-2e3d",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0631-8a98-774a-a5f5"
-          }
-        ]
+        "id": "e8cc-be33-d12d-91ae"
       },
       {
         "type": "upgrade",
@@ -6070,7 +6047,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Turret Mounted Baneblade Cannon",
+        "name": "Turret Mounted Baneblade Cannon with Co-axial Autocannon",
         "hidden": false,
         "id": "e27a-9202-70d1-d758",
         "profiles": [
@@ -6164,40 +6141,25 @@
                 "field": "annotation"
               }
             ]
-          }
-        ],
-        "entryLinks": [
+          },
           {
-            "import": true,
             "name": "Autocannon",
+            "id": "a78a-3575-5d2f-2e3d",
             "hidden": false,
-            "id": "75dd-7f2a-77f2-6b12",
-            "type": "selectionEntry",
-            "targetId": "e8cc-be33-d12d-91ae",
+            "type": "profile",
+            "targetId": "0631-8a98-774a-a5f5"
+          },
+          {
+            "name": "Rending",
+            "id": "4256-cf37-b364-53d6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2508-8e95-11c7-6bd6",
             "modifiers": [
               {
-                "type": "prepend",
-                "value": "Co-axial",
-                "field": "name",
-                "join": " "
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "c7ee-4136-153b-9aa0-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "c7ee-4136-153b-9aa0-max"
+                "type": "set",
+                "value": "6+",
+                "field": "annotation"
               }
             ]
           }
@@ -8251,7 +8213,7 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Four Boreas Air Defense Missile",
+        "name": "Four Boreas Air Defense Missiles",
         "hidden": false,
         "id": "bf76-d26a-2075-ece7",
         "infoLinks": [
@@ -14894,7 +14856,8 @@
                 "shared": true,
                 "id": "d414-7034-0656-7f19"
               }
-            ]
+            ],
+            "collapsible": true
           },
           {
             "import": true,
@@ -14912,7 +14875,8 @@
                 "shared": true,
                 "id": "194e-3d15-03ba-47e8"
               }
-            ]
+            ],
+            "collapsible": true
           },
           {
             "import": true,
@@ -14948,7 +14912,8 @@
                 "shared": true,
                 "id": "d20a-305f-9517-7477"
               }
-            ]
+            ],
+            "collapsible": true
           },
           {
             "import": true,
@@ -14984,7 +14949,8 @@
                 "shared": true,
                 "id": "94ed-1c32-684d-e636"
               }
-            ]
+            ],
+            "collapsible": true
           }
         ],
         "modifiers": [
@@ -15003,7 +14969,8 @@
               }
             ]
           }
-        ]
+        ],
+        "collapsible": true
       },
       {
         "name": "Twin-linked",

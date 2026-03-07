@@ -59,286 +59,6 @@
           }
         ],
         "sortIndex": 1,
-        "selectionEntries": [
-          {
-            "type": "model",
-            "import": true,
-            "name": "Vaylund Cal",
-            "hidden": false,
-            "id": "b056-aea0-5dfb-8258",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "93ae-6022-5cfb-7032-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "93ae-6022-5cfb-7032-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "e658-6229-4131-8405",
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "sortIndex": 1,
-            "categoryLinks": [
-              {
-                "name": "Infantry Unit Type",
-                "hidden": false,
-                "id": "3612-8b11-f3c6-b065",
-                "targetId": "c447-1b05-5ba8-846a",
-                "primary": false
-              },
-              {
-                "name": "Character",
-                "hidden": false,
-                "id": "d033-db29-ff83-3fcb",
-                "targetId": "c0e6-28aa-5286-2fa2",
-                "primary": false
-              },
-              {
-                "name": "Unique Sub-type",
-                "hidden": false,
-                "id": "4690-7418-6de9-e6c6",
-                "targetId": "75a3-46b2-47de-9789",
-                "primary": false
-              },
-              {
-                "name": "Heavy Sub-type",
-                "hidden": false,
-                "id": "573d-55f1-1c6c-0451",
-                "targetId": "33d0-319a-741e-573f",
-                "primary": false
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Vaylund Cal",
-                "typeId": "dd4a-7345-17fe-9c76",
-                "typeName": "Model",
-                "hidden": false,
-                "id": "e5b2-8af3-ef93-3d3e",
-                "characteristics": [
-                  {
-                    "name": "M",
-                    "typeId": "69ed-cbc7-3fbc-7ba5",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "WS",
-                    "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "S",
-                    "typeId": "99ae-5644-9155-ae6e",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "T",
-                    "typeId": "08d3-1319-227b-1d5c",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "W",
-                    "typeId": "cdc0-9287-7039-4792",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "I",
-                    "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "A",
-                    "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Ld",
-                    "typeId": "d29a-9b6f-13a6-b7a8",
-                    "$text": "10"
-                  },
-                  {
-                    "name": "Sv",
-                    "typeId": "dc1c-e152-7a5e-2c32",
-                    "$text": "2+"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Warlord",
-                "hidden": false,
-                "id": "b3ff-e4c3-7a92-3c08",
-                "type": "selectionEntry",
-                "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1
-              },
-              {
-                "import": true,
-                "name": "Artificer Armour",
-                "hidden": false,
-                "id": "c7a8-908c-d0e4-e9a4",
-                "type": "selectionEntry",
-                "targetId": "2004-7466-45c8-bca8",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "dcdf-3703-a8b1-0e2b-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "dcdf-3703-a8b1-0e2b-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Servo-arm",
-                "hidden": false,
-                "id": "6139-0e82-01e3-9c24",
-                "type": "selectionEntry",
-                "targetId": "7700-44c7-6f2e-7f6e",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3de4-76f6-2f11-9558-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3de4-76f6-2f11-9558-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Thunder Hammer",
-                "hidden": false,
-                "id": "90a2-e70d-7241-7678",
-                "type": "selectionEntry",
-                "targetId": "8613-c6a7-3820-2302",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "8de2-8f44-47ed-ffef-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "8de2-8f44-47ed-ffef-max"
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Master-crafted",
-                    "hidden": false,
-                    "id": "5576-f5e8-4bbf-e444",
-                    "type": "selectionEntryGroup",
-                    "targetId": "c044-d3ec-ebc4-d882"
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Master-crafted",
-                    "id": "44bd-7d83-24ba-497c",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "0371-1ea2-8615-e03a"
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Master-crafted",
-                    "field": "name",
-                    "join": " "
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Iron Halo",
-                "hidden": false,
-                "id": "f1e7-7e42-4a28-5e8a",
-                "type": "selectionEntry",
-                "targetId": "daaa-0a9c-f1e0-986f",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "046b-982a-ea51-1e57-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "046b-982a-ea51-1e57-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Retinue",
-                "hidden": false,
-                "id": "e5e1-a0f3-0047-14d5",
-                "type": "selectionEntryGroup",
-                "targetId": "e290-7819-af75-85c4",
-                "sortIndex": 2
-              }
-            ]
-          }
-        ],
         "categoryLinks": [
           {
             "name": "HQ",
@@ -381,6 +101,34 @@
             "id": "c988-bfcf-3ce1-9f50",
             "targetId": "391b-d8aa-f0cb-f617",
             "primary": false
+          },
+          {
+            "name": "Infantry Unit Type",
+            "hidden": false,
+            "id": "0fdb-8b75-5eef-fec3",
+            "targetId": "c447-1b05-5ba8-846a",
+            "primary": false
+          },
+          {
+            "name": "Character",
+            "hidden": false,
+            "id": "c49c-a274-4cea-fff0",
+            "targetId": "c0e6-28aa-5286-2fa2",
+            "primary": false
+          },
+          {
+            "name": "Unique Sub-type",
+            "hidden": false,
+            "id": "57f6-174e-9033-d193",
+            "targetId": "75a3-46b2-47de-9789",
+            "primary": false
+          },
+          {
+            "name": "Heavy Sub-type",
+            "hidden": false,
+            "id": "51be-fa0c-0772-6ad8",
+            "targetId": "33d0-319a-741e-573f",
+            "primary": false
           }
         ],
         "entryLinks": [
@@ -390,7 +138,161 @@
             "hidden": false,
             "id": "3c64-669c-7ae5-fb28",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Warlord",
+            "hidden": false,
+            "id": "b3ff-e4c3-7a92-3c08",
+            "type": "selectionEntry",
+            "targetId": "dafc-695e-c908-6848",
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Retinue",
+            "hidden": false,
+            "id": "e5e1-a0f3-0047-14d5",
+            "type": "selectionEntryGroup",
+            "targetId": "e290-7819-af75-85c4",
+            "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Artificer Armour",
+            "hidden": false,
+            "id": "c7a8-908c-d0e4-e9a4",
+            "type": "selectionEntry",
+            "targetId": "2004-7466-45c8-bca8",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dcdf-3703-a8b1-0e2b-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dcdf-3703-a8b1-0e2b-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Iron Halo",
+            "hidden": false,
+            "id": "f1e7-7e42-4a28-5e8a",
+            "type": "selectionEntry",
+            "targetId": "daaa-0a9c-f1e0-986f",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "046b-982a-ea51-1e57-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "046b-982a-ea51-1e57-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Servo-arm",
+            "hidden": false,
+            "id": "6139-0e82-01e3-9c24",
+            "type": "selectionEntry",
+            "targetId": "7700-44c7-6f2e-7f6e",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3de4-76f6-2f11-9558-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3de4-76f6-2f11-9558-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Thunder Hammer",
+            "hidden": false,
+            "id": "90a2-e70d-7241-7678",
+            "type": "selectionEntry",
+            "targetId": "8613-c6a7-3820-2302",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8de2-8f44-47ed-ffef-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8de2-8f44-47ed-ffef-max"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Master-crafted",
+                "hidden": false,
+                "id": "5576-f5e8-4bbf-e444",
+                "type": "selectionEntryGroup",
+                "targetId": "c044-d3ec-ebc4-d882"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Master-crafted",
+                "id": "44bd-7d83-24ba-497c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "0371-1ea2-8615-e03a"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Master-crafted",
+                "field": "name",
+                "join": " "
+              }
+            ],
+            "sortIndex": 2
           }
         ],
         "infoLinks": [
@@ -461,6 +363,79 @@
             "id": "97bd-8a0c-9568-de17",
             "hidden": false,
             "description": "If Vaylund Cal is part of the detachment, up to 2 Devastator squads suitably modelled to represent heavy cybernetic augmentation and on 40mm bases can be upgraded to Toughness 5 and gain the Feel No Pain (5+) and Bulky (2) Special Rule for +50 points per unit, but may not Run or make Sweeping Advances."
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "e658-6229-4131-8405",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Vaylund Cal",
+            "typeId": "dd4a-7345-17fe-9c76",
+            "typeName": "Model",
+            "hidden": false,
+            "id": "e5b2-8af3-ef93-3d3e",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "69ed-cbc7-3fbc-7ba5",
+                "$text": "6"
+              },
+              {
+                "name": "WS",
+                "typeId": "6ed0-3b6d-b7d7-894c",
+                "$text": "5"
+              },
+              {
+                "name": "BS",
+                "typeId": "163f-6fcf-6b77-1766",
+                "$text": "5"
+              },
+              {
+                "name": "S",
+                "typeId": "99ae-5644-9155-ae6e",
+                "$text": "5"
+              },
+              {
+                "name": "T",
+                "typeId": "08d3-1319-227b-1d5c",
+                "$text": "6"
+              },
+              {
+                "name": "W",
+                "typeId": "cdc0-9287-7039-4792",
+                "$text": "4"
+              },
+              {
+                "name": "I",
+                "typeId": "03f0-9c72-1dc2-55cd",
+                "$text": "3"
+              },
+              {
+                "name": "A",
+                "typeId": "edda-ee37-03b4-f91f",
+                "$text": "2"
+              },
+              {
+                "name": "Ld",
+                "typeId": "d29a-9b6f-13a6-b7a8",
+                "$text": "10"
+              },
+              {
+                "name": "Sv",
+                "typeId": "dc1c-e152-7a5e-2c32",
+                "$text": "2+"
+              }
+            ]
           }
         ]
       }

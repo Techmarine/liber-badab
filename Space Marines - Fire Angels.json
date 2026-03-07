@@ -87,15 +87,95 @@
             "id": "3169-7c95-a0d8-f1c5",
             "targetId": "325c-e791-275c-2ab7",
             "primary": false
+          },
+          {
+            "name": "Infantry Unit Type",
+            "hidden": false,
+            "id": "cdd9-69b3-02b8-b1ee",
+            "targetId": "c447-1b05-5ba8-846a",
+            "primary": false
+          },
+          {
+            "name": "Character",
+            "hidden": false,
+            "id": "2160-b9b3-9fd1-887b",
+            "targetId": "c0e6-28aa-5286-2fa2",
+            "primary": false
+          },
+          {
+            "name": "Unique Sub-type",
+            "hidden": false,
+            "id": "c397-0554-0765-a5f2",
+            "targetId": "75a3-46b2-47de-9789",
+            "primary": false
           }
         ],
         "selectionEntries": [
           {
-            "type": "model",
+            "type": "upgrade",
             "import": true,
-            "name": "Captain Tarnus Vale",
+            "name": "Terra's Teeth",
             "hidden": false,
-            "id": "a8af-b187-5190-bcff",
+            "id": "e0d0-4bf8-6afc-1c72",
+            "profiles": [
+              {
+                "name": "Terra's Teeth",
+                "typeId": "ecd5-ca1d-0842-34a4",
+                "typeName": "Melee Weapon",
+                "hidden": false,
+                "id": "8798-ed5b-5269-8ae0",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "ec4a-5686-1553-4654",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "b9e5-2eb3-f79d-e995",
+                    "$text": "+1"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "0332-8de1-48c6-c94d",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "6c0f-3258-2a17-5cc9",
+                    "$text": "Melee"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "a603-af69-c30b-94ed",
+                    "$text": "Shred, Rending (4+)"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Shred",
+                "id": "b6d7-8824-b700-b506",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a666-0970-28e2-7c48"
+              },
+              {
+                "name": "Rending",
+                "id": "bbb0-25ff-a476-5bde",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2508-8e95-11c7-6bd6",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "4+",
+                    "field": "annotation"
+                  }
+                ]
+              }
+            ],
             "constraints": [
               {
                 "type": "min",
@@ -103,7 +183,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "8e32-6790-a37b-04b0-min"
+                "id": "761e-f961-eb27-233a-min"
               },
               {
                 "type": "max",
@@ -111,366 +191,10 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "8e32-6790-a37b-04b0-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "d4a7-088b-dd0d-77cf",
-                "includeChildSelections": true,
-                "includeChildForces": true
+                "id": "761e-f961-eb27-233a-max"
               }
             ],
-            "categoryLinks": [
-              {
-                "name": "Infantry Unit Type",
-                "hidden": false,
-                "id": "07c7-ae03-b0d9-da84",
-                "targetId": "c447-1b05-5ba8-846a",
-                "primary": false
-              },
-              {
-                "name": "Character",
-                "hidden": false,
-                "id": "4c9a-a4d5-6f51-4bdd",
-                "targetId": "c0e6-28aa-5286-2fa2",
-                "primary": false
-              },
-              {
-                "name": "Unique Sub-type",
-                "hidden": false,
-                "id": "173d-0743-348d-0387",
-                "targetId": "75a3-46b2-47de-9789",
-                "primary": false
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Artificer Armour",
-                "hidden": false,
-                "id": "e6f7-3b74-1aa6-3e77",
-                "type": "selectionEntry",
-                "targetId": "2004-7466-45c8-bca8",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "77eb-a81b-d069-85e0-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "77eb-a81b-d069-85e0-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Iron Halo",
-                "hidden": false,
-                "id": "68ae-d46d-78ad-0cd8",
-                "type": "selectionEntry",
-                "targetId": "daaa-0a9c-f1e0-986f",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "cd9e-7030-b566-0085-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "cd9e-7030-b566-0085-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Plasma Pistol",
-                "hidden": false,
-                "id": "d83e-b01d-39c7-1bd1",
-                "type": "selectionEntry",
-                "targetId": "3f09-f9ad-2440-d174",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "01b3-45c8-0ed2-b8d9-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "01b3-45c8-0ed2-b8d9-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Frag Grenades",
-                "hidden": false,
-                "id": "2e24-ff36-97bc-506b",
-                "type": "selectionEntry",
-                "targetId": "e72d-68cc-bd83-6066",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "c97c-8518-d973-b4c3-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "c97c-8518-d973-b4c3-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "9b42-8531-cab5-0ae2",
-                "type": "selectionEntry",
-                "targetId": "bbfb-1c1f-fdbf-90b1",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2a35-64c5-1a66-086f-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2a35-64c5-1a66-086f-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Melta Bombs",
-                "hidden": false,
-                "id": "f5b8-5152-c83a-9f99",
-                "type": "selectionEntry",
-                "targetId": "edbe-fcf8-664e-f90f",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e8df-198e-26ad-1f8b-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e8df-198e-26ad-1f8b-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Warlord",
-                "hidden": false,
-                "id": "64c9-5047-93cf-ec32",
-                "type": "selectionEntry",
-                "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1
-              },
-              {
-                "import": true,
-                "name": "Retinue",
-                "hidden": false,
-                "id": "5e87-9830-6a87-e45d",
-                "type": "selectionEntryGroup",
-                "targetId": "e290-7819-af75-85c4",
-                "sortIndex": 2
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Terra's Teeth",
-                "hidden": false,
-                "id": "e0d0-4bf8-6afc-1c72",
-                "profiles": [
-                  {
-                    "name": "Terra's Teeth",
-                    "typeId": "ecd5-ca1d-0842-34a4",
-                    "typeName": "Melee Weapon",
-                    "hidden": false,
-                    "id": "8798-ed5b-5269-8ae0",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "ec4a-5686-1553-4654",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "b9e5-2eb3-f79d-e995",
-                        "$text": "+1"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "6c0f-3258-2a17-5cc9",
-                        "$text": "Melee"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "a603-af69-c30b-94ed",
-                        "$text": "Shred, Rending (4+)"
-                      }
-                    ]
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Shred",
-                    "id": "b6d7-8824-b700-b506",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "a666-0970-28e2-7c48"
-                  },
-                  {
-                    "name": "Rending",
-                    "id": "bbb0-25ff-a476-5bde",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2508-8e95-11c7-6bd6",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "4+",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "761e-f961-eb27-233a-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "761e-f961-eb27-233a-max"
-                  }
-                ]
-              }
-            ],
-            "sortIndex": 1,
-            "profiles": [
-              {
-                "name": "Captain Tarnus Vale",
-                "typeId": "dd4a-7345-17fe-9c76",
-                "typeName": "Model",
-                "hidden": false,
-                "id": "89eb-5b35-4a83-c24b",
-                "characteristics": [
-                  {
-                    "name": "M",
-                    "typeId": "69ed-cbc7-3fbc-7ba5",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "WS",
-                    "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "S",
-                    "typeId": "99ae-5644-9155-ae6e",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "T",
-                    "typeId": "08d3-1319-227b-1d5c",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "W",
-                    "typeId": "cdc0-9287-7039-4792",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "I",
-                    "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "A",
-                    "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Ld",
-                    "typeId": "d29a-9b6f-13a6-b7a8",
-                    "$text": "10"
-                  },
-                  {
-                    "name": "Sv",
-                    "typeId": "dc1c-e152-7a5e-2c32",
-                    "$text": "2+"
-                  }
-                ]
-              }
-            ]
+            "sortIndex": 2
           }
         ],
         "entryLinks": [
@@ -480,7 +204,188 @@
             "hidden": false,
             "id": "b250-d53d-8018-30bd",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Warlord",
+            "hidden": false,
+            "id": "64c9-5047-93cf-ec32",
+            "type": "selectionEntry",
+            "targetId": "dafc-695e-c908-6848",
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Retinue",
+            "hidden": false,
+            "id": "5e87-9830-6a87-e45d",
+            "type": "selectionEntryGroup",
+            "targetId": "e290-7819-af75-85c4",
+            "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Artificer Armour",
+            "hidden": false,
+            "id": "e6f7-3b74-1aa6-3e77",
+            "type": "selectionEntry",
+            "targetId": "2004-7466-45c8-bca8",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "77eb-a81b-d069-85e0-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "77eb-a81b-d069-85e0-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Frag Grenades",
+            "hidden": false,
+            "id": "2e24-ff36-97bc-506b",
+            "type": "selectionEntry",
+            "targetId": "e72d-68cc-bd83-6066",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c97c-8518-d973-b4c3-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c97c-8518-d973-b4c3-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Iron Halo",
+            "hidden": false,
+            "id": "68ae-d46d-78ad-0cd8",
+            "type": "selectionEntry",
+            "targetId": "daaa-0a9c-f1e0-986f",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cd9e-7030-b566-0085-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cd9e-7030-b566-0085-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "9b42-8531-cab5-0ae2",
+            "type": "selectionEntry",
+            "targetId": "bbfb-1c1f-fdbf-90b1",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2a35-64c5-1a66-086f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2a35-64c5-1a66-086f-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Melta Bombs",
+            "hidden": false,
+            "id": "f5b8-5152-c83a-9f99",
+            "type": "selectionEntry",
+            "targetId": "edbe-fcf8-664e-f90f",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e8df-198e-26ad-1f8b-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e8df-198e-26ad-1f8b-max"
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Plasma Pistol",
+            "hidden": false,
+            "id": "d83e-b01d-39c7-1bd1",
+            "type": "selectionEntry",
+            "targetId": "3f09-f9ad-2440-d174",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "01b3-45c8-0ed2-b8d9-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "01b3-45c8-0ed2-b8d9-max"
+              }
+            ],
+            "sortIndex": 2
           }
         ],
         "infoLinks": [
@@ -526,6 +431,79 @@
             "field": "hidden",
             "scope": "force",
             "affects": "entries.recursive.b865-a4bb-0869-858a"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "d4a7-088b-dd0d-77cf",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Captain Tarnus Vale",
+            "typeId": "dd4a-7345-17fe-9c76",
+            "typeName": "Model",
+            "hidden": false,
+            "id": "89eb-5b35-4a83-c24b",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "69ed-cbc7-3fbc-7ba5",
+                "$text": "7"
+              },
+              {
+                "name": "WS",
+                "typeId": "6ed0-3b6d-b7d7-894c",
+                "$text": "6"
+              },
+              {
+                "name": "BS",
+                "typeId": "163f-6fcf-6b77-1766",
+                "$text": "5"
+              },
+              {
+                "name": "S",
+                "typeId": "99ae-5644-9155-ae6e",
+                "$text": "4"
+              },
+              {
+                "name": "T",
+                "typeId": "08d3-1319-227b-1d5c",
+                "$text": "4"
+              },
+              {
+                "name": "W",
+                "typeId": "cdc0-9287-7039-4792",
+                "$text": "3"
+              },
+              {
+                "name": "I",
+                "typeId": "03f0-9c72-1dc2-55cd",
+                "$text": "5"
+              },
+              {
+                "name": "A",
+                "typeId": "edda-ee37-03b4-f91f",
+                "$text": "3"
+              },
+              {
+                "name": "Ld",
+                "typeId": "d29a-9b6f-13a6-b7a8",
+                "$text": "10"
+              },
+              {
+                "name": "Sv",
+                "typeId": "dc1c-e152-7a5e-2c32",
+                "$text": "2+"
+              }
+            ]
           }
         ]
       }
