@@ -60,270 +60,6 @@
             "value": 200
           }
         ],
-        "selectionEntries": [
-          {
-            "type": "model",
-            "import": true,
-            "name": "Chaplain Dreadnought Titus",
-            "hidden": false,
-            "id": "86f4-0fbe-2d3b-3125",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "b1a9-3438-0ce2-19c9-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "b1a9-3438-0ce2-19c9-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "d40a-c351-db97-e7f2",
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "categoryLinks": [
-              {
-                "name": "Dreadnought Unit Type",
-                "hidden": false,
-                "id": "ca3c-9166-038a-7094",
-                "targetId": "eb17-a98e-537b-5de6",
-                "primary": false
-              },
-              {
-                "name": "Character",
-                "hidden": false,
-                "id": "b9b9-a44e-459c-3234",
-                "targetId": "c0e6-28aa-5286-2fa2",
-                "primary": false
-              },
-              {
-                "name": "Unique Sub-type",
-                "hidden": false,
-                "id": "cc12-a3b6-4d38-d7a3",
-                "targetId": "75a3-46b2-47de-9789",
-                "primary": false
-              },
-              {
-                "name": "Heavy Sub-type",
-                "hidden": false,
-                "id": "ebda-00c4-dfce-2263",
-                "targetId": "33d0-319a-741e-573f",
-                "primary": false
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Chaplain Dreadnought Titus",
-                "typeId": "dd4a-7345-17fe-9c76",
-                "typeName": "Model",
-                "hidden": false,
-                "id": "d888-4f94-97c9-58ab",
-                "characteristics": [
-                  {
-                    "name": "M",
-                    "typeId": "69ed-cbc7-3fbc-7ba5",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "WS",
-                    "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "S",
-                    "typeId": "99ae-5644-9155-ae6e",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "T",
-                    "typeId": "08d3-1319-227b-1d5c",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "W",
-                    "typeId": "cdc0-9287-7039-4792",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "I",
-                    "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "A",
-                    "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Ld",
-                    "typeId": "d29a-9b6f-13a6-b7a8",
-                    "$text": "10"
-                  },
-                  {
-                    "name": "Sv",
-                    "typeId": "dc1c-e152-7a5e-2c32",
-                    "$text": "2+"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Gravis Power Fist",
-                "hidden": false,
-                "id": "8a62-630d-c743-1184",
-                "type": "selectionEntry",
-                "targetId": "3382-0547-3f12-7171",
-                "sortIndex": 2,
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d847-3b97-7b5c-fd22-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d847-3b97-7b5c-fd22-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Iron Halo",
-                "hidden": false,
-                "id": "77c0-b491-719e-aa92",
-                "type": "selectionEntry",
-                "targetId": "daaa-0a9c-f1e0-986f",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "8419-c476-36ef-32bd-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "8419-c476-36ef-32bd-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Ferromantic Deflector",
-                "hidden": false,
-                "id": "196d-81fa-b126-a534",
-                "type": "selectionEntry",
-                "targetId": "36f9-e639-a641-cad6",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "1bef-9b05-325d-cfdb-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "1bef-9b05-325d-cfdb-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Warlord",
-                "hidden": false,
-                "id": "e2e5-e4e8-c4af-d872",
-                "type": "selectionEntry",
-                "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Ranged Weapon",
-                "id": "f59c-e4ed-dfea-26f1",
-                "hidden": false,
-                "sortIndex": 3,
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "1a95-ce76-dc9e-8a17-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "shared": true,
-                    "id": "1a95-ce76-dc9e-8a17-max"
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Gravis Lascannon",
-                    "hidden": false,
-                    "id": "9c79-08a6-40d4-b021",
-                    "type": "selectionEntry",
-                    "targetId": "6396-0471-7214-a97e",
-                    "sortIndex": 1
-                  },
-                  {
-                    "import": true,
-                    "name": "Assault Cannon",
-                    "hidden": false,
-                    "id": "195e-22d6-c4cc-e387",
-                    "type": "selectionEntry",
-                    "targetId": "7f93-a2d4-3040-fc41"
-                  }
-                ],
-                "defaultSelectionEntryId": "9c79-08a6-40d4-b021"
-              }
-            ]
-          }
-        ],
         "categoryLinks": [
           {
             "name": "HQ",
@@ -331,6 +67,34 @@
             "id": "6be3-1f3b-fe64-c060",
             "targetId": "736c-458e-6f4c-887e",
             "primary": true
+          },
+          {
+            "name": "Dreadnought Unit Type",
+            "hidden": false,
+            "id": "c6be-cfdd-c8c5-064c",
+            "targetId": "eb17-a98e-537b-5de6",
+            "primary": false
+          },
+          {
+            "name": "Character",
+            "hidden": false,
+            "id": "51aa-8c3b-3527-1989",
+            "targetId": "c0e6-28aa-5286-2fa2",
+            "primary": false
+          },
+          {
+            "name": "Unique Sub-type",
+            "hidden": false,
+            "id": "c8cd-abd3-24e1-0586",
+            "targetId": "75a3-46b2-47de-9789",
+            "primary": false
+          },
+          {
+            "name": "Heavy Sub-type",
+            "hidden": false,
+            "id": "08aa-b990-f86b-f19b",
+            "targetId": "33d0-319a-741e-573f",
+            "primary": false
           }
         ],
         "entryLinks": [
@@ -340,7 +104,98 @@
             "hidden": false,
             "id": "efaf-7c8a-bda9-56b3",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Warlord",
+            "hidden": false,
+            "id": "e2e5-e4e8-c4af-d872",
+            "type": "selectionEntry",
+            "targetId": "dafc-695e-c908-6848",
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Gravis Power Fist",
+            "hidden": false,
+            "id": "8a62-630d-c743-1184",
+            "type": "selectionEntry",
+            "targetId": "3382-0547-3f12-7171",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d847-3b97-7b5c-fd22-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d847-3b97-7b5c-fd22-max"
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Ferromantic Deflector",
+            "hidden": false,
+            "id": "196d-81fa-b126-a534",
+            "type": "selectionEntry",
+            "targetId": "36f9-e639-a641-cad6",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1bef-9b05-325d-cfdb-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1bef-9b05-325d-cfdb-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Iron Halo",
+            "hidden": false,
+            "id": "77c0-b491-719e-aa92",
+            "type": "selectionEntry",
+            "targetId": "daaa-0a9c-f1e0-986f",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8419-c476-36ef-32bd-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8419-c476-36ef-32bd-max"
+              }
+            ],
+            "sortIndex": 3
           }
         ],
         "infoLinks": [
@@ -399,6 +254,126 @@
             "id": "d7e3-f32a-d7e0-9703",
             "hidden": false,
             "description": "All models with the Chapter Tactics (Howling Griffons) Special Rule within 12” of Chaplain Dreadnought Titus gain the Hatred (Everything) Special Rule."
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Ranged Weapon",
+            "id": "f59c-e4ed-dfea-26f1",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "shared": true,
+                "id": "1a95-ce76-dc9e-8a17-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "shared": true,
+                "id": "1a95-ce76-dc9e-8a17-max"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Gravis Lascannon",
+                "hidden": false,
+                "id": "9c79-08a6-40d4-b021",
+                "type": "selectionEntry",
+                "targetId": "6396-0471-7214-a97e",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Assault Cannon",
+                "hidden": false,
+                "id": "195e-22d6-c4cc-e387",
+                "type": "selectionEntry",
+                "targetId": "7f93-a2d4-3040-fc41"
+              }
+            ],
+            "defaultSelectionEntryId": "9c79-08a6-40d4-b021",
+            "sortIndex": 2,
+            "collapsible": true
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "d40a-c351-db97-e7f2",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Chaplain Dreadnought Titus",
+            "typeId": "dd4a-7345-17fe-9c76",
+            "typeName": "Model",
+            "hidden": false,
+            "id": "d888-4f94-97c9-58ab",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "69ed-cbc7-3fbc-7ba5",
+                "$text": "7"
+              },
+              {
+                "name": "WS",
+                "typeId": "6ed0-3b6d-b7d7-894c",
+                "$text": "5"
+              },
+              {
+                "name": "BS",
+                "typeId": "163f-6fcf-6b77-1766",
+                "$text": "5"
+              },
+              {
+                "name": "S",
+                "typeId": "99ae-5644-9155-ae6e",
+                "$text": "6"
+              },
+              {
+                "name": "T",
+                "typeId": "08d3-1319-227b-1d5c",
+                "$text": "6"
+              },
+              {
+                "name": "W",
+                "typeId": "cdc0-9287-7039-4792",
+                "$text": "6"
+              },
+              {
+                "name": "I",
+                "typeId": "03f0-9c72-1dc2-55cd",
+                "$text": "4"
+              },
+              {
+                "name": "A",
+                "typeId": "edda-ee37-03b4-f91f",
+                "$text": "3"
+              },
+              {
+                "name": "Ld",
+                "typeId": "d29a-9b6f-13a6-b7a8",
+                "$text": "10"
+              },
+              {
+                "name": "Sv",
+                "typeId": "dc1c-e152-7a5e-2c32",
+                "$text": "2+"
+              }
+            ]
           }
         ]
       }

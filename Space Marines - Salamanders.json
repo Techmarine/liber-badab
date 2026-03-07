@@ -95,15 +95,50 @@
             "id": "bd1e-d73e-85a9-e2ab",
             "targetId": "325c-e791-275c-2ab7",
             "primary": false
+          },
+          {
+            "name": "Infantry Unit Type",
+            "hidden": false,
+            "id": "188b-56ba-0458-a9de",
+            "targetId": "c447-1b05-5ba8-846a",
+            "primary": false
+          },
+          {
+            "name": "Character",
+            "hidden": false,
+            "id": "8bdf-d044-dee1-4cf9",
+            "targetId": "c0e6-28aa-5286-2fa2",
+            "primary": false
+          },
+          {
+            "name": "Unique Sub-type",
+            "hidden": false,
+            "id": "c6ab-244e-b365-19ad",
+            "targetId": "75a3-46b2-47de-9789",
+            "primary": false
+          },
+          {
+            "name": "Heavy Sub-type",
+            "hidden": false,
+            "id": "fb29-cd53-d689-bfd4",
+            "targetId": "33d0-319a-741e-573f",
+            "primary": false
+          },
+          {
+            "name": "Line",
+            "hidden": false,
+            "id": "7114-7a94-f59b-7786",
+            "targetId": "efc6-682f-b0cb-cfa2",
+            "primary": false
           }
         ],
         "selectionEntries": [
           {
-            "type": "model",
+            "type": "upgrade",
             "import": true,
-            "name": "Captain Pellas Mir'san",
+            "name": "Cinder Edge",
             "hidden": false,
-            "id": "5778-bc57-5924-2004",
+            "id": "30c6-047d-ecb7-2c0a",
             "constraints": [
               {
                 "type": "min",
@@ -111,7 +146,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "907f-67a3-f672-f003-min"
+                "id": "e191-4681-1b67-262b-min"
               },
               {
                 "type": "max",
@@ -119,386 +154,76 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "907f-67a3-f672-f003-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "19ac-4f04-b7e1-5e9b",
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "54b5-0978-c8a4-5b5a",
-                "value": 175
-              }
-            ],
-            "categoryLinks": [
-              {
-                "name": "Infantry Unit Type",
-                "hidden": false,
-                "id": "713a-579d-e1d2-058a",
-                "targetId": "c447-1b05-5ba8-846a",
-                "primary": false
-              },
-              {
-                "name": "Character",
-                "hidden": false,
-                "id": "da7d-7b46-7400-b0e1",
-                "targetId": "c0e6-28aa-5286-2fa2",
-                "primary": false
-              },
-              {
-                "name": "Heavy Sub-type",
-                "hidden": false,
-                "id": "6657-cffa-f3bf-799b",
-                "targetId": "33d0-319a-741e-573f",
-                "primary": false
-              },
-              {
-                "name": "Unique Sub-type",
-                "hidden": false,
-                "id": "69fe-8a90-634a-9e20",
-                "targetId": "75a3-46b2-47de-9789",
-                "primary": false
-              },
-              {
-                "name": "Line",
-                "hidden": false,
-                "id": "ce7a-baa9-da4d-ca95",
-                "targetId": "efc6-682f-b0cb-cfa2",
-                "primary": false
+                "id": "e191-4681-1b67-262b-max"
               }
             ],
             "profiles": [
               {
-                "name": "Captain Pellas Mir'san",
-                "typeId": "dd4a-7345-17fe-9c76",
-                "typeName": "Model",
+                "name": "Cinder Edge",
+                "typeId": "ecd5-ca1d-0842-34a4",
+                "typeName": "Melee Weapon",
                 "hidden": false,
-                "id": "3cd4-62ee-1320-3dc5",
+                "id": "1b70-9e7f-5915-b6bb",
                 "characteristics": [
                   {
-                    "name": "M",
-                    "typeId": "69ed-cbc7-3fbc-7ba5",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "WS",
-                    "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "5"
+                    "name": "Range",
+                    "typeId": "ec4a-5686-1553-4654",
+                    "$text": "-"
                   },
                   {
                     "name": "S",
-                    "typeId": "99ae-5644-9155-ae6e",
-                    "$text": "4"
+                    "typeId": "b9e5-2eb3-f79d-e995",
+                    "$text": "+1"
                   },
                   {
-                    "name": "T",
-                    "typeId": "08d3-1319-227b-1d5c",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "W",
-                    "typeId": "cdc0-9287-7039-4792",
+                    "name": "AP",
+                    "typeId": "0332-8de1-48c6-c94d",
                     "$text": "3"
                   },
                   {
-                    "name": "I",
-                    "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "5"
+                    "name": "Type",
+                    "typeId": "6c0f-3258-2a17-5cc9",
+                    "$text": "Melee"
                   },
                   {
-                    "name": "A",
-                    "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Ld",
-                    "typeId": "d29a-9b6f-13a6-b7a8",
-                    "$text": "10"
-                  },
-                  {
-                    "name": "Sv",
-                    "typeId": "dc1c-e152-7a5e-2c32",
-                    "$text": "2+"
+                    "name": "Special Rules",
+                    "typeId": "a603-af69-c30b-94ed",
+                    "$text": "Master-Crafted, Rending (4+), Deflagrate"
                   }
                 ]
               }
             ],
-            "entryLinks": [
+            "infoLinks": [
               {
-                "import": true,
-                "name": "Artificer Armour",
+                "name": "Master-crafted",
+                "id": "6408-f507-b9a8-7bb0",
                 "hidden": false,
-                "id": "a319-7770-a7dc-6d21",
-                "type": "selectionEntry",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "efe7-f951-78fb-474c-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "efe7-f951-78fb-474c-max"
-                  }
-                ],
-                "targetId": "2004-7466-45c8-bca8"
+                "type": "rule",
+                "targetId": "0371-1ea2-8615-e03a"
               },
               {
-                "import": true,
-                "name": "Iron Halo",
+                "name": "Rending",
+                "id": "b9c0-3815-4c0b-3aa2",
                 "hidden": false,
-                "id": "6b59-6678-19f6-e31c",
-                "type": "selectionEntry",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e167-9005-e07e-e996-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e167-9005-e07e-e996-max"
-                  }
-                ],
-                "targetId": "daaa-0a9c-f1e0-986f"
-              },
-              {
-                "import": true,
-                "name": "Combi-flamer",
-                "hidden": false,
-                "id": "dbf8-d944-dfa0-3238",
-                "type": "selectionEntry",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "ceb0-4a94-a3d8-cad5-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "ceb0-4a94-a3d8-cad5-max"
-                  }
-                ],
-                "targetId": "0a91-723e-9342-a64b",
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Master-crafted",
-                    "hidden": false,
-                    "id": "3174-90df-401f-fcb4",
-                    "type": "selectionEntryGroup",
-                    "targetId": "c044-d3ec-ebc4-d882"
-                  }
-                ],
+                "type": "rule",
+                "targetId": "2508-8e95-11c7-6bd6",
                 "modifiers": [
                   {
-                    "type": "prepend",
-                    "value": "Master-crafted",
-                    "field": "name",
-                    "join": " "
+                    "type": "set",
+                    "value": "4+",
+                    "field": "annotation"
                   }
                 ]
               },
               {
-                "import": true,
-                "name": "Frag Grenades",
+                "name": "Deflagrate",
+                "id": "a612-f887-dc93-81c2",
                 "hidden": false,
-                "id": "23d7-034f-cf87-3bd4",
-                "type": "selectionEntry",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "508b-73b5-66e5-fff6-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "508b-73b5-66e5-fff6-max"
-                  }
-                ],
-                "targetId": "e72d-68cc-bd83-6066"
-              },
-              {
-                "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "06af-816e-fb78-368a",
-                "type": "selectionEntry",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5634-012a-29f7-4b72-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5634-012a-29f7-4b72-max"
-                  }
-                ],
-                "targetId": "bbfb-1c1f-fdbf-90b1"
-              },
-              {
-                "import": true,
-                "name": "Warlord",
-                "hidden": false,
-                "id": "2bed-6e45-e749-28a3",
-                "type": "selectionEntry",
-                "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1
-              },
-              {
-                "import": true,
-                "name": "Retinue",
-                "hidden": false,
-                "id": "e773-6709-4639-c148",
-                "type": "selectionEntryGroup",
-                "targetId": "e290-7819-af75-85c4",
-                "sortIndex": 2
+                "type": "rule",
+                "targetId": "ca6b-5030-24a4-aabe"
               }
             ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Cinder Edge",
-                "hidden": false,
-                "id": "30c6-047d-ecb7-2c0a",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e191-4681-1b67-262b-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e191-4681-1b67-262b-max"
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Cinder Edge",
-                    "typeId": "ecd5-ca1d-0842-34a4",
-                    "typeName": "Melee Weapon",
-                    "hidden": false,
-                    "id": "1b70-9e7f-5915-b6bb",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "ec4a-5686-1553-4654",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "b9e5-2eb3-f79d-e995",
-                        "$text": "+1"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "3"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "6c0f-3258-2a17-5cc9",
-                        "$text": "Melee"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "a603-af69-c30b-94ed",
-                        "$text": "Master-Crafted, Rending (4+), Deflagrate"
-                      }
-                    ]
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Master-crafted",
-                    "id": "6408-f507-b9a8-7bb0",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "0371-1ea2-8615-e03a"
-                  },
-                  {
-                    "name": "Rending",
-                    "id": "b9c0-3815-4c0b-3aa2",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2508-8e95-11c7-6bd6",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "4+",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Deflagrate",
-                    "id": "a612-f887-dc93-81c2",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "ca6b-5030-24a4-aabe"
-                  }
-                ]
-              }
-            ],
-            "sortIndex": 1
+            "sortIndex": 2
           }
         ],
         "infoLinks": [
@@ -552,7 +277,259 @@
             "hidden": false,
             "id": "3525-c79c-0096-64da",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Warlord",
+            "hidden": false,
+            "id": "2bed-6e45-e749-28a3",
+            "type": "selectionEntry",
+            "targetId": "dafc-695e-c908-6848",
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Retinue",
+            "hidden": false,
+            "id": "e773-6709-4639-c148",
+            "type": "selectionEntryGroup",
+            "targetId": "e290-7819-af75-85c4",
+            "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Artificer Armour",
+            "hidden": false,
+            "id": "a319-7770-a7dc-6d21",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "efe7-f951-78fb-474c-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "efe7-f951-78fb-474c-max"
+              }
+            ],
+            "targetId": "2004-7466-45c8-bca8",
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Combi-flamer",
+            "hidden": false,
+            "id": "dbf8-d944-dfa0-3238",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ceb0-4a94-a3d8-cad5-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ceb0-4a94-a3d8-cad5-max"
+              }
+            ],
+            "targetId": "0a91-723e-9342-a64b",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Master-crafted",
+                "hidden": false,
+                "id": "3174-90df-401f-fcb4",
+                "type": "selectionEntryGroup",
+                "targetId": "c044-d3ec-ebc4-d882"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Master-crafted",
+                "field": "name",
+                "join": " "
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Frag Grenades",
+            "hidden": false,
+            "id": "23d7-034f-cf87-3bd4",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "508b-73b5-66e5-fff6-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "508b-73b5-66e5-fff6-max"
+              }
+            ],
+            "targetId": "e72d-68cc-bd83-6066",
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Iron Halo",
+            "hidden": false,
+            "id": "6b59-6678-19f6-e31c",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e167-9005-e07e-e996-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e167-9005-e07e-e996-max"
+              }
+            ],
+            "targetId": "daaa-0a9c-f1e0-986f",
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "06af-816e-fb78-368a",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5634-012a-29f7-4b72-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5634-012a-29f7-4b72-max"
+              }
+            ],
+            "targetId": "bbfb-1c1f-fdbf-90b1",
+            "sortIndex": 3
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 175
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "19ac-4f04-b7e1-5e9b",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Captain Pellas Mir'san",
+            "typeId": "dd4a-7345-17fe-9c76",
+            "typeName": "Model",
+            "hidden": false,
+            "id": "3cd4-62ee-1320-3dc5",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "69ed-cbc7-3fbc-7ba5",
+                "$text": "7"
+              },
+              {
+                "name": "WS",
+                "typeId": "6ed0-3b6d-b7d7-894c",
+                "$text": "7"
+              },
+              {
+                "name": "BS",
+                "typeId": "163f-6fcf-6b77-1766",
+                "$text": "5"
+              },
+              {
+                "name": "S",
+                "typeId": "99ae-5644-9155-ae6e",
+                "$text": "4"
+              },
+              {
+                "name": "T",
+                "typeId": "08d3-1319-227b-1d5c",
+                "$text": "4"
+              },
+              {
+                "name": "W",
+                "typeId": "cdc0-9287-7039-4792",
+                "$text": "3"
+              },
+              {
+                "name": "I",
+                "typeId": "03f0-9c72-1dc2-55cd",
+                "$text": "5"
+              },
+              {
+                "name": "A",
+                "typeId": "edda-ee37-03b4-f91f",
+                "$text": "3"
+              },
+              {
+                "name": "Ld",
+                "typeId": "d29a-9b6f-13a6-b7a8",
+                "$text": "10"
+              },
+              {
+                "name": "Sv",
+                "typeId": "dc1c-e152-7a5e-2c32",
+                "$text": "2+"
+              }
+            ]
           }
         ]
       },
@@ -583,353 +560,34 @@
             "id": "492b-b857-d9be-7a92",
             "targetId": "325c-e791-275c-2ab7",
             "primary": false
-          }
-        ],
-        "selectionEntries": [
+          },
           {
-            "type": "model",
-            "import": true,
-            "name": "Master Harath Shen",
+            "name": "Infantry Unit Type",
             "hidden": false,
-            "id": "95d4-7645-92fd-62e6",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "fe39-c34d-fa2a-e047-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "fe39-c34d-fa2a-e047-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "aab0-1403-2cdb-b8d0",
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "54b5-0978-c8a4-5b5a",
-                "value": 100
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Artificer Armour",
-                "hidden": false,
-                "id": "c92f-3b6b-5c1f-a90a",
-                "type": "selectionEntry",
-                "targetId": "2004-7466-45c8-bca8",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "b571-6b7c-827f-19b7-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "b571-6b7c-827f-19b7-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Refractor Field",
-                "hidden": false,
-                "id": "7e6e-e76b-29b2-95b0",
-                "type": "selectionEntry",
-                "targetId": "17d6-7775-8f0a-3419",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "a8dd-fc5f-ccbb-db40-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "a8dd-fc5f-ccbb-db40-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Power Maul",
-                "hidden": false,
-                "id": "42b5-0d93-dded-529a",
-                "type": "selectionEntry",
-                "targetId": "ad60-6ada-12a7-f47c",
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Master-crafted",
-                    "hidden": false,
-                    "id": "cfec-1ad7-7df0-c71f",
-                    "type": "selectionEntryGroup",
-                    "targetId": "c044-d3ec-ebc4-d882"
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "prepend",
-                    "value": "Master-crafted",
-                    "field": "name",
-                    "join": " "
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2351-c509-66c1-f4d9-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2351-c509-66c1-f4d9-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Plasma Pistol",
-                "hidden": false,
-                "id": "962b-a09c-860a-f22c",
-                "type": "selectionEntry",
-                "targetId": "3f09-f9ad-2440-d174",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3c0d-d171-f1c3-f931-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3c0d-d171-f1c3-f931-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Narthecium",
-                "hidden": false,
-                "id": "7a7d-8fd5-6376-21f6",
-                "type": "selectionEntry",
-                "targetId": "98ff-b553-78ba-51d3",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3e62-b3c0-e52f-afc2-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3e62-b3c0-e52f-afc2-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Frag Grenades",
-                "hidden": false,
-                "id": "d4f0-213d-fb5e-dc86",
-                "type": "selectionEntry",
-                "targetId": "e72d-68cc-bd83-6066",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2664-8b2c-23b1-e5e4-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2664-8b2c-23b1-e5e4-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "44a7-1d31-8e2c-24b9",
-                "type": "selectionEntry",
-                "targetId": "bbfb-1c1f-fdbf-90b1",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "b606-0ee6-c731-9950-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "b606-0ee6-c731-9950-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Warlord",
-                "hidden": false,
-                "id": "fbc5-b9d7-16cb-5aa9",
-                "type": "selectionEntry",
-                "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Master Harath Shen",
-                "typeId": "dd4a-7345-17fe-9c76",
-                "typeName": "Model",
-                "hidden": false,
-                "id": "8664-71c4-dbc8-0557",
-                "characteristics": [
-                  {
-                    "name": "M",
-                    "typeId": "69ed-cbc7-3fbc-7ba5",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "WS",
-                    "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "S",
-                    "typeId": "99ae-5644-9155-ae6e",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "T",
-                    "typeId": "08d3-1319-227b-1d5c",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "W",
-                    "typeId": "cdc0-9287-7039-4792",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "I",
-                    "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "A",
-                    "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Ld",
-                    "typeId": "d29a-9b6f-13a6-b7a8",
-                    "$text": "9"
-                  },
-                  {
-                    "name": "Sv",
-                    "typeId": "dc1c-e152-7a5e-2c32",
-                    "$text": "2+"
-                  }
-                ]
-              }
-            ],
-            "categoryLinks": [
-              {
-                "name": "Infantry Unit Type",
-                "hidden": false,
-                "id": "c8e1-cf57-25ec-10fb",
-                "targetId": "c447-1b05-5ba8-846a",
-                "primary": false
-              },
-              {
-                "name": "Character",
-                "hidden": false,
-                "id": "9790-a2f6-1383-c6fe",
-                "targetId": "c0e6-28aa-5286-2fa2",
-                "primary": false
-              },
-              {
-                "name": "Heavy Sub-type",
-                "hidden": false,
-                "id": "f9be-20ea-c3f1-e027",
-                "targetId": "33d0-319a-741e-573f",
-                "primary": false
-              },
-              {
-                "name": "Unique Sub-type",
-                "hidden": false,
-                "id": "c3d2-48cd-15a7-7e8e",
-                "targetId": "75a3-46b2-47de-9789",
-                "primary": false
-              }
-            ],
-            "sortIndex": 1
+            "id": "5d62-9138-4604-d704",
+            "targetId": "c447-1b05-5ba8-846a",
+            "primary": false
+          },
+          {
+            "name": "Character",
+            "hidden": false,
+            "id": "0670-064a-ee7f-f812",
+            "targetId": "c0e6-28aa-5286-2fa2",
+            "primary": false
+          },
+          {
+            "name": "Unique Sub-type",
+            "hidden": false,
+            "id": "5444-572f-6726-3425",
+            "targetId": "75a3-46b2-47de-9789",
+            "primary": false
+          },
+          {
+            "name": "Heavy Sub-type",
+            "hidden": false,
+            "id": "55d0-ca62-326d-78d4",
+            "targetId": "33d0-319a-741e-573f",
+            "primary": false
           }
         ],
         "infoLinks": [
@@ -982,7 +640,304 @@
             "hidden": false,
             "id": "bbc1-9613-1cb5-4498",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Warlord",
+            "hidden": false,
+            "id": "fbc5-b9d7-16cb-5aa9",
+            "type": "selectionEntry",
+            "targetId": "dafc-695e-c908-6848",
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Artificer Armour",
+            "hidden": false,
+            "id": "c92f-3b6b-5c1f-a90a",
+            "type": "selectionEntry",
+            "targetId": "2004-7466-45c8-bca8",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b571-6b7c-827f-19b7-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b571-6b7c-827f-19b7-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Frag Grenades",
+            "hidden": false,
+            "id": "d4f0-213d-fb5e-dc86",
+            "type": "selectionEntry",
+            "targetId": "e72d-68cc-bd83-6066",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2664-8b2c-23b1-e5e4-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2664-8b2c-23b1-e5e4-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "44a7-1d31-8e2c-24b9",
+            "type": "selectionEntry",
+            "targetId": "bbfb-1c1f-fdbf-90b1",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b606-0ee6-c731-9950-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b606-0ee6-c731-9950-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Narthecium",
+            "hidden": false,
+            "id": "7a7d-8fd5-6376-21f6",
+            "type": "selectionEntry",
+            "targetId": "98ff-b553-78ba-51d3",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3e62-b3c0-e52f-afc2-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3e62-b3c0-e52f-afc2-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Plasma Pistol",
+            "hidden": false,
+            "id": "962b-a09c-860a-f22c",
+            "type": "selectionEntry",
+            "targetId": "3f09-f9ad-2440-d174",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3c0d-d171-f1c3-f931-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3c0d-d171-f1c3-f931-max"
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Power Maul",
+            "hidden": false,
+            "id": "42b5-0d93-dded-529a",
+            "type": "selectionEntry",
+            "targetId": "ad60-6ada-12a7-f47c",
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Master-crafted",
+                "hidden": false,
+                "id": "cfec-1ad7-7df0-c71f",
+                "type": "selectionEntryGroup",
+                "targetId": "c044-d3ec-ebc4-d882"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Master-crafted",
+                "field": "name",
+                "join": " "
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2351-c509-66c1-f4d9-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2351-c509-66c1-f4d9-max"
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Refractor Field",
+            "hidden": false,
+            "id": "7e6e-e76b-29b2-95b0",
+            "type": "selectionEntry",
+            "targetId": "17d6-7775-8f0a-3419",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a8dd-fc5f-ccbb-db40-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a8dd-fc5f-ccbb-db40-max"
+              }
+            ],
+            "sortIndex": 3
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 100
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "aab0-1403-2cdb-b8d0",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Master Harath Shen",
+            "typeId": "dd4a-7345-17fe-9c76",
+            "typeName": "Model",
+            "hidden": false,
+            "id": "8664-71c4-dbc8-0557",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "69ed-cbc7-3fbc-7ba5",
+                "$text": "7"
+              },
+              {
+                "name": "WS",
+                "typeId": "6ed0-3b6d-b7d7-894c",
+                "$text": "5"
+              },
+              {
+                "name": "BS",
+                "typeId": "163f-6fcf-6b77-1766",
+                "$text": "4"
+              },
+              {
+                "name": "S",
+                "typeId": "99ae-5644-9155-ae6e",
+                "$text": "4"
+              },
+              {
+                "name": "T",
+                "typeId": "08d3-1319-227b-1d5c",
+                "$text": "4"
+              },
+              {
+                "name": "W",
+                "typeId": "cdc0-9287-7039-4792",
+                "$text": "2"
+              },
+              {
+                "name": "I",
+                "typeId": "03f0-9c72-1dc2-55cd",
+                "$text": "4"
+              },
+              {
+                "name": "A",
+                "typeId": "edda-ee37-03b4-f91f",
+                "$text": "2"
+              },
+              {
+                "name": "Ld",
+                "typeId": "d29a-9b6f-13a6-b7a8",
+                "$text": "9"
+              },
+              {
+                "name": "Sv",
+                "typeId": "dc1c-e152-7a5e-2c32",
+                "$text": "2+"
+              }
+            ]
           }
         ]
       },
@@ -1006,15 +961,43 @@
             "id": "270c-63a4-0258-98e4",
             "targetId": "b04f-6c8c-d63a-db03",
             "primary": false
+          },
+          {
+            "name": "Dreadnought Unit Type",
+            "hidden": false,
+            "id": "de9f-8d43-5492-4a28",
+            "targetId": "eb17-a98e-537b-5de6",
+            "primary": false
+          },
+          {
+            "name": "Character",
+            "hidden": false,
+            "id": "5af8-00ee-3fd8-0159",
+            "targetId": "c0e6-28aa-5286-2fa2",
+            "primary": false
+          },
+          {
+            "name": "Heavy Sub-type",
+            "hidden": false,
+            "id": "daa6-bf65-0a18-67f5",
+            "targetId": "33d0-319a-741e-573f",
+            "primary": false
+          },
+          {
+            "name": "Unique Sub-type",
+            "hidden": false,
+            "id": "3119-3043-7a16-abc5",
+            "targetId": "75a3-46b2-47de-9789",
+            "primary": false
           }
         ],
         "selectionEntries": [
           {
-            "type": "model",
+            "type": "upgrade",
             "import": true,
-            "name": "Bray'arth Ashmantle",
+            "name": "Dreadfire Heavy Flamers",
             "hidden": false,
-            "id": "cf3a-b7ea-3da2-dc9d",
+            "id": "fa76-88d1-4cac-a147",
             "constraints": [
               {
                 "type": "min",
@@ -1022,7 +1005,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "f2fd-67bc-fae6-6233-min"
+                "id": "a17b-f178-5295-81a5-min"
               },
               {
                 "type": "max",
@@ -1030,368 +1013,232 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "f2fd-67bc-fae6-6233-max"
+                "id": "a17b-f178-5295-81a5-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Dreadfire Heavy Flamers - Dispersed",
+                "typeId": "5e31-3867-7c3d-fcb9",
+                "typeName": "Ranged Weapon",
+                "hidden": false,
+                "id": "a30b-5a8c-35d9-cff4",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "7b0f-9c2a-0ecb-f3a3",
+                    "$text": "T"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "2ecc-1ccc-736f-9d3d",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "cbb5-5f04-f87f-a810",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "2c90-16ca-a927-898d",
+                    "$text": "Assault 4"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "d2a2-1139-48cb-4472",
+                    "$text": "Breaching (5+)"
+                  }
+                ]
+              },
+              {
+                "name": "Dreadfire Heavy Flamers - Concentrated",
+                "typeId": "5e31-3867-7c3d-fcb9",
+                "typeName": "Ranged Weapon",
+                "hidden": false,
+                "id": "2da0-076d-f92d-b222",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "7b0f-9c2a-0ecb-f3a3",
+                    "$text": "12\""
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "2ecc-1ccc-736f-9d3d",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "cbb5-5f04-f87f-a810",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "2c90-16ca-a927-898d",
+                    "$text": "Assault 2"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "d2a2-1139-48cb-4472",
+                    "$text": "Armourbane (Melta)"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Breaching",
+                "id": "16c2-f5b3-8685-6a81",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "ee66-f70b-aa5c-b2bf",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "5+",
+                    "field": "annotation"
+                  }
+                ]
+              },
+              {
+                "name": "Armourbane",
+                "id": "3dba-5ce5-a7ca-1362",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a1f5-fb7a-bbf0-a720",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Melta",
+                    "field": "annotation"
+                  }
+                ]
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Two Master-crafted Gravis Power Fists",
+            "hidden": false,
+            "id": "2d26-e3d6-7c52-6fb0",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f333-7573-b4aa-0127-min"
               },
               {
                 "type": "max",
                 "value": 1,
                 "field": "selections",
-                "scope": "roster",
+                "scope": "parent",
                 "shared": true,
-                "id": "d398-1847-6cfe-822e",
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "54b5-0978-c8a4-5b5a",
-                "value": 265
-              }
-            ],
-            "categoryLinks": [
-              {
-                "name": "Dreadnought Unit Type",
-                "hidden": false,
-                "id": "f12a-474e-d198-4495",
-                "targetId": "eb17-a98e-537b-5de6",
-                "primary": false
-              },
-              {
-                "name": "Character",
-                "hidden": false,
-                "id": "7c55-e88a-27b7-d2e4",
-                "targetId": "c0e6-28aa-5286-2fa2",
-                "primary": false
-              },
-              {
-                "name": "Heavy Sub-type",
-                "hidden": false,
-                "id": "4eb1-9283-a34b-0b88",
-                "targetId": "33d0-319a-741e-573f",
-                "primary": false
-              },
-              {
-                "name": "Unique Sub-type",
-                "hidden": false,
-                "id": "80c2-4943-1698-bde9",
-                "targetId": "75a3-46b2-47de-9789",
-                "primary": false
+                "id": "f333-7573-b4aa-0127-max"
               }
             ],
             "entryLinks": [
               {
                 "import": true,
-                "name": "Warlord",
+                "name": "Master-crafted",
                 "hidden": false,
-                "id": "5eda-cb44-56a5-d9d8",
-                "type": "selectionEntry",
-                "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1
-              },
+                "id": "d0fe-0785-7ebf-2d6c",
+                "type": "selectionEntryGroup",
+                "targetId": "c044-d3ec-ebc4-d882"
+              }
+            ],
+            "profiles": [
               {
-                "import": true,
-                "name": "Ferromantic Deflector",
+                "name": "Gravis Power Fist",
+                "typeId": "ecd5-ca1d-0842-34a4",
+                "typeName": "Melee Weapon",
                 "hidden": false,
-                "id": "c0ea-97bf-37f0-f461",
-                "type": "selectionEntry",
-                "targetId": "36f9-e639-a641-cad6",
-                "constraints": [
+                "id": "5279-c921-55ae-7b88",
+                "characteristics": [
                   {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5052-7d8c-38c1-fd50-min"
+                    "name": "Range",
+                    "typeId": "ec4a-5686-1553-4654",
+                    "$text": "-"
                   },
                   {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5052-7d8c-38c1-fd50-max"
+                    "name": "S",
+                    "typeId": "b9e5-2eb3-f79d-e995",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "0332-8de1-48c6-c94d",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "6c0f-3258-2a17-5cc9",
+                    "$text": "Melee"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "a603-af69-c30b-94ed",
+                    "$text": "Brutal (3)"
                   }
                 ]
               },
               {
-                "import": true,
-                "name": "Iron Halo",
+                "name": "Gravis Power Fist",
+                "typeId": "ecd5-ca1d-0842-34a4",
+                "typeName": "Melee Weapon",
                 "hidden": false,
-                "id": "426d-983a-8a3b-4a46",
-                "type": "selectionEntry",
-                "targetId": "daaa-0a9c-f1e0-986f",
-                "constraints": [
+                "id": "5387-8478-c5f7-9a96",
+                "characteristics": [
                   {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7a48-ad5b-5c58-dbfb-min"
+                    "name": "Range",
+                    "typeId": "ec4a-5686-1553-4654",
+                    "$text": "-"
                   },
                   {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7a48-ad5b-5c58-dbfb-max"
+                    "name": "S",
+                    "typeId": "b9e5-2eb3-f79d-e995",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "0332-8de1-48c6-c94d",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "6c0f-3258-2a17-5cc9",
+                    "$text": "Melee"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "a603-af69-c30b-94ed",
+                    "$text": "Brutal (3)"
                   }
                 ]
               }
             ],
-            "selectionEntries": [
+            "infoLinks": [
               {
-                "type": "upgrade",
-                "import": true,
-                "name": "Two Master-crafted Gravis Power Fists",
+                "name": "Brutal",
+                "id": "8beb-4069-c772-0bb5",
                 "hidden": false,
-                "id": "2d26-e3d6-7c52-6fb0",
-                "constraints": [
+                "type": "rule",
+                "targetId": "fc68-9ea6-18e4-d94b",
+                "modifiers": [
                   {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f333-7573-b4aa-0127-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f333-7573-b4aa-0127-max"
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Master-crafted",
-                    "hidden": false,
-                    "id": "d0fe-0785-7ebf-2d6c",
-                    "type": "selectionEntryGroup",
-                    "targetId": "c044-d3ec-ebc4-d882"
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Gravis Power Fist",
-                    "typeId": "ecd5-ca1d-0842-34a4",
-                    "typeName": "Melee Weapon",
-                    "hidden": false,
-                    "id": "5279-c921-55ae-7b88",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "ec4a-5686-1553-4654",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "b9e5-2eb3-f79d-e995",
-                        "$text": "9"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "2"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "6c0f-3258-2a17-5cc9",
-                        "$text": "Melee"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "a603-af69-c30b-94ed",
-                        "$text": "Brutal (3)"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Gravis Power Fist",
-                    "typeId": "ecd5-ca1d-0842-34a4",
-                    "typeName": "Melee Weapon",
-                    "hidden": false,
-                    "id": "5387-8478-c5f7-9a96",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "ec4a-5686-1553-4654",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "b9e5-2eb3-f79d-e995",
-                        "$text": "9"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "2"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "6c0f-3258-2a17-5cc9",
-                        "$text": "Melee"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "a603-af69-c30b-94ed",
-                        "$text": "Brutal (3)"
-                      }
-                    ]
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Brutal",
-                    "id": "8beb-4069-c772-0bb5",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "fc68-9ea6-18e4-d94b",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "3",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Dreadfire Heavy Flamers",
-                "hidden": false,
-                "id": "fa76-88d1-4cac-a147",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "a17b-f178-5295-81a5-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "a17b-f178-5295-81a5-max"
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Dreadfire Heavy Flamers - Dispersed",
-                    "typeId": "5e31-3867-7c3d-fcb9",
-                    "typeName": "Ranged Weapon",
-                    "hidden": false,
-                    "id": "a30b-5a8c-35d9-cff4",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "7b0f-9c2a-0ecb-f3a3",
-                        "$text": "T"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "2ecc-1ccc-736f-9d3d",
-                        "$text": "5"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "cbb5-5f04-f87f-a810",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "2c90-16ca-a927-898d",
-                        "$text": "Assault 4"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "d2a2-1139-48cb-4472",
-                        "$text": "Breaching (5+)"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Dreadfire Heavy Flamers - Concentrated",
-                    "typeId": "5e31-3867-7c3d-fcb9",
-                    "typeName": "Ranged Weapon",
-                    "hidden": false,
-                    "id": "2da0-076d-f92d-b222",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "7b0f-9c2a-0ecb-f3a3",
-                        "$text": "12\""
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "2ecc-1ccc-736f-9d3d",
-                        "$text": "9"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "cbb5-5f04-f87f-a810",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "2c90-16ca-a927-898d",
-                        "$text": "Assault 2"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "d2a2-1139-48cb-4472",
-                        "$text": "Armourbane (Melta)"
-                      }
-                    ]
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Breaching",
-                    "id": "16c2-f5b3-8685-6a81",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "ee66-f70b-aa5c-b2bf",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "5+",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Armourbane",
-                    "id": "3dba-5ce5-a7ca-1362",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "a1f5-fb7a-bbf0-a720",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "Melta",
-                        "field": "annotation"
-                      }
-                    ]
+                    "type": "set",
+                    "value": "3",
+                    "field": "annotation"
                   }
                 ]
               }
             ],
-            "sortIndex": 1
+            "sortIndex": 2
           }
         ],
         "infoLinks": [
@@ -1438,7 +1285,151 @@
             "hidden": false,
             "id": "ec1f-a011-dbe4-b62b",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Warlord",
+            "hidden": false,
+            "id": "5eda-cb44-56a5-d9d8",
+            "type": "selectionEntry",
+            "targetId": "dafc-695e-c908-6848",
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Ferromantic Deflector",
+            "hidden": false,
+            "id": "c0ea-97bf-37f0-f461",
+            "type": "selectionEntry",
+            "targetId": "36f9-e639-a641-cad6",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5052-7d8c-38c1-fd50-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5052-7d8c-38c1-fd50-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Iron Halo",
+            "hidden": false,
+            "id": "426d-983a-8a3b-4a46",
+            "type": "selectionEntry",
+            "targetId": "daaa-0a9c-f1e0-986f",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7a48-ad5b-5c58-dbfb-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7a48-ad5b-5c58-dbfb-max"
+              }
+            ],
+            "sortIndex": 3
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 265
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "d398-1847-6cfe-822e",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Bray'arth Ashmantle",
+            "typeId": "dd4a-7345-17fe-9c76",
+            "typeName": "Model",
+            "hidden": false,
+            "id": "cbe0-4ca0-fcc3-78d6",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "69ed-cbc7-3fbc-7ba5",
+                "$text": "6"
+              },
+              {
+                "name": "WS",
+                "typeId": "6ed0-3b6d-b7d7-894c",
+                "$text": "6"
+              },
+              {
+                "name": "BS",
+                "typeId": "163f-6fcf-6b77-1766",
+                "$text": "5"
+              },
+              {
+                "name": "S",
+                "typeId": "99ae-5644-9155-ae6e",
+                "$text": "6"
+              },
+              {
+                "name": "T",
+                "typeId": "08d3-1319-227b-1d5c",
+                "$text": "7"
+              },
+              {
+                "name": "W",
+                "typeId": "cdc0-9287-7039-4792",
+                "$text": "6"
+              },
+              {
+                "name": "I",
+                "typeId": "03f0-9c72-1dc2-55cd",
+                "$text": "4"
+              },
+              {
+                "name": "A",
+                "typeId": "edda-ee37-03b4-f91f",
+                "$text": "4"
+              },
+              {
+                "name": "Ld",
+                "typeId": "d29a-9b6f-13a6-b7a8",
+                "$text": "10"
+              },
+              {
+                "name": "Sv",
+                "typeId": "dc1c-e152-7a5e-2c32",
+                "$text": "2+"
+              }
+            ]
           }
         ]
       }

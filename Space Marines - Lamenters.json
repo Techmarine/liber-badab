@@ -63,334 +63,144 @@
         "sortIndex": 1,
         "selectionEntries": [
           {
-            "type": "model",
+            "type": "upgrade",
             "import": true,
-            "name": "Malakim Phoros",
+            "name": "Catechist",
             "hidden": false,
-            "id": "3677-0288-b215-1fe2",
-            "costs": [
+            "id": "0b0b-45a8-836c-10b6",
+            "profiles": [
               {
-                "name": "Points",
-                "typeId": "54b5-0978-c8a4-5b5a",
-                "value": 195
-              }
-            ],
-            "categoryLinks": [
-              {
-                "name": "Infantry Unit Type",
-                "hidden": false,
-                "id": "d179-674c-898d-2c58",
-                "targetId": "c447-1b05-5ba8-846a",
-                "primary": false
-              },
-              {
-                "name": "Character",
-                "hidden": false,
-                "id": "3503-35fb-afea-828d",
-                "targetId": "c0e6-28aa-5286-2fa2",
-                "primary": false
-              },
-              {
-                "name": "Unique Sub-type",
-                "hidden": false,
-                "id": "62f6-77ac-d075-fc20",
-                "targetId": "75a3-46b2-47de-9789",
-                "primary": false
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Artificer Armour",
-                "hidden": false,
-                "id": "9c9c-cf1e-80da-d49f",
-                "type": "selectionEntry",
-                "targetId": "2004-7466-45c8-bca8",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "fd40-5fec-91b8-395c-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "fd40-5fec-91b8-395c-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Iron Halo",
-                "hidden": false,
-                "id": "ebfb-9f75-bfd9-0c00",
-                "type": "selectionEntry",
-                "targetId": "daaa-0a9c-f1e0-986f",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5418-7ce3-e61c-3d12-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "5418-7ce3-e61c-3d12-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Frag Grenades",
-                "hidden": false,
-                "id": "2820-732a-b498-04a8",
-                "type": "selectionEntry",
-                "targetId": "e72d-68cc-bd83-6066",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "df68-a344-89d6-0f2d-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "df68-a344-89d6-0f2d-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Krak Grenades",
-                "hidden": false,
-                "id": "65db-550b-722f-74e1",
-                "type": "selectionEntry",
-                "targetId": "bbfb-1c1f-fdbf-90b1",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "bee7-6119-dff6-ab24-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "bee7-6119-dff6-ab24-max"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Warlord",
-                "hidden": false,
-                "id": "795c-11a7-4896-2aa3",
-                "type": "selectionEntry",
-                "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1,
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "315c-f6cc-52a8-d8d7"
-                  }
-                ]
-              },
-              {
-                "import": true,
-                "name": "Retinue",
-                "hidden": false,
-                "id": "1d56-7dcd-3656-8474",
-                "type": "selectionEntryGroup",
-                "targetId": "e290-7819-af75-85c4",
-                "sortIndex": 2
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Glaive Encarmine",
-                "hidden": false,
-                "id": "c8a4-c1de-296c-db2c",
-                "profiles": [
-                  {
-                    "name": "Glaive Encarmine",
-                    "typeId": "ecd5-ca1d-0842-34a4",
-                    "typeName": "Melee Weapon",
-                    "hidden": false,
-                    "id": "c93d-a970-6e76-3716",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "ec4a-5686-1553-4654",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "b9e5-2eb3-f79d-e995",
-                        "$text": "+1"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "2"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "6c0f-3258-2a17-5cc9",
-                        "$text": "Melee"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "a603-af69-c30b-94ed",
-                        "$text": "Murderous Strike (4+)"
-                      }
-                    ]
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Murderous Strike",
-                    "id": "890a-a4df-048b-fd8c",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "5e54-e48c-3700-6d3e",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "4+",
-                        "field": "annotation"
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d868-3aae-4aa0-2bc8-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d868-3aae-4aa0-2bc8-max"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
                 "name": "Catechist",
+                "typeId": "5e31-3867-7c3d-fcb9",
+                "typeName": "Ranged Weapon",
                 "hidden": false,
-                "id": "0b0b-45a8-836c-10b6",
-                "profiles": [
+                "id": "fe63-c993-50c4-9f02",
+                "characteristics": [
                   {
-                    "name": "Catechist",
-                    "typeId": "5e31-3867-7c3d-fcb9",
-                    "typeName": "Ranged Weapon",
-                    "hidden": false,
-                    "id": "fe63-c993-50c4-9f02",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "7b0f-9c2a-0ecb-f3a3",
-                        "$text": "12\""
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "2ecc-1ccc-736f-9d3d",
-                        "$text": "9"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "cbb5-5f04-f87f-a810",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "2c90-16ca-a927-898d",
-                        "$text": "Pistol 2"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "d2a2-1139-48cb-4472",
-                        "$text": "Armourbane (Melta), Master-Craed"
-                      }
-                    ]
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Armourbane",
-                    "id": "2434-49f2-0c10-f801",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "a1f5-fb7a-bbf0-a720",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "Melta",
-                        "field": "annotation"
-                      }
-                    ]
+                    "name": "Range",
+                    "typeId": "7b0f-9c2a-0ecb-f3a3",
+                    "$text": "12\""
                   },
                   {
-                    "name": "Master-crafted",
-                    "id": "ea74-a6de-0912-26b8",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "0371-1ea2-8615-e03a"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f5a3-6639-4c11-7ab1-min"
+                    "name": "S",
+                    "typeId": "2ecc-1ccc-736f-9d3d",
+                    "$text": "9"
                   },
                   {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f5a3-6639-4c11-7ab1-max"
+                    "name": "AP",
+                    "typeId": "cbb5-5f04-f87f-a810",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "2c90-16ca-a927-898d",
+                    "$text": "Pistol 2"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "d2a2-1139-48cb-4472",
+                    "$text": "Armourbane (Melta), Master-Crafted"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Armourbane",
+                "id": "2434-49f2-0c10-f801",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "a1f5-fb7a-bbf0-a720",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Melta",
+                    "field": "annotation"
+                  }
+                ]
+              },
+              {
+                "name": "Master-crafted",
+                "id": "ea74-a6de-0912-26b8",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "0371-1ea2-8615-e03a"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f5a3-6639-4c11-7ab1-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f5a3-6639-4c11-7ab1-max"
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Glaive Encarmine",
+            "hidden": false,
+            "id": "c8a4-c1de-296c-db2c",
+            "profiles": [
+              {
+                "name": "Glaive Encarmine",
+                "typeId": "ecd5-ca1d-0842-34a4",
+                "typeName": "Melee Weapon",
+                "hidden": false,
+                "id": "c93d-a970-6e76-3716",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "ec4a-5686-1553-4654",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "S",
+                    "typeId": "b9e5-2eb3-f79d-e995",
+                    "$text": "+1"
+                  },
+                  {
+                    "name": "AP",
+                    "typeId": "0332-8de1-48c6-c94d",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Type",
+                    "typeId": "6c0f-3258-2a17-5cc9",
+                    "$text": "Melee"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "a603-af69-c30b-94ed",
+                    "$text": "Murderous Strike (4+)"
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Murderous Strike",
+                "id": "890a-a4df-048b-fd8c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "5e54-e48c-3700-6d3e",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "4+",
+                    "field": "annotation"
                   }
                 ]
               }
@@ -402,7 +212,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "82c5-9e07-66ad-9735-min"
+                "id": "d868-3aae-4aa0-2bc8-min"
               },
               {
                 "type": "max",
@@ -410,20 +220,10 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "82c5-9e07-66ad-9735-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "9ce9-f380-ef69-3e1c",
-                "includeChildSelections": true,
-                "includeChildForces": true
+                "id": "d868-3aae-4aa0-2bc8-max"
               }
             ],
-            "sortIndex": 1
+            "sortIndex": 2
           }
         ],
         "categoryLinks": [
@@ -460,6 +260,27 @@
             "hidden": false,
             "id": "724f-df9c-ef65-2bcf",
             "targetId": "325c-e791-275c-2ab7",
+            "primary": false
+          },
+          {
+            "name": "Infantry Unit Type",
+            "hidden": false,
+            "id": "7434-4f85-1360-d889",
+            "targetId": "c447-1b05-5ba8-846a",
+            "primary": false
+          },
+          {
+            "name": "Character",
+            "hidden": false,
+            "id": "3339-d7cc-4b5c-1060",
+            "targetId": "c0e6-28aa-5286-2fa2",
+            "primary": false
+          },
+          {
+            "name": "Unique Sub-type",
+            "hidden": false,
+            "id": "c2be-1fec-ce5b-1176",
+            "targetId": "75a3-46b2-47de-9789",
             "primary": false
           }
         ],
@@ -561,7 +382,163 @@
             "hidden": false,
             "id": "dc42-4e2b-4305-a74b",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Warlord",
+            "hidden": false,
+            "id": "795c-11a7-4896-2aa3",
+            "type": "selectionEntry",
+            "targetId": "dafc-695e-c908-6848",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "315c-f6cc-52a8-d8d7"
+              }
+            ],
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Retinue",
+            "hidden": false,
+            "id": "1d56-7dcd-3656-8474",
+            "type": "selectionEntryGroup",
+            "targetId": "e290-7819-af75-85c4",
+            "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Artificer Armour",
+            "hidden": false,
+            "id": "9c9c-cf1e-80da-d49f",
+            "type": "selectionEntry",
+            "targetId": "2004-7466-45c8-bca8",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fd40-5fec-91b8-395c-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fd40-5fec-91b8-395c-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Frag Grenades",
+            "hidden": false,
+            "id": "2820-732a-b498-04a8",
+            "type": "selectionEntry",
+            "targetId": "e72d-68cc-bd83-6066",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "df68-a344-89d6-0f2d-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "df68-a344-89d6-0f2d-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Iron Halo",
+            "hidden": false,
+            "id": "ebfb-9f75-bfd9-0c00",
+            "type": "selectionEntry",
+            "targetId": "daaa-0a9c-f1e0-986f",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5418-7ce3-e61c-3d12-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5418-7ce3-e61c-3d12-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Krak Grenades",
+            "hidden": false,
+            "id": "65db-550b-722f-74e1",
+            "type": "selectionEntry",
+            "targetId": "bbfb-1c1f-fdbf-90b1",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bee7-6119-dff6-ab24-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bee7-6119-dff6-ab24-max"
+              }
+            ],
+            "sortIndex": 3
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "54b5-0978-c8a4-5b5a",
+            "value": 195
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "9ce9-f380-ef69-3e1c",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ]
       },
@@ -765,84 +742,6 @@
                   },
                   {
                     "import": true,
-                    "name": "Ferromantic Deflector",
-                    "hidden": false,
-                    "id": "2ae4-5ab0-a9c1-2cce",
-                    "type": "selectionEntry",
-                    "targetId": "36f9-e639-a641-cad6",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "ab63-fa42-860e-54a4-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "ab63-fa42-860e-54a4-max"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Smoke Launchers",
-                    "hidden": false,
-                    "id": "185e-d371-4eac-f8a2",
-                    "type": "selectionEntry",
-                    "targetId": "22fa-9cf0-d02c-edea",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "c48d-d694-3664-bce5-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "c48d-d694-3664-bce5-max"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Searchlight",
-                    "hidden": false,
-                    "id": "63c1-d037-a954-b7cd",
-                    "type": "selectionEntry",
-                    "targetId": "3fea-c3e0-03e1-e444",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "7a94-e8bc-f942-a02f-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "7a94-e8bc-f942-a02f-max"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
                     "name": "Warlord",
                     "hidden": false,
                     "id": "48ba-4abc-ef13-6e52",
@@ -951,7 +850,8 @@
                     "field": "category",
                     "scope": "parent"
                   }
-                ]
+                ],
+                "collapsible": true
               },
               {
                 "type": "model",
@@ -1040,87 +940,8 @@
                         "type": "selectionEntry",
                         "targetId": "a4bc-b281-b202-6a48"
                       }
-                    ]
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Smoke Launchers",
-                    "hidden": false,
-                    "id": "1292-9fb8-09ce-ec4e",
-                    "type": "selectionEntry",
-                    "targetId": "22fa-9cf0-d02c-edea",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "ce47-63c3-b9b3-6ec7-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "ce47-63c3-b9b3-6ec7-max"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Searchlight",
-                    "hidden": false,
-                    "id": "4267-9320-9e26-c05f",
-                    "type": "selectionEntry",
-                    "targetId": "3fea-c3e0-03e1-e444",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "7df1-4cf0-b365-944c-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "7df1-4cf0-b365-944c-max"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Ferromantic Deflector",
-                    "hidden": false,
-                    "id": "e019-4f45-c0b3-b490",
-                    "type": "selectionEntry",
-                    "targetId": "36f9-e639-a641-cad6",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "22ab-c928-b088-2cf5-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "22ab-c928-b088-2cf5-max"
-                      }
-                    ]
+                    ],
+                    "collapsible": true
                   }
                 ],
                 "profiles": [
@@ -1199,7 +1020,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "collapsible": true
               },
               {
                 "type": "model",
@@ -1351,87 +1173,8 @@
                           }
                         ]
                       }
-                    ]
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Smoke Launchers",
-                    "hidden": false,
-                    "id": "0062-2879-97a4-67bd",
-                    "type": "selectionEntry",
-                    "targetId": "22fa-9cf0-d02c-edea",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "357e-b0c0-7bd9-5504-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "357e-b0c0-7bd9-5504-max"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Searchlight",
-                    "hidden": false,
-                    "id": "1d62-c7c9-3b59-1bb9",
-                    "type": "selectionEntry",
-                    "targetId": "3fea-c3e0-03e1-e444",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "3092-c6ce-14ca-c726-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "3092-c6ce-14ca-c726-max"
-                      }
-                    ]
-                  },
-                  {
-                    "import": true,
-                    "name": "Ferromantic Deflector",
-                    "hidden": false,
-                    "id": "d0e4-5aa9-0bbd-f7e6",
-                    "type": "selectionEntry",
-                    "targetId": "36f9-e639-a641-cad6",
-                    "constraints": [
-                      {
-                        "type": "min",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "4b5b-12fe-4534-5083-min"
-                      },
-                      {
-                        "type": "max",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "4b5b-12fe-4534-5083-max"
-                      }
-                    ]
+                    ],
+                    "collapsible": true
                   }
                 ],
                 "profiles": [
@@ -1517,7 +1260,8 @@
                     "type": "rule",
                     "targetId": "dc2f-f1d1-f91e-ec8b"
                   }
-                ]
+                ],
+                "collapsible": true
               }
             ]
           },
@@ -1535,7 +1279,7 @@
                 "id": "82e3-dd2e-146d-ddaa"
               }
             ],
-            "sortIndex": 2,
+            "sortIndex": 3,
             "entryLinks": [
               {
                 "import": true,
@@ -1573,7 +1317,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "collapsible": true
           }
         ],
         "entryLinks": [
@@ -1583,7 +1328,89 @@
             "hidden": false,
             "id": "be1d-9502-389f-1a62",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 4
+          },
+          {
+            "import": true,
+            "name": "Ferromantic Deflector",
+            "hidden": false,
+            "id": "2ae4-5ab0-a9c1-2cce",
+            "type": "selectionEntry",
+            "targetId": "36f9-e639-a641-cad6",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ab63-fa42-860e-54a4-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ab63-fa42-860e-54a4-max"
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Searchlight",
+            "hidden": false,
+            "id": "63c1-d037-a954-b7cd",
+            "type": "selectionEntry",
+            "targetId": "3fea-c3e0-03e1-e444",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7a94-e8bc-f942-a02f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7a94-e8bc-f942-a02f-max"
+              }
+            ],
+            "sortIndex": 2
+          },
+          {
+            "import": true,
+            "name": "Smoke Launchers",
+            "hidden": false,
+            "id": "185e-d371-4eac-f8a2",
+            "type": "selectionEntry",
+            "targetId": "22fa-9cf0-d02c-edea",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c48d-d694-3664-bce5-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c48d-d694-3664-bce5-max"
+              }
+            ],
+            "sortIndex": 2
           }
         ]
       }

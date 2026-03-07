@@ -88,6 +88,27 @@
             "id": "83f6-c2ab-7a0b-2578",
             "targetId": "325c-e791-275c-2ab7",
             "primary": false
+          },
+          {
+            "name": "Infantry Unit Type",
+            "hidden": false,
+            "id": "4813-6dfd-c7de-cf89",
+            "targetId": "c447-1b05-5ba8-846a",
+            "primary": false
+          },
+          {
+            "name": "Character",
+            "hidden": false,
+            "id": "2a40-0a4c-4b33-4cb7",
+            "targetId": "c0e6-28aa-5286-2fa2",
+            "primary": false
+          },
+          {
+            "name": "Unique Sub-type",
+            "hidden": false,
+            "id": "1751-0cee-0fdb-c69d",
+            "targetId": "75a3-46b2-47de-9789",
+            "primary": false
           }
         ],
         "costs": [
@@ -99,11 +120,11 @@
         ],
         "selectionEntries": [
           {
-            "type": "model",
+            "type": "upgrade",
             "import": true,
-            "name": "Tyberos The Red Wake",
+            "name": "Hunger and Sake",
             "hidden": false,
-            "id": "a147-7b6e-98fe-f293",
+            "id": "da8d-7120-f901-2c74",
             "constraints": [
               {
                 "type": "min",
@@ -111,7 +132,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "ffc1-19a6-d614-3083-min"
+                "id": "e74f-4744-9ef9-6c3a-min"
               },
               {
                 "type": "max",
@@ -119,371 +140,138 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "ffc1-19a6-d614-3083-max"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "roster",
-                "shared": true,
-                "id": "9379-833d-81fe-24dc-max",
-                "includeChildSelections": true,
-                "includeChildForces": true
+                "id": "e74f-4744-9ef9-6c3a-max"
               }
             ],
             "profiles": [
               {
-                "name": "Tyberos The Red Wake",
-                "typeId": "dd4a-7345-17fe-9c76",
-                "typeName": "Model",
+                "name": "Hunger",
+                "typeId": "ecd5-ca1d-0842-34a4",
+                "typeName": "Melee Weapon",
                 "hidden": false,
-                "id": "da63-23b6-82e8-f8bb",
+                "id": "7426-e447-4ebf-cf19",
                 "characteristics": [
                   {
-                    "name": "M",
-                    "typeId": "69ed-cbc7-3fbc-7ba5",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "WS",
-                    "typeId": "6ed0-3b6d-b7d7-894c",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "BS",
-                    "typeId": "163f-6fcf-6b77-1766",
-                    "$text": "5"
+                    "name": "Range",
+                    "typeId": "ec4a-5686-1553-4654",
+                    "$text": "-"
                   },
                   {
                     "name": "S",
-                    "typeId": "99ae-5644-9155-ae6e",
-                    "$text": "4"
+                    "typeId": "b9e5-2eb3-f79d-e995",
+                    "$text": "×2"
                   },
                   {
-                    "name": "T",
-                    "typeId": "08d3-1319-227b-1d5c",
-                    "$text": "4"
+                    "name": "AP",
+                    "typeId": "0332-8de1-48c6-c94d",
+                    "$text": "2"
                   },
                   {
-                    "name": "W",
-                    "typeId": "cdc0-9287-7039-4792",
-                    "$text": "4"
+                    "name": "Type",
+                    "typeId": "6c0f-3258-2a17-5cc9",
+                    "$text": "Melee"
                   },
                   {
-                    "name": "I",
-                    "typeId": "03f0-9c72-1dc2-55cd",
-                    "$text": "5"
+                    "name": "Special Rules",
+                    "typeId": "a603-af69-c30b-94ed",
+                    "$text": "Armourbane (Melee), Specialist Weapon, Brutal (2), Unwieldly, Master-Crafted"
+                  }
+                ]
+              },
+              {
+                "name": "Sake",
+                "typeId": "ecd5-ca1d-0842-34a4",
+                "typeName": "Melee Weapon",
+                "hidden": false,
+                "id": "cc73-73ed-279a-2ab7",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "ec4a-5686-1553-4654",
+                    "$text": "-"
                   },
                   {
-                    "name": "A",
-                    "typeId": "edda-ee37-03b4-f91f",
-                    "$text": "5"
+                    "name": "S",
+                    "typeId": "b9e5-2eb3-f79d-e995",
+                    "$text": "User"
                   },
                   {
-                    "name": "Ld",
-                    "typeId": "d29a-9b6f-13a6-b7a8",
-                    "$text": "10"
+                    "name": "AP",
+                    "typeId": "0332-8de1-48c6-c94d",
+                    "$text": "3"
                   },
                   {
-                    "name": "Sv",
-                    "typeId": "dc1c-e152-7a5e-2c32",
-                    "$text": "2+"
+                    "name": "Type",
+                    "typeId": "6c0f-3258-2a17-5cc9",
+                    "$text": "Melee"
+                  },
+                  {
+                    "name": "Special Rules",
+                    "typeId": "a603-af69-c30b-94ed",
+                    "$text": "Shred, Specialist Weapon. Master-Craed"
                   }
                 ]
               }
             ],
-            "categoryLinks": [
+            "infoLinks": [
               {
-                "name": "Infantry Unit Type",
+                "name": "Armourbane",
+                "id": "40a9-c2b4-4ec5-505b",
                 "hidden": false,
-                "id": "ee63-de01-8e97-40f3",
-                "targetId": "c447-1b05-5ba8-846a",
-                "primary": false
-              },
-              {
-                "name": "Character",
-                "hidden": false,
-                "id": "37ea-c78c-a574-5810",
-                "targetId": "c0e6-28aa-5286-2fa2",
-                "primary": false
-              },
-              {
-                "name": "Unique Sub-type",
-                "hidden": false,
-                "id": "f224-2d2b-c401-1008",
-                "targetId": "75a3-46b2-47de-9789",
-                "primary": false
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Tartaros Terminator Armour",
-                "hidden": false,
-                "id": "7fcd-fdae-27be-993e",
-                "type": "selectionEntry",
-                "targetId": "a6d2-e530-08f8-c97b",
+                "type": "rule",
+                "targetId": "a1f5-fb7a-bbf0-a720",
                 "modifiers": [
                   {
                     "type": "set",
-                    "value": "Relic Tartaros Terminator Plate",
-                    "field": "name"
-                  },
+                    "value": "Melee",
+                    "field": "annotation"
+                  }
+                ]
+              },
+              {
+                "name": "Chapter Specialist",
+                "id": "b7b4-6dbf-9539-2310",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2b63-2384-7b15-bc8f"
+              },
+              {
+                "name": "Brutal",
+                "id": "eb1f-454e-63a4-7087",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "fc68-9ea6-18e4-d94b",
+                "modifiers": [
                   {
                     "type": "set",
-                    "value": "Relic Tartaros Terminator Plate",
-                    "field": "name",
-                    "affects": "profiles.Wargear"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "86cf-64d3-d5e7-9757-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "86cf-64d3-d5e7-9757-max"
+                    "value": "2",
+                    "field": "annotation"
                   }
                 ]
               },
               {
-                "import": true,
-                "name": "Iron Halo",
+                "name": "Unwieldy",
+                "id": "880d-67b7-52d2-e05f",
                 "hidden": false,
-                "id": "f3d2-133c-494c-feee",
-                "type": "selectionEntry",
-                "targetId": "daaa-0a9c-f1e0-986f",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f299-7817-cdba-f7b1-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f299-7817-cdba-f7b1-max"
-                  }
-                ]
+                "type": "rule",
+                "targetId": "cfea-a7be-fbea-da53"
               },
               {
-                "import": true,
-                "name": "Teleport Homer",
+                "name": "Master-crafted",
+                "id": "3b92-07af-da32-9410",
                 "hidden": false,
-                "id": "71e9-73f4-12c1-b558",
-                "type": "selectionEntry",
-                "targetId": "00f5-e89a-3b5f-50e9",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "95bd-e696-2007-942e-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "95bd-e696-2007-942e-max"
-                  }
-                ]
+                "type": "rule",
+                "targetId": "0371-1ea2-8615-e03a"
               },
               {
-                "import": true,
-                "name": "Warlord",
+                "name": "Shred",
+                "id": "4c0e-fc85-acd1-3c9f",
                 "hidden": false,
-                "id": "caac-889c-21b1-fcc0",
-                "type": "selectionEntry",
-                "targetId": "dafc-695e-c908-6848",
-                "sortIndex": 1,
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "6fa7-5627-d4d7-8071"
-                  }
-                ]
+                "type": "rule",
+                "targetId": "a666-0970-28e2-7c48"
               }
             ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Hunger and Sake",
-                "hidden": false,
-                "id": "da8d-7120-f901-2c74",
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e74f-4744-9ef9-6c3a-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "e74f-4744-9ef9-6c3a-max"
-                  }
-                ],
-                "profiles": [
-                  {
-                    "name": "Hunger",
-                    "typeId": "ecd5-ca1d-0842-34a4",
-                    "typeName": "Melee Weapon",
-                    "hidden": false,
-                    "id": "7426-e447-4ebf-cf19",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "ec4a-5686-1553-4654",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "b9e5-2eb3-f79d-e995",
-                        "$text": "×2"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "2"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "6c0f-3258-2a17-5cc9",
-                        "$text": "Melee"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "a603-af69-c30b-94ed",
-                        "$text": "Armourbane (Melee), Specialist Weapon, Brutal (2), Unwieldly, Master-Crafted"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Sake",
-                    "typeId": "ecd5-ca1d-0842-34a4",
-                    "typeName": "Melee Weapon",
-                    "hidden": false,
-                    "id": "cc73-73ed-279a-2ab7",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "ec4a-5686-1553-4654",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "S",
-                        "typeId": "b9e5-2eb3-f79d-e995",
-                        "$text": "User"
-                      },
-                      {
-                        "name": "AP",
-                        "typeId": "0332-8de1-48c6-c94d",
-                        "$text": "3"
-                      },
-                      {
-                        "name": "Type",
-                        "typeId": "6c0f-3258-2a17-5cc9",
-                        "$text": "Melee"
-                      },
-                      {
-                        "name": "Special Rules",
-                        "typeId": "a603-af69-c30b-94ed",
-                        "$text": "Shred, Specialist Weapon. Master-Craed"
-                      }
-                    ]
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Armourbane",
-                    "id": "40a9-c2b4-4ec5-505b",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "a1f5-fb7a-bbf0-a720",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "Melee",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Chapter Specialist",
-                    "id": "b7b4-6dbf-9539-2310",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "2b63-2384-7b15-bc8f"
-                  },
-                  {
-                    "name": "Brutal",
-                    "id": "eb1f-454e-63a4-7087",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "fc68-9ea6-18e4-d94b",
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": "2",
-                        "field": "annotation"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Unwieldy",
-                    "id": "880d-67b7-52d2-e05f",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "cfea-a7be-fbea-da53"
-                  },
-                  {
-                    "name": "Master-crafted",
-                    "id": "3b92-07af-da32-9410",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "0371-1ea2-8615-e03a"
-                  },
-                  {
-                    "name": "Shred",
-                    "id": "4c0e-fc85-acd1-3c9f",
-                    "hidden": false,
-                    "type": "rule",
-                    "targetId": "a666-0970-28e2-7c48"
-                  }
-                ]
-              }
-            ],
-            "sortIndex": 1
+            "sortIndex": 2
           }
         ],
         "entryLinks": [
@@ -493,7 +281,121 @@
             "hidden": false,
             "id": "6a54-e619-6b1b-b0d5",
             "type": "selectionEntry",
-            "targetId": "cc7e-de45-e780-c1bf"
+            "targetId": "cc7e-de45-e780-c1bf",
+            "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Warlord",
+            "hidden": false,
+            "id": "caac-889c-21b1-fcc0",
+            "type": "selectionEntry",
+            "targetId": "dafc-695e-c908-6848",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6fa7-5627-d4d7-8071"
+              }
+            ],
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Iron Halo",
+            "hidden": false,
+            "id": "f3d2-133c-494c-feee",
+            "type": "selectionEntry",
+            "targetId": "daaa-0a9c-f1e0-986f",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f299-7817-cdba-f7b1-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f299-7817-cdba-f7b1-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Tartaros Terminator Armour",
+            "hidden": false,
+            "id": "7fcd-fdae-27be-993e",
+            "type": "selectionEntry",
+            "targetId": "a6d2-e530-08f8-c97b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "Relic Tartaros Terminator Plate",
+                "field": "name"
+              },
+              {
+                "type": "set",
+                "value": "Relic Tartaros Terminator Plate",
+                "field": "name",
+                "affects": "profiles.Wargear"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "86cf-64d3-d5e7-9757-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "86cf-64d3-d5e7-9757-max"
+              }
+            ],
+            "sortIndex": 3
+          },
+          {
+            "import": true,
+            "name": "Teleport Homer",
+            "hidden": false,
+            "id": "71e9-73f4-12c1-b558",
+            "type": "selectionEntry",
+            "targetId": "00f5-e89a-3b5f-50e9",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "95bd-e696-2007-942e-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "95bd-e696-2007-942e-max"
+              }
+            ],
+            "sortIndex": 3
           },
           {
             "import": true,
@@ -502,7 +404,7 @@
             "id": "9e1d-190d-7464-c031",
             "type": "selectionEntryGroup",
             "targetId": "e290-7819-af75-85c4",
-            "sortIndex": 2
+            "sortIndex": 4
           }
         ],
         "infoLinks": [
@@ -553,6 +455,79 @@
             "id": "cef9-e77e-6597-5269",
             "hidden": false,
             "description": "Tyberos grants up to 3 infantry units the Deep Strike special rule."
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Tyberos The Red Wake",
+            "typeId": "dd4a-7345-17fe-9c76",
+            "typeName": "Model",
+            "hidden": false,
+            "id": "da63-23b6-82e8-f8bb",
+            "characteristics": [
+              {
+                "name": "M",
+                "typeId": "69ed-cbc7-3fbc-7ba5",
+                "$text": "7"
+              },
+              {
+                "name": "WS",
+                "typeId": "6ed0-3b6d-b7d7-894c",
+                "$text": "7"
+              },
+              {
+                "name": "BS",
+                "typeId": "163f-6fcf-6b77-1766",
+                "$text": "5"
+              },
+              {
+                "name": "S",
+                "typeId": "99ae-5644-9155-ae6e",
+                "$text": "4"
+              },
+              {
+                "name": "T",
+                "typeId": "08d3-1319-227b-1d5c",
+                "$text": "4"
+              },
+              {
+                "name": "W",
+                "typeId": "cdc0-9287-7039-4792",
+                "$text": "4"
+              },
+              {
+                "name": "I",
+                "typeId": "03f0-9c72-1dc2-55cd",
+                "$text": "5"
+              },
+              {
+                "name": "A",
+                "typeId": "edda-ee37-03b4-f91f",
+                "$text": "5"
+              },
+              {
+                "name": "Ld",
+                "typeId": "d29a-9b6f-13a6-b7a8",
+                "$text": "10"
+              },
+              {
+                "name": "Sv",
+                "typeId": "dc1c-e152-7a5e-2c32",
+                "$text": "2+"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "9379-833d-81fe-24dc-max",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ]
       }
